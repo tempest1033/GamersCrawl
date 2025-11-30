@@ -1,0 +1,40 @@
+name: Build and Deploy Report
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # 15분마다 실행
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate report
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node generate-html-report.js
+
+      - name: Move report to docs
+        run: |
+          mkdir -p docs
+          mv TRIB_Daily_Report.html docs/index.html
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "Update report $(date +'%Y-%m-%d %H:%M')"
+          git push

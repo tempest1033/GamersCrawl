@@ -1832,7 +1832,7 @@ async function main() {
   const html = generateHTML(rankings, news, steam, youtube);
 
   const filename = `TRIB_Daily_Report.html`;
-  fs.writeFileSync(`/mnt/c/Project/${filename}`, html, 'utf8');
+  fs.writeFileSync(filename, html, 'utf8');
 
   console.log(`\n✅ 완료! 파일: ${filename}`);
 }
