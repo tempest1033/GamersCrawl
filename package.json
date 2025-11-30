@@ -1,0 +1,26 @@
+{
+  "name": "gamerscrawl",
+  "version": "1.0.0",
+  "description": "Game news and rankings crawler for GAMERSCRAWL daily report",
+  "main": "generate-html-report.js",
+  "scripts": {
+    "build": "node generate-html-report.js",
+    "start": "node generate-html-report.js"
+  },
+  "keywords": [
+    "game",
+    "news",
+    "crawler",
+    "youtube",
+    "steam",
+    "mobile-games"
+  ],
+  "author": "JYP",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "google-play-scraper": "^9.1.1",
+    "app-store-scraper": "^0.19.0"
+  }
+}
