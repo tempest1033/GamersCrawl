@@ -39,9 +39,9 @@
   <script>
     // 전체 크롤링 데이터 (랜덤 선택용)
     const allNewsData = [{"title":"엔씨소프트 '아이온2' 업데이트 실시 ∙∙∙ 이용자 피드백 적극 반영","link":"https://www.inven.co.kr/webzine/news/?news=311826&hotnews=1","tag":"아이온2","thumbnail":"https://static.inven.co.kr/column/2025/12/03/news/thumb/s1424686401.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"'창세기전: 서풍의 광시곡 리마스터' 펀딩 오픈 하루 만에 목표 136% 달성","link":"https://www.inven.co.kr/webzine/news/?news=311815&hotnews=1","tag":"창세기전: 서풍의 광시곡 리마스터","thumbnail":"https://static.inven.co.kr/column/2025/12/03/news/thumb/s1733992949.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"마비노기 모바일, 11월 이용자 38.8만명… 4주 연속 '우상향'","link":"https://www.inven.co.kr/webzine/news/?news=311810&hotnews=1","tag":"우상향","thumbnail":"https://static.inven.co.kr/column/2025/12/03/news/thumb/s1539969594.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"이거 진짜에요? '20GB'로 줄었다, 헬다이버즈2 PC 슬림 버전 공개","link":"https://www.inven.co.kr/webzine/news/?news=311803&hotnews=1","tag":"20GB","thumbnail":"https://static.inven.co.kr/column/2025/12/03/news/thumb/s1866661622.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"완성보단 진화를 추구하는 LCK","link":"https://www.inven.co.kr/webzine/news/?news=311753&hotnews=1","tag":"","thumbnail":"https://static.inven.co.kr/column/2025/12/01/news/thumb/s1800917668.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"LCK, 경기 중 코칭 스태프와 선수 소통 가능한 '코치 보이스' 도입","link":"https://www.inven.co.kr/webzine/news/?news=311806&hotnews=1","tag":"코치 보이스","thumbnail":"https://static.inven.co.kr/column/2025/12/03/news/thumb/s1573929312.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"역대 최대 할인, 'GTFO' 인벤게임즈 입점","link":"https://www.inven.co.kr/webzine/news/?news=311751&hotnews=1","tag":"GTFO","thumbnail":"https://static.inven.co.kr/column/2025/12/01/news/thumb/s1767435562.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"위쳐4-5-6 新3부작, \"향후 6년 안에 모두 출시할 것\"","link":"https://www.inven.co.kr/webzine/news/?news=311793&hotnews=1","tag":"","thumbnail":"https://static.inven.co.kr/column/webzine3/news/202512/i1459628804.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"주토피아2 일본판에는 '코지마 히데오'가 나온다","link":"https://www.inven.co.kr/webzine/news/?news=311792&hotnews=1","tag":"Ent+","thumbnail":"https://static.inven.co.kr/column/webzine3/news/202512/i1101495589.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"시공의 균열 PvE 모드 도입! 아이온2 12/2 라이브 방송 요약","link":"https://www.inven.co.kr/webzine/news/?news=311790&hotnews=1","tag":"","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1368623209.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"본격화된 한일령, 게임에는 어떤 영향이?","link":"https://www.inven.co.kr/webzine/news/?news=311788&hotnews=1","tag":"","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1214732582.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"절치부심으로 3,500만 장 달성 '사이버펑크 2077'... 5주년 기념 소식 예고까지","link":"https://www.inven.co.kr/webzine/news/?news=311784&hotnews=1","tag":"사이버펑크 2077","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1967942890.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"'티르코네일'이 현실로…넥슨 마비노기 모바일 AGF 2025 참가","link":"https://www.inven.co.kr/webzine/news/?news=311785&hotnews=1","tag":"티르코네일","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1515695496.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"애플, 국내 최초 '게임 쇼케이스' 개최하다","link":"https://www.inven.co.kr/webzine/news/?news=311779&hotnews=1","tag":"게임 쇼케이스","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1931539904.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"청신호 들어온 샘 피셔 복귀, 스플린터 셀 리메이크 디렉터 재합류 발표","link":"https://www.inven.co.kr/webzine/news/?news=311778&hotnews=1","tag":"","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1873391396.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"네온 자이언트, TGA에서 신작 발표 예고","link":"https://www.inven.co.kr/webzine/news/?news=311777&hotnews=1","tag":"네온 자이언트","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1582387252.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"'슈퍼 지구'를 스크린으로! 저스틴 린 감독, '헬다이버즈' 진두지휘","link":"https://www.inven.co.kr/webzine/news/?news=311776&hotnews=1","tag":"Ent+","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1801463044.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"게임산업 국가전략산업 발전 위해 뭉쳤다, 12월 5일 공동학술대회 개최","link":"https://www.inven.co.kr/webzine/news/?news=311774&hotnews=1","tag":"","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1195546520.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"내집 마련 임박! 'WOW 하우징' A to Z","link":"https://www.inven.co.kr/webzine/news/?news=311557&hotnews=1","tag":"WOW 하우징","thumbnail":"https://static.inven.co.kr/column/2025/12/01/news/thumb/s1943844632.jpg","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"\"전략 게임 스타크래프트처럼\"... LoL 리드 디자이너의 2026 시즌 철학","link":"https://www.inven.co.kr/webzine/news/?news=311760&hotnews=1","tag":"단독","thumbnail":"https://static.inven.co.kr/column/2025/12/02/news/thumb/s1656649109.png","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"국산 인디게임 어디까지 왔나? 이 행사에 그 답이 있다","link":"https://www.thisisgame.com/articles/408479","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F02%2F1639002815495229438_742d4d12-39dc-4fa4-8890-d4d511fd5a97_restmb_allidxmake.jpg&w=1920&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"한파에도 식지 않는 열정… 판교에 뜬 35개의 'K-인디 별’","link":"https://www.thisisgame.com/articles/408463","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F02%2F1639002822780672450_27435ffa-65b2-4f6d-a1dd-142dbd045ef8_0013_%EC%9D%B8%EB%94%94%EA%B2%8C%EC%9E%84%20%EC%84%B1%EA%B3%B5%EC%82%AC%EB%A1%80%20-%20%EB%A6%AC%EC%9E%90%EB%93%9C%EC%8A%A4%EB%AC%B4%EB%94%94%20%EC%8B%AC%EC%9D%80%EC%84%AD%20%EB%8C%80%ED%91%9C5.jpg&w=1200&q=75","tag":"풍경기","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"애플은 게임으로 향하는가","link":"https://www.thisisgame.com/articles/408453","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F02%2F1639002591020820362_70a81616-7448-4cd1-ac2b-dc513cd22fe1_Frame%201%20(1).jpg&w=1200&q=75","tag":"칼럼","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"내 집 마련의 꿈! 와우 하우징에서는 자유롭게 실현?","link":"https://www.thisisgame.com/articles/408271","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F28%2F1638999152457427495_5c5fce9b-f092-4a29-a596-577d1d2719b4_%25ED%258E%2598.jpg&w=1200&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"더 빠르고 전략적이다... LoL 2026 시즌 1, ‘대격변’ 예고","link":"https://www.thisisgame.com/articles/408173","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F01%2F1639002052658231197_2b93831e-522d-4b84-b85d-10530f3b3e46_1000000368.jpg&w=1200&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"넥슨 ‘마비노기 모바일’, 11월 이용자 지표도 웃었다","link":"https://www.thisisgame.com/articles/408575","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F03%2F1639003444454534323_4fd61a30-0e30-4cb8-943b-c271e6321c32_%255B%25EC%2582%25AC%25EC%25A7%25841%255D%2520%25EB%25A7%2588%25EB%25B9%2584%25EB%2585%25B8%25EA%25B8%25B0%2520%25EB%25AA%25A8%25EB%25B0%2594%25EC%259D%25BC.jpg&w=640&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"54만 원이 2,900만 원으로? 日 게임계 덮친 '폰트 쇼크'","link":"https://www.thisisgame.com/articles/408554","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F03%2F1639003284097051839_d813b263-2264-4b7e-9bf9-591593cb18d3_fate_grand_order.jpg&w=640&q=75","tag":"폰트 쇼크","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"4편도 아직인데 벌써? '소닉', 2028년 새 영화 제작 발표","link":"https://www.thisisgame.com/articles/408443","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F02%2F1639002407049823695_cec9e92c-96aa-4e99-bf05-e986c0c7aa71_image.jpg&w=640&q=75","tag":"소닉","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"공정위, 바닥 시스템 있던 웹젠에 과징금 1억 6천만 원 부과","link":"https://www.thisisgame.com/articles/408350","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F01%2F1639001516275334484_38d5995a-c813-49fd-95b4-5382fcb661d3_%25ED%258E%2598.jpg&w=640&q=75","tag":"공정위","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"소통의 신? 나아진 점과 나아져야 할 점","link":"https://www.thisisgame.com/articles/408135","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F27%2F1638998277762251385_49bc9502-f429-4183-970f-d640a083f686_%25ED%258E%2598.jpg&w=640&q=75","tag":"아이온 2","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"전투는 일품, 빠른 성장 뒤 남겨진 숙제","link":"https://www.thisisgame.com/articles/408034","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F26%2F1638997424181690956_07ad6bfe-4dec-4e46-b81c-1ece285ed129_%25ED%258E%2598.jpg&w=640&q=75","tag":"아이온 2","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"사활 건 작품, 설득의 시작은 첫인상부터","link":"https://www.thisisgame.com/articles/407933","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F25%2F1638996544717883911_0241e997-ce89-4568-baef-99753ef5df55_%25ED%2583%2591.jpg&w=640&q=75","tag":"아이온 2","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"“공정성 훼손 타협 없다” 아이온 2, 불법 행위에 강력 대응","link":"https://www.thisisgame.com/articles/408052","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F11%2F26%2F1638997490436814870_4c9909d5-f2f2-464a-a19f-7c9558befc03_videoframe_618210.jpg&w=640&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"세가 풋볼 클럽 챔피언스 히사이 카츠야 PD","link":"https://www.thisisgame.com/articles/408383","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyfizal0003xm014l7p4luw%2F2025%2F12%2F01%2F1639001781757254482_9bb7637e-5966-4d49-a4b6-a18e5b52635a_image.jpg&w=640&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"페르소나와 메타포 \"JRPG의 장점은 살리되, 새로운 설계로\"","link":"https://www.thisisgame.com/articles/407224","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F11%2F18%2F1638990478784150885_979fd8e2-b5de-4706-aa4d-3230cdfca807_IMG_7116.jpg&w=640&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"호요버스 '바르사푸라' 플레이 공개! \"외계인이 만드나?\"","link":"https://www.thisisgame.com/articles/407763","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F21%2F1638993111068028793_27bba6dc-8029-4440-a884-9c1daf2c884e_%25ED%258E%2598.jpg&w=640&q=75","tag":"바르사푸라","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"모바일과는 얼마나 달라졌을까 '나혼렙 오버드라이브'","link":"https://www.thisisgame.com/articles/407770","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F11%2F21%2F1638993215347862616_fd53508a-0ff0-477f-9010-761c137e8524_twitchcon-overdrive-keyart-2-1760553920004.jpg&w=640&q=75","tag":"나혼렙 오버드라이브","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"겜심 깨우는 연말… 고사양 게임 시대 필수 선택은?","link":"https://www.thisisgame.com/articles/407414","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F11%2F19%2F1638991397604563478_716d5dba-362a-4dc7-8329-bfb0c3cee3f8_%25EC%2588%2598%25EC%25A0%2595%25EB%2590%25A8_rtx-50-series-hub-twitter-1024x576.png.jpg&w=640&q=75","tag":"","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"'해금'으로 100명의 챔피언, TFT 세트 16 '신화와 전설'","link":"https://www.thisisgame.com/articles/407235","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F11%2F16%2F1638989115873670249_160b29a7-113f-4361-a401-eaa840a16be1_TFT%2520%25EC%2584%25B8%25ED%258A%25B8%252016%2520%25ED%2582%25A4%25EB%25B9%2584%25EC%25A3%25BC%25EC%2596%25BC%2520%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%2520(2).jpg&w=640&q=75","tag":"해금","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"고양이에 '스트레이'가 있다면, 강아지엔 '마이 리틀 퍼피'","link":"https://www.thisisgame.com/articles/406936","thumbnail":"https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F11%2F12%2F1638985534315495412_00bc4b31-0b35-4ad3-b6af-6514dd5e7d72_image013.jpg&w=640&q=75","tag":"스트레이","source":"디스이즈게임","icon":"https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32"},{"title":"내년 출시 ‘드래곤소드’ 유저 피드백 적용한 변경점 발표","link":"https://www.gamemeca.com/view.php?gid=1768806","tag":"","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/806/resize_gm932740_ds_sn.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"스팀과 에픽서 ‘출시 불가’ 판정된 게임, 검열 논란 불러","link":"https://www.gamemeca.com/view.php?gid=1768804","tag":"","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/804/resize_gm475718_hs_sn.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"스타세이비어, AGF 2025서 성우 토크쇼 한다","link":"https://www.gamemeca.com/view.php?gid=1768805","tag":"스타세이비어","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/805/resize_gm274966_14142.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"그랜드체이스 클래식, 3년 만의 신지역 '솔레네' 추가","link":"https://www.gamemeca.com/view.php?gid=1768803","tag":"솔레네","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/803/resize_gm712629_151515.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"롤 WASD 조작 본 서버 도입, 랭크·일반 게임은 제외","link":"https://www.gamemeca.com/view.php?gid=1768802","tag":"","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/802/resize_gm865633_Untitled-1.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"올해 신작 중 최고점, 아이온2 ‘2위’ 입성","link":"https://www.gamemeca.com/view.php?gid=1768801","tag":"","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/801/resize_gm413486_251203-risell-yy9.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"스타워즈 스타일 데스티니 확장팩 반응은?","link":"https://www.gamemeca.com/view.php?gid=1768800","tag":"","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/800/resize_gm591104_pjh251203-1.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"GTA 6, 전 락스타 직원에 의해 또 정보 유출","link":"https://www.gamemeca.com/view.php?gid=1768786","tag":"","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/786/resize_gm730984_Untitled-1.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"윈도우 10 지원 종료, 스팀 유저 66% 윈도우 11 전환","link":"https://www.gamemeca.com/view.php?gid=1768781","tag":"윈도우 10 지원 종료","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/781/resize_gm695696_wi_sn.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"게임위 모니터링단, 올해 11만 건 이상 게임 검토했다","link":"https://www.gamemeca.com/view.php?gid=1768777","tag":"게임위 모니터링단","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/777/resize_gm142812_251203-risell-yy8.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"서풍의 광시곡 리마스터, 텀블벅 펀딩 136% 달성","link":"https://www.gamemeca.com/view.php?gid=1768775","tag":"서풍의 광시곡 리마스터","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/775/resize_gm778876_251203-risell-yy7.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"게임이용자협회, 게임위에 '모비노기 경매장' 확인 요청","link":"https://www.gamemeca.com/view.php?gid=1768774","tag":"모비노기 경매장","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/774/resize_gm468202_251203-risell-yy6.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"마비노기 모바일, 11월 4주 연속 주간 이용자 수 증가","link":"https://www.gamemeca.com/view.php?gid=1768772","tag":"마비노기 모바일","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/772/resize_gm361987_251203-risell-yy5.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"'스포일러가 너무 심한 RPG' 시리즈는 계속된다","link":"https://www.gamemeca.com/view.php?gid=1768742","tag":"스포일러가 너무 심한 RPG","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/742/resize_gm789947_lk_sn.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"던페 '성띵 스페셜' 기부금, 제주도 보육원 보수에 쓰인다","link":"https://www.gamemeca.com/view.php?gid=1768771","tag":"성띵 스페셜","thumbnail":"https://cdn.gamemeca.com/gmdata/0001/768/771/resize_gm555446_251203-risell-yy4.jpg","source":"게임메카","icon":"https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32"},{"title":"'나이트메어: 더 루나틱' 한국어판 플레이 동영상","link":"https://bbs.ruliweb.com/news/read/218653","tag":"나이트메어: 더 루나틱","thumbnail":"//img.ruliweb.com/data/news26/12m/04/ns/nm.jpg","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"‘귀멸의 칼날 히노카미 혈풍담2’ 유료 다운로드 콘텐츠 '무한성편 제1장' 캐릭터 패스 '아가츠마 ","link":"https://bbs.ruliweb.com/news/read/218810","tag":"무한성편 제1장","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae3a1aa42_pgokhs.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"‘투 포인트 뮤지엄’ 추가 콘텐츠 ‘동물 박물관’, 오늘(3일) 출시","link":"https://bbs.ruliweb.com/news/read/218809","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae3a8c707_gicnsq.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"‘반지의 제왕: 모리아로의 귀환’ 신규 스토리 확장팩 ‘두린의 민족’ PS5 한국어판 오늘(3일) ","link":"https://bbs.ruliweb.com/news/read/218808","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae32e5796_vpngky.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"㈜엔씨소프트 ‘아이온2’ 업데이트 오늘(3일) 실시 ∙∙∙ 이용자 피드백 적극 반영","link":"https://bbs.ruliweb.com/news/read/218806","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae306b3e5_anidoz.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"스마일게이트, ‘CFS 2025 그랜드 파이널’ 오늘(3일) 중국 청두에서 개막","link":"https://bbs.ruliweb.com/news/read/218805","tag":"스마일게이트","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae303c306_yqvbcu.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"AMD ‘5세대 에픽 프로세서’ AWS, AWS 리인벤트 차세대 클라우드 인스턴스에 도입","link":"https://bbs.ruliweb.com/news/read/218804","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2d6aba2_jlufbi.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"㈜카카오게임즈, MMORPG ‘아키에이지 워’ 최초 글로벌 통합서버 및 첫 기술 전환 직업 사전등록","link":"https://bbs.ruliweb.com/news/read/218803","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2d30543_iozutb.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"게임물관리위원회 ‘자체등급분류 게임물 재택 모니터링단’ 해단식 지난 2일(화) 진행","link":"https://bbs.ruliweb.com/news/read/218802","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2c5b54f_goepsq.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"코그(KOG) ‘그랜드체이스 클래식’, 신규 대륙 ‘솔레네’ 업데이트 오늘(3일) 진행","link":"https://bbs.ruliweb.com/news/read/218801","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2bc3f98_svbfmz.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"AMD와 벌처, 대규모 글로벌 AI 가속 위한 협력 확대","link":"https://bbs.ruliweb.com/news/read/218800","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2b1d739_frotnl.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"그리프라인 ‘명일방주: 엔드필드’, ‘AGF 2025’에서 이벤트 진행 및 경품 제공","link":"https://bbs.ruliweb.com/news/read/218799","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2b08564_suvofx.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"조이시티 ‘건쉽배틀: 토탈워페어’ 서비스 7주년 이벤트 오늘(3일) 시작","link":"https://bbs.ruliweb.com/news/read/218798","tag":"","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae2839a53_uprgld.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"나인서클 '창세기전 외전 : 서풍의 광시곡' 리마스터, 펀딩 오픈 하루 만에 목표 136% 달성","link":"https://bbs.ruliweb.com/news/read/218797","tag":"창세기전 외전 : 서풍의 광시곡","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae27f85dc_xymrpn.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"컴투스 ‘서머너즈 워: 러쉬’, 신규 소환수 빛 속성 음양사 '세이메이' 업데이트 오늘(3일) 진행","link":"https://bbs.ruliweb.com/news/read/218796","tag":"세이메이","thumbnail":"//img.ruliweb.com/data/news/tn/25/12/03/19ae278d12b_ksmfla.avif","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"}];
-    const allCommunityData = [{"title":"소득 재분배를 해야하는 이유","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385538&_dcbest=1&page=1","channel":"잡갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"잘생긴 남자가 사진을 찍어달라고 한다면?","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385536&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"남자친구의 두얼굴.. 불법촬영과 몰카가 일상이었던 그남자","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385534&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"와들와들 대학생의...마지막 폭력시위...JPG","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385532&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"충격적인 요즘 고등학교 민원 근황","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385530&_dcbest=1&page=1","channel":"잇갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"산티아고 순례길 31~32일차 - 에필로그","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385526&_dcbest=1&page=1","channel":"배갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"나이든 사람이 어린 사람들과 잘 지낼 수 있는 최고의 방법","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385524&_dcbest=1&page=1","channel":"기갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"싱글벙글 전사끼리 번호따는 만화.manhwa","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385522&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"이재명이 회의 하다가 화를 낸.. 이유 ..jpg","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385520&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"한국외국어대학교 블루아카이브 동아리 블리전 양일 후기 (사진多, 스압)","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385518&_dcbest=1&page=1","channel":"블갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"2026년에 저작권 만료되는 작품들","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385516&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"북한 스포츠 영웅이 한국에 지면 안되는 이유","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385514&_dcbest=1&page=1","channel":"유갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"왠지 슬픈 초능력을 가진 국산 슈퍼 히어로ㅋㅋㅋㅋ","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385512&_dcbest=1&page=1","channel":"넷갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"극한 직업 북한 외교관","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385510&_dcbest=1&page=1","channel":"정갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"키르기스스탄에서 찍어온 벨비아 50","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385508&_dcbest=1&page=1","channel":"필갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"유부남이 아이돌 좋아하면 생기는 일","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385504&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"싱글벙글 대한민국 군(郡) 인구 순위","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385502&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"갈치구이 처음 접한 외국인들.jpg","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385500&_dcbest=1&page=1","channel":"유갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"항상 하는짓이 비슷한 중국인들 근황 ㅋ","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385498&_dcbest=1&page=1","channel":"부갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"잠수함 승조원들이 겪는 의외의 질병","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385496&_dcbest=1&page=1","channel":"정갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"눈브라","link":"https://arca.live/b/live/155677835?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"티르의 토끼굴","link":"https://arca.live/b/live/155727896?p=1","channel":"브라운더스트2","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"베누스 2단 클리어 했습니다 ㅎㅎㅎ","link":"https://arca.live/b/live/155702178?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"그냥 괘씸해서 다시그릶,,","link":"https://arca.live/b/live/155715352?p=1","channel":"휴식","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"러어시 그렸어","link":"https://arca.live/b/live/155713679?p=1","channel":"오버필드","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"2.5주년 바니련들 구려봄","link":"https://arca.live/b/live/155715265?p=1","channel":"브라운더스트2","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"린 그려왔어","link":"https://arca.live/b/live/155642441?p=1","channel":"명일방주","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"명붕아 이거바바","link":"https://arca.live/b/live/155633297?p=1","channel":"명일방주","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"CBT 때랑 다른 게임을 스팀에다가 쳐 내놓으니까 반려를 쳐당하시지","link":"https://arca.live/b/live/155717226?p=1","channel":"스타세이비어","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"금주 유치원","link":"https://arca.live/b/live/155681667?p=1","channel":"명조","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"고스트헌터 히스이","link":"https://arca.live/b/live/155710470?p=1","channel":"이터널 리턴","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"[그림] 디질레엥!!!!","link":"https://arca.live/b/live/155684869?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"하 씨발 쿠팡 유출 이거 개좆된거 같은데","link":"https://arca.live/b/live/155682350?p=1","channel":"듀엣 나이트 어비스","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"엘리아스 최후의 순간, 교주와 함께 마지막을 보낼 사도 (죠안 편)","link":"https://arca.live/b/live/155688571?p=1","channel":"트릭컬 RE:VIVE","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"나딱알앗음 웨카 경매장을 낸이유를","link":"https://arca.live/b/live/155717376?p=1","channel":"마비노기 모바일","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"환요오괴 이새끼들 3명이 이터턴 첩자였네ㅋㅋ","link":"https://arca.live/b/live/155706173?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"건전한 볼-요가하는 아사나","link":"https://arca.live/b/live/155676299?p=1","channel":"트릭컬 RE:VIVE","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"바니걸 방순이...","link":"https://arca.live/b/live/155676418?p=1","channel":"명조","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"근데 그냥 이용 안하면되는거아님? 왜이렇게 불탐??","link":"https://arca.live/b/live/155704335?p=1","channel":"마비노기 모바일","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"소소한 hg 나눔","link":"https://arca.live/b/live/155717747?p=1","channel":"프라모델","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"2성 장교인데 PVP 패치 불만 1도 없음","link":"https://www.inven.co.kr/board/aion2/6388/30031","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"\"전투력 높이면 뭐하냐 pvp도 없는데\"","link":"https://www.inven.co.kr/board/aion2/6388/30373","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"진짜 좆망했네 감다뒤 패치 뭐냐 ㅅㅂ","link":"https://www.inven.co.kr/board/aion2/6388/30052","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"이제 로아온 끝나고 ㅋㅋㅋ 이 새키들","link":"https://www.inven.co.kr/board/aion2/6388/29745","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"\\[\\[ 업데이트 정리 \\]\\]","link":"https://www.inven.co.kr/board/aion2/6388/29751","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"여러분들은 어떤 게임을 하고 계신가요? \\[똥글 주의\\]","link":"https://www.inven.co.kr/board/black/3583/1984962","channel":"검은사막","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"장교 3천킬이 진짜 양학한건데 저걸 빨아주네","link":"https://www.inven.co.kr/board/aion2/6388/30237","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"클뜯 벽지로 추정되는 배경 등장 ㄷㄷ....","link":"https://www.inven.co.kr/board/lostark/6271/2978281","channel":"로아","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"탈것 이벤트 할때는 안주더니...","link":"https://www.inven.co.kr/board/wow/4739/258554","channel":"와우","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"변신파견 팁","link":"https://www.inven.co.kr/board/lineagem/5019/703855","channel":"리니지M","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"이번 교역소 총 너무 멋짐","link":"https://www.inven.co.kr/board/wow/4739/258571","channel":"와우","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"형들 1000다야 날린다 조심해","link":"https://www.inven.co.kr/board/lineagem/5019/703816","channel":"리니지M","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"군단이 역대급 거품이고 드군이 가장 저평가받은듯","link":"https://www.inven.co.kr/board/wow/4739/258559","channel":"와우","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"와 씨 이거 뭐냐 ㅋㅋㅋㅋㅋㅋㅋ","link":"https://www.inven.co.kr/board/aion2/6388/31009","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"pve충들땜에 겜이 산으로 가버렸네 ㅋㅋㅋ","link":"https://www.inven.co.kr/board/aion2/6388/29596","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"pvp on 하고 다니면 되잖아라고 말하는게 멍청한거지","link":"https://www.inven.co.kr/board/aion2/6388/30514","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"현시각\\_전재학\\_디렉터.jpg","link":"https://www.inven.co.kr/board/lostark/6271/2979262","channel":"로아","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"뭔 시발 원작이 PVP 겜인데 PVP를 없애 ㅋㅋㅋㅋ","link":"https://www.inven.co.kr/board/aion2/6388/30308","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"금강선때가 훨씬 나았다 ㄹㅇ","link":"https://www.inven.co.kr/board/lostark/6271/2978654","channel":"로아","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"포셔 방송 PVP 패치 관련 2~3주뒤 미래 예언","link":"https://www.inven.co.kr/board/aion2/6388/31347","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"세번째 선물상자!","link":"https://bbs.ruliweb.com/best/board/186630/read/2551976?m=game","channel":"어쌔신 크리드: 섀도우스","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"[쿠팡] 매운새우깡 400g (3,880원 / 무배)","link":"https://bbs.ruliweb.com/market/board/1020/read/99825","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"삐삐쀼쀼 - 티파티를 습격한 아리스.jpg","link":"https://bbs.ruliweb.com/best/board/185438/read/1392782?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"e풋볼 커넥트 / 버전 5.2.0 업데이트 - 내용 정리","link":"https://bbs.ruliweb.com/best/board/185829/read/51526?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"동료 영입 노가다 빠른 방법","link":"https://bbs.ruliweb.com/best/board/184778/read/104634?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"(공식) 25.12.03 - e풋볼 커넥트 방송 예고 (20:00)","link":"https://bbs.ruliweb.com/best/board/185829/read/51505?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"빠르게 동료 구하기","link":"https://bbs.ruliweb.com/best/board/184778/read/104645?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"저에게는 올해의 게임, 연운","link":"https://bbs.ruliweb.com/best/board/187104/read/2551971?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"예전 연애가 생각나는 선생님과 학생들.manhwa","link":"https://bbs.ruliweb.com/best/board/185438/read/1392781?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"(방송) e풋볼 커넥트 - 버전 5.2.0 업데이트","link":"https://bbs.ruliweb.com/best/board/185829/read/51518?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"[유출] 콜롬비나 백마선인등 추가분입니다","link":"https://bbs.ruliweb.com/best/board/185342/read/35151?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"12월 10일 까지 쓸 수 있는 골드키 코드 입니다.","link":"https://bbs.ruliweb.com/best/board/179441/read/9430342?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"세번째 선물상자!","link":"https://bbs.ruliweb.com/best/board/186630/read/2551976?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"새로운 아르바이트의 등장?! ~아코&이오리 편~","link":"https://bbs.ruliweb.com/best/board/185438/read/1392784?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"4월에 올린 내 사진이 현실이 될줄이야.....","link":"https://bbs.ruliweb.com/best/board/186630/read/2551967?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"종전시 41차 오토조합","link":"https://bbs.ruliweb.com/best/board/185438/read/1392783?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"Ver. 1.03.1 패치 노트","link":"https://bbs.ruliweb.com/best/board/185738/read/89193?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"복수자는 출격 기도로 벼락창 선택 가능 해져서 완전 떡상이네요","link":"https://bbs.ruliweb.com/best/board/185738/read/89186?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"[프롬 소프트웨어] 공식 홈페이지: 학자, 장의사 소개","link":"https://bbs.ruliweb.com/best/board/185738/read/89196?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"피스메이커는 또 상향을 받았습니다.","link":"https://bbs.ruliweb.com/best/board/183097/read/9458064?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"}];
+    const allCommunityData = [{"title":"소득 재분배를 해야하는 이유","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385538&_dcbest=1&page=1","channel":"잡갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"잘생긴 남자가 사진을 찍어달라고 한다면?","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385536&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"남자친구의 두얼굴.. 불법촬영과 몰카가 일상이었던 그남자","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385534&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"와들와들 대학생의...마지막 폭력시위...JPG","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385532&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"충격적인 요즘 고등학교 민원 근황","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385530&_dcbest=1&page=1","channel":"잇갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"산티아고 순례길 31~32일차 - 에필로그","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385526&_dcbest=1&page=1","channel":"배갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"나이든 사람이 어린 사람들과 잘 지낼 수 있는 최고의 방법","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385524&_dcbest=1&page=1","channel":"기갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"싱글벙글 전사끼리 번호따는 만화.manhwa","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385522&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"이재명이 회의 하다가 화를 낸.. 이유 ..jpg","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385520&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"한국외국어대학교 블루아카이브 동아리 블리전 양일 후기 (사진多, 스압)","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385518&_dcbest=1&page=1","channel":"블갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"2026년에 저작권 만료되는 작품들","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385516&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"북한 스포츠 영웅이 한국에 지면 안되는 이유","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385514&_dcbest=1&page=1","channel":"유갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"왠지 슬픈 초능력을 가진 국산 슈퍼 히어로ㅋㅋㅋㅋ","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385512&_dcbest=1&page=1","channel":"넷갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"극한 직업 북한 외교관","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385510&_dcbest=1&page=1","channel":"정갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"키르기스스탄에서 찍어온 벨비아 50","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385508&_dcbest=1&page=1","channel":"필갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"유부남이 아이돌 좋아하면 생기는 일","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385504&_dcbest=1&page=1","channel":"이갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"싱글벙글 대한민국 군(郡) 인구 순위","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385502&_dcbest=1&page=1","channel":"싱갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"갈치구이 처음 접한 외국인들.jpg","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385500&_dcbest=1&page=1","channel":"유갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"항상 하는짓이 비슷한 중국인들 근황 ㅋ","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385498&_dcbest=1&page=1","channel":"부갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"잠수함 승조원들이 겪는 의외의 질병","link":"https://gall.dcinside.com/board/view/?id=dcbest&no=385496&_dcbest=1&page=1","channel":"정갤","source":"디시인사이드","icon":"https://www.google.com/s2/favicons?domain=dcinside.com&sz=32"},{"title":"눈브라","link":"https://arca.live/b/live/155677835?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"티르의 토끼굴","link":"https://arca.live/b/live/155727896?p=1","channel":"브라운더스트2","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"베누스 2단 클리어 했습니다 ㅎㅎㅎ","link":"https://arca.live/b/live/155702178?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"그냥 괘씸해서 다시그릶,,","link":"https://arca.live/b/live/155715352?p=1","channel":"휴식","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"러어시 그렸어","link":"https://arca.live/b/live/155713679?p=1","channel":"오버필드","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"2.5주년 바니련들 구려봄","link":"https://arca.live/b/live/155715265?p=1","channel":"브라운더스트2","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"린 그려왔어","link":"https://arca.live/b/live/155642441?p=1","channel":"명일방주","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"명붕아 이거바바","link":"https://arca.live/b/live/155633297?p=1","channel":"명일방주","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"CBT 때랑 다른 게임을 스팀에다가 쳐 내놓으니까 반려를 쳐당하시지","link":"https://arca.live/b/live/155717226?p=1","channel":"스타세이비어","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"금주 유치원","link":"https://arca.live/b/live/155681667?p=1","channel":"명조","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"고스트헌터 히스이","link":"https://arca.live/b/live/155710470?p=1","channel":"이터널 리턴","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"[그림] 디질레엥!!!!","link":"https://arca.live/b/live/155684869?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"하 씨발 쿠팡 유출 이거 개좆된거 같은데","link":"https://arca.live/b/live/155682350?p=1","channel":"듀엣 나이트 어비스","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"엘리아스 최후의 순간, 교주와 함께 마지막을 보낼 사도 (죠안 편)","link":"https://arca.live/b/live/155688571?p=1","channel":"트릭컬 RE:VIVE","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"나딱알앗음 웨카 경매장을 낸이유를","link":"https://arca.live/b/live/155717376?p=1","channel":"마비노기 모바일","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"환요오괴 이새끼들 3명이 이터턴 첩자였네ㅋㅋ","link":"https://arca.live/b/live/155706173?p=1","channel":"던전앤파이터","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"건전한 볼-요가하는 아사나","link":"https://arca.live/b/live/155676299?p=1","channel":"트릭컬 RE:VIVE","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"바니걸 방순이...","link":"https://arca.live/b/live/155676418?p=1","channel":"명조","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"근데 그냥 이용 안하면되는거아님? 왜이렇게 불탐??","link":"https://arca.live/b/live/155704335?p=1","channel":"마비노기 모바일","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"소소한 hg 나눔","link":"https://arca.live/b/live/155717747?p=1","channel":"프라모델","source":"아카라이브","icon":"https://www.google.com/s2/favicons?domain=arca.live&sz=32"},{"title":"2성 장교인데 PVP 패치 불만 1도 없음","link":"https://www.inven.co.kr/board/aion2/6388/30031","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"\"전투력 높이면 뭐하냐 pvp도 없는데\"","link":"https://www.inven.co.kr/board/aion2/6388/30373","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"진짜 좆망했네 감다뒤 패치 뭐냐 ㅅㅂ","link":"https://www.inven.co.kr/board/aion2/6388/30052","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"이제 로아온 끝나고 ㅋㅋㅋ 이 새키들","link":"https://www.inven.co.kr/board/aion2/6388/29745","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"\\[\\[ 업데이트 정리 \\]\\]","link":"https://www.inven.co.kr/board/aion2/6388/29751","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"여러분들은 어떤 게임을 하고 계신가요? \\[똥글 주의\\]","link":"https://www.inven.co.kr/board/black/3583/1984962","channel":"검은사막","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"장교 3천킬이 진짜 양학한건데 저걸 빨아주네","link":"https://www.inven.co.kr/board/aion2/6388/30237","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"클뜯 벽지로 추정되는 배경 등장 ㄷㄷ....","link":"https://www.inven.co.kr/board/lostark/6271/2978281","channel":"로아","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"탈것 이벤트 할때는 안주더니...","link":"https://www.inven.co.kr/board/wow/4739/258554","channel":"와우","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"변신파견 팁","link":"https://www.inven.co.kr/board/lineagem/5019/703855","channel":"리니지M","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"이번 교역소 총 너무 멋짐","link":"https://www.inven.co.kr/board/wow/4739/258571","channel":"와우","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"형들 1000다야 날린다 조심해","link":"https://www.inven.co.kr/board/lineagem/5019/703816","channel":"리니지M","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"군단이 역대급 거품이고 드군이 가장 저평가받은듯","link":"https://www.inven.co.kr/board/wow/4739/258559","channel":"와우","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"와 씨 이거 뭐냐 ㅋㅋㅋㅋㅋㅋㅋ","link":"https://www.inven.co.kr/board/aion2/6388/31009","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"pve충들땜에 겜이 산으로 가버렸네 ㅋㅋㅋ","link":"https://www.inven.co.kr/board/aion2/6388/29596","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"pvp on 하고 다니면 되잖아라고 말하는게 멍청한거지","link":"https://www.inven.co.kr/board/aion2/6388/30514","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"현시각\\_전재학\\_디렉터.jpg","link":"https://www.inven.co.kr/board/lostark/6271/2979262","channel":"로아","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"뭔 시발 원작이 PVP 겜인데 PVP를 없애 ㅋㅋㅋㅋ","link":"https://www.inven.co.kr/board/aion2/6388/30308","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"금강선때가 훨씬 나았다 ㄹㅇ","link":"https://www.inven.co.kr/board/lostark/6271/2978654","channel":"로아","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"포셔 방송 PVP 패치 관련 2~3주뒤 미래 예언","link":"https://www.inven.co.kr/board/aion2/6388/31347","channel":"아이온2","source":"인벤","icon":"https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32"},{"title":"세번째 선물상자!","link":"https://bbs.ruliweb.com/best/board/186630/read/2551976?m=game","channel":"어쌔신 크리드: 섀도우스","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"[H2mall]2025년 H2몰 프로모션 안내","link":"https://bbs.ruliweb.com/market/board/1020/read/99826","channel":"유저 예판 핫딜 뽐뿌 게시판","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"삐삐쀼쀼 - 티파티를 습격한 아리스.jpg","link":"https://bbs.ruliweb.com/best/board/185438/read/1392782?orderby=recommend&range=24h&m=game&t=now","channel":"블루 아카이브","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"e풋볼 커넥트 / 버전 5.2.0 업데이트 - 내용 정리","link":"https://bbs.ruliweb.com/best/board/185829/read/51526?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"동료 영입 노가다 빠른 방법","link":"https://bbs.ruliweb.com/best/board/184778/read/104634?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"(공식) 25.12.03 - e풋볼 커넥트 방송 예고 (20:00)","link":"https://bbs.ruliweb.com/best/board/185829/read/51505?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"빠르게 동료 구하기","link":"https://bbs.ruliweb.com/best/board/184778/read/104645?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"저에게는 올해의 게임, 연운","link":"https://bbs.ruliweb.com/best/board/187104/read/2551971?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"예전 연애가 생각나는 선생님과 학생들.manhwa","link":"https://bbs.ruliweb.com/best/board/185438/read/1392781?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"(방송) e풋볼 커넥트 - 버전 5.2.0 업데이트","link":"https://bbs.ruliweb.com/best/board/185829/read/51518?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"[유출] 콜롬비나 백마선인등 추가분입니다","link":"https://bbs.ruliweb.com/best/board/185342/read/35151?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"12월 10일 까지 쓸 수 있는 골드키 코드 입니다.","link":"https://bbs.ruliweb.com/best/board/179441/read/9430342?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"세번째 선물상자!","link":"https://bbs.ruliweb.com/best/board/186630/read/2551976?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"새로운 아르바이트의 등장?! ~아코&이오리 편~","link":"https://bbs.ruliweb.com/best/board/185438/read/1392784?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"4월에 올린 내 사진이 현실이 될줄이야.....","link":"https://bbs.ruliweb.com/best/board/186630/read/2551967?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"종전시 41차 오토조합","link":"https://bbs.ruliweb.com/best/board/185438/read/1392783?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"Ver. 1.03.1 패치 노트","link":"https://bbs.ruliweb.com/best/board/185738/read/89193?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"복수자는 출격 기도로 벼락창 선택 가능 해져서 완전 떡상이네요","link":"https://bbs.ruliweb.com/best/board/185738/read/89186?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"[프롬 소프트웨어] 공식 홈페이지: 학자, 장의사 소개","link":"https://bbs.ruliweb.com/best/board/185738/read/89196?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"},{"title":"피스메이커는 또 상향을 받았습니다.","link":"https://bbs.ruliweb.com/best/board/183097/read/9458064?orderby=recommend&range=24h&m=game&t=now","channel":"","source":"루리웹","icon":"https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32"}];
     const allYoutubeData = [{"title":"연말의 기적 | 멸망전 EP.23","channel":"클리드","thumbnail":"https://i.ytimg.com/vi/SPK6PveYJwg/mqdefault.jpg","link":"https://www.youtube.com/watch?v=SPK6PveYJwg"},{"title":"\"세주아니 대가리 강타 사건\" 아니 이게 어떻게 또 나오나요!!【멸망전 Ep. 15】","channel":"이상호","thumbnail":"https://i.ytimg.com/vi/HXqcVoEWHdQ/mqdefault.jpg","link":"https://www.youtube.com/watch?v=HXqcVoEWHdQ"},{"title":"멸망전 4강 진출까지 단 한 걸음.. 승자전에서 꺼낸 조커픽?!｜멸망전 본선 승자전","channel":"저라뎃 JUSTLIKETHAT","thumbnail":"https://i.ytimg.com/vi/CthZi_FQn5w/mqdefault.jpg","link":"https://www.youtube.com/watch?v=CthZi_FQn5w"},{"title":"좀비가 모든 걸 집어삼킨 도시... 변하지 않은 건 나뿐이었다","channel":"잠뜰 TV","thumbnail":"https://i.ytimg.com/vi/EzP4AfdZxJ4/mqdefault.jpg","link":"https://www.youtube.com/watch?v=EzP4AfdZxJ4"},{"title":"무패 전승의 그림자 군도 출격","channel":"잡상싱","thumbnail":"https://i.ytimg.com/vi/e7hwWYKsQco/mqdefault.jpg","link":"https://www.youtube.com/watch?v=e7hwWYKsQco"},{"title":"[LIVE] 12월 2일 아이온2 업데이트 프리뷰 방송","channel":"AION2","thumbnail":"https://i.ytimg.com/vi/yc0qllw3_R4/mqdefault.jpg","link":"https://www.youtube.com/watch?v=yc0qllw3_R4"},{"title":"그저 낙엽만 치울 뿐인데 왜 이렇게 빠져들지","channel":"우주하마","thumbnail":"https://i.ytimg.com/vi/68E59XsULvM/mqdefault.jpg","link":"https://www.youtube.com/watch?v=68E59XsULvM"},{"title":"아 빨리 깨면 돈을 더 많이 준다고 ㅋㅋㅋㅋ(마인크래프트)","channel":"마플 마인크래프트 채널","thumbnail":"https://i.ytimg.com/vi/0xzM1GwtcSk/mqdefault.jpg","link":"https://www.youtube.com/watch?v=0xzM1GwtcSk"},{"title":"프로게이머가 아닌 이상 알아도 절대 못 막는 빌드를 시전 하는 상대ㄷㄷ 대체 무슨 빌드지!?","channel":"[ALTUBE] 김성현TV","thumbnail":"https://i.ytimg.com/vi/BNGIvLGODIk/mqdefault.jpg","link":"https://www.youtube.com/watch?v=BNGIvLGODIk"},{"title":"봉쌤이 말아주는 현역 스쿼드..인데 이거 맞아?ㅋㅋㅋㅋㅋㅋㅋㅋㅋ","channel":"두치와뿌꾸","thumbnail":"https://i.ytimg.com/vi/7fQ2IvrNdeE/mqdefault.jpg","link":"https://www.youtube.com/watch?v=7fQ2IvrNdeE"},{"title":"메이플키우기 : 고객님, 좋은 상품이 있어서요~ [팡이요,  메이플스토리 : 메이플키우기]","channel":"팡이요","thumbnail":"https://i.ytimg.com/vi/QE4PfTJUPuk/mqdefault.jpg","link":"https://www.youtube.com/watch?v=QE4PfTJUPuk"},{"title":"자율주행 사이온","channel":"괴물쥐 유튜브","thumbnail":"https://i.ytimg.com/vi/ZHd5N-l8ouM/mqdefault.jpg","link":"https://www.youtube.com/watch?v=ZHd5N-l8ouM"},{"title":"갓겜 메이플키우기 드디어 했습니다 바로 80만원 현질하기","channel":"썩쏘TV","thumbnail":"https://i.ytimg.com/vi/CuN2Kj87Eso/mqdefault.jpg","link":"https://www.youtube.com/watch?v=CuN2Kj87Eso"},{"title":"나라망신 지스타 위원회, '미쳤다' 소리까지 나온 이유","channel":"김성회의 G식백과","thumbnail":"https://i.ytimg.com/vi/kLEVRKWcRN0/mqdefault.jpg","link":"https://www.youtube.com/watch?v=kLEVRKWcRN0"},{"title":"이번 주 산타 퓨즈머신을 대비해 시크릿 창고 여러개를 가득 채웠습니다 ㅋㅋㅋ 타코 데이 행운 12배 대박인데!!?  (로블록스 브레인롯 훔치기)","channel":"말량","thumbnail":"https://i.ytimg.com/vi/KaLxn8EKAT8/mqdefault.jpg","link":"https://www.youtube.com/watch?v=KaLxn8EKAT8"},{"title":"25.12.03(수) 【 인피쉰 생방송 다시보기 】 스타 빨무 스타크래프트 Starcraft","channel":"인피쉰","thumbnail":"https://i.ytimg.com/vi/3e8hKr0DwtU/mqdefault.jpg","link":"https://www.youtube.com/watch?v=3e8hKr0DwtU"},{"title":"자헨 장인을 꿈꾼다","channel":"PAKA","thumbnail":"https://i.ytimg.com/vi/NB9GaP2f8FA/mqdefault.jpg","link":"https://www.youtube.com/watch?v=NB9GaP2f8FA"},{"title":"[ 12. 3 live ] 리니지m : 오랜만입니다. 9검 케릭으로 돌아왔습니다. [ 수삼티비 ]","channel":"수삼티비","thumbnail":"https://i.ytimg.com/vi/Up5dv-5BnX4/mqdefault.jpg","link":"https://www.youtube.com/watch?v=Up5dv-5BnX4"},{"title":"생태계 교란종 다람쥐","channel":"동수칸TV","thumbnail":"https://i.ytimg.com/vi/v4s9kBvjbgw/mqdefault.jpg","link":"https://www.youtube.com/watch?v=v4s9kBvjbgw"},{"title":"리니지M / 9집행 캐릭 가져 온 수삼이가 빌려 달라고 하는 돈이 X억..?!","channel":"빅보스","thumbnail":"https://i.ytimg.com/vi/JBABEH0qdK4/mqdefault.jpg","link":"https://www.youtube.com/watch?v=JBABEH0qdK4"},{"title":"홍구와 3승 3패 동점을 만든 미친 실력자 ... 찐득했던 이 승부의 결말은???","channel":"발스타홍구","thumbnail":"https://i.ytimg.com/vi/PJbfZwi5BuA/mqdefault.jpg","link":"https://www.youtube.com/watch?v=PJbfZwi5BuA"},{"title":"대체 무슨 아이템을 만든 거임 라이엇.. 포지션 퀘스트 + 미친 신템들 인게임 정보","channel":"롤박사 해도리","thumbnail":"https://i.ytimg.com/vi/O2oXrYIToYo/mqdefault.jpg","link":"https://www.youtube.com/watch?v=O2oXrYIToYo"},{"title":"【롤토체스 강의】이 영상은 미쳤습니다.. 입문자 초보자도 쉽게 따라하는 1티어 덱 추천 리스트 (롤토체스 시즌16)","channel":"입만산_김루윈","thumbnail":"https://i.ytimg.com/vi/h4ah5PyNFDs/mqdefault.jpg","link":"https://www.youtube.com/watch?v=h4ah5PyNFDs"},{"title":"쁘띠 제라스가 되는 \"럼블 영웅 증강\"","channel":"팔차선 [8LJAYWALKING]","thumbnail":"https://i.ytimg.com/vi/NvMLpFYRTKE/mqdefault.jpg","link":"https://www.youtube.com/watch?v=NvMLpFYRTKE"},{"title":"우리 회사에 적응이 끝나버린 막내","channel":"YouTube지누","thumbnail":"https://i.ytimg.com/vi/TvjK1AuYWEM/mqdefault.jpg","link":"https://www.youtube.com/watch?v=TvjK1AuYWEM"},{"title":"당신은 브루저 사이온이라고 들어보셨나요? 👀","channel":"전략적죽음","thumbnail":"https://i.ytimg.com/vi/SHB0DjmbqUw/mqdefault.jpg","link":"https://www.youtube.com/watch?v=SHB0DjmbqUw"},{"title":"랜덤으로 유튜버들 목숨에 현상금이 걸리는 PVP","channel":"꼬예유 & 한예찬의 게임저장소","thumbnail":"https://i.ytimg.com/vi/nnXGuN8kWG0/mqdefault.jpg","link":"https://www.youtube.com/watch?v=nnXGuN8kWG0"},{"title":"그룹 스테이지 GROUP B DAY 3 | PGC 2025 [배틀그라운드] [배그]","channel":"배틀그라운드 이스포츠","thumbnail":"https://i.ytimg.com/vi/UKFcRNNxZjA/mqdefault.jpg","link":"https://www.youtube.com/watch?v=UKFcRNNxZjA"},{"title":"고인물 1명vs뉴비 3명 자존심을 건 서든어택 게임 부심 대결ㅋㅋㅋㅋㅋ","channel":"돌잼","thumbnail":"https://i.ytimg.com/vi/rTkSGeA_Y7c/mqdefault.jpg","link":"https://www.youtube.com/watch?v=rTkSGeA_Y7c"},{"title":"[생]바둑 황태자 까꿍프로","channel":"까꿍프로_바둑채널","thumbnail":"https://i.ytimg.com/vi/sk3Lbttu9Ys/mqdefault.jpg","link":"https://www.youtube.com/watch?v=sk3Lbttu9Ys"},{"title":"1분동안 가만히 있었습니다","channel":"주키니TV","thumbnail":"https://i.ytimg.com/vi/LJmR4_9a4fk/mqdefault.jpg","link":"https://www.youtube.com/watch?v=LJmR4_9a4fk"},{"title":"출시 1주일만에 리뷰 3000개가 극찬...\"그냥 낚시하는 게임\" 도파민 미쳤습니다;;;;","channel":"혜안","thumbnail":"https://i.ytimg.com/vi/AlKw0v8FEjQ/mqdefault.jpg","link":"https://www.youtube.com/watch?v=AlKw0v8FEjQ"},{"title":"멸망전, 탈락이 걸린 단두대 매치 이상호 VS 김봉준 마지막 대결.. [멸망전 8강 최종전]","channel":"게임대장봉준","thumbnail":"https://i.ytimg.com/vi/77Zvmn4mUpQ/mqdefault.jpg","link":"https://www.youtube.com/watch?v=77Zvmn4mUpQ"},{"title":"신규 시즌16 시작! 지금 초보자가 가장 따라하기 쉽고 강한 미친 꿀덱! 걍 말이 안됩니다 ㄷㄷㄷㄷ","channel":"전쓰트의 게임 채널 Junsst","thumbnail":"https://i.ytimg.com/vi/vbuMLOM3xh8/mqdefault.jpg","link":"https://www.youtube.com/watch?v=vbuMLOM3xh8"},{"title":"레전드 이모티콘 떴네 ㅋㅋㅋ [클래시로얄] [June]","channel":"JUNE","thumbnail":"https://i.ytimg.com/vi/OKNTdpBynQw/mqdefault.jpg","link":"https://www.youtube.com/watch?v=OKNTdpBynQw"},{"title":"사거리 125 원거리딜러..? 원딜 신지드로 게임 터트리는 방법 ㅁㅊㅋㅋ 비츠 장인초대석 [테스터훈]","channel":"테스터훈 TesterHoon","thumbnail":"https://i.ytimg.com/vi/E7h3zqXp1nU/mqdefault.jpg","link":"https://www.youtube.com/watch?v=E7h3zqXp1nU"},{"title":"궁에 치명타가 터지는 케이틀린","channel":"텔론","thumbnail":"https://i.ytimg.com/vi/n5R3SGb38NQ/mqdefault.jpg","link":"https://www.youtube.com/watch?v=n5R3SGb38NQ"},{"title":"치지직컵 1일차 도파의시선","channel":"Official dopa","thumbnail":"https://i.ytimg.com/vi/8O098GmmI_M/mqdefault.jpg","link":"https://www.youtube.com/watch?v=8O098GmmI_M"},{"title":"3천 개 미션 수많은 억까들과 싸웠습니다","channel":"유봉훈","thumbnail":"https://i.ytimg.com/vi/K8tvILN5dkw/mqdefault.jpg","link":"https://www.youtube.com/watch?v=K8tvILN5dkw"},{"title":"그만그만그만 괴롭혀주세욧.. [스텔라이브 롤 내전]","channel":"텐코 시부키 TENKO SHIBUKI","thumbnail":"https://i.ytimg.com/vi/N4pKC2O2rfs/mqdefault.jpg","link":"https://www.youtube.com/watch?v=N4pKC2O2rfs"},{"title":"10년 전 늪지대｜랜덤무기전쟁","channel":"악어 유튜브","thumbnail":"https://i.ytimg.com/vi/l7hEuPGrS6M/mqdefault.jpg","link":"https://www.youtube.com/watch?v=l7hEuPGrS6M"},{"title":"탱커킹★아이온2 수호성 \"리방\" 이스라펠 공명전까지 레츠꼬~","channel":"탱커킹","thumbnail":"https://i.ytimg.com/vi/tC0Dp37q95c/mqdefault.jpg","link":"https://www.youtube.com/watch?v=tC0Dp37q95c"},{"title":"온갖 0티어 스킨들만 다 때려 박은 \"iZu 스킨 세트\" 전격 리뷰","channel":"버니버니","thumbnail":"https://i.ytimg.com/vi/q4UOlKuxao0/mqdefault.jpg","link":"https://www.youtube.com/watch?v=q4UOlKuxao0"},{"title":"배그 ‘앵글손잡이’ 쓰레기라고 한거 죄송합니다.. 결국 완성했습니다","channel":"악동 김블루","thumbnail":"https://i.ytimg.com/vi/Jech1mtzfe8/mqdefault.jpg","link":"https://www.youtube.com/watch?v=Jech1mtzfe8"},{"title":"아이온2 무과금을 위한 갓패치네요... 던전 다쉬워짐 ㄷㄷ / 12.03 업데이트 상세리뷰","channel":"투즈TV","thumbnail":"https://i.ytimg.com/vi/iSg8SkQk0Do/mqdefault.jpg","link":"https://www.youtube.com/watch?v=iSg8SkQk0Do"},{"title":"[아이온2] 최종 늘무얻는 \"정복 불의 신전\" 완벽 공략법 - 무과금도 가능 / 최소 전투력 2200","channel":"쵸튜브[쵸피]","thumbnail":"https://i.ytimg.com/vi/dFw_Qg7ncZc/mqdefault.jpg","link":"https://www.youtube.com/watch?v=dFw_Qg7ncZc"},{"title":"뻑가 복귀 레전드 ㅋㅋㅋㅋㅋㅋ","channel":"가재맨","thumbnail":"https://i.ytimg.com/vi/E51B5BmM6u8/mqdefault.jpg","link":"https://www.youtube.com/watch?v=E51B5BmM6u8"},{"title":"멸망전 광탈 단두대 매치에서 만난 상교록 【멸망전 패자조】","channel":"튜브김민교","thumbnail":"https://i.ytimg.com/vi/PJ-0J5zN5ks/mqdefault.jpg","link":"https://www.youtube.com/watch?v=PJ-0J5zN5ks"},{"title":"수많은 허밋들이 폐사하는 이유","channel":"김데데","thumbnail":"https://i.ytimg.com/vi/nq6W3-kla28/mqdefault.jpg","link":"https://www.youtube.com/watch?v=nq6W3-kla28"},{"title":"클래시로얄에 출시될 뻔한 카드에 대해 알아보자","channel":"써니","thumbnail":"https://i.ytimg.com/vi/6YEpX-s8Hhg/mqdefault.jpg","link":"https://www.youtube.com/watch?v=6YEpX-s8Hhg"}];
-    const allChzzkData = [{"title":"총쏴서  중산층 되는 게임 ","channel":"풍월량","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26453996/live/15950525/record/47682727/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/7ce8032370ac5121dcabce7bad375ced","viewers":8951},{"title":"겐이치로 잡으로 감니다 ","channel":"아야츠노 유니","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27314095/live/15946373/record/47674724/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/45e71a76e949e16a34764deb962f9d9f","viewers":3111},{"title":"[서새봄] 산나비 무료DLC ‘귀신씌인 날’😺","channel":"서새봄냥 SEBOM","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26452270/live/15955178/record/47688801/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/458f6ec20b034f49e0fc6d03921646d2","viewers":1872},{"title":"치카는 바보야.. w.씨랙 너불 남봉 빅헤드","channel":"이로나묭 치카","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30918390/live/15955200/record/47688824/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ec30975bd41d3179fe7734ddbf760acb","viewers":822},{"title":"수요일 타르코프 씨불카","channel":"씨랙","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/15956912/record/47690789/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/bf4df7913fcc6c4bd0932a37310a761f","viewers":770},{"title":"씨불카 타르코프","channel":"너불","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27370372/live/15953482/record/47686854/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/af3323d30e11ae42c39d7203c7e07fa2","viewers":749},{"title":"오랜만에 솔로랭크","channel":"캬하하 이석현","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26592429/live/15956296/record/47690110/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/a0e26a105c3b5ac212d5e0ca40c5c747","viewers":552},{"title":"증바람","channel":"멀럭킹","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/15946757/record/47675332/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/0a0a0b83c6af289507ef57a5f3d623c0","viewers":380},{"title":"자기전 잠시 숙제","channel":"비행돼지","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26705458/live/15953428/record/47686793/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8c0a733110437062e1a1381706312c80","viewers":259},{"title":"스토리퀘깰라면 라이트키퍼 만나야해 ㅠ !VPN","channel":"한스토리","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26635612/live/15951883/record/47684858/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/95dce22a7af42be99eaaef19619ebf25","viewers":248},{"title":"🟡아이온2🟣 신섭 포에타 검성 어비스 사냥 가실 길드원 모집합니다 길드이름: 간장","channel":"간장ㅎ","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26592426/live/15947046/record/47675975/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/bd6e67ad873b9f96f1480547bba0f097","viewers":241},{"title":"[임모탈k] 중세전쟁마운트앤블레이드2 해상전 DLC- 노드족으로 ","channel":"immortalk","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27449588/live/15953657/record/47687047/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/75c1dee192717e3aa6c7c78b2c939596","viewers":230},{"title":"라이엇윈터이벤트상품타서부자되기","channel":"청묘","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/15945753/record/47673454/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501","viewers":119},{"title":"레전드 생활패턴 발생","channel":"자연2","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28580123/live/15957732/record/47691767/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/962abb83cc2513309966365813fdd288","viewers":190},{"title":"안녕하세용 / 플레3 59점 시작","channel":"강선종","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27767366/live/15957841/record/47692347/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8a068e9ef9120a1a613b521b9fb44c42","viewers":185},{"title":"롤,롤체,배그,소통","channel":"나홀로와칭","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42128538/live/15953918/record/47687341/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ff7c40f675a71d34807a75c14c3c71ef","viewers":13},{"title":"목요일 ^ㅅ^","channel":"김디삼","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/32762182/live/15953151/record/47686458/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/487cc0278bdeb92a11be7530951668a6","viewers":160},{"title":"[노강퇴DAY] 탱커 전양 5일차.. 계속 팀이 저에게 폐드립하고 정치합니다 내 잘못입니까?*미션 초환영* 삐라 레전드 한정판 신상 키캡 셋트&룰루 키링 뽑기 OPEN!","channel":"삐라입니다","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481446/live/15950316/record/47682292/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/36792f750d222b585a3ef3cd69a3f822","viewers":94},{"title":"먼가 탈콥 오랜만에 하는 거 같다?? [PVP]","channel":"조브킴","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29576492/live/15957683/record/47691652/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8df0e2fd888d52ed10562f2cdb9fa6e0","viewers":17},{"title":"[드롭스] 잔잔하니 틀어놓기 좋은 이터 이렘 솔랭 ","channel":"만두만만세","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28234498/live/15957816/record/47692276/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/a67d041fa77e5b8c0d6cc9ddb4b2684f","viewers":133},{"title":"신병","channel":"치민22","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27949829/live/15957628/record/47691587/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/4cb41aa1c9b698b138bc865c3323fe2f","viewers":124},{"title":"1650살성인데 공격력 1300맞습니까? ","channel":"쩡니예","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27748660/live/15946949/record/47675658/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/18310fe936b08c9a92fa3f60bf209f0c","viewers":118},{"title":"9000시간 살인마 눈 돌아가게 하기 장인\n^+^ ","channel":"KKawk","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30323953/live/15954819/record/47688387/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/73a9397781b10f60a40b2b2c8db03a7a","viewers":106},{"title":"🐹으럇으럇 (´▽`ʃ♡ƪ)","channel":"마우쥐","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28471661/live/15946745/record/47675317/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/b2854dc0735e55fa86c53bd15242d30f","viewers":100},{"title":"잠  줄이게 해버리는 대격변 아이온2!!  2500 시엘/마도성","channel":"선짱","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26630982/live/15941574/record/47667250/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/0322c30eb06b371083cbaffb254c31b4","viewers":98},{"title":"🐹 새벽형 햄서타","channel":"갱스터햄스타","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29270959/live/15956582/record/47690427/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8c6d1ec2a40ab036a38c22516b6629e1","viewers":20},{"title":"캬\n","channel":"조딱","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30048398/live/15954080/record/47687531/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/0f2a0b9b7495f9541cd2a15463ef214e","viewers":22},{"title":"너무피곤한 나머지 늦잠잤네)일단 로아 배럭들 트라이 배템값벌자","channel":"찡 어","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27474542/live/15957055/record/47690947/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/f1b0ed04cf4cce137ffb4a65deb583cf","viewers":13},{"title":"시엘 만세 ~^^","channel":"새 담","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27354054/live/15950765/record/47683218/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ca76c17a026bb41e6ff9e3fc5641de63","viewers":87},{"title":"일퀘의 악마","channel":"잔악무도유관우","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27959852/live/15954589/record/47688131/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/d13cbf1f806ed3083daf86f741bf2ada","viewers":78},{"title":"실버 ~ 다이아 가보기  [106일차] 골1","channel":"함성티비","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27784890/live/15957584/record/47691539/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/211b7773b3ee7556f9392cab2e026a6c","viewers":76},{"title":"안녕하세요 시엘입니다","channel":"금결초","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27755028/live/15950363/record/47682365/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8da2cbae1c627fab3477abfdc9e119bc","viewers":86},{"title":"틱톡인플루언서 췽췽언니 연운상륙","channel":"난귝","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28094191/live/15957454/record/47691402/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/4a6c23fb40ac7ed997fe67d8abab083a","viewers":75},{"title":"늙기 싫다","channel":"조짐승","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28315320/live/15957253/record/47691188/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/fed16392fe566cc0cd16bcae407fc3f0","viewers":7},{"title":" 크로노스 뉴 던 엔딩볼거임 ","channel":"어스키","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26700393/live/15951384/record/47684127/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/efe7af7e2626286a1240f00dc865f21e","viewers":78},{"title":"공과 방의 조화","channel":"체리쉬1","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30602939/live/15957689/record/47691662/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/a64228a96e7990db2409ac6eafefc40a","viewers":66}];
+    const allChzzkData = [{"title":"총쏴서  중산층 되는 게임 ","channel":"풍월량","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26453996/live/15950525/record/47682727/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/7ce8032370ac5121dcabce7bad375ced","viewers":8789},{"title":"겐이치로 잡으로 감니다 ","channel":"아야츠노 유니","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27314095/live/15946373/record/47674724/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/45e71a76e949e16a34764deb962f9d9f","viewers":3125},{"title":"[서새봄] 산나비 무료DLC ‘귀신씌인 날’😺","channel":"서새봄냥 SEBOM","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26452270/live/15955178/record/47688801/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/458f6ec20b034f49e0fc6d03921646d2","viewers":1877},{"title":"치카는 바보야.. w.씨랙 너불 남봉 빅헤드","channel":"이로나묭 치카","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30918390/live/15955200/record/47688824/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ec30975bd41d3179fe7734ddbf760acb","viewers":811},{"title":"수요일 타르코프 씨불카","channel":"씨랙","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/15956912/record/47690789/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/bf4df7913fcc6c4bd0932a37310a761f","viewers":751},{"title":"씨불카 타르코프","channel":"너불","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27370372/live/15953482/record/47686854/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/af3323d30e11ae42c39d7203c7e07fa2","viewers":773},{"title":"오랜만에 솔로랭크","channel":"캬하하 이석현","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26592429/live/15956296/record/47690110/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/a0e26a105c3b5ac212d5e0ca40c5c747","viewers":564},{"title":"증바람","channel":"멀럭킹","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/15946757/record/47675332/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/0a0a0b83c6af289507ef57a5f3d623c0","viewers":377},{"title":"자기전 잠시 숙제","channel":"비행돼지","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26705458/live/15953428/record/47686793/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8c0a733110437062e1a1381706312c80","viewers":268},{"title":"스토리퀘깰라면 라이트키퍼 만나야해 ㅠ !VPN","channel":"한스토리","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26635612/live/15951883/record/47684858/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/95dce22a7af42be99eaaef19619ebf25","viewers":243},{"title":"🟡아이온2🟣 신섭 포에타 검성 어비스 사냥 가실 길드원 모집합니다 길드이름: 간장","channel":"간장ㅎ","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26592426/live/15947046/record/47675975/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/bd6e67ad873b9f96f1480547bba0f097","viewers":244},{"title":"[임모탈k] 중세전쟁마운트앤블레이드2 해상전 DLC- 노드족으로 ","channel":"immortalk","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27449588/live/15953657/record/47687047/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/75c1dee192717e3aa6c7c78b2c939596","viewers":236},{"title":"레전드 생활패턴 발생","channel":"자연2","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28580123/live/15957732/record/47691767/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/962abb83cc2513309966365813fdd288","viewers":194},{"title":"안녕하세용 / 플레3 59점 시작","channel":"강선종","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27767366/live/15957841/record/47692347/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8a068e9ef9120a1a613b521b9fb44c42","viewers":193},{"title":"목요일 ^ㅅ^","channel":"김디삼","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/32762182/live/15953151/record/47686458/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/487cc0278bdeb92a11be7530951668a6","viewers":158},{"title":"라이엇윈터이벤트상품타서부자되기","channel":"청묘","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/15945753/record/47673454/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501","viewers":109},{"title":"롤,롤체,배그,소통","channel":"나홀로와칭","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42128538/live/15953918/record/47687341/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ff7c40f675a71d34807a75c14c3c71ef","viewers":10},{"title":"[노강퇴DAY] 탱커 전양 5일차.. 계속 팀이 저에게 폐드립하고 정치합니다 내 잘못입니까?*미션 초환영* 삐라 레전드 한정판 신상 키캡 셋트&룰루 키링 뽑기 OPEN!","channel":"삐라입니다","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481446/live/15950316/record/47682292/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/36792f750d222b585a3ef3cd69a3f822","viewers":96},{"title":"[드롭스] 잔잔하니 틀어놓기 좋은 이터 이렘 솔랭 ","channel":"만두만만세","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28234498/live/15957816/record/47692276/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/a67d041fa77e5b8c0d6cc9ddb4b2684f","viewers":137},{"title":"신병","channel":"치민22","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27949829/live/15957628/record/47691587/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/4cb41aa1c9b698b138bc865c3323fe2f","viewers":122},{"title":"1650살성인데 공격력 1300맞습니까? ","channel":"쩡니예","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27748660/live/15946949/record/47675658/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/18310fe936b08c9a92fa3f60bf209f0c","viewers":118},{"title":"먼가 탈콥 오랜만에 하는 거 같다?? [PVP]","channel":"조브킴","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29576492/live/15957683/record/47691652/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8df0e2fd888d52ed10562f2cdb9fa6e0","viewers":18},{"title":"9000시간 살인마 눈 돌아가게 하기 장인\n^+^ ","channel":"KKawk","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30323953/live/15954819/record/47688387/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/73a9397781b10f60a40b2b2c8db03a7a","viewers":100},{"title":"🐹으럇으럇 (´▽`ʃ♡ƪ)","channel":"마우쥐","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28471661/live/15946745/record/47675317/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/b2854dc0735e55fa86c53bd15242d30f","viewers":106},{"title":"잠  줄이게 해버리는 대격변 아이온2!!  2500 시엘/마도성","channel":"선짱","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26630982/live/15941574/record/47667250/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/0322c30eb06b371083cbaffb254c31b4","viewers":95},{"title":"시엘 만세 ~^^","channel":"새 담","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27354054/live/15950765/record/47683218/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ca76c17a026bb41e6ff9e3fc5641de63","viewers":89},{"title":"일퀘의 악마","channel":"잔악무도유관우","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27959852/live/15954589/record/47688131/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/d13cbf1f806ed3083daf86f741bf2ada","viewers":82},{"title":"실버 ~ 다이아 가보기  [106일차] 골1","channel":"함성티비","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27784890/live/15957584/record/47691539/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/211b7773b3ee7556f9392cab2e026a6c","viewers":78},{"title":"안녕하세요 시엘입니다","channel":"금결초","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27755028/live/15950363/record/47682365/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/8da2cbae1c627fab3477abfdc9e119bc","viewers":86},{"title":"틱톡인플루언서 췽췽언니 연운상륙","channel":"난귝","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28094191/live/15957454/record/47691402/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/4a6c23fb40ac7ed997fe67d8abab083a","viewers":73},{"title":" 크로노스 뉴 던 엔딩볼거임 ","channel":"어스키","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26700393/live/15951384/record/47684127/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/efe7af7e2626286a1240f00dc865f21e","viewers":83},{"title":"공과 방의 조화","channel":"체리쉬1","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30602939/live/15957689/record/47691662/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/a64228a96e7990db2409ac6eafefc40a","viewers":66},{"title":"김루윈의 빌지워터 밸류 이론(유레카!)","channel":"김루윈","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26495046/live/15957034/record/47690925/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/468b76873773c16ecfc5c2b2541f919c","viewers":83},{"title":"no pain, no game","channel":"루미널","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27761405/live/15957847/record/47692374/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/63f96097d73a7a4acc33a56feea66fac","viewers":82},{"title":"위아더 월드 아이온[지켈]","channel":"합랑","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27301645/live/15951309/record/47684026/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/87e1e3aeae3492244be2136e204b6f1a","viewers":65},{"title":"⚡신규 DLC 천통직전⚡\n","channel":"개복어","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26479658/live/15957923/record/47692592/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/55e243bd868e55adf3524c85f8db51b5","viewers":82},{"title":"?? : 시공에서 어포 벌어서 회랑에서 '이겨주는데' 게임 망했네","channel":"스테로이드","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26734243/live/15946912/record/47675595/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/bbbe06569e9685685217825ba53765c6","viewers":66},{"title":"시즌 16 오픈런 // 23일까지 1등시 100만원","channel":"특한","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27327832/live/15957618/record/47691578/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/3a24ba3160f18d5eeb2c71cc6e7889d8","viewers":48},{"title":"본계정 레이드 다 빼기 / 룰렛, 영도 상시 오픈","channel":"메타용","thumbnail":"https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27755070/live/15951989/record/47684994/thumbnail/image_480.jpg","link":"https://chzzk.naver.com/live/ff3d21e476207187122a14be2df03f95","viewers":50}];
   </script>
 </head>
 <body>
@@ -561,47 +561,57 @@
         <div class="home-news-split">
           <div class="home-news-cards">
             
-              <a class="home-news-card home-news-card-main" href="https://bbs.ruliweb.com/news/read/218653" target="_blank" rel="noopener">
+              <a class="home-news-card home-news-card-main" href="https://bbs.ruliweb.com/news/read/218809" target="_blank" rel="noopener">
                 <div class="home-news-card-thumb">
-                  <img src="https://img.ruliweb.com/data/news26/12m/04/ns/nm.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>'">
+                  <img src="https://img.ruliweb.com/data/news/tn/25/12/03/19ae3a8c707_gicnsq.avif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>'">
                 </div>
                 <div class="home-news-card-info">
-                  <span class="home-news-card-title">'나이트메어: 더 루나틱' 한국어판 플레이 동영상</span>
+                  <span class="home-news-card-title">‘투 포인트 뮤지엄’ 추가 콘텐츠 ‘동물 박물관’, 오늘(3일) 출시</span>
                   <span class="home-news-card-source">루리웹</span>
                 </div>
               </a>
             
             
-              <a class="home-news-card home-news-card-sub" href="https://bbs.ruliweb.com/news/read/218808" target="_blank" rel="noopener">
+              <a class="home-news-card home-news-card-sub" href="https://www.thisisgame.com/articles/408463" target="_blank" rel="noopener">
                 <div class="home-news-card-thumb">
-                  <img src="https://img.ruliweb.com/data/news/tn/25/12/03/19ae32e5796_vpngky.avif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>'">
+                  <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F02%2F1639002822780672450_27435ffa-65b2-4f6d-a1dd-142dbd045ef8_0013_%EC%9D%B8%EB%94%94%EA%B2%8C%EC%9E%84%20%EC%84%B1%EA%B3%B5%EC%82%AC%EB%A1%80%20-%20%EB%A6%AC%EC%9E%90%EB%93%9C%EC%8A%A4%EB%AC%B4%EB%94%94%20%EC%8B%AC%EC%9D%80%EC%84%AD%20%EB%8C%80%ED%91%9C5.jpg&w=1200&q=75" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>'">
                 </div>
                 <div class="home-news-card-info">
-                  <span class="home-news-card-title">‘반지의 제왕: 모리아로의 귀환’ 신규 스토리 확장팩 ‘두린의 민족’ PS5 한국어판 오늘(3일) </span>
-                  <span class="home-news-card-source">루리웹</span>
+                  <span class="home-news-card-title">한파에도 식지 않는 열정… 판교에 뜬 35개의 'K-인디 별’</span>
+                  <span class="home-news-card-source">디스이즈게임</span>
                 </div>
               </a>
             
           </div>
           <div class="home-news-list">
             
-              <a class="home-news-item" href="https://bbs.ruliweb.com/news/read/218810" target="_blank" rel="noopener">
+              <a class="home-news-item" href="https://www.gamemeca.com/view.php?gid=1768806" target="_blank" rel="noopener">
                 <div class="home-news-item-thumb">
-                  <img src="https://img.ruliweb.com/data/news/tn/25/12/03/19ae3a1aa42_pgokhs.avif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+                  <img src="https://cdn.gamemeca.com/gmdata/0001/768/806/resize_gm932740_ds_sn.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
                 </div>
                 <div class="home-news-item-info">
-                  <span class="home-news-title">‘귀멸의 칼날 히노카미 혈풍담2’ 유료 다운로드 콘텐츠 '무한성편 제1장' 캐릭터 패스 '아가츠마 </span>
+                  <span class="home-news-title">내년 출시 ‘드래곤소드’ 유저 피드백 적용한 변경점 발표</span>
+                  <span class="home-news-source-tag">게임메카</span>
+                </div>
+              </a>
+            
+              <a class="home-news-item" href="https://bbs.ruliweb.com/news/read/218653" target="_blank" rel="noopener">
+                <div class="home-news-item-thumb">
+                  <img src="https://img.ruliweb.com/data/news26/12m/04/ns/nm.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+                </div>
+                <div class="home-news-item-info">
+                  <span class="home-news-title">'나이트메어: 더 루나틱' 한국어판 플레이 동영상</span>
                   <span class="home-news-source-tag">루리웹</span>
                 </div>
               </a>
             
-              <a class="home-news-item" href="https://www.thisisgame.com/articles/408463" target="_blank" rel="noopener">
+              <a class="home-news-item" href="https://www.gamemeca.com/view.php?gid=1768803" target="_blank" rel="noopener">
                 <div class="home-news-item-thumb">
-                  <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F02%2F1639002822780672450_27435ffa-65b2-4f6d-a1dd-142dbd045ef8_0013_%EC%9D%B8%EB%94%94%EA%B2%8C%EC%9E%84%20%EC%84%B1%EA%B3%B5%EC%82%AC%EB%A1%80%20-%20%EB%A6%AC%EC%9E%90%EB%93%9C%EC%8A%A4%EB%AC%B4%EB%94%94%20%EC%8B%AC%EC%9D%80%EC%84%AD%20%EB%8C%80%ED%91%9C5.jpg&w=1200&q=75" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+                  <img src="https://cdn.gamemeca.com/gmdata/0001/768/803/resize_gm712629_151515.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
                 </div>
                 <div class="home-news-item-info">
-                  <span class="home-news-title">한파에도 식지 않는 열정… 판교에 뜬 35개의 'K-인디 별’</span>
-                  <span class="home-news-source-tag">디스이즈게임</span>
+                  <span class="home-news-title">그랜드체이스 클래식, 3년 만의 신지역 '솔레네' 추가</span>
+                  <span class="home-news-source-tag">게임메카</span>
                 </div>
               </a>
             
@@ -615,43 +625,33 @@
                 </div>
               </a>
             
-              <a class="home-news-item" href="https://www.gamemeca.com/view.php?gid=1768806" target="_blank" rel="noopener">
+              <a class="home-news-item" href="https://bbs.ruliweb.com/news/read/218808" target="_blank" rel="noopener">
                 <div class="home-news-item-thumb">
-                  <img src="https://cdn.gamemeca.com/gmdata/0001/768/806/resize_gm932740_ds_sn.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+                  <img src="https://img.ruliweb.com/data/news/tn/25/12/03/19ae32e5796_vpngky.avif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
                 </div>
                 <div class="home-news-item-info">
-                  <span class="home-news-title">내년 출시 ‘드래곤소드’ 유저 피드백 적용한 변경점 발표</span>
-                  <span class="home-news-source-tag">게임메카</span>
+                  <span class="home-news-title">‘반지의 제왕: 모리아로의 귀환’ 신규 스토리 확장팩 ‘두린의 민족’ PS5 한국어판 오늘(3일) </span>
+                  <span class="home-news-source-tag">루리웹</span>
                 </div>
               </a>
             
-              <a class="home-news-item" href="https://www.gamemeca.com/view.php?gid=1768805" target="_blank" rel="noopener">
+              <a class="home-news-item" href="https://www.thisisgame.com/articles/408453" target="_blank" rel="noopener">
                 <div class="home-news-item-thumb">
-                  <img src="https://cdn.gamemeca.com/gmdata/0001/768/805/resize_gm274966_14142.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+                  <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F02%2F1639002591020820362_70a81616-7448-4cd1-ac2b-dc513cd22fe1_Frame%201%20(1).jpg&w=1200&q=75" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
                 </div>
                 <div class="home-news-item-info">
-                  <span class="home-news-title">스타세이비어, AGF 2025서 성우 토크쇼 한다</span>
-                  <span class="home-news-source-tag">게임메카</span>
-                </div>
-              </a>
-            
-              <a class="home-news-item" href="https://www.thisisgame.com/articles/408271" target="_blank" rel="noopener">
-                <div class="home-news-item-thumb">
-                  <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F28%2F1638999152457427495_5c5fce9b-f092-4a29-a596-577d1d2719b4_%25ED%258E%2598.jpg&w=1200&q=75" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-                </div>
-                <div class="home-news-item-info">
-                  <span class="home-news-title">내 집 마련의 꿈! 와우 하우징에서는 자유롭게 실현?</span>
+                  <span class="home-news-title">애플은 게임으로 향하는가</span>
                   <span class="home-news-source-tag">디스이즈게임</span>
                 </div>
               </a>
             
-              <a class="home-news-item" href="https://bbs.ruliweb.com/news/read/218809" target="_blank" rel="noopener">
+              <a class="home-news-item" href="https://www.thisisgame.com/articles/408479" target="_blank" rel="noopener">
                 <div class="home-news-item-thumb">
-                  <img src="https://img.ruliweb.com/data/news/tn/25/12/03/19ae3a8c707_gicnsq.avif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+                  <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F02%2F1639002815495229438_742d4d12-39dc-4fa4-8890-d4d511fd5a97_restmb_allidxmake.jpg&w=1920&q=75" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
                 </div>
                 <div class="home-news-item-info">
-                  <span class="home-news-title">‘투 포인트 뮤지엄’ 추가 콘텐츠 ‘동물 박물관’, 오늘(3일) 출시</span>
-                  <span class="home-news-source-tag">루리웹</span>
+                  <span class="home-news-title">국산 인디게임 어디까지 왔나? 이 행사에 그 답이 있다</span>
+                  <span class="home-news-source-tag">디스이즈게임</span>
                 </div>
               </a>
             
@@ -991,15 +991,6 @@
         <div class="home-community-panel active" id="home-community-all">
         <div class="home-community-split">
           <div class="home-community-column">
-          <a class="home-community-item" href="https://arca.live/b/live/155727896?p=1" target="_blank" rel="noopener">
-            <span class="home-community-title">티르의 토끼굴</span>
-            <span class="home-community-meta">
-              <img src="https://www.google.com/s2/favicons?domain=arca.live&sz=32" alt="">
-              <span class="home-community-source">아카라이브</span>
-              <span class="home-community-channel">· 브라운더스트2</span>
-            </span>
-          </a>
-        
           <a class="home-community-item" href="https://www.inven.co.kr/board/aion2/6388/30373" target="_blank" rel="noopener">
             <span class="home-community-title">"전투력 높이면 뭐하냐 pvp도 없는데"</span>
             <span class="home-community-meta">
@@ -1018,40 +1009,12 @@
             </span>
           </a>
         
-          <a class="home-community-item" href="https://bbs.ruliweb.com/best/board/186630/read/2551976?m=game" target="_blank" rel="noopener">
-            <span class="home-community-title">세번째 선물상자!</span>
+          <a class="home-community-item" href="https://arca.live/b/live/155727896?p=1" target="_blank" rel="noopener">
+            <span class="home-community-title">티르의 토끼굴</span>
             <span class="home-community-meta">
-              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
-              <span class="home-community-source">루리웹</span>
-              <span class="home-community-channel">· 어쌔신 크리드: 섀도우스</span>
-            </span>
-          </a>
-        
-          <a class="home-community-item" href="https://gall.dcinside.com/board/view/?id=dcbest&no=385536&_dcbest=1&page=1" target="_blank" rel="noopener">
-            <span class="home-community-title">잘생긴 남자가 사진을 찍어달라고 한다면?</span>
-            <span class="home-community-meta">
-              <img src="https://www.google.com/s2/favicons?domain=dcinside.com&sz=32" alt="">
-              <span class="home-community-source">디시인사이드</span>
-              <span class="home-community-channel">· 이갤</span>
-            </span>
-          </a>
-        </div>
-          <div class="home-community-column">
-          <a class="home-community-item" href="https://bbs.ruliweb.com/market/board/1020/read/99825" target="_blank" rel="noopener">
-            <span class="home-community-title">[쿠팡] 매운새우깡 400g (3,880원 / 무배)</span>
-            <span class="home-community-meta">
-              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
-              <span class="home-community-source">루리웹</span>
-              
-            </span>
-          </a>
-        
-          <a class="home-community-item" href="https://bbs.ruliweb.com/best/board/185438/read/1392782?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
-            <span class="home-community-title">삐삐쀼쀼 - 티파티를 습격한 아리스.jpg</span>
-            <span class="home-community-meta">
-              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
-              <span class="home-community-source">루리웹</span>
-              
+              <img src="https://www.google.com/s2/favicons?domain=arca.live&sz=32" alt="">
+              <span class="home-community-source">아카라이브</span>
+              <span class="home-community-channel">· 브라운더스트2</span>
             </span>
           </a>
         
@@ -1064,12 +1027,22 @@
             </span>
           </a>
         
-          <a class="home-community-item" href="https://arca.live/b/live/155702178?p=1" target="_blank" rel="noopener">
-            <span class="home-community-title">베누스 2단 클리어 했습니다 ㅎㅎㅎ</span>
+          <a class="home-community-item" href="https://bbs.ruliweb.com/best/board/186630/read/2551976?m=game" target="_blank" rel="noopener">
+            <span class="home-community-title">세번째 선물상자!</span>
             <span class="home-community-meta">
-              <img src="https://www.google.com/s2/favicons?domain=arca.live&sz=32" alt="">
-              <span class="home-community-source">아카라이브</span>
-              <span class="home-community-channel">· 던전앤파이터</span>
+              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
+              <span class="home-community-source">루리웹</span>
+              <span class="home-community-channel">· 어쌔신 크리드: 섀도우스</span>
+            </span>
+          </a>
+        </div>
+          <div class="home-community-column">
+          <a class="home-community-item" href="https://bbs.ruliweb.com/market/board/1020/read/99826" target="_blank" rel="noopener">
+            <span class="home-community-title">[H2mall]2025년 H2몰 프로모션 안내</span>
+            <span class="home-community-meta">
+              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
+              <span class="home-community-source">루리웹</span>
+              <span class="home-community-channel">· 유저 예판 핫딜 뽐뿌 게시판</span>
             </span>
           </a>
         
@@ -1079,6 +1052,33 @@
               <img src="https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32" alt="">
               <span class="home-community-source">인벤</span>
               <span class="home-community-channel">· 아이온2</span>
+            </span>
+          </a>
+        
+          <a class="home-community-item" href="https://bbs.ruliweb.com/best/board/185438/read/1392782?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+            <span class="home-community-title">삐삐쀼쀼 - 티파티를 습격한 아리스.jpg</span>
+            <span class="home-community-meta">
+              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
+              <span class="home-community-source">루리웹</span>
+              <span class="home-community-channel">· 블루 아카이브</span>
+            </span>
+          </a>
+        
+          <a class="home-community-item" href="https://arca.live/b/live/155702178?p=1" target="_blank" rel="noopener">
+            <span class="home-community-title">베누스 2단 클리어 했습니다 ㅎㅎㅎ</span>
+            <span class="home-community-meta">
+              <img src="https://www.google.com/s2/favicons?domain=arca.live&sz=32" alt="">
+              <span class="home-community-source">아카라이브</span>
+              <span class="home-community-channel">· 던전앤파이터</span>
+            </span>
+          </a>
+        
+          <a class="home-community-item" href="https://gall.dcinside.com/board/view/?id=dcbest&no=385536&_dcbest=1&page=1" target="_blank" rel="noopener">
+            <span class="home-community-title">잘생긴 남자가 사진을 찍어달라고 한다면?</span>
+            <span class="home-community-meta">
+              <img src="https://www.google.com/s2/favicons?domain=dcinside.com&sz=32" alt="">
+              <span class="home-community-source">디시인사이드</span>
+              <span class="home-community-channel">· 이갤</span>
             </span>
           </a>
         </div>
@@ -1384,12 +1384,12 @@
             </span>
           </a>
         
-          <a class="home-community-item" href="https://bbs.ruliweb.com/market/board/1020/read/99825" target="_blank" rel="noopener">
-            <span class="home-community-title">[쿠팡] 매운새우깡 400g (3,880원 / 무배)</span>
+          <a class="home-community-item" href="https://bbs.ruliweb.com/market/board/1020/read/99826" target="_blank" rel="noopener">
+            <span class="home-community-title">[H2mall]2025년 H2몰 프로모션 안내</span>
             <span class="home-community-meta">
               <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
               <span class="home-community-source">루리웹</span>
-              
+              <span class="home-community-channel">· 유저 예판 핫딜 뽐뿌 게시판</span>
             </span>
           </a>
         
@@ -1398,7 +1398,7 @@
             <span class="home-community-meta">
               <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="">
               <span class="home-community-source">루리웹</span>
-              
+              <span class="home-community-channel">· 블루 아카이브</span>
             </span>
           </a>
         
@@ -1604,7 +1604,7 @@
             <a class="home-video-card home-video-card-main" href="https://chzzk.naver.com/live/7ce8032370ac5121dcabce7bad375ced" target="_blank" rel="noopener">
               <div class="home-video-card-thumb">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26453996/live/15950525/record/47682727/thumbnail/image_480.jpg" alt="" loading="lazy">
-                <span class="home-video-live">🔴 LIVE 8,951</span>
+                <span class="home-video-live">🔴 LIVE 8,789</span>
               </div>
               <div class="home-video-card-info">
                 <div class="home-video-card-title">총쏴서  중산층 되는 게임 </div>
@@ -1615,7 +1615,7 @@
               <a class="home-video-card home-video-card-sub" href="https://chzzk.naver.com/live/45e71a76e949e16a34764deb962f9d9f" target="_blank" rel="noopener">
                 <div class="home-video-card-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27314095/live/15946373/record/47674724/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live">🔴 3,111</span>
+                  <span class="home-video-live">🔴 3,125</span>
                 </div>
                 <div class="home-video-card-info">
                   <div class="home-video-card-title">겐이치로 잡으로 감니다 </div>
@@ -1629,7 +1629,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/458f6ec20b034f49e0fc6d03921646d2" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26452270/live/15955178/record/47688801/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 1,872</span>
+                  <span class="home-video-live-sm">🔴 1,877</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">[서새봄] 산나비 무료DLC ‘귀신씌인 날’😺</div>
@@ -1640,7 +1640,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/ec30975bd41d3179fe7734ddbf760acb" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30918390/live/15955200/record/47688824/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 822</span>
+                  <span class="home-video-live-sm">🔴 811</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">치카는 바보야.. w.씨랙 너불 남봉 빅헤드</div>
@@ -1651,7 +1651,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/bf4df7913fcc6c4bd0932a37310a761f" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/15956912/record/47690789/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 770</span>
+                  <span class="home-video-live-sm">🔴 751</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">수요일 타르코프 씨불카</div>
@@ -1662,7 +1662,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/af3323d30e11ae42c39d7203c7e07fa2" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27370372/live/15953482/record/47686854/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 749</span>
+                  <span class="home-video-live-sm">🔴 773</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">씨불카 타르코프</div>
@@ -1673,7 +1673,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/a0e26a105c3b5ac212d5e0ca40c5c747" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26592429/live/15956296/record/47690110/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 552</span>
+                  <span class="home-video-live-sm">🔴 564</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">오랜만에 솔로랭크</div>
@@ -1684,7 +1684,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/0a0a0b83c6af289507ef57a5f3d623c0" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/15946757/record/47675332/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 380</span>
+                  <span class="home-video-live-sm">🔴 377</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">증바람</div>
@@ -1695,7 +1695,7 @@
               <a class="home-video-item" href="https://chzzk.naver.com/live/8c0a733110437062e1a1381706312c80" target="_blank" rel="noopener">
                 <div class="home-video-item-thumb">
                   <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26705458/live/15953428/record/47686793/thumbnail/image_480.jpg" alt="" loading="lazy">
-                  <span class="home-video-live-sm">🔴 259</span>
+                  <span class="home-video-live-sm">🔴 268</span>
                 </div>
                 <div class="home-video-item-info">
                   <div class="home-video-item-title">자기전 잠시 숙제</div>
@@ -3634,11 +3634,11 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/market/board/1020/read/99825" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/market/board/1020/read/99826" target="_blank" rel="noopener">
         <span class="news-num">2</span>
         <div class="news-content">
-          <span class="news-title">[쿠팡] 매운새우깡 400g (3,880원 / 무배)</span>
-          <div class="news-tags"><span class="community-tag source-tag source-ruliweb">루리웹</span></div>
+          <span class="news-title">[H2mall]2025년 H2몰 프로모션 안내</span>
+          <div class="news-tags"><span class="community-tag source-tag source-ruliweb">루리웹</span><span class="community-tag channel-tag">유저 예판 핫딜 뽐뿌 게시판</span></div>
         </div>
       </a>
     
@@ -3646,7 +3646,7 @@
         <span class="news-num">3</span>
         <div class="news-content">
           <span class="news-title">삐삐쀼쀼 - 티파티를 습격한 아리스.jpg</span>
-          <div class="news-tags"><span class="community-tag source-tag source-ruliweb">루리웹</span></div>
+          <div class="news-tags"><span class="community-tag source-tag source-ruliweb">루리웹</span><span class="community-tag channel-tag">블루 아카이브</span></div>
         </div>
       </a>
     
@@ -5391,7 +5391,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">연말의 기적 | 멸망전 EP.23</div>
                 <div class="youtube-channel">클리드</div>
-                <div class="youtube-views">조회수 173,023회</div>
+                <div class="youtube-views">조회수 173,197회</div>
               </div>
             </a>
           
@@ -5403,7 +5403,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">"세주아니 대가리 강타 사건" 아니 이게 어떻게 또 나오나요!!【멸망전 Ep. 15】</div>
                 <div class="youtube-channel">이상호</div>
-                <div class="youtube-views">조회수 214,758회</div>
+                <div class="youtube-views">조회수 214,964회</div>
               </div>
             </a>
           
@@ -5415,7 +5415,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">멸망전 4강 진출까지 단 한 걸음.. 승자전에서 꺼낸 조커픽?!｜멸망전 본선 승자전</div>
                 <div class="youtube-channel">저라뎃 JUSTLIKETHAT</div>
-                <div class="youtube-views">조회수 226,291회</div>
+                <div class="youtube-views">조회수 226,343회</div>
               </div>
             </a>
           
@@ -5439,7 +5439,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">무패 전승의 그림자 군도 출격</div>
                 <div class="youtube-channel">잡상싱</div>
-                <div class="youtube-views">조회수 118,937회</div>
+                <div class="youtube-views">조회수 119,006회</div>
               </div>
             </a>
           
@@ -5451,7 +5451,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">[LIVE] 12월 2일 아이온2 업데이트 프리뷰 방송</div>
                 <div class="youtube-channel">AION2</div>
-                <div class="youtube-views">조회수 136,230회</div>
+                <div class="youtube-views">조회수 136,235회</div>
               </div>
             </a>
           
@@ -5463,7 +5463,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">그저 낙엽만 치울 뿐인데 왜 이렇게 빠져들지</div>
                 <div class="youtube-channel">우주하마</div>
-                <div class="youtube-views">조회수 287,369회</div>
+                <div class="youtube-views">조회수 287,442회</div>
               </div>
             </a>
           
@@ -5475,7 +5475,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">아 빨리 깨면 돈을 더 많이 준다고 ㅋㅋㅋㅋ(마인크래프트)</div>
                 <div class="youtube-channel">마플 마인크래프트 채널</div>
-                <div class="youtube-views">조회수 69,692회</div>
+                <div class="youtube-views">조회수 69,826회</div>
               </div>
             </a>
           
@@ -5499,7 +5499,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">봉쌤이 말아주는 현역 스쿼드..인데 이거 맞아?ㅋㅋㅋㅋㅋㅋㅋㅋㅋ</div>
                 <div class="youtube-channel">두치와뿌꾸</div>
-                <div class="youtube-views">조회수 67,914회</div>
+                <div class="youtube-views">조회수 67,962회</div>
               </div>
             </a>
           
@@ -5511,7 +5511,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">메이플키우기 : 고객님, 좋은 상품이 있어서요~ [팡이요,  메이플스토리 : 메이플키우기]</div>
                 <div class="youtube-channel">팡이요</div>
-                <div class="youtube-views">조회수 202,235회</div>
+                <div class="youtube-views">조회수 202,301회</div>
               </div>
             </a>
           
@@ -5595,7 +5595,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">[ 12. 3 live ] 리니지m : 오랜만입니다. 9검 케릭으로 돌아왔습니다. [ 수삼티비 ]</div>
                 <div class="youtube-channel">수삼티비</div>
-                <div class="youtube-views">조회수 77,378회</div>
+                <div class="youtube-views">조회수 77,515회</div>
               </div>
             </a>
           
@@ -5607,7 +5607,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">생태계 교란종 다람쥐</div>
                 <div class="youtube-channel">동수칸TV</div>
-                <div class="youtube-views">조회수 302,258회</div>
+                <div class="youtube-views">조회수 302,324회</div>
               </div>
             </a>
           
@@ -5643,7 +5643,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">대체 무슨 아이템을 만든 거임 라이엇.. 포지션 퀘스트 + 미친 신템들 인게임 정보</div>
                 <div class="youtube-channel">롤박사 해도리</div>
-                <div class="youtube-views">조회수 166,842회</div>
+                <div class="youtube-views">조회수 166,948회</div>
               </div>
             </a>
           
@@ -5667,7 +5667,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">쁘띠 제라스가 되는 "럼블 영웅 증강"</div>
                 <div class="youtube-channel">팔차선 [8LJAYWALKING]</div>
-                <div class="youtube-views">조회수 73,908회</div>
+                <div class="youtube-views">조회수 74,102회</div>
               </div>
             </a>
           
@@ -5691,7 +5691,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">당신은 브루저 사이온이라고 들어보셨나요? 👀</div>
                 <div class="youtube-channel">전략적죽음</div>
-                <div class="youtube-views">조회수 136,972회</div>
+                <div class="youtube-views">조회수 136,997회</div>
               </div>
             </a>
           
@@ -5751,7 +5751,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">1분동안 가만히 있었습니다</div>
                 <div class="youtube-channel">주키니TV</div>
-                <div class="youtube-views">조회수 137,583회</div>
+                <div class="youtube-views">조회수 137,622회</div>
               </div>
             </a>
           
@@ -5763,7 +5763,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">출시 1주일만에 리뷰 3000개가 극찬..."그냥 낚시하는 게임" 도파민 미쳤습니다;;;;</div>
                 <div class="youtube-channel">혜안</div>
-                <div class="youtube-views">조회수 94,821회</div>
+                <div class="youtube-views">조회수 95,028회</div>
               </div>
             </a>
           
@@ -5787,7 +5787,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">신규 시즌16 시작! 지금 초보자가 가장 따라하기 쉽고 강한 미친 꿀덱! 걍 말이 안됩니다 ㄷㄷㄷㄷ</div>
                 <div class="youtube-channel">전쓰트의 게임 채널 Junsst</div>
-                <div class="youtube-views">조회수 59,856회</div>
+                <div class="youtube-views">조회수 59,917회</div>
               </div>
             </a>
           
@@ -5799,7 +5799,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">레전드 이모티콘 떴네 ㅋㅋㅋ [클래시로얄] [June]</div>
                 <div class="youtube-channel">JUNE</div>
-                <div class="youtube-views">조회수 64,427회</div>
+                <div class="youtube-views">조회수 64,461회</div>
               </div>
             </a>
           
@@ -5811,7 +5811,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">사거리 125 원거리딜러..? 원딜 신지드로 게임 터트리는 방법 ㅁㅊㅋㅋ 비츠 장인초대석 [테스터훈]</div>
                 <div class="youtube-channel">테스터훈 TesterHoon</div>
-                <div class="youtube-views">조회수 131,659회</div>
+                <div class="youtube-views">조회수 131,694회</div>
               </div>
             </a>
           
@@ -5835,7 +5835,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">치지직컵 1일차 도파의시선</div>
                 <div class="youtube-channel">Official dopa</div>
-                <div class="youtube-views">조회수 294,660회</div>
+                <div class="youtube-views">조회수 294,728회</div>
               </div>
             </a>
           
@@ -5859,7 +5859,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">그만그만그만 괴롭혀주세욧.. [스텔라이브 롤 내전]</div>
                 <div class="youtube-channel">텐코 시부키 TENKO SHIBUKI</div>
-                <div class="youtube-views">조회수 54,135회</div>
+                <div class="youtube-views">조회수 54,215회</div>
               </div>
             </a>
           
@@ -5871,7 +5871,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">10년 전 늪지대｜랜덤무기전쟁</div>
                 <div class="youtube-channel">악어 유튜브</div>
-                <div class="youtube-views">조회수 49,828회</div>
+                <div class="youtube-views">조회수 49,883회</div>
               </div>
             </a>
           
@@ -5895,7 +5895,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">온갖 0티어 스킨들만 다 때려 박은 "iZu 스킨 세트" 전격 리뷰</div>
                 <div class="youtube-channel">버니버니</div>
-                <div class="youtube-views">조회수 54,624회</div>
+                <div class="youtube-views">조회수 54,639회</div>
               </div>
             </a>
           
@@ -5919,7 +5919,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">아이온2 무과금을 위한 갓패치네요... 던전 다쉬워짐 ㄷㄷ / 12.03 업데이트 상세리뷰</div>
                 <div class="youtube-channel">투즈TV</div>
-                <div class="youtube-views">조회수 44,711회</div>
+                <div class="youtube-views">조회수 44,743회</div>
               </div>
             </a>
           
@@ -5943,7 +5943,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">뻑가 복귀 레전드 ㅋㅋㅋㅋㅋㅋ</div>
                 <div class="youtube-channel">가재맨</div>
-                <div class="youtube-views">조회수 72,597회</div>
+                <div class="youtube-views">조회수 72,962회</div>
               </div>
             </a>
           
@@ -5979,7 +5979,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">클래시로얄에 출시될 뻔한 카드에 대해 알아보자</div>
                 <div class="youtube-channel">써니</div>
-                <div class="youtube-views">조회수 64,659회</div>
+                <div class="youtube-views">조회수 64,688회</div>
               </div>
             </a>
           
@@ -6001,7 +6001,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">총쏴서  중산층 되는 게임 </div>
                 <div class="youtube-channel">풍월량</div>
-                <div class="youtube-views">시청자 8,951명</div>
+                <div class="youtube-views">시청자 8,789명</div>
               </div>
             </a>
           
@@ -6014,7 +6014,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">겐이치로 잡으로 감니다 </div>
                 <div class="youtube-channel">아야츠노 유니</div>
-                <div class="youtube-views">시청자 3,111명</div>
+                <div class="youtube-views">시청자 3,125명</div>
               </div>
             </a>
           
@@ -6027,7 +6027,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">[서새봄] 산나비 무료DLC ‘귀신씌인 날’😺</div>
                 <div class="youtube-channel">서새봄냥 SEBOM</div>
-                <div class="youtube-views">시청자 1,872명</div>
+                <div class="youtube-views">시청자 1,877명</div>
               </div>
             </a>
           
@@ -6040,7 +6040,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">치카는 바보야.. w.씨랙 너불 남봉 빅헤드</div>
                 <div class="youtube-channel">이로나묭 치카</div>
-                <div class="youtube-views">시청자 822명</div>
+                <div class="youtube-views">시청자 811명</div>
               </div>
             </a>
           
@@ -6053,7 +6053,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">수요일 타르코프 씨불카</div>
                 <div class="youtube-channel">씨랙</div>
-                <div class="youtube-views">시청자 770명</div>
+                <div class="youtube-views">시청자 751명</div>
               </div>
             </a>
           
@@ -6066,7 +6066,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">씨불카 타르코프</div>
                 <div class="youtube-channel">너불</div>
-                <div class="youtube-views">시청자 749명</div>
+                <div class="youtube-views">시청자 773명</div>
               </div>
             </a>
           
@@ -6079,7 +6079,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">오랜만에 솔로랭크</div>
                 <div class="youtube-channel">캬하하 이석현</div>
-                <div class="youtube-views">시청자 552명</div>
+                <div class="youtube-views">시청자 564명</div>
               </div>
             </a>
           
@@ -6092,7 +6092,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">증바람</div>
                 <div class="youtube-channel">멀럭킹</div>
-                <div class="youtube-views">시청자 380명</div>
+                <div class="youtube-views">시청자 377명</div>
               </div>
             </a>
           
@@ -6105,7 +6105,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">자기전 잠시 숙제</div>
                 <div class="youtube-channel">비행돼지</div>
-                <div class="youtube-views">시청자 259명</div>
+                <div class="youtube-views">시청자 268명</div>
               </div>
             </a>
           
@@ -6118,7 +6118,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">스토리퀘깰라면 라이트키퍼 만나야해 ㅠ !VPN</div>
                 <div class="youtube-channel">한스토리</div>
-                <div class="youtube-views">시청자 248명</div>
+                <div class="youtube-views">시청자 243명</div>
               </div>
             </a>
           
@@ -6131,7 +6131,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">🟡아이온2🟣 신섭 포에타 검성 어비스 사냥 가실 길드원 모집합니다 길드이름: 간장</div>
                 <div class="youtube-channel">간장ㅎ</div>
-                <div class="youtube-views">시청자 241명</div>
+                <div class="youtube-views">시청자 244명</div>
               </div>
             </a>
           
@@ -6144,72 +6144,72 @@
               <div class="youtube-info">
                 <div class="youtube-title">[임모탈k] 중세전쟁마운트앤블레이드2 해상전 DLC- 노드족으로 </div>
                 <div class="youtube-channel">immortalk</div>
-                <div class="youtube-views">시청자 230명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/15945753/record/47673454/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">13</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">라이엇윈터이벤트상품타서부자되기</div>
-                <div class="youtube-channel">청묘</div>
-                <div class="youtube-views">시청자 119명</div>
+                <div class="youtube-views">시청자 236명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/962abb83cc2513309966365813fdd288" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28580123/live/15957732/record/47691767/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">14</span>
+                <span class="youtube-rank ">13</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">레전드 생활패턴 발생</div>
                 <div class="youtube-channel">자연2</div>
-                <div class="youtube-views">시청자 190명</div>
+                <div class="youtube-views">시청자 194명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/8a068e9ef9120a1a613b521b9fb44c42" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27767366/live/15957841/record/47692347/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">15</span>
+                <span class="youtube-rank ">14</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">안녕하세용 / 플레3 59점 시작</div>
                 <div class="youtube-channel">강선종</div>
-                <div class="youtube-views">시청자 185명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/ff7c40f675a71d34807a75c14c3c71ef" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42128538/live/15953918/record/47687341/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">16</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">롤,롤체,배그,소통</div>
-                <div class="youtube-channel">나홀로와칭</div>
-                <div class="youtube-views">시청자 13명</div>
+                <div class="youtube-views">시청자 193명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/487cc0278bdeb92a11be7530951668a6" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/32762182/live/15953151/record/47686458/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">17</span>
+                <span class="youtube-rank ">15</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">목요일 ^ㅅ^</div>
                 <div class="youtube-channel">김디삼</div>
-                <div class="youtube-views">시청자 160명</div>
+                <div class="youtube-views">시청자 158명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/15945753/record/47673454/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">16</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">라이엇윈터이벤트상품타서부자되기</div>
+                <div class="youtube-channel">청묘</div>
+                <div class="youtube-views">시청자 109명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/ff7c40f675a71d34807a75c14c3c71ef" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42128538/live/15953918/record/47687341/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">17</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">롤,롤체,배그,소통</div>
+                <div class="youtube-channel">나홀로와칭</div>
+                <div class="youtube-views">시청자 10명</div>
               </div>
             </a>
           
@@ -6222,59 +6222,59 @@
               <div class="youtube-info">
                 <div class="youtube-title">[노강퇴DAY] 탱커 전양 5일차.. 계속 팀이 저에게 폐드립하고 정치합니다 내 잘못입니까?*미션 초환영* 삐라 레전드 한정판 신상 키캡 셋트&룰루 키링 뽑기 OPEN!</div>
                 <div class="youtube-channel">삐라입니다</div>
-                <div class="youtube-views">시청자 94명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/8df0e2fd888d52ed10562f2cdb9fa6e0" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29576492/live/15957683/record/47691652/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">19</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">먼가 탈콥 오랜만에 하는 거 같다?? [PVP]</div>
-                <div class="youtube-channel">조브킴</div>
-                <div class="youtube-views">시청자 17명</div>
+                <div class="youtube-views">시청자 96명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/a67d041fa77e5b8c0d6cc9ddb4b2684f" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28234498/live/15957816/record/47692276/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">20</span>
+                <span class="youtube-rank ">19</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">[드롭스] 잔잔하니 틀어놓기 좋은 이터 이렘 솔랭 </div>
                 <div class="youtube-channel">만두만만세</div>
-                <div class="youtube-views">시청자 133명</div>
+                <div class="youtube-views">시청자 137명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/4cb41aa1c9b698b138bc865c3323fe2f" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27949829/live/15957628/record/47691587/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">21</span>
+                <span class="youtube-rank ">20</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">신병</div>
                 <div class="youtube-channel">치민22</div>
-                <div class="youtube-views">시청자 124명</div>
+                <div class="youtube-views">시청자 122명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/18310fe936b08c9a92fa3f60bf209f0c" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27748660/live/15946949/record/47675658/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">22</span>
+                <span class="youtube-rank ">21</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">1650살성인데 공격력 1300맞습니까? </div>
                 <div class="youtube-channel">쩡니예</div>
                 <div class="youtube-views">시청자 118명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/8df0e2fd888d52ed10562f2cdb9fa6e0" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29576492/live/15957683/record/47691652/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">22</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">먼가 탈콥 오랜만에 하는 거 같다?? [PVP]</div>
+                <div class="youtube-channel">조브킴</div>
+                <div class="youtube-views">시청자 18명</div>
               </div>
             </a>
           
@@ -6288,7 +6288,7 @@
                 <div class="youtube-title">9000시간 살인마 눈 돌아가게 하기 장인
 ^+^ </div>
                 <div class="youtube-channel">KKawk</div>
-                <div class="youtube-views">시청자 106명</div>
+                <div class="youtube-views">시청자 100명</div>
               </div>
             </a>
           
@@ -6301,7 +6301,7 @@
               <div class="youtube-info">
                 <div class="youtube-title">🐹으럇으럇 (´▽`ʃ♡ƪ)</div>
                 <div class="youtube-channel">마우쥐</div>
-                <div class="youtube-views">시청자 100명</div>
+                <div class="youtube-views">시청자 106명</div>
               </div>
             </a>
           
@@ -6314,93 +6314,53 @@
               <div class="youtube-info">
                 <div class="youtube-title">잠  줄이게 해버리는 대격변 아이온2!!  2500 시엘/마도성</div>
                 <div class="youtube-channel">선짱</div>
-                <div class="youtube-views">시청자 98명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/8c6d1ec2a40ab036a38c22516b6629e1" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29270959/live/15956582/record/47690427/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">26</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">🐹 새벽형 햄서타</div>
-                <div class="youtube-channel">갱스터햄스타</div>
-                <div class="youtube-views">시청자 20명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/0f2a0b9b7495f9541cd2a15463ef214e" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30048398/live/15954080/record/47687531/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">27</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">캬
-</div>
-                <div class="youtube-channel">조딱</div>
-                <div class="youtube-views">시청자 22명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/f1b0ed04cf4cce137ffb4a65deb583cf" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27474542/live/15957055/record/47690947/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">28</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">너무피곤한 나머지 늦잠잤네)일단 로아 배럭들 트라이 배템값벌자</div>
-                <div class="youtube-channel">찡 어</div>
-                <div class="youtube-views">시청자 13명</div>
+                <div class="youtube-views">시청자 95명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/ca76c17a026bb41e6ff9e3fc5641de63" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27354054/live/15950765/record/47683218/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">29</span>
+                <span class="youtube-rank ">26</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">시엘 만세 ~^^</div>
                 <div class="youtube-channel">새 담</div>
-                <div class="youtube-views">시청자 87명</div>
+                <div class="youtube-views">시청자 89명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/d13cbf1f806ed3083daf86f741bf2ada" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27959852/live/15954589/record/47688131/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">30</span>
+                <span class="youtube-rank ">27</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">일퀘의 악마</div>
                 <div class="youtube-channel">잔악무도유관우</div>
-                <div class="youtube-views">시청자 78명</div>
+                <div class="youtube-views">시청자 82명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/211b7773b3ee7556f9392cab2e026a6c" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27784890/live/15957584/record/47691539/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">31</span>
+                <span class="youtube-rank ">28</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">실버 ~ 다이아 가보기  [106일차] 골1</div>
                 <div class="youtube-channel">함성티비</div>
-                <div class="youtube-views">시청자 76명</div>
+                <div class="youtube-views">시청자 78명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/8da2cbae1c627fab3477abfdc9e119bc" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27755028/live/15950363/record/47682365/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">32</span>
+                <span class="youtube-rank ">29</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
@@ -6413,52 +6373,131 @@
             <a class="youtube-card" href="https://chzzk.naver.com/live/4a6c23fb40ac7ed997fe67d8abab083a" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28094191/live/15957454/record/47691402/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">33</span>
+                <span class="youtube-rank ">30</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">틱톡인플루언서 췽췽언니 연운상륙</div>
                 <div class="youtube-channel">난귝</div>
-                <div class="youtube-views">시청자 75명</div>
-              </div>
-            </a>
-          
-            <a class="youtube-card" href="https://chzzk.naver.com/live/fed16392fe566cc0cd16bcae407fc3f0" target="_blank">
-              <div class="youtube-thumbnail">
-                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28315320/live/15957253/record/47691188/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">34</span>
-                <span class="live-badge">LIVE</span>
-              </div>
-              <div class="youtube-info">
-                <div class="youtube-title">늙기 싫다</div>
-                <div class="youtube-channel">조짐승</div>
-                <div class="youtube-views">시청자 7명</div>
+                <div class="youtube-views">시청자 73명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/efe7af7e2626286a1240f00dc865f21e" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26700393/live/15951384/record/47684127/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">35</span>
+                <span class="youtube-rank ">31</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title"> 크로노스 뉴 던 엔딩볼거임 </div>
                 <div class="youtube-channel">어스키</div>
-                <div class="youtube-views">시청자 78명</div>
+                <div class="youtube-views">시청자 83명</div>
               </div>
             </a>
           
             <a class="youtube-card" href="https://chzzk.naver.com/live/a64228a96e7990db2409ac6eafefc40a" target="_blank">
               <div class="youtube-thumbnail">
                 <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30602939/live/15957689/record/47691662/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-                <span class="youtube-rank ">36</span>
+                <span class="youtube-rank ">32</span>
                 <span class="live-badge">LIVE</span>
               </div>
               <div class="youtube-info">
                 <div class="youtube-title">공과 방의 조화</div>
                 <div class="youtube-channel">체리쉬1</div>
                 <div class="youtube-views">시청자 66명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/468b76873773c16ecfc5c2b2541f919c" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26495046/live/15957034/record/47690925/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">33</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">김루윈의 빌지워터 밸류 이론(유레카!)</div>
+                <div class="youtube-channel">김루윈</div>
+                <div class="youtube-views">시청자 83명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/63f96097d73a7a4acc33a56feea66fac" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27761405/live/15957847/record/47692374/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">34</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">no pain, no game</div>
+                <div class="youtube-channel">루미널</div>
+                <div class="youtube-views">시청자 82명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/87e1e3aeae3492244be2136e204b6f1a" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27301645/live/15951309/record/47684026/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">35</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">위아더 월드 아이온[지켈]</div>
+                <div class="youtube-channel">합랑</div>
+                <div class="youtube-views">시청자 65명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/55e243bd868e55adf3524c85f8db51b5" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26479658/live/15957923/record/47692592/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">36</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">⚡신규 DLC 천통직전⚡
+</div>
+                <div class="youtube-channel">개복어</div>
+                <div class="youtube-views">시청자 82명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/bbbe06569e9685685217825ba53765c6" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26734243/live/15946912/record/47675595/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">37</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">?? : 시공에서 어포 벌어서 회랑에서 '이겨주는데' 게임 망했네</div>
+                <div class="youtube-channel">스테로이드</div>
+                <div class="youtube-views">시청자 66명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/3a24ba3160f18d5eeb2c71cc6e7889d8" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27327832/live/15957618/record/47691578/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">38</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">시즌 16 오픈런 // 23일까지 1등시 100만원</div>
+                <div class="youtube-channel">특한</div>
+                <div class="youtube-views">시청자 48명</div>
+              </div>
+            </a>
+          
+            <a class="youtube-card" href="https://chzzk.naver.com/live/ff3d21e476207187122a14be2df03f95" target="_blank">
+              <div class="youtube-thumbnail">
+                <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27755070/live/15951989/record/47684994/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+                <span class="youtube-rank ">39</span>
+                <span class="live-badge">LIVE</span>
+              </div>
+              <div class="youtube-info">
+                <div class="youtube-title">본계정 레이드 다 빼기 / 룰렛, 영도 상시 오픈</div>
+                <div class="youtube-channel">메타용</div>
+                <div class="youtube-views">시청자 50명</div>
               </div>
             </a>
           
