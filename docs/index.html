@@ -1296,8 +1296,8 @@
               <div class="home-card-title">모바일 랭킹</div>
               <div class="home-card-controls">
                 <div class="home-chart-toggle" id="homeChartTab">
-                  <button class="tab-btn small active" data-home-chart="grossing">매출</button>
-                  <button class="tab-btn small" data-home-chart="free">인기</button>
+                  <button class="tab-btn small active" data-home-chart="free">인기</button>
+                  <button class="tab-btn small" data-home-chart="grossing">매출</button>
                 </div>
                 <a href="#" class="home-card-more" data-goto="rankings">더보기 →</a>
               </div>
@@ -7005,7 +7005,7 @@
     });
 
     // 홈 모바일 랭킹 - 매출/인기 탭 전환
-    let homeCurrentChart = 'grossing';
+    let homeCurrentChart = 'free';
     let homeCurrentPlatform = 'ios';
     const homeChartTab = document.getElementById('homeChartTab');
     homeChartTab?.addEventListener('click', (e) => {
