@@ -2622,6 +2622,10 @@
 
     /* 뉴스: PC에서 2컬럼 그리드 + 선택 탭 맨 앞 */
     @media (min-width: 769px) {
+      #news .news-card {
+        padding: 0;
+      }
+
       #news .news-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2635,11 +2639,6 @@
         border-radius: var(--radius);
         border: 1px solid var(--border);
         overflow: hidden;
-        order: 1;
-      }
-
-      #news .news-panel.active {
-        order: 0;
       }
 
       #news .news-panel-header {
@@ -2665,11 +2664,11 @@
         background: transparent;
       }
 
-      #news .news-grid {
+      #news .news-list {
         display: flex;
         flex-direction: column;
-        gap: 0;
-        padding: 8px 0;
+        gap: 8px;
+        padding: 12px 16px;
       }
     }
 
@@ -2729,11 +2728,6 @@
         border-radius: var(--radius);
         border: 1px solid var(--border);
         overflow: hidden;
-        order: 1;
-      }
-
-      #community .news-panel.active {
-        order: 0;
       }
 
       #community .news-list {
@@ -2742,95 +2736,6 @@
         gap: 8px;
         padding: 12px 16px;
       }
-    }
-
-    /* 뉴스 2컬럼 그리드 (섬네일 카드) */
-    #news .news-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-flow: column;
-      grid-template-rows: repeat(10, auto);
-      gap: 12px 24px;
-    }
-
-    /* 뉴스 카드 아이템 스타일 */
-    .news-item-card {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 10px 12px;
-      background: var(--card);
-      border-radius: 8px;
-      text-decoration: none;
-      color: var(--text);
-      transition: background 0.2s;
-    }
-
-    .news-item-card:hover {
-      background: var(--hover-bg);
-    }
-
-    .news-item-card .news-num {
-      flex-shrink: 0;
-      width: 24px;
-      height: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: var(--font-badge-size);
-      font-weight: var(--font-badge-weight);
-      color: var(--text-secondary);
-      background: var(--hover-bg);
-      border-radius: 6px;
-    }
-
-    /* 뉴스 1-3위 하이라이트 (금/은/동) */
-    .news-item-card:nth-child(1) .news-num {
-      background: linear-gradient(135deg, #ffd700 0%, #ffed4a 100%);
-      color: #92400e;
-    }
-    .news-item-card:nth-child(2) .news-num {
-      background: linear-gradient(135deg, #c0c0c0 0%, #e5e5e5 100%);
-      color: #374151;
-    }
-    .news-item-card:nth-child(3) .news-num {
-      background: linear-gradient(135deg, #cd7f32 0%, #daa06d 100%);
-      color: #fff;
-    }
-
-    .news-item-card .news-thumb {
-      flex-shrink: 0;
-      width: 60px;
-      height: 40px;
-      object-fit: cover;
-      border-radius: 4px;
-      background: var(--bg);
-    }
-
-    .news-thumb-placeholder {
-      flex-shrink: 0;
-      width: 60px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--bg);
-      border-radius: 4px;
-      font-size: var(--font-heading-size);
-    }
-
-    .news-thumb-placeholder.hidden {
-      display: none;
-    }
-
-    .news-item-card .news-item-title {
-      flex: 1;
-      font-size: var(--font-body-size);
-      font-weight: var(--font-body-weight);
-      line-height: 1.4;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
     }
 
     /* 커뮤니티 1컬럼 리스트 (4그리드 레이아웃에 맞게) - 위에서 정의됨 */
@@ -2862,20 +2767,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 20px;
-      padding: 12px 20px;
-      border-radius: 12px;
-      background: var(--card-hover);
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
-    }
-
-    #news-inven .news-panel-header { background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%); box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3); }
-    #news-ruliweb .news-panel-header { background: linear-gradient(135deg, #059669 0%, #10b981 100%); box-shadow: 0 4px 10px rgba(5, 150, 105, 0.3); }
-    #news-gamemeca .news-panel-header { background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%); box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3); }
-    #news-thisisgame .news-panel-header { background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3); }
-
-    /* 커뮤니티 헤더 - 인사이트 스타일 (PC 4그리드) */
-    #community .news-panel-header {
       margin-bottom: 0;
       padding: 12px 16px;
       height: 48px;
@@ -2993,22 +2884,6 @@
         flex-shrink: 0;
       }
 
-      /* 뉴스 아이템 카드 - 태블릿 */
-      .news-item-card {
-        padding: 10px 12px;
-        gap: 10px;
-      }
-      .news-item-card .news-num {
-        width: 24px;
-        height: 24px;
-        font-size: var(--font-meta-size);
-      }
-      .news-item-card .news-thumb,
-      .news-thumb-placeholder {
-        width: 58px;
-        height: 38px;
-      }
-
       /* 뉴스/커뮤니티 탭 - 태블릿 전체 너비 */
       #newsTab,
       #communityTab {
@@ -3124,13 +2999,15 @@
       gap: 6px;
     }
 
-    /* 커뮤니티: 제목 아래 태그 세로 배치 */
+    /* 뉴스/커뮤니티: 제목 아래 태그 세로 배치 */
+    #news .news-content,
     #community .news-content {
       flex-direction: column;
       align-items: flex-start;
       gap: 4px;
     }
 
+    #news .news-title,
     #community .news-title {
       display: block;
       width: 100%;
@@ -4014,7 +3891,7 @@
       .header-top { flex-direction: column; align-items: flex-start; gap: 8px; }
       .report-date { text-align: left; }
       /* 뉴스/커뮤니티 그리드 - 모바일 1컬럼 리스트 */
-      #news .news-grid,
+      #news .news-list,
       #community .news-list {
         display: flex !important;
         flex-direction: column !important;
@@ -4108,25 +3985,6 @@
       #news .news-container,
       #community .news-container { padding: 0 4px !important; }
       .news-favicon { width: 14px; height: 14px; }
-
-      /* 뉴스 아이템 카드 - 모바일 */
-      .news-item-card {
-        padding: 12px 10px !important;
-        gap: 10px !important;
-      }
-      .news-item-card .news-num {
-        width: 24px !important;
-        height: 24px !important;
-        font-size: var(--font-meta-size) !important;
-      }
-      .news-item-card .news-thumb,
-      .news-thumb-placeholder {
-        width: 56px !important;
-        height: 38px !important;
-      }
-      .news-item-card .news-item-title {
-        font-size: var(--font-body-size) !important;
-      }
 
       /* 순위 - 통일된 크기 */
       .rank-num { width: 22px; height: 22px; font-size: var(--font-xs-size); }
@@ -4246,24 +4104,6 @@
         display: none;
       }
 
-      /* 뉴스 아이템 카드 - 초소형 모바일 */
-      .news-item-card {
-        padding: 10px 8px !important;
-        gap: 8px !important;
-      }
-      .news-item-card .news-num {
-        width: 22px !important;
-        height: 22px !important;
-        font-size: var(--font-xs-size) !important;
-      }
-      .news-item-card .news-thumb,
-      .news-thumb-placeholder {
-        width: 48px !important;
-        height: 32px !important;
-      }
-      .news-item-card .news-item-title {
-        font-size: var(--font-body-size) !important;
-      }
       /* 360px - 모든 요소 좌우 6px 직접 설정 */
       .home-card-header {
         padding: 8px 6px !important;
