@@ -56,6 +56,15 @@
   <link rel="preconnect" href="https://i.ytimg.com">
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
   <link rel="preconnect" href="https://www.google.com">
+  <!-- Prefetch 다른 페이지 미리 로드 -->
+  <link rel="prefetch" href="/insight/" as="document">
+  <link rel="prefetch" href="/news/" as="document">
+  <link rel="prefetch" href="/community/" as="document">
+  <link rel="prefetch" href="/youtube/" as="document">
+  <link rel="prefetch" href="/rankings/" as="document">
+  <link rel="prefetch" href="/steam/" as="document">
+  <link rel="prefetch" href="/upcoming/" as="document">
+  <link rel="prefetch" href="/metacritic/" as="document">
   <!-- Font Preload -->
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -680,18 +689,18 @@
               <a href="https://bbs.ruliweb.com/best/game?orderby=recommend&range=24h" target="_blank" class="news-more-link">더보기 →</a>
             </div>
             <div class="news-list">
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184778/read/104708?m=game" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184778/read/104713?m=game" target="_blank" rel="noopener">
         <span class="news-num">1</span>
         <div class="news-content">
-          <span class="news-title">동료 빠른랩업 Darkhall 님글 보충.</span>
+          <span class="news-title">유닛합금과 기타대. 그리고 닌자바이크 백팩과 그 외. 간략한 빌드정리</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/market/board/1020/read/99869" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/market/board/1020/read/99828" target="_blank" rel="noopener">
         <span class="news-num">2</span>
         <div class="news-content">
-          <span class="news-title">[알리익스프레스] 12월 연말 감사제 (12월8일(월)~12월14일(일))</span>
+          <span class="news-title">[네이버]MCHOSE V9 PRO블루투스 7.1채널 헤드셋(30,980원/무료)</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -974,6 +983,25 @@
       });
     });
   </script>
+  
+<script>
+(function() {
+  const prefetched = new Set();
+  document.querySelectorAll('a.nav-item').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      const href = link.getAttribute('href');
+      if (href && !prefetched.has(href)) {
+        prefetched.add(href);
+        const prefetch = document.createElement('link');
+        prefetch.rel = 'prefetch';
+        prefetch.href = href;
+        prefetch.as = 'document';
+        document.head.appendChild(prefetch);
+      }
+    }, { passive: true });
+  });
+})();
+</script>
   
 <script>
 (function() {
