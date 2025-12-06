@@ -56,15 +56,9 @@
   <link rel="preconnect" href="https://i.ytimg.com">
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
   <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 다른 페이지 미리 로드 -->
-  <link rel="prefetch" href="/insight/" as="document">
+  <!-- Prefetch 인접 페이지 미리 로드 (동적) -->
   <link rel="prefetch" href="/news/" as="document">
   <link rel="prefetch" href="/community/" as="document">
-  <link rel="prefetch" href="/youtube/" as="document">
-  <link rel="prefetch" href="/rankings/" as="document">
-  <link rel="prefetch" href="/steam/" as="document">
-  <link rel="prefetch" href="/upcoming/" as="document">
-  <link rel="prefetch" href="/metacritic/" as="document">
   <!-- Font Preload -->
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -1005,12 +999,17 @@ AGF 2025 부스 운영과 한정 캐릭터·스킨 판매가 겹치며 굿즈·�
   
 <script>
 (function() {
+  // 이미 정적으로 prefetch된 링크 수집
   const prefetched = new Set();
+  document.querySelectorAll('link[rel="prefetch"]').forEach(link => {
+    prefetched.add(link.href);
+  });
   document.querySelectorAll('a.nav-item').forEach(link => {
     link.addEventListener('mouseenter', () => {
       const href = link.getAttribute('href');
-      if (href && !prefetched.has(href)) {
-        prefetched.add(href);
+      const fullHref = new URL(href, window.location.origin).href;
+      if (href && !prefetched.has(fullHref)) {
+        prefetched.add(fullHref);
         const prefetch = document.createElement('link');
         prefetch.rel = 'prefetch';
         prefetch.href = href;
