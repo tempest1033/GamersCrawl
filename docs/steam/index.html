@@ -55,8 +55,13 @@
   <link rel="preconnect" href="https://i.ytimg.com">
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
   <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 인접 페이지 미리 로드 (동적) -->
+  <!-- Prefetch 다른 페이지 미리 로드 -->
+  <link rel="prefetch" href="/insight/" as="document">
+  <link rel="prefetch" href="/news/" as="document">
+  <link rel="prefetch" href="/community/" as="document">
+  <link rel="prefetch" href="/youtube/" as="document">
   <link rel="prefetch" href="/rankings/" as="document">
+  <link rel="prefetch" href="/steam/" as="document">
   <link rel="prefetch" href="/upcoming/" as="document">
   <link rel="prefetch" href="/metacritic/" as="document">
   <!-- Font Preload -->
@@ -159,8 +164,8 @@
       
       <div class="steam-controls">
         <div class="tab-group" id="steamTab">
-          <button class="tab-btn steam-btn active" data-steam="mostplayed"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMElEQVR4Ae2XA4wdQRzGf7Nt27Zt27Zt27ZtJ7Ft27Zr+87kzeRl9+5m39v6JfPl92bmn/lnRgghhBBCCCGEEEL8D6SAytAKukN/GA+zYQ3shZNwG57DG/gEP+E3/AfpQBYoD7WhA/SFsTAH1sA+OA234Tm8gQ/wCb7AT/gNf+A/SAcyQ3moA52gH4yFObAa9sIpuA3P4TW8h4/wGb7AT/gFv+Ev/AfpQCYoD3WgM/SHsTAHVsNeOAm34Bk8h9fwDj7AR/gMX+ArfIPv8At+w1+QDmSCclAHukB/GAezYRXsgRNwC57BE3gBr+EdfICP8Ak+wxf4Ct/gO/yCv/AfpAOZoBzUha7QH8bDLFgJe+A4XIen8ARewCt4C+/gA3yET/AZvsAX+Abf4Sf8hr8gHcgEZaEOdIUBMA5mwgpYD4fgCtyGe/AQHsNTeAGv4C28hw/wET7BZ/gCX+EbfIef8Bv+gnQgE5SFutAVBsB4mAnLYR0chMtwC+7BQ3gMT+EFvILX8Bbewwf4CJ/gE3yGL/AVvsF3+Am/4S9IBzJBWagLXWEAjIdZsBzWwQG4BDfhLtyHR/AEnsELeAWv4S28hw/wET7BJ/gMX+ArfINv8AN+wW/4B9KBTFAWakNXGADjYBYshbWwH87BDbgL9+EhPIZn8AJewit4DW/hHbyHD/ARPsEn+Axf4Ct8hW/wHX7CL/gD/0A6kAnKQm3oCgNgHMyEpbAW9sM5uAF34d7fHoAQQgghhBBCCCHEf/wDM//YMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">최다 플레이</button>
-          <button class="tab-btn steam-btn" data-steam="topsellers"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMElEQVR4Ae2XA4wdQRzGf7Nt27Zt27Zt27ZtJ7Ft27Zr+87kzeRl9+5m39v6JfPl92bmn/lnRgghhBBCCCGEEEL8D6SAytAKukN/GA+zYQ3shZNwG57DG/gEP+E3/AfpQBYoD7WhA/SFsTAH1sA+OA234Tm8gQ/wCb7AT/gNf+A/SAcyQ3moA52gH4yFObAa9sIpuA3P4TW8h4/wGb7AT/gFv+Ev/AfpQCYoD3WgM/SHsTAHVsNeOAm34Bk8h9fwDj7AR/gMX+ArfIPv8At+w1+QDmSCclAHukB/GAezYRXsgRNwC57BE3gBr+EdfICP8Ak+wxf4Ct/gO/yCv/AfpAOZoBzUha7QH8bDLFgJe+A4XIen8ARewCt4C+/gA3yET/AZvsAX+Abf4Sf8hr8gHcgEZaEOdIUBMA5mwgpYD4fgCtyGe/AQHsNTeAGv4C28hw/wET7BZ/gCX+EbfIef8Bv+gnQgE5SFutAVBsB4mAnLYR0chMtwC+7BQ3gMT+EFvILX8Bbewwf4CJ/gE3yGL/AVvsF3+Am/4S9IBzJBWagLXWEAjIdZsBzWwQG4BDfhLtyHR/AEnsELeAWv4S28hw/wET7BJ/gMX+ArfINv8AN+wW/4B9KBTFAWakNXGADjYBYshbWwH87BDbgL9+EhPIZn8AJewit4DW/hHbyHD/ARPsEn+Axf4Ct8hW/wHX7CL/gD/0A6kAnKQm3oCgNgHMyEpbAW9sM5uAF34d7fHoAQQgghhBBCCCHEf/wDM//YMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">최고 판매</button>
+          <button class="tab-btn steam-btn active" data-steam="mostplayed"><img src="https://www.google.com/s2/favicons?domain=store.steampowered.com&sz=32" alt="" class="news-favicon">최다 플레이</button>
+          <button class="tab-btn steam-btn" data-steam="topsellers"><img src="https://www.google.com/s2/favicons?domain=store.steampowered.com&sz=32" alt="" class="news-favicon">최고 판매</button>
         </div>
       </div>
 
@@ -178,14 +183,14 @@
               <span class="steam-rank top1">1</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Counter-Strike 2</div>
                 <div class="steam-game-dev">Valve</div>
               </div>
             </div>
-            <div class="steam-col-players">1,075,093</div>
+            <div class="steam-col-players">959,629</div>
           </div>
         
           <div class="steam-table-row">
@@ -200,7 +205,7 @@
                 <div class="steam-game-dev">Valve</div>
               </div>
             </div>
-            <div class="steam-col-players">682,650</div>
+            <div class="steam-col-players">626,519</div>
           </div>
         
           <div class="steam-table-row">
@@ -208,14 +213,14 @@
               <span class="steam-rank top3">3</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1764755475" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1764755475" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">ARC Raiders</div>
                 <div class="steam-game-dev">Embark Studios</div>
               </div>
             </div>
-            <div class="steam-col-players">352,612</div>
+            <div class="steam-col-players">339,572</div>
           </div>
         
           <div class="steam-table-row">
@@ -223,34 +228,19 @@
               <span class="steam-rank ">4</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1764700003" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1764700003" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Battlefield™ 6</div>
                 <div class="steam-game-dev">Battlefield Studios</div>
               </div>
             </div>
-            <div class="steam-col-players">173,364</div>
+            <div class="steam-col-players">159,383</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
               <span class="steam-rank ">5</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1764817633" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">PUBG: BATTLEGROUNDS</div>
-                <div class="steam-game-dev">PUBG Corporation</div>
-              </div>
-            </div>
-            <div class="steam-col-players">156,085</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">6</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1761667247" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -260,7 +250,22 @@
                 <div class="steam-game-dev">Facepunch Studios</div>
               </div>
             </div>
-            <div class="steam-col-players">147,608</div>
+            <div class="steam-col-players">135,306</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">6</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1764817633" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">PUBG: BATTLEGROUNDS</div>
+                <div class="steam-game-dev">PUBG Corporation</div>
+              </div>
+            </div>
+            <div class="steam-col-players">125,074</div>
           </div>
         
           <div class="steam-table-row">
@@ -268,14 +273,14 @@
               <span class="steam-rank ">7</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3564740/53d45054f1168cc9cfdf6bb922f141f04aea7ca4/capsule_231x87.jpg?t=1763157550" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/53d45054f1168cc9cfdf6bb922f141f04aea7ca4/capsule_231x87.jpg?t=1763157550" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Where Winds Meet</div>
                 <div class="steam-game-dev">Everstone Studio</div>
               </div>
             </div>
-            <div class="steam-col-players">115,947</div>
+            <div class="steam-col-players">109,448</div>
           </div>
         
           <div class="steam-table-row">
@@ -290,7 +295,7 @@
                 <div class="steam-game-dev">NetEase Games</div>
               </div>
             </div>
-            <div class="steam-col-players">107,413</div>
+            <div class="steam-col-players">105,470</div>
           </div>
         
           <div class="steam-table-row">
@@ -305,27 +310,12 @@
                 <div class="steam-game-dev">Rockstar North</div>
               </div>
             </div>
-            <div class="steam-col-players">84,542</div>
+            <div class="steam-col-players">73,823</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
               <span class="steam-rank ">10</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2923300/6d550eab6dcbc01a824763edbafa9e439e625d5e/header.jpg?t=1748551280" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Banana</div>
-                <div class="steam-game-dev">Sky</div>
-              </div>
-            </div>
-            <div class="steam-col-players">79,247</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">11</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -335,12 +325,12 @@
                 <div class="steam-game-dev">RobTop Games</div>
               </div>
             </div>
-            <div class="steam-col-players">75,444</div>
+            <div class="steam-col-players">69,843</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">12</span>
+              <span class="steam-rank ">11</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/2e6c93c020fe13d09d8120bb9164ed7cb58f00c5/header.jpg?t=1759317272" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -350,7 +340,22 @@
                 <div class="steam-game-dev">Marcel Zurawka</div>
               </div>
             </div>
-            <div class="steam-col-players">72,887</div>
+            <div class="steam-col-players">68,167</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">12</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2923300/6d550eab6dcbc01a824763edbafa9e439e625d5e/header.jpg?t=1748551280" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Banana</div>
+                <div class="steam-game-dev">Sky</div>
+              </div>
+            </div>
+            <div class="steam-col-players">66,346</div>
           </div>
         
           <div class="steam-table-row">
@@ -365,7 +370,7 @@
                 <div class="steam-game-dev">Treyarch</div>
               </div>
             </div>
-            <div class="steam-col-players">68,518</div>
+            <div class="steam-col-players">65,283</div>
           </div>
         
           <div class="steam-table-row">
@@ -373,14 +378,14 @@
               <span class="steam-rank ">14</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/3dd81008e9c385caf68152450c22353f6a8abec9/capsule_231x87.jpg?t=1759825106" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622380/8ebc4260af27bc55ba8b88982fd7eb7f970d43c9/capsule_231x87.jpg?t=1764808750" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Baldur's Gate 3</div>
-                <div class="steam-game-dev">Larian Studios</div>
+                <div class="steam-game-name">ELDEN RING NIGHTREIGN</div>
+                <div class="steam-game-dev">FromSoftware, Inc.</div>
               </div>
             </div>
-            <div class="steam-col-players">67,227</div>
+            <div class="steam-col-players">63,055</div>
           </div>
         
           <div class="steam-table-row">
@@ -388,94 +393,19 @@
               <span class="steam-rank ">15</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2622380/8ebc4260af27bc55ba8b88982fd7eb7f970d43c9/capsule_231x87.jpg?t=1764808750" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/3dd81008e9c385caf68152450c22353f6a8abec9/capsule_231x87.jpg?t=1759825106" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">ELDEN RING NIGHTREIGN</div>
-                <div class="steam-game-dev">FromSoftware, Inc.</div>
+                <div class="steam-game-name">Baldur's Gate 3</div>
+                <div class="steam-game-dev">Larian Studios</div>
               </div>
             </div>
-            <div class="steam-col-players">65,958</div>
+            <div class="steam-col-players">62,520</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
               <span class="steam-rank ">16</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236390/4657df6d2a70784544239ebfc121542c00353a1f/capsule_231x87.jpg?t=1764357668" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">War Thunder</div>
-                <div class="steam-game-dev">Gaijin Entertainment</div>
-              </div>
-            </div>
-            <div class="steam-col-players">60,293</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">17</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/a318bd9affe8eee32984b18794b273c256e9b2d6/capsule_231x87.jpg?t=1753974947" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Grand Theft Auto V Enhanced</div>
-                <div class="steam-game-dev">Rockstar North</div>
-              </div>
-            </div>
-            <div class="steam-col-players">60,202</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">18</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1761904811" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">EA SPORTS FC™ 26</div>
-                <div class="steam-game-dev">EA Canada</div>
-              </div>
-            </div>
-            <div class="steam-col-players">58,784</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">19</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/3dfb18846a0d2db277c70d5a9e1ecb98e74668b8/capsule_231x87.jpg?t=1763568660" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">HELLDIVERS™ 2</div>
-                <div class="steam-game-dev">Arrowhead Game Studios</div>
-              </div>
-            </div>
-            <div class="steam-col-players">58,741</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">20</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1764870033" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Total War: WARHAMMER III</div>
-                <div class="steam-game-dev">CREATIVE ASSEMBLY</div>
-              </div>
-            </div>
-            <div class="steam-col-players">58,232</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">21</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header.jpg?t=1739211362" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -485,27 +415,72 @@
                 <div class="steam-game-dev">Wallpaper Engine Team</div>
               </div>
             </div>
-            <div class="steam-col-players">58,103</div>
+            <div class="steam-col-players">55,631</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">22</span>
+              <span class="steam-rank ">17</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/33d4b71b2b9c8eb837b7ea5f6c5d12ca3501ea27/capsule_231x87.jpg?t=1762457261" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/3dfb18846a0d2db277c70d5a9e1ecb98e74668b8/capsule_231x87.jpg?t=1763568660" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">HELLDIVERS™ 2</div>
+                <div class="steam-game-dev">Arrowhead Game Studios</div>
+              </div>
+            </div>
+            <div class="steam-col-players">54,967</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">18</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/a318bd9affe8eee32984b18794b273c256e9b2d6/capsule_231x87.jpg?t=1753974947" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Grand Theft Auto V Enhanced</div>
+                <div class="steam-game-dev">Rockstar North</div>
+              </div>
+            </div>
+            <div class="steam-col-players">54,618</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">19</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1764870033" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Total War: WARHAMMER III</div>
+                <div class="steam-game-dev">CREATIVE ASSEMBLY</div>
+              </div>
+            </div>
+            <div class="steam-col-players">53,852</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">20</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/33d4b71b2b9c8eb837b7ea5f6c5d12ca3501ea27/capsule_231x87.jpg?t=1762457261" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Apex Legends</div>
                 <div class="steam-game-dev">Respawn</div>
               </div>
             </div>
-            <div class="steam-col-players">57,799</div>
+            <div class="steam-col-players">53,401</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">23</span>
+              <span class="steam-rank ">21</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/a44da932284b846468bccbaaac94c7b5a1881325/header_alt_assets_16.jpg?t=1764699162" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -515,7 +490,37 @@
                 <div class="steam-game-dev">Ubisoft Montreal</div>
               </div>
             </div>
-            <div class="steam-col-players">56,725</div>
+            <div class="steam-col-players">53,003</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">22</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/4657df6d2a70784544239ebfc121542c00353a1f/capsule_231x87.jpg?t=1764357668" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">War Thunder</div>
+                <div class="steam-game-dev">Gaijin Entertainment</div>
+              </div>
+            </div>
+            <div class="steam-col-players">52,668</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">23</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1761904811" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">EA SPORTS FC™ 26</div>
+                <div class="steam-game-dev">EA Canada</div>
+              </div>
+            </div>
+            <div class="steam-col-players">52,585</div>
           </div>
         
           <div class="steam-table-row">
@@ -530,7 +535,7 @@
                 <div class="steam-game-dev">CenterPoint Gaming</div>
               </div>
             </div>
-            <div class="steam-col-players">55,927</div>
+            <div class="steam-col-players">52,386</div>
           </div>
         
           <div class="steam-table-row">
@@ -538,14 +543,14 @@
               <span class="steam-rank ">25</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085660/capsule_231x87.jpg?t=1764700853" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/capsule_231x87.jpg?t=1764700853" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Destiny 2</div>
                 <div class="steam-game-dev">Bungie</div>
               </div>
             </div>
-            <div class="steam-col-players">52,475</div>
+            <div class="steam-col-players">50,897</div>
           </div>
         
           <div class="steam-table-row">
@@ -553,14 +558,14 @@
               <span class="steam-rank ">26</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230410/75b31abf9c1b62d78e5e6c83a44c05ef390e0fe2/capsule_231x87.jpg?t=1764793847" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Warframe</div>
-                <div class="steam-game-dev">Digital Extremes</div>
+                <div class="steam-game-name">Team Fortress 2</div>
+                <div class="steam-game-dev">Valve</div>
               </div>
             </div>
-            <div class="steam-col-players">52,063</div>
+            <div class="steam-col-players">49,436</div>
           </div>
         
           <div class="steam-table-row">
@@ -568,14 +573,14 @@
               <span class="steam-rank ">27</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1764266628" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/75b31abf9c1b62d78e5e6c83a44c05ef390e0fe2/capsule_231x87.jpg?t=1764793847" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Euro Truck Simulator 2</div>
-                <div class="steam-game-dev">SCS Software</div>
+                <div class="steam-game-name">Warframe</div>
+                <div class="steam-game-dev">Digital Extremes</div>
               </div>
             </div>
-            <div class="steam-col-players">51,559</div>
+            <div class="steam-col-players">49,223</div>
           </div>
         
           <div class="steam-table-row">
@@ -583,109 +588,19 @@
               <span class="steam-rank ">28</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261550/capsule_231x87.jpg?t=1764252300" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/capsule_231x87.jpg?t=1764252300" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Mount & Blade II: Bannerlord</div>
                 <div class="steam-game-dev">TaleWorlds Entertainment</div>
               </div>
             </div>
-            <div class="steam-col-players">51,211</div>
+            <div class="steam-col-players">46,839</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
               <span class="steam-rank ">29</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Team Fortress 2</div>
-                <div class="steam-game-dev">Valve</div>
-              </div>
-            </div>
-            <div class="steam-col-players">51,041</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">30</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1764581773" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">DayZ</div>
-                <div class="steam-game-dev">Bohemia Interactive</div>
-              </div>
-            </div>
-            <div class="steam-col-players">49,744</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">31</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3551340/7d28b9aa8dcfcd96593d112736f58b4b1d3cc7a4/header.jpg?t=1764958470" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Football Manager 26</div>
-                <div class="steam-game-dev">Sports Interactive</div>
-              </div>
-            </div>
-            <div class="steam-col-players">49,315</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">32</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_231x87.jpg?t=1754692865" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Stardew Valley</div>
-                <div class="steam-game-dev">ConcernedApe</div>
-              </div>
-            </div>
-            <div class="steam-col-players">48,300</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">33</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1760636583" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Dead by Daylight</div>
-                <div class="steam-game-dev">Behaviour Interactive Inc.</div>
-              </div>
-            </div>
-            <div class="steam-col-players">47,378</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">34</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/590e0988a2fb79f44d3e31e41fd4949eb76abc41/capsule_231x87.jpg?t=1756209867" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Cyberpunk 2077</div>
-                <div class="steam-game-dev">CD PROJEKT RED</div>
-              </div>
-            </div>
-            <div class="steam-col-players">46,774</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">35</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -695,42 +610,102 @@
                 <div class="steam-game-dev">VRChat Inc.</div>
               </div>
             </div>
-            <div class="steam-col-players">45,554</div>
+            <div class="steam-col-players">46,012</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">30</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_231x87.jpg?t=1754692865" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Stardew Valley</div>
+                <div class="steam-game-dev">ConcernedApe</div>
+              </div>
+            </div>
+            <div class="steam-col-players">44,849</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">31</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1764581773" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">DayZ</div>
+                <div class="steam-game-dev">Bohemia Interactive</div>
+              </div>
+            </div>
+            <div class="steam-col-players">44,675</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">32</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1760636583" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Dead by Daylight</div>
+                <div class="steam-game-dev">Behaviour Interactive Inc.</div>
+              </div>
+            </div>
+            <div class="steam-col-players">43,757</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">33</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/590e0988a2fb79f44d3e31e41fd4949eb76abc41/capsule_231x87.jpg?t=1756209867" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Cyberpunk 2077</div>
+                <div class="steam-game-dev">CD PROJEKT RED</div>
+              </div>
+            </div>
+            <div class="steam-col-players">43,426</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">34</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3551340/7d28b9aa8dcfcd96593d112736f58b4b1d3cc7a4/header.jpg?t=1764958470" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Football Manager 26</div>
+                <div class="steam-game-dev">Sports Interactive</div>
+              </div>
+            </div>
+            <div class="steam-col-players">42,819</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">35</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1764266628" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Euro Truck Simulator 2</div>
+                <div class="steam-game-dev">SCS Software</div>
+              </div>
+            </div>
+            <div class="steam-col-players">41,332</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
               <span class="steam-rank ">36</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/394360/4cb5ba9302a8d7aac24d6501562626868bf5409a/capsule_231x87_alt_assets_7.jpg?t=1763982982" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Hearts of Iron IV</div>
-                <div class="steam-game-dev">Paradox Development Studio</div>
-              </div>
-            </div>
-            <div class="steam-col-players">43,734</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">37</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Spacewar</div>
-                <div class="steam-game-dev"></div>
-              </div>
-            </div>
-            <div class="steam-col-players">43,138</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">38</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -740,42 +715,27 @@
                 <div class="steam-game-dev">Rockstar Games</div>
               </div>
             </div>
-            <div class="steam-col-players">43,056</div>
+            <div class="steam-col-players">39,202</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">39</span>
+              <span class="steam-rank ">37</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/28c1bb423e9af8646047e9e881c3a0ac121647f6/capsule_231x87.jpg?t=1764662990" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/4cb5ba9302a8d7aac24d6501562626868bf5409a/capsule_231x87_alt_assets_7.jpg?t=1763982982" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">R.E.P.O.</div>
-                <div class="steam-game-dev">semiwork</div>
+                <div class="steam-game-name">Hearts of Iron IV</div>
+                <div class="steam-game-dev">Paradox Development Studio</div>
               </div>
             </div>
-            <div class="steam-col-players">42,081</div>
+            <div class="steam-col-players">38,696</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">40</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300320/c2a205133d23cd24faf3c152d972a1d0177661b8/header.jpg?t=1764249746" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Farming Simulator 25</div>
-                <div class="steam-game-dev">GIANTS Software</div>
-              </div>
-            </div>
-            <div class="steam-col-players">40,365</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">41</span>
+              <span class="steam-rank ">38</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/2ce16c276b2d7beafd4efbb4c81a1228641ab478/header_alt_assets_17_koreana.jpg?t=1763157251" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -785,7 +745,52 @@
                 <div class="steam-game-dev">Blizzard Entertainment, Inc.</div>
               </div>
             </div>
-            <div class="steam-col-players">40,272</div>
+            <div class="steam-col-players">38,455</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">39</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Spacewar</div>
+                <div class="steam-game-dev"></div>
+              </div>
+            </div>
+            <div class="steam-col-players">36,713</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">40</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/28c1bb423e9af8646047e9e881c3a0ac121647f6/capsule_231x87.jpg?t=1764662990" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">R.E.P.O.</div>
+                <div class="steam-game-dev">semiwork</div>
+              </div>
+            </div>
+            <div class="steam-col-players">36,532</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">41</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300320/c2a205133d23cd24faf3c152d972a1d0177661b8/header.jpg?t=1764249746" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Farming Simulator 25</div>
+                <div class="steam-game-dev">GIANTS Software</div>
+              </div>
+            </div>
+            <div class="steam-col-players">33,268</div>
           </div>
         
           <div class="steam-table-row">
@@ -800,7 +805,7 @@
                 <div class="steam-game-dev">Team Jade</div>
               </div>
             </div>
-            <div class="steam-col-players">36,380</div>
+            <div class="steam-col-players">33,253</div>
           </div>
         
           <div class="steam-table-row">
@@ -815,42 +820,12 @@
                 <div class="steam-game-dev">Bethesda Game Studios</div>
               </div>
             </div>
-            <div class="steam-col-players">34,140</div>
+            <div class="steam-col-players">32,305</div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
               <span class="steam-rank ">44</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/7b462e81072e94d96cb4242a75f8adddd9ec1cbd/header.jpg?t=1764925566" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Enshrouded</div>
-                <div class="steam-game-dev">Keen Games GmbH</div>
-              </div>
-            </div>
-            <div class="steam-col-players">33,783</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">45</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450310/b38d9e6151305e42163707ded29f2e6fb0d81f52/capsule_231x87.jpg?t=1762296010" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Europa Universalis V</div>
-                <div class="steam-game-dev">Paradox Tinto</div>
-              </div>
-            </div>
-            <div class="steam-col-players">33,387</div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">46</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/1008499afe81b2892d654df7644167ab9181d69f/header_alt_assets_19.jpg?t=1765057874" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
@@ -860,7 +835,37 @@
                 <div class="steam-game-dev">Fatshark</div>
               </div>
             </div>
-            <div class="steam-col-players">33,382</div>
+            <div class="steam-col-players">30,864</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">45</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/7b462e81072e94d96cb4242a75f8adddd9ec1cbd/header.jpg?t=1764925566" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Enshrouded</div>
+                <div class="steam-game-dev">Keen Games GmbH</div>
+              </div>
+            </div>
+            <div class="steam-col-players">30,293</div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">46</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3450310/b38d9e6151305e42163707ded29f2e6fb0d81f52/capsule_231x87.jpg?t=1762296010" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Europa Universalis V</div>
+                <div class="steam-game-dev">Paradox Tinto</div>
+              </div>
+            </div>
+            <div class="steam-col-players">30,205</div>
           </div>
         
           <div class="steam-table-row">
@@ -875,7 +880,7 @@
                 <div class="steam-game-dev">Firaxis Games</div>
               </div>
             </div>
-            <div class="steam-col-players">32,223</div>
+            <div class="steam-col-players">29,577</div>
           </div>
         
           <div class="steam-table-row">
@@ -890,7 +895,7 @@
                 <div class="steam-game-dev">Maxis</div>
               </div>
             </div>
-            <div class="steam-col-players">29,569</div>
+            <div class="steam-col-players">27,565</div>
           </div>
         
           <div class="steam-table-row">
@@ -905,7 +910,7 @@
                 <div class="steam-game-dev">Grinding Gear Games</div>
               </div>
             </div>
-            <div class="steam-col-players">29,435</div>
+            <div class="steam-col-players">26,991</div>
           </div>
         
           <div class="steam-table-row">
@@ -913,14 +918,14 @@
               <span class="steam-rank ">50</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1762784724" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg?t=1748630546" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Valheim</div>
-                <div class="steam-game-dev">Iron Gate AB</div>
+                <div class="steam-game-name">ELDEN RING</div>
+                <div class="steam-game-dev">FromSoftware, Inc.</div>
               </div>
             </div>
-            <div class="steam-col-players">28,480</div>
+            <div class="steam-col-players">26,243</div>
           </div>
         
       </div>
@@ -941,7 +946,7 @@
               <span class="steam-rank top1">1</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Counter-Strike 2</div>
@@ -956,7 +961,7 @@
               <span class="steam-rank top2">2</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1764817633" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1764817633" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">PUBG: BATTLEGROUNDS</div>
@@ -971,7 +976,7 @@
               <span class="steam-rank top3">3</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3564740/53d45054f1168cc9cfdf6bb922f141f04aea7ca4/capsule_231x87.jpg?t=1763157550" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/53d45054f1168cc9cfdf6bb922f141f04aea7ca4/capsule_231x87.jpg?t=1763157550" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Where Winds Meet</div>
@@ -986,7 +991,7 @@
               <span class="steam-rank ">4</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1049590/6d524f2cb3dccb90a2afc95244acc938268fe37b/capsule_231x87.jpg?t=1762996107" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049590/6d524f2cb3dccb90a2afc95244acc938268fe37b/capsule_231x87.jpg?t=1762996107" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Eternal Return</div>
@@ -1001,7 +1006,7 @@
               <span class="steam-rank ">5</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1764755475" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1764755475" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">ARC Raiders</div>
@@ -1016,7 +1021,7 @@
               <span class="steam-rank ">6</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1407200/f5a450048f566b7c3c4443a2fca1a931a068e824/capsule_231x87_alt_assets_23.jpg?t=1764929929" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1407200/f5a450048f566b7c3c4443a2fca1a931a068e824/capsule_231x87_alt_assets_23.jpg?t=1764929929" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">World of Tanks</div>
@@ -1031,7 +1036,7 @@
               <span class="steam-rank ">7</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1764870033" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1764870033" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Total War: WARHAMMER III</div>
@@ -1046,7 +1051,7 @@
               <span class="steam-rank ">8</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3014320/67b817b83633861c6330061838917bcc07be9852/capsule_231x87.jpg?t=1764898158" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3014320/67b817b83633861c6330061838917bcc07be9852/capsule_231x87.jpg?t=1764898158" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">OCTOPATH TRAVELER 0</div>
@@ -1061,7 +1066,7 @@
               <span class="steam-rank ">9</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/590e0988a2fb79f44d3e31e41fd4949eb76abc41/capsule_231x87.jpg?t=1756209867" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/590e0988a2fb79f44d3e31e41fd4949eb76abc41/capsule_231x87.jpg?t=1756209867" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Cyberpunk 2077</div>
@@ -1076,7 +1081,7 @@
               <span class="steam-rank ">10</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1449850/ad3a63350da34ac0c78f93b0045ec063d1f1b3f4/capsule_231x87.jpg?t=1762309929" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449850/ad3a63350da34ac0c78f93b0045ec063d1f1b3f4/capsule_231x87.jpg?t=1762309929" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Yu-Gi-Oh! Master Duel</div>
@@ -1091,22 +1096,7 @@
               <span class="steam-rank ">11</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/985810/74337301da4da64413a40d258ce3aa1691646239/capsule_231x87.jpg?t=1764735928" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">GrandChase</div>
-                <div class="steam-game-dev">KOG</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">12</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1973530/capsule_231x87.jpg?t=1747619569" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/capsule_231x87.jpg?t=1747619569" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Limbus Company</div>
@@ -1118,10 +1108,10 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">13</span>
+              <span class="steam-rank ">12</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2622380/8ebc4260af27bc55ba8b88982fd7eb7f970d43c9/capsule_231x87.jpg?t=1764808750" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622380/8ebc4260af27bc55ba8b88982fd7eb7f970d43c9/capsule_231x87.jpg?t=1764808750" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">ELDEN RING NIGHTREIGN</div>
@@ -1133,10 +1123,10 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">14</span>
+              <span class="steam-rank ">13</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139460/9223ef1187bb9399be11d28537bf3e975b2e7ca1/capsule_231x87.jpg?t=1761817318" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/9223ef1187bb9399be11d28537bf3e975b2e7ca1/capsule_231x87.jpg?t=1761817318" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Once Human</div>
@@ -1148,10 +1138,25 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">14</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/985810/74337301da4da64413a40d258ce3aa1691646239/capsule_231x87.jpg?t=1764735928" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">GrandChase</div>
+                <div class="steam-game-dev">KOG</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">15</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/4f823e476ad290ad4f19763e7d800723df422dfa/capsule_231x87.jpg?t=1764860671" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/4f823e476ad290ad4f19763e7d800723df422dfa/capsule_231x87.jpg?t=1764860671" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Palworld</div>
@@ -1166,7 +1171,7 @@
               <span class="steam-rank ">16</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Team Fortress 2</div>
@@ -1181,7 +1186,7 @@
               <span class="steam-rank ">17</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827200/93d9d7a43e68c4f8e96664cec3bbff4b27ffa48a/capsule_231x87.jpg?t=1764658096" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2827200/93d9d7a43e68c4f8e96664cec3bbff4b27ffa48a/capsule_231x87.jpg?t=1764658096" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">MIMESIS</div>
@@ -1196,7 +1201,7 @@
               <span class="steam-rank ">18</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562700/capsule_231x87.jpg?t=1764564242" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1562700/capsule_231x87.jpg?t=1764564242" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">SANABI</div>
@@ -1211,7 +1216,7 @@
               <span class="steam-rank ">19</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1621690/5b19828e142f23d88e5213280d8e226408dabbbf/capsule_231x87.jpg?t=1764415439" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/5b19828e142f23d88e5213280d8e226408dabbbf/capsule_231x87.jpg?t=1764415439" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Core Keeper</div>
@@ -1226,7 +1231,7 @@
               <span class="steam-rank ">20</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/33d4b71b2b9c8eb837b7ea5f6c5d12ca3501ea27/capsule_231x87.jpg?t=1762457261" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/33d4b71b2b9c8eb837b7ea5f6c5d12ca3501ea27/capsule_231x87.jpg?t=1762457261" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Apex Legends™</div>
@@ -1241,22 +1246,7 @@
               <span class="steam-rank ">21</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/3dfb18846a0d2db277c70d5a9e1ecb98e74668b8/capsule_231x87.jpg?t=1763568660" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">HELLDIVERS™ 2</div>
-                <div class="steam-game-dev">Arrowhead Game Studios</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 44,800</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">22</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/a318bd9affe8eee32984b18794b273c256e9b2d6/capsule_231x87.jpg?t=1753974947" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/a318bd9affe8eee32984b18794b273c256e9b2d6/capsule_231x87.jpg?t=1753974947" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Grand Theft Auto V Enhanced</div>
@@ -1268,25 +1258,25 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">23</span>
+              <span class="steam-rank ">22</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1764266628" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/3dfb18846a0d2db277c70d5a9e1ecb98e74668b8/capsule_231x87.jpg?t=1763568660" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Euro Truck Simulator 2</div>
-                <div class="steam-game-dev">SCS Software</div>
+                <div class="steam-game-name">HELLDIVERS™ 2</div>
+                <div class="steam-game-dev">Arrowhead Game Studios</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-75%</span><span class="steam-price">₩ 6,200</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 44,800</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">24</span>
+              <span class="steam-rank ">23</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3531720/a6ab221829dc59c7014353dfde0004e2dfd48575/capsule_231x87.jpg?t=1764978633" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3531720/a6ab221829dc59c7014353dfde0004e2dfd48575/capsule_231x87.jpg?t=1764978633" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">ELDEN RING NIGHTREIGN The Forsaken Hollows</div>
@@ -1298,25 +1288,25 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">25</span>
+              <span class="steam-rank ">24</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552990/11b7d26845570ef774548e353296d71bb6da11c5/capsule_231x87.jpg?t=1764353059" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1764266628" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">World of Warships</div>
-                <div class="steam-game-dev">Wargaming Group Limited</div>
+                <div class="steam-game-name">Euro Truck Simulator 2</div>
+                <div class="steam-game-dev">SCS Software</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-75%</span><span class="steam-price">₩ 6,200</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">26</span>
+              <span class="steam-rank ">25</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138330/3d2b6a051a7e2fc4ff654d95d6876c24d6dda13d/capsule_231x87.jpg?t=1759751039" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2138330/3d2b6a051a7e2fc4ff654d95d6876c24d6dda13d/capsule_231x87.jpg?t=1759751039" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Cyberpunk 2077: Phantom Liberty</div>
@@ -1328,25 +1318,25 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">27</span>
+              <span class="steam-rank ">26</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1760636583" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552990/11b7d26845570ef774548e353296d71bb6da11c5/capsule_231x87.jpg?t=1764353059" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Dead by Daylight</div>
-                <div class="steam-game-dev">Behaviour Interactive Inc.</div>
+                <div class="steam-game-name">World of Warships</div>
+                <div class="steam-game-dev">Wargaming Group Limited</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 21,500</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">28</span>
+              <span class="steam-rank ">27</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085660/capsule_231x87.jpg?t=1764700853" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/capsule_231x87.jpg?t=1764700853" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Destiny 2</div>
@@ -1358,10 +1348,25 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">28</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1760636583" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Dead by Daylight</div>
+                <div class="steam-game-dev">Behaviour Interactive Inc.</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 21,500</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">29</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2074920/2eb2bf7aeba558f32722ebab41a70d97ad14e68f/capsule_231x87.jpg?t=1762413104" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2074920/2eb2bf7aeba558f32722ebab41a70d97ad14e68f/capsule_231x87.jpg?t=1762413104" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">The First Descendant</div>
@@ -1376,22 +1381,7 @@
               <span class="steam-rank ">30</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450960/b4803e89d1673f4ff02cfa75bcbec2eb25c810f5/capsule_231x87.jpg?t=1764867540" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Total War: WARHAMMER III - Aislinn – Tides of Torment</div>
-                <div class="steam-game-dev">CREATIVE ASSEMBLY</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 9,000</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">31</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261550/capsule_231x87.jpg?t=1764252300" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/capsule_231x87.jpg?t=1764252300" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Mount & Blade II: Bannerlord</div>
@@ -1403,10 +1393,40 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">31</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3450960/b4803e89d1673f4ff02cfa75bcbec2eb25c810f5/capsule_231x87.jpg?t=1764867540" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Total War: WARHAMMER III - Aislinn – Tides of Torment</div>
+                <div class="steam-game-dev">CREATIVE ASSEMBLY</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 9,000</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">32</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg?t=1748630546" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/001d4a5d81e4bb9055b789240e78e04ef6e6da38/capsule_231x87.jpg?t=1762765069" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Clair Obscur: Expedition 33</div>
+                <div class="steam-game-dev">Sandfall Interactive</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-20%</span><span class="steam-price">₩ 43,840</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">33</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg?t=1748630546" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">ELDEN RING</div>
@@ -1418,25 +1438,10 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">33</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3513350/68787cfa7127b74991b1777b6998b0ad1420122e/capsule_231x87.jpg?t=1763596285" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Wuthering Waves</div>
-                <div class="steam-game-dev">KURO GAMES</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
               <span class="steam-rank ">34</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450970/9e7e95850ad18a4ba4604de3ce4da3066e48a0f8/capsule_231x87.jpg?t=1764867605" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3450970/9e7e95850ad18a4ba4604de3ce4da3066e48a0f8/capsule_231x87.jpg?t=1764867605" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Total War: WARHAMMER III - Sayl – Tides of Torment</div>
@@ -1451,7 +1456,22 @@
               <span class="steam-rank ">35</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450980/e9297d9e984533e1fc42f21045dd23df2bb9f667/capsule_231x87.jpg?t=1764867558" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/68787cfa7127b74991b1777b6998b0ad1420122e/capsule_231x87.jpg?t=1763596285" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Wuthering Waves</div>
+                <div class="steam-game-dev">KURO GAMES</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">36</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3450980/e9297d9e984533e1fc42f21045dd23df2bb9f667/capsule_231x87.jpg?t=1764867558" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Total War: WARHAMMER III - Dechala – Tides of Torment</div>
@@ -1463,25 +1483,10 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">36</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/001d4a5d81e4bb9055b789240e78e04ef6e6da38/capsule_231x87.jpg?t=1762765069" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Clair Obscur: Expedition 33</div>
-                <div class="steam-game-dev">Sandfall Interactive</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-20%</span><span class="steam-price">₩ 43,840</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
               <span class="steam-rank ">37</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/1b2e4eeed79dd06971492825a461bc5130bf7c28/capsule_231x87.jpg?t=1753912780" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/1b2e4eeed79dd06971492825a461bc5130bf7c28/capsule_231x87.jpg?t=1753912780" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Hogwarts Legacy</div>
@@ -1496,7 +1501,7 @@
               <span class="steam-rank ">38</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3527290/1844964d7a353e50eb3cc979ea922729d8c1b0ad/capsule_231x87.jpg?t=1764003551" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/1844964d7a353e50eb3cc979ea922729d8c1b0ad/capsule_231x87.jpg?t=1764003551" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">PEAK</div>
@@ -1511,7 +1516,7 @@
               <span class="steam-rank ">39</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3167020/3c797aea37aa81aea663767e432236418bc1ce82/capsule_231x87.jpg?t=1764328964" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3167020/3c797aea37aa81aea663767e432236418bc1ce82/capsule_231x87.jpg?t=1764328964" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Escape From Duckov</div>
@@ -1526,14 +1531,14 @@
               <span class="steam-rank ">40</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/779340/capsule_231x87.jpg?t=1763646247" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/28c1bb423e9af8646047e9e881c3a0ac121647f6/capsule_231x87.jpg?t=1764662990" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Total War: THREE KINGDOMS</div>
-                <div class="steam-game-dev">CREATIVE ASSEMBLY</div>
+                <div class="steam-game-name">R.E.P.O.</div>
+                <div class="steam-game-dev">semiwork</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-80%</span><span class="steam-price">₩ 11,960</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 11,000</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1541,7 +1546,7 @@
               <span class="steam-rank ">41</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3551340/89a157ed8100b4c8fa49de9fda0b3a83aece1f5e/capsule_231x87.jpg?t=1764958470" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3551340/89a157ed8100b4c8fa49de9fda0b3a83aece1f5e/capsule_231x87.jpg?t=1764958470" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Football Manager 26</div>
@@ -1556,14 +1561,14 @@
               <span class="steam-rank ">42</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/28c1bb423e9af8646047e9e881c3a0ac121647f6/capsule_231x87.jpg?t=1764662990" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/779340/capsule_231x87.jpg?t=1763646247" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">R.E.P.O.</div>
-                <div class="steam-game-dev">semiwork</div>
+                <div class="steam-game-name">Total War: THREE KINGDOMS</div>
+                <div class="steam-game-dev">CREATIVE ASSEMBLY</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 11,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-80%</span><span class="steam-price">₩ 11,960</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1571,22 +1576,7 @@
               <span class="steam-rank ">43</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3932890/2c6e1e35562ccc39bb34436d2ea1064710691d9d/capsule_231x87.jpg?t=1764759405" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Escape from Tarkov</div>
-                <div class="steam-game-dev">Battlestate Games</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,500</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">44</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3052450/capsule_231x87.jpg?t=1739300850" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3052450/capsule_231x87.jpg?t=1739300850" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Morimens</div>
@@ -1598,10 +1588,10 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">45</span>
+              <span class="steam-rank ">44</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1764700003" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1764700003" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Battlefield™ 6</div>
@@ -1613,25 +1603,25 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">46</span>
+              <span class="steam-rank ">45</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/835570/cb11ba7f8e5c1a89bf3406bfee97274fdc409577/capsule_231x87.jpg?t=1764933739" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3932890/2c6e1e35562ccc39bb34436d2ea1064710691d9d/capsule_231x87.jpg?t=1764759405" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Conqueror's Blade</div>
-                <div class="steam-game-dev">Booming Tech</div>
+                <div class="steam-game-name">Escape from Tarkov</div>
+                <div class="steam-game-dev">Battlestate Games</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,500</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">47</span>
+              <span class="steam-rank ">46</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2444750/02d7e564acfe5b703574a504858f5fe4019c2b92/capsule_231x87.jpg?t=1764564482" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2444750/02d7e564acfe5b703574a504858f5fe4019c2b92/capsule_231x87.jpg?t=1764564482" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">Shape of Dreams</div>
@@ -1643,17 +1633,32 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">47</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/835570/cb11ba7f8e5c1a89bf3406bfee97274fdc409577/capsule_231x87.jpg?t=1764933739" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Conqueror's Blade</div>
+                <div class="steam-game-dev">Booming Tech</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">48</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592160/925ffa7e3699d5c9c1369be5d4c3369f0e907e00/capsule_231x87.jpg?t=1764278303" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/fe7cbb345c177f83f829a61f0e0ab951b42c7ab1/capsule_231x87.jpg?t=1749717464" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Dispatch</div>
-                <div class="steam-game-dev">AdHoc Studio</div>
+                <div class="steam-game-name">Satisfactory</div>
+                <div class="steam-game-dev">Coffee Stain Studios</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 32,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-30%</span><span class="steam-price">₩ 29,400</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1661,14 +1666,14 @@
               <span class="steam-rank ">49</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2417610/fcf468fafa62aa13ac11f1ad2f84cab740eac6af/capsule_231x87.jpg?t=1762249119" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2927200/7135a7884f42cd719fa463f2db147ffbed33f3a0/capsule_231x87.jpg?t=1764863770" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">METAL GEAR SOLID Δ: SNAKE EATER</div>
-                <div class="steam-game-dev">KONAMI</div>
+                <div class="steam-game-name">Mount & Blade II: Bannerlord - War Sails</div>
+                <div class="steam-game-dev">TaleWorlds Entertainment</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-30%</span><span class="steam-price">₩ 62,650</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-10%</span><span class="steam-price">₩ 32,310</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1676,14 +1681,14 @@
               <span class="steam-rank ">50</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_231x87.jpg?t=1754692865" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419290/dbb18b0ff528d60e6e6bee532a167569cbe62b96/capsule_231x87.jpg?t=1761720812" alt="" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
               <div class="steam-img-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Stardew Valley</div>
-                <div class="steam-game-dev">ConcernedApe</div>
+                <div class="steam-game-name">GOD FORSAKEN</div>
+                <div class="steam-game-dev">insight studio</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 16,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 13,500</span></div>
           </div>
         
       </div>
@@ -1810,17 +1815,12 @@
   
 <script>
 (function() {
-  // 이미 정적으로 prefetch된 링크 수집
   const prefetched = new Set();
-  document.querySelectorAll('link[rel="prefetch"]').forEach(link => {
-    prefetched.add(link.href);
-  });
   document.querySelectorAll('a.nav-item').forEach(link => {
     link.addEventListener('mouseenter', () => {
       const href = link.getAttribute('href');
-      const fullHref = new URL(href, window.location.origin).href;
-      if (href && !prefetched.has(fullHref)) {
-        prefetched.add(fullHref);
+      if (href && !prefetched.has(href)) {
+        prefetched.add(href);
         const prefetch = document.createElement('link');
         prefetch.rel = 'prefetch';
         prefetch.href = href;

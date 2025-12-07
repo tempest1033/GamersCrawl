@@ -55,9 +55,15 @@
   <link rel="preconnect" href="https://i.ytimg.com">
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
   <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 인접 페이지 미리 로드 (동적) -->
+  <!-- Prefetch 다른 페이지 미리 로드 -->
+  <link rel="prefetch" href="/insight/" as="document">
   <link rel="prefetch" href="/news/" as="document">
   <link rel="prefetch" href="/community/" as="document">
+  <link rel="prefetch" href="/youtube/" as="document">
+  <link rel="prefetch" href="/rankings/" as="document">
+  <link rel="prefetch" href="/steam/" as="document">
+  <link rel="prefetch" href="/upcoming/" as="document">
+  <link rel="prefetch" href="/metacritic/" as="document">
   <!-- Font Preload -->
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -1040,17 +1046,12 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
   
 <script>
 (function() {
-  // 이미 정적으로 prefetch된 링크 수집
   const prefetched = new Set();
-  document.querySelectorAll('link[rel="prefetch"]').forEach(link => {
-    prefetched.add(link.href);
-  });
   document.querySelectorAll('a.nav-item').forEach(link => {
     link.addEventListener('mouseenter', () => {
       const href = link.getAttribute('href');
-      const fullHref = new URL(href, window.location.origin).href;
-      if (href && !prefetched.has(fullHref)) {
-        prefetched.add(fullHref);
+      if (href && !prefetched.has(href)) {
+        prefetched.add(href);
         const prefetch = document.createElement('link');
         prefetch.rel = 'prefetch';
         prefetch.href = href;

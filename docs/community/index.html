@@ -55,10 +55,15 @@
   <link rel="preconnect" href="https://i.ytimg.com">
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
   <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 인접 페이지 미리 로드 (동적) -->
+  <!-- Prefetch 다른 페이지 미리 로드 -->
+  <link rel="prefetch" href="/insight/" as="document">
   <link rel="prefetch" href="/news/" as="document">
+  <link rel="prefetch" href="/community/" as="document">
   <link rel="prefetch" href="/youtube/" as="document">
   <link rel="prefetch" href="/rankings/" as="document">
+  <link rel="prefetch" href="/steam/" as="document">
+  <link rel="prefetch" href="/upcoming/" as="document">
+  <link rel="prefetch" href="/metacritic/" as="document">
   <!-- Font Preload -->
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -160,10 +165,10 @@
       <div class="news-controls">
         <div class="control-group">
           <div class="tab-group" id="communityTab">
-            <button class="tab-btn active" data-community="inven"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB7klEQVR4Ae2XA4wdURSGvxnbtm3btm3bdlJnY9u2bQex7WzS3Mz6zuadZGb3vfy8yXl/cs6dc+eMRCKRSCQSiUQikUiGQjKD0AAfcACngf+AIUPDhIShbNiGoxjCAx7gHEIIHEIaHEdqtAMfoK9hv4xB0ENINvQGMkEGBgMPMIhgcAy5MBLIjkH4Qy7MR3q0AZuhB/rgKrrjJTpgOTJBBnoANdELD7AGg/GFYJiP5OgEVoM+eIte2I7e6IKjyAwJ6AUURnf0wSIsQ2K0xSDwAfrjFvqhN9YiJ2SgFxAPvdELc7AEsdEWg8AL6IebaIse2IZ8kIE+QBx0Rw/MwnLERhsMBndggL64gW7ogZ0oCBnoA0RGF3THLKxCHLTFYHAFuuMaOqMH9qEIZGAAEBad0Q0zsQZx0BqDwQnogqvogh44gJKQgYFAaHRCD8zCOsRHawwGe6ATLqMLuuMQykIG+gPB0AFdMQsbkACtMBhsgQ64hM7ohuMoDxkYAARBe3TBdGxGYrTEYLABOuA8OqE7TqMSJCByqB64OB4YEoFQF53QDTOwBUnQAoNhJbTHOXRENxxHFWigJ1AcxZAVB3ADl3E1POBdlAQdkANpQQYdZMcOHMYZnMF2pNQaKI3imIp++INn+C39rZFIJBKJRCKRSCSS/8Q/X4LYMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">인벤</button>
-            <button class="tab-btn" data-community="arca"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACQElEQVR4Ae2XA6wdURCGz7Zt27Zt27Zt27Zt27btuM7+mWwym9zbt7vbm/ySyXc+nDlz5uxJJBKJRCKRSCQSieQHSA4FoQo0hLbQGXpAfxgJU2ERrIUdcBBOwSW4AffhMbyEN/AZvsNv+A/igFxQDmpBM+gMfWEkzIDlsAcuwwN4Aq/gPXyGL/AdfsFf+A/igJxQFmpBU+gM/WAkzIBlsBuuwH14DK/gHXyCz/ANfsAv+Av/QRyQA8pATWgK7aEPjIQZsBR2wWW4D4/gJbyFD/AJvsA3+A4/4Rf8hf8gDsgOpaEmNIF20AdGwHRYAjvhEtyFh/AEXsNb+ACf4DN8hW/wHX7CL/gL/0EckA1KQQ1oDG2hF4yAabAYdsAFuA0P4DG8hLfwHj7CZ/gCX+Eb/ICf8Bv+gTggG5SCGtAI2kIvGA7TYBFsh/NwGx7AY3gJb+E9fIBP8Bm+wFf4Dj/hF/yBfyAOyAYloQY0grbQC4bBVFgI2+Es3IIH8BhewBt4Dx/gI3yGz/AVvsE3+AG/4A/8B3FAVigJ1aEhtIGeMAymwALYCmfgJtyHR/AUXsEbeAcf4CN8gs/wBb7Cd/gBP+EX/IV/ICMUhhrQBLpAfxgH82E17IT9cByuwG24B4/gCbyC1/AO3sNH+Aif4DN8hW/wHX7CL/gD/0BGKAQ1oDF0hX4wFubCKtgBB+AYXIZbcB8ewmN4Dq/gDbyD9/ARPsEn+Axf4Ct8g+/wE37BH/gH4oAfPIBEIpFIJBKJRCKR/IB/8gLYMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">아카라이브</button>
-            <button class="tab-btn" data-community="dcinside"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACBklEQVR4Ae2XA6wkQRCGq23btm3btm3btm3btm3b9l3emk3mZXay08nN/lVf96+uqe6eSCQSiUQikUgkEonkF0gHNaEL9IZhMAWWwCY4BNfhETyHz/AdfoH/IA7IB9WgCXSBfjAB5sMaOAS34DE8hw/wDb7Db/gL/4I4IBdUgMbQFfohBhbCWjgMt+ExPIf38A2+wy/4A/9CHJAdykFD6Ax9YTzMg9VwEG7BY3gB7+EbfIef8Bv+gTggB5SD+tAJesNYmA0r4QDcgsfw/P/vfIfv8BN+wW/4C+KA7FAW6kIn6AVjYBashANwCx7Dc3gPX+E7fIdvFgG/4C+IA7JBWagLnaAXjIGZsAL2wU14BE/hObyHz/AVvsEP+Al/4B+IA7JBGagLHaEnjIYZsAz2wg14BI/hGbyDT/AFvsI3+AF/4C/8B+mgDNSF9tADRsE0WAp74Do8hCfwFN7CR/gMX+ErfIcf8Af+gjggG5SGOtAeusMImAJLYDdcgwfwGJ7AW/gAn+ELfIVv8AN+wR/4B+KArFAa6kA76AYjYDIshp1wFe7DI3gCb+A9fILP8AW+wjf4Ab/gD/wDcUAWKAO1oS10gWEwCRbBdrgMd+E+PIIn8Abewwf4BJ/hC3yFb/ADfsFv+AcyQF6oDPWgGXSCHjASJsAcWA074RLcggtwFf6DNP/zAFJKKaWUUkoppZT6DP8A/O3YMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">디시인사이드</button>
-            <button class="tab-btn" data-community="ruliweb"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABzklEQVR4Ae2XA4wcURzGf7Nt27Zt27Zt27Zt27Zt2z5n/Oa9ZLLZZHeT3X35kvnye5P5/t+8mVFKKaWUUkoppZRSSn0DFWAT5IHqUBlaQDvoBgNgFMyARbAGtsJeOApn4TJch/vwCJ7DG/gMv+E//AdxQzYoAaWhItSEhtAc2kE3GABjYCYsgbWwA/bDcTgPV+EuPIbn8A6+wC/4A/9AESgJZaES1IJG0ALaQ3cYCONgNiyFDbALDsBJuAR34BE8hzfwCb7Db/gN/0B5KAZloDLUhsbQCjpADxgME2AeLINNsBuOwBm4CnfhCbyA9/AJfsBP+AP/QUUoCeWgKtSBJtAGukBvGAaTYQEsh82wB47CObgGd+ExvIC38Ak+wy/4Df9AVSgJZaAy1IJG0BI6QE8YApNgPqyAzbAXjsE5uAb34Qm8hPfwCT7DT/gNv0F1KAlloDJUg9rQGFpBR+gBg2E8zIHlsBl2w2E4DZfgFjyEl/AePsEX+Am/4C+oBqWgDFSG6lAPmkIb6AT9YBRMg4WwGrbBfjgBF+Em3IdH8BzewAf4DD/hF/wBlSAPJKAGNAD+wU+4CYfh7MeeRCmllFJKKaWUUkp9g/8A1LLYMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">루리웹</button>
+            <button class="tab-btn active" data-community="inven"><img src="https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32" alt="" class="news-favicon">인벤</button>
+            <button class="tab-btn" data-community="arca"><img src="https://www.google.com/s2/favicons?domain=arca.live&sz=32" alt="" class="news-favicon">아카라이브</button>
+            <button class="tab-btn" data-community="dcinside"><img src="https://www.google.com/s2/favicons?domain=dcinside.com&sz=32" alt="" class="news-favicon">디시인사이드</button>
+            <button class="tab-btn" data-community="ruliweb"><img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="" class="news-favicon">루리웹</button>
           </div>
         </div>
       </div>
@@ -174,7 +179,7 @@
         <div class="news-container">
           <div class="news-panel active" id="community-inven">
             <div class="news-panel-header">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB7klEQVR4Ae2XA4wdURSGvxnbtm3btm3bdlJnY9u2bQex7WzS3Mz6zuadZGb3vfy8yXl/cs6dc+eMRCKRSCQSiUQikUiGQjKD0AAfcACngf+AIUPDhIShbNiGoxjCAx7gHEIIHEIaHEdqtAMfoK9hv4xB0ENINvQGMkEGBgMPMIhgcAy5MBLIjkH4Qy7MR3q0AZuhB/rgKrrjJTpgOTJBBnoANdELD7AGg/GFYJiP5OgEVoM+eIte2I7e6IKjyAwJ6AUURnf0wSIsQ2K0xSDwAfrjFvqhN9YiJ2SgFxAPvdELc7AEsdEWg8AL6IebaIse2IZ8kIE+QBx0Rw/MwnLERhsMBndggL64gW7ogZ0oCBnoA0RGF3THLKxCHLTFYHAFuuMaOqMH9qEIZGAAEBad0Q0zsQZx0BqDwQnogqvogh44gJKQgYFAaHRCD8zCOsRHawwGe6ATLqMLuuMQykIG+gPB0AFdMQsbkACtMBhsgQ64hM7ohuMoDxkYAARBe3TBdGxGYrTEYLABOuA8OqE7TqMSJCByqB64OB4YEoFQF53QDTOwBUnQAoNhJbTHOXRENxxHFWigJ1AcxZAVB3ADl3E1POBdlAQdkANpQQYdZMcOHMYZnMF2pNQaKI3imIp++INn+C39rZFIJBKJRCKRSCSS/8Q/X4LYMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">
+              <img src="https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32" alt="" class="news-favicon">
               <span class="news-panel-title">인벤 핫이슈</span>
               <a href="https://hot.inven.co.kr/" target="_blank" class="news-more-link">더보기 →</a>
             </div>
@@ -195,16 +200,8 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://www.inven.co.kr/board/aion2/6388/34334" target="_blank" rel="noopener">
-        <span class="news-num">3</span>
-        <div class="news-content">
-          <span class="news-title">찍먹 다한 것 같네요 ㅋㅋㅋ</span>
-          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
-        </div>
-      </a>
-    
       <a class="news-item clickable" href="https://www.inven.co.kr/board/aion2/6388/34383" target="_blank" rel="noopener">
-        <span class="news-num">4</span>
+        <span class="news-num">3</span>
         <div class="news-content">
           <span class="news-title">로기견이 망친게임이 대체 뭐임??</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
@@ -212,7 +209,7 @@
       </a>
     
       <a class="news-item clickable" href="https://www.inven.co.kr/board/aion2/6388/34398" target="_blank" rel="noopener">
-        <span class="news-num">5</span>
+        <span class="news-num">4</span>
         <div class="news-content">
           <span class="news-title">센ㅌx드 같은 유튜버들이 로기견 키워내는거임 진짜 악질임</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
@@ -220,9 +217,17 @@
       </a>
     
       <a class="news-item clickable" href="https://www.inven.co.kr/board/fifaonline4/3146/8536612" target="_blank" rel="noopener">
-        <span class="news-num">6</span>
+        <span class="news-num">5</span>
         <div class="news-content">
           <span class="news-title">19) 인생 av떴냐</span>
+          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://www.inven.co.kr/board/arcraiders/6412/1619" target="_blank" rel="noopener">
+        <span class="news-num">6</span>
+        <div class="news-content">
+          <span class="news-title">난....아크를 잡는것이....좋다.....</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
         </div>
       </a>
@@ -243,16 +248,8 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://www.inven.co.kr/board/arcraiders/6412/1619" target="_blank" rel="noopener">
-        <span class="news-num">9</span>
-        <div class="news-content">
-          <span class="news-title">난....아크를 잡는것이....좋다.....</span>
-          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
-        </div>
-      </a>
-    
       <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2988489" target="_blank" rel="noopener">
-        <span class="news-num">10</span>
+        <span class="news-num">9</span>
         <div class="news-content">
           <span class="news-title">이 씨발 약코 존나하네</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
@@ -260,63 +257,47 @@
       </a>
     
       <a class="news-item clickable" href="https://www.inven.co.kr/board/fifaonline4/3146/8536760" target="_blank" rel="noopener">
-        <span class="news-num">11</span>
+        <span class="news-num">10</span>
         <div class="news-content">
           <span class="news-title">연예인들 갑자기 뻥뻥 터트리니</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://www.inven.co.kr/board/maple/5974/5962097" target="_blank" rel="noopener">
-        <span class="news-num">12</span>
-        <div class="news-content">
-          <span class="news-title">긴급속보) 메이플 크라운 쇼케이스 관련 입장문</span>
-          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2988890" target="_blank" rel="noopener">
-        <span class="news-num">13</span>
-        <div class="news-content">
-          <span class="news-title">어휴 니넨 걍 미래가 정해져있음 ㅋㅋㅋㅋ</span>
-          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.inven.co.kr/board/black/3583/1985550" target="_blank" rel="noopener">
-        <span class="news-num">14</span>
-        <div class="news-content">
-          <span class="news-title">추천 부탁드립니다</span>
-          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2989101" target="_blank" rel="noopener">
-        <span class="news-num">15</span>
-        <div class="news-content">
-          <span class="news-title">가토에서 폿 기다려주는딜러 특</span>
-          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
-        </div>
-      </a>
-    
       <a class="news-item clickable" href="https://www.inven.co.kr/board/wow/4739/258825" target="_blank" rel="noopener">
-        <span class="news-num">16</span>
+        <span class="news-num">11</span>
         <div class="news-content">
           <span class="news-title">구리다고 소문난 호드 거주지를 오피스텔 느낌으로 인테리어 해봤습니다.</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
         </div>
       </a>
     
+      <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2988890" target="_blank" rel="noopener">
+        <span class="news-num">12</span>
+        <div class="news-content">
+          <span class="news-title">어휴 니넨 걍 미래가 정해져있음 ㅋㅋㅋㅋ</span>
+          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
+        </div>
+      </a>
+    
       <a class="news-item clickable" href="https://www.inven.co.kr/board/aion2/6388/34426" target="_blank" rel="noopener">
-        <span class="news-num">17</span>
+        <span class="news-num">13</span>
         <div class="news-content">
           <span class="news-title">아이온2 하는 만화 - ep.5 뉴비와사람</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
         </div>
       </a>
     
+      <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2989101" target="_blank" rel="noopener">
+        <span class="news-num">14</span>
+        <div class="news-content">
+          <span class="news-title">가토에서 폿 기다려주는딜러 특</span>
+          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
+        </div>
+      </a>
+    
       <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2988685" target="_blank" rel="noopener">
-        <span class="news-num">18</span>
+        <span class="news-num">15</span>
         <div class="news-content">
           <span class="news-title">요즘 게임이 많이 삭막한거 같아</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
@@ -324,7 +305,7 @@
       </a>
     
       <a class="news-item clickable" href="https://www.inven.co.kr/board/lineagem/5019/705137" target="_blank" rel="noopener">
-        <span class="news-num">19</span>
+        <span class="news-num">16</span>
         <div class="news-content">
           <span class="news-title">와 쓰벌</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
@@ -332,9 +313,33 @@
       </a>
     
       <a class="news-item clickable" href="https://www.inven.co.kr/board/maple/5974/5963446" target="_blank" rel="noopener">
-        <span class="news-num">20</span>
+        <span class="news-num">17</span>
         <div class="news-content">
           <span class="news-title">메이플 감가 상관없는 이유</span>
+          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://www.inven.co.kr/board/lostark/6271/2989707" target="_blank" rel="noopener">
+        <span class="news-num">18</span>
+        <div class="news-content">
+          <span class="news-title">수라님 보석이 비었는데 없으신거임?</span>
+          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://www.inven.co.kr/board/overwatch/4538/5916322" target="_blank" rel="noopener">
+        <span class="news-num">19</span>
+        <div class="news-content">
+          <span class="news-title">젤 후회중인 신화스킨</span>
+          <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://www.inven.co.kr/board/lol/4625/4173408" target="_blank" rel="noopener">
+        <span class="news-num">20</span>
+        <div class="news-content">
+          <span class="news-title">엠비션 근황 ㅋㅋㅋㅋ</span>
           <div class="news-tags"><span class="community-tag source-tag">인벤</span></div>
         </div>
       </a>
@@ -342,13 +347,45 @@
           </div>
           <div class="news-panel" id="community-arca">
             <div class="news-panel-header">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACQElEQVR4Ae2XA6wdURCGz7Zt27Zt27Zt27Zt27btuM7+mWwym9zbt7vbm/ySyXc+nDlz5uxJJBKJRCKRSCQSieQHSA4FoQo0hLbQGXpAfxgJU2ERrIUdcBBOwSW4AffhMbyEN/AZvsNv+A/igFxQDmpBM+gMfWEkzIDlsAcuwwN4Aq/gPXyGL/AdfsFf+A/igJxQFmpBU+gM/WAkzIBlsBuuwH14DK/gHXyCz/ANfsAv+Av/QRyQA8pATWgK7aEPjIQZsBR2wWW4D4/gJbyFD/AJvsA3+A4/4Rf8hf8gDsgOpaEmNIF20AdGwHRYAjvhEtyFh/AEXsNb+ACf4DN8hW/wHX7CL/gL/0EckA1KQQ1oDG2hF4yAabAYdsAFuA0P4DG8hLfwHj7CZ/gCX+Eb/ICf8Bv+gTggG5SCGtAI2kIvGA7TYBFsh/NwGx7AY3gJb+E9fIBP8Bm+wFf4Dj/hF/yBfyAOyAYloQY0grbQC4bBVFgI2+Es3IIH8BhewBt4Dx/gI3yGz/AVvsE3+AG/4A/8B3FAVigJ1aEhtIGeMAymwALYCmfgJtyHR/AUXsEbeAcf4CN8gs/wBb7Cd/gBP+EX/IV/ICMUhhrQBLpAfxgH82E17IT9cByuwG24B4/gCbyC1/AO3sNH+Aif4DN8hW/wHX7CL/gD/0BGKAQ1oDF0hX4wFubCKtgBB+AYXIZbcB8ewmN4Dq/gDbyD9/ARPsEn+Axf4Ct8g+/wE37BH/gH4oAfPIBEIpFIJBKJRCKR/IB/8gLYMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">
+              <img src="https://www.google.com/s2/favicons?domain=arca.live&sz=32" alt="" class="news-favicon">
               <span class="news-panel-title">아카라이브 베스트</span>
               <a href="https://arca.live/b/live" target="_blank" class="news-more-link">더보기 →</a>
             </div>
             <div class="news-list">
-      <a class="news-item clickable" href="https://arca.live/b/live/155947809?p=1" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://arca.live/b/live/155999880?p=1" target="_blank" rel="noopener">
         <span class="news-num">1</span>
+        <div class="news-content">
+          <span class="news-title">진짜 흥챈 다 됫네</span>
+          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://arca.live/b/live/156004690?p=1" target="_blank" rel="noopener">
+        <span class="news-num">2</span>
+        <div class="news-content">
+          <span class="news-title">지금봐도 ㅈㄴ 간지나는 디자인임</span>
+          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://arca.live/b/live/156000731?p=1" target="_blank" rel="noopener">
+        <span class="news-num">3</span>
+        <div class="news-content">
+          <span class="news-title">"발푸밤 아니면 뽑기 들어가지 말라매"</span>
+          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://arca.live/b/live/155989607?p=1" target="_blank" rel="noopener">
+        <span class="news-num">4</span>
+        <div class="news-content">
+          <span class="news-title">그림--->그냥 재능의 영역인게 맞음</span>
+          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://arca.live/b/live/155947809?p=1" target="_blank" rel="noopener">
+        <span class="news-num">5</span>
         <div class="news-content">
           <span class="news-title">만화) 그래스 원더와 똑같은 향기</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -356,7 +393,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156011352?p=1" target="_blank" rel="noopener">
-        <span class="news-num">2</span>
+        <span class="news-num">6</span>
         <div class="news-content">
           <span class="news-title">"다들 내 실장을 기다리고있다고?"</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -364,7 +401,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156018989?p=1" target="_blank" rel="noopener">
-        <span class="news-num">3</span>
+        <span class="news-num">7</span>
         <div class="news-content">
           <span class="news-title">"앗 좆같이 생긴 나라다"</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -372,7 +409,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155983617?p=1" target="_blank" rel="noopener">
-        <span class="news-num">4</span>
+        <span class="news-num">8</span>
         <div class="news-content">
           <span class="news-title">옆집에 마음에 와닫는 글 있어서 가져와봤다</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -380,7 +417,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156006426?p=1" target="_blank" rel="noopener">
-        <span class="news-num">5</span>
+        <span class="news-num">9</span>
         <div class="news-content">
           <span class="news-title">오피셜) 다나는 로로카범이 아닙니다</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -388,7 +425,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156001079?p=1" target="_blank" rel="noopener">
-        <span class="news-num">6</span>
+        <span class="news-num">10</span>
         <div class="news-content">
           <span class="news-title">우좌 한가득</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -396,7 +433,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156003315?p=1" target="_blank" rel="noopener">
-        <span class="news-num">7</span>
+        <span class="news-num">11</span>
         <div class="news-content">
           <span class="news-title">무언가를 본 여수감자들</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -404,7 +441,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155990381?p=1" target="_blank" rel="noopener">
-        <span class="news-num">8</span>
+        <span class="news-num">12</span>
         <div class="news-content">
           <span class="news-title">남행자들 너무 기죽진 마셈</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -412,7 +449,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155996945?p=1" target="_blank" rel="noopener">
-        <span class="news-num">9</span>
+        <span class="news-num">13</span>
         <div class="news-content">
           <span class="news-title">[뉴비리뷰] 아이 둘 아빠가 겪는 첫 서브컬쳐 경험담</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -420,7 +457,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155944084?p=1" target="_blank" rel="noopener">
-        <span class="news-num">10</span>
+        <span class="news-num">14</span>
         <div class="news-content">
           <span class="news-title">봇치더 록</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -428,7 +465,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155976826?p=1" target="_blank" rel="noopener">
-        <span class="news-num">11</span>
+        <span class="news-num">15</span>
         <div class="news-content">
           <span class="news-title">agf가서 버틴이랑 투샷 찍읆</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -436,7 +473,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156014027?p=1" target="_blank" rel="noopener">
-        <span class="news-num">12</span>
+        <span class="news-num">16</span>
         <div class="news-content">
           <span class="news-title">전학생이 치녀</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -444,7 +481,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/156018301?p=1" target="_blank" rel="noopener">
-        <span class="news-num">13</span>
+        <span class="news-num">17</span>
         <div class="news-content">
           <span class="news-title">님들 저 칭찬 좀 plz.......................</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -452,7 +489,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155983024?p=1" target="_blank" rel="noopener">
-        <span class="news-num">14</span>
+        <span class="news-num">18</span>
         <div class="news-content">
           <span class="news-title">뭐? 마키마에 근삼팔꺼가 안달리는 증거를 내놓으라고?</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -460,7 +497,7 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155977072?p=1" target="_blank" rel="noopener">
-        <span class="news-num">15</span>
+        <span class="news-num">19</span>
         <div class="news-content">
           <span class="news-title">45]</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
@@ -468,41 +505,9 @@
       </a>
     
       <a class="news-item clickable" href="https://arca.live/b/live/155954203?p=1" target="_blank" rel="noopener">
-        <span class="news-num">16</span>
-        <div class="news-content">
-          <span class="news-title">난 '사람은 바뀌지 않는다'는 말을 가장 싫어함</span>
-          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://arca.live/b/live/155932593?p=1" target="_blank" rel="noopener">
-        <span class="news-num">17</span>
-        <div class="news-content">
-          <span class="news-title">중전 합격!!</span>
-          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://arca.live/b/live/156011668?p=1" target="_blank" rel="noopener">
-        <span class="news-num">18</span>
-        <div class="news-content">
-          <span class="news-title">클레와 듀오링고</span>
-          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://arca.live/b/live/155973010?p=1" target="_blank" rel="noopener">
-        <span class="news-num">19</span>
-        <div class="news-content">
-          <span class="news-title">장화의 깨진 가면</span>
-          <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://arca.live/b/live/156015814?p=1" target="_blank" rel="noopener">
         <span class="news-num">20</span>
         <div class="news-content">
-          <span class="news-title">구글 기프트카드 9% (91,000원/무료)</span>
+          <span class="news-title">난 '사람은 바뀌지 않는다'는 말을 가장 싫어함</span>
           <div class="news-tags"><span class="community-tag source-tag">아카라이브</span></div>
         </div>
       </a>
@@ -510,13 +515,53 @@
           </div>
           <div class="news-panel" id="community-dcinside">
             <div class="news-panel-header">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACBklEQVR4Ae2XA6wkQRCGq23btm3btm3btm3btm3b9l3emk3mZXay08nN/lVf96+uqe6eSCQSiUQikUgkEonkF0gHNaEL9IZhMAWWwCY4BNfhETyHz/AdfoH/IA7IB9WgCXSBfjAB5sMaOAS34DE8hw/wDb7Db/gL/4I4IBdUgMbQFfohBhbCWjgMt+ExPIf38A2+wy/4A/9CHJAdykFD6Ax9YTzMg9VwEG7BY3gB7+EbfIef8Bv+gTggB5SD+tAJesNYmA0r4QDcgsfw/P/vfIfv8BN+wW/4C+KA7FAW6kIn6AVjYBashANwCx7Dc3gPX+E7fIdvFgG/4C+IA7JBWagLnaAXjIGZsAL2wU14BE/hObyHz/AVvsEP+Al/4B+IA7JBGagLHaEnjIYZsAz2wg14BI/hGbyDT/AFvsI3+AF/4C/8B+mgDNSF9tADRsE0WAp74Do8hCfwFN7CR/gMX+ErfIcf8Af+gjggG5SGOtAeusMImAJLYDdcgwfwGJ7AW/gAn+ELfIVv8AN+wR/4B+KArFAa6kA76AYjYDIshp1wFe7DI3gCb+A9fILP8AW+wjf4Ab/gD/wDcUAWKAO1oS10gWEwCRbBdrgMd+E+PIIn8Abewwf4BJ/hC3yFb/ADfsFv+AcyQF6oDPWgGXSCHjASJsAcWA074RLcggtwFf6DNP/zAFJKKaWUUkoppZT6DP8A/O3YMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">
+              <img src="https://www.google.com/s2/favicons?domain=dcinside.com&sz=32" alt="" class="news-favicon">
               <span class="news-panel-title">디시 실시간 베스트</span>
               <a href="https://gall.dcinside.com/board/lists?id=dcbest" target="_blank" class="news-more-link">더보기 →</a>
             </div>
             <div class="news-list">
-      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386378&_dcbest=1&page=1" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386387&_dcbest=1&page=1" target="_blank" rel="noopener">
         <span class="news-num">1</span>
+        <div class="news-content">
+          <span class="news-title">아이폰 6s 수리기</span>
+          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386385&_dcbest=1&page=1" target="_blank" rel="noopener">
+        <span class="news-num">2</span>
+        <div class="news-content">
+          <span class="news-title">난리 났다는.. 이이경 수상 소감 ..jpg</span>
+          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386383&_dcbest=1&page=1" target="_blank" rel="noopener">
+        <span class="news-num">3</span>
+        <div class="news-content">
+          <span class="news-title">이쯤해서 다시보는 디즈니 실사'라푼젤' 역대 후보들</span>
+          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386382&_dcbest=1&page=1" target="_blank" rel="noopener">
+        <span class="news-num">4</span>
+        <div class="news-content">
+          <span class="news-title">북한군의 병, 부사관, 장교 임용방식.jpg</span>
+          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386380&_dcbest=1&page=1" target="_blank" rel="noopener">
+        <span class="news-num">5</span>
+        <div class="news-content">
+          <span class="news-title">싱글벙글 전세계 제국들의 수명.....jpg</span>
+          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
+        </div>
+      </a>
+    
+      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386378&_dcbest=1&page=1" target="_blank" rel="noopener">
+        <span class="news-num">6</span>
         <div class="news-content">
           <span class="news-title">전여친한테 연락할까 고민하는 만화 (바람 잘 날 없는) 4화</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -524,7 +569,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386377&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">2</span>
+        <span class="news-num">7</span>
         <div class="news-content">
           <span class="news-title">안철수 히스토리(1) - 부산 슈바이처 아버지의 일화</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -532,7 +577,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386375&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">3</span>
+        <span class="news-num">8</span>
         <div class="news-content">
           <span class="news-title">일본인 여친 만화.manhwa</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -540,7 +585,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386372&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">4</span>
+        <span class="news-num">9</span>
         <div class="news-content">
           <span class="news-title">몰락한 일본의 현실을 체감해보자</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -548,7 +593,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386370&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">5</span>
+        <span class="news-num">10</span>
         <div class="news-content">
           <span class="news-title">조선시대 군영의 병사들은 맨손일 때 어떻게 싸웠을까?</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -556,7 +601,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386368&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">6</span>
+        <span class="news-num">11</span>
         <div class="news-content">
           <span class="news-title">12mp 마포로 담아온 올공의 설경.webp</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -564,7 +609,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386367&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">7</span>
+        <span class="news-num">12</span>
         <div class="news-content">
           <span class="news-title">흔적과 여로, 유엔공원 26 pics</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -572,7 +617,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386365&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">8</span>
+        <span class="news-num">13</span>
         <div class="news-content">
           <span class="news-title">껌으로 수배중인 조폭검거한 형사</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -580,7 +625,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386363&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">9</span>
+        <span class="news-num">14</span>
         <div class="news-content">
           <span class="news-title">싱글벙글 만우절 낚시로 시작해 떡상한 보컬로이드 캐릭터</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -588,7 +633,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386361&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">10</span>
+        <span class="news-num">15</span>
         <div class="news-content">
           <span class="news-title">중국 여성이 한국 생활에 만족한 이유.jpg</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -596,7 +641,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386359&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">11</span>
+        <span class="news-num">16</span>
         <div class="news-content">
           <span class="news-title">넷플릭스, 워너 인수 승리…트럼프 승인 변수에 8조 위약금</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -604,7 +649,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386357&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">12</span>
+        <span class="news-num">17</span>
         <div class="news-content">
           <span class="news-title">2025년 올해 한국을 방문한 헐리웃 스타들 요약</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -612,7 +657,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386355&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">13</span>
+        <span class="news-num">18</span>
         <div class="news-content">
           <span class="news-title">회사다니기 힘들어서 일기장을 쓰기시작했다 jpg</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -620,7 +665,7 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386353&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">14</span>
+        <span class="news-num">19</span>
         <div class="news-content">
           <span class="news-title">어흐 이거 어디서 나온 말임?,,,,manwha</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
@@ -628,49 +673,9 @@
       </a>
     
       <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386351&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">15</span>
-        <div class="news-content">
-          <span class="news-title">뉴스탑텐) 한동훈 "통일교 돈, 민주는 괜찮나"</span>
-          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386347&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">16</span>
-        <div class="news-content">
-          <span class="news-title">마포맨 서울 사진 감상 많이 부탁 (20)</span>
-          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386345&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">17</span>
-        <div class="news-content">
-          <span class="news-title">한국계 첫 NASA 우주인 조니 김, 지구 귀환 임박</span>
-          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386341&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">18</span>
-        <div class="news-content">
-          <span class="news-title">흔들흔들 무례촌</span>
-          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386339&_dcbest=1&page=1" target="_blank" rel="noopener">
-        <span class="news-num">19</span>
-        <div class="news-content">
-          <span class="news-title">11년차 탈모의사가 말하는 잘못된 샴푸 습관</span>
-          <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://gall.dcinside.com/board/view/?id=dcbest&no=386337&_dcbest=1&page=1" target="_blank" rel="noopener">
         <span class="news-num">20</span>
         <div class="news-content">
-          <span class="news-title">90년대 한겨울 국민학교(초등학교) 시절</span>
+          <span class="news-title">뉴스탑텐) 한동훈 "통일교 돈, 민주는 괜찮나"</span>
           <div class="news-tags"><span class="community-tag source-tag">디시인사이드</span></div>
         </div>
       </a>
@@ -678,7 +683,7 @@
           </div>
           <div class="news-panel" id="community-ruliweb">
             <div class="news-panel-header">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABzklEQVR4Ae2XA4wcURzGf7Nt27Zt27Zt27Zt27Zt2z5n/Oa9ZLLZZHeT3X35kvnye5P5/t+8mVFKKaWUUkoppZRSSn0DFWAT5IHqUBlaQDvoBgNgFMyARbAGtsJeOApn4TJch/vwCJ7DG/gMv+E//AdxQzYoAaWhItSEhtAc2kE3GABjYCYsgbWwA/bDcTgPV+EuPIbn8A6+wC/4A/9AESgJZaES1IJG0ALaQ3cYCONgNiyFDbALDsBJuAR34BE8hzfwCb7Db/gN/0B5KAZloDLUhsbQCjpADxgME2AeLINNsBuOwBm4CnfhCbyA9/AJfsBP+AP/QUUoCeWgKtSBJtAGukBvGAaTYQEsh82wB47CObgGd+ExvIC38Ak+wy/4Df9AVSgJZaAy1IJG0BI6QE8YApNgPqyAzbAXjsE5uAb34Qm8hPfwCT7DT/gNv0F1KAlloDJUg9rQGFpBR+gBg2E8zIHlsBl2w2E4DZfgFjyEl/AePsEX+Am/4C+oBqWgDFSG6lAPmkIb6AT9YBRMg4WwGrbBfjgBF+Em3IdH8BzewAf4DD/hF/wBlSAPJKAGNAD+wU+4CYfh7MeeRCmllFJKKaWUUkp9g/8A1LLYMWq8QIIAAAAASUVORK5CYII=" alt="" class="news-favicon">
+              <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="" class="news-favicon">
               <span class="news-panel-title">루리웹 게임 베스트</span>
               <a href="https://bbs.ruliweb.com/best/game?orderby=recommend&range=24h" target="_blank" class="news-more-link">더보기 →</a>
             </div>
@@ -691,10 +696,10 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/market/board/1020/read/99871" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/market/board/1020/read/99855" target="_blank" rel="noopener">
         <span class="news-num">2</span>
         <div class="news-content">
-          <span class="news-title">[롯데온] 구구크러스터 660ml 6개 (22,770원 / 무배)</span>
+          <span class="news-title">[XBOX] 페르소나3 리로드 디지털 프리미엄 에디션 44,910원</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -715,10 +720,10 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184404/read/347947?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184778/read/104704?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">5</span>
         <div class="news-content">
-          <span class="news-title">소전2) 리딤 코드 2개 (~12/8 12:59)</span>
+          <span class="news-title">화력 빌드에는 닌바백 사용하지 마세요.</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -731,10 +736,10 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184778/read/104704?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184404/read/347947?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">7</span>
         <div class="news-content">
-          <span class="news-title">화력 빌드에는 닌바백 사용하지 마세요.</span>
+          <span class="news-title">소전2) 리딤 코드 2개 (~12/8 12:59)</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -755,10 +760,10 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185738/read/89257?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185438/read/1392811?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">10</span>
         <div class="news-content">
-          <span class="news-title">엘밤통] 상태이상의 신 학자</span>
+          <span class="news-title">선생님의 말쿠트 고기불판.manhwa</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -779,10 +784,10 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185738/read/89259?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184778/read/104712?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">13</span>
         <div class="news-content">
-          <span class="news-title">엘밤통] 이제는 먹어도 기분이 별로 안나쁜 유물</span>
+          <span class="news-title">집중된 중대 빌드</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -795,26 +800,26 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185438/read/1392811?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185738/read/89259?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">15</span>
         <div class="news-content">
-          <span class="news-title">선생님의 말쿠트 고기불판.manhwa</span>
+          <span class="news-title">엘밤통] 이제는 먹어도 기분이 별로 안나쁜 유물</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/184778/read/104712?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185738/read/89257?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">16</span>
         <div class="news-content">
-          <span class="news-title">집중된 중대 빌드</span>
+          <span class="news-title">엘밤통] 상태이상의 신 학자</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185438/read/1392812?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185738/read/89262?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">17</span>
         <div class="news-content">
-          <span class="news-title">가구)트리니티 아이돌 공연을 직관하러 오신 분..</span>
+          <span class="news-title">40판만에 겨우 학자의 추억 완료;;;;;;</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -835,10 +840,10 @@
         </div>
       </a>
     
-      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185342/read/35163?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
+      <a class="news-item clickable" href="https://bbs.ruliweb.com/best/board/185438/read/1392812?orderby=recommend&range=24h&m=game&t=now" target="_blank" rel="noopener">
         <span class="news-num">20</span>
         <div class="news-content">
-          <span class="news-title">스타레일과의 관련성 추측 - 지식의 역함수를 중심으로</span>
+          <span class="news-title">가구)트리니티 아이돌 공연을 직관하러 오신 분..</span>
           <div class="news-tags"><span class="community-tag source-tag">루리웹</span></div>
         </div>
       </a>
@@ -980,17 +985,12 @@
   
 <script>
 (function() {
-  // 이미 정적으로 prefetch된 링크 수집
   const prefetched = new Set();
-  document.querySelectorAll('link[rel="prefetch"]').forEach(link => {
-    prefetched.add(link.href);
-  });
   document.querySelectorAll('a.nav-item').forEach(link => {
     link.addEventListener('mouseenter', () => {
       const href = link.getAttribute('href');
-      const fullHref = new URL(href, window.location.origin).href;
-      if (href && !prefetched.has(fullHref)) {
-        prefetched.add(fullHref);
+      if (href && !prefetched.has(href)) {
+        prefetched.add(href);
         const prefetch = document.createElement('link');
         prefetch.rel = 'prefetch';
         prefetch.href = href;
