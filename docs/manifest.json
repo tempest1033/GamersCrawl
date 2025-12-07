@@ -1,7 +1,7 @@
 {
   "name": "GAMERS CRAWL",
   "short_name": "GAMERS CRAWL",
-  "description": "게임 업계 일일 리포트 - 모바일/스팀 순위, 뉴스, AI 인사이트",
+  "description": "게임 업계 일일 리포트 - 모바일/스팀 순위, 뉴스, 트렌드",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#111827",
