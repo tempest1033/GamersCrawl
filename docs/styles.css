@@ -2543,7 +2543,7 @@
       width: 22px;
       height: 22px;
       opacity: 1;
-      transition: all var(--transition-fast);
+      transition: stroke var(--transition-fast), opacity var(--transition-fast);
     }
 
     .nav-item.active svg {
@@ -2864,6 +2864,7 @@
     }
 
     .news-favicon {
+      display: inline-block;
       width: 20px;
       height: 20px;
       margin-right: 6px;
