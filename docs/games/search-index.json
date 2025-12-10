@@ -14,7 +14,7 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -33,7 +33,7 @@
       "android"
     ],
     "developer": "Century Games Pte. Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -52,7 +52,7 @@
       "android"
     ],
     "developer": "NCSOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -73,7 +73,7 @@
       "android"
     ],
     "developer": "FUNFLY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -91,7 +91,7 @@
       "android"
     ],
     "developer": "Century Games Pte. Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -112,7 +112,7 @@
       "android"
     ],
     "developer": "Microfun Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -131,7 +131,7 @@
       "android"
     ],
     "developer": "Com2uS Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -150,9 +150,9 @@
       "android"
     ],
     "developer": "Microfun Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "로얄 매치 Royal Match",
@@ -170,9 +170,9 @@
       "android"
     ],
     "developer": "Dream Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "전략적 팀 전투: 리그 오브 레전드 전략 게임",
@@ -188,9 +188,9 @@
       "android"
     ],
     "developer": "Riot Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "운빨존많겜",
@@ -205,7 +205,7 @@
       "android"
     ],
     "developer": "111%",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -224,7 +224,7 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -242,7 +242,7 @@
       "android"
     ],
     "developer": "Netmarble Corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -260,7 +260,7 @@
       "android"
     ],
     "developer": "NCSOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -278,9 +278,9 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "배틀그라운드",
@@ -301,7 +301,7 @@
       "android"
     ],
     "developer": "KRAFTON Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -319,9 +319,9 @@
       "android"
     ],
     "developer": "Florere Game Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "꿈의 정원 (Gardenscapes)",
@@ -339,9 +339,9 @@
       "android"
     ],
     "developer": "Playrix",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "EA SPORTS FC Online M",
@@ -358,9 +358,9 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "eFootball™",
@@ -378,7 +378,7 @@
       "steam"
     ],
     "developer": "KONAMI",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -397,9 +397,9 @@
       "android"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Dark War:Survival",
@@ -413,9 +413,9 @@
       "android"
     ],
     "developer": "Florere Game Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "클래시 로얄",
@@ -432,9 +432,9 @@
       "android"
     ],
     "developer": "Supercell",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "세븐나이츠 리버스",
@@ -453,9 +453,9 @@
       "android"
     ],
     "developer": "Netmarble Corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "승리의 여신: 니케",
@@ -473,7 +473,7 @@
       "android"
     ],
     "developer": "Level Infinite",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -490,7 +490,7 @@
       "android"
     ],
     "developer": "NCSOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -512,9 +512,9 @@
       "android"
     ],
     "developer": "River Game HK Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "꿈의 집 (Homescapes)",
@@ -531,9 +531,9 @@
       "android"
     ],
     "developer": "Playrix",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "카트라이더 러쉬플러스",
@@ -550,7 +550,7 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -569,9 +569,9 @@
       "android"
     ],
     "developer": "Century Games Pte. Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "한게임 포커",
@@ -586,9 +586,9 @@
       "android"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "협동 타워 디펜스 : 깐부와 함께",
@@ -604,9 +604,9 @@
       "android"
     ],
     "developer": "SuperMagic",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "명조:워더링 웨이브",
@@ -624,9 +624,9 @@
       "android"
     ],
     "developer": "KURO GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "캔디크러쉬사가 (Candy Crush Saga)",
@@ -645,9 +645,9 @@
       "android"
     ],
     "developer": "King",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "WPL : 홀덤, 토너먼트, 오마하, 올인폴드, 픽앤고",
@@ -662,7 +662,7 @@
       "android"
     ],
     "developer": "Zempot Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -678,9 +678,9 @@
       "android"
     ],
     "developer": "Nuverse Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "마피아42",
@@ -696,9 +696,9 @@
       "android"
     ],
     "developer": "TEAM42 CO., LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "리그 오브 레전드: 와일드 리프트",
@@ -718,9 +718,9 @@
       "android"
     ],
     "developer": "Riot Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "클래시 오브 클랜",
@@ -738,7 +738,7 @@
       "android"
     ],
     "developer": "Supercell",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -757,9 +757,9 @@
       "android"
     ],
     "developer": "Niantic, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "꿈의 마을 (Township)",
@@ -776,9 +776,9 @@
       "android"
     ],
     "developer": "Playrix",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "로얄 킹덤 (Royal Kingdom)",
@@ -793,9 +793,9 @@
       "android"
     ],
     "developer": "Dream Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "메이플스토리M",
@@ -814,9 +814,9 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "브롤스타즈",
@@ -835,7 +835,7 @@
       "android"
     ],
     "developer": "Supercell",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -854,9 +854,9 @@
       "android"
     ],
     "developer": "NCSOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Travel Town - 결합 어드벤처",
@@ -871,9 +871,9 @@
       "android"
     ],
     "developer": "Moon Active",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "붕괴: 스타레일",
@@ -894,9 +894,9 @@
       "android"
     ],
     "developer": "COGNOSPHERE PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "SD건담 지 제네레이션 이터널",
@@ -912,7 +912,7 @@
       "android"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -933,9 +933,9 @@
       "android"
     ],
     "developer": "Game Duo Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "쿠키런: 오븐브레이크",
@@ -952,7 +952,7 @@
       "android"
     ],
     "developer": "Devsisters",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -966,7 +966,7 @@
       "android"
     ],
     "developer": "DRIMAGE Co., Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -982,9 +982,9 @@
       "android"
     ],
     "developer": "Tianjin Heyuan Network Technology Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "오딘: 발할라 라이징",
@@ -1000,7 +1000,7 @@
       "android"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1017,9 +1017,9 @@
       "android"
     ],
     "developer": "Happibits",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "오피스 퀸 키우기",
@@ -1031,7 +1031,7 @@
       "android"
     ],
     "developer": "Wish Interactive Technology Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1045,9 +1045,9 @@
       "android"
     ],
     "developer": "Guangzhou Longting Network Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Age of Origins:Tower Defense",
@@ -1066,7 +1066,7 @@
       "android"
     ],
     "developer": "Hong Kong Ke Mo software Co., Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1083,7 +1083,7 @@
       "android"
     ],
     "developer": "FunPlus International AG",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1103,9 +1103,9 @@
       "android"
     ],
     "developer": "Devsisters",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "핫레스토랑: 머지&쿠킹",
@@ -1120,9 +1120,9 @@
       "android"
     ],
     "developer": "Microfun Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "더 스파이크 크로스",
@@ -1136,7 +1136,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1152,9 +1152,9 @@
       "android"
     ],
     "developer": "Joy Net Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "추억의 잡화점",
@@ -1166,7 +1166,7 @@
       "android"
     ],
     "developer": "Pogo Hopper",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1180,9 +1180,9 @@
       "android"
     ],
     "developer": "POPJOY (H.K.) LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "한게임포커 클래식 : 7포커 홀덤 섯다 훌라 슬롯",
@@ -1196,9 +1196,9 @@
       "android"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "냥코 대전쟁",
@@ -1213,7 +1213,7 @@
       "android"
     ],
     "developer": "ponos corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1234,9 +1234,9 @@
       "android"
     ],
     "developer": "COGNOSPHERE PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "드래곤빌리지 럼블",
@@ -1250,7 +1250,7 @@
       "android"
     ],
     "developer": "Highbrow",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1270,7 +1270,7 @@
       "android"
     ],
     "developer": "Eureka Creation Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1288,9 +1288,9 @@
       "android"
     ],
     "developer": "Playrix",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "컴투스프로야구2025",
@@ -1307,7 +1307,7 @@
       "android"
     ],
     "developer": "Com2uS Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1323,7 +1323,7 @@
       "android"
     ],
     "developer": "Studio B Side Co.ltd.,",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1338,7 +1338,7 @@
     "developer": "凯鑫 蔡",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Project Makeover",
@@ -1353,7 +1353,7 @@
       "android"
     ],
     "developer": "Magic Tavern, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1373,7 +1373,7 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1392,9 +1392,9 @@
       "android"
     ],
     "developer": "SkyFury",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "삼국지 전략판",
@@ -1410,7 +1410,7 @@
       "android"
     ],
     "developer": "Qookka Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1426,7 +1426,7 @@
       "android"
     ],
     "developer": "Leniu Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1446,7 +1446,7 @@
     "developer": "2K",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Pikmin Bloom",
@@ -1462,9 +1462,9 @@
       "android"
     ],
     "developer": "Niantic, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "좀비 웨이브스",
@@ -1481,7 +1481,7 @@
       "android"
     ],
     "developer": "FUN FORMULA PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1497,9 +1497,9 @@
       "android"
     ],
     "developer": "HABBY",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "갤럭시 디펜스 (Galaxy Defense)",
@@ -1513,9 +1513,9 @@
       "android"
     ],
     "developer": "CYBERJOY LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "MLB 라이벌",
@@ -1530,7 +1530,7 @@
       "android"
     ],
     "developer": "Com2uS Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1565,9 +1565,9 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Screwdom : 나사와 볼트 퍼즐",
@@ -1581,9 +1581,9 @@
       "android"
     ],
     "developer": "Zego Global Pte Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "열혈강호: 귀환",
@@ -1598,9 +1598,9 @@
       "android"
     ],
     "developer": "OZARK SUPER VAC",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "포켓몬 카드 게임 Pocket",
@@ -1619,9 +1619,9 @@
       "android"
     ],
     "developer": "The Pokemon Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "와다다 던전런",
@@ -1633,7 +1633,7 @@
       "android"
     ],
     "developer": "Frontier Games Co., Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1650,9 +1650,9 @@
       "android"
     ],
     "developer": "SuperPlay",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "탕탕특공대",
@@ -1669,9 +1669,9 @@
       "android"
     ],
     "developer": "HABBY",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "피망 포커 : 카지노 로얄 - 홀덤, 7포커, 바둑이",
@@ -1686,7 +1686,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1703,9 +1703,9 @@
       "android"
     ],
     "developer": "SINGAPORE JUST GAME TECHNOLOGY PTE.LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "히어로 클래시: 강아지를 지키자",
@@ -1717,9 +1717,9 @@
       "android"
     ],
     "developer": "9z Games(HK)",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Toon Blast",
@@ -1736,9 +1736,9 @@
       "android"
     ],
     "developer": "Peak Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "RF 온라인 넥스트",
@@ -1754,7 +1754,7 @@
       "android"
     ],
     "developer": "Netmarble Corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1770,7 +1770,7 @@
       "android"
     ],
     "developer": "EIGHT STUDIO (Korea)",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1787,9 +1787,9 @@
       "ios"
     ],
     "developer": "Roblox Corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "리니지W",
@@ -1805,9 +1805,9 @@
       "ios"
     ],
     "developer": "NCSOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "카오스 제로 나이트메어",
@@ -1825,7 +1825,7 @@
       "ios"
     ],
     "developer": "Smilegate Holdings, Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -1844,9 +1844,9 @@
       "ios"
     ],
     "developer": "EPIDGames",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Limbus Company",
@@ -1863,7 +1863,7 @@
       "steam"
     ],
     "developer": "Project Moon",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -1884,9 +1884,9 @@
       "ios"
     ],
     "developer": "HaoPlay Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Legends Reborn: 마지막 전투",
@@ -1898,9 +1898,9 @@
       "ios"
     ],
     "developer": "ACE GAME INTERNATIONAL LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "아키르: 로드 오브 디스트럭션",
@@ -1914,9 +1914,9 @@
       "ios"
     ],
     "developer": "SPGFun",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "맛있는 여행: 합성 게임",
@@ -1933,9 +1933,9 @@
       "ios"
     ],
     "developer": "Century Games PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "서머너즈 워: 천공의 아레나",
@@ -1952,9 +1952,9 @@
       "ios"
     ],
     "developer": "Com2uS",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "한게임 신맞고 : 대한민국 원조 고스톱",
@@ -1971,9 +1971,9 @@
       "ios"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "카발RED",
@@ -1988,7 +1988,7 @@
       "ios"
     ],
     "developer": "ESTgames Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2007,9 +2007,9 @@
       "ios"
     ],
     "developer": "Wemade Co., Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "페이트/그랜드 오더",
@@ -2026,7 +2026,7 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2044,9 +2044,9 @@
       "ios"
     ],
     "developer": "Smilegate Holdings, Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "블레이드&소울 레볼루션",
@@ -2063,9 +2063,9 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "러브앤딥스페이스",
@@ -2082,7 +2082,7 @@
       "ios"
     ],
     "developer": "InFold Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2100,9 +2100,9 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "젠레스 존 제로",
@@ -2121,9 +2121,9 @@
       "ios"
     ],
     "developer": "COGNOSPHERE PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "S.O.S:스테이트 오브 서바이벌",
@@ -2138,9 +2138,9 @@
       "ios"
     ],
     "developer": "FunPlus International AG",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "퍼즐 오브 Z",
@@ -2156,9 +2156,9 @@
       "ios"
     ],
     "developer": "BLANCOZONE NETWORK CO., LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "데블M",
@@ -2173,9 +2173,9 @@
       "ios"
     ],
     "developer": "37 Mobile Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "뮤 모나크2",
@@ -2190,9 +2190,9 @@
       "ios"
     ],
     "developer": "Webzen Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "뮤 모나크",
@@ -2207,9 +2207,9 @@
       "ios"
     ],
     "developer": "Webzen Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "슬레이어 키우기",
@@ -2221,9 +2221,9 @@
       "ios"
     ],
     "developer": "GEAR2",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스텔라 소라",
@@ -2235,7 +2235,7 @@
       "ios"
     ],
     "developer": "Yostar Limited.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2249,9 +2249,9 @@
       "ios"
     ],
     "developer": "Au Elements Network Technology Co., Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "변신 키우기",
@@ -2263,7 +2263,7 @@
       "ios"
     ],
     "developer": "BillionaireGames",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2281,9 +2281,9 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "라이즈 오브 킹덤즈",
@@ -2301,9 +2301,9 @@
       "ios"
     ],
     "developer": "LilithGames",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "MLB 9이닝스 25",
@@ -2315,9 +2315,9 @@
       "ios"
     ],
     "developer": "Com2uS",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Yu-Gi-Oh! Master Duel",
@@ -2337,7 +2337,7 @@
       "steam"
     ],
     "developer": "KONAMI",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -2356,7 +2356,7 @@
       "ios"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2370,9 +2370,9 @@
       "ios"
     ],
     "developer": "Wemade Play Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "하스스톤",
@@ -2388,9 +2388,9 @@
       "ios"
     ],
     "developer": "Blizzard Entertainment, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "더 스타라이트",
@@ -2402,9 +2402,9 @@
       "ios"
     ],
     "developer": "Com2uS",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "삼국지: 리버스-3333 무료 뽑기",
@@ -2415,9 +2415,9 @@
       "android"
     ],
     "developer": "Xsoga Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "롬: 리멤버 오브 마제스티",
@@ -2429,9 +2429,9 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "버섯커 키우기",
@@ -2445,9 +2445,9 @@
       "ios"
     ],
     "developer": "Joy Nice Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "레이드: 그림자의 전설",
@@ -2465,7 +2465,7 @@
       "ios"
     ],
     "developer": "Plarium Global Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2484,7 +2484,7 @@
       "ios"
     ],
     "developer": "CamelStudio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2498,9 +2498,9 @@
       "ios"
     ],
     "developer": "4399 KOREA",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "사북성:언데드",
@@ -2512,9 +2512,9 @@
       "ios"
     ],
     "developer": "Star Entertainment HK",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "아키에이지 워 (ArcheAge WAR)",
@@ -2529,9 +2529,9 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Top War: Battle Game",
@@ -2546,9 +2546,9 @@
       "android"
     ],
     "developer": "RiverGame",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "소울 스트라이크: QWER 키우기",
@@ -2560,9 +2560,9 @@
       "ios"
     ],
     "developer": "Com2uS Holdings",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "우마무스메 프리티 더비",
@@ -2579,9 +2579,9 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "포지 마스터 (Forge Master)",
@@ -2593,9 +2593,9 @@
       "ios"
     ],
     "developer": "Lessmore UG",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "패밀리 아일랜드 - 농장모험게임",
@@ -2609,9 +2609,9 @@
       "ios"
     ],
     "developer": "Melsoft Games Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "에브리타운",
@@ -2625,9 +2625,9 @@
       "ios"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "건쉽배틀 토탈워페어",
@@ -2639,9 +2639,9 @@
       "ios"
     ],
     "developer": "JOYCITY Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "에픽세븐",
@@ -2657,7 +2657,7 @@
       "ios"
     ],
     "developer": "Smilegate Holdings, Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2674,9 +2674,9 @@
       "ios"
     ],
     "developer": "A3Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "R2 ORIGIN",
@@ -2688,9 +2688,9 @@
       "ios"
     ],
     "developer": "Webzen Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "프라시아 전기",
@@ -2702,9 +2702,9 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "아레스 : 라이즈 오브 가디언즈",
@@ -2716,9 +2716,9 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "천상비K",
@@ -2732,9 +2732,9 @@
       "ios"
     ],
     "developer": "주식회사 아이톡시",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Domino Dreams™",
@@ -2746,9 +2746,9 @@
       "ios"
     ],
     "developer": "SuperPlay.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "레전드 오브 이미르",
@@ -2760,9 +2760,9 @@
       "ios"
     ],
     "developer": "Wemade Co., Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "보물사냥단GO!",
@@ -2773,9 +2773,9 @@
       "android"
     ],
     "developer": "Qiangqi Information Technology Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "둠스데이: 라스트 서바이버",
@@ -2792,9 +2792,9 @@
       "ios"
     ],
     "developer": "IGG.COM",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "에보니 - 왕의 귀환",
@@ -2811,9 +2811,9 @@
       "ios"
     ],
     "developer": "TG Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "지옥에서 온 검객",
@@ -2824,9 +2824,9 @@
       "android"
     ],
     "developer": "TRIKY",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "킹 오브 파이터 AFK",
@@ -2842,9 +2842,9 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "인생존망겜",
@@ -2858,9 +2858,9 @@
       "ios"
     ],
     "developer": "37GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "모바일 레전드: Bang Bang",
@@ -2876,7 +2876,7 @@
       "ios"
     ],
     "developer": "MOONTON",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2890,9 +2890,9 @@
       "ios"
     ],
     "developer": "Cedar Games Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "궁수의 전설2",
@@ -2909,9 +2909,9 @@
       "ios"
     ],
     "developer": "Habby",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "애니팡4",
@@ -2923,9 +2923,9 @@
       "ios"
     ],
     "developer": "Wemade Play Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "전함 고! 고! 고!",
@@ -2937,9 +2937,9 @@
       "ios"
     ],
     "developer": "Century Games PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "애니팡3",
@@ -2951,9 +2951,9 @@
       "ios"
     ],
     "developer": "Wemade Play Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "묵청대도: 깨어난 사북성",
@@ -2965,9 +2965,9 @@
       "ios"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "이세계 판타지 라이프",
@@ -2979,9 +2979,9 @@
       "ios"
     ],
     "developer": "ESTARGAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "심야귀담",
@@ -2993,9 +2993,9 @@
       "ios"
     ],
     "developer": "SPGAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "헌팅 스나이퍼",
@@ -3009,9 +3009,9 @@
       "ios"
     ],
     "developer": "Sparks Info",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "도원결의 : 방치형 삼국지",
@@ -3024,7 +3024,7 @@
     "developer": "코드타이거",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "주공을 지켜라：전부 없애기",
@@ -3036,9 +3036,9 @@
       "ios"
     ],
     "developer": "Glaciers Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "열혈강호: 화룡전",
@@ -3050,9 +3050,9 @@
       "ios"
     ],
     "developer": "Sesisoft",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "디아블로 이모탈",
@@ -3070,7 +3070,7 @@
       "ios"
     ],
     "developer": "Blizzard Entertainment, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3084,9 +3084,9 @@
       "ios"
     ],
     "developer": "BluePotion Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "R2M",
@@ -3100,9 +3100,9 @@
       "ios"
     ],
     "developer": "Webzen Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "엠파이어 & 퍼즐 (Empires & Puzzles)",
@@ -3117,9 +3117,9 @@
       "ios"
     ],
     "developer": "Small Giant Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "검선귀환",
@@ -3131,9 +3131,9 @@
       "ios"
     ],
     "developer": "LTGAMES GLOBAL",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "명일방주",
@@ -3151,9 +3151,9 @@
       "ios"
     ],
     "developer": "Yostar Limited.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "아케론:종말의 서곡",
@@ -3165,9 +3165,9 @@
       "ios"
     ],
     "developer": "게임랜드주식회사",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "월드 크러쉬 : 히어로 포스",
@@ -3179,9 +3179,9 @@
       "ios"
     ],
     "developer": "Glacier entertainment",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "V4",
@@ -3196,9 +3196,9 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "벽람항로",
@@ -3216,9 +3216,9 @@
       "ios"
     ],
     "developer": "X.D. Global",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "아이모: The World of Magic",
@@ -3230,9 +3230,9 @@
       "ios"
     ],
     "developer": "Com2uS",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "소드 오브 콘발라리아",
@@ -3244,9 +3244,9 @@
       "ios"
     ],
     "developer": "XD Entertainment Pte Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "나 혼자만 레벨업:어라이즈",
@@ -3263,7 +3263,7 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3276,9 +3276,9 @@
       "android"
     ],
     "developer": "SEAL Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "묵청대도: 바운티",
@@ -3290,9 +3290,9 @@
       "ios"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠",
@@ -3309,9 +3309,9 @@
       "ios"
     ],
     "developer": "Nuverse",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "프렌즈팝콘",
@@ -3323,9 +3323,9 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "X 클래시",
@@ -3337,9 +3337,9 @@
       "ios"
     ],
     "developer": "Glaciers Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "포켓 챔프: 3D 레이싱 게임",
@@ -3353,9 +3353,9 @@
       "ios"
     ],
     "developer": "Madbox",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Matching Story - Puzzle Games",
@@ -3369,9 +3369,9 @@
       "ios"
     ],
     "developer": "VERTEX GAMES PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "엘피스 전기: 소울링",
@@ -3385,7 +3385,7 @@
     "developer": "LING CHAI (HONG KONG) LIMITED",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "레이싱 마스터",
@@ -3401,7 +3401,7 @@
     "developer": "Exptional Global",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "메카 어셈블:좀비 스웜",
@@ -3413,9 +3413,9 @@
       "ios"
     ],
     "developer": "ONEMT SGP",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Wing Fighter",
@@ -3429,7 +3429,7 @@
     "developer": "MINIGAME ENTERTAINMENT LIMITED",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "저니 오브 모나크",
@@ -3441,9 +3441,9 @@
       "ios"
     ],
     "developer": "NCSOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "MARVEL 퓨처파이트",
@@ -3460,9 +3460,9 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "항해킹 사가",
@@ -3473,9 +3473,9 @@
       "android"
     ],
     "developer": "JouliaSoft",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "냥냥 시노비 : 미소녀 닌자 디펜스",
@@ -3489,9 +3489,9 @@
       "ios"
     ],
     "developer": "CookApps",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "에이지 오브 엠파이어 모바일",
@@ -3506,9 +3506,9 @@
       "ios"
     ],
     "developer": "Level Infinite",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "실타래 마스터 - 힐링 컬러 매듭 퍼즐",
@@ -3522,9 +3522,9 @@
       "android"
     ],
     "developer": "SUPERSONIC STUDIOS LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "블록 블라스트 (Block Blast)",
@@ -3539,9 +3539,9 @@
       "android"
     ],
     "developer": "Hungry Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Lost Soul",
@@ -3553,7 +3553,7 @@
       "android"
     ],
     "developer": "Tab Games Co., Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3567,9 +3567,9 @@
       "android"
     ],
     "developer": "AMOBEAR PTE. LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Arrows – Puzzle Escape",
@@ -3580,9 +3580,9 @@
       "ios"
     ],
     "developer": "Lessmore UG (haftungsbeschränkt)",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Bus Escape: Traffic Jam",
@@ -3593,9 +3593,9 @@
       "ios"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Brain Puzzle 2: Logic Twist",
@@ -3607,9 +3607,9 @@
       "android"
     ],
     "developer": "SmallStep Dev Team",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Foodie Sizzle: 푸디 시즐",
@@ -3623,9 +3623,9 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Brain Puzzle: Tricky Quest",
@@ -3637,9 +3637,9 @@
       "android"
     ],
     "developer": "SmallStep Dev Team",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "털실 마스터 - 마법의 정렬 버스주차퍼즐게임",
@@ -3653,9 +3653,9 @@
       "android"
     ],
     "developer": "Mirror of Ember",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Pixel Flow!",
@@ -3667,9 +3667,9 @@
       "android"
     ],
     "developer": "Loom Games Oyun Yazilim ve Pazarlama Anonim Sirketi",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "슈퍼펭귄 (Super Penguins)",
@@ -3681,9 +3681,9 @@
       "android"
     ],
     "developer": "Supersolid Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Flex City RP: 온라인 오픈 월드",
@@ -3695,9 +3695,9 @@
       "android"
     ],
     "developer": "Jarvi Games Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "매직 정렬!  (Magic Sort !)",
@@ -3712,9 +3712,9 @@
       "android"
     ],
     "developer": "Grand Games A.Ş.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Jigsolitaire - 지그소 솔리테어",
@@ -3726,9 +3726,9 @@
       "android"
     ],
     "developer": "Gamincat, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Rider - 라이더",
@@ -3742,9 +3742,9 @@
       "android"
     ],
     "developer": "Ketchapp",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "수상한 편의점: AI 진상을 퇴치하라",
@@ -3756,9 +3756,9 @@
       "android"
     ],
     "developer": "Eleven Dot Studio, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Rummikub",
@@ -3773,9 +3773,9 @@
       "android"
     ],
     "developer": "Kinkajoo Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "고양이 라이프 : 귀여운 시뮬레이션 게임",
@@ -3787,9 +3787,9 @@
       "android"
     ],
     "developer": "treeplla Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "빠지냥! (Drop the Cat) : 로직 퍼즐 게임",
@@ -3803,9 +3803,9 @@
       "android"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "데몬 소서리스 키우기: 길드 대항전 오픈!",
@@ -3817,9 +3817,9 @@
       "android"
     ],
     "developer": "Volcanus Studio Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "토킹톰 골드런",
@@ -3835,9 +3835,9 @@
       "android"
     ],
     "developer": "Outfit7 Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Color Block Jam",
@@ -3849,9 +3849,9 @@
       "android"
     ],
     "developer": "Rollic Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Subway Surfers",
@@ -3867,9 +3867,9 @@
       "android"
     ],
     "developer": "Sybo Games ApS",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Run!!!",
@@ -3883,9 +3883,9 @@
       "android"
     ],
     "developer": "Kongregate",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Among Us!",
@@ -3902,9 +3902,9 @@
       "android"
     ],
     "developer": "InnerSloth LLC",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Match Villains",
@@ -3916,9 +3916,9 @@
       "android"
     ],
     "developer": "Good Job Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Sand Crush",
@@ -3930,9 +3930,9 @@
       "android"
     ],
     "developer": "Wonderful Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "브레인테스트 올스타 (Brain Test): IQ 게임",
@@ -3944,9 +3944,9 @@
       "android"
     ],
     "developer": "UNICO STUDIO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "매직 타일 3: 피아노 게임 케이팝 노래",
@@ -3960,9 +3960,9 @@
       "android"
     ],
     "developer": "Amanotes Pte. Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "롤링 스카이",
@@ -3975,7 +3975,7 @@
     "developer": "Forward Vision Corporation Limited",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스도쿠 - 클래식 로직 퍼즐 게임",
@@ -3989,9 +3989,9 @@
       "android"
     ],
     "developer": "Easybrain Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "3D운전교실",
@@ -4006,9 +4006,9 @@
       "android"
     ],
     "developer": "Ho San Won",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "나사 매치 - 볼트업 퍼즐게임",
@@ -4020,9 +4020,9 @@
       "android"
     ],
     "developer": "Stellars",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "갓물주 키우기",
@@ -4034,9 +4034,9 @@
       "android"
     ],
     "developer": "Shimmer Games Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Idle Landlord Sim",
@@ -4048,9 +4048,9 @@
       "android"
     ],
     "developer": "Chengdu Warrior Tech Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "무한의 계단",
@@ -4065,9 +4065,9 @@
       "android"
     ],
     "developer": "Neptune Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Word Solitaire Game",
@@ -4081,9 +4081,9 @@
       "android"
     ],
     "developer": "Hitapps Games LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Goose Goose Duck",
@@ -4099,9 +4099,9 @@
       "android"
     ],
     "developer": "Gaggle Studios, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Hexa Away : 육각형 타일 퍼즐",
@@ -4115,9 +4115,9 @@
       "android"
     ],
     "developer": "GOODROID,Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "라이즈 신 키우기",
@@ -4129,9 +4129,9 @@
       "android"
     ],
     "developer": "NXN Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "사커 슈퍼스타 - 축구",
@@ -4143,9 +4143,9 @@
       "android"
     ],
     "developer": "Real Free Soccer",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Merge Fashion: Romance Story",
@@ -4157,9 +4157,9 @@
       "android"
     ],
     "developer": "Wind's Choice Tech Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "기어몬: 타워 디펜스",
@@ -4174,9 +4174,9 @@
       "android"
     ],
     "developer": "Perfeggs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Idle Lumber Empire: 시뮬레이터",
@@ -4188,9 +4188,9 @@
       "android"
     ],
     "developer": "AppQuantum Publishing Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "비타 마작(Vita Mahjong)",
@@ -4202,9 +4202,9 @@
       "android"
     ],
     "developer": "Vita Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "수험생 키우기 : 수능 시뮬레이션 게임",
@@ -4218,7 +4218,7 @@
     "developer": "Junyeop Kim",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "좀비고등학교",
@@ -4233,9 +4233,9 @@
       "android"
     ],
     "developer": "AWESOMEPIECE",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Dunk Shot",
@@ -4247,9 +4247,9 @@
       "android"
     ],
     "developer": "Ketchapp",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "해적왕: 바다의 전설",
@@ -4262,7 +4262,7 @@
     "developer": "Guangzhou Waliang Trading Co., Ltd.",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "오목의 달인",
@@ -4274,9 +4274,9 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "단일 라인 블록 채우기 퍼즐 게임",
@@ -4290,7 +4290,7 @@
     "developer": "Asim Ashraf",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Perfect Tidy: 완벽한 정리",
@@ -4302,9 +4302,9 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Dreamy Room - 꿈의 방",
@@ -4316,9 +4316,9 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "체스 · 플레이 및 배우기 온라인",
@@ -4333,9 +4333,9 @@
       "android"
     ],
     "developer": "Chess.com",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "꿈의 호텔 (My Perfect Hotel)",
@@ -4349,7 +4349,7 @@
     "developer": "SayGames LTD",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스타일라잇 × 카캡체 콜라보 출시",
@@ -4363,9 +4363,9 @@
       "android"
     ],
     "developer": "Archosaur Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "사과게임 - 화제의 인싸게임",
@@ -4377,9 +4377,9 @@
       "android"
     ],
     "developer": "JIEUNK",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "테트리스 - Tetris®",
@@ -4395,9 +4395,9 @@
       "android"
     ],
     "developer": "PlayStudios",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "길건너 친구들",
@@ -4412,9 +4412,9 @@
       "android"
     ],
     "developer": "HIPSTER WHALE",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "비즈 앤 타운: 회사 경영 시뮬레이션 - 타이쿤 게임",
@@ -4426,9 +4426,9 @@
       "android"
     ],
     "developer": "Play With Us Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Tangled Rope: Solve Puzzles!",
@@ -4442,7 +4442,7 @@
     "developer": "JoyGame Studio Limited",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "브라운 토이즈",
@@ -4454,9 +4454,9 @@
       "ios"
     ],
     "developer": "LINE NEXT Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "고스톱M : 데이터 필요없는 맞고 게임",
@@ -4467,9 +4467,9 @@
       "android"
     ],
     "developer": "Noriworks",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "블록게임",
@@ -4480,9 +4480,9 @@
       "android"
     ],
     "developer": "Moca",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "애로우즈 – 퍼즐 이스케이프 (Arrows)",
@@ -4494,9 +4494,9 @@
       "ios"
     ],
     "developer": "Lessmore UG",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "모범 놀이터： 타락자들",
@@ -4510,9 +4510,9 @@
       "ios"
     ],
     "developer": "Jiewan Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Jigmerge Puzzles",
@@ -4523,9 +4523,9 @@
       "android"
     ],
     "developer": "FunLink.Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Water Match™- ASMR Water Sort",
@@ -4537,9 +4537,9 @@
       "ios"
     ],
     "developer": "TAP GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "국민 고스톱",
@@ -4550,9 +4550,9 @@
       "android"
     ],
     "developer": "Noriworks",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "블록 크러시 (Block Crush)",
@@ -4564,9 +4564,9 @@
       "ios"
     ],
     "developer": "Wonderful  Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Tile Explorer - 트리플 매치",
@@ -4578,9 +4578,9 @@
       "ios"
     ],
     "developer": "Oakever Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Pokémon UNITE",
@@ -4597,9 +4597,9 @@
       "ios"
     ],
     "developer": "The Pokémon Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "낱말퀴즈-단어&단어게임&두뇌 훈련&현실적인 게임",
@@ -4611,9 +4611,9 @@
       "ios"
     ],
     "developer": "Astrasen Play",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "타일 클럽 - 매칭 게임",
@@ -4625,9 +4625,9 @@
       "ios"
     ],
     "developer": "GamoVation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "러시: 익스트림 (RUSH: Xtreme)",
@@ -4639,9 +4639,9 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "음악 피아노 7:  음악게임 & 피아노게임",
@@ -4653,9 +4653,9 @@
       "ios"
     ],
     "developer": "Melodya Muses",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "버스 탈출 - 교통 체증",
@@ -4667,9 +4667,9 @@
       "ios"
     ],
     "developer": "ABI GAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Epic Plane Evolution",
@@ -4681,9 +4681,9 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "기어 작동: 최후의 요새-Gear Defenders",
@@ -4695,9 +4695,9 @@
       "ios"
     ],
     "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Life - 인생 시뮬레이션 RPG",
@@ -4711,9 +4711,9 @@
       "ios"
     ],
     "developer": "OfficialCaox",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스네이크 클래시 (Snake Clash)",
@@ -4725,9 +4725,9 @@
       "ios"
     ],
     "developer": "Supercent, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "마작 원더스 (Mahjong Wonders)",
@@ -4739,9 +4739,9 @@
       "ios"
     ],
     "developer": "Nebula  Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
@@ -4755,9 +4755,9 @@
       "ios"
     ],
     "developer": "FALCON GAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "1945 공군: 클래식 비행기 게임 슈팅 아케이드",
@@ -4769,9 +4769,9 @@
       "ios"
     ],
     "developer": "1SOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "올인홀 (All in Hole)",
@@ -4786,9 +4786,9 @@
       "ios"
     ],
     "developer": "Homa",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "피자 레디 (Pizza Ready)",
@@ -4800,9 +4800,9 @@
       "ios"
     ],
     "developer": "Supercent, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Brainy Master: 퍼즐 두뇌 게임",
@@ -4813,9 +4813,9 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Paper.io 2",
@@ -4829,9 +4829,9 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "단일 선 블록 채우기 퍼즐",
@@ -4843,9 +4843,9 @@
       "ios"
     ],
     "developer": "The Fashion Valley",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "타일 매치 - 트리플 퍼즐",
@@ -4857,9 +4857,9 @@
       "ios"
     ],
     "developer": "PlaySimple Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Block Crazy Robo World Craft",
@@ -4871,9 +4871,9 @@
       "ios"
     ],
     "developer": "Prokids Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Geometry Dash Lite",
@@ -4889,9 +4889,9 @@
       "ios"
     ],
     "developer": "RobTop Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "편의점 정리왕 3D",
@@ -4903,9 +4903,9 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Dancing Cats: 고양이 리듬 게임",
@@ -4917,9 +4917,9 @@
       "ios"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Arrow Out",
@@ -4931,9 +4931,9 @@
       "ios"
     ],
     "developer": "Lion Studios Plus",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Happy Color® – 컬러링북, 숫자 색칠 게임",
@@ -4945,9 +4945,9 @@
       "ios"
     ],
     "developer": "X-FLOW",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "비히클 마스터 (Vehicle Masters)",
@@ -4959,9 +4959,9 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "상품 정렬: 매치 3 퍼즐 - Goods Sorting",
@@ -4973,9 +4973,9 @@
       "ios"
     ],
     "developer": "FALCON GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Tik Tap Challenge",
@@ -4989,9 +4989,9 @@
       "ios"
     ],
     "developer": "XGame Global",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "앵그리버드 2 (Angry Birds 2)",
@@ -5008,9 +5008,9 @@
       "ios"
     ],
     "developer": "Rovio Entertainment Oy",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "마라마스터 : 인형계, 포토카드 포장, 마라탕 먹방",
@@ -5022,9 +5022,9 @@
       "ios"
     ],
     "developer": "Supa Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Hole.io",
@@ -5038,9 +5038,9 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Dancing Cats 2:고양이 리듬 게임",
@@ -5051,9 +5051,9 @@
       "android"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스도쿠 - 클래식 스도쿠",
@@ -5067,9 +5067,9 @@
       "ios"
     ],
     "developer": "Oakever Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "마이 스티커 룸 (My Sticker Room)",
@@ -5081,9 +5081,9 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "사커 슈퍼스타(Soccer Superstar)",
@@ -5095,9 +5095,9 @@
       "ios"
     ],
     "developer": "Real Freestyle Soccer",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
@@ -5112,9 +5112,9 @@
       "ios"
     ],
     "developer": "Unico Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "뻐끔뻐끔 배틀-Fish Eat Fish.io",
@@ -5126,9 +5126,9 @@
       "ios"
     ],
     "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "나는 로봇이 아니야 (I am Not a Robot)",
@@ -5140,9 +5140,9 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Snack Sort: Goods Match Game",
@@ -5154,9 +5154,9 @@
       "ios"
     ],
     "developer": "Concave IT Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "아케인 아레나: 타워 디펜스",
@@ -5168,9 +5168,9 @@
       "ios"
     ],
     "developer": "Panteon",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Fish of Fortune™",
@@ -5182,9 +5182,9 @@
       "ios"
     ],
     "developer": "Whalo",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "머지 냥카페 : 고양이 머지 게임",
@@ -5196,9 +5196,9 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "로얄 이스케이프 (Royal Escape)",
@@ -5210,9 +5210,9 @@
       "ios"
     ],
     "developer": "GameeStudio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "악마단 돌겨억!",
@@ -5224,9 +5224,9 @@
       "ios"
     ],
     "developer": "Wemade Max Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "괴담 여친 두 개의 선택",
@@ -5237,9 +5237,9 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "사황 시대: 왕좌 쟁패",
@@ -5250,9 +5250,9 @@
       "android"
     ],
     "developer": "RISE SMART",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Grill Sort - 고기구이, 바비큐 맞추기",
@@ -5264,9 +5264,9 @@
       "ios"
     ],
     "developer": "Gloryway Puzzle Hub",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Water Sort! Color Sort Puzzle",
@@ -5280,9 +5280,9 @@
       "ios"
     ],
     "developer": "Bobodoo Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "블럭 퍼즐: 놀면 놀수록 더 똑똑해지는 게임!",
@@ -5294,9 +5294,9 @@
       "ios"
     ],
     "developer": "LinkDesks Daily Puzzle",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "라이엇 모바일",
@@ -5308,9 +5308,9 @@
       "ios"
     ],
     "developer": "Riot Games, Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "스나이퍼 3D：건슈팅 게임",
@@ -5325,9 +5325,9 @@
       "ios"
     ],
     "developer": "Wildlife Studios",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Water SortPuz 3D",
@@ -5339,9 +5339,9 @@
       "ios"
     ],
     "developer": "Yelo Hood",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Wool Puzzle 3D",
@@ -5353,9 +5353,9 @@
       "ios"
     ],
     "developer": "XGame HK",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Snake Puzzle: Slither to Eat",
@@ -5369,9 +5369,9 @@
       "ios"
     ],
     "developer": "UniPuzz Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Block Away - Tap Out Puzzle",
@@ -5383,9 +5383,9 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Woodturning",
@@ -5399,9 +5399,9 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Annoying Uncle - 펀칭 게임",
@@ -5413,9 +5413,9 @@
       "ios"
     ],
     "developer": "Game District LLC",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "내 피아노 펫: 귀여운 친구들, 음악 세상, 모든 노래",
@@ -5428,7 +5428,7 @@
     "developer": "PulseBeat Studios",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Snake Escape",
@@ -5442,9 +5442,9 @@
       "ios"
     ],
     "developer": "Solaird Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Roadside Empire (로드사이드 엠파이어)",
@@ -5458,9 +5458,9 @@
       "ios"
     ],
     "developer": "Highcore Labs LLC",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Droll Soccer--fly ball",
@@ -5473,7 +5473,7 @@
     "developer": "WinterGameStudio",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "수박 만들기 2048 : 에그",
@@ -5487,9 +5487,9 @@
       "ios"
     ],
     "developer": "mobirix",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Color Block: Combo Blast",
@@ -5501,9 +5501,9 @@
       "ios"
     ],
     "developer": "Ivy",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "캣점프",
@@ -5515,9 +5515,9 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "UNO!™",
@@ -5532,9 +5532,9 @@
       "ios"
     ],
     "developer": "Mattel163 Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "제로웨이크 게이트: BL RPG",
@@ -5546,9 +5546,9 @@
       "ios"
     ],
     "developer": "StoryTaco.Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "전우치 키우기",
@@ -5562,9 +5562,9 @@
       "ios"
     ],
     "developer": "CodeDragon Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "캔디 팝 포레스트 매치 - 3",
@@ -5576,9 +5576,9 @@
       "ios"
     ],
     "developer": "SUPERBOX Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Cube Breaker",
@@ -5594,7 +5594,7 @@
     "developer": "AMOBEAR TECHNOLOGY GROUP",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Royal Lands - Save The King",
@@ -5606,9 +5606,9 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "개체 찾기 - 숨은그림찾기 게임",
@@ -5620,9 +5620,9 @@
       "ios"
     ],
     "developer": "Guru Puzzle Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Color Slide Puzzle -컬러 슬라이드 퍼즐",
@@ -5634,9 +5634,9 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "로드모바일: 킹덤 워즈",
@@ -5653,9 +5653,9 @@
       "ios"
     ],
     "developer": "IGG.COM",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "캔디프렌즈 : 매치 3 퍼즐",
@@ -5669,9 +5669,9 @@
       "ios"
     ],
     "developer": "SUPERBOX Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Idol Draw: Coloring Master",
@@ -5682,9 +5682,9 @@
       "android"
     ],
     "developer": "JUMBO GAMES Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "숫자별로 색칠하기: 픽셀 색칠 게임",
@@ -5696,9 +5696,9 @@
       "ios"
     ],
     "developer": "Wildlife Studios",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "나사 매치 - 나사풀기 핀 퍼즐 나사게임 3d",
@@ -5709,9 +5709,9 @@
       "android"
     ],
     "developer": "Astrasen Play",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "틱톡 필터와 재미있는 미니 게임 모음",
@@ -5724,7 +5724,7 @@
     "developer": "Unicorn Studio Official",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "편의점 정리왕: 매치 마스터",
@@ -5736,9 +5736,9 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Tricky Story",
@@ -5750,9 +5750,9 @@
       "ios"
     ],
     "developer": "XGame HK",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "2인용 게임: 도전",
@@ -5764,9 +5764,9 @@
       "ios"
     ],
     "developer": "JindoBlu",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "수학 퍼즐 게임 - 크로스 매스",
@@ -5780,9 +5780,9 @@
       "ios"
     ],
     "developer": "Guru Puzzle Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Minecraft 체험판",
@@ -5795,7 +5795,7 @@
     "developer": "Mojang",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "옆자리는 누구? : 꿀잼 논리 퍼즐 퀴즈게임",
@@ -5807,9 +5807,9 @@
       "ios"
     ],
     "developer": "FTY LLC.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "고고 스카이: 신섭 오픈 1000 뽑기 증정",
@@ -5823,7 +5823,7 @@
     "developer": "Mafgames",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "데이터 필요없는 게임 - 와이파이 필요없는 게임",
@@ -5835,9 +5835,9 @@
       "ios"
     ],
     "developer": "JindoBlu",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Water Out Puzzle",
@@ -5849,9 +5849,9 @@
       "ios"
     ],
     "developer": "HM Games Pty Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Car Out! Traffiс 자동차 주차게임. 카파킹",
@@ -5863,9 +5863,9 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Tangled Rope: Twisted Puzzle",
@@ -5877,9 +5877,9 @@
       "ios"
     ],
     "developer": "NORDKAPP GAMES LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Kick the Buddy: 스트레스 해소 미니게임",
@@ -5896,7 +5896,7 @@
     "developer": "Playgendary Limited",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Cookingdom - 요리의 나라",
@@ -5908,9 +5908,9 @@
       "ios"
     ],
     "developer": "ABI GAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Mahjong Blast!",
@@ -5922,9 +5922,9 @@
       "ios"
     ],
     "developer": "HungryStudio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Kpop Piano: 피아노타일 & 음악게임",
@@ -5937,7 +5937,7 @@
     "developer": "Sonata Studio: Piano Rhythm",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Stickman Shadow Hunter Fight",
@@ -5950,7 +5950,7 @@
     "developer": "Mana Games Studio",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Satisfying Puzzle: ASMR 청소게임",
@@ -5963,7 +5963,7 @@
     "developer": "Stella Joy Studio",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "수학퍼즐: 연산 & 계산 - 숫자 게임. 두뇌 트레이닝",
@@ -5975,9 +5975,9 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Tiles in Hole 타일 인 홀: 먹는 게임",
@@ -5988,9 +5988,9 @@
       "android"
     ],
     "developer": "LIHUHU PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Archery Clash!",
@@ -6002,9 +6002,9 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "War Drone: 3D Shooting Games",
@@ -6016,9 +6016,9 @@
       "ios"
     ],
     "developer": "Mobile Gaming Studios Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Unfolded: Webtoon Stories",
@@ -6030,9 +6030,9 @@
       "ios"
     ],
     "developer": "NANOBIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "직소 솔리테어",
@@ -6045,7 +6045,7 @@
     "developer": "Stella Joy Studio",
     "hasRankings": false,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Dig Merge Deeper",
@@ -6057,9 +6057,9 @@
       "ios"
     ],
     "developer": "Yso Corp",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "War Inc: Rising",
@@ -6071,9 +6071,9 @@
       "ios"
     ],
     "developer": "Fastone Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Counter-Strike 2",
@@ -6127,7 +6127,7 @@
       "steam"
     ],
     "developer": "PUBG Corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
