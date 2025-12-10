@@ -69,6 +69,7 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>.header-title a{color:#f1f5f9}</style>
   <link rel="stylesheet" href="/styles.css">
   <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <!-- Firebase Analytics (프로덕션만) -->
@@ -122,6 +123,21 @@
     </div>
   </header>
   
+  <div class="search-container">
+    <div class="search-box">
+      <a href="/" class="search-home-icon" aria-label="홈으로 이동">
+        <img src="/favicon.svg" alt="" width="20" height="20">
+      </a>
+      <input type="text" class="search-input" placeholder="게임 이름을 입력해주세요" autocomplete="off">
+      <button class="search-btn" type="button" aria-label="검색">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-dropdown"></div>
+  </div>
+  
   <nav class="nav">
     <div class="nav-inner">
       
@@ -133,6 +149,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
         주요 뉴스
       </a>
+      <a class="nav-item" href="/rankings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+        모바일 순위
+      </a>
       <a class="nav-item" href="/community">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
         커뮤니티
@@ -140,10 +160,6 @@
       <a class="nav-item" href="/youtube">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         영상 순위
-      </a>
-      <a class="nav-item" href="/rankings">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
-        모바일 순위
       </a>
       <a class="nav-item" href="/steam">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12h.01M18 12h.01"/><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6v12"/></svg>
@@ -172,9 +188,9 @@
 
         <div class="insight-panel active" id="panel-daily">
           <div class="weekly-header-card">
-            <h1 class="weekly-header-title">12월 10일 게임 트렌드 리포트</h1>
+            <h1 class="weekly-header-title">12월 11일 게임 트렌드 리포트</h1>
             <div class="weekly-header-meta">
-              <span class="weekly-header-period">2025-12-10</span>
+              <span class="weekly-header-period">2025-12-11</span>
               <span class="weekly-header-ampm-tag am">AM</span>
             </div>
           </div>
@@ -186,7 +202,7 @@
           <h3 class="weekly-section-title">데일리 포커스</h3>
         </div>
       </div>
-      <p class="weekly-section-desc">오늘은 마비노기 모바일의 웨카 경매장 전면 재검토와 더 파이널스 e스포츠 확장, 넥스 플레이그라운드의 콘솔 판매 약진이 눈에 띄어요. 모바일에선 WOS·리니지M·컴투스프로야구V25가 매출 상위권을 지키고, 중국 e스포츠 시장 성장세도 함께 주목받고 있어요.</p>
+      <p class="weekly-section-desc">오늘은 '메이플 키우기'의 양대 마켓 매출 1위와 넷마블 손자회사 구로발게임즈 청산, 시프트업 김형태 대표의 대통령표창이 눈에 띄어요. 인디 쇼케이스와 e스포츠·스트리밍 이슈가 겹치며 연말 게임 시장 열기가 더해지고 있어요.</p>
     </div>
   
           
@@ -202,37 +218,37 @@
           
               <div class="weekly-hot-card featured">
                 <div class="weekly-hot-tag "><svg class="weekly-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>모바일</div>
-                <h4 class="weekly-hot-title">생존·MMORPG·스포츠가 오늘 매출 상위</h4>
-                <p class="weekly-hot-desc">오늘 양대 마켓 매출 상위는 WOS, 리니지M, 컴투스프로야구V25, 뱀피르 등 생존·MMORPG·스포츠 게임이 채우고 있어요.
-캐주얼보다 코어 지향 장기 과금 게임이 여전히 매출 상위에서 힘을 쓰는 모습이에요.</p>
+                <h4 class="weekly-hot-title">메이플 키우기, 방치형으로 양대 마켓 석권</h4>
+                <p class="weekly-hot-desc">11월 6일 출시된 '메이플 키우기'가 국내 애플 앱스토어와 구글 플레이 매출 1위를 동시에 기록하고 있어요.
+방치형과 메이플스토리 IP 결합으로 연말 모바일 시장을 주도하고 있어요.</p>
               </div>
             
               <div class="weekly-hot-card ">
-                <div class="weekly-hot-tag "><svg class="weekly-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4M16 10h.01M18 14h.01"/></svg>콘솔</div>
-                <h4 class="weekly-hot-title">넥스 플레이그라운드, 블프서 Xbox 앞질러</h4>
-                <p class="weekly-hot-desc">미국 블랙프라이데이 콘솔 판매에서 넥스 플레이그라운드가 점유율 14%로 Xbox를 앞질렀다고 전해졌어요.
-국내에선 한국 기업 콘솔이 글로벌 시장에서 존재감을 보였다는 점에 의미를 두는 시각이 많아요.</p>
+                <div class="weekly-hot-tag "><svg class="weekly-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>PC</div>
+                <h4 class="weekly-hot-title">ARC Raiders, 스팀 동시접속 26만 명 돌파</h4>
+                <p class="weekly-hot-desc">오늘 스팀 지표에서 'ARC Raiders'가 약 26만 동접으로 3위를 기록하며 PC 플랫폼 신작 후보로 떠오르고 있어요.
+배틀로얄 위주였던 상위권에 협동 슈팅이 합류했다는 점이 의미 있어요.</p>
               </div>
             
               <div class="weekly-hot-card ">
-                <div class="weekly-hot-tag "><svg class="weekly-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6-3 6 3"/><path d="M6 9v8l6 3 6-3V9"/><path d="M12 6v15"/></svg>e스포츠</div>
-                <h4 class="weekly-hot-title">더 파이널스, 정규 리그로 생태계 확장</h4>
-                <p class="weekly-hot-desc">넥슨은 팀 기반 FPS 더 파이널스가 정규 리그와 글로벌 대회를 통해 e스포츠 생태계를 넓혀가고 있다고 밝혔어요.
-10대 대상 '하이스쿨 히어로즈'까지 준비해, 젊은 팬층을 키우려는 장기 전략이 보인다는 이야기예요.</p>
+                <div class="weekly-hot-tag ">인디</div>
+                <h4 class="weekly-hot-title">데이 오브 더 데브스, 인디 기대작 공개</h4>
+                <p class="weekly-hot-desc">비영리 인디 쇼케이스 '데이 오브 더 데브스'에서 '어웨이시스'와 '루시드 폴스' 등 2026년 발매 예정 인디가 소개됐어요.
+국내 게이머들도 인벤 기사와 방송을 통해 차세대 인디 후보들을 눈여겨보고 있어요.</p>
               </div>
             
               <div class="weekly-hot-card ">
                 <div class="weekly-hot-tag ">글로벌</div>
-                <h4 class="weekly-hot-title">중국 e스포츠 매출 6조·6.4% 성장 전망</h4>
-                <p class="weekly-hot-desc">최근 자료에 따르면 2025년 중국 e스포츠 산업 매출이 6조 원을 넘고 전년 대비 약 6.4% 성장할 것으로 나왔어요.
-한국 팀과 리그가 참여하는 국제 대회가 늘면서, 국내 게임사들도 중국 e스포츠 시장 전략을 더 고민해야 하는 시점이에요.</p>
+                <h4 class="weekly-hot-title">팰월드 모바일, 한·일 알파테스트 예고</h4>
+                <p class="weekly-hot-desc">보도에 따르면 크래프톤이 '팰월드 모바일' 클로즈드 알파테스트를 12월 한국과 일본에서 진행한다고 밝혔어요.
+콘솔·PC 흥행작의 모바일 이식이어서 국내 유저들도 테스트 참여와 완성도에 관심을 모으고 있어요.</p>
               </div>
             
               <div class="weekly-hot-card ">
-                <div class="weekly-hot-tag ">신작</div>
-                <h4 class="weekly-hot-title">마비노기 모바일, 웨카 경매장 전면 재검토</h4>
-                <p class="weekly-hot-desc">마비노기 모바일 개발진이 논란이 된 웨카 경매장 시스템을 베타 종료와 함께 전면 재검토하겠다고 공식 발표했어요.
-이용자 반발에 빠르게 대응하며 과금 구조를 다시 설계하겠다는 의지를 보여, 정식 서비스 방향에 관심이 쏠리고 있어요.</p>
+                <div class="weekly-hot-tag ">출시·종료</div>
+                <h4 class="weekly-hot-title">구로발게임즈 청산, '킹 아서' 서비스 종료</h4>
+                <p class="weekly-hot-desc">넷마블 손자회사 구로발게임즈가 법인 청산 절차에 들어가며 '킹 아서: 레전드 라이즈'가 내년 1분기 서비스 종료를 예고했어요.
+이용자 보상 공지와 개발 인력 전환 배치가 향후 핵심 쟁점으로 거론되고 있어요.</p>
               </div>
             
         </div>
@@ -251,18 +267,18 @@
       <div class="weekly-timeline-item">
         <div class="weekly-timeline-marker"></div>
         <div class="weekly-timeline-content">
-          <span class="weekly-timeline-tag">넥슨</span>
-          <h4 class="weekly-timeline-title">마비노기 모바일 과금 설계에 조기 제동</h4>
-          <p class="weekly-timeline-desc">넥슨 데브캣은 마비노기 모바일 웨카 경매장 이슈에 대해 사과하고, 베타 종료 시점에 맞춰 시스템을 전면 재검토하겠다고 밝혔어요. P2W 논란을 키우기 전에 구조를 손보겠다는 메시지로 읽히며, 넥슨 신작 라이브 전략에도 변화가 있을지 주목받고 있어요.</p>
+          <span class="weekly-timeline-tag">시프트업</span>
+          <h4 class="weekly-timeline-title">김형태 대표, 콘텐츠대상 대통령표창 수상</h4>
+          <p class="weekly-timeline-desc">시프트업 김형태 대표가 2025 대한민국 콘텐츠대상에서 게임산업발전유공 부문 대통령표창을 받았어요. '승리의 여신: 니케'와 '스텔라 블레이드'의 글로벌 성과가 한국 콘솔·모바일 개발사의 저력을 인정받은 사례예요.</p>
         </div>
       </div>
     
       <div class="weekly-timeline-item">
         <div class="weekly-timeline-marker"></div>
         <div class="weekly-timeline-content">
-          <span class="weekly-timeline-tag">NXC</span>
-          <h4 class="weekly-timeline-title">NXC, 1512억 자사주 소각으로 주주환원</h4>
-          <p class="weekly-timeline-desc">넥슨 지주사 NXC가 약 1512억 원 규모의 자사주 소각을 진행하며 기획재정부를 포함한 전 주주가 참여했다고 전해졌어요. 비상장사지만 지배구조와 주주 환원 의지를 드러낸 움직임이라, 넥슨 그룹 전체 기업 가치와 상장사 주가에도 간접적인 기대가 걸리고 있어요.</p>
+          <span class="weekly-timeline-tag">넷마블</span>
+          <h4 class="weekly-timeline-title">구로발게임즈 청산, 스튜디오 구조조정 논의</h4>
+          <p class="weekly-timeline-desc">넷마블 손자회사 구로발게임즈가 청산 절차에 들어가며 노조와 직원들이 고용보장과 전환 배치를 요구하고 있다는 보도가 나왔어요. 대형 퍼블리셔가 수익성과 포트폴리오 재편을 위해 중소 스튜디오 구조를 손보는 흐름이 드러나고 있어요.</p>
         </div>
       </div>
     
@@ -281,16 +297,16 @@
           
       <div class="weekly-hot-card">
         <div class="weekly-hot-tag tag-revenue">매출</div>
-        <h4 class="weekly-hot-title">WOS·리니지M·컴투스 야구, 상위 굳혀</h4>
-        <p class="weekly-hot-desc">iOS·Android 매출 상위에서 WOS와 리니지M, 컴투스프로야구V25가 모두 톱5에 오르며 존재감을 보이고 있어요.
-전략·MMORPG·스포츠가 나란히 상위권에 포진해, 코어 장르 다변화가 이뤄지는 흐름으로 해석되고 있어요.</p>
+        <h4 class="weekly-hot-title">메이플 키우기, 한국·대만 매출 1위 유지</h4>
+        <p class="weekly-hot-desc">보도에 따르면 '메이플 키우기'는 국내와 대만 애플 앱스토어에서 매출 1위를 기록하며 연일 상위권을 지키고 있어요.
+IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하고 있다는 점이 수치로 확인되고 있어요.</p>
       </div>
     
       <div class="weekly-hot-card">
         <div class="weekly-hot-tag tag-players">동접</div>
-        <h4 class="weekly-hot-title">ARC Raiders, 스팀 동접 3위 신흥 강자</h4>
-        <p class="weekly-hot-desc">오늘 스팀 동시접속자 순위에서 ARC Raiders가 약 25만 명 이상을 기록하며 3위에 올랐어요.
-무료 팀 기반 슈터가 CS2·도타2와 함께 상위권을 차지해, PC에서도 무료 협동 슈팅 수요가 여전히 강하다는 지표로 읽히고 있어요.</p>
+        <h4 class="weekly-hot-title">CS2·Dota2, 스팀 동시접속 1·2위 고정</h4>
+        <p class="weekly-hot-desc">오늘 스팀 동시접속자 순위에서 Counter-Strike 2가 약 113만 명, Dota 2가 약 72만 명으로 1·2위를 기록했어요.
+장기 서비스 e스포츠 타이틀이 여전히 PC 플랫폼 전체 트래픽을 견인하는 중심 축임을 보여줘요.</p>
       </div>
     
         </div>
@@ -308,50 +324,50 @@
           
       <div class="weekly-hot-card ranking-item">
         <div class="weekly-hot-tag tag-up">급상승</div>
-        <h4 class="weekly-hot-title">추억의 잡화점</h4>
+        <h4 class="weekly-hot-title">카트라이더 러쉬플러스</h4>
         
       <span class="weekly-ranking-badge up">
-        iOS 68위 → 52위 (+16)
+        iOS 33위 → 5위 (+28)
       </span>
     
-        <p class="weekly-hot-desc">감성 스토리와 점포 경영을 내세운 힐링형 게임이에요.
-연말 분위기와 맞물려 중위권에서 순위가 빠르게 오르고 있어요.</p>
+        <p class="weekly-hot-desc">iOS 매출 33위였던 '카트라이더 러쉬플러스'가 오늘 5위까지 오르며 상위권에 재진입했어요.
+레이싱 장르 대표 장기작이 다시 탑5에 들어오면서 오늘 매출 차트에서 넥슨 모바일 비중이 한층 높아진 구도를 보여줘요.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
         <div class="weekly-hot-tag tag-up">급상승</div>
-        <h4 class="weekly-hot-title">변신 키우기</h4>
+        <h4 class="weekly-hot-title">아키텍트: 랜드 오브 엑자일</h4>
         
       <span class="weekly-ranking-badge up">
-        iOS 95위 → 80위 (+15)
+        iOS 58위 → 20위 (+38)
       </span>
     
-        <p class="weekly-hot-desc">간단한 조작과 변신 콘셉트를 더한 방치형 육성 게임이에요.
-하위권에서 장기 플레이 유저가 늘어나며 오늘은 눈에 띄는 상승 폭을 기록했어요.</p>
+        <p class="weekly-hot-desc">전날 58위였던 '아키텍트: 랜드 오브 엑자일'이 20위로 오르며 중위권 상단까지 빠르게 치고 올라왔어요.
+한 번에 30계단 가까이 오른 만큼 오늘 iOS 매출판에서 가장 눈에 띄는 신흥 강자 움직임으로 기록되고 있어요.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
         <div class="weekly-hot-tag tag-up">급상승</div>
-        <h4 class="weekly-hot-title">더 스파이크 크로스</h4>
+        <h4 class="weekly-hot-title">스텔라 소라</h4>
         
       <span class="weekly-ranking-badge up">
-        Android 110위 → 98위 (+12)
+        iOS 98위 → 68위 (+30)
       </span>
     
-        <p class="weekly-hot-desc">배구 소재 스포츠 액션으로 틈새 수요를 노린 작품이에요.
-입소문이 쌓이며 안드로이드 매출 순위가 서서히 오르고 오늘은 세 자릿수 구간을 벗어났어요.</p>
+        <p class="weekly-hot-desc">'스텔라 소라'는 98위에서 68위로 오르며 하위권에서 꾸준히 순위를 끌어올리고 있어요.
+대형 IP가 아닌 타이틀도 두 자릿수 상승을 기록하며 매출 상위권 진입 가능성을 보여주는 사례로 주목돼요.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
         <div class="weekly-hot-tag tag-down">급하락</div>
-        <h4 class="weekly-hot-title">앙상블스타즈!!</h4>
+        <h4 class="weekly-hot-title">SD건담 지 제네레이션 이터널</h4>
         
       <span class="weekly-ranking-badge down">
-        iOS 59위 → 87위 (-28)
+        iOS 48위 → 86위 (-38)
       </span>
     
-        <p class="weekly-hot-desc">이벤트·가챠 주기에 따라 매출 변동 폭이 큰 아이돌 육성 게임이에요.
-오늘은 59위에서 87위로 내려앉으며, 변동성이 다시 한 번 드러난 하루였어요.</p>
+        <p class="weekly-hot-desc">'SD건담 지 제네레이션 이터널'은 어제 48위에서 86위로 떨어져 급하락 1위에 올랐어요.
+이벤트 효과가 줄어든 뒤 코어 이용자 중심 매출 구간으로 이동하면서 순위가 조정되는 전형적인 패턴으로 나타나고 있어요.</p>
       </div>
     
         </div>
@@ -367,34 +383,34 @@
         </div>
         <div class="stocks-split">
           
-        <a class="stock-item" href="https://finance.naver.com/item/main.nhn?code=036570" target="_blank" rel="noopener">
+        <a class="stock-item" href="https://finance.naver.com/item/main.nhn?code=259960" target="_blank" rel="noopener">
           <div class="stock-info">
             <div class="stock-name-row">
-              <span class="stock-name">엔씨소프트</span>
-              <span class="stock-date">종가</span>
+              <span class="stock-name">크래프톤</span>
+              <span class="stock-date">12/10 종가</span>
             </div>
             <div class="stock-price-row">
-              <span class="stock-price-value ">-</span>
-              <span class="stock-change-badge "> 0%</span>
+              <span class="stock-price-value up">247,500원</span>
+              <span class="stock-change-badge up">▲ +0.81%</span>
             </div>
           </div>
-          <img class="stock-chart" src="https://ssl.pstatic.net/imgfinance/chart/item/candle/day/036570.png" alt="엔씨소프트 일봉 차트" onerror="this.style.display='none'">
-          <p class="stock-comment">리니지M이 양대 마켓 매출 상위권을 지키며, 모바일 캐시카우 저력을 재확인했다는 평가로 관심이 이어지고 있어요.</p>
+          <img class="stock-chart" src="https://ssl.pstatic.net/imgfinance/chart/item/candle/day/259960.png" alt="크래프톤 일봉 차트" onerror="this.style.display='none'">
+          <p class="stock-comment">팰월드 모바일 알파테스트 발표로 IP 확장 기대감이 부각되고 있어요.</p>
         </a>
       
-        <a class="stock-item" href="https://finance.naver.com/item/main.nhn?code=078340" target="_blank" rel="noopener">
+        <a class="stock-item" href="https://finance.naver.com/item/main.nhn?code=462870" target="_blank" rel="noopener">
           <div class="stock-info">
             <div class="stock-name-row">
-              <span class="stock-name">컴투스</span>
-              <span class="stock-date">종가</span>
+              <span class="stock-name">시프트업</span>
+              <span class="stock-date">12/10 종가</span>
             </div>
             <div class="stock-price-row">
-              <span class="stock-price-value ">-</span>
-              <span class="stock-change-badge "> 0%</span>
+              <span class="stock-price-value down">38,450원</span>
+              <span class="stock-change-badge down">▼ -2.16%</span>
             </div>
           </div>
-          <img class="stock-chart" src="https://ssl.pstatic.net/imgfinance/chart/item/candle/day/078340.png" alt="컴투스 일봉 차트" onerror="this.style.display='none'">
-          <p class="stock-comment">컴투스프로야구V25가 앱스토어 매출 톱5에 오르며, 스포츠 IP 기반 라이브 수익성이 다시 주목받고 있어요.</p>
+          <img class="stock-chart" src="https://ssl.pstatic.net/imgfinance/chart/item/candle/day/462870.png" alt="시프트업 일봉 차트" onerror="this.style.display='none'">
+          <p class="stock-comment">대표 대통령표창 수상 소식에 콘솔·모바일 파이프라인 가치가 재조명되고 있어요.</p>
         </a>
       
         </div>
@@ -411,27 +427,27 @@
         <div class="weekly-community-grid">
           
       <div class="weekly-community-card">
-        <div class="weekly-community-game">마비노기 모바일</div>
-        <h4 class="weekly-community-title">웨카 경매장 논란에 유저 비판 거세</h4>
-        <p class="weekly-community-desc">웨카 경매장 구조가 과도한 과금 유도라는 지적이 커지며, 커뮤니티엔 '원작 이미지와 맞지 않는다'는 비판 글이 이어지고 있어요. 넥슨이 전면 재검토를 발표하자 "피드백을 빠르게 반영했다"며 안도하는 반응도 함께 나왔어요.</p>
+        <div class="weekly-community-game">메이플 키우기</div>
+        <h4 class="weekly-community-title">패키지 가치 놓고 유저 토론 이어져</h4>
+        <p class="weekly-community-desc">유튜브에 '메이플 키우기' 상품 추천 영상이 인기를 얻으면서, 패키지 구성이 과도한지 합리적인지 의견을 나누는 글이 늘고 있어요. 초반 성장에 필요한 최소 과금 수준을 정리해 공유하는 유저 공략도 빠르게 쌓이고 있어요.</p>
       </div>
     
       <div class="weekly-community-card">
-        <div class="weekly-community-game">철권8</div>
-        <h4 class="weekly-community-title">하라다 퇴사에 운영 방향 놓고 갑론을박</h4>
-        <p class="weekly-community-desc">하라다 카츠히로 프로듀서 퇴사 소식 이후 철권8 운영 방향을 걱정하는 글이 커뮤니티에 많이 올라오고 있어요. 동시에 개발팀이 '하라다 정신'을 잇겠다고 밝히자, 그를 응원하며 새 운영진을 지켜보자는 의견도 적지 않아요.</p>
+        <div class="weekly-community-game">블록 블라스트</div>
+        <h4 class="weekly-community-title">광고 퍼즐 아닌 순수 퍼즐 재미 호평</h4>
+        <p class="weekly-community-desc">iOS 인기 1위를 차지한 '블록 블라스트'는 짧게 즐길 수 있는 퍼즐 구조 덕분에 출퇴근·등하굣길 게임으로 좋다는 후기가 많아요. 다만 난이도 상승 구간에서 스테이지 반복이 다소 답답하다는 의견도 함께 나오고 있어요.</p>
       </div>
     
       <div class="weekly-community-card">
-        <div class="weekly-community-game">던파</div>
-        <h4 class="weekly-community-title">겨울 이벤트·신규 레이드 공략 글 급증</h4>
-        <p class="weekly-community-desc">던전앤파이터 겨울 이벤트와 신규 레이드가 시작되며, 커뮤니티엔 보상 효율 정리와 입문 공략 글이 빠르게 쌓이고 있어요. 일부 유저는 난이도와 피로도 소모를 두고 의견을 나누며 파티 구성 팁을 서로 공유하고 있어요.</p>
+        <div class="weekly-community-game">Counter-Strike 2</div>
+        <h4 class="weekly-community-title">조준감·서버 이슈 두고 갑론을박</h4>
+        <p class="weekly-community-desc">스팀 동접 1위를 이어가는 'Counter-Strike 2'는 국내 커뮤니티에서 조준감과 틱레이트, 치트 대응을 두고 토론이 계속되고 있어요. 일부 유저는 설정 공유와 연습 맵 추천 글로 신규 복귀자를 돕는 분위기도 보여줘요.</p>
       </div>
     
       <div class="weekly-community-card">
-        <div class="weekly-community-game">AION2</div>
-        <h4 class="weekly-community-title">아이온2 프리뷰 방송 후 기대·우려 공존</h4>
-        <p class="weekly-community-desc">12월 9일 아이온2 업데이트 프리뷰 방송 이후, 신규 클래스와 전투 구조를 두고 기대와 우려가 동시에 올라오고 있어요. 특히 과금 모델과 성장 속도를 어떻게 잡을지에 대한 토론이 활발하게 이어지고 있어요.</p>
+        <div class="weekly-community-game">Dispatch</div>
+        <h4 class="weekly-community-title">서새봄 방송 후 엔딩 해석 글 증가</h4>
+        <p class="weekly-community-desc">치지직에서 서새봄이 'Dispatch' 엔딩까지 플레이한 방송이 화제가 되며, 유저 커뮤니티에선 각 엔딩 선택의 의미와 숨은 단서를 정리하는 글이 올라오고 있어요. 공포 연출보다 심리 서사에 호평을 보내는 반응이 많아요.</p>
       </div>
     
         </div>
@@ -452,8 +468,8 @@
             <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8 0 12 0 12s0 4 .5 5.8c.3 1 1 1.8 2 2.1 1.8.6 9.5.6 9.5.6s7.7 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.8.5-5.8.5-5.8s0-4-.5-5.8z"/><path d="M9.5 15.5l6-3.5-6-3.5v7z" fill="#FFF"/></svg>
             <span>유튜브</span>
           </div>
-          <h4 class="weekly-streaming-title">아이온2 업데이트 프리뷰 생방송 화제</h4>
-          <p class="weekly-streaming-desc">공식 유튜브 채널의 아이온2 업데이트 프리뷰 라이브가 추천 상위에 오르며, 출시 전 시스템을 직접 보고 판단하려는 시청자가 늘고 있어요. 개발진 설명과 질의응답을 함께 보는 형식이 대형 MMORPG 홍보의 기본 코스로 자리잡는 분위기예요.</p>
+          <h4 class="weekly-streaming-title">KeSPA CUP 하이라이트, 연말 e스포츠 흥행</h4>
+          <p class="weekly-streaming-desc">리그 오브 레전드 2025 LoL KeSPA CUP T1 vs NS 하이라이트 영상이 유튜브 인기 게임 영상으로 올라왔어요. 정규 시즌과 다른 조합과 전략을 볼 수 있어 연말 e스포츠 관전 수요를 끌어올리고 있어요.</p>
         </div>
       
         <div class="weekly-streaming-card">
@@ -461,8 +477,8 @@
             <svg viewBox="0 0 24 24" fill="#00FFA3"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12l3 3 5-5" stroke="#000" stroke-width="2" fill="none"/></svg>
             <span>치지직</span>
           </div>
-          <h4 class="weekly-streaming-title">타르코프 중심 하드코어 FPS 방송 강세</h4>
-          <p class="weekly-streaming-desc">치지직 인기 방송 목록에서 '타르코프는 인생이다' 등 타르코프 콘텐츠가 여러 개를 차지하며, 하드코어 생존 FPS를 일상 콘텐츠로 즐기는 시청자가 많아지고 있어요. 장비를 잃을 수 있는 긴장감이 클립과 하이라이트로도 활발히 소비되고 있어요.</p>
+          <h4 class="weekly-streaming-title">서새봄 'Dispatch' 방송, 스토리 게임 주목</h4>
+          <p class="weekly-streaming-desc">치지직 인기 방송으로 서새봄의 'Dispatch' 엔딩 방송이 올라오며 실황형 스토리 게임에 대한 관심이 높아지고 있어요. 시청자들이 채팅과 클립을 통해 스토리 해석을 공유하면서 공포·추리 장르 인기도 함께 올라가는 모습이에요.</p>
         </div>
       
         </div>
@@ -1047,6 +1063,240 @@
   
 <script>
 (function() {
+  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+  const MAX_RECENT = 8;
+  let gamesData = [];
+
+  // 최근 검색 저장/로드
+  function getRecentSearches() {
+    try {
+      return JSON.parse(localStorage.getItem(RECENT_STORAGE_KEY)) || [];
+    } catch { return []; }
+  }
+
+  function saveRecentSearch(game) {
+    const recent = getRecentSearches().filter(g => g.slug !== game.slug);
+    recent.unshift(game);
+    localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+  }
+
+  function removeRecentSearch(slug) {
+    const recent = getRecentSearches().filter(g => g.slug !== slug);
+    localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(recent));
+  }
+
+  function clearAllRecent() {
+    localStorage.removeItem(RECENT_STORAGE_KEY);
+  }
+
+  async function loadGamesData() {
+    try {
+      const response = await fetch('/games/search-index.json');
+      if (!response.ok) return;
+      const data = await response.json();
+      gamesData = Array.isArray(data) ? data : (data.games || []);
+    } catch (e) {
+      console.warn('검색 인덱스 로드 실패:', e);
+      gamesData = [];
+    }
+  }
+
+  loadGamesData();
+
+  const searchInput = document.querySelector('.search-input');
+  const searchDropdown = document.querySelector('.search-dropdown');
+
+  if (!searchInput || !searchDropdown) return;
+
+  // 최근 검색 렌더링
+  function renderRecentSearches() {
+    const recent = getRecentSearches();
+    if (recent.length === 0) {
+      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+    } else {
+      const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
+      const items = recent.map(game => {
+        const name = game.name || '';
+        const slug = game.slug || '';
+        return (
+          '<div class="search-result-item" data-slug="' + slug + '">' +
+            '<a href="/games/' + slug + '/" class="search-result-info">' +
+              '<div class="search-result-title">' + name + '</div>' +
+            '</a>' +
+            '<button class="search-result-delete" type="button" data-slug="' + slug + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>' +
+          '</div>'
+        );
+      }).join('');
+      searchDropdown.innerHTML = header + items;
+
+      // 전체 삭제 이벤트
+      const clearAllBtn = searchDropdown.querySelector('.search-clear-all');
+      if (clearAllBtn) {
+        clearAllBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          clearAllRecent();
+          renderRecentSearches();
+        });
+      }
+
+      // 개별 삭제 이벤트
+      searchDropdown.querySelectorAll('.search-result-delete').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          removeRecentSearch(btn.dataset.slug);
+          renderRecentSearches();
+        });
+      });
+
+      // 아이템 클릭 시 저장
+      searchDropdown.querySelectorAll('.search-result-info').forEach(link => {
+        link.addEventListener('click', () => {
+          const item = link.closest('.search-result-item');
+          const game = recent.find(g => g.slug === item.dataset.slug);
+          if (game) saveRecentSearch(game);
+        });
+      });
+    }
+    searchDropdown.classList.add('active');
+  }
+
+  let currentResults = [];
+
+  function performSearch(query) {
+    if (!query || query.length < 1) {
+      currentResults = [];
+      renderRecentSearches();
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    currentResults = gamesData.filter(game => {
+      const name = (game.name || game.title || '').toLowerCase();
+      const developer = (game.developer || game.publisher || '').toLowerCase();
+      const aliases = Array.isArray(game.aliases) ? game.aliases : [];
+      const aliasMatch = aliases.some(a => (a || '').toLowerCase().includes(lowerQuery));
+      return name.includes(lowerQuery) || developer.includes(lowerQuery) || aliasMatch;
+    }).slice(0, 10);
+
+    if (currentResults.length === 0) {
+      searchDropdown.innerHTML = '<div class="search-no-results">검색 결과가 없습니다</div>';
+    } else {
+      searchDropdown.innerHTML = currentResults.map(game => {
+        const icon = game.icon || game.iconUrl || '';
+        const name = game.name || game.title || '';
+        const publisher = game.publisher || game.developer || '';
+        const slug = game.slug || game.id || '';
+        return (
+          '<a href="/games/' + slug + '/" class="search-result-item" data-game=\'' + JSON.stringify({slug, name, icon, publisher}).replace(/'/g, "\\'") + '\'>' +
+            '<div class="search-result-info">' +
+              '<div class="search-result-title">' + name + '</div>' +
+            '</div>' +
+          '</a>'
+        );
+      }).join('');
+
+      // 검색 결과 클릭 시 최근 검색에 저장
+      searchDropdown.querySelectorAll('.search-result-item[data-game]').forEach(item => {
+        item.addEventListener('click', () => {
+          try {
+            const game = JSON.parse(item.dataset.game);
+            saveRecentSearch(game);
+          } catch {}
+        });
+      });
+    }
+    searchDropdown.classList.add('active');
+  }
+
+  let debounceTimer;
+  function debounce(func, delay) {
+    return function(...args) {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => func.apply(this, args), delay);
+    };
+  }
+
+  const debouncedSearch = debounce(performSearch, 200);
+
+  // 입력 이벤트
+  searchInput.addEventListener('input', (e) => {
+    debouncedSearch(e.target.value.trim());
+  });
+
+  // 포커스 시 드롭다운 열기
+  searchInput.addEventListener('focus', () => {
+    if (!searchInput.value.trim()) {
+      renderRecentSearches();
+    } else {
+      performSearch(searchInput.value.trim());
+    }
+  });
+
+  // 외부 클릭 시 닫기
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.search-container')) {
+      searchDropdown.classList.remove('active');
+    }
+  });
+
+  // 드롭다운 클릭 시 input blur 방지
+  searchDropdown.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+  });
+
+  // 즉시 검색 (debounce 없이)
+  function searchImmediate(query) {
+    if (!query) return [];
+    const lowerQuery = query.toLowerCase();
+    return gamesData.filter(game => {
+      const name = (game.name || game.title || '').toLowerCase();
+      const developer = (game.developer || game.publisher || '').toLowerCase();
+      const aliases = Array.isArray(game.aliases) ? game.aliases : [];
+      const aliasMatch = aliases.some(a => (a || '').toLowerCase().includes(lowerQuery));
+      return name.includes(lowerQuery) || developer.includes(lowerQuery) || aliasMatch;
+    }).slice(0, 10);
+  }
+
+  // 검색 실행 (결과 1개면 바로 이동)
+  function executeSearch() {
+    const query = searchInput.value.trim();
+    if (!query) return;
+
+    // 즉시 검색 실행
+    const results = searchImmediate(query);
+
+    if (results.length === 1) {
+      const game = results[0];
+      const slug = game.slug || game.id || '';
+      saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
+      window.location.href = '/games/' + slug + '/';
+    } else {
+      window.location.href = '/search/?q=' + encodeURIComponent(query);
+    }
+  }
+
+  // 키보드 이벤트
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      searchDropdown.classList.remove('active');
+      searchInput.blur();
+    } else if (e.key === 'Enter') {
+      executeSearch();
+    }
+  });
+
+  // 검색 버튼 클릭
+  const searchBtn = document.querySelector('.search-btn');
+  if (searchBtn) {
+    searchBtn.addEventListener('click', executeSearch);
+  }
+})();
+</script>
+  
+<script>
+(function() {
   const prefetched = new Set();
   document.querySelectorAll('a.nav-item').forEach(link => {
     link.addEventListener('mouseenter', () => {
@@ -1066,8 +1316,9 @@
   
 <script>
 (function() {
-  // 네비게이션 섹션 정의
-  const navSections = ['trend', 'news', 'community', 'youtube', 'rankings', 'steam', 'upcoming', 'metacritic'];
+  // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
+  const navSections = ['trend', 'news', 'rankings', 'community', 'youtube', 'steam', 'upcoming', 'metacritic'];
+  const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
   let isSwiping = false;
@@ -1076,18 +1327,20 @@
 
   function getCurrentNavIndex() {
     const path = window.location.pathname;
-    for (let i = 0; i < navSections.length; i++) {
-      if (path.includes(navSections[i])) return i;
+    const sections = getNavSections();
+    for (let i = 0; i < sections.length; i++) {
+      if (path.includes(sections[i])) return i;
     }
     return -1; // 홈
   }
 
   function switchNavSection(index) {
-    if (index < 0 || index >= navSections.length) {
+    const sections = getNavSections();
+    if (index < 0 || index >= sections.length) {
       window.location.href = '/';
       return;
     }
-    window.location.href = '/' + navSections[index];
+    window.location.href = '/' + sections[index];
   }
 
   // 스크롤 가능한 요소 찾기
@@ -1148,9 +1401,23 @@
     }
   }
 
-  // 페이지 로드 시 nav 위치 조정
+  // 페이지 로드 시 nav 위치 조정 (초기 로드시 애니메이션 없이)
   const currentIdx = getCurrentNavIndex();
-  if (currentIdx >= 0) updateNavCarousel(currentIdx);
+  if (currentIdx >= 0) {
+    const navInner = document.querySelector('.nav-inner');
+    if (window.innerWidth <= 768 && navInner) {
+      navInner.style.transition = 'none';
+      let offset = 0;
+      if (currentIdx >= 6) offset = -60;
+      else if (currentIdx >= 5) offset = -40;
+      else if (currentIdx >= 4) offset = -20;
+      navInner.style.transform = 'translateX(' + offset + '%)';
+      // 강제 리플로우로 즉시 적용
+      void navInner.offsetHeight;
+      // transition 복구
+      navInner.style.transition = '';
+    }
+  }
 
   document.body.addEventListener('touchend', (e) => {
     const touchEndX = e.changedTouches[0].screenX;
@@ -1180,7 +1447,7 @@
       const currentIndex = getCurrentNavIndex();
       if (currentIndex === -1) {
         if (diffX > 0) switchNavSection(0);
-        else switchNavSection(navSections.length - 1);
+        else switchNavSection(getNavSections().length - 1);
       } else {
         if (diffX > 0) switchNavSection(currentIndex + 1);
         else switchNavSection(currentIndex - 1);
