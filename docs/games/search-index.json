@@ -142,7 +142,7 @@
       "android"
     ],
     "developer": "JindoBlu",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -331,7 +331,7 @@
       "ios"
     ],
     "developer": "CYBERJOY LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -342,7 +342,7 @@
       "android"
     ],
     "developer": "1SOFT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -364,7 +364,7 @@
       "android"
     ],
     "developer": "Metabone Entertainment Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -408,7 +408,7 @@
       "android"
     ],
     "developer": "Mafgames",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -621,7 +621,7 @@
       "ios"
     ],
     "developer": "SayGames LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -699,7 +699,7 @@
       "android"
     ],
     "developer": "PulseBeat Studios",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -711,7 +711,7 @@
       "android"
     ],
     "developer": "AiiA Corporation",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -767,7 +767,7 @@
       "android"
     ],
     "developer": "Easybrain",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -811,7 +811,7 @@
       "ios"
     ],
     "developer": "Asim Ashraf",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -1141,7 +1141,7 @@
       "android"
     ],
     "developer": "Exptional Global",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -1253,7 +1253,7 @@
       "ios"
     ],
     "developer": "Forward Vision Corporation Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -1536,7 +1536,7 @@
       "android"
     ],
     "developer": "Stormborn",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -1776,7 +1776,7 @@
       "ios"
     ],
     "developer": "2K",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -1879,7 +1879,7 @@
       "ios"
     ],
     "developer": "Joy Net Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -2409,7 +2409,7 @@
       "ios"
     ],
     "developer": "Asobism.Co.,Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -2555,7 +2555,7 @@
       "ios"
     ],
     "developer": "Junyeop Kim",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -2644,7 +2644,7 @@
       "android"
     ],
     "developer": "HungryStudio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -3070,7 +3070,7 @@
       "ios"
     ],
     "developer": "XD Entertainment Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -3092,7 +3092,7 @@
       "android"
     ],
     "developer": "LING CHAI (HONG KONG) LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -3206,7 +3206,7 @@
       "ios"
     ],
     "developer": "HOMA GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -4164,7 +4164,7 @@
       "ios"
     ],
     "developer": "PlayStudios",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -4188,7 +4188,7 @@
       "android"
     ],
     "developer": "Qookka Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -4210,7 +4210,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -4412,7 +4412,7 @@
       "ios"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -4457,7 +4457,7 @@
       "ios"
     ],
     "developer": "YONGJIN JO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -4731,7 +4731,7 @@
       "android"
     ],
     "developer": "BEKKO GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -4798,7 +4798,7 @@
       "ios"
     ],
     "developer": "g1dash, Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -5013,7 +5013,7 @@
       "ios"
     ],
     "developer": "WFS, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -5347,7 +5347,7 @@
       "android"
     ],
     "developer": "Playvalve",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -5391,7 +5391,7 @@
       "ios"
     ],
     "developer": "Rosecrab",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -6137,7 +6137,7 @@
       "android"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -6567,6 +6567,17 @@
     "developer": "Burny Games",
     "hasRankings": true,
     "hasSteam": false
+  },
+  {
+    "name": "Conqueror's Blade",
+    "slug": "conqueror-s-blade",
+    "aliases": [],
+    "platforms": [
+      "pc"
+    ],
+    "developer": "Booming Tech",
+    "hasRankings": false,
+    "hasSteam": true
   },
   {
     "name": "CookieRun: Kingdom",
@@ -7335,7 +7346,7 @@
       "ios"
     ],
     "developer": "Rollic Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -7429,7 +7440,7 @@
     ],
     "developer": "KONAMI",
     "hasRankings": true,
-    "hasSteam": false
+    "hasSteam": true
   },
   {
     "name": "eFootball™  CHAMPION SQUADS",
@@ -7468,17 +7479,6 @@
   {
     "name": "ELDEN RING NIGHTREIGN",
     "slug": "elden-ring-nightreign",
-    "aliases": [],
-    "platforms": [
-      "pc"
-    ],
-    "developer": "FromSoftware, Inc.",
-    "hasRankings": false,
-    "hasSteam": true
-  },
-  {
-    "name": "ELDEN RING NIGHTREIGN The Forsaken Hollows",
-    "slug": "elden-ring-nightreign-the-forsaken-hollows",
     "aliases": [],
     "platforms": [
       "pc"
@@ -7531,17 +7531,6 @@
     "developer": "Episode Interactive",
     "hasRankings": true,
     "hasSteam": false
-  },
-  {
-    "name": "Escape from Duckov",
-    "slug": "escape-from-duckov",
-    "aliases": [],
-    "platforms": [
-      "pc"
-    ],
-    "developer": "Team Soda",
-    "hasRankings": false,
-    "hasSteam": true
   },
   {
     "name": "Escape from Tarkov",
@@ -7651,7 +7640,7 @@
       "android"
     ],
     "developer": "FunCraft Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -8168,7 +8157,7 @@
       "android"
     ],
     "developer": "iKame Games - Zego Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -8214,7 +8203,7 @@
       "ios"
     ],
     "developer": "GENDA GiGO Entertainment Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -8448,7 +8437,7 @@
       "ios"
     ],
     "developer": "LONGSEA LINK LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -9018,7 +9007,7 @@
       "ios"
     ],
     "developer": "Estoty",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -9219,7 +9208,7 @@
       "android"
     ],
     "developer": "SkyRise Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -10260,7 +10249,7 @@
       "android"
     ],
     "developer": "Playvalve",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -10644,7 +10633,7 @@
       "android"
     ],
     "developer": "KONAMI",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -10771,19 +10760,19 @@
     "hasSteam": false
   },
   {
-    "name": "Mount & Blade II: Bannerlord",
-    "slug": "mount-blade-ii-bannerlord",
+    "name": "Morimens",
+    "slug": "morimens",
     "aliases": [],
     "platforms": [
       "pc"
     ],
-    "developer": "TaleWorlds Entertainment",
+    "developer": "B.I.A.V. Studio",
     "hasRankings": false,
     "hasSteam": true
   },
   {
-    "name": "Mount & Blade II: Bannerlord - War Sails",
-    "slug": "mount-blade-ii-bannerlord-war-sails",
+    "name": "Mount & Blade II: Bannerlord",
+    "slug": "mount-blade-ii-bannerlord",
     "aliases": [],
     "platforms": [
       "pc"
@@ -10933,7 +10922,7 @@
       "ios"
     ],
     "developer": "Netflix, Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -11079,7 +11068,7 @@
     ],
     "developer": "Square Enix",
     "hasRankings": false,
-    "hasSteam": true
+    "hasSteam": false
   },
   {
     "name": "Offline Games - No Wifi Games",
@@ -11325,7 +11314,7 @@
       "android"
     ],
     "developer": "PHY STUDIO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -11857,7 +11846,7 @@
       "android"
     ],
     "developer": "Highcore Labs LLC",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -12059,7 +12048,7 @@
       "android"
     ],
     "developer": "Stella Joy Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -12092,7 +12081,7 @@
       "android"
     ],
     "developer": "Shycheese",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -12650,7 +12639,7 @@
       "android"
     ],
     "developer": "Playvalve",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -12761,7 +12750,7 @@
       "android"
     ],
     "developer": "Mana Games Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -12850,7 +12839,7 @@
       "ios"
     ],
     "developer": "Easybrain Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -12894,7 +12883,7 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -12982,7 +12971,7 @@
       "android"
     ],
     "developer": "FATTOY",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -13016,7 +13005,7 @@
       "android"
     ],
     "developer": "Kwalee Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -13086,6 +13075,17 @@
     "hasSteam": false
   },
   {
+    "name": "The First Descendant",
+    "slug": "the-first-descendant",
+    "aliases": [],
+    "platforms": [
+      "pc"
+    ],
+    "developer": "NEXON Games Co., Ltd.",
+    "hasRankings": false,
+    "hasSteam": true
+  },
+  {
     "name": "The Grand Mafia",
     "slug": "the-grand-mafia",
     "aliases": [],
@@ -13137,7 +13137,7 @@
       "android"
     ],
     "developer": "Tech Tree Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -13357,7 +13357,7 @@
       "ios"
     ],
     "developer": "Rollic Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -13414,17 +13414,6 @@
     "developer": "ZigZaGame Inc.",
     "hasRankings": false,
     "hasSteam": false
-  },
-  {
-    "name": "Tom Clancy's Rainbow Six® Siege X",
-    "slug": "tom-clancy-s-rainbow-six-siege-x",
-    "aliases": [],
-    "platforms": [
-      "pc"
-    ],
-    "developer": "Ubisoft Montreal",
-    "hasRankings": false,
-    "hasSteam": true
   },
   {
     "name": "Toon Blast",
@@ -13527,17 +13516,6 @@
     "developer": "Scorewarrior",
     "hasRankings": true,
     "hasSteam": false
-  },
-  {
-    "name": "Total War: THREE KINGDOMS",
-    "slug": "total-war-three-kingdoms",
-    "aliases": [],
-    "platforms": [
-      "pc"
-    ],
-    "developer": "CREATIVE ASSEMBLY",
-    "hasRankings": false,
-    "hasSteam": true
   },
   {
     "name": "Total War: WARHAMMER III",
@@ -13810,7 +13788,7 @@
       "android"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -13966,17 +13944,6 @@
       "pc"
     ],
     "developer": "Digital Extremes",
-    "hasRankings": false,
-    "hasSteam": true
-  },
-  {
-    "name": "Warhammer 40,000: Darktide",
-    "slug": "warhammer-40-000-darktide",
-    "aliases": [],
-    "platforms": [
-      "pc"
-    ],
-    "developer": "Fatshark",
     "hasRankings": false,
     "hasSteam": true
   },
@@ -14178,7 +14145,7 @@
       "android"
     ],
     "developer": "MINIGAME ENTERTAINMENT LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -14356,7 +14323,7 @@
       "ios"
     ],
     "developer": "Hitapps Games LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -14370,6 +14337,17 @@
     "developer": "PeopleFun, Inc.",
     "hasRankings": true,
     "hasSteam": false
+  },
+  {
+    "name": "World of Tanks",
+    "slug": "world-of-tanks",
+    "aliases": [],
+    "platforms": [
+      "pc"
+    ],
+    "developer": "Wargaming Group Limited",
+    "hasRankings": false,
+    "hasSteam": true
   },
   {
     "name": "World of Warships",
@@ -14450,7 +14428,7 @@
     ],
     "developer": "KURO GAMES",
     "hasRankings": false,
-    "hasSteam": false
+    "hasSteam": true
   },
   {
     "name": "X 클래시",
@@ -14707,7 +14685,7 @@
       "android"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -14753,7 +14731,7 @@
       "android"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -15131,7 +15109,7 @@
       "android"
     ],
     "developer": "Supercell",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -15165,7 +15143,7 @@
       "android"
     ],
     "developer": "mobage",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -16070,7 +16048,7 @@
       "android"
     ],
     "developer": "Guru Puzzle Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -16649,7 +16627,7 @@
       "ios"
     ],
     "developer": "BANDAI NAMCO Entertainment Europe",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false
   },
   {
@@ -16930,7 +16908,7 @@
       "android"
     ],
     "developer": "Plarium Global Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   },
   {
@@ -17042,7 +17020,7 @@
       "ios"
     ],
     "developer": "SQUARE ENIX",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false
   }
 ]
