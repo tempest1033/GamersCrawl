@@ -2229,7 +2229,11 @@
     "name": "스텔라 소라",
     "slug": "com.YoStarKR.StellaSora",
     "icon": "https://play-lh.googleusercontent.com/fAtV_m1pk3Li1JWR31xdv3vV-CjXH5Uq1YHtj_f1MjeiOdfBhv8MvG-gO8vzpEXoit4",
-    "aliases": [],
+    "aliases": [
+      "ステラソラ",
+      "Stella Sora",
+      "스텔라소라"
+    ],
     "platforms": [
       "android",
       "ios"
@@ -3144,7 +3148,8 @@
       "Arknights",
       "명일방주",
       "명일 방주",
-      "아크나이츠"
+      "아크나이츠",
+      "明日方舟"
     ],
     "platforms": [
       "android",
