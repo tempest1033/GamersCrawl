@@ -1566,7 +1566,7 @@
       "android"
     ],
     "developer": "ACTGames Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3463,7 +3463,7 @@
       "ios"
     ],
     "developer": "MINIGAME ENTERTAINMENT LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3477,7 +3477,7 @@
       "ios"
     ],
     "developer": "NCSOFT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3525,7 +3525,7 @@
       "ios"
     ],
     "developer": "CookApps",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3589,7 +3589,7 @@
       "android"
     ],
     "developer": "Tab Games Co., Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4224,7 +4224,7 @@
       "android"
     ],
     "developer": "AppQuantum Publishing Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4283,7 +4283,7 @@
       "android"
     ],
     "developer": "Ketchapp",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4324,7 +4324,7 @@
       "android"
     ],
     "developer": "Asim Ashraf",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4383,7 +4383,7 @@
       "android"
     ],
     "developer": "SayGames LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4476,7 +4476,7 @@
       "android"
     ],
     "developer": "JoyGame Studio Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5058,7 +5058,7 @@
       "ios"
     ],
     "developer": "Supa Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5462,7 +5462,7 @@
       "android"
     ],
     "developer": "PulseBeat Studios",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5551,7 +5551,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5628,7 +5628,7 @@
       "ios"
     ],
     "developer": "AMOBEAR TECHNOLOGY GROUP",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5758,7 +5758,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5786,7 +5786,7 @@
       "ios"
     ],
     "developer": "XGame HK",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5930,7 +5930,7 @@
       "ios"
     ],
     "developer": "Playgendary Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5971,7 +5971,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6093,7 +6093,7 @@
       "ios"
     ],
     "developer": "Yso Corp",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6239,7 +6239,7 @@
       "steam"
     ],
     "developer": "Everstone Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -6971,7 +6971,7 @@
       "steam"
     ],
     "developer": "Starry Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
