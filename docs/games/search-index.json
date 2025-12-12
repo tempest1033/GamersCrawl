@@ -1463,7 +1463,7 @@
       "android"
     ],
     "developer": "2K",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2657,7 +2657,7 @@
       "ios"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2734,7 +2734,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4296,7 +4296,7 @@
       "ios"
     ],
     "developer": "Guangzhou Waliang Trading Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4383,7 +4383,7 @@
       "android"
     ],
     "developer": "SayGames LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4747,7 +4747,7 @@
       "ios"
     ],
     "developer": "OfficialCaox",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5273,7 +5273,7 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5800,7 +5800,7 @@
       "ios"
     ],
     "developer": "JindoBlu",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5971,7 +5971,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6971,7 +6971,7 @@
       "steam"
     ],
     "developer": "Starry Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": true,
     "hasData": true
   },
@@ -7078,7 +7078,7 @@
       "steam"
     ],
     "developer": "KURO GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
