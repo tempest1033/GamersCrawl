@@ -1463,7 +1463,7 @@
       "android"
     ],
     "developer": "2K",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2805,7 +2805,7 @@
       "android"
     ],
     "developer": "Qiangqi Information Technology Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3011,7 +3011,7 @@
       "ios"
     ],
     "developer": "ESTARGAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3116,7 +3116,7 @@
       "ios"
     ],
     "developer": "BluePotion Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3230,7 +3230,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4009,7 +4009,7 @@
       "ios"
     ],
     "developer": "Forward Vision Corporation Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4383,7 +4383,7 @@
       "android"
     ],
     "developer": "SayGames LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4462,7 +4462,7 @@
       "android"
     ],
     "developer": "Play With Us Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4849,7 +4849,7 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5361,7 +5361,7 @@
       "ios"
     ],
     "developer": "Wildlife Studios",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5537,7 +5537,7 @@
       "ios"
     ],
     "developer": "Ivy",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5642,7 +5642,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5800,7 +5800,7 @@
       "ios"
     ],
     "developer": "JindoBlu",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5843,7 +5843,7 @@
       "ios"
     ],
     "developer": "FTY LLC.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6038,7 +6038,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
