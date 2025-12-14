@@ -2908,7 +2908,7 @@
       "ios"
     ],
     "developer": "MOONTON",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3011,7 +3011,7 @@
       "ios"
     ],
     "developer": "ESTARGAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3919,7 +3919,7 @@
       "android"
     ],
     "developer": "Kongregate",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4009,7 +4009,7 @@
       "ios"
     ],
     "developer": "Forward Vision Corporation Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4413,7 +4413,7 @@
       "android"
     ],
     "developer": "JIEUNK",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4939,7 +4939,7 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5176,7 +5176,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5612,7 +5612,7 @@
       "ios"
     ],
     "developer": "SUPERBOX Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5829,7 +5829,7 @@
       "android"
     ],
     "developer": "Mojang",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5971,7 +5971,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5984,7 +5984,7 @@
       "android"
     ],
     "developer": "Mana Games Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6107,7 +6107,7 @@
       "ios"
     ],
     "developer": "Fastone Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6971,7 +6971,7 @@
       "steam"
     ],
     "developer": "Starry Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
