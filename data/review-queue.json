@@ -311,6 +311,30 @@
         }
       ],
       "addedAt": "2025-12-15T21:42:40.170Z"
+    },
+    {
+      "title": "소녀총사 키우기",
+      "status": "single",
+      "appIds": {
+        "ios": "6456484806"
+      },
+      "developer": "Act Seven Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/7e/b3/577eb375-7d4e-7564-3550-0f0a265144bf/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "소녀총사 키우기 : 도트 방치형 RPG",
+          "appId": "com.act7ent.musket"
+        },
+        {
+          "title": "건앤걸스 : 거너 키우기",
+          "appId": "com.mouseduck.gungame"
+        },
+        {
+          "title": "정복소녀 키우기 : 수집형 방치 RPG",
+          "appId": "com.greenspring.conquestgirls"
+        }
+      ],
+      "addedAt": "2025-12-15T22:04:19.841Z"
     }
   ],
   "approved": [],

@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6446516059",
-        "android": "net.gameduo.gv",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4690,7 +4690,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -8166,8 +8166,20 @@
       "platforms": [
         "steam"
       ]
+    },
+    "소녀총사 키우기": {
+      "appIds": {
+        "ios": "6456484806"
+      },
+      "aliases": [],
+      "developer": "Act Seven Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/7e/b3/577eb375-7d4e-7564-3550-0f0a265144bf/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "소녀총사-키우기",
+      "platforms": [
+        "ios"
+      ]
     }
   },
   "lastUpdated": "2025-12-15",
-  "totalGames": 541
+  "totalGames": 542
 }
