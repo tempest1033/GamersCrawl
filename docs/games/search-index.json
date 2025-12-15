@@ -3082,7 +3082,7 @@
       "ios"
     ],
     "developer": "Sesisoft",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3496,7 +3496,7 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3542,7 +3542,7 @@
       "ios"
     ],
     "developer": "Level Infinite",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4413,7 +4413,7 @@
       "android"
     ],
     "developer": "JIEUNK",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4849,7 +4849,7 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5204,7 +5204,7 @@
       "ios"
     ],
     "developer": "Panteon",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5273,7 +5273,7 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5286,7 +5286,7 @@
       "android"
     ],
     "developer": "RISE SMART",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5551,7 +5551,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5582,7 +5582,7 @@
       "ios"
     ],
     "developer": "StoryTaco.Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
