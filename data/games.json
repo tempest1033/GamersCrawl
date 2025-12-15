@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6456484806",
-        "android": "com.act7ent.musket",
+        "ios": "6446516059",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -944,7 +944,8 @@
         "헌터 키우기 : 방치형 RPG",
         "뮤: 포켓 나이츠 – 방치형RPG",
         "소녀총사 키우기 : 도트 방치형 RPG",
-        "소녀총사 키우기"
+        "소녀총사 키우기",
+        "잠룡 : 무협 도트 RPG"
       ],
       "developer": "Game Duo Co.,Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -1968,7 +1969,7 @@
     "서머너즈 워: 천공의 아레나": {
       "appIds": {
         "android": "com.com2us.smon.normal.freefull.google.kr.android.common",
-        "ios": 852912420
+        "ios": "852912420"
       },
       "aliases": [
         "Summoners War",
@@ -2291,8 +2292,9 @@
     "변신 키우기": {
       "appIds": {
         "android": "com.billionairegames.serares",
-        "ios": 6746192853
+        "ios": "6746192853"
       },
+      "aliases": [],
       "developer": "BillionaireGames",
       "icon": "https://play-lh.googleusercontent.com/_BjyLC_y-w36hAxYWkngsi2WWsppSLSC7SrZYnfBZSs4r-ljRrmiRY25qOo3MB6gBTw",
       "slug": "변신-키우기",
@@ -2342,8 +2344,9 @@
     "MLB 9이닝스 25": {
       "appIds": {
         "android": "com.com2us.ninepb3d.normal.freefull.google.global.android.common",
-        "ios": 1059665257
+        "ios": "1059665257"
       },
+      "aliases": [],
       "developer": "Com2uS",
       "icon": "https://play-lh.googleusercontent.com/xdyEUPwXkpilQinMSXh6HAZi_Dd0293tOYwwGJQaRbbl846gGxUhu_RRLyRjKZOkFhQ4Qwvi2Shy9RLECRDvT-k",
       "slug": "mlb-9이닝스-25",
@@ -2467,7 +2470,7 @@
     "버섯커 키우기": {
       "appIds": {
         "android": "com.mxdzzkr.google",
-        "ios": 6467117398
+        "ios": "6467117398"
       },
       "aliases": [
         "버섯커 키우기-3000뽑기 증정"
@@ -2596,15 +2599,8 @@
     "우마무스메 프리티 더비": {
       "appIds": {
         "android": "com.kakaogames.umamusume",
-        "ios": 1616108452
+        "ios": "1616108452"
       },
-      "developer": "Kakao Games Corp.",
-      "icon": "https://play-lh.googleusercontent.com/DRLSq9EkBBHQS77fGQv7vL1EH6a8ABLbRaqc6MIQf-XBDvmX9SBnkoEVEMHEyPqEbQiZ",
-      "slug": "우마무스메-프리티-더비",
-      "platforms": [
-        "android",
-        "ios"
-      ],
       "aliases": [
         "우마무스메",
         "우마",
@@ -2612,6 +2608,13 @@
         "우마 무스메",
         "ウマ娘 プリティーダービー",
         "Umamusume: Pretty Derby"
+      ],
+      "developer": "Kakao Games Corp.",
+      "icon": "https://play-lh.googleusercontent.com/DRLSq9EkBBHQS77fGQv7vL1EH6a8ABLbRaqc6MIQf-XBDvmX9SBnkoEVEMHEyPqEbQiZ",
+      "slug": "우마무스메-프리티-더비",
+      "platforms": [
+        "android",
+        "ios"
       ]
     },
     "포지 마스터 (Forge Master)": {
@@ -2873,17 +2876,17 @@
     "인생존망겜": {
       "appIds": {
         "android": "com.global.sgdbzkr",
-        "ios": 6743155652
+        "ios": "6743155652"
       },
+      "aliases": [
+        "인생 존망겜"
+      ],
       "developer": "37GAMES",
       "icon": "https://play-lh.googleusercontent.com/HcK8j0gkwe07w9TM_cPUmD0H3FLzgq9YhJLFTEVovusqdapM0UFVEcE6TpE5PX6EbDQGUXdP-cxnFCUrrXSZHg",
       "slug": "인생존망겜",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "인생 존망겜"
       ]
     },
     "모바일 레전드: Bang Bang": {
@@ -2920,7 +2923,7 @@
     "궁수의 전설2": {
       "appIds": {
         "android": "com.xq.archeroii",
-        "ios": 6502820653
+        "ios": "6502820653"
       },
       "aliases": [
         "Archero 2",
@@ -3304,21 +3307,21 @@
     "프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠": {
       "appIds": {
         "android": "com.pjsekai.kr",
-        "ios": 1598881852
+        "ios": "1598881852"
       },
-      "developer": "Nuverse",
-      "icon": "https://play-lh.googleusercontent.com/nM_bMwQmt0epELSrXmA57q5NHesrR_Nj_bt5-IV34cwNk3DFtWLQM7WCxZ6tyIrbXu_3gDyPxK1-h87s78aq",
-      "slug": "프로젝트-세카이-컬러풀-스테이지-feat하츠네-미쿠",
-      "platforms": [
-        "android",
-        "ios"
-      ],
       "aliases": [
         "프로세카",
         "Project Sekai",
         "프로젝트세카이",
         "프로젝트 세카이",
         "世界計畫"
+      ],
+      "developer": "Nuverse",
+      "icon": "https://play-lh.googleusercontent.com/nM_bMwQmt0epELSrXmA57q5NHesrR_Nj_bt5-IV34cwNk3DFtWLQM7WCxZ6tyIrbXu_3gDyPxK1-h87s78aq",
+      "slug": "프로젝트-세카이-컬러풀-스테이지-feat하츠네-미쿠",
+      "platforms": [
+        "android",
+        "ios"
       ]
     },
     "프렌즈팝콘": {
@@ -3560,8 +3563,9 @@
     "Color Blaze Shooter": {
       "appIds": {
         "ios": "6754384144",
-        "android": "com.funfinity.amobear.blaze.shooter"
+        "android": "com.color.pixel.shooter"
       },
+      "aliases": [],
       "developer": "AMOBEAR PTE. LTD",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1e/25/fb/1e25fbc5-dc05-d9b8-1b64-18f7ba65b225/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "color-blaze-shooter",
@@ -3636,7 +3640,7 @@
     },
     "털실 마스터 - 마법의 정렬 버스주차퍼즐게임": {
       "appIds": {
-        "ios": 6743385713,
+        "ios": "6743385713",
         "android": "wool.match.color.sort.jam.puzzle"
       },
       "aliases": [
@@ -3959,7 +3963,7 @@
     },
     "스도쿠 - 클래식 로직 퍼즐 게임": {
       "appIds": {
-        "ios": 1193508329,
+        "ios": "1193508329",
         "android": "com.mocacorp.sudoku"
       },
       "aliases": [
@@ -4506,8 +4510,9 @@
     "블록 크러시 (Block Crush)": {
       "appIds": {
         "android": "com.wood.block.sudoku.puzzle.bm",
-        "ios": 1638139403
+        "ios": "1638139403"
       },
+      "aliases": [],
       "developer": "Wonderful  Studio",
       "icon": "https://play-lh.googleusercontent.com/f_ImrzQpXw781wa_yNSxhfJz4b_t-MSQ6A1PXPoFBX3b0BkKRwVc7ik4eVbwA-x5S0jRxpZ0KvD__ULeEFwFAw",
       "slug": "블록-크러시-block-crush",
@@ -4672,8 +4677,9 @@
     "마작 원더스 (Mahjong Wonders)": {
       "appIds": {
         "android": "com.nebula.mahjongtile",
-        "ios": 6747492600
+        "ios": "6747492600"
       },
+      "aliases": [],
       "developer": "Nebula  Studio",
       "icon": "https://play-lh.googleusercontent.com/9EzfqffTXjWmqOLBwky_J_RaCjbmuwwnxl1KpmMOSY8WJRoykAiUq3UaaLjhT7-AME4",
       "slug": "마작-원더스-mahjong-wonders",
@@ -4684,7 +4690,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
@@ -4732,8 +4738,9 @@
     "피자 레디 (Pizza Ready)": {
       "appIds": {
         "android": "io.supercent.pizzaidle",
-        "ios": 6450917563
+        "ios": "6450917563"
       },
+      "aliases": [],
       "developer": "Supercent, Inc.",
       "icon": "https://play-lh.googleusercontent.com/xT4-Jd79HjNHpDHboXZQ7KzzXr3cSVq8qJ4JI5YlUiOTtN3XgPdNqNP34cqJcVnIImPO",
       "slug": "피자-레디-pizza-ready",
@@ -4756,17 +4763,17 @@
     "Paper.io 2": {
       "appIds": {
         "android": "io.voodoo.paper2",
-        "ios": 1423046460
+        "ios": "1423046460"
       },
+      "aliases": [
+        "페이퍼io"
+      ],
       "developer": "VOODOO",
       "icon": "https://play-lh.googleusercontent.com/SWTpYqsX9RN2YirCDnAjQ8qsbgn4UrHkRRGsjwuASnHMVqssIvWKzq82mP82y_ffBSE",
       "slug": "paperio-2",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "페이퍼io"
       ]
     },
     "단일 선 블록 채우기 퍼즐": {
@@ -4811,19 +4818,19 @@
     "Geometry Dash Lite": {
       "appIds": {
         "android": "com.robtopx.geometryjumplite",
-        "ios": 698255242
+        "ios": "698255242"
       },
+      "aliases": [
+        "지오메트리대시",
+        "지대",
+        "지오메트리 대시 라이트"
+      ],
       "developer": "RobTop Games",
       "icon": "https://play-lh.googleusercontent.com/p7kWbWBFxQIrzolEqiV5uSvctLeyssZvBV7UBOX29wzZI52IdcSs4qCB_zsQJL1mt9A",
       "slug": "geometry-dash-lite",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "지오메트리대시",
-        "지대",
-        "지오메트리 대시 라이트"
       ]
     },
     "편의점 정리왕 3D": {
@@ -4894,8 +4901,9 @@
     "상품 정렬: 매치 3 퍼즐 - Goods Sorting": {
       "appIds": {
         "android": "com.fc.goods.sort.matching.puzzle.triplemaster",
-        "ios": 6482849843
+        "ios": "6482849843"
       },
+      "aliases": [],
       "developer": "FALCON GAMES",
       "icon": "https://play-lh.googleusercontent.com/F4r_imTe0hKKnVfrOUxbS8oumI6LpU-UgFbOW0VHoYQ_FnrcXq0p3QRR96u5wNANm2A",
       "slug": "상품-정렬-매치-3-퍼즐-goods-sorting",
@@ -4956,17 +4964,17 @@
     "Hole.io": {
       "appIds": {
         "android": "io.voodoo.holeio",
-        "ios": 1389111413
+        "ios": "1389111413"
       },
+      "aliases": [
+        "홀io"
+      ],
       "developer": "VOODOO",
       "icon": "https://play-lh.googleusercontent.com/VmbS-Smui9i1h9mxAVxnehbLI4HP4g-wsdWeJ2k9MbOTFK5wsiZifDkxdkm4f4wEIsE",
       "slug": "holeio",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "홀io"
       ]
     },
     "Dancing Cats 2:고양이 리듬 게임": {
@@ -5450,7 +5458,7 @@
     "전우치 키우기": {
       "appIds": {
         "android": "com.codedragon.woochi",
-        "ios": 6751304771
+        "ios": "6751304771"
       },
       "aliases": [
         "전우치 키우기 : K 데몬 헌터"
@@ -5669,13 +5677,18 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecrafttrialpe"
+        "android": "com.mojang.minecrafttrialpe",
+        "ios": "479516143"
       },
+      "aliases": [
+        "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
+      ],
       "developer": "Mojang",
       "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
       "slug": "minecraft-체험판",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "옆자리는 누구? : 꿀잼 논리 퍼즐 퀴즈게임": {
@@ -7053,8 +7066,1108 @@
         "호그와트레거시",
         "호그와트 레거시"
       ]
+    },
+    "이사만루25": {
+      "appIds": {
+        "ios": "1481802531",
+        "android": "com.gonggames.kbo3.aos.google.kr"
+      },
+      "aliases": [],
+      "developer": "(주)공게임즈",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/76/2a/ee762a9d-a087-f8b5-e39f-d8a2b2d4f54f/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "이사만루25",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "연운": {
+      "appIds": {
+        "ios": "6472396866",
+        "android": "com.netease.yysls"
+      },
+      "aliases": [],
+      "developer": "NETEASE INTERACTIVE ENTERTAINMENT PTE. LTD",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e9/73/23/e973231b-3ec7-138e-4fb0-0763a8c40b2c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "slug": "연운",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "외계인은 배고파": {
+      "appIds": {
+        "ios": "6449141384",
+        "android": "com.DetailGames.HungryAliens"
+      },
+      "aliases": [],
+      "developer": "BY4M STUDIO CO.,LTD.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e4/b4/c6/e4b4c62a-e6e9-5937-339c-5594de7f0d39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "외계인은-배고파",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "화산파 키우기 : 1주년 기념 신규 서버!": {
+      "appIds": {
+        "ios": "6639589557",
+        "android": "com.dragonheart.muhyeop"
+      },
+      "aliases": [],
+      "developer": "Changgon Woo",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7b/cf/82/7bcf821f-8360-f8d2-a223-e81424cb5bbe/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "화산파-키우기-1주년-기념-신규-서버",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "머지 맨션 (Merge Mansion)": {
+      "appIds": {
+        "ios": "1484442152",
+        "android": "com.everywear.game5"
+      },
+      "aliases": [],
+      "developer": "Metacore Games Oy",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/9d/17/e89d17e6-2a23-e34e-7679-d894c77f25ef/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "머지-맨션-merge-mansion",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "I9: 인페르노 나인(19) - 세로형 RPG": {
+      "appIds": {
+        "android": "com.kr.firelite"
+      },
+      "aliases": [],
+      "developer": "Leniu Technology Co., Limited",
+      "icon": "https://play-lh.googleusercontent.com/mXF7HtbUud3zSsdOzFkh-zKHE5G9n2nASkBz6-d4Fqt9wMHJkP3jniIjjcOQxFwuCWJCRLeJYrxKXBs2GbuxFg",
+      "slug": "i9-인페르노-나인19-세로형-rpg",
+      "platforms": [
+        "android"
+      ]
+    },
+    "리버스: 1999": {
+      "appIds": {
+        "android": "kr.haoplay.game.and.reverse",
+        "ios": 6449023119
+      },
+      "aliases": [],
+      "developer": "HaoPlay Limited",
+      "icon": "https://play-lh.googleusercontent.com/EVu4ax1GxxSB2Adpbj9Lhu2D2Mnhwkt1hFlCHh0drUzaK-ChepMedhKEGxkokM9V3TmJXPnEGYLGzkzKgb_n",
+      "slug": "리버스-1999",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "어나더던전": {
+      "appIds": {
+        "android": "net.gameduo.anotherdungeon",
+        "ios": 1642354115
+      },
+      "aliases": [],
+      "developer": "Gameduo",
+      "icon": "https://play-lh.googleusercontent.com/JXDLs5Sbvc6s41FAVLOuNgesF45ollWlFMY7nIzEjfEmqc6wax5o5Z1LFYy0W0V1Niw",
+      "slug": "어나더던전",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "로스트 소드": {
+      "appIds": {
+        "android": "com.wemadeconnect.aos.lostdgl",
+        "ios": 6482099823
+      },
+      "aliases": [],
+      "developer": "Wemade Connect",
+      "icon": "https://play-lh.googleusercontent.com/NiXuHj-Y2LXYnRbwRdvSZW3xOC8mB9iC0dpg1ollH3ZmVXwrKrf0ZvnVI3nOVzGoLg",
+      "slug": "로스트-소드",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "검은사막 모바일": {
+      "appIds": {
+        "android": "com.pearlabyss.blackdesertm",
+        "ios": 1323002999
+      },
+      "aliases": [],
+      "developer": "PEARL ABYSS",
+      "icon": "https://play-lh.googleusercontent.com/02XtRbof13UDiM3ZPRq-4R7jLqcDOM87r1_rxcO3VEo5AWJjh5PqHTnZW7MpjyuRUXg",
+      "slug": "검은사막-모바일",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "쿠키런: 모험의 탑": {
+      "appIds": {
+        "android": "com.devsisters.cba",
+        "ios": 6449445178
+      },
+      "aliases": [],
+      "developer": "Devsisters Corporation",
+      "icon": "https://play-lh.googleusercontent.com/2rUa7BlTumKdfztTJhHvy0XzheDbbf3RCGMmtt118S1HPsLxFywrtory1FTJ-qaBrGM",
+      "slug": "쿠키런-모험의-탑",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "요괴잡이소대 X 대환장 MMORPG": {
+      "appIds": {
+        "android": "com.joynexgames.btaste.google"
+      },
+      "aliases": [],
+      "developer": "JOYNEX GAMES",
+      "icon": "https://play-lh.googleusercontent.com/1ofJcFK0H4D5NKStquS_vOnEvsW1VJt2Z08H2VhXVoC_LPMIhDFGsleoZFaXNjf5P2dOezXSiillV78sKzxe",
+      "slug": "요괴잡이소대-x-대환장-mmorpg",
+      "platforms": [
+        "android"
+      ]
+    },
+    "전혼M": {
+      "appIds": {
+        "android": "com.kr.jszh.google"
+      },
+      "aliases": [],
+      "developer": "HONG KONG DUCKLING TECHNOLOGY CO.,LIMITED",
+      "icon": "https://play-lh.googleusercontent.com/Z8cr0vc3FVQcV7oJ8EC4-2JfynGQwJL2QVq85AiXSrlJlNBojN8_7HCWao0V5joVmg",
+      "slug": "전혼m",
+      "platforms": [
+        "android"
+      ]
+    },
+    "아우터플레인 (OUTERPLANE)": {
+      "appIds": {
+        "android": "com.smilegate.outerplane.stove.google",
+        "ios": 1630880836
+      },
+      "aliases": [],
+      "developer": "Major9",
+      "icon": "https://play-lh.googleusercontent.com/MX_RZXeeKOqW3nGvXFU9boomS67sP3yyG2N9G551SY_olfgDW4VVgFqaYy--KqLO5oMpRPup7kDOM9wKZgFV3kc",
+      "slug": "아우터플레인-outerplane",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "트리 오브 세이비어: 네버랜드": {
+      "appIds": {
+        "android": "com.qookkagames.szgd.gp.kr",
+        "ios": 6480157886
+      },
+      "aliases": [],
+      "developer": "Qookka Games",
+      "icon": "https://play-lh.googleusercontent.com/PhWYBc79bJkDl8ZCxH7U88kLQ57TEzkn2iWq4ysOzuBDJNqAszP08zzqZr1wTqbia9WnXIC9tD0JjovLwgvxMw",
+      "slug": "트리-오브-세이비어-네버랜드",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "패스 오브 라이징": {
+      "appIds": {
+        "android": "com.jiudream2.gpkr",
+        "ios": 6739560728
+      },
+      "aliases": [],
+      "developer": "SPGFun",
+      "icon": "https://play-lh.googleusercontent.com/CF0hRlPnuWtcS_xA6uCQ8Ck4E-2O3QsNM4UMclO4FZq-InP0eqFsrxR1c63Meb2bQrOHcg0CgzDA2CDdRnbHEjk",
+      "slug": "패스-오브-라이징",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "MLB 클러치 히트 베이스볼 25": {
+      "appIds": {
+        "ios": "6462846417",
+        "android": "com.wildcaly.chbaseball.jkt"
+      },
+      "aliases": [],
+      "developer": "WILD CALY PTE. LTD.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/09/8b/29/098b2909-01ea-8499-ec07-3fbe1d0da26a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "mlb-클러치-히트-베이스볼-25",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "벙커 디펜스: 1억 마리 막기": {
+      "appIds": {
+        "ios": "6753645951",
+        "android": "com.TeamSparta.BunkerDefenseMVP"
+      },
+      "aliases": [],
+      "developer": "Teamsparta Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ec/a5/e1/eca5e1e7-a2c9-309b-a681-a3c9f1217014/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "벙커-디펜스-1억-마리-막기",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Woodturning 3D": {
+      "appIds": {
+        "ios": "1492451796"
+      },
+      "aliases": [],
+      "developer": "Voodoo",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "woodturning-3d",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "주차의 달인 4": {
+      "appIds": {
+        "ios": "1021117809",
+        "android": "com.ansangha.drparking4"
+      },
+      "aliases": [],
+      "developer": "SUD Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/93/53/87/935387a0-e5d0-db61-d55a-f953d4273073/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/100x100bb.png",
+      "slug": "주차의-달인-4",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Order Crazy - 음료 물 분류 순서 일치게임": {
+      "appIds": {
+        "ios": "6751222488"
+      },
+      "aliases": [],
+      "developer": "Bitepoch",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/a1/9c/5fa19c99-e40b-5f51-2cd8-e0faae45bb28/AppIcon-1.-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "slug": "order-crazy-음료-물-분류-순서-일치게임",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Tricky Puzzle: Brain Quest": {
+      "appIds": {
+        "ios": "6740910225"
+      },
+      "aliases": [],
+      "developer": "美玲 陆",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/19/a0/b6/19a0b6af-f9d5-6ac9-d19e-0ca3b656c349/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png",
+      "slug": "tricky-puzzle-brain-quest",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "돼지 키우는 중입니다 : 국내산": {
+      "appIds": {
+        "android": "com.TrueSoft.SuperPigIdle"
+      },
+      "aliases": [],
+      "developer": "TRSOFT",
+      "icon": "https://play-lh.googleusercontent.com/nwaC9smalAARJI_3UAoWPTijULoLEv3hXvrmEy2elVdnG4itE8yT3RBoobb9s5Kjl7JdiSqYBEXk196RZz0X",
+      "slug": "돼지-키우는-중입니다-국내산",
+      "platforms": [
+        "android"
+      ]
+    },
+    "린M:잊혀진 유산": {
+      "appIds": {
+        "android": "com.ujoygp.smdl"
+      },
+      "aliases": [],
+      "developer": "Ujoy Games",
+      "icon": "https://play-lh.googleusercontent.com/ML2BoYMUTEO58nzKblMMzUTk8V1jUvfzXQtcIDSolx0HqdFYGUOaT9sVgxhE02WE8VrdHHbqH8RFnzhZ0MmB9w",
+      "slug": "린m잊혀진-유산",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Archery Showdown-Aim Arena": {
+      "appIds": {
+        "android": "com.airmin.showdown"
+      },
+      "aliases": [],
+      "developer": "Philip Fowler Labs",
+      "icon": "https://play-lh.googleusercontent.com/7m29kmbYEsuBmUmi3jG6BEHMOg93BHYVQkLTD9N2kUSnUxFjx8sf5x6ShvXRXzKLlW8",
+      "slug": "archery-showdown-aim-arena",
+      "platforms": [
+        "android"
+      ]
+    },
+    "몬스터 스토리：전설의 시작": {
+      "appIds": {
+        "android": "com.kostr.bkm"
+      },
+      "aliases": [],
+      "developer": "광저우 화성 디지털 테크놀로지 유한회사",
+      "icon": "https://play-lh.googleusercontent.com/RO7_m0bMvs9Z-o-xiTpFGpdEHgxkne3PRTHdyPfvP6aRsW7Mp4LMarVU9IHEmcmbZB0xMqPPq7a99_svMArv",
+      "slug": "몬스터-스토리전설의-시작",
+      "platforms": [
+        "android"
+      ]
+    },
+    "헌티드 머지: 괴담": {
+      "appIds": {
+        "android": "com.whalejoy.horrorstory.gp"
+      },
+      "aliases": [],
+      "developer": "WhaleJoy Game Limited",
+      "icon": "https://play-lh.googleusercontent.com/wkdnu8OxzFFCnSZw4QO2DczjcybhyW8GOMDWh4p2NG-qXX10MD3CIZHgL2vK3mWjqg",
+      "slug": "헌티드-머지-괴담",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Gun Hero ― 2D 총 로그라이트 슈팅게임": {
+      "appIds": {
+        "android": "com.BMGames.GunHero",
+        "ios": 6751321179
+      },
+      "aliases": [],
+      "developer": "Freeplay Inc",
+      "icon": "https://play-lh.googleusercontent.com/2DZwMz-Ym7V7IIMNokyFKsG5LKivJNruU24igYCHA2nfJ5G1XLuxBvQlPcO-hj60sA",
+      "slug": "gun-hero-2d-총-로그라이트-슈팅게임",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Brainy Escape Quest": {
+      "appIds": {
+        "android": "com.metagame.annoying.trick.brainypuzzle"
+      },
+      "aliases": [],
+      "developer": "Metagame.Ltd",
+      "icon": "https://play-lh.googleusercontent.com/qaegI1S3HXIZED9psoyiFY-7F85fBHGMxNZqd4Y6wTXImBSTSWcnRKwvHRVOWQRCXwk",
+      "slug": "brainy-escape-quest",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Color Match": {
+      "appIds": {
+        "android": "com.JacobVanHaag.ColorMatch"
+      },
+      "aliases": [],
+      "developer": "Supersonic Studios LTD",
+      "icon": "https://play-lh.googleusercontent.com/JYmlH46F5tL2S7lZ8JvlAxAz68Ei0489T13WJGb7ZFFZ3Rtif1r3I0k9G7d1E1NQQg",
+      "slug": "color-match",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Dino mutant : T-Rex": {
+      "appIds": {
+        "android": "com.mondayoff.dinomutant",
+        "ios": 6451176533
+      },
+      "aliases": [],
+      "developer": "MondayOFF",
+      "icon": "https://play-lh.googleusercontent.com/EY6-CY3HT6iycyj9FcWbkKHQzW_GeuXk04v0oEAePdVDG3YQ2O_Eh-v3K1ZE2NQY_DI",
+      "slug": "dino-mutant-t-rex",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Toca Boca World": {
+      "appIds": {
+        "android": "com.tocaboca.tocalifeworld",
+        "ios": 1208138685
+      },
+      "aliases": [],
+      "developer": "Toca Boca",
+      "icon": "https://play-lh.googleusercontent.com/0DbRFni8cmedxiHh-RhxOUAm6ggN7HzNuJY5CaG3oa1ULDp1Uc4m86KpUGD2CMEHyU7wA1KDIs1dJTvCVWAZlTk",
+      "slug": "toca-boca-world",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "스도쿠 마스터 · Sudoku Master": {
+      "appIds": {
+        "android": "com.mathbrain.sudoku",
+        "ios": 1618041797
+      },
+      "aliases": [],
+      "developer": "HungryStudio",
+      "icon": "https://play-lh.googleusercontent.com/stjTItfEyoYW6XankxkYMzHl29ydCcWs-iA-jMXsEmQr9or8GmJw0Cdyyh02aoY47mWv",
+      "slug": "스도쿠-마스터-sudoku-master",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Sled Surfers - 슬로프 어드벤처": {
+      "appIds": {
+        "android": "com.sled.surfers.game",
+        "ios": 6744975195
+      },
+      "aliases": [
+        "Sled Surfers  - 슬로프 어드벤처"
+      ],
+      "developer": "CrazyLabs LTD",
+      "icon": "https://play-lh.googleusercontent.com/oUlrDkAC0L4cqaIoyFuHsLBwfpK5ZWDO2RqDUuxCx2tz9y5LiWnT4p3zXaFN0mLPbMuK5iQrk1v-dOLB_h37",
+      "slug": "sled-surfers-슬로프-어드벤처",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Logic Car Challenge": {
+      "appIds": {
+        "android": "com.hollywood.displayed.releases"
+      },
+      "aliases": [],
+      "developer": "DextersLab",
+      "icon": "https://play-lh.googleusercontent.com/ST-IE5hl-xE1MpePigrEwe8QAsd-vUhvmbxrAnLLZyEZxRnYC2XgGXmiuPa-lcg9-oMA",
+      "slug": "logic-car-challenge",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Arrowscapes – Arrows Puzzle": {
+      "appIds": {
+        "android": "com.red.arrows.android",
+        "ios": 6755216191
+      },
+      "aliases": [
+        "Arrowscapes - Arrows Puzzle"
+      ],
+      "developer": "Beijing Youyoutang Technology Co.,ltd.",
+      "icon": "https://play-lh.googleusercontent.com/F1nYvjOUzKkOg3bFTJ2qKWBQVE0eljJKLQt39xju57CYf8WKZeFLpbwOlmBpsdAAubUpVFL4aOcfbV9x-zF0",
+      "slug": "arrowscapes-arrows-puzzle",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "아쿠아 로맨스: 정렬 여행": {
+      "appIds": {
+        "android": "com.romance.jour8ney"
+      },
+      "aliases": [],
+      "developer": "Jeet talks",
+      "icon": "https://play-lh.googleusercontent.com/hg9sWaAxZ6kOWcI7NaLrnXmihZ39hMpQ7_NVaUni9qQHn5ne8dHWxocFddlANC-4_Y0Y",
+      "slug": "아쿠아-로맨스-정렬-여행",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Tile Vacation - Triple Match": {
+      "appIds": {
+        "android": "com.visionstudio.tilevacation",
+        "ios": 6743926718
+      },
+      "aliases": [],
+      "developer": "VisionStudio(HK)",
+      "icon": "https://play-lh.googleusercontent.com/iX3n0aKVuZrWoV38GtKnlRT52pittq1LbQIP12gQITrRXg99MrxUIrYwEYIfE8conQ",
+      "slug": "tile-vacation-triple-match",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "드로우 아레나 (Draw Arena)": {
+      "appIds": {
+        "android": "com.kadka.battle.draw"
+      },
+      "aliases": [],
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/8T3kunZsZzVBsRxHQGW8Ls8LZJFbgrNsv28Hd-5Z2nFSAM51tQsAO5YdtZwAIMRB1_o",
+      "slug": "드로우-아레나-draw-arena",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Eatventure": {
+      "appIds": {
+        "android": "com.hwqgrhhjfd.idlefastfood",
+        "ios": 1600871388
+      },
+      "aliases": [],
+      "developer": "Lessmore UG",
+      "icon": "https://play-lh.googleusercontent.com/iQkccRgYNjF0xdVFioJo0SabtPKO0nSZrP7p8zCLGYpUypROC-Boo9GN3GaHddhudkO7",
+      "slug": "eatventure",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Kingdom Match: Royal Adventure": {
+      "appIds": {
+        "android": "com.gamee.kingdom.royale.match3.blast.escape"
+      },
+      "aliases": [],
+      "developer": "GameeStudio",
+      "icon": "https://play-lh.googleusercontent.com/_rC8deserIKuXMyraF54oN8DUXgJPq77yKwCJv9fV5EceRT7bDugNIhufiYKZOMjYqRWOcMknkj-tGtZmsCzRok",
+      "slug": "kingdom-match-royal-adventure",
+      "platforms": [
+        "android"
+      ]
+    },
+    "존나르센 키우기: 성검전설": {
+      "appIds": {
+        "android": "com.studiolico.johnnarsen",
+        "ios": 6752990168
+      },
+      "aliases": [],
+      "developer": "STUDIO LICO Corp.",
+      "icon": "https://play-lh.googleusercontent.com/itNq9cg7y7DVh6iSf-zhdegtIClJ8t-zr_FIHGa2e1VLvH0-_-zKKTxy_FusRmNgh488W2pqCAddUMRBYjpQ5M4",
+      "slug": "존나르센-키우기-성검전설",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Supreme Duelist Stickman": {
+      "appIds": {
+        "android": "com.Neurononfire.SupremeDuelist"
+      },
+      "aliases": [],
+      "developer": "Neron's Brother",
+      "icon": "https://play-lh.googleusercontent.com/iRq0R9mN7eGyVENIPDk5muu76VxawBAIkFAYFqauJTFNIvUxzD1_M33HNX4GE8Qk0WqY",
+      "slug": "supreme-duelist-stickman",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Mini Antistress Relaxing Games": {
+      "appIds": {
+        "android": "com.sh.mini.antistress.relaxing.games",
+        "ios": 6480044742
+      },
+      "aliases": [],
+      "developer": "stick hunter",
+      "icon": "https://play-lh.googleusercontent.com/1kInqsBi-gTuGgRxKn8G1_KntTSKdgEI3GndN1d7C4jH974OMAK_Gy39_8nidKrfftMm",
+      "slug": "mini-antistress-relaxing-games",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Path of Exile 2": {
+      "appIds": {
+        "steam": "2694490"
+      },
+      "aliases": [],
+      "developer": "Grinding Gear Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694490/c7b0f1d2bb3df3808b65eb3f697ef42f475e547e/header_alt_assets_5.jpg?t=1765515540",
+      "slug": "path-of-exile-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "EA SPORTS FC™ 26": {
+      "appIds": {
+        "steam": "3405690"
+      },
+      "aliases": [],
+      "developer": "EA Canada",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1765584059",
+      "slug": "ea-sports-fc-26",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Farming Simulator 25": {
+      "appIds": {
+        "steam": "2300320"
+      },
+      "aliases": [],
+      "developer": "GIANTS Software",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300320/c2a205133d23cd24faf3c152d972a1d0177661b8/header.jpg?t=1764249746",
+      "slug": "farming-simulator-25",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Project Zomboid": {
+      "appIds": {
+        "steam": "108600"
+      },
+      "aliases": [],
+      "developer": "The Indie Stone",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1762369969",
+      "slug": "project-zomboid",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Diablo® IV": {
+      "appIds": {
+        "steam": "2344520"
+      },
+      "aliases": [],
+      "developer": "Blizzard Entertainment, Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/80f21a42e378b93e8fbb68ee43103be8ab84891b/header.jpg?t=1765512014",
+      "slug": "diablo-iv",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Hunt: Showdown 1896": {
+      "appIds": {
+        "steam": "594650"
+      },
+      "aliases": [],
+      "developer": "Crytek",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/12ae33eb49c548a6789ce26088c64cea5850eefc/header_alt_assets_22.jpg?t=1765546692",
+      "slug": "hunt-showdown-1896",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "PEAK": {
+      "appIds": {
+        "steam": "3527290"
+      },
+      "aliases": [],
+      "developer": "Team PEAK",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1764003551",
+      "slug": "peak",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "7 Days to Die": {
+      "appIds": {
+        "steam": "251570"
+      },
+      "aliases": [],
+      "developer": "The Fun Pimps",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1756397337",
+      "slug": "7-days-to-die",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Witcher 3: Wild Hunt": {
+      "appIds": {
+        "steam": "292030"
+      },
+      "aliases": [],
+      "developer": "CD PROJEKT RED",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1765462356",
+      "slug": "the-witcher-3-wild-hunt",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Street Fighter™ 6": {
+      "appIds": {
+        "steam": "1364780"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg?t=1761116384",
+      "slug": "street-fighter-6",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Terraria": {
+      "appIds": {
+        "steam": "105600"
+      },
+      "aliases": [],
+      "developer": "Re-Logic",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1731252354",
+      "slug": "terraria",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Monster Hunter Wilds": {
+      "appIds": {
+        "steam": "2246340"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1765526418",
+      "slug": "monster-hunter-wilds",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Kingdom Come: Deliverance II": {
+      "appIds": {
+        "steam": "1771300"
+      },
+      "aliases": [],
+      "developer": "Warhorse Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1763987645",
+      "slug": "kingdom-come-deliverance-ii",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ARK: Survival Evolved": {
+      "appIds": {
+        "steam": "346110"
+      },
+      "aliases": [],
+      "developer": "Studio Wildcard",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1765677889",
+      "slug": "ark-survival-evolved",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "BeamNG.drive": {
+      "appIds": {
+        "steam": "284160"
+      },
+      "aliases": [],
+      "developer": "BeamNG",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/17f8af1312bc48e6cd90e5fb639d4981682af260/header.jpg?t=1765365731",
+      "slug": "beamngdrive",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Sims™ 4": {
+      "appIds": {
+        "steam": "1222670"
+      },
+      "aliases": [],
+      "developer": "Maxis",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg?t=1765476116",
+      "slug": "the-sims-4",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "OBS Studio": {
+      "appIds": {
+        "steam": "1905180"
+      },
+      "aliases": [],
+      "developer": "OBS Project",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1905180/header.jpg?t=1733595297",
+      "slug": "obs-studio",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Europa Universalis V": {
+      "appIds": {
+        "steam": "3450310"
+      },
+      "aliases": [],
+      "developer": "Paradox Tinto",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3450310/9944293cf93d5c11430d3b69941221b614c3ea70/header.jpg?t=1762296010",
+      "slug": "europa-universalis-v",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Arena Breakout: Infinite": {
+      "appIds": {
+        "steam": "2073620"
+      },
+      "aliases": [],
+      "developer": "Morefun Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073620/1b60ef4c79943bfca0b57c39c2d1e3d5941c77ed/header.jpg?t=1765423453",
+      "slug": "arena-breakout-infinite",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Monster Hunter: World": {
+      "appIds": {
+        "steam": "582010"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg?t=1758246558",
+      "slug": "monster-hunter-world",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Satisfactory": {
+      "appIds": {
+        "steam": "526870"
+      },
+      "aliases": [],
+      "developer": "Coffee Stain Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg?t=1749717464",
+      "slug": "satisfactory",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Garry's Mod": {
+      "appIds": {
+        "steam": "4000"
+      },
+      "aliases": [],
+      "developer": "Facepunch Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1764757984",
+      "slug": "garrys-mod",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Left 4 Dead 2": {
+      "appIds": {
+        "steam": "550"
+      },
+      "aliases": [],
+      "developer": "Valve",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562",
+      "slug": "left-4-dead-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "NBA 2K26": {
+      "appIds": {
+        "steam": "3472040"
+      },
+      "aliases": [],
+      "developer": "Visual Concepts",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3472040/21edd260352a3a5a8aac0e340091d94c87a01287/header_alt_assets_1.jpg?t=1764346316",
+      "slug": "nba-2k26",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Crusader Kings III": {
+      "appIds": {
+        "steam": "1158310"
+      },
+      "aliases": [],
+      "developer": "Paradox Development Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/8a7e814d13f8e73c0d40471f585ece908f9be282/header.jpg?t=1765537474",
+      "slug": "crusader-kings-iii",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Football Manager 2024": {
+      "appIds": {
+        "steam": "2252570"
+      },
+      "aliases": [],
+      "developer": "Sports Interactive",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2252570/header.jpg?t=1763646323",
+      "slug": "football-manager-2024",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ARK: Survival Ascended": {
+      "appIds": {
+        "steam": "2399830"
+      },
+      "aliases": [],
+      "developer": "Studio Wildcard",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399830/d934813ca531af0fce69fe36bc972f1c90d1aa19/header.jpg?t=1764880598",
+      "slug": "ark-survival-ascended",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Enshrouded": {
+      "appIds": {
+        "steam": "1203620"
+      },
+      "aliases": [],
+      "developer": "Keen Games GmbH",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/7b462e81072e94d96cb4242a75f8adddd9ec1cbd/header.jpg?t=1765290696",
+      "slug": "enshrouded",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Age of Empires II: Definitive Edition": {
+      "appIds": {
+        "steam": "813780"
+      },
+      "aliases": [],
+      "developer": "World's Edge",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg?t=1760473253",
+      "slug": "age-of-empires-ii-definitive-edition",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Binding of Isaac: Rebirth": {
+      "appIds": {
+        "steam": "250900"
+      },
+      "aliases": [],
+      "developer": "Nicalis, Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg?t=1731977365",
+      "slug": "the-binding-of-isaac-rebirth",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Outlast Trials": {
+      "appIds": {
+        "steam": "1304930"
+      },
+      "aliases": [],
+      "developer": "Red Barrels",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/e3b40443eb87d075818ec45883d85c1c47d15c00/header.jpg?t=1765291876",
+      "slug": "the-outlast-trials",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Valheim": {
+      "appIds": {
+        "steam": "892970"
+      },
+      "aliases": [],
+      "developer": "Iron Gate AB",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1765354143",
+      "slug": "valheim",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Forza Horizon 5": {
+      "appIds": {
+        "steam": "1551360"
+      },
+      "aliases": [],
+      "developer": "Playground Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1746471508",
+      "slug": "forza-horizon-5",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "STALCRAFT: X": {
+      "appIds": {
+        "steam": "1818450"
+      },
+      "aliases": [],
+      "developer": "EXBO",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1818450/ccf3256432afacaa1778d228251d3cc97ce3d659/header.jpg?t=1765456020",
+      "slug": "stalcraft-x",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Slay the Spire": {
+      "appIds": {
+        "steam": "646570"
+      },
+      "aliases": [],
+      "developer": "Mega Crit",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg?t=1764833720",
+      "slug": "slay-the-spire",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Russian Fishing 4": {
+      "appIds": {
+        "steam": "766570"
+      },
+      "aliases": [],
+      "developer": "FishSoft LLC",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/766570/header.jpg?t=1752656375",
+      "slug": "russian-fishing-4",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "It Takes Two": {
+      "appIds": {
+        "steam": "1426210"
+      },
+      "aliases": [],
+      "developer": "Hazelight Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header_koreana.jpg?t=1763484491",
+      "slug": "it-takes-two",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Factorio": {
+      "appIds": {
+        "steam": "427520"
+      },
+      "aliases": [],
+      "developer": "Wube Software LTD.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg?t=1763986204",
+      "slug": "factorio",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Hollow Knight: Silksong": {
+      "appIds": {
+        "steam": "1030300"
+      },
+      "aliases": [],
+      "developer": "Team Cherry",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1764916587",
+      "slug": "hollow-knight-silksong",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "INAZUMA ELEVEN: Victory Road": {
+      "appIds": {
+        "steam": "2799860"
+      },
+      "aliases": [],
+      "developer": "LEVEL5 Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2799860/d7e5240b6182e4a085a365503b22aefd2e6ae6cf/header.jpg?t=1764296831",
+      "slug": "inazuma-eleven-victory-road",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Black Desert": {
+      "appIds": {
+        "steam": "582660"
+      },
+      "aliases": [],
+      "developer": "Pearl Abyss",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582660/4f0ea9284b5fae9464dadc528bb572c629666313/header_alt_assets_27.jpg?t=1765621416",
+      "slug": "black-desert",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Counter-Strike: Source": {
+      "appIds": {
+        "steam": "240"
+      },
+      "aliases": [],
+      "developer": "Valve",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240/header.jpg?t=1745368575",
+      "slug": "counter-strike-source",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Black Myth: Wukong": {
+      "appIds": {
+        "steam": "2358720"
+      },
+      "aliases": [],
+      "developer": "Game Science",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605",
+      "slug": "black-myth-wukong",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-09",
-  "totalGames": 456
+  "lastUpdated": "2025-12-15",
+  "totalGames": 541
 }
