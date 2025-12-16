@@ -335,6 +335,46 @@
         }
       ],
       "addedAt": "2025-12-15T22:04:19.841Z"
+    },
+    {
+      "title": "매직 레벨 9: 탭 피아노 게임, 비트에 맞춰 춤추기",
+      "status": "single",
+      "appIds": {
+        "ios": "1446874445"
+      },
+      "developer": "Kim Nguyen",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/fc/0f/cffc0f4a-2a24-9554-ebdd-8a62041476ef/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "음악 피아노 7:  음악게임 & 피아노게임",
+          "appId": "com.bunbunstudio.magicblocktiles"
+        },
+        {
+          "title": "매직 타일 3: 피아노 게임 케이팝 노래",
+          "appId": "com.youmusic.magictiles"
+        },
+        {
+          "title": "피아노게임 5: 음악게임 & 음악 피아노",
+          "appId": "classic.pop.piano.magic.juegos"
+        }
+      ],
+      "addedAt": "2025-12-16T00:48:31.052Z"
+    },
+    {
+      "title": "알고보니 무서운나날",
+      "status": "single",
+      "appIds": {
+        "android": "pics.karaage.nichijyo"
+      },
+      "developer": "KARAAGE GAMES LLC.",
+      "icon": "https://play-lh.googleusercontent.com/hzGcFXNxuUyT0efmXnVAd8yX5UUGByZ8lFx2mByJgoKXH-bkNYx96KaLQCWBYPxsbgQ",
+      "searchResults": [
+        {
+          "title": "Horrorfield—멀티플레이어 생존 공포 탈출 게임",
+          "appId": 1351585483
+        }
+      ],
+      "addedAt": "2025-12-16T00:48:43.009Z"
     }
   ],
   "approved": [],

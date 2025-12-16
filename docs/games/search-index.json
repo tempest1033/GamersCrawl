@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "studio-gameberry-idlehunter",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -4133,11 +4133,12 @@
     ],
     "platforms": [
       "ios",
-      "android"
+      "android",
+      "steam"
     ],
     "developer": "Gaggle Studios, Inc.",
     "hasRankings": true,
-    "hasSteam": false,
+    "hasSteam": true,
     "hasData": true
   },
   {
@@ -4782,7 +4783,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
+    "slug": "com-whoyaho-tanghulu",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -8491,6 +8492,158 @@
     "developer": "Act Seven Entertainment Inc.",
     "hasRankings": true,
     "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Total Football - 25/26 시즌",
+    "slug": "com-galasports-totalfootball-kr",
+    "icon": "https://play-lh.googleusercontent.com/mCwa1MZLN9aFF_7bZx22BMZO34EKMW3ZcL4BkPuEfGp07hGkY4XwaWfwAdgRP0_EZ7gJ9M3ESGosAZOhhsxr8g8",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "GALA Sports",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "이블헌터 타이쿤 - 방치형 게임",
+    "slug": "com-retroarts-evilhuntertycoon",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e7/d1/73/e7d17399-95dc-f20b-84f6-13b73d6ca478/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Retroarts Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "갓생 육성 다이어리",
+    "slug": "com-puffythinggames-onetap",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/1f/dc/441fdcdd-1105-b5f4-fc27-a0a12fb598ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Puffything Games Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "매직 레벨 9: 탭 피아노 게임, 비트에 맞춰 춤추기",
+    "slug": "매직-레벨-9-탭-피아노-게임-비트에-맞춰-춤추기",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/fc/0f/cffc0f4a-2a24-9554-ebdd-8a62041476ef/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Kim Nguyen",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "알고보니 무서운나날",
+    "slug": "pics-karaage-nichijyo",
+    "icon": "https://play-lh.googleusercontent.com/hzGcFXNxuUyT0efmXnVAd8yX5UUGByZ8lFx2mByJgoKXH-bkNYx96KaLQCWBYPxsbgQ",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "KARAAGE GAMES LLC.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Cake Sort 3D",
+    "slug": "com-cakesort-color3d",
+    "icon": "https://play-lh.googleusercontent.com/Xe_ftwSwoEUzR32d_7v3UWwwmL1ILz8d6EZliWwdPdo-W9hXLy5vwE4-pJ1Ppj7mLA",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "LogicLabs Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Thief Puzzle: to pass a level",
+    "slug": "com-weegoon-thiefpuzzle",
+    "icon": "https://play-lh.googleusercontent.com/A1l-tIbphgjreQ-47-vNYLqbjaFJfmoS6aEXHR9_yI1eyKwxPXnQPRL-xF_SLyMPLg",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "TapNation",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "aquapark.io",
+    "slug": "com-cassette-aquapark",
+    "icon": "https://play-lh.googleusercontent.com/u1Z-wRullWJBvInhY4gdFxg_Q8Pz6clUQd7thoQNQNHQ1ghNeUf-lsJandlp1vFKhBk",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "VOODOO",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Melon Sandbox",
+    "slug": "com-studio27-melonplayground",
+    "icon": "https://play-lh.googleusercontent.com/9KgS1cF6vWMF9Fl25S36bKr8zDh0ddkTOeN7WpBcQAE-pKfahG2DjUxbQ8sespNoe3KW3qbcaVD8H6DfNys6",
+    "aliases": [
+      "Melon: Sandbox"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "playducky.com",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "VTube Studio",
+    "slug": "vtube-studio",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325860/header.jpg?t=1750309780",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "DenchiSoft",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Megabonk",
+    "slug": "megabonk",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405340/d06cb39a82a703e42541085fc61b42d80904b3f8/header.jpg?t=1760445338",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "vedinad",
+    "hasRankings": false,
+    "hasSteam": true,
     "hasData": true
   }
 ]

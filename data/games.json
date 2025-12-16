@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6446516059",
-        "android": "net.gameduo.gv",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4069,19 +4069,21 @@
     "Goose Goose Duck": {
       "appIds": {
         "ios": "1558248707",
-        "android": "com.Gaggle.fun.GooseGooseDuck"
+        "android": "com.Gaggle.fun.GooseGooseDuck",
+        "steam": "1568590"
       },
+      "aliases": [
+        "구스구스덕",
+        "GGD",
+        "구스 구스 덕"
+      ],
       "developer": "Gaggle Studios, Inc.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6d/84/76/6d8476ca-dd26-4bb6-656c-536a49b067c0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "goose-goose-duck",
       "platforms": [
         "ios",
-        "android"
-      ],
-      "aliases": [
-        "구스구스덕",
-        "GGD",
-        "구스 구스 덕"
+        "android",
+        "steam"
       ]
     },
     "Hexa Away : 육각형 타일 퍼즐": {
@@ -4690,7 +4692,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -8178,8 +8180,156 @@
       "platforms": [
         "ios"
       ]
+    },
+    "Total Football - 25/26 시즌": {
+      "appIds": {
+        "android": "com.galasports.totalfootball.kr",
+        "ios": 6457256716
+      },
+      "aliases": [],
+      "developer": "GALA Sports",
+      "icon": "https://play-lh.googleusercontent.com/mCwa1MZLN9aFF_7bZx22BMZO34EKMW3ZcL4BkPuEfGp07hGkY4XwaWfwAdgRP0_EZ7gJ9M3ESGosAZOhhsxr8g8",
+      "slug": "total-football-2526-시즌",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "이블헌터 타이쿤 - 방치형 게임": {
+      "appIds": {
+        "ios": "1458318990",
+        "android": "com.retroarts.evilhuntertycoon"
+      },
+      "aliases": [],
+      "developer": "Retroarts Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e7/d1/73/e7d17399-95dc-f20b-84f6-13b73d6ca478/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "이블헌터-타이쿤-방치형-게임",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "갓생 육성 다이어리": {
+      "appIds": {
+        "ios": "6742134565",
+        "android": "com.puffythinggames.onetap"
+      },
+      "aliases": [],
+      "developer": "Puffything Games Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/1f/dc/441fdcdd-1105-b5f4-fc27-a0a12fb598ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "갓생-육성-다이어리",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "매직 레벨 9: 탭 피아노 게임, 비트에 맞춰 춤추기": {
+      "appIds": {
+        "ios": "1446874445"
+      },
+      "aliases": [],
+      "developer": "Kim Nguyen",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/fc/0f/cffc0f4a-2a24-9554-ebdd-8a62041476ef/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "매직-레벨-9-탭-피아노-게임-비트에-맞춰-춤추기",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "알고보니 무서운나날": {
+      "appIds": {
+        "android": "pics.karaage.nichijyo"
+      },
+      "aliases": [],
+      "developer": "KARAAGE GAMES LLC.",
+      "icon": "https://play-lh.googleusercontent.com/hzGcFXNxuUyT0efmXnVAd8yX5UUGByZ8lFx2mByJgoKXH-bkNYx96KaLQCWBYPxsbgQ",
+      "slug": "알고보니-무서운나날",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Cake Sort 3D": {
+      "appIds": {
+        "android": "com.cakesort.color3d",
+        "ios": 6639608746
+      },
+      "aliases": [],
+      "developer": "LogicLabs Limited",
+      "icon": "https://play-lh.googleusercontent.com/Xe_ftwSwoEUzR32d_7v3UWwwmL1ILz8d6EZliWwdPdo-W9hXLy5vwE4-pJ1Ppj7mLA",
+      "slug": "cake-sort-3d",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Thief Puzzle: to pass a level": {
+      "appIds": {
+        "android": "com.weegoon.thiefpuzzle",
+        "ios": 1549814091
+      },
+      "aliases": [],
+      "developer": "TapNation",
+      "icon": "https://play-lh.googleusercontent.com/A1l-tIbphgjreQ-47-vNYLqbjaFJfmoS6aEXHR9_yI1eyKwxPXnQPRL-xF_SLyMPLg",
+      "slug": "thief-puzzle-to-pass-a-level",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "aquapark.io": {
+      "appIds": {
+        "android": "com.cassette.aquapark",
+        "ios": 1453989822
+      },
+      "aliases": [],
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/u1Z-wRullWJBvInhY4gdFxg_Q8Pz6clUQd7thoQNQNHQ1ghNeUf-lsJandlp1vFKhBk",
+      "slug": "aquaparkio",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Melon Sandbox": {
+      "appIds": {
+        "android": "com.studio27.MelonPlayground",
+        "ios": 1610874732
+      },
+      "aliases": [
+        "Melon: Sandbox"
+      ],
+      "developer": "playducky.com",
+      "icon": "https://play-lh.googleusercontent.com/9KgS1cF6vWMF9Fl25S36bKr8zDh0ddkTOeN7WpBcQAE-pKfahG2DjUxbQ8sespNoe3KW3qbcaVD8H6DfNys6",
+      "slug": "melon-sandbox",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "VTube Studio": {
+      "appIds": {
+        "steam": "1325860"
+      },
+      "aliases": [],
+      "developer": "DenchiSoft",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325860/header.jpg?t=1750309780",
+      "slug": "vtube-studio",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Megabonk": {
+      "appIds": {
+        "steam": "3405340"
+      },
+      "aliases": [],
+      "developer": "vedinad",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405340/d06cb39a82a703e42541085fc61b42d80904b3f8/header.jpg?t=1760445338",
+      "slug": "megabonk",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-15",
-  "totalGames": 542
+  "lastUpdated": "2025-12-16",
+  "totalGames": 553
 }
