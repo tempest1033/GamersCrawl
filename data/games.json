@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6446516059",
-        "android": "studio.gameberry.idlehunter",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4692,7 +4692,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
