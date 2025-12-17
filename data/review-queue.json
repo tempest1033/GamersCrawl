@@ -375,6 +375,78 @@
         }
       ],
       "addedAt": "2025-12-16T00:48:43.009Z"
+    },
+    {
+      "title": "미친 타워가 되었다",
+      "status": "single",
+      "appIds": {
+        "ios": "6746247056"
+      },
+      "developer": "V2R",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/46/b7/9d46b708-5df7-5338-2a0e-189d17d32673/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "미친 타워가 되었다:노빠구 RPG",
+          "appId": "com.v2r.tower.google"
+        },
+        {
+          "title": "다크타워:전략 배틀 RPG",
+          "appId": "com.rawhand.darktower"
+        },
+        {
+          "title": "크레이지 디펜스 히어로즈: 타워디펜스 전략게임",
+          "appId": "com.animocabrands.google.CrazyDefenseHeroes"
+        }
+      ],
+      "addedAt": "2025-12-17T00:44:39.178Z"
+    },
+    {
+      "title": "Lexico: Word Puzzle Quest",
+      "status": "single",
+      "appIds": {
+        "ios": "6755897413"
+      },
+      "developer": "GO OUT-APP S.R.L",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/1f/84/a61f84de-8940-15db-0584-8f4a5d83afcb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Crossword Quest",
+          "appId": "com.gsr.wordcross"
+        },
+        {
+          "title": "Crossword Master - Word Puzzle",
+          "appId": "com.easybrain.crossword.puzzles"
+        },
+        {
+          "title": "Crossword Quest: Word Puzzle",
+          "appId": "com.voxnic.wordlink.quest"
+        }
+      ],
+      "addedAt": "2025-12-17T00:44:42.616Z"
+    },
+    {
+      "title": "Buildit",
+      "status": "single",
+      "appIds": {
+        "android": "com.newbeat.gardecor"
+      },
+      "developer": "MINIMAX PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/qYLdXEcN2NTk8DOIm1p5UnofHa_ZSmT7Sgw9kRNQfbgJ5PTTrg0OOhMVL2yltwRCD4s",
+      "searchResults": [
+        {
+          "title": "Buildit - Chill Brick Game",
+          "appId": 6714470154
+        },
+        {
+          "title": "SimCity BuildIt",
+          "appId": 913292932
+        },
+        {
+          "title": "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요",
+          "appId": 479516143
+        }
+      ],
+      "addedAt": "2025-12-17T00:45:01.295Z"
     }
   ],
   "approved": [],

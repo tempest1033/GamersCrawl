@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6446516059",
-        "android": "studio.gameberry.idlehunter",
+        "ios": "1668807323",
+        "android": "com.standegg.wulin",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -2382,7 +2382,7 @@
     "브라운더스트2 - 가슴 벅찬 RPG": {
       "appIds": {
         "android": "com.neowizgames.game.browndust2",
-        "ios": 6450099588
+        "ios": "6450099588"
       },
       "aliases": [
         "ブラウンダスト２ 胸いっぱいのRPG",
@@ -3073,14 +3073,13 @@
     "디아블로 이모탈": {
       "appIds": {
         "android": "com.blizzard.diablo.immortal",
-        "ios": 1492005122
+        "ios": "1492005122"
       },
       "aliases": [
         "Diablo Immortal",
         "디아블로",
         "디모탈",
-        "디아블로이모탈",
-        "디아블로 이모탈"
+        "디아블로이모탈"
       ],
       "developer": "Blizzard Entertainment, Inc.",
       "icon": "https://play-lh.googleusercontent.com/9DvmwGV53li3CTxN8S1Koz-tNd_zepJJqWmkAGQrfRvEuTXn_s-5b5usnWGWqe2JuAQ9AvZzIrisTvYvL0bpo4k",
@@ -3399,7 +3398,7 @@
     "레이싱 마스터": {
       "appIds": {
         "android": "com.netease.dfjskr",
-        "ios": 6474961936
+        "ios": "6474961936"
       },
       "aliases": [
         "레이싱 마스터(Racing Master)"
@@ -4692,7 +4691,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
@@ -7168,7 +7167,7 @@
     "어나더던전": {
       "appIds": {
         "android": "net.gameduo.anotherdungeon",
-        "ios": 1642354115
+        "ios": "1642354115"
       },
       "aliases": [],
       "developer": "Gameduo",
@@ -7196,7 +7195,7 @@
     "검은사막 모바일": {
       "appIds": {
         "android": "com.pearlabyss.blackdesertm",
-        "ios": 1323002999
+        "ios": "1323002999"
       },
       "aliases": [],
       "developer": "PEARL ABYSS",
@@ -8328,8 +8327,192 @@
       "platforms": [
         "steam"
       ]
+    },
+    "블루 아카이브": {
+      "appIds": {
+        "ios": "1571873795",
+        "android": "com.nexon.bluearchive"
+      },
+      "aliases": [],
+      "developer": "NEXON Company",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/43/4d/bc434dac-66b7-083c-67e2-e2490ac02d15/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "블루-아카이브",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "DRAGON BALL Z 폭렬격전": {
+      "appIds": {
+        "ios": "951627425",
+        "android": "com.bandainamcogames.dbzdokkanww"
+      },
+      "aliases": [],
+      "developer": "Bandai Namco Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f3/86/e7/f386e75d-6afc-1390-d10d-a13347e3ee58/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/100x100bb.png",
+      "slug": "dragon-ball-z-폭렬격전",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "DK모바일 리본": {
+      "appIds": {
+        "android": "com.ntrance.dkr.and",
+        "ios": 6739216249
+      },
+      "aliases": [],
+      "developer": "NTRANCE CORP.",
+      "icon": "https://play-lh.googleusercontent.com/MtKGnLTsV4ruVpYZAu9B_Es6zcqPAZKpDqu_HedIC22FFFgR30V-f9akB947CH132w",
+      "slug": "dk모바일-리본",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "질서:수호자": {
+      "appIds": {
+        "android": "com.zhixushouhuzhe.gema.xxguge",
+        "ios": 6752684846
+      },
+      "aliases": [],
+      "developer": "부산만동게임즈",
+      "icon": "https://play-lh.googleusercontent.com/hrVg2nxnZk6P8utdCU0xFnbdWsf-TJULeHFhGjoPCbZ4HrBGtd8ll2G8Ybhhg4tAG4BdN9rjtAwHe9Dn7-bj1rI",
+      "slug": "질서수호자",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "미친 타워가 되었다": {
+      "appIds": {
+        "ios": "6746247056"
+      },
+      "aliases": [],
+      "developer": "V2R",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/46/b7/9d46b708-5df7-5338-2a0e-189d17d32673/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "미친-타워가-되었다",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Lexico: Word Puzzle Quest": {
+      "appIds": {
+        "ios": "6755897413"
+      },
+      "aliases": [],
+      "developer": "GO OUT-APP S.R.L",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/1f/84/a61f84de-8940-15db-0584-8f4a5d83afcb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "lexico-word-puzzle-quest",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "프로 당구 3구 4구": {
+      "appIds": {
+        "ios": "1494258679",
+        "android": "com.mobirix.ptf"
+      },
+      "aliases": [],
+      "developer": "MOBIRIX",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/91/d0/9191d000-841a-91e9-da54-083d316e8613/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/100x100bb.png",
+      "slug": "프로-당구-3구-4구",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "숨바꼭질 온라인 - 실시간 숨바꼭질": {
+      "appIds": {
+        "ios": "1177590613",
+        "android": "com.igenesoft.hide"
+      },
+      "aliases": [],
+      "developer": "Gene Eu",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/a0/4a/fca04a1b-525e-6a96-4c7b-5648a0610ff5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "숨바꼭질-온라인-실시간-숨바꼭질",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "텐텐오락실": {
+      "appIds": {
+        "ios": "1144557284",
+        "android": "com.harveanie.drinkinggames"
+      },
+      "aliases": [],
+      "developer": "AppteenPlanet Co.,Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/39/5e/22395e45-7d93-b9ed-62cd-0a481f848203/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "slug": "텐텐오락실",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "칼집사 키우기 : 기생당했다": {
+      "appIds": {
+        "android": "com.ngu.games.vampire",
+        "ios": 6748052130
+      },
+      "aliases": [],
+      "developer": "NGU Studio",
+      "icon": "https://play-lh.googleusercontent.com/pva4yRPOtkXfH-RbAGZKZIKUFicYdT40dUWjqwdZvZ8IgXGaEzaARvlAzyJDdF7A_kuom4artfX48rUtLqPCGw",
+      "slug": "칼집사-키우기-기생당했다",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Buildit": {
+      "appIds": {
+        "android": "com.newbeat.gardecor"
+      },
+      "aliases": [],
+      "developer": "MINIMAX PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/qYLdXEcN2NTk8DOIm1p5UnofHa_ZSmT7Sgw9kRNQfbgJ5PTTrg0OOhMVL2yltwRCD4s",
+      "slug": "buildit",
+      "platforms": [
+        "android"
+      ]
+    },
+    "FINAL FANTASY XIV Online": {
+      "appIds": {
+        "steam": "39210"
+      },
+      "aliases": [],
+      "developer": "Square Enix",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39210/header.jpg?t=1760606311",
+      "slug": "final-fantasy-xiv-online",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Phasmophobia": {
+      "appIds": {
+        "steam": "739630"
+      },
+      "aliases": [],
+      "developer": "Kinetic Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/d659babaebeb5c62d0cee4d4206c615578a8ccec/header_alt_assets_6.jpg?t=1765887477",
+      "slug": "phasmophobia",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Blue Archive": {
+      "appIds": {
+        "steam": "3557620"
+      },
+      "aliases": [],
+      "developer": "NEXON Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3557620/a43191451225d3122c224a7349f2fc232f46b3d0/header_koreana.jpg?t=1761020171",
+      "slug": "blue-archive",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-16",
-  "totalGames": 553
+  "lastUpdated": "2025-12-17",
+  "totalGames": 567
 }

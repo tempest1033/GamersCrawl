@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "studio-gameberry-idlehunter",
+    "slug": "com-standegg-wulin",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -3095,8 +3095,7 @@
       "Diablo Immortal",
       "디아블로",
       "디모탈",
-      "디아블로이모탈",
-      "디아블로 이모탈"
+      "디아블로이모탈"
     ],
     "platforms": [
       "android",
@@ -4783,7 +4782,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-whoyaho-tanghulu",
+    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -8642,6 +8641,196 @@
       "steam"
     ],
     "developer": "vedinad",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "블루 아카이브",
+    "slug": "com-nexon-bluearchive",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/43/4d/bc434dac-66b7-083c-67e2-e2490ac02d15/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "NEXON Company",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "DRAGON BALL Z 폭렬격전",
+    "slug": "com-bandainamcogames-dbzdokkanww",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f3/86/e7/f386e75d-6afc-1390-d10d-a13347e3ee58/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Bandai Namco Entertainment Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "DK모바일 리본",
+    "slug": "com-ntrance-dkr-and",
+    "icon": "https://play-lh.googleusercontent.com/MtKGnLTsV4ruVpYZAu9B_Es6zcqPAZKpDqu_HedIC22FFFgR30V-f9akB947CH132w",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "NTRANCE CORP.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "질서:수호자",
+    "slug": "com-zhixushouhuzhe-gema-xxguge",
+    "icon": "https://play-lh.googleusercontent.com/hrVg2nxnZk6P8utdCU0xFnbdWsf-TJULeHFhGjoPCbZ4HrBGtd8ll2G8Ybhhg4tAG4BdN9rjtAwHe9Dn7-bj1rI",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "부산만동게임즈",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "미친 타워가 되었다",
+    "slug": "미친-타워가-되었다",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/46/b7/9d46b708-5df7-5338-2a0e-189d17d32673/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "V2R",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Lexico: Word Puzzle Quest",
+    "slug": "lexico-word-puzzle-quest",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/1f/84/a61f84de-8940-15db-0584-8f4a5d83afcb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "GO OUT-APP S.R.L",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "프로 당구 3구 4구",
+    "slug": "com-mobirix-ptf",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/91/d0/9191d000-841a-91e9-da54-083d316e8613/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "MOBIRIX",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "숨바꼭질 온라인 - 실시간 숨바꼭질",
+    "slug": "com-igenesoft-hide",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/a0/4a/fca04a1b-525e-6a96-4c7b-5648a0610ff5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Gene Eu",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "텐텐오락실",
+    "slug": "com-harveanie-drinkinggames",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/39/5e/22395e45-7d93-b9ed-62cd-0a481f848203/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "AppteenPlanet Co.,Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "칼집사 키우기 : 기생당했다",
+    "slug": "com-ngu-games-vampire",
+    "icon": "https://play-lh.googleusercontent.com/pva4yRPOtkXfH-RbAGZKZIKUFicYdT40dUWjqwdZvZ8IgXGaEzaARvlAzyJDdF7A_kuom4artfX48rUtLqPCGw",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "NGU Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Buildit",
+    "slug": "com-newbeat-gardecor",
+    "icon": "https://play-lh.googleusercontent.com/qYLdXEcN2NTk8DOIm1p5UnofHa_ZSmT7Sgw9kRNQfbgJ5PTTrg0OOhMVL2yltwRCD4s",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "MINIMAX PTE. LTD.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "FINAL FANTASY XIV Online",
+    "slug": "final-fantasy-xiv-online",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39210/header.jpg?t=1760606311",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Square Enix",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Phasmophobia",
+    "slug": "phasmophobia",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/d659babaebeb5c62d0cee4d4206c615578a8ccec/header_alt_assets_6.jpg?t=1765887477",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Kinetic Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Blue Archive",
+    "slug": "blue-archive",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3557620/a43191451225d3122c224a7349f2fc232f46b3d0/header_koreana.jpg?t=1761020171",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "NEXON Games",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
