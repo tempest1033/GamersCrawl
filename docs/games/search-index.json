@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-v2r-tower-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -937,7 +937,9 @@
       "뮤: 포켓 나이츠 – 방치형RPG",
       "소녀총사 키우기 : 도트 방치형 RPG",
       "소녀총사 키우기",
-      "잠룡 : 무협 도트 RPG"
+      "잠룡 : 무협 도트 RPG",
+      "잠룡 : 도트 무협 RPG",
+      "미친 타워가 되었다:노빠구 RPG"
     ],
     "platforms": [
       "ios",
@@ -4782,7 +4784,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-whoyaho-tanghulu",
+    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -8831,6 +8833,181 @@
       "steam"
     ],
     "developer": "NEXON Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "대항해시대 오리진",
+    "slug": "com-linegames-uwogl",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/33/10/62/331062b4-c1bc-d566-2c57-ecda80a283f9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "LINE Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "컴투스프로야구 for 매니저",
+    "slug": "컴투스프로야구-for-매니저",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/aa/9b/2aaa9b6f-2376-9114-31c9-3eb72c4200f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Com2uS Corp.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "스트리트볼 올스타-Streetball Allstar",
+    "slug": "com-racoondigi-jqhw",
+    "icon": "https://play-lh.googleusercontent.com/ih8k2p3rBs4GhH1cMTSaVnICRHClPje0C7xtkizOxoMWCaOh8_CSeOowUUxYQXzED5I",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "racoonDigi",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "블루 프로토콜: 스타 레조넌스",
+    "slug": "asia-xdg-game-gp-bpsr",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/22/1f/0f221f10-ceea-6b9a-433b-c9b573011512/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [
+      "블루 프로토콜 스타 레조넌스"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "X.D. Global",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Be A Pro: Football",
+    "slug": "com-nebulajoy-bap",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/c6/28/a9c628ed-e699-e413-97d9-24f99ec1ff74/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "YunChang Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "포켓 정렬 (Pocket Sort): 동전 병합 퍼즐",
+    "slug": "com-pocket-sort-coin-puzzle-game",
+    "icon": "https://play-lh.googleusercontent.com/blnQgZLrDseT5XsOOtloqVfgMqHLDgCMOTaqei6q9brw_D182qXvj6ahfp9Sj0FF8dlP36T7xtg42ODz5IAWlQ",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "SayGames Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Pop Piano: 리듬 게임",
+    "slug": "com-magic-cyber-piano-tiles-edm-musicgames",
+    "icon": "https://play-lh.googleusercontent.com/11xNmRHrdqkAEJCotsiisr47VaK4Q4CMeJHkungv4S18mijkBXFDOiESYel8hvLl9Q",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Cobby Labs",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Block Puzzle - 블럭 퍼즐",
+    "slug": "blockpuzzle-new1010-jewelgames-puzzlegames",
+    "icon": "https://play-lh.googleusercontent.com/7KOeuxJZ4nW7hchEolHcCHOWmA89-cuWzl3nr4IX74YfKtm8mMYCCNa3hl-5-2_OSxw",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Block Puzzle Jewel Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Tile Home-매치 퍼즐",
+    "slug": "com-tile-home-match-puzzle-game",
+    "icon": "https://play-lh.googleusercontent.com/gNYvOPQPkwGCMYBC2X_CVhaLDL2EOBSx8u60gKJRbvqtVoeApk1KGhKKi76cqWK9posbD3Ai1DZzj1Bdj0DIKA",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Mindful Daily Puzzles",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "블록 컬러 매니아",
+    "slug": "block-color-game-jam-blocks-sort-puzzle-games-slide-free",
+    "icon": "https://play-lh.googleusercontent.com/fJ_pK4YX0tLme8wE7uBkRIiLtwKQTFaSQaqgNezutmVwOMrbv06lvPiHoGsAP6ApOw",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Brainteaser Puzzle Game Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "심연의 기사",
+    "slug": "com-kuangbao2-rpg-kr-an",
+    "icon": "https://play-lh.googleusercontent.com/X2c9C084VWDBfClFgvdmTvWnStGkZt5-HyCXP_Z5qJrYQ9-gGoeMpiNSJZ2reGHKrx6DV3rzZxueI11HXaUX",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "EACHFUNGAME",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "숨은그림찾기 게임: Seek It",
+    "slug": "hidden-object-find-seek-search-mystery-puzzle-games-free",
+    "icon": "https://play-lh.googleusercontent.com/wjlDWPj_fLATFob1nDPcGy_6EEEOZwpM1tjHQnVdvzJTuHJe5y0UH173Siz1oWjGuA",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "NimbleMind Network Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Ashes of Creation",
+    "slug": "ashes-of-creation",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4124950/fe6e847b6846e1e3734843a236ae2c9b3817e3de/header.jpg?t=1765840224",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Intrepid Studios, Inc",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true

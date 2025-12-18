@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "1668807323",
-        "android": "net.gameduo.gv",
+        "ios": "6740556884",
+        "android": "com.v2r.tower.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -945,7 +945,9 @@
         "뮤: 포켓 나이츠 – 방치형RPG",
         "소녀총사 키우기 : 도트 방치형 RPG",
         "소녀총사 키우기",
-        "잠룡 : 무협 도트 RPG"
+        "잠룡 : 무협 도트 RPG",
+        "잠룡 : 도트 무협 RPG",
+        "미친 타워가 되었다:노빠구 RPG"
       ],
       "developer": "Game Duo Co.,Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -1819,7 +1821,7 @@
     "리니지W": {
       "appIds": {
         "android": "com.ncsoft.lineagew",
-        "ios": 1444980563
+        "ios": "1444980563"
       },
       "aliases": [
         "리니지더블유",
@@ -2064,19 +2066,19 @@
     "로드나인": {
       "appIds": {
         "android": "com.smilegate.lordnine.stove.google",
-        "ios": 6483053853
+        "ios": "6483053853"
       },
+      "aliases": [
+        "로나",
+        "로드 나인",
+        "Lord Nine"
+      ],
       "developer": "Smilegate Holdings, Inc",
       "icon": "https://play-lh.googleusercontent.com/gf1zo3glPzI9MXdz7tJcxFLkORjATJ979mtFia2OMkLkNPQRCK_mMgV6C1tVia9Eag",
       "slug": "로드나인",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "로나",
-        "로드 나인",
-        "Lord Nine"
       ]
     },
     "블레이드&소울 레볼루션": {
@@ -2120,19 +2122,19 @@
     "레이븐2": {
       "appIds": {
         "android": "com.netmarble.raven2",
-        "ios": 6448719154
+        "ios": "6448719154"
       },
+      "aliases": [
+        "레이븐",
+        "레이븐 2",
+        "Raven 2"
+      ],
       "developer": "Netmarble",
       "icon": "https://play-lh.googleusercontent.com/hEsBJTaH7At6ftH03ozxXvBxaeIVN_lAdlBIFGZJj-Yhozr7lDJtw4CAPvckCrw1elZZ3dVxx3mVpc7L7uy5_XY",
       "slug": "레이븐2",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "레이븐",
-        "레이븐 2",
-        "Raven 2"
       ]
     },
     "젠레스 존 제로": {
@@ -2552,18 +2554,18 @@
     "아키에이지 워 (ArcheAge WAR)": {
       "appIds": {
         "android": "com.kakaogames.aaw",
-        "ios": 6475077096
+        "ios": "6475077096"
       },
+      "aliases": [
+        "아키에이지워",
+        "아키워"
+      ],
       "developer": "Kakao Games Corp.",
       "icon": "https://play-lh.googleusercontent.com/SmVl96LKpWuYKOOZQ4rogWJQVc8WneK2lq16evHx1KkN0GPCGTTskUYlmO3kDLlVxlo",
       "slug": "아키에이지-워-archeage-war",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "아키에이지워",
-        "아키워"
       ]
     },
     "Top War: Battle Game": {
@@ -2726,8 +2728,9 @@
     "프라시아 전기": {
       "appIds": {
         "android": "com.nexon.er",
-        "ios": 1585093875
+        "ios": "1585093875"
       },
+      "aliases": [],
       "developer": "NEXON Company",
       "icon": "https://play-lh.googleusercontent.com/25HVuJSH-Bcmsrv18ZMtRoLxsihD-Kjfp6ABY-FfW2h2eBw5fOdb3ZeYAIf6DchThg",
       "slug": "프라시아-전기",
@@ -2739,8 +2742,9 @@
     "아레스 : 라이즈 오브 가디언즈": {
       "appIds": {
         "android": "com.kakaogames.ares",
-        "ios": 1634147206
+        "ios": "1634147206"
       },
+      "aliases": [],
       "developer": "Kakao Games Corp.",
       "icon": "https://play-lh.googleusercontent.com/9j4lztgP0E4VfR-pukMagZr8W7S0kTO4R4PResd-SgoRD-RqNu9c9lyJoK8qY_XZgSGYMcy_G1E98q9Z8ykp9Q",
       "slug": "아레스-라이즈-오브-가디언즈",
@@ -3060,8 +3064,9 @@
     "열혈강호: 화룡전": {
       "appIds": {
         "android": "com.cle.yulgang",
-        "ios": 6502438838
+        "ios": "6502438838"
       },
+      "aliases": [],
       "developer": "Sesisoft",
       "icon": "https://play-lh.googleusercontent.com/arY_aGALIe1o912XSV51ihZUfy97DvNZksV5M6jyuDm9ZP3cax8ej9Se6zbd2AQvB_g",
       "slug": "열혈강호-화룡전",
@@ -4623,8 +4628,9 @@
     "Epic Plane Evolution": {
       "appIds": {
         "android": "com.WalkTalk.FlightMaster",
-        "ios": 6504122823
+        "ios": "6504122823"
       },
+      "aliases": [],
       "developer": "VOODOO",
       "icon": "https://play-lh.googleusercontent.com/xC6Ky_Utjy9ULs1N8cKED99IXdp0o0gFy6k8aXuPat6rmxxQrNkHqe9HKFfsogK3kQ",
       "slug": "epic-plane-evolution",
@@ -4691,7 +4697,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
@@ -5116,8 +5122,9 @@
     "머지 냥카페 : 고양이 머지 게임": {
       "appIds": {
         "android": "com.actionfit.catmerge",
-        "ios": 6502603453
+        "ios": "6502603453"
       },
+      "aliases": [],
       "developer": "ACTIONFIT",
       "icon": "https://play-lh.googleusercontent.com/OLuOionkDc_BiJNw3ojfuE-cczW_rIFsm5LLXBlpck3ovOF85wGk02oVcsRLnWZqd2Y",
       "slug": "머지-냥카페-고양이-머지-게임",
@@ -8511,8 +8518,174 @@
       "platforms": [
         "steam"
       ]
+    },
+    "대항해시대 오리진": {
+      "appIds": {
+        "ios": "1660850121",
+        "android": "com.linegames.uwogl"
+      },
+      "aliases": [],
+      "developer": "LINE Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/33/10/62/331062b4-c1bc-d566-2c57-ecda80a283f9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "대항해시대-오리진",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "컴투스프로야구 for 매니저": {
+      "appIds": {
+        "ios": "682942443"
+      },
+      "aliases": [],
+      "developer": "Com2uS Corp.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/aa/9b/2aaa9b6f-2376-9114-31c9-3eb72c4200f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "slug": "컴투스프로야구-for-매니저",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "스트리트볼 올스타-Streetball Allstar": {
+      "appIds": {
+        "android": "com.racoondigi.jqhw",
+        "ios": 1564636123
+      },
+      "aliases": [],
+      "developer": "racoonDigi",
+      "icon": "https://play-lh.googleusercontent.com/ih8k2p3rBs4GhH1cMTSaVnICRHClPje0C7xtkizOxoMWCaOh8_CSeOowUUxYQXzED5I",
+      "slug": "스트리트볼-올스타-streetball-allstar",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "블루 프로토콜: 스타 레조넌스": {
+      "appIds": {
+        "ios": "6748013182",
+        "android": "asia.xdg.game.gp.bpsr"
+      },
+      "aliases": [
+        "블루 프로토콜 스타 레조넌스"
+      ],
+      "developer": "X.D. Global",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/22/1f/0f221f10-ceea-6b9a-433b-c9b573011512/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "블루-프로토콜-스타-레조넌스",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Be A Pro: Football": {
+      "appIds": {
+        "ios": "6744717472",
+        "android": "com.nebulajoy.bap"
+      },
+      "aliases": [],
+      "developer": "YunChang Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/c6/28/a9c628ed-e699-e413-97d9-24f99ec1ff74/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/100x100bb.png",
+      "slug": "be-a-pro-football",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "포켓 정렬 (Pocket Sort): 동전 병합 퍼즐": {
+      "appIds": {
+        "android": "com.pocket.sort.coin.puzzle.game"
+      },
+      "aliases": [],
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/blnQgZLrDseT5XsOOtloqVfgMqHLDgCMOTaqei6q9brw_D182qXvj6ahfp9Sj0FF8dlP36T7xtg42ODz5IAWlQ",
+      "slug": "포켓-정렬-pocket-sort-동전-병합-퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Pop Piano: 리듬 게임": {
+      "appIds": {
+        "android": "com.magic.cyber.piano.tiles.edm.musicgames"
+      },
+      "aliases": [],
+      "developer": "Cobby Labs",
+      "icon": "https://play-lh.googleusercontent.com/11xNmRHrdqkAEJCotsiisr47VaK4Q4CMeJHkungv4S18mijkBXFDOiESYel8hvLl9Q",
+      "slug": "pop-piano-리듬-게임",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Block Puzzle - 블럭 퍼즐": {
+      "appIds": {
+        "android": "blockpuzzle.new1010.jewelgames.puzzlegames"
+      },
+      "aliases": [],
+      "developer": "Block Puzzle Jewel Games",
+      "icon": "https://play-lh.googleusercontent.com/7KOeuxJZ4nW7hchEolHcCHOWmA89-cuWzl3nr4IX74YfKtm8mMYCCNa3hl-5-2_OSxw",
+      "slug": "block-puzzle-블럭-퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Tile Home-매치 퍼즐": {
+      "appIds": {
+        "android": "com.tile.home.match.puzzle.game"
+      },
+      "aliases": [],
+      "developer": "Mindful Daily Puzzles",
+      "icon": "https://play-lh.googleusercontent.com/gNYvOPQPkwGCMYBC2X_CVhaLDL2EOBSx8u60gKJRbvqtVoeApk1KGhKKi76cqWK9posbD3Ai1DZzj1Bdj0DIKA",
+      "slug": "tile-home-매치-퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "블록 컬러 매니아": {
+      "appIds": {
+        "android": "block.color.game.jam.blocks.sort.puzzle.games.slide.free"
+      },
+      "aliases": [],
+      "developer": "Brainteaser Puzzle Game Studio",
+      "icon": "https://play-lh.googleusercontent.com/fJ_pK4YX0tLme8wE7uBkRIiLtwKQTFaSQaqgNezutmVwOMrbv06lvPiHoGsAP6ApOw",
+      "slug": "블록-컬러-매니아",
+      "platforms": [
+        "android"
+      ]
+    },
+    "심연의 기사": {
+      "appIds": {
+        "android": "com.kuangbao2.rpg.kr.an"
+      },
+      "aliases": [],
+      "developer": "EACHFUNGAME",
+      "icon": "https://play-lh.googleusercontent.com/X2c9C084VWDBfClFgvdmTvWnStGkZt5-HyCXP_Z5qJrYQ9-gGoeMpiNSJZ2reGHKrx6DV3rzZxueI11HXaUX",
+      "slug": "심연의-기사",
+      "platforms": [
+        "android"
+      ]
+    },
+    "숨은그림찾기 게임: Seek It": {
+      "appIds": {
+        "android": "hidden.object.find.seek.search.mystery.puzzle.games.free"
+      },
+      "aliases": [],
+      "developer": "NimbleMind Network Inc.",
+      "icon": "https://play-lh.googleusercontent.com/wjlDWPj_fLATFob1nDPcGy_6EEEOZwpM1tjHQnVdvzJTuHJe5y0UH173Siz1oWjGuA",
+      "slug": "숨은그림찾기-게임-seek-it",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Ashes of Creation": {
+      "appIds": {
+        "steam": "4124950"
+      },
+      "aliases": [],
+      "developer": "Intrepid Studios, Inc",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4124950/fe6e847b6846e1e3734843a236ae2c9b3817e3de/header.jpg?t=1765840224",
+      "slug": "ashes-of-creation",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-17",
-  "totalGames": 567
+  "lastUpdated": "2025-12-18",
+  "totalGames": 580
 }

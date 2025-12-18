@@ -447,6 +447,177 @@
         }
       ],
       "addedAt": "2025-12-17T00:45:01.295Z"
+    },
+    {
+      "title": "컴투스프로야구 for 매니저",
+      "status": "single",
+      "appIds": {
+        "ios": "682942443"
+      },
+      "developer": "Com2uS Corp.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/aa/9b/2aaa9b6f-2376-9114-31c9-3eb72c4200f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "컴투스프로야구매니저",
+          "appId": "com.com2us.kbomanager.normal2.freefull.google.global.android.common"
+        },
+        {
+          "title": "컴투스프로야구2025",
+          "appId": "com.com2us.probaseball3d.normal.freefull.google.global.android.common"
+        },
+        {
+          "title": "컴투스프로야구V25",
+          "appId": "com.com2us.futurecpb.android.google.global.normal"
+        }
+      ],
+      "addedAt": "2025-12-18T00:44:32.789Z"
+    },
+    {
+      "title": "포켓 정렬 (Pocket Sort): 동전 병합 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.pocket.sort.coin.puzzle.game"
+      },
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/blnQgZLrDseT5XsOOtloqVfgMqHLDgCMOTaqei6q9brw_D182qXvj6ahfp9Sj0FF8dlP36T7xtg42ODz5IAWlQ",
+      "searchResults": [],
+      "addedAt": "2025-12-18T00:45:12.009Z"
+    },
+    {
+      "title": "Pop Piano: 리듬 게임",
+      "status": "single",
+      "appIds": {
+        "android": "com.magic.cyber.piano.tiles.edm.musicgames"
+      },
+      "developer": "Cobby Labs",
+      "icon": "https://play-lh.googleusercontent.com/11xNmRHrdqkAEJCotsiisr47VaK4Q4CMeJHkungv4S18mijkBXFDOiESYel8hvLl9Q",
+      "searchResults": [
+        {
+          "title": "바운스볼 -  피아노 타일 음악 리듬게임",
+          "appId": 1344702806
+        },
+        {
+          "title": "피아노 - 음악 게임 & 클래식 연주",
+          "appId": 1126477246
+        },
+        {
+          "title": "KPop Piano Beat: Music Game",
+          "appId": 6751177175
+        }
+      ],
+      "addedAt": "2025-12-18T00:45:14.663Z"
+    },
+    {
+      "title": "Block Puzzle - 블럭 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "blockpuzzle.new1010.jewelgames.puzzlegames"
+      },
+      "developer": "Block Puzzle Jewel Games",
+      "icon": "https://play-lh.googleusercontent.com/7KOeuxJZ4nW7hchEolHcCHOWmA89-cuWzl3nr4IX74YfKtm8mMYCCNa3hl-5-2_OSxw",
+      "searchResults": [
+        {
+          "title": "Hex Blocks Puzzle: Brain Game",
+          "appId": 6756582940
+        },
+        {
+          "title": "Blockin' Color - 블록퍼즐 와 블럭게임",
+          "appId": 1621292271
+        },
+        {
+          "title": "블록 퍼즐-재미있는 두뇌 게임",
+          "appId": 1519469207
+        }
+      ],
+      "addedAt": "2025-12-18T00:45:15.276Z"
+    },
+    {
+      "title": "Tile Home-매치 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.tile.home.match.puzzle.game"
+      },
+      "developer": "Mindful Daily Puzzles",
+      "icon": "https://play-lh.googleusercontent.com/gNYvOPQPkwGCMYBC2X_CVhaLDL2EOBSx8u60gKJRbvqtVoeApk1KGhKKi76cqWK9posbD3Ai1DZzj1Bdj0DIKA",
+      "searchResults": [
+        {
+          "title": "Tile Family®:Match Puzzle Game",
+          "appId": 6444056676
+        },
+        {
+          "title": "가든 사천성 : 작은 집 꾸미기",
+          "appId": 1661259827
+        },
+        {
+          "title": "Tile Explorer - 트리플 매치",
+          "appId": 6498883328
+        }
+      ],
+      "addedAt": "2025-12-18T00:45:15.998Z"
+    },
+    {
+      "title": "블록 컬러 매니아",
+      "status": "single",
+      "appIds": {
+        "android": "block.color.game.jam.blocks.sort.puzzle.games.slide.free"
+      },
+      "developer": "Brainteaser Puzzle Game Studio",
+      "icon": "https://play-lh.googleusercontent.com/fJ_pK4YX0tLme8wE7uBkRIiLtwKQTFaSQaqgNezutmVwOMrbv06lvPiHoGsAP6ApOw",
+      "searchResults": [
+        {
+          "title": "블록 블라스트 (Block Blast)",
+          "appId": 1617391485
+        },
+        {
+          "title": "Zoo Block - 스도쿠 블록 퍼즐 게임",
+          "appId": 1494148558
+        },
+        {
+          "title": "Block Mania: Color Jam",
+          "appId": 6742700461
+        }
+      ],
+      "addedAt": "2025-12-18T00:45:16.582Z"
+    },
+    {
+      "title": "심연의 기사",
+      "status": "single",
+      "appIds": {
+        "android": "com.kuangbao2.rpg.kr.an"
+      },
+      "developer": "EACHFUNGAME",
+      "icon": "https://play-lh.googleusercontent.com/X2c9C084VWDBfClFgvdmTvWnStGkZt5-HyCXP_Z5qJrYQ9-gGoeMpiNSJZ2reGHKrx6DV3rzZxueI11HXaUX",
+      "searchResults": [
+        {
+          "title": "심연의 기사 키우기",
+          "appId": 6740773558
+        }
+      ],
+      "addedAt": "2025-12-18T00:45:17.000Z"
+    },
+    {
+      "title": "숨은그림찾기 게임: Seek It",
+      "status": "single",
+      "appIds": {
+        "android": "hidden.object.find.seek.search.mystery.puzzle.games.free"
+      },
+      "developer": "NimbleMind Network Inc.",
+      "icon": "https://play-lh.googleusercontent.com/wjlDWPj_fLATFob1nDPcGy_6EEEOZwpM1tjHQnVdvzJTuHJe5y0UH173Siz1oWjGuA",
+      "searchResults": [
+        {
+          "title": "Found It! 숨은 그림 찾기 게임",
+          "appId": 1643547847
+        },
+        {
+          "title": "추적자의 노트 숨은 그림 찾기 Seekers Notes",
+          "appId": 940292587
+        },
+        {
+          "title": "숨은그림찾기 게임 - Find It Out",
+          "appId": 1643481036
+        }
+      ],
+      "addedAt": "2025-12-18T00:45:17.464Z"
     }
   ],
   "approved": [],
