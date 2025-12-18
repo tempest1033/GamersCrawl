@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-v2r-tower-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -1466,7 +1466,7 @@
       "android"
     ],
     "developer": "2K",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3085,7 +3085,7 @@
       "ios"
     ],
     "developer": "Sesisoft",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3267,7 +3267,7 @@
       "ios"
     ],
     "developer": "Com2uS",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3437,7 +3437,7 @@
       "ios"
     ],
     "developer": "Exptional Global",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3451,7 +3451,7 @@
       "ios"
     ],
     "developer": "ONEMT SGP",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3733,7 +3733,7 @@
       "android"
     ],
     "developer": "Jarvi Games Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4086,7 +4086,7 @@
       "android"
     ],
     "developer": "Chengdu Warrior Tech Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4386,7 +4386,7 @@
       "android"
     ],
     "developer": "SayGames LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4784,7 +4784,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-whoyaho-tanghulu",
+    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -4852,7 +4852,7 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4956,7 +4956,7 @@
       "ios"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5276,7 +5276,7 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5540,7 +5540,7 @@
       "ios"
     ],
     "developer": "Ivy",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5601,7 +5601,7 @@
       "ios"
     ],
     "developer": "CodeDragon Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5761,7 +5761,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5950,7 +5950,7 @@
       "ios"
     ],
     "developer": "ABI GAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5977,7 +5977,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6977,7 +6977,7 @@
       "steam"
     ],
     "developer": "Starry Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": true,
     "hasData": true
   },
@@ -7303,7 +7303,7 @@
     "developer": "NEOWIZ",
     "hasRankings": false,
     "hasSteam": true,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Hogwarts Legacy",
@@ -7331,7 +7331,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7470,7 +7470,7 @@
       "ios"
     ],
     "developer": "Devsisters Corporation",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7538,7 +7538,7 @@
       "ios"
     ],
     "developer": "SPGFun",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7711,7 +7711,7 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7795,7 +7795,7 @@
       "android"
     ],
     "developer": "DextersLab",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8559,7 +8559,7 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8833,7 +8833,7 @@
       "steam"
     ],
     "developer": "NEXON Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -8847,7 +8847,7 @@
       "android"
     ],
     "developer": "LINE Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8860,7 +8860,7 @@
       "ios"
     ],
     "developer": "Com2uS Corp.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8982,7 +8982,7 @@
       "android"
     ],
     "developer": "EACHFUNGAME",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
