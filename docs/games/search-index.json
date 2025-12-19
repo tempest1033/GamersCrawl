@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-v2r-tower-google",
+    "slug": "net-gameduo-gv",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2911,7 +2911,7 @@
       "ios"
     ],
     "developer": "MOONTON",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3855,7 +3855,7 @@
       "android"
     ],
     "developer": "Volcanus Studio Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5207,7 +5207,7 @@
       "ios"
     ],
     "developer": "Panteon",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5601,7 +5601,7 @@
       "ios"
     ],
     "developer": "CodeDragon Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5721,7 +5721,7 @@
       "android"
     ],
     "developer": "JUMBO GAMES Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6044,7 +6044,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6058,7 +6058,7 @@
       "ios"
     ],
     "developer": "Mobile Gaming Studios Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7303,7 +7303,7 @@
     "developer": "NEOWIZ",
     "hasRankings": false,
     "hasSteam": true,
-    "hasData": true
+    "hasData": false
   },
   {
     "name": "Hogwarts Legacy",
@@ -7331,7 +7331,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7795,7 +7795,7 @@
       "android"
     ],
     "developer": "DextersLab",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7919,7 +7919,7 @@
       "ios"
     ],
     "developer": "stick hunter",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8533,7 +8533,7 @@
       "android"
     ],
     "developer": "Puffything Games Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8573,7 +8573,7 @@
       "ios"
     ],
     "developer": "LogicLabs Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8739,7 +8739,7 @@
       "android"
     ],
     "developer": "MOBIRIX",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8767,7 +8767,7 @@
       "android"
     ],
     "developer": "AppteenPlanet Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8794,7 +8794,7 @@
       "android"
     ],
     "developer": "MINIMAX PTE. LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9036,7 +9036,7 @@
       "android"
     ],
     "developer": "Wemade Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
