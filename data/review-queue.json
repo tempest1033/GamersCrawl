@@ -618,6 +618,78 @@
         }
       ],
       "addedAt": "2025-12-18T00:45:17.464Z"
+    },
+    {
+      "title": "POOLS™",
+      "status": "single",
+      "appIds": {
+        "ios": "6670792878"
+      },
+      "developer": "Tensori",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/69/d7/9469d797-f088-123f-733c-98b694811961/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "The Wetrooms: Liminal Pools",
+          "appId": "com.ammonite.wetrooms"
+        },
+        {
+          "title": "8 Ball Shoot It All - 8 Pool",
+          "appId": "com.square_enix.pool"
+        },
+        {
+          "title": "Pool Strike 8 ball pool",
+          "appId": "com.funiza.poolstrike"
+        }
+      ],
+      "addedAt": "2025-12-19T00:47:47.688Z"
+    },
+    {
+      "title": "Jade Mahjong",
+      "status": "single",
+      "appIds": {
+        "android": "com.wonderful.mahjong"
+      },
+      "developer": "Wonderful  Studio",
+      "icon": "https://play-lh.googleusercontent.com/AeUlLrz1-tTbkOMT_dlthT9BjZyvwMzg_bdziYgvbxpBIzL47VRKpYepkUaI8itqS_CEYXh1huWpXZvLLvdMGA",
+      "searchResults": [
+        {
+          "title": "옥 마작 (Jade Mahjong)",
+          "appId": 6752887466
+        },
+        {
+          "title": "비타 마작(Vita Mahjong)",
+          "appId": 6468921495
+        },
+        {
+          "title": "마작 클럽 - 솔리테어 게임",
+          "appId": 1565374299
+        }
+      ],
+      "addedAt": "2025-12-19T00:48:05.367Z"
+    },
+    {
+      "title": "Screwdom 3D",
+      "status": "single",
+      "appIds": {
+        "android": "com.ig.screwdom"
+      },
+      "developer": "iKame Games - Zego Studio",
+      "icon": "https://play-lh.googleusercontent.com/lrGM85RjRRh4pax0P6JbDVzXF7XeJA9PSMTpRujqqDhVgiOSInZ1l3sg0uBURw9INs8",
+      "searchResults": [
+        {
+          "title": "Screwdom : 나사와 볼트 퍼즐",
+          "appId": 6740043080
+        },
+        {
+          "title": "Screw Sort 3D - 나사매치 게임&볼트 퍼즐",
+          "appId": 6633425539
+        },
+        {
+          "title": "나사 매치 - 볼트업 퍼즐게임",
+          "appId": 6499293031
+        }
+      ],
+      "addedAt": "2025-12-19T00:48:05.690Z"
     }
   ],
   "approved": [],

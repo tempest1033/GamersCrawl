@@ -939,7 +939,8 @@
       "소녀총사 키우기",
       "잠룡 : 무협 도트 RPG",
       "잠룡 : 도트 무협 RPG",
-      "미친 타워가 되었다:노빠구 RPG"
+      "미친 타워가 되었다:노빠구 RPG",
+      "다크타워:전략 배틀 RPG"
     ],
     "platforms": [
       "ios",
@@ -2024,7 +2025,6 @@
     "aliases": [
       "나크",
       "나이트크로우",
-      "나이트 크로우",
       "Night Crows"
     ],
     "platforms": [
@@ -2099,7 +2099,6 @@
     "icon": "https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga",
     "aliases": [
       "러브앤딥",
-      "러브앤딥스페이스",
       "러브 앤 딥스페이스",
       "Love and Deepspace"
     ],
@@ -2870,7 +2869,8 @@
     "aliases": [
       "킹 오브 파이터 AFK - 3000뽑기 증정",
       "천만여신: 가장 치명적인 AFK",
-      "천만여신 : 가장 치명적인 AFK"
+      "천만여신 : 가장 치명적인 AFK",
+      "AFK: 새로운 여정"
     ],
     "platforms": [
       "android",
@@ -4784,7 +4784,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
+    "slug": "com-whoyaho-tanghulu",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -9010,6 +9010,159 @@
     "developer": "Intrepid Studios, Inc",
     "hasRankings": false,
     "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "ONE PIECE Bounty Rush",
+    "slug": "com-bandainamcoent-opbrww",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/eb/da/70ebdab1-a34b-f2a8-aa48-553486020715/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Bandai Namco Entertainment Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "미르4",
+    "slug": "com-wemade-mir4",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/48/92/2248928f-2f9b-9fe0-5b4b-8eeb07dd518a/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Wemade Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "킹방치: 빵지의 제왕",
+    "slug": "com-kingkongsoft-rsjy-g",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bb/be/46/bbbe46e3-fd1a-d368-7cb8-8c97aa07261f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "NEWLEAP SOFT",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "POOLS™",
+    "slug": "pools",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/69/d7/9469d797-f088-123f-733c-98b694811961/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Tensori",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "트럭 스타 매치",
+    "slug": "com-vm3-global",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f0/a4/39/f0a4396e-02bd-0613-f959-56896f0a007f/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Century Games Pte. Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "We are Warriors!",
+    "slug": "com-vjsjlqvlmp-wearewarriors",
+    "icon": "https://play-lh.googleusercontent.com/tNa57j9BYGTeuM358wV8yXj-r_3zt10dCi_3krfGqPyO6WivzRjsed8hABeclsah1yA",
+    "aliases": [
+      "We Are Warriors!"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Lessmore UG",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "MONOPOLY GO! (모노폴리 GO!)",
+    "slug": "com-scopely-monopolygo",
+    "icon": "https://play-lh.googleusercontent.com/DfYkSl-nQoMNLX2bec7EwHemrvyDYmDgzIR1jcsyt0ZAcmO_SKjuu0a1o1iSwtnl8_g",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Scopely",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Merge Restyle",
+    "slug": "com-play-merge-restyle",
+    "icon": "https://play-lh.googleusercontent.com/tcFwazQqHBp9XVAmIQSez9orx0g3DbXxYqvacG8XMY7P43Qy1zItwikoYv04sK1V3wz1Zw86x9cPkiiXdHuxHg",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Higgs Gaming",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Jade Mahjong",
+    "slug": "com-wonderful-mahjong",
+    "icon": "https://play-lh.googleusercontent.com/AeUlLrz1-tTbkOMT_dlthT9BjZyvwMzg_bdziYgvbxpBIzL47VRKpYepkUaI8itqS_CEYXh1huWpXZvLLvdMGA",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Wonderful  Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Screwdom 3D",
+    "slug": "com-ig-screwdom",
+    "icon": "https://play-lh.googleusercontent.com/lrGM85RjRRh4pax0P6JbDVzXF7XeJA9PSMTpRujqqDhVgiOSInZ1l3sg0uBURw9INs8",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "iKame Games - Zego Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "화살표 미로 - 퍼즐 탈출",
+    "slug": "com-arrows-escape",
+    "icon": "https://play-lh.googleusercontent.com/JrkFbn3imyogQ1Fd4fGOC9EiPQOlT9f1PIRKRtqRlOU9MrtCJG-YhSKP42FcuA1JYVSrno_G72qYMfIZA-bH",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "SayGames Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
     "hasData": true
   }
 ]
