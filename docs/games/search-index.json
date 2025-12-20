@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-a1gamesstudio-berserker",
+    "slug": "com-v2r-tower-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -1469,7 +1469,7 @@
       "android"
     ],
     "developer": "2K",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3283,7 +3283,7 @@
       "ios"
     ],
     "developer": "XD Entertainment Pte Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3453,7 +3453,7 @@
       "ios"
     ],
     "developer": "ONEMT SGP",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4388,7 +4388,7 @@
       "android"
     ],
     "developer": "SayGames LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4404,7 +4404,7 @@
       "android"
     ],
     "developer": "Archosaur Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5499,7 +5499,7 @@
       "ios"
     ],
     "developer": "Highcore Labs LLC",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5907,7 +5907,7 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7485,7 +7485,7 @@
       "android"
     ],
     "developer": "JOYNEX GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7540,7 +7540,7 @@
       "ios"
     ],
     "developer": "SPGFun",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7554,7 +7554,7 @@
       "android"
     ],
     "developer": "WILD CALY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7621,7 +7621,7 @@
       "ios"
     ],
     "developer": "美玲 陆",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7853,7 +7853,7 @@
       "android"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8521,7 +8521,7 @@
       "android"
     ],
     "developer": "Retroarts Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8755,7 +8755,7 @@
       "android"
     ],
     "developer": "Gene Eu",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8849,7 +8849,7 @@
       "android"
     ],
     "developer": "LINE Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8876,7 +8876,7 @@
       "ios"
     ],
     "developer": "racoonDigi",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9204,7 +9204,7 @@
       "android"
     ],
     "developer": "DiGiMi Pte. Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9271,7 +9271,7 @@
       "android"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9350,7 +9350,7 @@
       "android"
     ],
     "developer": "Hello Games Team",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
