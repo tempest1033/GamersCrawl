@@ -690,6 +690,175 @@
         }
       ],
       "addedAt": "2025-12-19T00:48:05.690Z"
+    },
+    {
+      "title": "귀판오분전",
+      "status": "single",
+      "appIds": {
+        "ios": "6753140348"
+      },
+      "developer": "Joy Net Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/9a/36/509a3658-ef6d-77c2-341f-7d817f030e46/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "귀판오분전-444뽑기 증정",
+          "appId": "com.ygjszkr.google"
+        },
+        {
+          "title": "개판오분전 - 1004뽑기 증정",
+          "appId": "com.wzlrnewkr.google"
+        },
+        {
+          "title": "ANOTHER EDEN 시공을 넘는 고양이",
+          "appId": "games.wfs.anothereden"
+        }
+      ],
+      "addedAt": "2025-12-20T00:44:26.831Z"
+    },
+    {
+      "title": "미스터 에그 대탐험",
+      "status": "single",
+      "appIds": {
+        "ios": "1630938720"
+      },
+      "developer": "SkyIsland Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/24/72/f2247286-22ff-a2fc-d86e-3d510a01a2b3/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Mr. Potato: Puzzle Master",
+          "appId": "com.eggpuzzle.platformer.run"
+        },
+        {
+          "title": "Pokémon GO",
+          "appId": "com.nianticlabs.pokemongo"
+        },
+        {
+          "title": "SNOW 스노우 - AI 프로필 & 고화질 카메라",
+          "appId": "com.campmobile.snow"
+        }
+      ],
+      "addedAt": "2025-12-20T00:45:00.234Z"
+    },
+    {
+      "title": "탈출게임 1914",
+      "status": "single",
+      "appIds": {
+        "ios": "6752113925"
+      },
+      "developer": "Jammsworks Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/76/26/c97626bb-89ff-7b59-646b-4922ea807ee2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "탈출 게임 1914 ~지베르니 정원에서 탈출~",
+          "appId": "org.unity.jamms.monet"
+        },
+        {
+          "title": "Supremacy 1914 -실시간 세계대전 전략 게임",
+          "appId": "com.bytro.supremacy1914"
+        },
+        {
+          "title": "유럽전쟁6: 1914 - WW1 군사 전략 전쟁 게임",
+          "appId": "com.easytech.android.ew6w"
+        }
+      ],
+      "addedAt": "2025-12-20T00:45:01.977Z"
+    },
+    {
+      "title": "묵청대도: 바운티 red(MIR2공식 라이선스)",
+      "status": "single",
+      "appIds": {
+        "android": "com.bountyred.zlya"
+      },
+      "developer": "HK ZHILI YAOAN LIMITED",
+      "icon": "https://play-lh.googleusercontent.com/gxGMCDkbTptMMfKwjAREnx_c4YT0dgTa3pbybda_9hbIjhs8EiWtaVM1-cBUqexMrafdsjfmOCyrbcHItTT6Yw",
+      "searchResults": [
+        {
+          "title": "묵청대도: 바운티",
+          "appId": 6742305350
+        },
+        {
+          "title": "미르의 전설2:레드나이트",
+          "appId": 6748341795
+        }
+      ],
+      "addedAt": "2025-12-20T00:45:11.405Z"
+    },
+    {
+      "title": "레퀴엠M(CBT)",
+      "status": "single",
+      "appIds": {
+        "android": "com.gravity.rqmm.cbt"
+      },
+      "developer": "GRAVITY Co., Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/IiXPz3pjN47mbvcDltNcAe5Q9EoG6h0gB7hyZ3IhUA62N0iIMSukpWq1FDjyAmUVJZA4pAE4OqmnKxR_OE-t-w",
+      "searchResults": [],
+      "addedAt": "2025-12-20T00:45:13.210Z"
+    },
+    {
+      "title": "글램 스크류 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.stac.kfu"
+      },
+      "developer": "Khyber School",
+      "icon": "https://play-lh.googleusercontent.com/MLAq-Ma6keZxVF6wYqKsQQCrk24sqZRBVngfvQFo35rJPLusjRPNHcphlCdcn2G5CTs",
+      "searchResults": [],
+      "addedAt": "2025-12-20T00:45:13.887Z"
+    },
+    {
+      "title": "Screw Sort 3D: 나사게임",
+      "status": "single",
+      "appIds": {
+        "android": "screw.sort.match.jam.puzzle"
+      },
+      "developer": "Shycheese",
+      "icon": "https://play-lh.googleusercontent.com/SZChlxgjGX8BX6xsAvlNa6setRVDWAIf76Tf3KXk0S-WMbqKd9b8H0ki31Mk9lUJ2fg",
+      "searchResults": [
+        {
+          "title": "Screw Sort 3D - 나사매치 게임&볼트 퍼즐",
+          "appId": 6633425539
+        },
+        {
+          "title": "나사 매치 - 볼트업 퍼즐게임",
+          "appId": 6499293031
+        },
+        {
+          "title": "Screw Craze - 나사게임 나사풀기3D",
+          "appId": 6737797679
+        }
+      ],
+      "addedAt": "2025-12-20T00:45:16.935Z"
+    },
+    {
+      "title": "우드드득 : 매치퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.stormborn.wood.block"
+      },
+      "developer": "Stormborn",
+      "icon": "https://play-lh.googleusercontent.com/p6z8Ya3yWX9I_ZA4XJm9QZ47LAE1cpBdzZFvKIhIzUpIflU7jFI7245XlM8z-BG4JeK0",
+      "searchResults": [],
+      "addedAt": "2025-12-20T00:45:17.156Z"
+    },
+    {
+      "title": "아이들 무기  상점(Idle Weapon Shop)",
+      "status": "single",
+      "appIds": {
+        "android": "com.hg.idleweaponshoptycoon.android"
+      },
+      "developer": "Hello Games Team",
+      "icon": "https://play-lh.googleusercontent.com/B_Alc6SJdL2sLDcWSvvvo6DJa86uJdvnTisUg-Iz3CunlvnDxsRr7944qLFrGrsr-sdiwfR1sI71iIB4Istz",
+      "searchResults": [
+        {
+          "title": "아이들 무기 상점",
+          "appId": 6739552291
+        },
+        {
+          "title": "방탈출 타이쿤 게임 - 중독성있는게임",
+          "appId": 6499507553
+        }
+      ],
+      "addedAt": "2025-12-20T00:45:17.429Z"
     }
   ],
   "approved": [],

@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6740556884",
-        "android": "net.gameduo.gv",
+        "android": "com.v2r.tower.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -948,7 +948,9 @@
         "잠룡 : 무협 도트 RPG",
         "잠룡 : 도트 무협 RPG",
         "미친 타워가 되었다:노빠구 RPG",
-        "다크타워:전략 배틀 RPG"
+        "다크타워:전략 배틀 RPG",
+        "소울 헌터 키우기 : 방치형 RPG",
+        "버서커 키우기: 방치형 RPG"
       ],
       "developer": "Game Duo Co.,Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -2897,19 +2899,19 @@
     "모바일 레전드: Bang Bang": {
       "appIds": {
         "android": "com.mobile.legends",
-        "ios": 1160056295
+        "ios": "1160056295"
       },
+      "aliases": [
+        "모바일레전드",
+        "MLBB",
+        "Mobile Legends"
+      ],
       "developer": "MOONTON",
       "icon": "https://play-lh.googleusercontent.com/NiIHdrOS85r76ggTpn1uLxslWAfmvi1WVVQY5Enrj3ZAcVBcb11RkkTFbej8qxB9UK0JPDhRVajVz_ogmqiC",
       "slug": "모바일-레전드-bang-bang",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "모바일레전드",
-        "MLBB",
-        "Mobile Legends"
       ]
     },
     "미스터리 타운 - 합치기 & 사건": {
@@ -8835,8 +8837,224 @@
         "android",
         "ios"
       ]
+    },
+    "귀판오분전": {
+      "appIds": {
+        "ios": "6753140348"
+      },
+      "aliases": [],
+      "developer": "Joy Net Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/9a/36/509a3658-ef6d-77c2-341f-7d817f030e46/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "slug": "귀판오분전",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "주술회전 팬텀 퍼레이드": {
+      "appIds": {
+        "ios": "6475925341",
+        "android": "com.bilibilihk.jujutsuphanparagp"
+      },
+      "aliases": [],
+      "developer": "BILIBILI HK LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "주술회전-팬텀-퍼레이드",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "플레이빌: 아바타 소셜 게임": {
+      "appIds": {
+        "ios": "6502509467",
+        "android": "io.playville"
+      },
+      "aliases": [],
+      "developer": "DiGiMi Pte. Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/e7/88/69e788c3-7f41-478f-f3e5-fcd5aed8e44c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "플레이빌-아바타-소셜-게임",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "카드캡터 체리: 추억의 열쇠": {
+      "appIds": {
+        "ios": "6475295545",
+        "android": "com.ujoygp.cherry"
+      },
+      "aliases": [],
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/bd/42/d4bd4216-0102-95a4-aaa7-283353d7f197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "카드캡터-체리-추억의-열쇠",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "미스터 에그 대탐험": {
+      "appIds": {
+        "ios": "1630938720"
+      },
+      "aliases": [],
+      "developer": "SkyIsland Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/24/72/f2247286-22ff-a2fc-d86e-3d510a01a2b3/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "미스터-에그-대탐험",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "위시: 아바타 드레스업": {
+      "appIds": {
+        "ios": "6747067092",
+        "android": "com.arumgames.wishavatardressup"
+      },
+      "aliases": [],
+      "developer": "Arumgames",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/b4/9b/4ab49bec-026f-1cac-ea39-bd9e6bf9f07d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "위시-아바타-드레스업",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "탈출게임 1914": {
+      "appIds": {
+        "ios": "6752113925"
+      },
+      "aliases": [],
+      "developer": "Jammsworks Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/76/26/c97626bb-89ff-7b59-646b-4922ea807ee2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "탈출게임-1914",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "묵청대도: 바운티 red(MIR2공식 라이선스)": {
+      "appIds": {
+        "android": "com.bountyred.zlya"
+      },
+      "aliases": [],
+      "developer": "HK ZHILI YAOAN LIMITED",
+      "icon": "https://play-lh.googleusercontent.com/gxGMCDkbTptMMfKwjAREnx_c4YT0dgTa3pbybda_9hbIjhs8EiWtaVM1-cBUqexMrafdsjfmOCyrbcHItTT6Yw",
+      "slug": "묵청대도-바운티-redmir2공식-라이선스",
+      "platforms": [
+        "android"
+      ]
+    },
+    "레퀴엠M(CBT)": {
+      "appIds": {
+        "android": "com.gravity.rqmm.cbt"
+      },
+      "aliases": [],
+      "developer": "GRAVITY Co., Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/IiXPz3pjN47mbvcDltNcAe5Q9EoG6h0gB7hyZ3IhUA62N0iIMSukpWq1FDjyAmUVJZA4pAE4OqmnKxR_OE-t-w",
+      "slug": "레퀴엠mcbt",
+      "platforms": [
+        "android"
+      ]
+    },
+    "글램 스크류 퍼즐": {
+      "appIds": {
+        "android": "com.stac.kfu"
+      },
+      "aliases": [],
+      "developer": "Khyber School",
+      "icon": "https://play-lh.googleusercontent.com/MLAq-Ma6keZxVF6wYqKsQQCrk24sqZRBVngfvQFo35rJPLusjRPNHcphlCdcn2G5CTs",
+      "slug": "글램-스크류-퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Level Devil - NOT A Troll Game": {
+      "appIds": {
+        "android": "com.unept.leveldevil",
+        "ios": 6477413486
+      },
+      "aliases": [],
+      "developer": "Unept",
+      "icon": "https://play-lh.googleusercontent.com/VqY_7ZNxG91KHaZguRP3khXdlTR1yQr45RCoiNu6MO41UhN-jlN31YWTQImWFRTw5r0",
+      "slug": "level-devil-not-a-troll-game",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Screw Sort 3D: 나사게임": {
+      "appIds": {
+        "android": "screw.sort.match.jam.puzzle"
+      },
+      "aliases": [],
+      "developer": "Shycheese",
+      "icon": "https://play-lh.googleusercontent.com/SZChlxgjGX8BX6xsAvlNa6setRVDWAIf76Tf3KXk0S-WMbqKd9b8H0ki31Mk9lUJ2fg",
+      "slug": "screw-sort-3d-나사게임",
+      "platforms": [
+        "android"
+      ]
+    },
+    "우드드득 : 매치퍼즐": {
+      "appIds": {
+        "android": "com.stormborn.wood.block"
+      },
+      "aliases": [],
+      "developer": "Stormborn",
+      "icon": "https://play-lh.googleusercontent.com/p6z8Ya3yWX9I_ZA4XJm9QZ47LAE1cpBdzZFvKIhIzUpIflU7jFI7245XlM8z-BG4JeK0",
+      "slug": "우드드득-매치퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "아이들 무기  상점(Idle Weapon Shop)": {
+      "appIds": {
+        "android": "com.hg.idleweaponshoptycoon.android"
+      },
+      "aliases": [],
+      "developer": "Hello Games Team",
+      "icon": "https://play-lh.googleusercontent.com/B_Alc6SJdL2sLDcWSvvvo6DJa86uJdvnTisUg-Iz3CunlvnDxsRr7944qLFrGrsr-sdiwfR1sI71iIB4Istz",
+      "slug": "아이들-무기-상점idle-weapon-shop",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Two Blocks!": {
+      "appIds": {
+        "android": "com.dotdot.abo",
+        "ios": 6744995927
+      },
+      "aliases": [],
+      "developer": "Tap Color Studio",
+      "icon": "https://play-lh.googleusercontent.com/qWUtBNdGkdeQdqIeX_mRJNJD3mbn-GudRV0J1ZGPHu9glc0-TtYZaRe2KUWchfHH0KNwODTaGg7ctuQEHhxcLQ",
+      "slug": "two-blocks",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Sons Of The Forest": {
+      "appIds": {
+        "steam": "1326470"
+      },
+      "aliases": [],
+      "developer": "Endnight Games Ltd",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856",
+      "slug": "sons-of-the-forest",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Party Animals": {
+      "appIds": {
+        "steam": "1260320"
+      },
+      "aliases": [],
+      "developer": "Recreate Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1260320/5274bb12077f8156533055b27245ce3c2718c590/header_alt_assets_7.jpg?t=1766111494",
+      "slug": "party-animals",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-19",
-  "totalGames": 591
+  "lastUpdated": "2025-12-20",
+  "totalGames": 608
 }

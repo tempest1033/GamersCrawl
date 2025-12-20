@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-v2r-tower-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -940,7 +940,9 @@
       "잠룡 : 무협 도트 RPG",
       "잠룡 : 도트 무협 RPG",
       "미친 타워가 되었다:노빠구 RPG",
-      "다크타워:전략 배틀 RPG"
+      "다크타워:전략 배틀 RPG",
+      "소울 헌터 키우기 : 방치형 RPG",
+      "버서커 키우기: 방치형 RPG"
     ],
     "platforms": [
       "ios",
@@ -9163,6 +9165,233 @@
     "developer": "SayGames Ltd",
     "hasRankings": true,
     "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "귀판오분전",
+    "slug": "귀판오분전",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/9a/36/509a3658-ef6d-77c2-341f-7d817f030e46/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Joy Net Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "주술회전 팬텀 퍼레이드",
+    "slug": "com-bilibilihk-jujutsuphanparagp",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "BILIBILI HK LIMITED",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "플레이빌: 아바타 소셜 게임",
+    "slug": "io-playville",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/e7/88/69e788c3-7f41-478f-f3e5-fcd5aed8e44c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "DiGiMi Pte. Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "카드캡터 체리: 추억의 열쇠",
+    "slug": "com-ujoygp-cherry",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/bd/42/d4bd4216-0102-95a4-aaa7-283353d7f197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Ujoy Games Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "미스터 에그 대탐험",
+    "slug": "미스터-에그-대탐험",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/24/72/f2247286-22ff-a2fc-d86e-3d510a01a2b3/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "SkyIsland Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "위시: 아바타 드레스업",
+    "slug": "com-arumgames-wishavatardressup",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/b4/9b/4ab49bec-026f-1cac-ea39-bd9e6bf9f07d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Arumgames",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "탈출게임 1914",
+    "slug": "탈출게임-1914",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/76/26/c97626bb-89ff-7b59-646b-4922ea807ee2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Jammsworks Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "묵청대도: 바운티 red(MIR2공식 라이선스)",
+    "slug": "com-bountyred-zlya",
+    "icon": "https://play-lh.googleusercontent.com/gxGMCDkbTptMMfKwjAREnx_c4YT0dgTa3pbybda_9hbIjhs8EiWtaVM1-cBUqexMrafdsjfmOCyrbcHItTT6Yw",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "HK ZHILI YAOAN LIMITED",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "레퀴엠M(CBT)",
+    "slug": "com-gravity-rqmm-cbt",
+    "icon": "https://play-lh.googleusercontent.com/IiXPz3pjN47mbvcDltNcAe5Q9EoG6h0gB7hyZ3IhUA62N0iIMSukpWq1FDjyAmUVJZA4pAE4OqmnKxR_OE-t-w",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "GRAVITY Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "글램 스크류 퍼즐",
+    "slug": "com-stac-kfu",
+    "icon": "https://play-lh.googleusercontent.com/MLAq-Ma6keZxVF6wYqKsQQCrk24sqZRBVngfvQFo35rJPLusjRPNHcphlCdcn2G5CTs",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Khyber School",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Level Devil - NOT A Troll Game",
+    "slug": "com-unept-leveldevil",
+    "icon": "https://play-lh.googleusercontent.com/VqY_7ZNxG91KHaZguRP3khXdlTR1yQr45RCoiNu6MO41UhN-jlN31YWTQImWFRTw5r0",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Unept",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Screw Sort 3D: 나사게임",
+    "slug": "screw-sort-match-jam-puzzle",
+    "icon": "https://play-lh.googleusercontent.com/SZChlxgjGX8BX6xsAvlNa6setRVDWAIf76Tf3KXk0S-WMbqKd9b8H0ki31Mk9lUJ2fg",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Shycheese",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "우드드득 : 매치퍼즐",
+    "slug": "com-stormborn-wood-block",
+    "icon": "https://play-lh.googleusercontent.com/p6z8Ya3yWX9I_ZA4XJm9QZ47LAE1cpBdzZFvKIhIzUpIflU7jFI7245XlM8z-BG4JeK0",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Stormborn",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "아이들 무기  상점(Idle Weapon Shop)",
+    "slug": "com-hg-idleweaponshoptycoon-android",
+    "icon": "https://play-lh.googleusercontent.com/B_Alc6SJdL2sLDcWSvvvo6DJa86uJdvnTisUg-Iz3CunlvnDxsRr7944qLFrGrsr-sdiwfR1sI71iIB4Istz",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Hello Games Team",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Two Blocks!",
+    "slug": "com-dotdot-abo",
+    "icon": "https://play-lh.googleusercontent.com/qWUtBNdGkdeQdqIeX_mRJNJD3mbn-GudRV0J1ZGPHu9glc0-TtYZaRe2KUWchfHH0KNwODTaGg7ctuQEHhxcLQ",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Tap Color Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Sons Of The Forest",
+    "slug": "sons-of-the-forest",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Endnight Games Ltd",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Party Animals",
+    "slug": "party-animals",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1260320/5274bb12077f8156533055b27245ce3c2718c590/header_alt_assets_7.jpg?t=1766111494",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Recreate Games",
+    "hasRankings": false,
+    "hasSteam": true,
     "hasData": true
   }
 ]
