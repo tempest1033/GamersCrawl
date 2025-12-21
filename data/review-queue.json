@@ -897,6 +897,29 @@
       "icon": "https://play-lh.googleusercontent.com/-eJ3X_PqPt5fD99EQdfhfJ_hvRdBeWYQiSlIq1NPm8nUrOXrhZpWL6li78r3jx2QLg",
       "searchResults": [],
       "addedAt": "2025-12-21T00:52:01.459Z"
+    },
+    {
+      "title": "건틀렛: 방치형 액션 RPG",
+      "status": "matched",
+      "appIds": {
+        "ios": "6748525811",
+        "android": "com.a1gamesstudio.berserker",
+        "android:kr": "com.metaboneent.gauntletrpg",
+        "ios:kr": "6446516059"
+      },
+      "developer": "Game Duo Co.,Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "소울 헌터 키우기 : 방치형 RPG",
+          "appId": "com.ryonggame.soulhunteridle"
+        },
+        {
+          "title": "다크타워:전략 배틀 RPG",
+          "appId": "6748525811"
+        }
+      ],
+      "addedAt": "2025-12-21T03:58:01.667Z"
     }
   ],
   "approved": [],
