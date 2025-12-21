@@ -1,4 +1,4 @@
-{
+﻿{
   "version": "5.0.0",
   "games": {
     "메이플 키우기": {
@@ -1072,30 +1072,6 @@
         "android"
       ]
     },
-    "Age of Origins:Tower Defense": {
-      "appIds": {
-        "ios": "1376515087",
-        "android": "com.camelgames.aoz.arabic",
-        "android:kr": "com.camelgames.aoz",
-        "android:jp": "com.camelgames.aoz",
-        "android:us": "com.camelgames.aoz"
-      },
-      "aliases": [
-        "Age of Origins - حرب الزومبي",
-        "Age of Origins---ゾンビ・末日戦記",
-        "에이지 오브 제트: 타워 디펜스",
-        "Age of Origins",
-        "에이지오브오리진",
-        "에이지 오브 오리진"
-      ],
-      "developer": "Hong Kong Ke Mo software Co., Limited",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/93/d2/6193d21e-dcdb-93e7-7f05-8f7ffede6b72/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "slug": "age-of-originstower-defense",
-      "platforms": [
-        "ios",
-        "android"
-      ]
-    },
     "타일 서바이벌": {
       "appIds": {
         "ios": "6738109752",
@@ -1601,22 +1577,6 @@
         "android"
       ]
     },
-    "Screwdom : 나사와 볼트 퍼즐": {
-      "appIds": {
-        "ios": "6740043080",
-        "android": "com.moyo.hitnails"
-      },
-      "aliases": [
-        "Screwdom"
-      ],
-      "developer": "Zego Global Pte Ltd",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/ca/e5/67cae5f6-71be-8926-d507-38006332eb8f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "slug": "screwdom-나사와-볼트-퍼즐",
-      "platforms": [
-        "ios",
-        "android"
-      ]
-    },
     "열혈강호: 귀환": {
       "appIds": {
         "ios": "6742733115",
@@ -1840,28 +1800,6 @@
         "ios"
       ]
     },
-    "카오스 제로 나이트메어": {
-      "appIds": {
-        "android": "com.smilegate.chaoszero.stove.google",
-        "ios": 6502326151,
-        "ios:jp": "6502326151",
-        "ios:tw": "6502326151"
-      },
-      "aliases": [
-        "カオスゼロナイトメア",
-        "Chaos Zero Nightmare",
-        "卡厄思夢境",
-        "카오스제로",
-        "Chaos Zero"
-      ],
-      "developer": "Smilegate Holdings, Inc",
-      "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
-      "slug": "카오스-제로-나이트메어",
-      "platforms": [
-        "android",
-        "ios"
-      ]
-    },
     "트릭컬 리바이브": {
       "appIds": {
         "android": "com.epidgames.trickcalrevive",
@@ -1950,25 +1888,6 @@
       ],
       "aliases": [
         "아키르"
-      ]
-    },
-    "맛있는 여행: 합성 게임": {
-      "appIds": {
-        "android": "com.fatmerge.global",
-        "ios": "6471045672"
-      },
-      "aliases": [
-        "グルメ・ジャーニー",
-        "Tasty Travels: Merge Game",
-        "푸드 앤 트레블: 합성 게임",
-        "食光旅行"
-      ],
-      "developer": "Century Games PTE. LTD.",
-      "icon": "https://play-lh.googleusercontent.com/M-uVn43_7vPmmiqtHQDtG0bZNTJ03hr_ls60CkzsVMzkqkA2lY0TQHa0kIZBqwXrtyi1j5fW7Yg-AjABY-8G",
-      "slug": "맛있는-여행-합성-게임",
-      "platforms": [
-        "android",
-        "ios"
       ]
     },
     "서머너즈 워: 천공의 아레나": {
@@ -2511,13 +2430,19 @@
     "에이지 오브 제트: 타워 디펜스": {
       "appIds": {
         "android": "com.camelgames.aoz",
-        "ios": "1376515087"
+        "ios": "1376515087",
+        "android:kr": "com.camelgames.aoz",
+        "android:jp": "com.camelgames.aoz",
+        "android:us": "com.camelgames.aoz"
       },
       "aliases": [
         "Age of Origins---ゾンビ・末日戦記",
         "Age of Origins",
         "Age of Origins:Tower Defense",
-        "에이지오브제트"
+        "에이지오브제트",
+        "Age of Origins - حرب الزومبي",
+        "에이지오브오리진",
+        "에이지 오브 오리진"
       ],
       "developer": "CamelStudio",
       "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
@@ -2823,27 +2748,6 @@
       "developer": "IGG.COM",
       "icon": "https://play-lh.googleusercontent.com/I42mLdnw5KHF4chUWrFm2C5qVmjR53-Bh5IT5CcHNsNmH8eR7vM0YZvori72woEq5EY_jYrdkEJaWv_O8fLGsQ",
       "slug": "둠스데이-라스트-서바이버",
-      "platforms": [
-        "android",
-        "ios"
-      ]
-    },
-    "에보니 - 왕의 귀환": {
-      "appIds": {
-        "android": "com.topgamesinc.evony",
-        "ios": 1098157959,
-        "ios:jp": "1098157959",
-        "ios:us": "1098157959"
-      },
-      "aliases": [
-        "エボニー - 王の帰還",
-        "Evony: The King's Return",
-        "Evony",
-        "에보니"
-      ],
-      "developer": "TG Inc.",
-      "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
-      "slug": "에보니-왕의-귀환",
       "platforms": [
         "android",
         "ios"
@@ -3581,17 +3485,6 @@
         "android"
       ]
     },
-    "Arrows – Puzzle Escape": {
-      "appIds": {
-        "ios": "6748397500"
-      },
-      "developer": "Lessmore UG (haftungsbeschränkt)",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/31/18/de3118f8-1772-b812-a4c5-3fba2e13c356/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "slug": "arrows-puzzle-escape",
-      "platforms": [
-        "ios"
-      ]
-    },
     "Bus Escape: Traffic Jam": {
       "appIds": {
         "ios": "6689516366"
@@ -4133,6 +4026,9 @@
       "platforms": [
         "ios",
         "android"
+      ],
+      "aliases": [
+        "사커 슈퍼스타(Soccer Superstar)"
       ]
     },
     "Merge Fashion: Romance Story": {
@@ -4269,6 +4165,9 @@
       "platforms": [
         "ios",
         "android"
+      ],
+      "aliases": [
+        "단일 선 블록 채우기 퍼즐"
       ]
     },
     "Perfect Tidy: 완벽한 정리": {
@@ -4415,6 +4314,9 @@
       "platforms": [
         "ios",
         "android"
+      ],
+      "aliases": [
+        "Tangled Rope: Twisted Puzzle"
       ]
     },
     "브라운 토이즈": {
@@ -4463,6 +4365,9 @@
       "platforms": [
         "android",
         "ios"
+      ],
+      "aliases": [
+        "Arrows – Puzzle Escape"
       ]
     },
     "모범 놀이터： 타락자들": {
@@ -4786,19 +4691,6 @@
         "ios"
       ]
     },
-    "단일 선 블록 채우기 퍼즐": {
-      "appIds": {
-        "android": "com.tfv.block.line.fill.puzzle",
-        "ios": "1463513472"
-      },
-      "developer": "The Fashion Valley",
-      "icon": "https://play-lh.googleusercontent.com/cOBVrMmtEPbPVF3fqDuH-CItOAvg97LxlgfHZGEmoQWR5dxJyr0om_rkSozaiHwJA-T3",
-      "slug": "단일-선-블록-채우기-퍼즐",
-      "platforms": [
-        "android",
-        "ios"
-      ]
-    },
     "타일 매치 - 트리플 퍼즐": {
       "appIds": {
         "android": "in.playsimple.triple.tile.matchgame.pair.three.puzzle.object.royale",
@@ -5022,19 +4914,6 @@
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/1h7m141FxhTxNeVWLjyn2yiv9B7Tcjbx28j_7pMa7z2SrBT22scVcrSujQYdo7_lfFg",
       "slug": "마이-스티커-룸-my-sticker-room",
-      "platforms": [
-        "android",
-        "ios"
-      ]
-    },
-    "사커 슈퍼스타(Soccer Superstar)": {
-      "appIds": {
-        "android": "com.soccer.score.star",
-        "ios": "1550945606"
-      },
-      "developer": "Real Freestyle Soccer",
-      "icon": "https://play-lh.googleusercontent.com/utNyP5-jVUjmuAzED5v2H-SbOisTOBjiu0FS2qeCJ7l40CEADbQxHxrGtmcurkXs5QJH",
-      "slug": "사커-슈퍼스타soccer-superstar",
       "platforms": [
         "android",
         "ios"
@@ -5762,19 +5641,6 @@
       "developer": "Tripledot Studios Limited",
       "icon": "https://play-lh.googleusercontent.com/Z6KJAQTDqQzJaeisYfVVBvAGMznEFBNb0U229BpFgmm8nolXrvqZ7HQmoiUTjsY4esI",
       "slug": "car-out-traffi-자동차-주차게임-카파킹",
-      "platforms": [
-        "android",
-        "ios"
-      ]
-    },
-    "Tangled Rope: Twisted Puzzle": {
-      "appIds": {
-        "android": "com.tangled.rope",
-        "ios": "6499432947"
-      },
-      "developer": "NORDKAPP GAMES LIMITED",
-      "icon": "https://play-lh.googleusercontent.com/1jpqeffHCzrcgDw2AWju0U2RtSl5nCGo7l5Hhs6aiiATkzrV1_qZ-inUrbBzfwB6JHggcuAs_n_kZN5cTAn9ig",
-      "slug": "tangled-rope-twisted-puzzle",
       "platforms": [
         "android",
         "ios"
@@ -7150,14 +7016,19 @@
     },
     "I9: 인페르노 나인(19) - 세로형 RPG": {
       "appIds": {
+        "ios": "6751944275",
         "android": "com.kr.firelite"
       },
-      "aliases": [],
+      "aliases": [
+        "I9: 인페르노 나인(19)",
+        "I9: 인페르노 나인"
+      ],
       "developer": "Leniu Technology Co., Limited",
       "icon": "https://play-lh.googleusercontent.com/mXF7HtbUud3zSsdOzFkh-zKHE5G9n2nASkBz6-d4Fqt9wMHJkP3jniIjjcOQxFwuCWJCRLeJYrxKXBs2GbuxFg",
       "slug": "i9-인페르노-나인19-세로형-rpg",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "리버스: 1999": {
@@ -7324,18 +7195,6 @@
         "android"
       ]
     },
-    "Woodturning 3D": {
-      "appIds": {
-        "ios": "1492451796"
-      },
-      "aliases": [],
-      "developer": "Voodoo",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "slug": "woodturning-3d",
-      "platforms": [
-        "ios"
-      ]
-    },
     "주차의 달인 4": {
       "appIds": {
         "ios": "1021117809",
@@ -7376,26 +7235,34 @@
     },
     "돼지 키우는 중입니다 : 국내산": {
       "appIds": {
-        "android": "com.TrueSoft.SuperPigIdle"
+        "android": "com.TrueSoft.SuperPigIdle",
+        "ios": "6744908677"
       },
-      "aliases": [],
+      "aliases": [
+        "돼지키우는중입니다"
+      ],
       "developer": "TRSOFT",
       "icon": "https://play-lh.googleusercontent.com/nwaC9smalAARJI_3UAoWPTijULoLEv3hXvrmEy2elVdnG4itE8yT3RBoobb9s5Kjl7JdiSqYBEXk196RZz0X",
       "slug": "돼지-키우는-중입니다-국내산",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "린M:잊혀진 유산": {
       "appIds": {
-        "android": "com.ujoygp.smdl"
+        "android": "com.ujoygp.smdl",
+        "ios": "6738077390"
       },
-      "aliases": [],
+      "aliases": [
+        "린M"
+      ],
       "developer": "Ujoy Games",
       "icon": "https://play-lh.googleusercontent.com/ML2BoYMUTEO58nzKblMMzUTk8V1jUvfzXQtcIDSolx0HqdFYGUOaT9sVgxhE02WE8VrdHHbqH8RFnzhZ0MmB9w",
       "slug": "린m잊혀진-유산",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Archery Showdown-Aim Arena": {
@@ -7424,14 +7291,18 @@
     },
     "헌티드 머지: 괴담": {
       "appIds": {
-        "android": "com.whalejoy.horrorstory.gp"
+        "android": "com.whalejoy.horrorstory.gp",
+        "ios": "6752369665"
       },
-      "aliases": [],
+      "aliases": [
+        "Haunted Merge: Horror Story"
+      ],
       "developer": "WhaleJoy Game Limited",
       "icon": "https://play-lh.googleusercontent.com/wkdnu8OxzFFCnSZw4QO2DczjcybhyW8GOMDWh4p2NG-qXX10MD3CIZHgL2vK3mWjqg",
       "slug": "헌티드-머지-괴담",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Gun Hero ― 2D 총 로그라이트 슈팅게임": {
@@ -7462,14 +7333,18 @@
     },
     "Color Match": {
       "appIds": {
-        "android": "com.JacobVanHaag.ColorMatch"
+        "android": "com.JacobVanHaag.ColorMatch",
+        "ios": "1586980403"
       },
-      "aliases": [],
+      "aliases": [
+        "Coloring Match"
+      ],
       "developer": "Supersonic Studios LTD",
       "icon": "https://play-lh.googleusercontent.com/JYmlH46F5tL2S7lZ8JvlAxAz68Ei0489T13WJGb7ZFFZ3Rtif1r3I0k9G7d1E1NQQg",
       "slug": "color-match",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Dino mutant : T-Rex": {
@@ -7586,14 +7461,18 @@
     },
     "드로우 아레나 (Draw Arena)": {
       "appIds": {
-        "android": "com.kadka.battle.draw"
+        "android": "com.kadka.battle.draw",
+        "ios": "6450601866"
       },
-      "aliases": [],
+      "aliases": [
+        "Draw Arena"
+      ],
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/8T3kunZsZzVBsRxHQGW8Ls8LZJFbgrNsv28Hd-5Z2nFSAM51tQsAO5YdtZwAIMRB1_o",
       "slug": "드로우-아레나-draw-arena",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Eatventure": {
@@ -7638,14 +7517,18 @@
     },
     "Supreme Duelist Stickman": {
       "appIds": {
-        "android": "com.Neurononfire.SupremeDuelist"
+        "android": "com.Neurononfire.SupremeDuelist",
+        "ios": "1477336151"
       },
-      "aliases": [],
+      "aliases": [
+        "Supreme Duelist"
+      ],
       "developer": "Neron's Brother",
       "icon": "https://play-lh.googleusercontent.com/iRq0R9mN7eGyVENIPDk5muu76VxawBAIkFAYFqauJTFNIvUxzD1_M33HNX4GE8Qk0WqY",
       "slug": "supreme-duelist-stickman",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Mini Antistress Relaxing Games": {
@@ -8180,14 +8063,18 @@
     },
     "소녀총사 키우기": {
       "appIds": {
-        "ios": "6456484806"
+        "ios": "6456484806",
+        "android": "com.act7ent.musket"
       },
-      "aliases": [],
+      "aliases": [
+        "소녀총사 키우기 : 도트 방치형 RPG"
+      ],
       "developer": "Act Seven Entertainment Inc.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/7e/b3/577eb375-7d4e-7564-3550-0f0a265144bf/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
       "slug": "소녀총사-키우기",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "Total Football - 25/26 시즌": {
@@ -8396,14 +8283,18 @@
     },
     "미친 타워가 되었다": {
       "appIds": {
-        "ios": "6746247056"
+        "ios": "6746247056",
+        "android": "com.v2r.tower.google"
       },
-      "aliases": [],
+      "aliases": [
+        "미친 타워가 되었다:노빠구 RPG"
+      ],
       "developer": "V2R",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/46/b7/9d46b708-5df7-5338-2a0e-189d17d32673/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
       "slug": "미친-타워가-되었다",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "Lexico: Word Puzzle Quest": {
@@ -8476,14 +8367,18 @@
     },
     "Buildit": {
       "appIds": {
-        "android": "com.newbeat.gardecor"
+        "android": "com.newbeat.gardecor",
+        "ios": "6714470154"
       },
-      "aliases": [],
+      "aliases": [
+        "Buildit - Chill Brick Game"
+      ],
       "developer": "MINIMAX PTE. LTD.",
       "icon": "https://play-lh.googleusercontent.com/qYLdXEcN2NTk8DOIm1p5UnofHa_ZSmT7Sgw9kRNQfbgJ5PTTrg0OOhMVL2yltwRCD4s",
       "slug": "buildit",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "FINAL FANTASY XIV Online": {
@@ -8538,14 +8433,18 @@
     },
     "컴투스프로야구 for 매니저": {
       "appIds": {
-        "ios": "682942443"
+        "ios": "682942443",
+        "android": "com.com2us.kbomanager.normal2.freefull.google.global.android.common"
       },
-      "aliases": [],
+      "aliases": [
+        "컴투스프로야구매니저"
+      ],
       "developer": "Com2uS Corp.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/aa/9b/2aaa9b6f-2376-9114-31c9-3eb72c4200f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
       "slug": "컴투스프로야구-for-매니저",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "스트리트볼 올스타-Streetball Allstar": {
@@ -8594,14 +8493,18 @@
     },
     "포켓 정렬 (Pocket Sort): 동전 병합 퍼즐": {
       "appIds": {
-        "android": "com.pocket.sort.coin.puzzle.game"
+        "android": "com.pocket.sort.coin.puzzle.game",
+        "ios": "6755425214"
       },
-      "aliases": [],
+      "aliases": [
+        "Pocket Sort: Coin Merge Puzzle"
+      ],
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/blnQgZLrDseT5XsOOtloqVfgMqHLDgCMOTaqei6q9brw_D182qXvj6ahfp9Sj0FF8dlP36T7xtg42ODz5IAWlQ",
       "slug": "포켓-정렬-pocket-sort-동전-병합-퍼즐",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Pop Piano: 리듬 게임": {
@@ -8802,26 +8705,35 @@
     },
     "Jade Mahjong": {
       "appIds": {
-        "android": "com.wonderful.mahjong"
+        "android": "com.wonderful.mahjong",
+        "ios": "6752887466"
       },
-      "aliases": [],
+      "aliases": [
+        "옥 마작 (Jade Mahjong)"
+      ],
       "developer": "Wonderful  Studio",
       "icon": "https://play-lh.googleusercontent.com/AeUlLrz1-tTbkOMT_dlthT9BjZyvwMzg_bdziYgvbxpBIzL47VRKpYepkUaI8itqS_CEYXh1huWpXZvLLvdMGA",
       "slug": "jade-mahjong",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Screwdom 3D": {
       "appIds": {
-        "android": "com.ig.screwdom"
+        "android": "com.ig.screwdom",
+        "ios": "6740043080"
       },
-      "aliases": [],
+      "aliases": [
+        "Screwdom : 나사와 볼트 퍼즐",
+        "Screwdom"
+      ],
       "developer": "iKame Games - Zego Studio",
       "icon": "https://play-lh.googleusercontent.com/lrGM85RjRRh4pax0P6JbDVzXF7XeJA9PSMTpRujqqDhVgiOSInZ1l3sg0uBURw9INs8",
       "slug": "screwdom-3d",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "화살표 미로 - 퍼즐 탈출": {
@@ -8840,14 +8752,18 @@
     },
     "귀판오분전": {
       "appIds": {
-        "ios": "6753140348"
+        "ios": "6753140348",
+        "android": "com.ygjszkr.google"
       },
-      "aliases": [],
+      "aliases": [
+        "귀판오분전-444뽑기 증정"
+      ],
       "developer": "Joy Net Games",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/9a/36/509a3658-ef6d-77c2-341f-7d817f030e46/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
       "slug": "귀판오분전",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "주술회전 팬텀 퍼레이드": {
@@ -8920,14 +8836,18 @@
     },
     "탈출게임 1914": {
       "appIds": {
-        "ios": "6752113925"
+        "ios": "6752113925",
+        "android": "org.unity.jamms.monet"
       },
-      "aliases": [],
+      "aliases": [
+        "탈출 게임 1914 ~지베르니 정원에서 탈출~"
+      ],
       "developer": "Jammsworks Inc.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/76/26/c97626bb-89ff-7b59-646b-4922ea807ee2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "탈출게임-1914",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "묵청대도: 바운티 red(MIR2공식 라이선스)": {
@@ -9006,14 +8926,18 @@
     },
     "아이들 무기  상점(Idle Weapon Shop)": {
       "appIds": {
-        "android": "com.hg.idleweaponshoptycoon.android"
+        "android": "com.hg.idleweaponshoptycoon.android",
+        "ios": "6739552291"
       },
-      "aliases": [],
+      "aliases": [
+        "아이들 무기 상점"
+      ],
       "developer": "Hello Games Team",
       "icon": "https://play-lh.googleusercontent.com/B_Alc6SJdL2sLDcWSvvvo6DJa86uJdvnTisUg-Iz3CunlvnDxsRr7944qLFrGrsr-sdiwfR1sI71iIB4Istz",
       "slug": "아이들-무기-상점idle-weapon-shop",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Two Blocks!": {
@@ -9124,18 +9048,6 @@
         "android"
       ]
     },
-    "귀판오분전-444뽑기 증정": {
-      "appIds": {
-        "android": "com.ygjszkr.google"
-      },
-      "aliases": [],
-      "developer": "Joy Nice Games",
-      "icon": "https://play-lh.googleusercontent.com/Nn9dE2fH-NyN5i1nUQNu5ornudxCyhfi8xzRyHLnEzHlFtN_VMfVdoSaovMiqKFIM0k",
-      "slug": "귀판오분전-444뽑기-증정",
-      "platforms": [
-        "android"
-      ]
-    },
     "로얄 크로니클": {
       "appIds": {
         "android": "kr.game.sincetimes.mabif.google"
@@ -9202,5 +9114,5 @@
     }
   },
   "lastUpdated": "2025-12-21",
-  "totalGames": 619
+  "totalGames": 608
 }
