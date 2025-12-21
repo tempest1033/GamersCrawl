@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-a1gamesstudio-berserker",
+    "slug": "com-ryonggame-soulhunteridle",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -9390,6 +9390,156 @@
       "steam"
     ],
     "developer": "Recreate Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "EA SPORTS FC™ 26 Companion",
+    "slug": "com-ea-gp-fifaultimate",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/82/97/e1829783-a75a-3881-0e18-51fc3ec4be00/AppIcon-1x_U007emarketing-0-11-0-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Electronic Arts",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "HIT2",
+    "slug": "com-nexon-hit2",
+    "icon": "https://play-lh.googleusercontent.com/5qH9f1jHP0W6yez4_DbqG7OUA5hw6LIe3pb56CG7xr9SX7jf8_f4WGHHHTOWSyWwT0ic",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "NEXON Company",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "콜 오브 드래곤즈",
+    "slug": "com-farlightgames-samo-gp-kr",
+    "icon": "https://play-lh.googleusercontent.com/_RfXWqDkmCbpur-TDq-bkfIlu6sXt5noe9bk9lij53cfr7u8ySbwUjilvlWSsWTgIJs",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "FARLIGHT",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "주디: 내가 찍은 도트로 아바타 꾸미기",
+    "slug": "com-joodyrn",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/02/fc/f5/02fcf551-c3c5-87b9-d3cd-571e13c46547/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Consalad, Inc",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Rhythm Hive",
+    "slug": "com-superb-rhv",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/0f/d6/fa0fd694-2154-d3e3-7209-e1ddd6af0d4d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "DRIMAGE Co., Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "귀판오분전-444뽑기 증정",
+    "slug": "com-ygjszkr-google",
+    "icon": "https://play-lh.googleusercontent.com/Nn9dE2fH-NyN5i1nUQNu5ornudxCyhfi8xzRyHLnEzHlFtN_VMfVdoSaovMiqKFIM0k",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Joy Nice Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "로얄 크로니클",
+    "slug": "kr-game-sincetimes-mabif-google",
+    "icon": "https://play-lh.googleusercontent.com/EO7coWi0ccUQ-KT7osyzGDiFtWB49h7Xs77Z_gsFFd0afubf-oNKyOQsc-Q-lgHEUzzpqlGb0BZuto_xmDfw9Q",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Metapolitan Games Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "심리 페인트 월드",
+    "slug": "com-paintw-shinri",
+    "icon": "https://play-lh.googleusercontent.com/-eJ3X_PqPt5fD99EQdfhfJ_hvRdBeWYQiSlIq1NPm8nUrOXrhZpWL6li78r3jx2QLg",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "DownTownApps",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Word Solitaire Now!",
+    "slug": "com-losttemplegames-wordsolitaire",
+    "icon": "https://play-lh.googleusercontent.com/DPnyPo_2u5wgMEYacR6qpRMdT6qjNvdqYTNnuHkN1tyvSIpOsIKgQF6t_kbBRxCgrv4EvsrF3cbqX2tWcTPiZV4",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "LOST TEMPLE GAMES",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Woodoku Blast",
+    "slug": "com-tripledot-blockbash",
+    "icon": "https://play-lh.googleusercontent.com/3zYytd77MXlmtvwNZW_L0icufZPK2EIVBpa-asmPeVTaWdZvnL_ERldsqM_ujX6PfclG4A5jbvC9w1vZk6MDpQ",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Tripledot Studios Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Raft",
+    "slug": "raft",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Redbeet Interactive",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true

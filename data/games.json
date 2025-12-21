@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6740556884",
-        "android": "com.a1gamesstudio.berserker",
+        "ios": "6748525811",
+        "android": "com.ryonggame.soulhunteridle",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -9053,8 +9053,154 @@
       "platforms": [
         "steam"
       ]
+    },
+    "EA SPORTS FC™ 26 Companion": {
+      "appIds": {
+        "ios": "1127108818",
+        "android": "com.ea.gp.fifaultimate"
+      },
+      "aliases": [],
+      "developer": "Electronic Arts",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/82/97/e1829783-a75a-3881-0e18-51fc3ec4be00/AppIcon-1x_U007emarketing-0-11-0-0-85-220-0.png/100x100bb.png",
+      "slug": "ea-sports-fc-26-companion",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "HIT2": {
+      "appIds": {
+        "android": "com.nexon.hit2",
+        "ios": 1581561666
+      },
+      "aliases": [],
+      "developer": "NEXON Company",
+      "icon": "https://play-lh.googleusercontent.com/5qH9f1jHP0W6yez4_DbqG7OUA5hw6LIe3pb56CG7xr9SX7jf8_f4WGHHHTOWSyWwT0ic",
+      "slug": "hit2",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "콜 오브 드래곤즈": {
+      "appIds": {
+        "android": "com.farlightgames.samo.gp.kr",
+        "ios": 6450363898
+      },
+      "aliases": [],
+      "developer": "FARLIGHT",
+      "icon": "https://play-lh.googleusercontent.com/_RfXWqDkmCbpur-TDq-bkfIlu6sXt5noe9bk9lij53cfr7u8ySbwUjilvlWSsWTgIJs",
+      "slug": "콜-오브-드래곤즈",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "주디: 내가 찍은 도트로 아바타 꾸미기": {
+      "appIds": {
+        "ios": "1619917485",
+        "android": "com.joodyrn"
+      },
+      "aliases": [],
+      "developer": "Consalad, Inc",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/02/fc/f5/02fcf551-c3c5-87b9-d3cd-571e13c46547/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.png",
+      "slug": "주디-내가-찍은-도트로-아바타-꾸미기",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Rhythm Hive": {
+      "appIds": {
+        "ios": "1537758048",
+        "android": "com.superb.rhv"
+      },
+      "aliases": [],
+      "developer": "DRIMAGE Co., Ltd",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/0f/d6/fa0fd694-2154-d3e3-7209-e1ddd6af0d4d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "rhythm-hive",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "귀판오분전-444뽑기 증정": {
+      "appIds": {
+        "android": "com.ygjszkr.google"
+      },
+      "aliases": [],
+      "developer": "Joy Nice Games",
+      "icon": "https://play-lh.googleusercontent.com/Nn9dE2fH-NyN5i1nUQNu5ornudxCyhfi8xzRyHLnEzHlFtN_VMfVdoSaovMiqKFIM0k",
+      "slug": "귀판오분전-444뽑기-증정",
+      "platforms": [
+        "android"
+      ]
+    },
+    "로얄 크로니클": {
+      "appIds": {
+        "android": "kr.game.sincetimes.mabif.google"
+      },
+      "aliases": [],
+      "developer": "Metapolitan Games Limited",
+      "icon": "https://play-lh.googleusercontent.com/EO7coWi0ccUQ-KT7osyzGDiFtWB49h7Xs77Z_gsFFd0afubf-oNKyOQsc-Q-lgHEUzzpqlGb0BZuto_xmDfw9Q",
+      "slug": "로얄-크로니클",
+      "platforms": [
+        "android"
+      ]
+    },
+    "심리 페인트 월드": {
+      "appIds": {
+        "android": "com.paintw.shinri"
+      },
+      "aliases": [],
+      "developer": "DownTownApps",
+      "icon": "https://play-lh.googleusercontent.com/-eJ3X_PqPt5fD99EQdfhfJ_hvRdBeWYQiSlIq1NPm8nUrOXrhZpWL6li78r3jx2QLg",
+      "slug": "심리-페인트-월드",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Word Solitaire Now!": {
+      "appIds": {
+        "android": "com.losttemplegames.wordsolitaire",
+        "ios": 6753799160
+      },
+      "aliases": [],
+      "developer": "LOST TEMPLE GAMES",
+      "icon": "https://play-lh.googleusercontent.com/DPnyPo_2u5wgMEYacR6qpRMdT6qjNvdqYTNnuHkN1tyvSIpOsIKgQF6t_kbBRxCgrv4EvsrF3cbqX2tWcTPiZV4",
+      "slug": "word-solitaire-now",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Woodoku Blast": {
+      "appIds": {
+        "android": "com.tripledot.blockbash",
+        "ios": 6608975929
+      },
+      "aliases": [],
+      "developer": "Tripledot Studios Limited",
+      "icon": "https://play-lh.googleusercontent.com/3zYytd77MXlmtvwNZW_L0icufZPK2EIVBpa-asmPeVTaWdZvnL_ERldsqM_ujX6PfclG4A5jbvC9w1vZk6MDpQ",
+      "slug": "woodoku-blast",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Raft": {
+      "appIds": {
+        "steam": "648800"
+      },
+      "aliases": [],
+      "developer": "Redbeet Interactive",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011",
+      "slug": "raft",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-20",
-  "totalGames": 608
+  "lastUpdated": "2025-12-21",
+  "totalGames": 619
 }
