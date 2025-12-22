@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.a1gamesstudio.berserker",
+        "android": "com.ryonggame.soulhunteridle",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4605,7 +4605,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
@@ -7392,7 +7392,7 @@
     "Sled Surfers - 슬로프 어드벤처": {
       "appIds": {
         "android": "com.sled.surfers.game",
-        "ios": 6744975195
+        "ios": "6744975195"
       },
       "aliases": [
         "Sled Surfers  - 슬로프 어드벤처"
@@ -9111,8 +9111,228 @@
       "platforms": [
         "steam"
       ]
+    },
+    "에보니 - 왕의 귀환": {
+      "appIds": {
+        "android": "com.topgamesinc.evony",
+        "ios": 1098157959
+      },
+      "aliases": [],
+      "developer": "TG Inc.",
+      "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
+      "slug": "에보니-왕의-귀환",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "위 베어 베어스 더 퍼즐": {
+      "appIds": {
+        "android": "com.sundaytoz.kakao.wbb",
+        "ios": 1311102174
+      },
+      "aliases": [],
+      "developer": "Wemade Play Co.,Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/L0j49yfNguTY_Xf5-xKRRrGdZZ15N-x8Lr5-xqb_ave67W2xUy1wIO9xClI4ivPhf6s",
+      "slug": "위-베어-베어스-더-퍼즐",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "랑그릿사": {
+      "appIds": {
+        "android": "com.zlongame.kr.langrisser",
+        "ios": 1450127722
+      },
+      "aliases": [],
+      "developer": "ZlongGames",
+      "icon": "https://play-lh.googleusercontent.com/7MrJ1kVcJab9YnzZ5vOrFNQrhfQPBdBLLZ5qL9c9QyU5CfkS5vttITIfZcwmXwlJ00Jf2cpJLxPLvsOjceC7dw",
+      "slug": "랑그릿사",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "카오스 제로 나이트메어": {
+      "appIds": {
+        "android": "com.smilegate.chaoszero.stove.google",
+        "ios": 6502326151
+      },
+      "aliases": [],
+      "developer": "Smilegate Holdings, Inc",
+      "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
+      "slug": "카오스-제로-나이트메어",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "드래곤 엠파이어 : 전략 매니지먼트": {
+      "appIds": {
+        "android": "com.ndreamgames.wod"
+      },
+      "aliases": [],
+      "developer": "NDREAM Corporation",
+      "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
+      "slug": "드래곤-엠파이어-전략-매니지먼트",
+      "platforms": [
+        "android"
+      ]
+    },
+    "쿠노이치 키우기": {
+      "appIds": {
+        "ios": "6752278595",
+        "android": "com.dwgames.assassinrpg2"
+      },
+      "aliases": [],
+      "developer": "DWG",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/04/e9/1c/04e91c93-f29e-3e22-b513-c04e1cd0e889/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "쿠노이치-키우기",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "공허의 방문자": {
+      "appIds": {
+        "android": "com.ghbmjkr.gp"
+      },
+      "aliases": [],
+      "developer": "D Link",
+      "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
+      "slug": "공허의-방문자",
+      "platforms": [
+        "android"
+      ]
+    },
+    "픽셀 아트 - 숫자 색칠게임 책": {
+      "appIds": {
+        "android": "com.europosit.pixelcoloring"
+      },
+      "aliases": [],
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
+      "slug": "픽셀-아트-숫자-색칠게임-책",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Save the Doge": {
+      "appIds": {
+        "android": "com.miracle.savethedoge.an"
+      },
+      "aliases": [],
+      "developer": "WONDER GROUP",
+      "icon": "https://play-lh.googleusercontent.com/7uLCb0jlSOtoXzEzvRBOneP3s0ewpYT-H0s4flnS8AqZRIQ4N_TaSQ_adMgKNtbfxfI",
+      "slug": "save-the-doge",
+      "platforms": [
+        "android"
+      ]
+    },
+    "뉴포리아: 서바이벌": {
+      "appIds": {
+        "android": "com.Eclipse.Neuphoria",
+        "ios": 6444274471
+      },
+      "aliases": [],
+      "developer": "AIMED",
+      "icon": "https://play-lh.googleusercontent.com/3b8UjwQWEKtOkO9FbxOnMmUWm2jrhlkUEL5twAuTCEp2m0QpXl6rvw4jpAC6G92cMwt_cJBn_NVLDCHnMAlFOQ",
+      "slug": "뉴포리아-서바이벌",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Save The Pets": {
+      "appIds": {
+        "android": "com.bravestars.savethedog.drawgame",
+        "ios": 6449223149
+      },
+      "aliases": [],
+      "developer": "Bravestars Games",
+      "icon": "https://play-lh.googleusercontent.com/tTRf-6_Zz2vtbjOH-1un0oS6O7vY7KNOqPZJx2bFKYXrswM6q7G-B4tPABIp5EZY3JI",
+      "slug": "save-the-pets",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "브릿지 레이스 (Bridge Race)": {
+      "appIds": {
+        "android": "com.Garawell.BridgeRace"
+      },
+      "aliases": [],
+      "developer": "Supersonic Studios LTD",
+      "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
+      "slug": "브릿지-레이스-bridge-race",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Draw Action: Freestyle Fight": {
+      "appIds": {
+        "android": "com.kayac.DrawFight",
+        "ios": 6444147536
+      },
+      "aliases": [],
+      "developer": "KAYAC Inc.",
+      "icon": "https://play-lh.googleusercontent.com/y_NvzzYOl_sdsiRkE9hucNkO5GLTfBnnntZfPceHlqcCv6N-SzjVdAR9ROEmSxTGRPs",
+      "slug": "draw-action-freestyle-fight",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "IdleOn - The Idle RPG": {
+      "appIds": {
+        "steam": "1476970"
+      },
+      "aliases": [],
+      "developer": "Lavaflame2",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1476970/header_koreana.jpg?t=1764696801",
+      "slug": "idleon-the-idle-rpg",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Fallout 4": {
+      "appIds": {
+        "steam": "377160"
+      },
+      "aliases": [],
+      "developer": "Bethesda Game Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1764687456",
+      "slug": "fallout-4",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "MIR4": {
+      "appIds": {
+        "steam": "1623660"
+      },
+      "aliases": [],
+      "developer": "Wemade Next",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623660/header.jpg?t=1720200587",
+      "slug": "mir4",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Oxygen Not Included": {
+      "appIds": {
+        "steam": "457140"
+      },
+      "aliases": [],
+      "developer": "Klei Entertainment",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1766014410",
+      "slug": "oxygen-not-included",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-21",
-  "totalGames": 608
+  "lastUpdated": "2025-12-22",
+  "totalGames": 625
 }

@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-a1gamesstudio-berserker",
+    "slug": "com-ryonggame-soulhunteridle",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -1068,27 +1068,6 @@
     "hasData": true
   },
   {
-    "name": "Age of Origins:Tower Defense",
-    "slug": "com-camelgames-aoz-arabic",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/93/d2/6193d21e-dcdb-93e7-7f05-8f7ffede6b72/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [
-      "Age of Origins - حرب الزومبي",
-      "Age of Origins---ゾンビ・末日戦記",
-      "에이지 오브 제트: 타워 디펜스",
-      "Age of Origins",
-      "에이지오브오리진",
-      "에이지 오브 오리진"
-    ],
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "developer": "Hong Kong Ke Mo software Co., Limited",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "타일 서바이벌",
     "slug": "com-funplus-ts-global",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/48/b8/6048b8d2-5f8f-2d1c-0f0f-c2aed6145bff/FPX_AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -1157,7 +1136,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -1201,7 +1180,7 @@
       "android"
     ],
     "developer": "POPJOY (H.K.) LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -1273,7 +1252,7 @@
       "android"
     ],
     "developer": "Highbrow",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -1595,22 +1574,6 @@
     "hasData": true
   },
   {
-    "name": "Screwdom : 나사와 볼트 퍼즐",
-    "slug": "com-moyo-hitnails",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/ca/e5/67cae5f6-71be-8926-d507-38006332eb8f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [
-      "Screwdom"
-    ],
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "developer": "Zego Global Pte Ltd",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "열혈강호: 귀환",
     "slug": "com-rxjhkr-an",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/b6/d7/01b6d750-5de2-20dd-7c47-bb36699150bd/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/100x100bb.png",
@@ -1836,26 +1799,6 @@
     "hasData": true
   },
   {
-    "name": "카오스 제로 나이트메어",
-    "slug": "com-smilegate-chaoszero-stove-google",
-    "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
-    "aliases": [
-      "カオスゼロナイトメア",
-      "Chaos Zero Nightmare",
-      "卡厄思夢境",
-      "카오스제로",
-      "Chaos Zero"
-    ],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "Smilegate Holdings, Inc",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "트릭컬 리바이브",
     "slug": "com-epidgames-trickcalrevive",
     "icon": "https://play-lh.googleusercontent.com/OCiuBv70Dnuw9wcGet3EtTUF2nEkS1vhYYkvOahe9-MmKg6EhxGkf-9ZVxnWIJXflQSmfOIjTcaSbwJSJyuzHA",
@@ -1941,25 +1884,6 @@
       "ios"
     ],
     "developer": "SPGFun",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
-    "name": "맛있는 여행: 합성 게임",
-    "slug": "com-fatmerge-global",
-    "icon": "https://play-lh.googleusercontent.com/M-uVn43_7vPmmiqtHQDtG0bZNTJ03hr_ls60CkzsVMzkqkA2lY0TQHa0kIZBqwXrtyi1j5fW7Yg-AjABY-8G",
-    "aliases": [
-      "グルメ・ジャーニー",
-      "Tasty Travels: Merge Game",
-      "푸드 앤 트레블: 합성 게임",
-      "食光旅行"
-    ],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "Century Games PTE. LTD.",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
@@ -2511,7 +2435,10 @@
       "Age of Origins---ゾンビ・末日戦記",
       "Age of Origins",
       "Age of Origins:Tower Defense",
-      "에이지오브제트"
+      "에이지오브제트",
+      "Age of Origins - حرب الزومبي",
+      "에이지오브오리진",
+      "에이지 오브 오리진"
     ],
     "platforms": [
       "android",
@@ -2768,7 +2695,7 @@
       "ios"
     ],
     "developer": "주식회사 아이톡시",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2828,25 +2755,6 @@
       "ios"
     ],
     "developer": "IGG.COM",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
-    "name": "에보니 - 왕의 귀환",
-    "slug": "com-topgamesinc-evony",
-    "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
-    "aliases": [
-      "エボニー - 王の帰還",
-      "Evony: The King's Return",
-      "Evony",
-      "에보니"
-    ],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "TG Inc.",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
@@ -3329,7 +3237,7 @@
       "ios"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3607,19 +3515,6 @@
       "android"
     ],
     "developer": "AMOBEAR PTE. LTD",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
-    "name": "Arrows – Puzzle Escape",
-    "slug": "arrows-puzzle-escape",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/31/18/de3118f8-1772-b812-a4c5-3fba2e13c356/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
-    "platforms": [
-      "ios"
-    ],
-    "developer": "Lessmore UG (haftungsbeschränkt)",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
@@ -4178,7 +4073,9 @@
     "name": "사커 슈퍼스타 - 축구",
     "slug": "com-soccer-score-star",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/1b/0a/051b0a49-a3e1-f8f0-eaf9-48b5e7e94171/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "사커 슈퍼스타(Soccer Superstar)"
+    ],
     "platforms": [
       "ios",
       "android"
@@ -4323,7 +4220,9 @@
     "name": "단일 라인 블록 채우기 퍼즐 게임",
     "slug": "com-tfv-block-line-fill-puzzle",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/30/ec/6630eca0-aa04-117d-d28e-4aff14e315ec/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "단일 선 블록 채우기 퍼즐"
+    ],
     "platforms": [
       "ios",
       "android"
@@ -4357,7 +4256,7 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4475,7 +4374,9 @@
     "name": "Tangled Rope: Solve Puzzles!",
     "slug": "com-tangled-rope",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/f3/3b/9cf33ba3-52d0-6330-77a3-03f5f742d289/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "Tangled Rope: Twisted Puzzle"
+    ],
     "platforms": [
       "ios",
       "android"
@@ -4529,7 +4430,9 @@
     "name": "애로우즈 – 퍼즐 이스케이프 (Arrows)",
     "slug": "com-ecffri-arrows",
     "icon": "https://play-lh.googleusercontent.com/9jnLLNWl7ppLZSRxydZnu2rqfl7oxo876_SR_TcumZnpis7NgZXRV4-GvDNG3fKRa20",
-    "aliases": [],
+    "aliases": [
+      "Arrows – Puzzle Escape"
+    ],
     "platforms": [
       "android",
       "ios"
@@ -4786,7 +4689,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-whoyaho-tanghulu",
+    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -4854,7 +4757,7 @@
       "android"
     ],
     "developer": "Metagame.Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4870,20 +4773,6 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
-    "name": "단일 선 블록 채우기 퍼즐",
-    "slug": "com-tfv-block-line-fill-puzzle",
-    "icon": "https://play-lh.googleusercontent.com/cOBVrMmtEPbPVF3fqDuH-CItOAvg97LxlgfHZGEmoQWR5dxJyr0om_rkSozaiHwJA-T3",
-    "aliases": [],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "The Fashion Valley",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
@@ -4958,7 +4847,7 @@
       "ios"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5127,20 +5016,6 @@
     "hasData": true
   },
   {
-    "name": "사커 슈퍼스타(Soccer Superstar)",
-    "slug": "com-soccer-score-star",
-    "icon": "https://play-lh.googleusercontent.com/utNyP5-jVUjmuAzED5v2H-SbOisTOBjiu0FS2qeCJ7l40CEADbQxHxrGtmcurkXs5QJH",
-    "aliases": [],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "Real Freestyle Soccer",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
     "slug": "com-unicostudio-braintest",
     "icon": "https://play-lh.googleusercontent.com/L4-Oa6O8GV4I23JTmo-xKSjfyjowc0d2uGGfdScYkCTMk6ftxTwGowdAjgh2nOrJlEmI",
@@ -5167,7 +5042,7 @@
       "ios"
     ],
     "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5278,7 +5153,7 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5556,7 +5431,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5710,7 +5585,7 @@
       "ios"
     ],
     "developer": "SUPERBOX Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5723,7 +5598,7 @@
       "android"
     ],
     "developer": "JUMBO GAMES Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5763,7 +5638,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5777,7 +5652,7 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5912,20 +5787,6 @@
     "hasData": true
   },
   {
-    "name": "Tangled Rope: Twisted Puzzle",
-    "slug": "com-tangled-rope",
-    "icon": "https://play-lh.googleusercontent.com/1jpqeffHCzrcgDw2AWju0U2RtSl5nCGo7l5Hhs6aiiATkzrV1_qZ-inUrbBzfwB6JHggcuAs_n_kZN5cTAn9ig",
-    "aliases": [],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "NORDKAPP GAMES LIMITED",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "Kick the Buddy: 스트레스 해소 미니게임",
     "slug": "com-playgendary-kickthebuddy",
     "icon": "https://play-lh.googleusercontent.com/4zT9waZhwrqSCMVFBXCi7jSzjMRP9LMdR4ZylVTd4KRRBy0aK79-IZvQWawRTSb-CLE",
@@ -5966,7 +5827,7 @@
       "ios"
     ],
     "developer": "HungryStudio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5979,7 +5840,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6060,7 +5921,7 @@
       "ios"
     ],
     "developer": "Mobile Gaming Studios Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6115,7 +5976,7 @@
       "ios"
     ],
     "developer": "Fastone Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7086,7 +6947,7 @@
       "steam"
     ],
     "developer": "KURO GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": true,
     "hasData": true
   },
@@ -7397,9 +7258,13 @@
     "name": "I9: 인페르노 나인(19) - 세로형 RPG",
     "slug": "com-kr-firelite",
     "icon": "https://play-lh.googleusercontent.com/mXF7HtbUud3zSsdOzFkh-zKHE5G9n2nASkBz6-d4Fqt9wMHJkP3jniIjjcOQxFwuCWJCRLeJYrxKXBs2GbuxFg",
-    "aliases": [],
+    "aliases": [
+      "I9: 인페르노 나인(19)",
+      "I9: 인페르노 나인"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Leniu Technology Co., Limited",
     "hasRankings": true,
@@ -7444,7 +7309,7 @@
       "ios"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7573,19 +7438,6 @@
     "hasData": true
   },
   {
-    "name": "Woodturning 3D",
-    "slug": "woodturning-3d",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
-    "platforms": [
-      "ios"
-    ],
-    "developer": "Voodoo",
-    "hasRankings": false,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "주차의 달인 4",
     "slug": "com-ansangha-drparking4",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/93/53/87/935387a0-e5d0-db61-d55a-f953d4273073/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/100x100bb.png",
@@ -7629,9 +7481,12 @@
     "name": "돼지 키우는 중입니다 : 국내산",
     "slug": "com-truesoft-superpigidle",
     "icon": "https://play-lh.googleusercontent.com/nwaC9smalAARJI_3UAoWPTijULoLEv3hXvrmEy2elVdnG4itE8yT3RBoobb9s5Kjl7JdiSqYBEXk196RZz0X",
-    "aliases": [],
+    "aliases": [
+      "돼지키우는중입니다"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "TRSOFT",
     "hasRankings": true,
@@ -7642,9 +7497,12 @@
     "name": "린M:잊혀진 유산",
     "slug": "com-ujoygp-smdl",
     "icon": "https://play-lh.googleusercontent.com/ML2BoYMUTEO58nzKblMMzUTk8V1jUvfzXQtcIDSolx0HqdFYGUOaT9sVgxhE02WE8VrdHHbqH8RFnzhZ0MmB9w",
-    "aliases": [],
+    "aliases": [
+      "린M"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Ujoy Games",
     "hasRankings": true,
@@ -7660,7 +7518,7 @@
       "android"
     ],
     "developer": "Philip Fowler Labs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7681,9 +7539,12 @@
     "name": "헌티드 머지: 괴담",
     "slug": "com-whalejoy-horrorstory-gp",
     "icon": "https://play-lh.googleusercontent.com/wkdnu8OxzFFCnSZw4QO2DczjcybhyW8GOMDWh4p2NG-qXX10MD3CIZHgL2vK3mWjqg",
-    "aliases": [],
+    "aliases": [
+      "Haunted Merge: Horror Story"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "WhaleJoy Game Limited",
     "hasRankings": true,
@@ -7721,12 +7582,15 @@
     "name": "Color Match",
     "slug": "com-jacobvanhaag-colormatch",
     "icon": "https://play-lh.googleusercontent.com/JYmlH46F5tL2S7lZ8JvlAxAz68Ei0489T13WJGb7ZFFZ3Rtif1r3I0k9G7d1E1NQQg",
-    "aliases": [],
+    "aliases": [
+      "Coloring Match"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7768,7 +7632,7 @@
       "ios"
     ],
     "developer": "HungryStudio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7848,9 +7712,12 @@
     "name": "드로우 아레나 (Draw Arena)",
     "slug": "com-kadka-battle-draw",
     "icon": "https://play-lh.googleusercontent.com/8T3kunZsZzVBsRxHQGW8Ls8LZJFbgrNsv28Hd-5Z2nFSAM51tQsAO5YdtZwAIMRB1_o",
-    "aliases": [],
+    "aliases": [
+      "Draw Arena"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": false,
@@ -7902,12 +7769,15 @@
     "name": "Supreme Duelist Stickman",
     "slug": "com-neurononfire-supremeduelist",
     "icon": "https://play-lh.googleusercontent.com/iRq0R9mN7eGyVENIPDk5muu76VxawBAIkFAYFqauJTFNIvUxzD1_M33HNX4GE8Qk0WqY",
-    "aliases": [],
+    "aliases": [
+      "Supreme Duelist"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8486,11 +8356,14 @@
   },
   {
     "name": "소녀총사 키우기",
-    "slug": "소녀총사-키우기",
+    "slug": "com-act7ent-musket",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/7e/b3/577eb375-7d4e-7564-3550-0f0a265144bf/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "소녀총사 키우기 : 도트 방치형 RPG"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Act Seven Entertainment Inc.",
     "hasRankings": true,
@@ -8707,11 +8580,14 @@
   },
   {
     "name": "미친 타워가 되었다",
-    "slug": "미친-타워가-되었다",
+    "slug": "com-v2r-tower-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/46/b7/9d46b708-5df7-5338-2a0e-189d17d32673/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "미친 타워가 되었다:노빠구 RPG"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "V2R",
     "hasRankings": true,
@@ -8755,7 +8631,7 @@
       "android"
     ],
     "developer": "Gene Eu",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8791,9 +8667,12 @@
     "name": "Buildit",
     "slug": "com-newbeat-gardecor",
     "icon": "https://play-lh.googleusercontent.com/qYLdXEcN2NTk8DOIm1p5UnofHa_ZSmT7Sgw9kRNQfbgJ5PTTrg0OOhMVL2yltwRCD4s",
-    "aliases": [],
+    "aliases": [
+      "Buildit - Chill Brick Game"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "MINIMAX PTE. LTD.",
     "hasRankings": false,
@@ -8855,11 +8734,14 @@
   },
   {
     "name": "컴투스프로야구 for 매니저",
-    "slug": "컴투스프로야구-for-매니저",
+    "slug": "com-com2us-kbomanager-normal2-freefull-google-global-android-common",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/aa/9b/2aaa9b6f-2376-9114-31c9-3eb72c4200f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "컴투스프로야구매니저"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Com2uS Corp.",
     "hasRankings": false,
@@ -8914,9 +8796,12 @@
     "name": "포켓 정렬 (Pocket Sort): 동전 병합 퍼즐",
     "slug": "com-pocket-sort-coin-puzzle-game",
     "icon": "https://play-lh.googleusercontent.com/blnQgZLrDseT5XsOOtloqVfgMqHLDgCMOTaqei6q9brw_D182qXvj6ahfp9Sj0FF8dlP36T7xtg42ODz5IAWlQ",
-    "aliases": [],
+    "aliases": [
+      "Pocket Sort: Coin Merge Puzzle"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -8958,7 +8843,7 @@
       "android"
     ],
     "developer": "Mindful Daily Puzzles",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9024,7 +8909,7 @@
       "android"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9095,7 +8980,7 @@
       "ios"
     ],
     "developer": "Lessmore UG",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9123,7 +9008,7 @@
       "ios"
     ],
     "developer": "Higgs Gaming",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9131,9 +9016,12 @@
     "name": "Jade Mahjong",
     "slug": "com-wonderful-mahjong",
     "icon": "https://play-lh.googleusercontent.com/AeUlLrz1-tTbkOMT_dlthT9BjZyvwMzg_bdziYgvbxpBIzL47VRKpYepkUaI8itqS_CEYXh1huWpXZvLLvdMGA",
-    "aliases": [],
+    "aliases": [
+      "옥 마작 (Jade Mahjong)"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Wonderful  Studio",
     "hasRankings": true,
@@ -9144,9 +9032,13 @@
     "name": "Screwdom 3D",
     "slug": "com-ig-screwdom",
     "icon": "https://play-lh.googleusercontent.com/lrGM85RjRRh4pax0P6JbDVzXF7XeJA9PSMTpRujqqDhVgiOSInZ1l3sg0uBURw9INs8",
-    "aliases": [],
+    "aliases": [
+      "Screwdom : 나사와 볼트 퍼즐",
+      "Screwdom"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "iKame Games - Zego Studio",
     "hasRankings": true,
@@ -9169,11 +9061,14 @@
   },
   {
     "name": "귀판오분전",
-    "slug": "귀판오분전",
+    "slug": "com-ygjszkr-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/9a/36/509a3658-ef6d-77c2-341f-7d817f030e46/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "귀판오분전-444뽑기 증정"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Joy Net Games",
     "hasRankings": true,
@@ -9251,11 +9146,14 @@
   },
   {
     "name": "탈출게임 1914",
-    "slug": "탈출게임-1914",
+    "slug": "org-unity-jamms-monet",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/76/26/c97626bb-89ff-7b59-646b-4922ea807ee2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "탈출 게임 1914 ~지베르니 정원에서 탈출~"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Jammsworks Inc.",
     "hasRankings": true,
@@ -9284,7 +9182,7 @@
       "android"
     ],
     "developer": "GRAVITY Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9337,7 +9235,7 @@
       "android"
     ],
     "developer": "Stormborn",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9345,9 +9243,12 @@
     "name": "아이들 무기  상점(Idle Weapon Shop)",
     "slug": "com-hg-idleweaponshoptycoon-android",
     "icon": "https://play-lh.googleusercontent.com/B_Alc6SJdL2sLDcWSvvvo6DJa86uJdvnTisUg-Iz3CunlvnDxsRr7944qLFrGrsr-sdiwfR1sI71iIB4Istz",
-    "aliases": [],
+    "aliases": [
+      "아이들 무기 상점"
+    ],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Hello Games Team",
     "hasRankings": false,
@@ -9364,7 +9265,7 @@
       "ios"
     ],
     "developer": "Tap Color Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9404,7 +9305,7 @@
       "android"
     ],
     "developer": "Electronic Arts",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9432,7 +9333,7 @@
       "ios"
     ],
     "developer": "FARLIGHT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9446,7 +9347,7 @@
       "android"
     ],
     "developer": "Consalad, Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9460,20 +9361,7 @@
       "android"
     ],
     "developer": "DRIMAGE Co., Ltd",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
-    "name": "귀판오분전-444뽑기 증정",
-    "slug": "com-ygjszkr-google",
-    "icon": "https://play-lh.googleusercontent.com/Nn9dE2fH-NyN5i1nUQNu5ornudxCyhfi8xzRyHLnEzHlFtN_VMfVdoSaovMiqKFIM0k",
-    "aliases": [],
-    "platforms": [
-      "android"
-    ],
-    "developer": "Joy Nice Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9486,7 +9374,7 @@
       "android"
     ],
     "developer": "Metapolitan Games Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9540,6 +9428,235 @@
       "steam"
     ],
     "developer": "Redbeet Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "에보니 - 왕의 귀환",
+    "slug": "com-topgamesinc-evony",
+    "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "TG Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "위 베어 베어스 더 퍼즐",
+    "slug": "com-sundaytoz-kakao-wbb",
+    "icon": "https://play-lh.googleusercontent.com/L0j49yfNguTY_Xf5-xKRRrGdZZ15N-x8Lr5-xqb_ave67W2xUy1wIO9xClI4ivPhf6s",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Wemade Play Co.,Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "랑그릿사",
+    "slug": "com-zlongame-kr-langrisser",
+    "icon": "https://play-lh.googleusercontent.com/7MrJ1kVcJab9YnzZ5vOrFNQrhfQPBdBLLZ5qL9c9QyU5CfkS5vttITIfZcwmXwlJ00Jf2cpJLxPLvsOjceC7dw",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "ZlongGames",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "카오스 제로 나이트메어",
+    "slug": "com-smilegate-chaoszero-stove-google",
+    "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Smilegate Holdings, Inc",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "드래곤 엠파이어 : 전략 매니지먼트",
+    "slug": "com-ndreamgames-wod",
+    "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "NDREAM Corporation",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "쿠노이치 키우기",
+    "slug": "com-dwgames-assassinrpg2",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/04/e9/1c/04e91c93-f29e-3e22-b513-c04e1cd0e889/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "DWG",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "공허의 방문자",
+    "slug": "com-ghbmjkr-gp",
+    "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "D Link",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "픽셀 아트 - 숫자 색칠게임 책",
+    "slug": "com-europosit-pixelcoloring",
+    "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Easybrain",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Save the Doge",
+    "slug": "com-miracle-savethedoge-an",
+    "icon": "https://play-lh.googleusercontent.com/7uLCb0jlSOtoXzEzvRBOneP3s0ewpYT-H0s4flnS8AqZRIQ4N_TaSQ_adMgKNtbfxfI",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "WONDER GROUP",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "뉴포리아: 서바이벌",
+    "slug": "com-eclipse-neuphoria",
+    "icon": "https://play-lh.googleusercontent.com/3b8UjwQWEKtOkO9FbxOnMmUWm2jrhlkUEL5twAuTCEp2m0QpXl6rvw4jpAC6G92cMwt_cJBn_NVLDCHnMAlFOQ",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "AIMED",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Save The Pets",
+    "slug": "com-bravestars-savethedog-drawgame",
+    "icon": "https://play-lh.googleusercontent.com/tTRf-6_Zz2vtbjOH-1un0oS6O7vY7KNOqPZJx2bFKYXrswM6q7G-B4tPABIp5EZY3JI",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Bravestars Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "브릿지 레이스 (Bridge Race)",
+    "slug": "com-garawell-bridgerace",
+    "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Supersonic Studios LTD",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Draw Action: Freestyle Fight",
+    "slug": "com-kayac-drawfight",
+    "icon": "https://play-lh.googleusercontent.com/y_NvzzYOl_sdsiRkE9hucNkO5GLTfBnnntZfPceHlqcCv6N-SzjVdAR9ROEmSxTGRPs",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "KAYAC Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "IdleOn - The Idle RPG",
+    "slug": "idleon-the-idle-rpg",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1476970/header_koreana.jpg?t=1764696801",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Lavaflame2",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Fallout 4",
+    "slug": "fallout-4",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1764687456",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Bethesda Game Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "MIR4",
+    "slug": "mir4",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623660/header.jpg?t=1720200587",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Wemade Next",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Oxygen Not Included",
+    "slug": "oxygen-not-included",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1766014410",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Klei Entertainment",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true

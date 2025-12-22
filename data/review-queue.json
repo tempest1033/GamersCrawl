@@ -1,5 +1,353 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "title": "건틀렛: 방치형 액션 RPG",
+      "status": "matched",
+      "appIds": {
+        "ios": "6748525811",
+        "android": "com.ryonggame.soulhunteridle",
+        "android:kr": "com.metaboneent.gauntletrpg",
+        "ios:kr": "6446516059"
+      },
+      "developer": "Game Duo Co.,Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "미친 타워가 되었다:노빠구 RPG",
+          "appId": "com.v2r.tower.google"
+        },
+        {
+          "title": "다크타워:전략 배틀 RPG",
+          "appId": "6748525811"
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:15.251Z"
+    },
+    {
+      "title": "에보니 - 왕의 귀환",
+      "status": "matched",
+      "appIds": {
+        "android": "com.topgamesinc.evony",
+        "ios": 1098157959
+      },
+      "developer": "TG Inc.",
+      "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
+      "searchResults": [
+        {
+          "title": "에보니 - 왕의 귀환",
+          "appId": 1098157959
+        },
+        {
+          "title": "로얄 매치 (Royal Match)",
+          "appId": 1482155847
+        },
+        {
+          "title": "로얄 킹덤 (Royal Kingdom)",
+          "appId": 1606549505
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:08.892Z"
+    },
+    {
+      "title": "위 베어 베어스 더 퍼즐",
+      "status": "matched",
+      "appIds": {
+        "android": "com.sundaytoz.kakao.wbb",
+        "ios": 1311102174
+      },
+      "developer": "Wemade Play Co.,Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/L0j49yfNguTY_Xf5-xKRRrGdZZ15N-x8Lr5-xqb_ave67W2xUy1wIO9xClI4ivPhf6s",
+      "searchResults": [
+        {
+          "title": "위 베어 베어스 더 퍼즐",
+          "appId": 1311102174
+        },
+        {
+          "title": "헬로키티 프렌즈!",
+          "appId": 1321282027
+        },
+        {
+          "title": "직소 퍼즐: 퍼즐 게임",
+          "appId": 1324604053
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:13.819Z"
+    },
+    {
+      "title": "랑그릿사",
+      "status": "matched",
+      "appIds": {
+        "android": "com.zlongame.kr.langrisser",
+        "ios": 1450127722
+      },
+      "developer": "ZlongGames",
+      "icon": "https://play-lh.googleusercontent.com/7MrJ1kVcJab9YnzZ5vOrFNQrhfQPBdBLLZ5qL9c9QyU5CfkS5vttITIfZcwmXwlJ00Jf2cpJLxPLvsOjceC7dw",
+      "searchResults": [
+        {
+          "title": "랑그릿사",
+          "appId": 1450127722
+        },
+        {
+          "title": "옥토패스 트래블러: 대륙의 패자",
+          "appId": 6453475040
+        },
+        {
+          "title": "소드 오브 콘발라리아",
+          "appId": 6449961207
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:14.321Z"
+    },
+    {
+      "title": "카오스 제로 나이트메어",
+      "status": "matched",
+      "appIds": {
+        "android": "com.smilegate.chaoszero.stove.google",
+        "ios": 6502326151
+      },
+      "developer": "Smilegate Holdings, Inc",
+      "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
+      "searchResults": [
+        {
+          "title": "카오스 제로 나이트메어",
+          "appId": 6502326151
+        },
+        {
+          "title": "소녀전선2: 망명",
+          "appId": 6499011827
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:14.657Z"
+    },
+    {
+      "title": "드래곤 엠파이어 : 전략 매니지먼트",
+      "status": "single",
+      "appIds": {
+        "android": "com.ndreamgames.wod"
+      },
+      "developer": "NDREAM Corporation",
+      "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
+      "searchResults": [],
+      "addedAt": "2025-12-22T09:40:15.150Z"
+    },
+    {
+      "title": "쿠노이치 키우기",
+      "status": "matched",
+      "appIds": {
+        "ios": "6752278595",
+        "android": "com.dwgames.assassinrpg2"
+      },
+      "developer": "DWG",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/04/e9/1c/04e91c93-f29e-3e22-b513-c04e1cd0e889/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "쿠노이치 키우기",
+          "appId": "com.dwgames.assassinrpg2"
+        },
+        {
+          "title": "튀김 키우기",
+          "appId": "com.puropuro.FriedStore"
+        },
+        {
+          "title": "관우 키우기",
+          "appId": "com.kingdom.gwanyuIdle"
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:16.295Z"
+    },
+    {
+      "title": "Sled Surfers - 슬로프 어드벤처",
+      "status": "matched",
+      "appIds": {
+        "android": "com.sled.surfers.game",
+        "ios": "6744975195"
+      },
+      "developer": "CrazyLabs LTD",
+      "icon": "https://play-lh.googleusercontent.com/oUlrDkAC0L4cqaIoyFuHsLBwfpK5ZWDO2RqDUuxCx2tz9y5LiWnT4p3zXaFN0mLPbMuK5iQrk1v-dOLB_h37",
+      "searchResults": [
+        {
+          "title": "Sled Surfers  - 슬로프 어드벤처",
+          "appId": "com.sled.surfers.game"
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:21.209Z"
+    },
+    {
+      "title": "공허의 방문자",
+      "status": "single",
+      "appIds": {
+        "android": "com.ghbmjkr.gp"
+      },
+      "developer": "D Link",
+      "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
+      "searchResults": [],
+      "addedAt": "2025-12-22T09:40:29.303Z"
+    },
+    {
+      "title": "스킨케어 타임: 메이크오버 ASMR",
+      "status": "matched",
+      "appIds": {
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "ios": 6738948332
+      },
+      "developer": "FALCON GAME",
+      "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
+      "searchResults": [
+        {
+          "title": "스킨케어 타임: 메이크오버 ASMR",
+          "appId": 6738948332
+        },
+        {
+          "title": "Makeup ASMR: Makeover Story",
+          "appId": 6465175605
+        },
+        {
+          "title": "SatisCare: 깔끔한 ASMR 게임",
+          "appId": 6742741718
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:30.045Z"
+    },
+    {
+      "title": "픽셀 아트 - 숫자 색칠게임 책",
+      "status": "single",
+      "appIds": {
+        "android": "com.europosit.pixelcoloring"
+      },
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
+      "searchResults": [
+        {
+          "title": "UNICORN 유니콘 픽스아트 그림그리기 게임",
+          "appId": 1293646758
+        },
+        {
+          "title": "Happy Color® – 컬러링북, 숫자 색칠 게임",
+          "appId": 1407852246
+        },
+        {
+          "title": "3D 픽셀아트 - 숫자 색칠 책",
+          "appId": 1334547913
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:34.497Z"
+    },
+    {
+      "title": "Save the Doge",
+      "status": "single",
+      "appIds": {
+        "android": "com.miracle.savethedoge.an"
+      },
+      "developer": "WONDER GROUP",
+      "icon": "https://play-lh.googleusercontent.com/7uLCb0jlSOtoXzEzvRBOneP3s0ewpYT-H0s4flnS8AqZRIQ4N_TaSQ_adMgKNtbfxfI",
+      "searchResults": [
+        {
+          "title": "Save The Dog - Dog Escape",
+          "appId": 1635971989
+        },
+        {
+          "title": "Save The Doge: Rescue Dog Game",
+          "appId": 6468571577
+        },
+        {
+          "title": "Save the doggy's head-plz",
+          "appId": 6444181350
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:34.796Z"
+    },
+    {
+      "title": "뉴포리아: 서바이벌",
+      "status": "matched",
+      "appIds": {
+        "android": "com.Eclipse.Neuphoria",
+        "ios": 6444274471
+      },
+      "developer": "AIMED",
+      "icon": "https://play-lh.googleusercontent.com/3b8UjwQWEKtOkO9FbxOnMmUWm2jrhlkUEL5twAuTCEp2m0QpXl6rvw4jpAC6G92cMwt_cJBn_NVLDCHnMAlFOQ",
+      "searchResults": [
+        {
+          "title": "뉴포리아: 서바이벌",
+          "appId": 6444274471
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:35.299Z"
+    },
+    {
+      "title": "Save The Pets",
+      "status": "matched",
+      "appIds": {
+        "android": "com.bravestars.savethedog.drawgame",
+        "ios": 6449223149
+      },
+      "developer": "Bravestars Games",
+      "icon": "https://play-lh.googleusercontent.com/tTRf-6_Zz2vtbjOH-1un0oS6O7vY7KNOqPZJx2bFKYXrswM6q7G-B4tPABIp5EZY3JI",
+      "searchResults": [
+        {
+          "title": "Save The Pets",
+          "appId": 6449223149
+        },
+        {
+          "title": "Save The Pets: Save Dog",
+          "appId": 6443538544
+        },
+        {
+          "title": "Save My Doggy - Dog Rescue",
+          "appId": 1638262763
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:36.368Z"
+    },
+    {
+      "title": "브릿지 레이스 (Bridge Race)",
+      "status": "single",
+      "appIds": {
+        "android": "com.Garawell.BridgeRace"
+      },
+      "developer": "Supersonic Studios LTD",
+      "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
+      "searchResults": [
+        {
+          "title": "Bridge Race",
+          "appId": 1543845882
+        },
+        {
+          "title": "빌드마스터: 브릿지 레이스",
+          "appId": 1614358511
+        },
+        {
+          "title": "Bridge Race: Stack Stair Run",
+          "appId": 1642296100
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:37.148Z"
+    },
+    {
+      "title": "Draw Action: Freestyle Fight",
+      "status": "matched",
+      "appIds": {
+        "android": "com.kayac.DrawFight",
+        "ios": 6444147536
+      },
+      "developer": "KAYAC Inc.",
+      "icon": "https://play-lh.googleusercontent.com/y_NvzzYOl_sdsiRkE9hucNkO5GLTfBnnntZfPceHlqcCv6N-SzjVdAR9ROEmSxTGRPs",
+      "searchResults": [
+        {
+          "title": "Draw Action: Freestyle Fight",
+          "appId": 6444147536
+        },
+        {
+          "title": "Draw Hero Action",
+          "appId": 6504292963
+        },
+        {
+          "title": "Draw Joust!",
+          "appId": 1497532365
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:37.746Z"
+    }
+  ],
   "approved": [],
   "rejected": []
 }
