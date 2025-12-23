@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4605,7 +4605,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -9331,8 +9331,56 @@
       "platforms": [
         "steam"
       ]
+    },
+    "갓오브하이스쿨 X 신의탑": {
+      "appIds": {
+        "ios": "1026748340"
+      },
+      "aliases": [],
+      "developer": "WONCOMZ.INC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "갓오브하이스쿨-x-신의탑",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "로열 쿠킹: 요리 & 식당 게임": {
+      "appIds": {
+        "ios": "1664415775"
+      },
+      "aliases": [],
+      "developer": "Matryoshka Games (CY) LTD",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "로열-쿠킹-요리-식당-게임",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Detroit: Become Human": {
+      "appIds": {
+        "steam": "1222140"
+      },
+      "aliases": [],
+      "developer": "Quantic Dream",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479",
+      "slug": "detroit-become-human",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Green Hell": {
+      "appIds": {
+        "steam": "815370"
+      },
+      "aliases": [],
+      "developer": "Creepy Jar",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/815370/header.jpg?t=1757690850",
+      "slug": "green-hell",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-22",
-  "totalGames": 625
+  "lastUpdated": "2025-12-23",
+  "totalGames": 629
 }

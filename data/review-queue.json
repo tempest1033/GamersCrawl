@@ -5,7 +5,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -346,6 +346,54 @@
         }
       ],
       "addedAt": "2025-12-22T09:40:37.746Z"
+    },
+    {
+      "title": "갓오브하이스쿨 X 신의탑",
+      "status": "single",
+      "appIds": {
+        "ios": "1026748340"
+      },
+      "developer": "WONCOMZ.INC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "갓오브하이스쿨 - 프리미엄 뽑기권 500장 증정!",
+          "appId": "com.goh.daya.ydonline"
+        },
+        {
+          "title": "2024갓오브하이스쿨",
+          "appId": "com.nhnent.SKGOHN"
+        },
+        {
+          "title": "역수한",
+          "appId": "com.netease.nshmkr"
+        }
+      ],
+      "addedAt": "2025-12-23T00:47:03.412Z"
+    },
+    {
+      "title": "로열 쿠킹: 요리 & 식당 게임",
+      "status": "single",
+      "appIds": {
+        "ios": "1664415775"
+      },
+      "developer": "Matryoshka Games (CY) LTD",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Cooking Live - Cooking games",
+          "appId": "com.matryoshka.cookinglive"
+        },
+        {
+          "title": "Royal Cooking - Cooking Game",
+          "appId": "com.matryoshka.royal.cooking.kitchen.madness"
+        },
+        {
+          "title": "쿠킹 투어 : 셰프의 레스토랑 요리게임",
+          "appId": "com.food.cooking.games.restaurant"
+        }
+      ],
+      "addedAt": "2025-12-23T00:47:29.108Z"
     }
   ],
   "approved": [],

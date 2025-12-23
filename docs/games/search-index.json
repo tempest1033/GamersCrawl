@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-ryonggame-soulhunteridle",
+    "slug": "com-a1gamesstudio-berserker",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -4689,7 +4689,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
+    "slug": "com-whoyaho-tanghulu",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -9657,6 +9657,58 @@
       "steam"
     ],
     "developer": "Klei Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "갓오브하이스쿨 X 신의탑",
+    "slug": "갓오브하이스쿨-x-신의탑",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "WONCOMZ.INC",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "로열 쿠킹: 요리 & 식당 게임",
+    "slug": "로열-쿠킹-요리-식당-게임",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Matryoshka Games (CY) LTD",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Detroit: Become Human",
+    "slug": "detroit-become-human",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Quantic Dream",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Green Hell",
+    "slug": "green-hell",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/815370/header.jpg?t=1757690850",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Creepy Jar",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
