@@ -5,7 +5,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.a1gamesstudio.berserker",
+        "android": "com.ryonggame.soulhunteridle",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -660,6 +660,24 @@
         }
       ],
       "addedAt": "2025-12-24T00:48:04.196Z"
+    },
+    {
+      "title": "킹 오브 파이터 AFK",
+      "status": "matched",
+      "appIds": {
+        "android": "com.gamerepublickor.google.gdsm",
+        "ios": 6751273403,
+        "android:kr": "com.netmarble.kofafk"
+      },
+      "developer": "Netmarble",
+      "icon": "https://play-lh.googleusercontent.com/OKACW0ZX4g1xZrXXnTL4SKOZEFLpBorvf4sB2LN-8fKeakXgN9Oht62twabIgQxIBc4",
+      "searchResults": [
+        {
+          "title": "천만여신: 가장 치명적인 AFK",
+          "appId": 6751273403
+        }
+      ],
+      "addedAt": "2025-12-24T02:48:02.413Z"
     }
   ],
   "approved": [],
