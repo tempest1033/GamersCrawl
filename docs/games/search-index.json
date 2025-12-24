@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-ryonggame-soulhunteridle",
+    "slug": "com-a1gamesstudio-berserker",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2774,7 +2774,7 @@
   },
   {
     "name": "킹 오브 파이터 AFK",
-    "slug": "com-gamerepublickor-google-gdsm",
+    "slug": "com-farlightgames-igame-gp",
     "icon": "https://play-lh.googleusercontent.com/OKACW0ZX4g1xZrXXnTL4SKOZEFLpBorvf4sB2LN-8fKeakXgN9Oht62twabIgQxIBc4",
     "aliases": [
       "킹 오브 파이터 AFK - 3000뽑기 증정",
@@ -2955,7 +2955,7 @@
       "ios"
     ],
     "developer": "Sparks Info",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3238,7 +3238,7 @@
       "ios"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3723,7 +3723,7 @@
       "android"
     ],
     "developer": "treeplla Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4367,7 +4367,7 @@
       "android"
     ],
     "developer": "Play With Us Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4690,7 +4690,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
+    "slug": "com-whoyaho-tanghulu",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -5057,7 +5057,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5639,7 +5639,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5653,7 +5653,7 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6841,7 +6841,7 @@
       "steam"
     ],
     "developer": "Starry Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -7310,7 +7310,7 @@
       "ios"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7519,7 +7519,7 @@
       "android"
     ],
     "developer": "Philip Fowler Labs",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7792,7 +7792,7 @@
       "ios"
     ],
     "developer": "stick hunter",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8632,7 +8632,7 @@
       "android"
     ],
     "developer": "Gene Eu",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8660,7 +8660,7 @@
       "ios"
     ],
     "developer": "NGU Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8844,7 +8844,7 @@
       "android"
     ],
     "developer": "Mindful Daily Puzzles",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9606,7 +9606,7 @@
       "ios"
     ],
     "developer": "KAYAC Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9671,7 +9671,7 @@
       "ios"
     ],
     "developer": "WONCOMZ.INC",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9752,7 +9752,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
