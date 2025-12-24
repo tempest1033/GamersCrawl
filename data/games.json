@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -2183,7 +2183,7 @@
     "스텔라 소라": {
       "appIds": {
         "android": "com.YoStarKR.StellaSora",
-        "ios": 6738407268
+        "ios": "6738407268"
       },
       "aliases": [
         "ステラソラ",
@@ -2766,7 +2766,7 @@
     },
     "킹 오브 파이터 AFK": {
       "appIds": {
-        "android": "com.gamerepublickor.google.gdsm",
+        "android": "com.farlightgames.igame.gp",
         "ios": "1628970855",
         "android:kr": "com.netmarble.kofafk"
       },
@@ -2774,7 +2774,8 @@
         "킹 오브 파이터 AFK - 3000뽑기 증정",
         "천만여신: 가장 치명적인 AFK",
         "천만여신 : 가장 치명적인 AFK",
-        "AFK: 새로운 여정"
+        "AFK: 새로운 여정",
+        "AFK: 새로운 여정 - 모든 영웅 증정"
       ],
       "developer": "Netmarble",
       "icon": "https://play-lh.googleusercontent.com/OKACW0ZX4g1xZrXXnTL4SKOZEFLpBorvf4sB2LN-8fKeakXgN9Oht62twabIgQxIBc4",
@@ -3339,8 +3340,9 @@
     "Wing Fighter": {
       "appIds": {
         "android": "com.minigame.wszj.android.gp",
-        "ios": 1562065271
+        "ios": "1562065271"
       },
+      "aliases": [],
       "developer": "MINIGAME ENTERTAINMENT LIMITED",
       "icon": "https://play-lh.googleusercontent.com/xkBUvyYOQTt5X2rTo6_3RKhExpzrcuNR2ts-2GM-h7t48aqLbbK5eYp9pJ859txt2QE",
       "slug": "wing-fighter",
@@ -4605,7 +4607,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -7062,7 +7064,7 @@
     "로스트 소드": {
       "appIds": {
         "android": "com.wemadeconnect.aos.lostdgl",
-        "ios": 6482099823
+        "ios": "6482099823"
       },
       "aliases": [],
       "developer": "Wemade Connect",
@@ -9379,8 +9381,130 @@
       "platforms": [
         "steam"
       ]
+    },
+    "창세기전 모바일 - 서풍의 광시곡": {
+      "appIds": {
+        "ios": "6450174109",
+        "android": "com.linegames.gm"
+      },
+      "aliases": [],
+      "developer": "LINE Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/0a/db/4e0adb21-7523-fa08-a077-3e31c121ca40/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "창세기전-모바일-서풍의-광시곡",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "한게임 로얄홀덤": {
+      "appIds": {
+        "ios": "6443477650",
+        "android": "com.nhn.AApoker"
+      },
+      "aliases": [],
+      "developer": "NHN Corp.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/42/2c/96422ca3-e518-d129-3dba-365c1ea24ede/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "한게임-로얄홀덤",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "피망 쇼다운 홀덤 : 텍사스 홀덤, 포커, 토너먼트": {
+      "appIds": {
+        "ios": "6476336847",
+        "android": "com.neowiz.games.pmang.holdem.poker"
+      },
+      "aliases": [],
+      "developer": "NEOWIZ",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/9f/83/919f8303-4d0f-af4e-f413-66514b18c4a6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "피망-쇼다운-홀덤-텍사스-홀덤-포커-토너먼트",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "설레 삼국: 미인계": {
+      "appIds": {
+        "ios": "6754162302",
+        "android": "com.korea.kingdoms.google"
+      },
+      "aliases": [],
+      "developer": "CosmoView Technology Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/e2/f1/fbe2f135-8e70-49e6-d5ca-5adec704cf3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "설레-삼국-미인계",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "드래곤 플라이트2": {
+      "appIds": {
+        "android": "com.playwith.DF2.AOS",
+        "ios": 6740305005
+      },
+      "aliases": [],
+      "developer": "PlaywithKorea Inc.",
+      "icon": "https://play-lh.googleusercontent.com/CFv9DjtAttZp1PB4Uy4T-sEM7vQvwt4X2EErVXX-kg5sqIHrb5AB_gKiQ1tFvFF8XlrVjvz3xFz_CJGeIKqa",
+      "slug": "드래곤-플라이트2",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "스테이트 커넥트: 교통 통제": {
+      "appIds": {
+        "android": "com.TwinCrab.Motorpolia",
+        "ios": 1590353335
+      },
+      "aliases": [],
+      "developer": "CASUAL AZUR GAMES",
+      "icon": "https://play-lh.googleusercontent.com/-TSJthRTGWUi3S-gSvpkAkeJTLWvFp8n4had4iON78KGU7Zo_iMVVn3qHvPlOPB6o-A",
+      "slug": "스테이트-커넥트-교통-통제",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Eternal Hero: 액션 RPG": {
+      "appIds": {
+        "android": "games.rivvy.eternalherorpg",
+        "ios": 6503089848
+      },
+      "aliases": [],
+      "developer": "Rivvy Games",
+      "icon": "https://play-lh.googleusercontent.com/iHlDnj1VTFXvs6EJXRcujBdmfMYGfM46wy8f4Jn0i1EvqR8r-u-DE0UYip_96x1anKlvDTLoDb9Xm_R4H--ZRg",
+      "slug": "eternal-hero-액션-rpg",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Car Racing:Drive Simulator 3D": {
+      "appIds": {
+        "android": "com.racing.realcar.simulator3d"
+      },
+      "aliases": [],
+      "developer": "Club Team Caliente Mx Sports e Casino",
+      "icon": "https://play-lh.googleusercontent.com/xuKOvPrRGZomQOJUuca-6uvO5lZgTxQd4ZwDtZ_CnsAyT1UIPz2aPIz8fGsPBL0fQvs",
+      "slug": "car-racingdrive-simulator-3d",
+      "platforms": [
+        "android"
+      ]
+    },
+    "SCUM": {
+      "appIds": {
+        "steam": "513710"
+      },
+      "aliases": [],
+      "developer": "Gamepires",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/513710/a33eb72f52841f591b296f78e46824d7aabb2c87/header.jpg?t=1759911435",
+      "slug": "scum",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-23",
-  "totalGames": 629
+  "lastUpdated": "2025-12-24",
+  "totalGames": 638
 }

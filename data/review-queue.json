@@ -5,7 +5,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -394,6 +394,272 @@
         }
       ],
       "addedAt": "2025-12-23T00:47:29.108Z"
+    },
+    {
+      "title": "창세기전 모바일 - 서풍의 광시곡",
+      "status": "matched",
+      "appIds": {
+        "ios": "6450174109",
+        "android": "com.linegames.gm"
+      },
+      "developer": "LINE Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/0a/db/4e0adb21-7523-fa08-a077-3e31c121ca40/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "창세기전 모바일 - 서풍의 광시곡",
+          "appId": "com.linegames.gm"
+        },
+        {
+          "title": "창세기전 : 안타리아의 전쟁",
+          "appId": "com.joycity.gnss"
+        },
+        {
+          "title": "던전 헌터 5: 액션 RPG",
+          "appId": "com.gameloft.android.ANMP.Gloft5DHM"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:12.814Z"
+    },
+    {
+      "title": "로스트 소드",
+      "status": "matched",
+      "appIds": {
+        "android": "com.wemadeconnect.aos.lostdgl",
+        "ios": "6482099823"
+      },
+      "developer": "Wemade Connect",
+      "icon": "https://play-lh.googleusercontent.com/NiXuHj-Y2LXYnRbwRdvSZW3xOC8mB9iC0dpg1ollH3ZmVXwrKrf0ZvnVI3nOVzGoLg",
+      "searchResults": [
+        {
+          "title": "로스트 소드",
+          "appId": "com.wemadeconnect.aos.lostdgl"
+        },
+        {
+          "title": "원신·공월의 노래",
+          "appId": "com.miHoYo.GenshinImpact"
+        },
+        {
+          "title": "세븐나이츠 리버스",
+          "appId": "com.netmarble.tskgb"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:17.301Z"
+    },
+    {
+      "title": "한게임 로얄홀덤",
+      "status": "matched",
+      "appIds": {
+        "ios": "6443477650",
+        "android": "com.nhn.AApoker"
+      },
+      "developer": "NHN Corp.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/42/2c/96422ca3-e518-d129-3dba-365c1ea24ede/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "한게임 로얄홀덤",
+          "appId": "com.nhn.AApoker"
+        },
+        {
+          "title": "한게임 포커",
+          "appId": "com.nhnent.Qpoker"
+        },
+        {
+          "title": "한게임포커 클래식 : 7포커 홀덤 섯다 훌라 슬롯",
+          "appId": "com.nhnent.pokerclassic"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:18.634Z"
+    },
+    {
+      "title": "Wing Fighter",
+      "status": "matched",
+      "appIds": {
+        "android": "com.minigame.wszj.android.gp",
+        "ios": "1562065271"
+      },
+      "developer": "MINIGAME ENTERTAINMENT LIMITED",
+      "icon": "https://play-lh.googleusercontent.com/xkBUvyYOQTt5X2rTo6_3RKhExpzrcuNR2ts-2GM-h7t48aqLbbK5eYp9pJ859txt2QE",
+      "searchResults": [
+        {
+          "title": "Wing Fighter",
+          "appId": "com.minigame.wszj.android.gp"
+        },
+        {
+          "title": "스카이 윙(Sky Wings) - 오프라인 비행 슈팅",
+          "appId": "com.livezen.retroshooting.free"
+        },
+        {
+          "title": "바람 날개: 스페이스 슈터, 갤럭시 어택",
+          "appId": "com.Wind.wings.Space.Shooter"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:19.112Z"
+    },
+    {
+      "title": "스텔라 소라",
+      "status": "matched",
+      "appIds": {
+        "android": "com.YoStarKR.StellaSora",
+        "ios": "6738407268"
+      },
+      "developer": "Yostar Limited.",
+      "icon": "https://play-lh.googleusercontent.com/fAtV_m1pk3Li1JWR31xdv3vV-CjXH5Uq1YHtj_f1MjeiOdfBhv8MvG-gO8vzpEXoit4",
+      "searchResults": [
+        {
+          "title": "스텔라 소라",
+          "appId": "com.YoStarKR.StellaSora"
+        },
+        {
+          "title": "Stella Sora",
+          "appId": "com.YoStarEN.StellaSora"
+        },
+        {
+          "title": "나 혼자만 레벨업:어라이즈",
+          "appId": "com.netmarble.sololv"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:19.570Z"
+    },
+    {
+      "title": "피망 쇼다운 홀덤 : 텍사스 홀덤, 포커, 토너먼트",
+      "status": "matched",
+      "appIds": {
+        "ios": "6476336847",
+        "android": "com.neowiz.games.pmang.holdem.poker"
+      },
+      "developer": "NEOWIZ",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/9f/83/919f8303-4d0f-af4e-f413-66514b18c4a6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "피망 쇼다운 홀덤 : 텍사스 홀덤, 포커, 토너먼트",
+          "appId": "com.neowiz.games.pmang.holdem.poker"
+        },
+        {
+          "title": "피망 포커 : 카지노 로얄 - 홀덤, 7포커, 바둑이",
+          "appId": "com.neowiz.games.poker"
+        },
+        {
+          "title": "풀팟 홀덤 : 텍사스 홀덤, 포커, 토너먼트, 오마하",
+          "appId": "com.me2on.fulpotgenius"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:20.689Z"
+    },
+    {
+      "title": "설레 삼국: 미인계",
+      "status": "matched",
+      "appIds": {
+        "ios": "6754162302",
+        "android": "com.korea.kingdoms.google"
+      },
+      "developer": "CosmoView Technology Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/e2/f1/fbe2f135-8e70-49e6-d5ca-5adec704cf3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "설레 삼국: 미인계",
+          "appId": "com.korea.kingdoms.google"
+        },
+        {
+          "title": "무한돌파삼국지 리버스L",
+          "appId": "com.natris.samplrebirthlite.kr"
+        },
+        {
+          "title": "삼국블레이드",
+          "appId": "com.ftt.samblade.kr.aos"
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:42.349Z"
+    },
+    {
+      "title": "드래곤 플라이트2",
+      "status": "matched",
+      "appIds": {
+        "android": "com.playwith.DF2.AOS",
+        "ios": 6740305005
+      },
+      "developer": "PlaywithKorea Inc.",
+      "icon": "https://play-lh.googleusercontent.com/CFv9DjtAttZp1PB4Uy4T-sEM7vQvwt4X2EErVXX-kg5sqIHrb5AB_gKiQ1tFvFF8XlrVjvz3xFz_CJGeIKqa",
+      "searchResults": [
+        {
+          "title": "드래곤 플라이트2",
+          "appId": 6740305005
+        },
+        {
+          "title": "드래곤 플라이트",
+          "appId": 564982812
+        },
+        {
+          "title": "드래곤 스토리™",
+          "appId": 513474544
+        }
+      ],
+      "addedAt": "2025-12-24T00:47:59.841Z"
+    },
+    {
+      "title": "스테이트 커넥트: 교통 통제",
+      "status": "matched",
+      "appIds": {
+        "android": "com.TwinCrab.Motorpolia",
+        "ios": 1590353335
+      },
+      "developer": "CASUAL AZUR GAMES",
+      "icon": "https://play-lh.googleusercontent.com/-TSJthRTGWUi3S-gSvpkAkeJTLWvFp8n4had4iON78KGU7Zo_iMVVn3qHvPlOPB6o-A",
+      "searchResults": [
+        {
+          "title": "스테이트 커넥트: 교통 통제",
+          "appId": 1590353335
+        }
+      ],
+      "addedAt": "2025-12-24T00:48:01.434Z"
+    },
+    {
+      "title": "Eternal Hero: 액션 RPG",
+      "status": "matched",
+      "appIds": {
+        "android": "games.rivvy.eternalherorpg",
+        "ios": 6503089848
+      },
+      "developer": "Rivvy Games",
+      "icon": "https://play-lh.googleusercontent.com/iHlDnj1VTFXvs6EJXRcujBdmfMYGfM46wy8f4Jn0i1EvqR8r-u-DE0UYip_96x1anKlvDTLoDb9Xm_R4H--ZRg",
+      "searchResults": [
+        {
+          "title": "Eternal Hero: 액션 RPG",
+          "appId": 6503089848
+        },
+        {
+          "title": "Heroes Infinity: Strategy RPG",
+          "appId": 1189132744
+        },
+        {
+          "title": "Sheltered Door: Fury Kicker",
+          "appId": 6602895096
+        }
+      ],
+      "addedAt": "2025-12-24T00:48:03.634Z"
+    },
+    {
+      "title": "Car Racing:Drive Simulator 3D",
+      "status": "single",
+      "appIds": {
+        "android": "com.racing.realcar.simulator3d"
+      },
+      "developer": "Club Team Caliente Mx Sports e Casino",
+      "icon": "https://play-lh.googleusercontent.com/xuKOvPrRGZomQOJUuca-6uvO5lZgTxQd4ZwDtZ_CnsAyT1UIPz2aPIz8fGsPBL0fQvs",
+      "searchResults": [
+        {
+          "title": "CSR 레이싱 2",
+          "appId": 887947640
+        },
+        {
+          "title": "스쿨버스 운전 3D 시뮬레이터 게임",
+          "appId": 1119560044
+        },
+        {
+          "title": "드라이빙 아카데미 2 -  자동차 게임",
+          "appId": 1439759880
+        }
+      ],
+      "addedAt": "2025-12-24T00:48:04.196Z"
     }
   ],
   "approved": [],

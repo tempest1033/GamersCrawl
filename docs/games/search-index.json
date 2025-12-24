@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-ryonggame-soulhunteridle",
+    "slug": "com-a1gamesstudio-berserker",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2774,13 +2774,14 @@
   },
   {
     "name": "킹 오브 파이터 AFK",
-    "slug": "com-gamerepublickor-google-gdsm",
+    "slug": "com-farlightgames-igame-gp",
     "icon": "https://play-lh.googleusercontent.com/OKACW0ZX4g1xZrXXnTL4SKOZEFLpBorvf4sB2LN-8fKeakXgN9Oht62twabIgQxIBc4",
     "aliases": [
       "킹 오브 파이터 AFK - 3000뽑기 증정",
       "천만여신: 가장 치명적인 AFK",
       "천만여신 : 가장 치명적인 AFK",
-      "AFK: 새로운 여정"
+      "AFK: 새로운 여정",
+      "AFK: 새로운 여정 - 모든 영웅 증정"
     ],
     "platforms": [
       "android",
@@ -4689,7 +4690,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
+    "slug": "com-whoyaho-tanghulu",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -9709,6 +9710,130 @@
       "steam"
     ],
     "developer": "Creepy Jar",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "창세기전 모바일 - 서풍의 광시곡",
+    "slug": "com-linegames-gm",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/0a/db/4e0adb21-7523-fa08-a077-3e31c121ca40/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "LINE Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "한게임 로얄홀덤",
+    "slug": "com-nhn-aapoker",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/42/2c/96422ca3-e518-d129-3dba-365c1ea24ede/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "NHN Corp.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "피망 쇼다운 홀덤 : 텍사스 홀덤, 포커, 토너먼트",
+    "slug": "com-neowiz-games-pmang-holdem-poker",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/9f/83/919f8303-4d0f-af4e-f413-66514b18c4a6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "NEOWIZ",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "설레 삼국: 미인계",
+    "slug": "com-korea-kingdoms-google",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/e2/f1/fbe2f135-8e70-49e6-d5ca-5adec704cf3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "CosmoView Technology Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "드래곤 플라이트2",
+    "slug": "com-playwith-df2-aos",
+    "icon": "https://play-lh.googleusercontent.com/CFv9DjtAttZp1PB4Uy4T-sEM7vQvwt4X2EErVXX-kg5sqIHrb5AB_gKiQ1tFvFF8XlrVjvz3xFz_CJGeIKqa",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "PlaywithKorea Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "스테이트 커넥트: 교통 통제",
+    "slug": "com-twincrab-motorpolia",
+    "icon": "https://play-lh.googleusercontent.com/-TSJthRTGWUi3S-gSvpkAkeJTLWvFp8n4had4iON78KGU7Zo_iMVVn3qHvPlOPB6o-A",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "CASUAL AZUR GAMES",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Eternal Hero: 액션 RPG",
+    "slug": "games-rivvy-eternalherorpg",
+    "icon": "https://play-lh.googleusercontent.com/iHlDnj1VTFXvs6EJXRcujBdmfMYGfM46wy8f4Jn0i1EvqR8r-u-DE0UYip_96x1anKlvDTLoDb9Xm_R4H--ZRg",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Rivvy Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Car Racing:Drive Simulator 3D",
+    "slug": "com-racing-realcar-simulator3d",
+    "icon": "https://play-lh.googleusercontent.com/xuKOvPrRGZomQOJUuca-6uvO5lZgTxQd4ZwDtZ_CnsAyT1UIPz2aPIz8fGsPBL0fQvs",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Club Team Caliente Mx Sports e Casino",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "SCUM",
+    "slug": "scum",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/513710/a33eb72f52841f591b296f78e46824d7aabb2c87/header.jpg?t=1759911435",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Gamepires",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
