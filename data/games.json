@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -950,7 +950,8 @@
         "미친 타워가 되었다:노빠구 RPG",
         "다크타워:전략 배틀 RPG",
         "소울 헌터 키우기 : 방치형 RPG",
-        "버서커 키우기: 방치형 RPG"
+        "버서커 키우기: 방치형 RPG",
+        "버서커 키우기: 방치형 RPG - 신규서버 오픈"
       ],
       "developer": "Game Duo Co.,Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -2766,7 +2767,7 @@
     },
     "킹 오브 파이터 AFK": {
       "appIds": {
-        "android": "com.gamerepublickor.google.gdsm",
+        "android": "com.farlightgames.igame.gp",
         "ios": 6751273403,
         "android:kr": "com.netmarble.kofafk"
       },
@@ -4607,7 +4608,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -4895,7 +4896,7 @@
     "스도쿠 - 클래식 스도쿠": {
       "appIds": {
         "android": "easy.sudoku.puzzle.solver.free",
-        "ios": 1442749804
+        "ios": "1442749804"
       },
       "aliases": [
         "스도쿠 - 클래식 스도쿠 퍼즐"
@@ -6621,17 +6622,21 @@
     },
     "Once Human": {
       "appIds": {
-        "steam": "2139460"
+        "steam": "2139460",
+        "ios": "1573906210",
+        "android": "com.h73.jhqyna"
       },
+      "aliases": [
+        "원스휴먼",
+        "원스 휴먼"
+      ],
       "developer": "Starry Studio",
       "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139460/9223ef1187bb9399be11d28537bf3e975b2e7ca1/capsule_231x87.jpg?t=1761817318",
       "slug": "once-human",
       "platforms": [
-        "steam"
-      ],
-      "aliases": [
-        "원스휴먼",
-        "원스 휴먼"
+        "steam",
+        "ios",
+        "android"
       ]
     },
     "SANABI": {
@@ -9159,7 +9164,7 @@
     "카오스 제로 나이트메어": {
       "appIds": {
         "android": "com.smilegate.chaoszero.stove.google",
-        "ios": 6502326151
+        "ios": "6502326151"
       },
       "aliases": [],
       "developer": "Smilegate Holdings, Inc",
@@ -9503,8 +9508,176 @@
       "platforms": [
         "steam"
       ]
+    },
+    "드래곤빌리지": {
+      "appIds": {
+        "ios": "999708649",
+        "android": "com.highbrow.game"
+      },
+      "aliases": [],
+      "developer": "Highbrow",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/fe/3e/e8fe3e86-4bb7-6ac2-b5a0-32e9fbdc3e31/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "slug": "드래곤빌리지",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "우파루 오딧세이": {
+      "appIds": {
+        "ios": "1668036690",
+        "android": "com.nhn.wooparoo.kr"
+      },
+      "aliases": [],
+      "developer": "NHN Corp.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a6/b2/d8/a6b2d833-8ca0-0a44-a67b-ad377a812dc4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "우파루-오딧세이",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "DRAGON BALL LEGENDS 드래곤 볼 레전즈": {
+      "appIds": {
+        "ios": "1358222641",
+        "android": "com.bandainamcoent.dblegends_ww"
+      },
+      "aliases": [
+        "DRAGON BALL LEGENDS-드래곤 볼 레전즈-"
+      ],
+      "developer": "Bandai Namco Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/93/71/dc9371be-4dc1-cf3b-5b81-1e973418ef03/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "dragon-ball-legends-드래곤-볼-레전즈",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "퍼즐앤드래곤": {
+      "appIds": {
+        "ios": "588637521",
+        "android": "jp.gungho.padKO"
+      },
+      "aliases": [],
+      "developer": "GungHo Online Entertainment, Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/e8/32/e8e83216-bf39-8d96-7e6c-0a188f728ea3/Appicon_new-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "slug": "퍼즐앤드래곤",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "드래곤 베인": {
+      "appIds": {
+        "android": "kr.aos.com.aprogen.dragonrajaorigin",
+        "ios": 1564210479
+      },
+      "aliases": [],
+      "developer": "빌리온게임즈",
+      "icon": "https://play-lh.googleusercontent.com/Cbc3y5_93On25T75tjT3MgszhCSscE_-C2RX6cCMmdy4Ka7qwYpC2f3N6hdONkcXHw",
+      "slug": "드래곤-베인",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "모에라이: 운명의 계약": {
+      "appIds": {
+        "ios": "6738948877",
+        "android": "com.ujoygp.cof"
+      },
+      "aliases": [],
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/81/8b/58818bff-42e1-0c62-c635-373cce20fcfa/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "모에라이-운명의-계약",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Liar Game": {
+      "appIds": {
+        "ios": "1453720435",
+        "android": "com.liargame"
+      },
+      "aliases": [
+        "LIAR Game"
+      ],
+      "developer": "DongUk Kim",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/e3/d9/44e3d96c-0087-80d5-450b-ecade26d5380/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.png",
+      "slug": "liar-game",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "좀비 포트리스 (Zombie Fortress)": {
+      "appIds": {
+        "android": "com.nlabsoft.zombiecrusher.s",
+        "ios": 6747713523
+      },
+      "aliases": [],
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/xKFSTVLubj4qJgCO4O-kU_GzItivBAKUHcQODgW1fparc7RQ_QbIY2-alPtUWv_4aQ",
+      "slug": "좀비-포트리스-zombie-fortress",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "젤리 홀 (Jelly Hole) - 블랙홀 게임": {
+      "appIds": {
+        "android": "com.ultimatelavashgames.rollthehole"
+      },
+      "aliases": [],
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
+      "slug": "젤리-홀-jelly-hole-블랙홀-게임",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Zen Tiles - Mahjong Match": {
+      "appIds": {
+        "android": "com.playvalve.mahjong.triple",
+        "ios": 6744312872
+      },
+      "aliases": [],
+      "developer": "Playvalve",
+      "icon": "https://play-lh.googleusercontent.com/jSwD3gBRCY0F2rZfE4Lk3nGr5P76PIKoDPGqcxkOAfuZHMkEXt1qVSAYHcGUcUsJ1vRQ",
+      "slug": "zen-tiles-mahjong-match",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "물 분류 퍼즐 게임 - 재미있는 색상 분류 퍼즐 게임": {
+      "appIds": {
+        "android": "water.sort.puzzle.game.color.sorting.free"
+      },
+      "aliases": [],
+      "developer": "Guru Puzzle Game",
+      "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
+      "slug": "물-분류-퍼즐-게임-재미있는-색상-분류-퍼즐-게임",
+      "platforms": [
+        "android"
+      ]
+    },
+    "노노그램 - 픽처 크로스 퍼즐": {
+      "appIds": {
+        "android": "com.easybrain.nonogram",
+        "ios": 6504728167
+      },
+      "aliases": [],
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/hkT49tQvIp2WBwLlricTSrg-0Xm8Tv4Al0SwKNXt048BaatQZOmEJY4S-TNUbfZWNAdb",
+      "slug": "노노그램-픽처-크로스-퍼즐",
+      "platforms": [
+        "android",
+        "ios"
+      ]
     }
   },
-  "lastUpdated": "2025-12-24",
-  "totalGames": 638
+  "lastUpdated": "2025-12-25",
+  "totalGames": 650
 }

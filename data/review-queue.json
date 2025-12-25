@@ -5,7 +5,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -103,7 +103,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.smilegate.chaoszero.stove.google",
-        "ios": 6502326151
+        "ios": "6502326151"
       },
       "developer": "Smilegate Holdings, Inc",
       "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
@@ -115,6 +115,10 @@
         {
           "title": "소녀전선2: 망명",
           "appId": 6499011827
+        },
+        {
+          "title": "카오스 제로 나이트메어",
+          "appId": "com.smilegate.chaoszero.stove.google"
         }
       ],
       "addedAt": "2025-12-22T09:40:14.657Z"
@@ -678,6 +682,326 @@
         }
       ],
       "addedAt": "2025-12-24T02:48:02.413Z"
+    },
+    {
+      "title": "드래곤빌리지",
+      "status": "matched",
+      "appIds": {
+        "ios": "999708649",
+        "android": "com.highbrow.game"
+      },
+      "developer": "Highbrow",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/fe/3e/e8fe3e86-4bb7-6ac2-b5a0-32e9fbdc3e31/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "드래곤빌리지",
+          "appId": "com.highbrow.game"
+        },
+        {
+          "title": "드래곤빌리지 M",
+          "appId": "com.perplelab.dragonvillagem.kr"
+        },
+        {
+          "title": "드래곤빌리지 컬렉션",
+          "appId": "com.highbrow.games.dv"
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:32.208Z"
+    },
+    {
+      "title": "Once Human",
+      "status": "matched",
+      "appIds": {
+        "steam": "2139460",
+        "ios": "1573906210",
+        "android": "com.h73.jhqyna"
+      },
+      "developer": "Starry Studio",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139460/9223ef1187bb9399be11d28537bf3e975b2e7ca1/capsule_231x87.jpg?t=1761817318",
+      "searchResults": [
+        {
+          "title": "Once Human",
+          "appId": "com.h73.jhqyna"
+        },
+        {
+          "title": "Once Human: RaidZone",
+          "appId": "com.netease.h73na.rz"
+        },
+        {
+          "title": "Once Human",
+          "appId": "com.netease.h73hmt"
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:35.256Z"
+    },
+    {
+      "title": "우파루 오딧세이",
+      "status": "matched",
+      "appIds": {
+        "ios": "1668036690",
+        "android": "com.nhn.wooparoo.kr"
+      },
+      "developer": "NHN Corp.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a6/b2/d8/a6b2d833-8ca0-0a44-a67b-ad377a812dc4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "우파루 오딧세이",
+          "appId": "com.nhn.wooparoo.kr"
+        },
+        {
+          "title": "Alto's Odyssey",
+          "appId": "com.noodlecake.altosodyssey"
+        },
+        {
+          "title": "메이플 키우기",
+          "appId": "com.nexon.ma"
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:37.163Z"
+    },
+    {
+      "title": "DRAGON BALL LEGENDS 드래곤 볼 레전즈",
+      "status": "matched",
+      "appIds": {
+        "ios": "1358222641",
+        "android": "com.bandainamcoent.dblegends_ww"
+      },
+      "developer": "Bandai Namco Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/93/71/dc9371be-4dc1-cf3b-5b81-1e973418ef03/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "DRAGON BALL LEGENDS 드래곤 볼 레전즈",
+          "appId": "com.bandainamcoent.dblegends_ww"
+        },
+        {
+          "title": "DRAGON BALL Z 폭렬격전",
+          "appId": "com.bandainamcogames.dbzdokkanww"
+        },
+        {
+          "title": "DRAGON BALL GEKISHIN SQUADRA",
+          "appId": "com.bandainamcoent.dbgekishinsquadra"
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:37.727Z"
+    },
+    {
+      "title": "퍼즐앤드래곤",
+      "status": "matched",
+      "appIds": {
+        "ios": "588637521",
+        "android": "jp.gungho.padKO"
+      },
+      "developer": "GungHo Online Entertainment, Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/e8/32/e8e83216-bf39-8d96-7e6c-0a188f728ea3/Appicon_new-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "퍼즐앤드래곤",
+          "appId": "jp.gungho.padKO"
+        },
+        {
+          "title": "Puzzle & Dragons(龍族拼圖)",
+          "appId": "jp.gungho.padHT"
+        },
+        {
+          "title": "PUZZLE & DRAGONS 0",
+          "appId": "jp.gungho.hangerss"
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:38.296Z"
+    },
+    {
+      "title": "드래곤 베인",
+      "status": "matched",
+      "appIds": {
+        "android": "kr.aos.com.aprogen.dragonrajaorigin",
+        "ios": 1564210479
+      },
+      "developer": "빌리온게임즈",
+      "icon": "https://play-lh.googleusercontent.com/Cbc3y5_93On25T75tjT3MgszhCSscE_-C2RX6cCMmdy4Ka7qwYpC2f3N6hdONkcXHw",
+      "searchResults": [
+        {
+          "title": "드래곤 베인",
+          "appId": 1564210479
+        },
+        {
+          "title": "드래곤 스카이- 슈팅 방치형 RPG",
+          "appId": 1407160249
+        },
+        {
+          "title": "드래곤 매니아 레전드",
+          "appId": 882507985
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:58.565Z"
+    },
+    {
+      "title": "모에라이: 운명의 계약",
+      "status": "matched",
+      "appIds": {
+        "ios": "6738948877",
+        "android": "com.ujoygp.cof"
+      },
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/81/8b/58818bff-42e1-0c62-c635-373cce20fcfa/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "모에라이: 운명의 계약",
+          "appId": "com.ujoygp.cof"
+        },
+        {
+          "title": "이터널 엠버",
+          "appId": "com.neuronads.eternalember.offical"
+        },
+        {
+          "title": "검은 수녀: 운명M",
+          "appId": "com.kr.andpa"
+        }
+      ],
+      "addedAt": "2025-12-25T00:48:59.581Z"
+    },
+    {
+      "title": "Liar Game",
+      "status": "matched",
+      "appIds": {
+        "ios": "1453720435",
+        "android": "com.liargame"
+      },
+      "developer": "DongUk Kim",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/e3/d9/44e3d96c-0087-80d5-450b-ecade26d5380/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "LIAR Game",
+          "appId": "com.liargame"
+        },
+        {
+          "title": "Perfect Lie",
+          "appId": "com.funcell.perfectlie"
+        },
+        {
+          "title": "라이어 게임",
+          "appId": "com.liargame.test"
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:06.131Z"
+    },
+    {
+      "title": "좀비 포트리스 (Zombie Fortress)",
+      "status": "matched",
+      "appIds": {
+        "android": "com.nlabsoft.zombiecrusher.s",
+        "ios": 6747713523
+      },
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/xKFSTVLubj4qJgCO4O-kU_GzItivBAKUHcQODgW1fparc7RQ_QbIY2-alPtUWv_4aQ",
+      "searchResults": [
+        {
+          "title": "라스트 포트리스 : 언더그라운드",
+          "appId": 1540557475
+        },
+        {
+          "title": "좀비 포트리스 (Zombie Fortress)",
+          "appId": 6747713523
+        },
+        {
+          "title": "Zero City: 좀비 서바이벌",
+          "appId": 1463289293
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:18.130Z"
+    },
+    {
+      "title": "젤리 홀 (Jelly Hole) - 블랙홀 게임",
+      "status": "single",
+      "appIds": {
+        "android": "com.ultimatelavashgames.rollthehole"
+      },
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
+      "searchResults": [
+        {
+          "title": "홀 마스터: 세상을 먹어라 (Hole Master)",
+          "appId": 6742533520
+        },
+        {
+          "title": "Drop the Jelly - 젤리 블랙홀 게임 제거",
+          "appId": 6755383038
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:19.310Z"
+    },
+    {
+      "title": "Zen Tiles - Mahjong Match",
+      "status": "matched",
+      "appIds": {
+        "android": "com.playvalve.mahjong.triple",
+        "ios": 6744312872
+      },
+      "developer": "Playvalve",
+      "icon": "https://play-lh.googleusercontent.com/jSwD3gBRCY0F2rZfE4Lk3nGr5P76PIKoDPGqcxkOAfuZHMkEXt1qVSAYHcGUcUsJ1vRQ",
+      "searchResults": [
+        {
+          "title": "Zen Tiles - Mahjong Match",
+          "appId": 6744312872
+        },
+        {
+          "title": "Zen Match - Relaxing Puzzle",
+          "appId": 1560124228
+        },
+        {
+          "title": "Tile Dynasty: 트리플 마작",
+          "appId": 6499129174
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:19.649Z"
+    },
+    {
+      "title": "물 분류 퍼즐 게임 - 재미있는 색상 분류 퍼즐 게임",
+      "status": "single",
+      "appIds": {
+        "android": "water.sort.puzzle.game.color.sorting.free"
+      },
+      "developer": "Guru Puzzle Game",
+      "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
+      "searchResults": [
+        {
+          "title": "재미있는 육각형 블록 게임",
+          "appId": 1490646051
+        },
+        {
+          "title": "슬라이스 : 퍼즐 게임을 이완시킵니다",
+          "appId": 1263934706
+        },
+        {
+          "title": "물 분류 - 퍼즐 붓기",
+          "appId": 6471331479
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:20.392Z"
+    },
+    {
+      "title": "노노그램 - 픽처 크로스 퍼즐",
+      "status": "matched",
+      "appIds": {
+        "android": "com.easybrain.nonogram",
+        "ios": 6504728167
+      },
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/hkT49tQvIp2WBwLlricTSrg-0Xm8Tv4Al0SwKNXt048BaatQZOmEJY4S-TNUbfZWNAdb",
+      "searchResults": [
+        {
+          "title": "노노그램 - 픽처 크로스 퍼즐 게임",
+          "appId": 1530781272
+        },
+        {
+          "title": "노노그램 - 숫자 퍼즐 & 픽처 크로스",
+          "appId": 1478871295
+        },
+        {
+          "title": "노노그램 - 픽처 크로스 퍼즐",
+          "appId": 6504728167
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:21.776Z"
     }
   ],
   "approved": [],
