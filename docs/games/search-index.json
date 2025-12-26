@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-webzen-muidle-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2589,7 +2589,7 @@
       "ios"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2775,7 +2775,7 @@
   },
   {
     "name": "킹 오브 파이터 AFK",
-    "slug": "com-gamerepublickor-google-gdsm",
+    "slug": "com-farlightgames-igame-gp",
     "icon": "https://play-lh.googleusercontent.com/OKACW0ZX4g1xZrXXnTL4SKOZEFLpBorvf4sB2LN-8fKeakXgN9Oht62twabIgQxIBc4",
     "aliases": [
       "킹 오브 파이터 AFK - 3000뽑기 증정",
@@ -2956,7 +2956,7 @@
       "ios"
     ],
     "developer": "Sparks Info",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3193,7 +3193,7 @@
       "ios"
     ],
     "developer": "XD Entertainment Pte Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3225,7 +3225,7 @@
       "android"
     ],
     "developer": "SEAL Game",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4399,7 +4399,7 @@
       "ios"
     ],
     "developer": "LINE NEXT Corp.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4457,7 +4457,7 @@
       "ios"
     ],
     "developer": "Jiewan Game",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5087,7 +5087,7 @@
       "ios"
     ],
     "developer": "Panteon",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5511,7 +5511,7 @@
       "ios"
     ],
     "developer": "AMOBEAR TECHNOLOGY GROUP",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5816,7 +5816,7 @@
       "ios"
     ],
     "developer": "ABI GAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5843,7 +5843,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6845,7 +6845,7 @@
       "android"
     ],
     "developer": "Starry Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -7438,7 +7438,7 @@
       "android"
     ],
     "developer": "Teamsparta Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7782,7 +7782,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9145,7 +9145,7 @@
       "android"
     ],
     "developer": "Arumgames",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9324,7 +9324,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9502,7 +9502,7 @@
       "android"
     ],
     "developer": "NDREAM Corporation",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9516,7 +9516,7 @@
       "android"
     ],
     "developer": "DWG",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9825,7 +9825,7 @@
       "android"
     ],
     "developer": "Club Team Caliente Mx Sports e Casino",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9940,7 +9940,7 @@
       "android"
     ],
     "developer": "DongUk Kim",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -10075,7 +10075,7 @@
       "ios"
     ],
     "developer": "BANDAI NAMCO Entertainment Europe",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10131,7 +10131,7 @@
       "android"
     ],
     "developer": "Rooftop Game",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
