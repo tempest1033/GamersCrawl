@@ -4,8 +4,8 @@
       "title": "건틀렛: 방치형 액션 RPG",
       "status": "matched",
       "appIds": {
-        "ios": "6754373623",
-        "android": "com.v2r.tower.google",
+        "ios": "6748525811",
+        "android": "com.webzen.muidle.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -19,6 +19,10 @@
         {
           "title": "다크타워:전략 배틀 RPG",
           "appId": "6748525811"
+        },
+        {
+          "title": "버서커 키우기: 방치형 RPG - 신규서버 오픈",
+          "appId": "com.a1gamesstudio.berserker"
         }
       ],
       "addedAt": "2025-12-22T09:40:15.251Z"
@@ -1002,6 +1006,250 @@
         }
       ],
       "addedAt": "2025-12-25T00:49:21.776Z"
+    },
+    {
+      "title": "Dynasty Legends 2: 무쌍전란",
+      "status": "matched",
+      "appIds": {
+        "ios": "6738378793",
+        "android": "com.moossangjr.mjko"
+      },
+      "developer": "Taihe Interactive",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/f8/d0/1ef8d0d5-8ea5-d4cd-e20c-0165cdf7106e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Dynasty Legends 2: 무쌍전란",
+          "appId": "com.moossangjr.mjko"
+        },
+        {
+          "title": "Dynasty Legends 2",
+          "appId": "com.newtypegames.dl2hmt"
+        },
+        {
+          "title": "극무쌍: 군단의 영광",
+          "appId": "com.taiyouxi.jwsus"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:17.349Z"
+    },
+    {
+      "title": "레츠고 레전드!",
+      "status": "single",
+      "appIds": {
+        "android": "com.gear2.letsgolegends"
+      },
+      "developer": "GEAR2",
+      "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
+      "searchResults": [],
+      "addedAt": "2025-12-26T00:47:36.755Z"
+    },
+    {
+      "title": "크리처 리그 챔피언",
+      "status": "single",
+      "appIds": {
+        "ios": "6755809717"
+      },
+      "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "롤 챔피언 추천 - 버스타던지(AI 인공지능)",
+          "appId": "com.harang.leagueoflegends"
+        },
+        {
+          "title": "Idle Champions",
+          "appId": "com.codenameentertainment.idlechampions"
+        },
+        {
+          "title": "League Champ",
+          "appId": "com.league.champ"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:41.678Z"
+    },
+    {
+      "title": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
+      "status": "matched",
+      "appIds": {
+        "android": "com.unicostudio.braintest",
+        "ios": "1486214495"
+      },
+      "developer": "Unico Studio",
+      "icon": "https://play-lh.googleusercontent.com/L4-Oa6O8GV4I23JTmo-xKSjfyjowc0d2uGGfdScYkCTMk6ftxTwGowdAjgh2nOrJlEmI",
+      "searchResults": [
+        {
+          "title": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
+          "appId": "com.unicostudio.braintest"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:45.388Z"
+    },
+    {
+      "title": "모두의마블",
+      "status": "matched",
+      "appIds": {
+        "ios": "646315802",
+        "android": "com.cjenm.ModooMarbleKakao"
+      },
+      "developer": "Netmarble Corporation",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/6b/a5/2c6ba51d-77fe-7034-627f-f3435cf7367d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "모두의마블",
+          "appId": "com.cjenm.ModooMarbleKakao"
+        },
+        {
+          "title": "Board Kings: 주사위 보드 게임",
+          "appId": "com.jellybtn.boardkings"
+        },
+        {
+          "title": "MONOPOLY GO! (모노폴리 GO!)",
+          "appId": "com.scopely.monopolygo"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:45.904Z"
+    },
+    {
+      "title": "마이 다마고치 포에버 My Tamagotchi",
+      "status": "single",
+      "appIds": {
+        "ios": "1267861706"
+      },
+      "developer": "BANDAI NAMCO Entertainment Europe",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "마이 다마고치 포에버",
+          "appId": "eu.bandainamcoent.mytamagotchiforever"
+        },
+        {
+          "title": "애완동물 시뮬레이션 - 푹신한 다마고치",
+          "appId": "com.gokids.fluffypet"
+        },
+        {
+          "title": "Friends – 귀여운 AI 컴패니언",
+          "appId": "com.slay.pengu"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:46.578Z"
+    },
+    {
+      "title": "머지 파라다이스:합성&머지(merge)",
+      "status": "matched",
+      "appIds": {
+        "android": "com.storytaco.p32client2",
+        "ios": 6480382557
+      },
+      "developer": "StoryTaco.Inc",
+      "icon": "https://play-lh.googleusercontent.com/FVkg-gkTidXwpQp33UCoegD1l4L0IFfAXudoUWFmax8Lq6ySBx0A0xtmDGXxRY3kRKeL39_fIep7vMWljvHEZQ",
+      "searchResults": [
+        {
+          "title": "머지 파라다이스:합성&머지(merge)",
+          "appId": 6480382557
+        },
+        {
+          "title": "Emerald Merge Game",
+          "appId": 6633433373
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:52.894Z"
+    },
+    {
+      "title": "매치 팩토리(Match Factory)!",
+      "status": "matched",
+      "appIds": {
+        "android": "net.peakgames.match",
+        "ios": 6449094229
+      },
+      "developer": "Peak",
+      "icon": "https://play-lh.googleusercontent.com/JdkgreDBCOxt7_0eeiVgbwtQkkdWmlWMO9cwAyj6rfVcAM5Z9l99zbg4eoUac5C0Bw",
+      "searchResults": [
+        {
+          "title": "매치 팩토리(Match Factory)!",
+          "appId": 6449094229
+        },
+        {
+          "title": "로얄 매치 (Royal Match)",
+          "appId": 1482155847
+        },
+        {
+          "title": "Triple Match 3D",
+          "appId": 1607122287
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:57.703Z"
+    },
+    {
+      "title": "Color Aura: Paint by number",
+      "status": "single",
+      "appIds": {
+        "android": "com.oakever.coloraura"
+      },
+      "developer": "Oakever Games",
+      "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
+      "searchResults": [
+        {
+          "title": "Color Aura: 숫자 색칠",
+          "appId": 6451237392
+        },
+        {
+          "title": "Paint.ly - 숫자 색칠 게임",
+          "appId": 1441501929
+        },
+        {
+          "title": "Coloring Book -Color by Number",
+          "appId": 1512344831
+        }
+      ],
+      "addedAt": "2025-12-26T00:48:00.381Z"
+    },
+    {
+      "title": "Connect Master – 매치 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.game.people.connector"
+      },
+      "developer": "Rooftop Game",
+      "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
+      "searchResults": [
+        {
+          "title": "3 Tiles - 매직 게임 타일",
+          "appId": 1525211513
+        },
+        {
+          "title": "Connect Master - Match Puzzle",
+          "appId": 6745692355
+        },
+        {
+          "title": "룬마스터 퍼즐 오리지널",
+          "appId": 470156573
+        }
+      ],
+      "addedAt": "2025-12-26T00:48:00.822Z"
+    },
+    {
+      "title": "Space Waves",
+      "status": "single",
+      "appIds": {
+        "android": "com.CrazyGames.SpaceWaves"
+      },
+      "developer": "CrazyGames.com",
+      "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
+      "searchResults": [
+        {
+          "title": "Space Waves - CrazyGames",
+          "appId": 6748645552
+        },
+        {
+          "title": "Space Vibes - Space Waves Art",
+          "appId": 6748155833
+        },
+        {
+          "title": "Geometry Dash Lite",
+          "appId": 698255242
+        }
+      ],
+      "addedAt": "2025-12-26T00:48:01.237Z"
     }
   ],
   "approved": [],

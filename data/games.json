@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6754373623",
-        "android": "com.v2r.tower.google",
+        "ios": "6748525811",
+        "android": "com.webzen.muidle.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -2767,7 +2767,7 @@
     },
     "킹 오브 파이터 AFK": {
       "appIds": {
-        "android": "com.gamerepublickor.google.gdsm",
+        "android": "com.farlightgames.igame.gp",
         "ios": 6751273403,
         "android:kr": "com.netmarble.kofafk"
       },
@@ -3782,7 +3782,8 @@
     "Among Us!": {
       "appIds": {
         "ios": "1351168404",
-        "android": "com.innersloth.spacemafia"
+        "android": "com.innersloth.spacemafia",
+        "steam": "945360"
       },
       "aliases": [
         "Among Us",
@@ -3795,7 +3796,8 @@
       "slug": "among-us",
       "platforms": [
         "ios",
-        "android"
+        "android",
+        "steam"
       ]
     },
     "Match Villains": {
@@ -4608,7 +4610,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -4925,18 +4927,18 @@
     "브레인 테스트 (Brain Test): 까다로운 퍼즐": {
       "appIds": {
         "android": "com.unicostudio.braintest",
-        "ios": 1486214495
+        "ios": "1486214495"
       },
+      "aliases": [
+        "브레인테스트",
+        "Brain Test"
+      ],
       "developer": "Unico Studio",
       "icon": "https://play-lh.googleusercontent.com/L4-Oa6O8GV4I23JTmo-xKSjfyjowc0d2uGGfdScYkCTMk6ftxTwGowdAjgh2nOrJlEmI",
       "slug": "브레인-테스트-brain-test-까다로운-퍼즐",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "브레인테스트",
-        "Brain Test"
       ]
     },
     "뻐끔뻐끔 배틀-Fish Eat Fish.io": {
@@ -9676,8 +9678,1290 @@
         "android",
         "ios"
       ]
+    },
+    "Dynasty Legends 2: 무쌍전란": {
+      "appIds": {
+        "ios": "6738378793",
+        "android": "com.moossangjr.mjko"
+      },
+      "aliases": [],
+      "developer": "Taihe Interactive",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/f8/d0/1ef8d0d5-8ea5-d4cd-e20c-0165cdf7106e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "dynasty-legends-2-무쌍전란",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "레츠고 레전드!": {
+      "appIds": {
+        "android": "com.gear2.letsgolegends"
+      },
+      "aliases": [],
+      "developer": "GEAR2",
+      "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
+      "slug": "레츠고-레전드",
+      "platforms": [
+        "android"
+      ]
+    },
+    "크리처 리그 챔피언": {
+      "appIds": {
+        "ios": "6755809717"
+      },
+      "aliases": [],
+      "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
+      "slug": "크리처-리그-챔피언",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "모두의마블": {
+      "appIds": {
+        "ios": "646315802",
+        "android": "com.cjenm.ModooMarbleKakao"
+      },
+      "aliases": [],
+      "developer": "Netmarble Corporation",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/6b/a5/2c6ba51d-77fe-7034-627f-f3435cf7367d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "모두의마블",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "마이 다마고치 포에버 My Tamagotchi": {
+      "appIds": {
+        "ios": "1267861706"
+      },
+      "aliases": [],
+      "developer": "BANDAI NAMCO Entertainment Europe",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "마이-다마고치-포에버-my-tamagotchi",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "머지 파라다이스:합성&머지(merge)": {
+      "appIds": {
+        "android": "com.storytaco.p32client2",
+        "ios": 6480382557
+      },
+      "aliases": [
+        "머지 파라다이스: 합성&머지(merge)"
+      ],
+      "developer": "StoryTaco.Inc",
+      "icon": "https://play-lh.googleusercontent.com/FVkg-gkTidXwpQp33UCoegD1l4L0IFfAXudoUWFmax8Lq6ySBx0A0xtmDGXxRY3kRKeL39_fIep7vMWljvHEZQ",
+      "slug": "머지-파라다이스합성머지merge",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "매치 팩토리(Match Factory)!": {
+      "appIds": {
+        "android": "net.peakgames.match",
+        "ios": 6449094229
+      },
+      "aliases": [],
+      "developer": "Peak",
+      "icon": "https://play-lh.googleusercontent.com/JdkgreDBCOxt7_0eeiVgbwtQkkdWmlWMO9cwAyj6rfVcAM5Z9l99zbg4eoUac5C0Bw",
+      "slug": "매치-팩토리match-factory",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Color Aura: Paint by number": {
+      "appIds": {
+        "android": "com.oakever.coloraura"
+      },
+      "aliases": [],
+      "developer": "Oakever Games",
+      "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
+      "slug": "color-aura-paint-by-number",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Connect Master – 매치 퍼즐": {
+      "appIds": {
+        "android": "com.game.people.connector"
+      },
+      "aliases": [],
+      "developer": "Rooftop Game",
+      "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
+      "slug": "connect-master-매치-퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Space Waves": {
+      "appIds": {
+        "android": "com.CrazyGames.SpaceWaves"
+      },
+      "aliases": [],
+      "developer": "CrazyGames.com",
+      "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
+      "slug": "space-waves",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Lethal Company": {
+      "appIds": {
+        "steam": "1966720"
+      },
+      "aliases": [],
+      "developer": "Zeekerss",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1762544438",
+      "slug": "lethal-company",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Chained Together": {
+      "appIds": {
+        "steam": "2567870"
+      },
+      "aliases": [],
+      "developer": "Anegar Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/header.jpg?t=1732288374",
+      "slug": "chained-together",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Supermarket Together": {
+      "appIds": {
+        "steam": "2709570"
+      },
+      "aliases": [],
+      "developer": "DeadDevsTellNoLies",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2709570/header.jpg?t=1757788249",
+      "slug": "supermarket-together",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Conan Exiles": {
+      "appIds": {
+        "steam": "440900"
+      },
+      "aliases": [],
+      "developer": "Funcom",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440900/header.jpg?t=1766090090",
+      "slug": "conan-exiles",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Dying Light: The Beast": {
+      "appIds": {
+        "steam": "3008130"
+      },
+      "aliases": [],
+      "developer": "Techland",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3008130/fbcba13d5fc471dae7ab2152c830744125ee2d68/header_alt_assets_2_koreana.jpg?t=1765984527",
+      "slug": "dying-light-the-beast",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "House Flipper": {
+      "appIds": {
+        "steam": "613100"
+      },
+      "aliases": [],
+      "developer": "Empyrean",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/header_koreana.jpg?t=1765487941",
+      "slug": "house-flipper",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Astral Party": {
+      "appIds": {
+        "steam": "2622000"
+      },
+      "aliases": [],
+      "developer": "STAR ENGINE PROJECT",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622000/bf2f2f5bd97e0f3be91209888d067a4858235db7/header.jpg?t=1759055557",
+      "slug": "astral-party",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Microsoft Flight Simulator (2020)": {
+      "appIds": {
+        "steam": "1250410"
+      },
+      "aliases": [],
+      "developer": "Asobo Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1748576233",
+      "slug": "microsoft-flight-simulator-2020",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "MY HERO ULTRA RUMBLE": {
+      "appIds": {
+        "steam": "1607250"
+      },
+      "aliases": [],
+      "developer": "Byking Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1607250/header.jpg?t=1763604022",
+      "slug": "my-hero-ultra-rumble",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "God of War Ragnarök": {
+      "appIds": {
+        "steam": "2322010"
+      },
+      "aliases": [],
+      "developer": "Santa Monica Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1750909504",
+      "slug": "god-of-war-ragnark",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Total War: ROME II - Emperor Edition": {
+      "appIds": {
+        "steam": "214950"
+      },
+      "aliases": [],
+      "developer": "CREATIVE ASSEMBLY",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214950/header.jpg?t=1763646540",
+      "slug": "total-war-rome-ii-emperor-edition",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Grounded": {
+      "appIds": {
+        "steam": "962130"
+      },
+      "aliases": [],
+      "developer": "Obsidian Entertainment",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/962130/header.jpg?t=1727719725",
+      "slug": "grounded",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Live Wallpaper": {
+      "appIds": {
+        "steam": "4056970"
+      },
+      "aliases": [],
+      "developer": "Fionnshare",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4056970/0e32adfc576833c7bebcbbaabf87318a6e6c6c06/header.jpg?t=1762746274",
+      "slug": "live-wallpaper",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Microsoft Flight Simulator 2024": {
+      "appIds": {
+        "steam": "2537590"
+      },
+      "aliases": [],
+      "developer": "Asobo Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2537590/header.jpg?t=1747324291",
+      "slug": "microsoft-flight-simulator-2024",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Guild Wars 2": {
+      "appIds": {
+        "steam": "1284210"
+      },
+      "aliases": [],
+      "developer": "ArenaNet®",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1284210/header.jpg?t=1766174882",
+      "slug": "guild-wars-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Avatar: Frontiers of Pandora™": {
+      "appIds": {
+        "steam": "2840770"
+      },
+      "aliases": [],
+      "developer": "Massive Entertainment – A Ubisoft Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2840770/722796071fa9c0a1551934adc596ba4fc8cb5e2b/header_alt_assets_0.jpg?t=1766182858",
+      "slug": "avatar-frontiers-of-pandora",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Total War: ATTILA": {
+      "appIds": {
+        "steam": "325610"
+      },
+      "aliases": [],
+      "developer": "CREATIVE ASSEMBLY",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/325610/header.jpg?t=1762962981",
+      "slug": "total-war-attila",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Dark and Darker": {
+      "appIds": {
+        "steam": "2016590"
+      },
+      "aliases": [],
+      "developer": "IRONMACE",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2016590/header.jpg?t=1761550505",
+      "slug": "dark-and-darker",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Dead Cells": {
+      "appIds": {
+        "steam": "588650"
+      },
+      "aliases": [],
+      "developer": "Motion Twin",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg?t=1761123066",
+      "slug": "dead-cells",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Dyson Sphere Program": {
+      "appIds": {
+        "steam": "1366540"
+      },
+      "aliases": [],
+      "developer": "Youthcat Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1366540/2521472f3f71b6f179515fdcfa33d27c212ba3ce/header.jpg?t=1765532615",
+      "slug": "dyson-sphere-program",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "HITMAN World of Assassination": {
+      "appIds": {
+        "steam": "1659040"
+      },
+      "aliases": [],
+      "developer": "IO Interactive A/S",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/a4395b989d631eef0f6881a8b0527c26034aa031/header_alt_assets_16.jpg?t=1765963512",
+      "slug": "hitman-world-of-assassination",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Marvel’s Spider-Man Remastered": {
+      "appIds": {
+        "steam": "1817070"
+      },
+      "aliases": [],
+      "developer": "Insomniac Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg?t=1763569047",
+      "slug": "marvels-spider-man-remastered",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Tainted Grail: The Fall of Avalon": {
+      "appIds": {
+        "steam": "1466060"
+      },
+      "aliases": [],
+      "developer": "Questline",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466060/45ac7e8a15b7b6c28f89acd88a4f9cc7d4df2a57/header.jpg?t=1765827566",
+      "slug": "tainted-grail-the-fall-of-avalon",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "OVR Advanced Settings": {
+      "appIds": {
+        "steam": "1009850"
+      },
+      "aliases": [],
+      "developer": "OVRAS Team",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1009850/header.jpg?t=1715384916",
+      "slug": "ovr-advanced-settings",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "God of War": {
+      "appIds": {
+        "steam": "1593500"
+      },
+      "aliases": [],
+      "developer": "Santa Monica Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412",
+      "slug": "god-of-war",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Desktop Mate": {
+      "appIds": {
+        "steam": "3301060"
+      },
+      "aliases": [],
+      "developer": "infiniteloop",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3301060/header.jpg?t=1765767555",
+      "slug": "desktop-mate",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "FANTASY LIFE i: The Girl Who Steals Time": {
+      "appIds": {
+        "steam": "2993780"
+      },
+      "aliases": [],
+      "developer": "LEVEL5 Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2993780/header_koreana.jpg?t=1749900924",
+      "slug": "fantasy-life-i-the-girl-who-steals-time",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Dune: Awakening": {
+      "appIds": {
+        "steam": "1172710"
+      },
+      "aliases": [],
+      "developer": "Funcom",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172710/6a328e09f60e192094e3cd1b22faca6739605f99/header_alt_assets_6_koreana.jpg?t=1766090061",
+      "slug": "dune-awakening",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Age of Empires III: Definitive Edition": {
+      "appIds": {
+        "steam": "933110"
+      },
+      "aliases": [],
+      "developer": "World's Edge",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/933110/header.jpg?t=1756156214",
+      "slug": "age-of-empires-iii-definitive-edition",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Frostpunk": {
+      "appIds": {
+        "steam": "323190"
+      },
+      "aliases": [],
+      "developer": "11 bit studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323190/abcd2bf3c275092d637d7dd98e0061dbdd2fd2da/header.jpg?t=1765218599",
+      "slug": "frostpunk",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Last Caretaker": {
+      "appIds": {
+        "steam": "1783560"
+      },
+      "aliases": [],
+      "developer": "Channel37 Ltd",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1783560/21c5b743b880ac0744db264d33b152173c90e50c/header.jpg?t=1765885653",
+      "slug": "the-last-caretaker",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Vampire Survivors": {
+      "appIds": {
+        "steam": "1794680"
+      },
+      "aliases": [],
+      "developer": "poncle",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/header.jpg?t=1763675244",
+      "slug": "vampire-survivors",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Mount & Blade: Warband": {
+      "appIds": {
+        "steam": "48700"
+      },
+      "aliases": [],
+      "developer": "TaleWorlds Entertainment",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/48700/header.jpg?t=1750147149",
+      "slug": "mount-blade-warband",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "X4: Foundations": {
+      "appIds": {
+        "steam": "392160"
+      },
+      "aliases": [],
+      "developer": "Egosoft",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/392160/3e9888bb470fad1eef5962f1cc5abecd7a31c188/header_alt_assets_1_koreana.jpg?t=1762948529",
+      "slug": "x4-foundations",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Need for Speed™ Heat": {
+      "appIds": {
+        "steam": "1222680"
+      },
+      "aliases": [],
+      "developer": "Ghost Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222680/header.jpg?t=1716831270",
+      "slug": "need-for-speed-heat",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Tom Clancy's Ghost Recon® Breakpoint": {
+      "appIds": {
+        "steam": "2231380"
+      },
+      "aliases": [],
+      "developer": "Ubisoft Paris",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231380/header.jpg?t=1764778328",
+      "slug": "tom-clancys-ghost-recon-breakpoint",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Battlefield™ V": {
+      "appIds": {
+        "steam": "1238810"
+      },
+      "aliases": [],
+      "developer": "DICE",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238810/header.jpg?t=1747167586",
+      "slug": "battlefield-v",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Anno 1800": {
+      "appIds": {
+        "steam": "916440"
+      },
+      "aliases": [],
+      "developer": "Ubisoft Mainz",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/916440/header.jpg?t=1758568419",
+      "slug": "anno-1800",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Tom Clancy’s The Division® 2": {
+      "appIds": {
+        "steam": "2221490"
+      },
+      "aliases": [],
+      "developer": "Ubisoft",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/600d22888e03ad722b078320841797b2184394dd/header_alt_assets_1.jpg?t=1764794435",
+      "slug": "tom-clancys-the-division-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Tomb Raider Game of the Year": {
+      "appIds": {
+        "steam": "203160"
+      },
+      "aliases": [],
+      "developer": "Crystal Dynamics",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203160/9e67774e97cdd155f287146e62611eb445514ac6/header.jpg?t=1765220424",
+      "slug": "tomb-raider-game-of-the-year",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Fishing Planet": {
+      "appIds": {
+        "steam": "380600"
+      },
+      "aliases": [],
+      "developer": "Fishing Planet LLC",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/380600/01c457c29370b3e68ccc91f1e49965727e9cd0f6/header_alt_assets_12.jpg?t=1766080107",
+      "slug": "fishing-planet",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "BLOODSTRIKE": {
+      "appIds": {
+        "steam": "3199170"
+      },
+      "aliases": [],
+      "developer": "NetEase Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3199170/header.jpg?t=1748342194",
+      "slug": "bloodstrike",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Aseprite": {
+      "appIds": {
+        "steam": "431730"
+      },
+      "aliases": [],
+      "developer": "Igara Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431730/header.jpg?t=1749680273",
+      "slug": "aseprite",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "KARDS - The WW2 Card Game": {
+      "appIds": {
+        "steam": "544810"
+      },
+      "aliases": [],
+      "developer": "1939 Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/544810/header_koreana.jpg?t=1765450916",
+      "slug": "kards-the-ww2-card-game",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Sniper Elite 5": {
+      "appIds": {
+        "steam": "1029690"
+      },
+      "aliases": [],
+      "developer": "Rebellion",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029690/header.jpg?t=1753950203",
+      "slug": "sniper-elite-5",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Company of Heroes 3": {
+      "appIds": {
+        "steam": "1677280"
+      },
+      "aliases": [],
+      "developer": "Relic Entertainment",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/header.jpg?t=1764272700",
+      "slug": "company-of-heroes-3",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Sky: Children of the Light": {
+      "appIds": {
+        "steam": "2325290"
+      },
+      "aliases": [],
+      "developer": "thatgamecompany",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2325290/b479dd9cf274688a27fad74b74cc9d0b00082cfb/header.jpg?t=1765557146",
+      "slug": "sky-children-of-the-light",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Crosshair V2": {
+      "appIds": {
+        "steam": "2250040"
+      },
+      "aliases": [],
+      "developer": "CenterPoint Gaming",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2250040/header.jpg?t=1745940251",
+      "slug": "crosshair-v2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Unnamed Space Idle": {
+      "appIds": {
+        "steam": "2471100"
+      },
+      "aliases": [],
+      "developer": "Sylv",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2471100/header.jpg?t=1758726801",
+      "slug": "unnamed-space-idle",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Sultan's Game": {
+      "appIds": {
+        "steam": "3117820"
+      },
+      "aliases": [],
+      "developer": "Double Cross",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3117820/header.jpg?t=1766398301",
+      "slug": "sultans-game",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "EVE Online": {
+      "appIds": {
+        "steam": "8500"
+      },
+      "aliases": [],
+      "developer": "CCP",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/fed1ea9b01dd6564101518a5201740fb44929fb4/header.jpg?t=1764078270",
+      "slug": "eve-online",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Disney Dreamlight Valley": {
+      "appIds": {
+        "steam": "1401590"
+      },
+      "aliases": [],
+      "developer": "Gameloft",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401590/fc1543b97e1851182432528e5c9ab308257e8162/header_alt_assets_5.jpg?t=1764192484",
+      "slug": "disney-dreamlight-valley",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Long Dark": {
+      "appIds": {
+        "steam": "305620"
+      },
+      "aliases": [],
+      "developer": "Hinterland Studio Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/305620/header.jpg?t=1765217095",
+      "slug": "the-long-dark",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Barotrauma": {
+      "appIds": {
+        "steam": "602960"
+      },
+      "aliases": [],
+      "developer": "FakeFish",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/36f3dda943d31592ae4b73139555cf9c81923844/header_alt_assets_22.jpg?t=1765211124",
+      "slug": "barotrauma",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Alchemy Factory": {
+      "appIds": {
+        "steam": "3669570"
+      },
+      "aliases": [],
+      "developer": "",
+      "icon": "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg",
+      "slug": "alchemy-factory",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Elite Dangerous": {
+      "appIds": {
+        "steam": "359320"
+      },
+      "aliases": [],
+      "developer": "Frontier Developments",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359320/header.jpg?t=1759842966",
+      "slug": "elite-dangerous",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Wandering Sword": {
+      "appIds": {
+        "steam": "1876890"
+      },
+      "aliases": [],
+      "developer": "The Swordman Studio",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/44686407cf63ce1c05c9fe3bd07e0df55307bd01/header.jpg?t=1766110443",
+      "slug": "wandering-sword",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Enlisted": {
+      "appIds": {
+        "steam": "2051620"
+      },
+      "aliases": [],
+      "developer": "Darkflow Software",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2051620/4a0b159885e6b1b9c55610cfffe428b74584fe63/header.jpg?t=1766080613",
+      "slug": "enlisted",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Assetto Corsa Competizione": {
+      "appIds": {
+        "steam": "805550"
+      },
+      "aliases": [],
+      "developer": "Kunos Simulazioni",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/805550/6890cbaf8954613e28787f4391f4045ebc272414/header_alt_assets_0.jpg?t=1766404577",
+      "slug": "assetto-corsa-competizione",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Le Mans Ultimate": {
+      "appIds": {
+        "steam": "2399420"
+      },
+      "aliases": [],
+      "developer": "Studio 397",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399420/f510badbf573eecdf529ae735a49331f4b9919be/header.jpg?t=1765459545",
+      "slug": "le-mans-ultimate",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Total War: MEDIEVAL II – Definitive Edition": {
+      "appIds": {
+        "steam": "4700"
+      },
+      "aliases": [],
+      "developer": "CREATIVE ASSEMBLY",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4700/header.jpg?t=1763643156",
+      "slug": "total-war-medieval-ii-definitive-edition",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "DYNASTY WARRIORS: ORIGINS": {
+      "appIds": {
+        "steam": "2384580"
+      },
+      "aliases": [],
+      "developer": "KOEI TECMO GAMES CO., LTD.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2384580/header_koreana.jpg?t=1765962589",
+      "slug": "dynasty-warriors-origins",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Maneater": {
+      "appIds": {
+        "steam": "629820"
+      },
+      "aliases": [],
+      "developer": "Tripwire Interactive",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629820/header.jpg?t=1744396107",
+      "slug": "maneater",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ACE COMBAT™7: SKIES UNKNOWN": {
+      "appIds": {
+        "steam": "502500"
+      },
+      "aliases": [],
+      "developer": "Bandai Namco Studios Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/502500/header.jpg?t=1737108523",
+      "slug": "ace-combat7-skies-unknown",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Cell to Singularity - Evolution Never Ends": {
+      "appIds": {
+        "steam": "977400"
+      },
+      "aliases": [],
+      "developer": "Computer Lunch",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/977400/065676bd0a69a99e3d65939e8b0fe9f91a0f5fcb/header.jpg?t=1763477672",
+      "slug": "cell-to-singularity-evolution-never-ends",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Teardown": {
+      "appIds": {
+        "steam": "1167630"
+      },
+      "aliases": [],
+      "developer": "Tuxedo Labs",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1167630/header.jpg?t=1763977691",
+      "slug": "teardown",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Melvor Idle": {
+      "appIds": {
+        "steam": "1267910"
+      },
+      "aliases": [],
+      "developer": "Games by Malcs",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/header.jpg?t=1718290779",
+      "slug": "melvor-idle",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Feed The Cups": {
+      "appIds": {
+        "steam": "2336220"
+      },
+      "aliases": [],
+      "developer": "Vambear Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2336220/header.jpg?t=1758506725",
+      "slug": "feed-the-cups",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Magical Girl Witch Trials (魔法少女ノ魔女裁判)": {
+      "appIds": {
+        "steam": "3101040"
+      },
+      "aliases": [],
+      "developer": "Acacia",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3101040/header.jpg?t=1766600472",
+      "slug": "magical-girl-witch-trials",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "No Rest for the Wicked": {
+      "appIds": {
+        "steam": "1371980"
+      },
+      "aliases": [],
+      "developer": "Moon Studios GmbH",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1371980/84ed28a12e7ab7547deaa2b979c653219ba17ef5/header.jpg?t=1766151277",
+      "slug": "no-rest-for-the-wicked",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Grim Dawn": {
+      "appIds": {
+        "steam": "219990"
+      },
+      "aliases": [],
+      "developer": "Crate Entertainment",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219990/header.jpg?t=1726250949",
+      "slug": "grim-dawn",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Persona 3 Reload": {
+      "appIds": {
+        "steam": "2161700"
+      },
+      "aliases": [],
+      "developer": "ATLUS",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1764776430",
+      "slug": "persona-3-reload",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Medieval Dynasty": {
+      "appIds": {
+        "steam": "1129580"
+      },
+      "aliases": [],
+      "developer": "Render Cube",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1129580/90ac7695cb593efed5215a589436676911aae316/header_alt_assets_34.jpg?t=1765546793",
+      "slug": "medieval-dynasty",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "A Way Out": {
+      "appIds": {
+        "steam": "1222700"
+      },
+      "aliases": [],
+      "developer": "Hazelight Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/header.jpg?t=1730912036",
+      "slug": "a-way-out",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Grand Theft Auto IV: The Complete Edition": {
+      "appIds": {
+        "steam": "12210"
+      },
+      "aliases": [],
+      "developer": "Rockstar North",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12210/header.jpg?t=1721061564",
+      "slug": "grand-theft-auto-iv-the-complete-edition",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "STAR WARS™: The Old Republic™": {
+      "appIds": {
+        "steam": "1286830"
+      },
+      "aliases": [],
+      "developer": "Broadsword",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286830/header.jpg?t=1764088482",
+      "slug": "star-wars-the-old-republic",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Killing Floor 2": {
+      "appIds": {
+        "steam": "232090"
+      },
+      "aliases": [],
+      "developer": "Tripwire Interactive",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232090/header.jpg?t=1729011001",
+      "slug": "killing-floor-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Cult of the Lamb": {
+      "appIds": {
+        "steam": "1313140"
+      },
+      "aliases": [],
+      "developer": "Massive Monster",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/19f32bb477a6e9d058e05193b4e282149bd70644/header.jpg?t=1765818219",
+      "slug": "cult-of-the-lamb",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Dinkum": {
+      "appIds": {
+        "steam": "1062520"
+      },
+      "aliases": [],
+      "developer": "James Bendon",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1062520/743a666aea7e583fd114f1c0c23a56f9dc00dd1e/header_alt_assets_3.jpg?t=1766081102",
+      "slug": "dinkum",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Resident Evil 2": {
+      "appIds": {
+        "steam": "883710"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/883710/header_koreana.jpg?t=1728438541",
+      "slug": "resident-evil-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "skate.": {
+      "appIds": {
+        "steam": "3354750"
+      },
+      "aliases": [],
+      "developer": "Full Circle",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3354750/79c5a87b61a396cc6e6b69e3a083727f175dea83/header.jpg?t=1766405056",
+      "slug": "skate",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Far Cry 5": {
+      "appIds": {
+        "steam": "552520"
+      },
+      "aliases": [],
+      "developer": "Ubisoft Montreal",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552520/header.jpg?t=1762190084",
+      "slug": "far-cry-5",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Shop Titans": {
+      "appIds": {
+        "steam": "1258080"
+      },
+      "aliases": [],
+      "developer": "Kabam Games, Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/095862c7e85e4208afb363a9a5924349923d3165/header_koreana.jpg?t=1754432193",
+      "slug": "shop-titans",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ASTRONEER": {
+      "appIds": {
+        "steam": "361420"
+      },
+      "aliases": [],
+      "developer": "System Era Softworks",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/361420/8628d596214dba144ac79cf621ed56a218a09272/header_alt_assets_15.jpg?t=1763660960",
+      "slug": "astroneer",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Wartales": {
+      "appIds": {
+        "steam": "1527950"
+      },
+      "aliases": [],
+      "developer": "Shiro Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1527950/0464cb0908d6fbdd9742e028c42fd2a9a2e00622/header_alt_assets_19_koreana.jpg?t=1766130800",
+      "slug": "wartales",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Strinova": {
+      "appIds": {
+        "steam": "1282270"
+      },
+      "aliases": [],
+      "developer": "iDreamSky",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1282270/bb05c6566bf5f1e763ff1dd64a72b7d29c7ce1dd/header.jpg?t=1766480100",
+      "slug": "strinova",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Space Engineers": {
+      "appIds": {
+        "steam": "244850"
+      },
+      "aliases": [],
+      "developer": "Keen Software House",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244850/c8be85672bcc68231dc3bcafa001b8c694483780/header.jpg?t=1764755549",
+      "slug": "space-engineers",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "They Are Billions": {
+      "appIds": {
+        "steam": "644930"
+      },
+      "aliases": [],
+      "developer": "Numantian Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/644930/header.jpg?t=1595631876",
+      "slug": "they-are-billions",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "gogh: Focus with Your Avatar": {
+      "appIds": {
+        "steam": "3213850"
+      },
+      "aliases": [],
+      "developer": "ambr",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3213850/7f741a5e57716dace1627880ce43cc7e1b6f9fb9/header_alt_assets_2.jpg?t=1766102611",
+      "slug": "gogh-focus-with-your-avatar",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Fallout Shelter": {
+      "appIds": {
+        "steam": "588430"
+      },
+      "aliases": [],
+      "developer": "Bethesda Game Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588430/81036da5e622f64ccfecf825ce1378b0a5f98677/header.jpg?t=1765992600",
+      "slug": "fallout-shelter",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Portal 2": {
+      "appIds": {
+        "steam": "620"
+      },
+      "aliases": [],
+      "developer": "Valve",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004",
+      "slug": "portal-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "DDNet": {
+      "appIds": {
+        "steam": "412220"
+      },
+      "aliases": [],
+      "developer": "DDNet Team",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/412220/header.jpg?t=1757418450",
+      "slug": "ddnet",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Abiotic Factor": {
+      "appIds": {
+        "steam": "427410"
+      },
+      "aliases": [],
+      "developer": "Deep Field Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427410/006447284e9ea5d97a33a90ea86113d1f86338d4/header_alt_assets_5.jpg?t=1765822569",
+      "slug": "abiotic-factor",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Hell Let Loose": {
+      "appIds": {
+        "steam": "686810"
+      },
+      "aliases": [],
+      "developer": "Expression Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/686810/fa2c71907321b36aab57edc44dbfe645f0f3a899/header_alt_assets_4.jpg?t=1766050109",
+      "slug": "hell-let-loose",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "SAO Utils 2: Progressive": {
+      "appIds": {
+        "steam": "877280"
+      },
+      "aliases": [],
+      "developer": "Joshua Chen",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/877280/header.jpg?t=1672587379",
+      "slug": "sao-utils-2-progressive",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ShareX": {
+      "appIds": {
+        "steam": "400040"
+      },
+      "aliases": [],
+      "developer": "ShareX Team",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400040/header.jpg?t=1736919331",
+      "slug": "sharex",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-25",
-  "totalGames": 650
+  "lastUpdated": "2025-12-26",
+  "totalGames": 756
 }

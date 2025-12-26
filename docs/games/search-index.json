@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-v2r-tower-google",
+    "slug": "com-webzen-muidle-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2775,7 +2775,7 @@
   },
   {
     "name": "킹 오브 파이터 AFK",
-    "slug": "com-gamerepublickor-google-gdsm",
+    "slug": "com-farlightgames-igame-gp",
     "icon": "https://play-lh.googleusercontent.com/OKACW0ZX4g1xZrXXnTL4SKOZEFLpBorvf4sB2LN-8fKeakXgN9Oht62twabIgQxIBc4",
     "aliases": [
       "킹 오브 파이터 AFK - 3000뽑기 증정",
@@ -3836,11 +3836,12 @@
     ],
     "platforms": [
       "ios",
-      "android"
+      "android",
+      "steam"
     ],
     "developer": "InnerSloth LLC",
     "hasRankings": true,
-    "hasSteam": false,
+    "hasSteam": true,
     "hasData": true
   },
   {
@@ -4691,7 +4692,7 @@
   },
   {
     "name": "스킨케어 타임: 메이크오버 ASMR",
-    "slug": "com-fc-p-gp-skincare-makeup-makeover-asmr-game",
+    "slug": "com-whoyaho-tanghulu",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
       "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
@@ -10009,6 +10010,1390 @@
     "developer": "Easybrain",
     "hasRankings": true,
     "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Dynasty Legends 2: 무쌍전란",
+    "slug": "com-moossangjr-mjko",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/f8/d0/1ef8d0d5-8ea5-d4cd-e20c-0165cdf7106e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Taihe Interactive",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "레츠고 레전드!",
+    "slug": "com-gear2-letsgolegends",
+    "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "GEAR2",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "크리처 리그 챔피언",
+    "slug": "크리처-리그-챔피언",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "모두의마블",
+    "slug": "com-cjenm-modoomarblekakao",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/6b/a5/2c6ba51d-77fe-7034-627f-f3435cf7367d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Netmarble Corporation",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "마이 다마고치 포에버 My Tamagotchi",
+    "slug": "마이-다마고치-포에버-my-tamagotchi",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "BANDAI NAMCO Entertainment Europe",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "머지 파라다이스:합성&머지(merge)",
+    "slug": "com-storytaco-p32client2",
+    "icon": "https://play-lh.googleusercontent.com/FVkg-gkTidXwpQp33UCoegD1l4L0IFfAXudoUWFmax8Lq6ySBx0A0xtmDGXxRY3kRKeL39_fIep7vMWljvHEZQ",
+    "aliases": [
+      "머지 파라다이스: 합성&머지(merge)"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "StoryTaco.Inc",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "매치 팩토리(Match Factory)!",
+    "slug": "net-peakgames-match",
+    "icon": "https://play-lh.googleusercontent.com/JdkgreDBCOxt7_0eeiVgbwtQkkdWmlWMO9cwAyj6rfVcAM5Z9l99zbg4eoUac5C0Bw",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Peak",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Color Aura: Paint by number",
+    "slug": "com-oakever-coloraura",
+    "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Oakever Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Connect Master – 매치 퍼즐",
+    "slug": "com-game-people-connector",
+    "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Rooftop Game",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Space Waves",
+    "slug": "com-crazygames-spacewaves",
+    "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "CrazyGames.com",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Lethal Company",
+    "slug": "lethal-company",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1762544438",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Zeekerss",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Chained Together",
+    "slug": "chained-together",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/header.jpg?t=1732288374",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Anegar Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Supermarket Together",
+    "slug": "supermarket-together",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2709570/header.jpg?t=1757788249",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "DeadDevsTellNoLies",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Conan Exiles",
+    "slug": "conan-exiles",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440900/header.jpg?t=1766090090",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Funcom",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dying Light: The Beast",
+    "slug": "dying-light-the-beast",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3008130/fbcba13d5fc471dae7ab2152c830744125ee2d68/header_alt_assets_2_koreana.jpg?t=1765984527",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Techland",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "House Flipper",
+    "slug": "house-flipper",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/header_koreana.jpg?t=1765487941",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Empyrean",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Astral Party",
+    "slug": "astral-party",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622000/bf2f2f5bd97e0f3be91209888d067a4858235db7/header.jpg?t=1759055557",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "STAR ENGINE PROJECT",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Microsoft Flight Simulator (2020)",
+    "slug": "microsoft-flight-simulator-2020",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1748576233",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Asobo Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "MY HERO ULTRA RUMBLE",
+    "slug": "my-hero-ultra-rumble",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1607250/header.jpg?t=1763604022",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Byking Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "God of War Ragnarök",
+    "slug": "god-of-war-ragnar-k",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1750909504",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Santa Monica Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Total War: ROME II - Emperor Edition",
+    "slug": "total-war-rome-ii-emperor-edition",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214950/header.jpg?t=1763646540",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CREATIVE ASSEMBLY",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Grounded",
+    "slug": "grounded",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/962130/header.jpg?t=1727719725",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Obsidian Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Live Wallpaper",
+    "slug": "live-wallpaper",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4056970/0e32adfc576833c7bebcbbaabf87318a6e6c6c06/header.jpg?t=1762746274",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Fionnshare",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Microsoft Flight Simulator 2024",
+    "slug": "microsoft-flight-simulator-2024",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2537590/header.jpg?t=1747324291",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Asobo Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Guild Wars 2",
+    "slug": "guild-wars-2",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1284210/header.jpg?t=1766174882",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "ArenaNet®",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Avatar: Frontiers of Pandora™",
+    "slug": "avatar-frontiers-of-pandora",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2840770/722796071fa9c0a1551934adc596ba4fc8cb5e2b/header_alt_assets_0.jpg?t=1766182858",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Massive Entertainment – A Ubisoft Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Total War: ATTILA",
+    "slug": "total-war-attila",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/325610/header.jpg?t=1762962981",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CREATIVE ASSEMBLY",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dark and Darker",
+    "slug": "dark-and-darker",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2016590/header.jpg?t=1761550505",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "IRONMACE",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dead Cells",
+    "slug": "dead-cells",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg?t=1761123066",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Motion Twin",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dyson Sphere Program",
+    "slug": "dyson-sphere-program",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1366540/2521472f3f71b6f179515fdcfa33d27c212ba3ce/header.jpg?t=1765532615",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Youthcat Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "HITMAN World of Assassination",
+    "slug": "hitman-world-of-assassination",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/a4395b989d631eef0f6881a8b0527c26034aa031/header_alt_assets_16.jpg?t=1765963512",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "IO Interactive A/S",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Marvel’s Spider-Man Remastered",
+    "slug": "marvel-s-spider-man-remastered",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg?t=1763569047",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Insomniac Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Tainted Grail: The Fall of Avalon",
+    "slug": "tainted-grail-the-fall-of-avalon",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466060/45ac7e8a15b7b6c28f89acd88a4f9cc7d4df2a57/header.jpg?t=1765827566",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Questline",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "OVR Advanced Settings",
+    "slug": "ovr-advanced-settings",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1009850/header.jpg?t=1715384916",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "OVRAS Team",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "God of War",
+    "slug": "god-of-war",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Santa Monica Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Desktop Mate",
+    "slug": "desktop-mate",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3301060/header.jpg?t=1765767555",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "infiniteloop",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "FANTASY LIFE i: The Girl Who Steals Time",
+    "slug": "fantasy-life-i-the-girl-who-steals-time",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2993780/header_koreana.jpg?t=1749900924",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "LEVEL5 Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dune: Awakening",
+    "slug": "dune-awakening",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172710/6a328e09f60e192094e3cd1b22faca6739605f99/header_alt_assets_6_koreana.jpg?t=1766090061",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Funcom",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Age of Empires III: Definitive Edition",
+    "slug": "age-of-empires-iii-definitive-edition",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/933110/header.jpg?t=1756156214",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "World's Edge",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Frostpunk",
+    "slug": "frostpunk",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323190/abcd2bf3c275092d637d7dd98e0061dbdd2fd2da/header.jpg?t=1765218599",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "11 bit studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "The Last Caretaker",
+    "slug": "the-last-caretaker",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1783560/21c5b743b880ac0744db264d33b152173c90e50c/header.jpg?t=1765885653",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Channel37 Ltd",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Vampire Survivors",
+    "slug": "vampire-survivors",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/header.jpg?t=1763675244",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "poncle",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Mount & Blade: Warband",
+    "slug": "mount-blade-warband",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/48700/header.jpg?t=1750147149",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "TaleWorlds Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "X4: Foundations",
+    "slug": "x4-foundations",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/392160/3e9888bb470fad1eef5962f1cc5abecd7a31c188/header_alt_assets_1_koreana.jpg?t=1762948529",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Egosoft",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Need for Speed™ Heat",
+    "slug": "need-for-speed-heat",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222680/header.jpg?t=1716831270",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ghost Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Tom Clancy's Ghost Recon® Breakpoint",
+    "slug": "tom-clancy-s-ghost-recon-breakpoint",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231380/header.jpg?t=1764778328",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ubisoft Paris",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Battlefield™ V",
+    "slug": "battlefield-v",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238810/header.jpg?t=1747167586",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "DICE",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Anno 1800",
+    "slug": "anno-1800",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/916440/header.jpg?t=1758568419",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ubisoft Mainz",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Tom Clancy’s The Division® 2",
+    "slug": "tom-clancy-s-the-division-2",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/600d22888e03ad722b078320841797b2184394dd/header_alt_assets_1.jpg?t=1764794435",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ubisoft",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Tomb Raider Game of the Year",
+    "slug": "tomb-raider-game-of-the-year",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203160/9e67774e97cdd155f287146e62611eb445514ac6/header.jpg?t=1765220424",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Crystal Dynamics",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Fishing Planet",
+    "slug": "fishing-planet",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/380600/01c457c29370b3e68ccc91f1e49965727e9cd0f6/header_alt_assets_12.jpg?t=1766080107",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Fishing Planet LLC",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "BLOODSTRIKE",
+    "slug": "bloodstrike",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3199170/header.jpg?t=1748342194",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "NetEase Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Aseprite",
+    "slug": "aseprite",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431730/header.jpg?t=1749680273",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Igara Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "KARDS - The WW2 Card Game",
+    "slug": "kards-the-ww2-card-game",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/544810/header_koreana.jpg?t=1765450916",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "1939 Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Sniper Elite 5",
+    "slug": "sniper-elite-5",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029690/header.jpg?t=1753950203",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Rebellion",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Company of Heroes 3",
+    "slug": "company-of-heroes-3",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/header.jpg?t=1764272700",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Relic Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Sky: Children of the Light",
+    "slug": "sky-children-of-the-light",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2325290/b479dd9cf274688a27fad74b74cc9d0b00082cfb/header.jpg?t=1765557146",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "thatgamecompany",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Crosshair V2",
+    "slug": "crosshair-v2",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2250040/header.jpg?t=1745940251",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CenterPoint Gaming",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Unnamed Space Idle",
+    "slug": "unnamed-space-idle",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2471100/header.jpg?t=1758726801",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Sylv",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Sultan's Game",
+    "slug": "sultan-s-game",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3117820/header.jpg?t=1766398301",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Double Cross",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "EVE Online",
+    "slug": "eve-online",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/fed1ea9b01dd6564101518a5201740fb44929fb4/header.jpg?t=1764078270",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CCP",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Disney Dreamlight Valley",
+    "slug": "disney-dreamlight-valley",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401590/fc1543b97e1851182432528e5c9ab308257e8162/header_alt_assets_5.jpg?t=1764192484",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Gameloft",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "The Long Dark",
+    "slug": "the-long-dark",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/305620/header.jpg?t=1765217095",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Hinterland Studio Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Barotrauma",
+    "slug": "barotrauma",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/36f3dda943d31592ae4b73139555cf9c81923844/header_alt_assets_22.jpg?t=1765211124",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "FakeFish",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Alchemy Factory",
+    "slug": "alchemy-factory",
+    "icon": "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Elite Dangerous",
+    "slug": "elite-dangerous",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359320/header.jpg?t=1759842966",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Frontier Developments",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Wandering Sword",
+    "slug": "wandering-sword",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/44686407cf63ce1c05c9fe3bd07e0df55307bd01/header.jpg?t=1766110443",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "The Swordman Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Enlisted",
+    "slug": "enlisted",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2051620/4a0b159885e6b1b9c55610cfffe428b74584fe63/header.jpg?t=1766080613",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Darkflow Software",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Assetto Corsa Competizione",
+    "slug": "assetto-corsa-competizione",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/805550/6890cbaf8954613e28787f4391f4045ebc272414/header_alt_assets_0.jpg?t=1766404577",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Kunos Simulazioni",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Le Mans Ultimate",
+    "slug": "le-mans-ultimate",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399420/f510badbf573eecdf529ae735a49331f4b9919be/header.jpg?t=1765459545",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Studio 397",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Total War: MEDIEVAL II – Definitive Edition",
+    "slug": "total-war-medieval-ii-definitive-edition",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4700/header.jpg?t=1763643156",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CREATIVE ASSEMBLY",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "DYNASTY WARRIORS: ORIGINS",
+    "slug": "dynasty-warriors-origins",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2384580/header_koreana.jpg?t=1765962589",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "KOEI TECMO GAMES CO., LTD.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Maneater",
+    "slug": "maneater",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629820/header.jpg?t=1744396107",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Tripwire Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "ACE COMBAT™7: SKIES UNKNOWN",
+    "slug": "ace-combat-7-skies-unknown",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/502500/header.jpg?t=1737108523",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Bandai Namco Studios Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Cell to Singularity - Evolution Never Ends",
+    "slug": "cell-to-singularity-evolution-never-ends",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/977400/065676bd0a69a99e3d65939e8b0fe9f91a0f5fcb/header.jpg?t=1763477672",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Computer Lunch",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Teardown",
+    "slug": "teardown",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1167630/header.jpg?t=1763977691",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Tuxedo Labs",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Melvor Idle",
+    "slug": "melvor-idle",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/header.jpg?t=1718290779",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Games by Malcs",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Feed The Cups",
+    "slug": "feed-the-cups",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2336220/header.jpg?t=1758506725",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Vambear Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Magical Girl Witch Trials (魔法少女ノ魔女裁判)",
+    "slug": "magical-girl-witch-trials",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3101040/header.jpg?t=1766600472",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Acacia",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "No Rest for the Wicked",
+    "slug": "no-rest-for-the-wicked",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1371980/84ed28a12e7ab7547deaa2b979c653219ba17ef5/header.jpg?t=1766151277",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Moon Studios GmbH",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Grim Dawn",
+    "slug": "grim-dawn",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219990/header.jpg?t=1726250949",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Crate Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Persona 3 Reload",
+    "slug": "persona-3-reload",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1764776430",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "ATLUS",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Medieval Dynasty",
+    "slug": "medieval-dynasty",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1129580/90ac7695cb593efed5215a589436676911aae316/header_alt_assets_34.jpg?t=1765546793",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Render Cube",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "A Way Out",
+    "slug": "a-way-out",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/header.jpg?t=1730912036",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Hazelight Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Grand Theft Auto IV: The Complete Edition",
+    "slug": "grand-theft-auto-iv-the-complete-edition",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12210/header.jpg?t=1721061564",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Rockstar North",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "STAR WARS™: The Old Republic™",
+    "slug": "star-wars-the-old-republic",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286830/header.jpg?t=1764088482",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Broadsword",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Killing Floor 2",
+    "slug": "killing-floor-2",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232090/header.jpg?t=1729011001",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Tripwire Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Cult of the Lamb",
+    "slug": "cult-of-the-lamb",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/19f32bb477a6e9d058e05193b4e282149bd70644/header.jpg?t=1765818219",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Massive Monster",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dinkum",
+    "slug": "dinkum",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1062520/743a666aea7e583fd114f1c0c23a56f9dc00dd1e/header_alt_assets_3.jpg?t=1766081102",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "James Bendon",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Resident Evil 2",
+    "slug": "resident-evil-2",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/883710/header_koreana.jpg?t=1728438541",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CAPCOM Co., Ltd.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "skate.",
+    "slug": "skate",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3354750/79c5a87b61a396cc6e6b69e3a083727f175dea83/header.jpg?t=1766405056",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Full Circle",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Far Cry 5",
+    "slug": "far-cry-5",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552520/header.jpg?t=1762190084",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ubisoft Montreal",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Shop Titans",
+    "slug": "shop-titans",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/095862c7e85e4208afb363a9a5924349923d3165/header_koreana.jpg?t=1754432193",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Kabam Games, Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "ASTRONEER",
+    "slug": "astroneer",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/361420/8628d596214dba144ac79cf621ed56a218a09272/header_alt_assets_15.jpg?t=1763660960",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "System Era Softworks",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Wartales",
+    "slug": "wartales",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1527950/0464cb0908d6fbdd9742e028c42fd2a9a2e00622/header_alt_assets_19_koreana.jpg?t=1766130800",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Shiro Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Strinova",
+    "slug": "strinova",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1282270/bb05c6566bf5f1e763ff1dd64a72b7d29c7ce1dd/header.jpg?t=1766480100",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "iDreamSky",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Space Engineers",
+    "slug": "space-engineers",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244850/c8be85672bcc68231dc3bcafa001b8c694483780/header.jpg?t=1764755549",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Keen Software House",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "They Are Billions",
+    "slug": "they-are-billions",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/644930/header.jpg?t=1595631876",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Numantian Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "gogh: Focus with Your Avatar",
+    "slug": "gogh-focus-with-your-avatar",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3213850/7f741a5e57716dace1627880ce43cc7e1b6f9fb9/header_alt_assets_2.jpg?t=1766102611",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "ambr",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Fallout Shelter",
+    "slug": "fallout-shelter",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588430/81036da5e622f64ccfecf825ce1378b0a5f98677/header.jpg?t=1765992600",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Bethesda Game Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Portal 2",
+    "slug": "portal-2",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Valve",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "DDNet",
+    "slug": "ddnet",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/412220/header.jpg?t=1757418450",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "DDNet Team",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Abiotic Factor",
+    "slug": "abiotic-factor",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427410/006447284e9ea5d97a33a90ea86113d1f86338d4/header_alt_assets_5.jpg?t=1765822569",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Deep Field Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Hell Let Loose",
+    "slug": "hell-let-loose",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/686810/fa2c71907321b36aab57edc44dbfe645f0f3a899/header_alt_assets_4.jpg?t=1766050109",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Expression Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "SAO Utils 2: Progressive",
+    "slug": "sao-utils-2-progressive",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/877280/header.jpg?t=1672587379",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Joshua Chen",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "ShareX",
+    "slug": "sharex",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400040/header.jpg?t=1736919331",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "ShareX Team",
+    "hasRankings": false,
+    "hasSteam": true,
     "hasData": true
   }
 ]
