@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -2767,7 +2767,7 @@
     },
     "킹 오브 파이터 AFK": {
       "appIds": {
-        "android": "com.farlightgames.igame.gp",
+        "android": "com.gamerepublickor.google.gdsm",
         "ios": 6751273403,
         "android:kr": "com.netmarble.kofafk"
       },
