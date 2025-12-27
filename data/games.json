@@ -2428,31 +2428,6 @@
         "ios"
       ]
     },
-    "에이지 오브 제트: 타워 디펜스": {
-      "appIds": {
-        "android": "com.camelgames.aoz",
-        "ios": "1376515087",
-        "android:kr": "com.camelgames.aoz",
-        "android:jp": "com.camelgames.aoz",
-        "android:us": "com.camelgames.aoz"
-      },
-      "aliases": [
-        "Age of Origins---ゾンビ・末日戦記",
-        "Age of Origins",
-        "Age of Origins:Tower Defense",
-        "에이지오브제트",
-        "Age of Origins - حرب الزومبي",
-        "에이지오브오리진",
-        "에이지 오브 오리진"
-      ],
-      "developer": "CamelStudio",
-      "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
-      "slug": "에이지-오브-제트-타워-디펜스",
-      "platforms": [
-        "android",
-        "ios"
-      ]
-    },
     "기적의 검": {
       "appIds": {
         "android": "com.qjzj4399kr.google",
@@ -9344,7 +9319,8 @@
     },
     "갓오브하이스쿨 X 신의탑": {
       "appIds": {
-        "ios": "1026748340"
+        "ios": "1026748340",
+        "android": "com.goh.daya.ydonline"
       },
       "aliases": [],
       "developer": "WONCOMZ.INC",
@@ -9490,7 +9466,8 @@
     },
     "Car Racing:Drive Simulator 3D": {
       "appIds": {
-        "android": "com.racing.realcar.simulator3d"
+        "android": "com.racing.realcar.simulator3d",
+        "ios": "6745688129"
       },
       "aliases": [],
       "developer": "Club Team Caliente Mx Sports e Casino",
@@ -11140,5 +11117,5 @@
     }
   },
   "lastUpdated": "2025-12-27",
-  "totalGames": 769
+  "totalGames": 768
 }

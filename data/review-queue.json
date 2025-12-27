@@ -1,6 +1,433 @@
 {
   "pending": [
     {
+      "title": "드래곤 엠파이어 : 전략 매니지먼트",
+      "status": "single",
+      "appIds": {
+        "android": "com.ndreamgames.wod"
+      },
+      "developer": "NDREAM Corporation",
+      "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
+      "searchResults": [],
+      "addedAt": "2025-12-22T09:40:15.150Z"
+    },
+    {
+      "title": "공허의 방문자",
+      "status": "single",
+      "appIds": {
+        "android": "com.ghbmjkr.gp"
+      },
+      "developer": "D Link",
+      "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
+      "searchResults": [],
+      "addedAt": "2025-12-22T09:40:29.303Z"
+    },
+    {
+      "title": "픽셀 아트 - 숫자 색칠게임 책",
+      "status": "single",
+      "appIds": {
+        "android": "com.europosit.pixelcoloring"
+      },
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
+      "searchResults": [
+        {
+          "title": "UNICORN 유니콘 픽스아트 그림그리기 게임",
+          "appId": "1293646758"
+        },
+        {
+          "title": "Happy Color® – 컬러링북, 숫자 색칠 게임",
+          "appId": "1407852246"
+        },
+        {
+          "title": "3D 픽셀아트 - 숫자 색칠 책",
+          "appId": "1334547913"
+        },
+        {
+          "title": "숫자별로 색칠하기: 픽셀 색칠 게임",
+          "appId": "1317978215"
+        },
+        {
+          "title": "UNICORN 3D 색칠공부 : 색칠게임",
+          "appId": "1329514585"
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:34.497Z",
+      "lastSearched": "2025-12-27T03:13:40.656Z"
+    },
+    {
+      "title": "Save the Doge",
+      "status": "single",
+      "appIds": {
+        "android": "com.miracle.savethedoge.an"
+      },
+      "developer": "WONDER GROUP",
+      "icon": "https://play-lh.googleusercontent.com/7uLCb0jlSOtoXzEzvRBOneP3s0ewpYT-H0s4flnS8AqZRIQ4N_TaSQ_adMgKNtbfxfI",
+      "searchResults": [
+        {
+          "title": "Save The Doge: Rescue Dog Game",
+          "appId": "6468571577"
+        },
+        {
+          "title": "Save The Dog - Dog Escape",
+          "appId": "1635971989"
+        },
+        {
+          "title": "Save the doggy's head-plz",
+          "appId": "6444181350"
+        },
+        {
+          "title": "Save My Doggy - Dog Rescue",
+          "appId": "1638262763"
+        },
+        {
+          "title": "개를 구하라 - 구조 퍼즐",
+          "appId": "6446388118"
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:34.796Z",
+      "lastSearched": "2025-12-27T03:13:42.668Z"
+    },
+    {
+      "title": "브릿지 레이스 (Bridge Race)",
+      "status": "single",
+      "appIds": {
+        "android": "com.Garawell.BridgeRace"
+      },
+      "developer": "Supersonic Studios LTD",
+      "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
+      "searchResults": [
+        {
+          "title": "Bridge Race",
+          "appId": "1543845882"
+        },
+        {
+          "title": "빌드마스터: 브릿지 레이스",
+          "appId": "1614358511"
+        },
+        {
+          "title": "Bridge Race: Stack Stair Run",
+          "appId": "1642296100"
+        },
+        {
+          "title": "런 레이스 3D - 재미있는 파쿠르 게임",
+          "appId": "1456492106"
+        },
+        {
+          "title": "눈 스프린트: 3D 레이스 러시",
+          "appId": "6502286784"
+        }
+      ],
+      "addedAt": "2025-12-22T09:40:37.148Z",
+      "lastSearched": "2025-12-27T03:13:44.222Z"
+    },
+    {
+      "title": "로열 쿠킹: 요리 & 식당 게임",
+      "status": "single",
+      "appIds": {
+        "ios": "1664415775"
+      },
+      "developer": "Matryoshka Games (CY) LTD",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "요리게임 & 쿠킹피버 (Royal Cooking)",
+          "appId": "com.matryoshka.royal.cooking.kitchen.madness"
+        },
+        {
+          "title": "쿠킹 다이어리: 요리 게임",
+          "appId": "com.mytona.cookingdiary.android"
+        },
+        {
+          "title": "Chef & Friends: 요리 게임",
+          "appId": "com.mytona.cheftales"
+        },
+        {
+          "title": "Cooking Love: 주방 게임, 패스트 레스토랑,",
+          "appId": "com.cscmobi.cooking.love.free"
+        },
+        {
+          "title": "요리 중독: 레스토랑 게임",
+          "appId": "com.bigfishgames.cookingcrazegooglef2p"
+        }
+      ],
+      "addedAt": "2025-12-23T00:47:29.108Z",
+      "lastSearched": "2025-12-27T03:13:46.495Z"
+    },
+    {
+      "title": "젤리 홀 (Jelly Hole) - 블랙홀 게임",
+      "status": "single",
+      "appIds": {
+        "android": "com.ultimatelavashgames.rollthehole"
+      },
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
+      "searchResults": [
+        {
+          "title": "홀 마스터: 세상을 먹어라 (Hole Master)",
+          "appId": "6742533520"
+        },
+        {
+          "title": "Hole.io",
+          "appId": "1389111413"
+        },
+        {
+          "title": "Drop the Jelly - 젤리 블랙홀 게임 제거",
+          "appId": "6755383038"
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:19.310Z",
+      "lastSearched": "2025-12-27T03:13:49.577Z"
+    },
+    {
+      "title": "물 분류 퍼즐 게임 - 재미있는 색상 분류 퍼즐 게임",
+      "status": "single",
+      "appIds": {
+        "android": "water.sort.puzzle.game.color.sorting.free"
+      },
+      "developer": "Guru Puzzle Game",
+      "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
+      "searchResults": [
+        {
+          "title": "슬라이스 : 퍼즐 게임을 이완시킵니다",
+          "appId": "1263934706"
+        },
+        {
+          "title": "재미있는 육각형 블록 게임",
+          "appId": "1490646051"
+        },
+        {
+          "title": "교육 유아게임 - 어린이를 위한 영어 동화 2세-5세",
+          "appId": "1537964112"
+        },
+        {
+          "title": "물 분류 - 퍼즐 붓기",
+          "appId": "6471331479"
+        },
+        {
+          "title": "물 분류 - 색상 퍼즐",
+          "appId": "6477499791"
+        }
+      ],
+      "addedAt": "2025-12-25T00:49:20.392Z",
+      "lastSearched": "2025-12-27T03:13:51.368Z"
+    },
+    {
+      "title": "레츠고 레전드!",
+      "status": "single",
+      "appIds": {
+        "android": "com.gear2.letsgolegends"
+      },
+      "developer": "GEAR2",
+      "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
+      "searchResults": [],
+      "addedAt": "2025-12-26T00:47:36.755Z"
+    },
+    {
+      "title": "크리처 리그 챔피언",
+      "status": "single",
+      "appIds": {
+        "ios": "6755809717"
+      },
+      "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "롤 챔피언 추천 - 버스타던지(AI 인공지능)",
+          "appId": "com.harang.leagueoflegends"
+        },
+        {
+          "title": "Idle Champions",
+          "appId": "com.codenameentertainment.idlechampions"
+        },
+        {
+          "title": "Hoop League Tactics",
+          "appId": "com.koalitygame.hoopleaguetactics"
+        },
+        {
+          "title": "주식챔피언",
+          "appId": "kr.sctv"
+        },
+        {
+          "title": "League Champ",
+          "appId": "com.league.champ"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:41.678Z",
+      "lastSearched": "2025-12-27T03:13:52.952Z"
+    },
+    {
+      "title": "마이 다마고치 포에버 My Tamagotchi",
+      "status": "single",
+      "appIds": {
+        "ios": "1267861706"
+      },
+      "developer": "BANDAI NAMCO Entertainment Europe",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "마이 다마고치 포에버",
+          "appId": "eu.bandainamcoent.mytamagotchiforever"
+        },
+        {
+          "title": "애완동물 시뮬레이션 - 푹신한 다마고치",
+          "appId": "com.gokids.fluffypet"
+        },
+        {
+          "title": "My Cat - 고양이 키우기 타마고치 게임",
+          "appId": "cat.game.liftapp"
+        },
+        {
+          "title": "My Dragon - 가상 애완동물 게임",
+          "appId": "dragon.virtual.pet.game"
+        },
+        {
+          "title": "Pou",
+          "appId": "me.pou.app"
+        }
+      ],
+      "addedAt": "2025-12-26T00:47:46.578Z",
+      "lastSearched": "2025-12-27T03:13:54.139Z"
+    },
+    {
+      "title": "Color Aura: Paint by number",
+      "status": "single",
+      "appIds": {
+        "android": "com.oakever.coloraura"
+      },
+      "developer": "Oakever Games",
+      "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
+      "searchResults": [
+        {
+          "title": "Color Aura: 숫자 색칠",
+          "appId": "6451237392"
+        },
+        {
+          "title": "Coloring Book -Color by Number",
+          "appId": "1512344831"
+        },
+        {
+          "title": "Tint 3D",
+          "appId": "1564786771"
+        }
+      ],
+      "addedAt": "2025-12-26T00:48:00.381Z",
+      "lastSearched": "2025-12-27T03:13:55.442Z"
+    },
+    {
+      "title": "Connect Master – 매치 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.game.people.connector"
+      },
+      "developer": "Rooftop Game",
+      "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
+      "searchResults": [
+        {
+          "title": "3 Tiles - 매직 게임 타일",
+          "appId": "1525211513"
+        },
+        {
+          "title": "룬마스터 퍼즐 오리지널",
+          "appId": "470156573"
+        },
+        {
+          "title": "Connect Master - Match Puzzle",
+          "appId": "6745692355"
+        },
+        {
+          "title": "Connect Master Puzzle",
+          "appId": "1549830420"
+        },
+        {
+          "title": "커넥트 마스터 - 클래식 게임",
+          "appId": "6443397568"
+        }
+      ],
+      "addedAt": "2025-12-26T00:48:00.822Z",
+      "lastSearched": "2025-12-27T03:13:56.939Z"
+    },
+    {
+      "title": "Space Waves",
+      "status": "single",
+      "appIds": {
+        "android": "com.CrazyGames.SpaceWaves"
+      },
+      "developer": "CrazyGames.com",
+      "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
+      "searchResults": [
+        {
+          "title": "Space Waves - CrazyGames",
+          "appId": "6748645552"
+        },
+        {
+          "title": "Space Vibes - Space Waves Art",
+          "appId": "6748155833"
+        },
+        {
+          "title": "Geometry Dash Lite",
+          "appId": "698255242"
+        },
+        {
+          "title": "Geometry Dash SubZero",
+          "appId": "1324044770"
+        },
+        {
+          "title": "Block Dash: Jump Geometry",
+          "appId": "6451107811"
+        }
+      ],
+      "addedAt": "2025-12-26T00:48:01.237Z",
+      "lastSearched": "2025-12-27T03:13:58.275Z"
+    },
+    {
+      "title": "머지 과일주스",
+      "status": "single",
+      "appIds": {
+        "android": "com.stormborn.reverse.juice.suika"
+      },
+      "developer": "Stormborn",
+      "icon": "https://play-lh.googleusercontent.com/JCMInO0UPunayM0215EKuOM48jbbIkXIbg4_NTChm7es7qfIZd_6FqO_4RkR2A37lFB24Kjjmcp8pRaW6x56RQ",
+      "searchResults": [
+        {
+          "title": "음식 병합 모험과 이야기",
+          "appId": "6738093197"
+        }
+      ],
+      "addedAt": "2025-12-27T00:46:55.102Z",
+      "lastSearched": "2025-12-27T03:13:59.502Z"
+    },
+    {
+      "title": "잃어버린 감옥 (Lost Prison) - 서바이벌",
+      "status": "single",
+      "appIds": {
+        "android": "com.finetosurvive.master"
+      },
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
+      "searchResults": [],
+      "addedAt": "2025-12-27T00:46:57.229Z"
+    },
+    {
+      "title": "BlockDown:Puzzle Games",
+      "status": "single",
+      "appIds": {
+        "android": "com.puzzlegames.blockdown.relax"
+      },
+      "developer": "ECKERT GAMING",
+      "icon": "https://play-lh.googleusercontent.com/7iw2P_AO1-GAIT3PCd40WehJNg8uTG_nxhUQUsjI_qN5rrMfymw0POp24LcowhRlDd8UzUpD8yiN_pPYyHBA4Q",
+      "searchResults": [
+        {
+          "title": "Blockdown Adventures",
+          "appId": "6477536156"
+        }
+      ],
+      "addedAt": "2025-12-27T00:46:57.554Z",
+      "lastSearched": "2025-12-27T03:14:01.284Z"
+    }
+  ],
+  "approved": [
+    {
       "title": "건틀렛: 방치형 액션 RPG",
       "status": "matched",
       "appIds": {
@@ -128,17 +555,6 @@
       "addedAt": "2025-12-22T09:40:14.657Z"
     },
     {
-      "title": "드래곤 엠파이어 : 전략 매니지먼트",
-      "status": "single",
-      "appIds": {
-        "android": "com.ndreamgames.wod"
-      },
-      "developer": "NDREAM Corporation",
-      "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
-      "searchResults": [],
-      "addedAt": "2025-12-22T09:40:15.150Z"
-    },
-    {
       "title": "쿠노이치 키우기",
       "status": "matched",
       "appIds": {
@@ -181,17 +597,6 @@
       "addedAt": "2025-12-22T09:40:21.209Z"
     },
     {
-      "title": "공허의 방문자",
-      "status": "single",
-      "appIds": {
-        "android": "com.ghbmjkr.gp"
-      },
-      "developer": "D Link",
-      "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
-      "searchResults": [],
-      "addedAt": "2025-12-22T09:40:29.303Z"
-    },
-    {
       "title": "스킨케어 타임: 메이크오버 ASMR",
       "status": "matched",
       "appIds": {
@@ -215,54 +620,6 @@
         }
       ],
       "addedAt": "2025-12-22T09:40:30.045Z"
-    },
-    {
-      "title": "픽셀 아트 - 숫자 색칠게임 책",
-      "status": "single",
-      "appIds": {
-        "android": "com.europosit.pixelcoloring"
-      },
-      "developer": "Easybrain",
-      "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
-      "searchResults": [
-        {
-          "title": "UNICORN 유니콘 픽스아트 그림그리기 게임",
-          "appId": 1293646758
-        },
-        {
-          "title": "Happy Color® – 컬러링북, 숫자 색칠 게임",
-          "appId": 1407852246
-        },
-        {
-          "title": "3D 픽셀아트 - 숫자 색칠 책",
-          "appId": 1334547913
-        }
-      ],
-      "addedAt": "2025-12-22T09:40:34.497Z"
-    },
-    {
-      "title": "Save the Doge",
-      "status": "single",
-      "appIds": {
-        "android": "com.miracle.savethedoge.an"
-      },
-      "developer": "WONDER GROUP",
-      "icon": "https://play-lh.googleusercontent.com/7uLCb0jlSOtoXzEzvRBOneP3s0ewpYT-H0s4flnS8AqZRIQ4N_TaSQ_adMgKNtbfxfI",
-      "searchResults": [
-        {
-          "title": "Save The Dog - Dog Escape",
-          "appId": 1635971989
-        },
-        {
-          "title": "Save The Doge: Rescue Dog Game",
-          "appId": 6468571577
-        },
-        {
-          "title": "Save the doggy's head-plz",
-          "appId": 6444181350
-        }
-      ],
-      "addedAt": "2025-12-22T09:40:34.796Z"
     },
     {
       "title": "뉴포리아: 서바이벌",
@@ -307,30 +664,6 @@
       "addedAt": "2025-12-22T09:40:36.368Z"
     },
     {
-      "title": "브릿지 레이스 (Bridge Race)",
-      "status": "single",
-      "appIds": {
-        "android": "com.Garawell.BridgeRace"
-      },
-      "developer": "Supersonic Studios LTD",
-      "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
-      "searchResults": [
-        {
-          "title": "Bridge Race",
-          "appId": 1543845882
-        },
-        {
-          "title": "빌드마스터: 브릿지 레이스",
-          "appId": 1614358511
-        },
-        {
-          "title": "Bridge Race: Stack Stair Run",
-          "appId": 1642296100
-        }
-      ],
-      "addedAt": "2025-12-22T09:40:37.148Z"
-    },
-    {
       "title": "Draw Action: Freestyle Fight",
       "status": "matched",
       "appIds": {
@@ -354,54 +687,6 @@
         }
       ],
       "addedAt": "2025-12-22T09:40:37.746Z"
-    },
-    {
-      "title": "갓오브하이스쿨 X 신의탑",
-      "status": "single",
-      "appIds": {
-        "ios": "1026748340"
-      },
-      "developer": "WONCOMZ.INC",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "갓오브하이스쿨 - 프리미엄 뽑기권 500장 증정!",
-          "appId": "com.goh.daya.ydonline"
-        },
-        {
-          "title": "2024갓오브하이스쿨",
-          "appId": "com.nhnent.SKGOHN"
-        },
-        {
-          "title": "역수한",
-          "appId": "com.netease.nshmkr"
-        }
-      ],
-      "addedAt": "2025-12-23T00:47:03.412Z"
-    },
-    {
-      "title": "로열 쿠킹: 요리 & 식당 게임",
-      "status": "single",
-      "appIds": {
-        "ios": "1664415775"
-      },
-      "developer": "Matryoshka Games (CY) LTD",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "Cooking Live - Cooking games",
-          "appId": "com.matryoshka.cookinglive"
-        },
-        {
-          "title": "Royal Cooking - Cooking Game",
-          "appId": "com.matryoshka.royal.cooking.kitchen.madness"
-        },
-        {
-          "title": "쿠킹 투어 : 셰프의 레스토랑 요리게임",
-          "appId": "com.food.cooking.games.restaurant"
-        }
-      ],
-      "addedAt": "2025-12-23T00:47:29.108Z"
     },
     {
       "title": "창세기전 모바일 - 서풍의 광시곡",
@@ -644,30 +929,6 @@
         }
       ],
       "addedAt": "2025-12-24T00:48:03.634Z"
-    },
-    {
-      "title": "Car Racing:Drive Simulator 3D",
-      "status": "single",
-      "appIds": {
-        "android": "com.racing.realcar.simulator3d"
-      },
-      "developer": "Club Team Caliente Mx Sports e Casino",
-      "icon": "https://play-lh.googleusercontent.com/xuKOvPrRGZomQOJUuca-6uvO5lZgTxQd4ZwDtZ_CnsAyT1UIPz2aPIz8fGsPBL0fQvs",
-      "searchResults": [
-        {
-          "title": "CSR 레이싱 2",
-          "appId": 887947640
-        },
-        {
-          "title": "스쿨버스 운전 3D 시뮬레이터 게임",
-          "appId": 1119560044
-        },
-        {
-          "title": "드라이빙 아카데미 2 -  자동차 게임",
-          "appId": 1439759880
-        }
-      ],
-      "addedAt": "2025-12-24T00:48:04.196Z"
     },
     {
       "title": "킹 오브 파이터 AFK",
@@ -914,26 +1175,6 @@
       "addedAt": "2025-12-25T00:49:18.130Z"
     },
     {
-      "title": "젤리 홀 (Jelly Hole) - 블랙홀 게임",
-      "status": "single",
-      "appIds": {
-        "android": "com.ultimatelavashgames.rollthehole"
-      },
-      "developer": "SayGames Ltd",
-      "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
-      "searchResults": [
-        {
-          "title": "홀 마스터: 세상을 먹어라 (Hole Master)",
-          "appId": 6742533520
-        },
-        {
-          "title": "Drop the Jelly - 젤리 블랙홀 게임 제거",
-          "appId": 6755383038
-        }
-      ],
-      "addedAt": "2025-12-25T00:49:19.310Z"
-    },
-    {
       "title": "Zen Tiles - Mahjong Match",
       "status": "matched",
       "appIds": {
@@ -957,30 +1198,6 @@
         }
       ],
       "addedAt": "2025-12-25T00:49:19.649Z"
-    },
-    {
-      "title": "물 분류 퍼즐 게임 - 재미있는 색상 분류 퍼즐 게임",
-      "status": "single",
-      "appIds": {
-        "android": "water.sort.puzzle.game.color.sorting.free"
-      },
-      "developer": "Guru Puzzle Game",
-      "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
-      "searchResults": [
-        {
-          "title": "재미있는 육각형 블록 게임",
-          "appId": 1490646051
-        },
-        {
-          "title": "슬라이스 : 퍼즐 게임을 이완시킵니다",
-          "appId": 1263934706
-        },
-        {
-          "title": "물 분류 - 퍼즐 붓기",
-          "appId": 6471331479
-        }
-      ],
-      "addedAt": "2025-12-25T00:49:20.392Z"
     },
     {
       "title": "노노그램 - 픽처 크로스 퍼즐",
@@ -1033,41 +1250,6 @@
       "addedAt": "2025-12-26T00:47:17.349Z"
     },
     {
-      "title": "레츠고 레전드!",
-      "status": "single",
-      "appIds": {
-        "android": "com.gear2.letsgolegends"
-      },
-      "developer": "GEAR2",
-      "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
-      "searchResults": [],
-      "addedAt": "2025-12-26T00:47:36.755Z"
-    },
-    {
-      "title": "크리처 리그 챔피언",
-      "status": "single",
-      "appIds": {
-        "ios": "6755809717"
-      },
-      "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "롤 챔피언 추천 - 버스타던지(AI 인공지능)",
-          "appId": "com.harang.leagueoflegends"
-        },
-        {
-          "title": "Idle Champions",
-          "appId": "com.codenameentertainment.idlechampions"
-        },
-        {
-          "title": "League Champ",
-          "appId": "com.league.champ"
-        }
-      ],
-      "addedAt": "2025-12-26T00:47:41.678Z"
-    },
-    {
       "title": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
       "status": "matched",
       "appIds": {
@@ -1108,30 +1290,6 @@
         }
       ],
       "addedAt": "2025-12-26T00:47:45.904Z"
-    },
-    {
-      "title": "마이 다마고치 포에버 My Tamagotchi",
-      "status": "single",
-      "appIds": {
-        "ios": "1267861706"
-      },
-      "developer": "BANDAI NAMCO Entertainment Europe",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "마이 다마고치 포에버",
-          "appId": "eu.bandainamcoent.mytamagotchiforever"
-        },
-        {
-          "title": "애완동물 시뮬레이션 - 푹신한 다마고치",
-          "appId": "com.gokids.fluffypet"
-        },
-        {
-          "title": "Friends – 귀여운 AI 컴패니언",
-          "appId": "com.slay.pengu"
-        }
-      ],
-      "addedAt": "2025-12-26T00:47:46.578Z"
     },
     {
       "title": "머지 파라다이스:합성&머지(merge)",
@@ -1178,78 +1336,6 @@
         }
       ],
       "addedAt": "2025-12-26T00:47:57.703Z"
-    },
-    {
-      "title": "Color Aura: Paint by number",
-      "status": "single",
-      "appIds": {
-        "android": "com.oakever.coloraura"
-      },
-      "developer": "Oakever Games",
-      "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
-      "searchResults": [
-        {
-          "title": "Color Aura: 숫자 색칠",
-          "appId": 6451237392
-        },
-        {
-          "title": "Paint.ly - 숫자 색칠 게임",
-          "appId": 1441501929
-        },
-        {
-          "title": "Coloring Book -Color by Number",
-          "appId": 1512344831
-        }
-      ],
-      "addedAt": "2025-12-26T00:48:00.381Z"
-    },
-    {
-      "title": "Connect Master – 매치 퍼즐",
-      "status": "single",
-      "appIds": {
-        "android": "com.game.people.connector"
-      },
-      "developer": "Rooftop Game",
-      "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
-      "searchResults": [
-        {
-          "title": "3 Tiles - 매직 게임 타일",
-          "appId": 1525211513
-        },
-        {
-          "title": "Connect Master - Match Puzzle",
-          "appId": 6745692355
-        },
-        {
-          "title": "룬마스터 퍼즐 오리지널",
-          "appId": 470156573
-        }
-      ],
-      "addedAt": "2025-12-26T00:48:00.822Z"
-    },
-    {
-      "title": "Space Waves",
-      "status": "single",
-      "appIds": {
-        "android": "com.CrazyGames.SpaceWaves"
-      },
-      "developer": "CrazyGames.com",
-      "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
-      "searchResults": [
-        {
-          "title": "Space Waves - CrazyGames",
-          "appId": 6748645552
-        },
-        {
-          "title": "Space Vibes - Space Waves Art",
-          "appId": 6748155833
-        },
-        {
-          "title": "Geometry Dash Lite",
-          "appId": 698255242
-        }
-      ],
-      "addedAt": "2025-12-26T00:48:01.237Z"
     },
     {
       "title": "일곱 개의 대죄: GRAND CROSS",
@@ -1503,49 +1589,6 @@
       "addedAt": "2025-12-27T00:46:54.670Z"
     },
     {
-      "title": "머지 과일주스",
-      "status": "single",
-      "appIds": {
-        "android": "com.stormborn.reverse.juice.suika"
-      },
-      "developer": "Stormborn",
-      "icon": "https://play-lh.googleusercontent.com/JCMInO0UPunayM0215EKuOM48jbbIkXIbg4_NTChm7es7qfIZd_6FqO_4RkR2A37lFB24Kjjmcp8pRaW6x56RQ",
-      "searchResults": [
-        {
-          "title": "음식 병합 모험과 이야기",
-          "appId": 6738093197
-        }
-      ],
-      "addedAt": "2025-12-27T00:46:55.102Z"
-    },
-    {
-      "title": "잃어버린 감옥 (Lost Prison) - 서바이벌",
-      "status": "single",
-      "appIds": {
-        "android": "com.finetosurvive.master"
-      },
-      "developer": "SayGames Ltd",
-      "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
-      "searchResults": [],
-      "addedAt": "2025-12-27T00:46:57.229Z"
-    },
-    {
-      "title": "BlockDown:Puzzle Games",
-      "status": "single",
-      "appIds": {
-        "android": "com.puzzlegames.blockdown.relax"
-      },
-      "developer": "ECKERT GAMING",
-      "icon": "https://play-lh.googleusercontent.com/7iw2P_AO1-GAIT3PCd40WehJNg8uTG_nxhUQUsjI_qN5rrMfymw0POp24LcowhRlDd8UzUpD8yiN_pPYyHBA4Q",
-      "searchResults": [
-        {
-          "title": "Blockdown Adventures",
-          "appId": 6477536156
-        }
-      ],
-      "addedAt": "2025-12-27T00:46:57.554Z"
-    },
-    {
       "title": "Brilliant Sort: 다이아몬드 퍼즐",
       "status": "matched",
       "appIds": {
@@ -1569,8 +1612,59 @@
         }
       ],
       "addedAt": "2025-12-27T00:46:58.137Z"
+    },
+    {
+      "title": "갓오브하이스쿨 X 신의탑",
+      "status": "matched",
+      "appIds": {
+        "ios": "1026748340",
+        "android": "com.goh.daya.ydonline"
+      },
+      "developer": "WONCOMZ.INC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "갓오브하이스쿨 - 프리미엄 뽑기권 500장 증정!",
+          "appId": "com.goh.daya.ydonline"
+        },
+        {
+          "title": "2024갓오브하이스쿨",
+          "appId": "com.nhnent.SKGOHN"
+        },
+        {
+          "title": "던전 시스터즈 : 픽셀 방치형 RPG",
+          "appId": "com.lobstargames.dungeon.idle.rpg"
+        }
+      ],
+      "addedAt": "2025-12-23T00:47:03.412Z",
+      "lastSearched": "2025-12-27T03:13:45.391Z"
+    },
+    {
+      "title": "Car Racing:Drive Simulator 3D",
+      "status": "matched",
+      "appIds": {
+        "android": "com.racing.realcar.simulator3d",
+        "ios": "6745688129"
+      },
+      "developer": "Club Team Caliente Mx Sports e Casino",
+      "icon": "https://play-lh.googleusercontent.com/xuKOvPrRGZomQOJUuca-6uvO5lZgTxQd4ZwDtZ_CnsAyT1UIPz2aPIz8fGsPBL0fQvs",
+      "searchResults": [
+        {
+          "title": "CSR 레이싱 2",
+          "appId": "887947640"
+        },
+        {
+          "title": "Car Racing:Drive Simulator 3D",
+          "appId": "6745688129"
+        },
+        {
+          "title": "스쿨버스 운전 3D 시뮬레이터 게임",
+          "appId": "1119560044"
+        }
+      ],
+      "addedAt": "2025-12-24T00:48:04.196Z",
+      "lastSearched": "2025-12-27T03:13:48.214Z"
     }
   ],
-  "approved": [],
   "rejected": []
 }
