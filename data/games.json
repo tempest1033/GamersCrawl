@@ -9193,14 +9193,16 @@
     },
     "픽셀 아트 - 숫자 색칠게임 책": {
       "appIds": {
-        "android": "com.europosit.pixelcoloring"
+        "android": "com.europosit.pixelcoloring",
+        "ios": 1274972321
       },
       "aliases": [],
       "developer": "Easybrain",
       "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
       "slug": "픽셀-아트-숫자-색칠게임-책",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Save the Doge": {
@@ -9245,14 +9247,16 @@
     },
     "브릿지 레이스 (Bridge Race)": {
       "appIds": {
-        "android": "com.Garawell.BridgeRace"
+        "android": "com.Garawell.BridgeRace",
+        "ios": 1543845882
       },
       "aliases": [],
       "developer": "Supersonic Studios LTD",
       "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
       "slug": "브릿지-레이스-bridge-race",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Draw Action: Freestyle Fight": {
@@ -9332,14 +9336,16 @@
     },
     "로열 쿠킹: 요리 & 식당 게임": {
       "appIds": {
-        "ios": "1664415775"
+        "ios": "1664415775",
+        "android": "com.matryoshka.royal.cooking.kitchen.madness"
       },
       "aliases": [],
       "developer": "Matryoshka Games (CY) LTD",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "로열-쿠킹-요리-식당-게임",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "Detroit: Become Human": {
@@ -9607,14 +9613,16 @@
     },
     "젤리 홀 (Jelly Hole) - 블랙홀 게임": {
       "appIds": {
-        "android": "com.ultimatelavashgames.rollthehole"
+        "android": "com.ultimatelavashgames.rollthehole",
+        "ios": 6752290993
       },
       "aliases": [],
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
       "slug": "젤리-홀-jelly-hole-블랙홀-게임",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Zen Tiles - Mahjong Match": {
@@ -9633,14 +9641,16 @@
     },
     "물 분류 퍼즐 게임 - 재미있는 색상 분류 퍼즐 게임": {
       "appIds": {
-        "android": "water.sort.puzzle.game.color.sorting.free"
+        "android": "water.sort.puzzle.game.color.sorting.free",
+        "ios": 1597897013
       },
       "aliases": [],
       "developer": "Guru Puzzle Game",
       "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
       "slug": "물-분류-퍼즐-게임-재미있는-색상-분류-퍼즐-게임",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "노노그램 - 픽처 크로스 퍼즐": {
@@ -9711,14 +9721,16 @@
     },
     "마이 다마고치 포에버 My Tamagotchi": {
       "appIds": {
-        "ios": "1267861706"
+        "ios": "1267861706",
+        "android": "eu.bandainamcoent.mytamagotchiforever"
       },
       "aliases": [],
       "developer": "BANDAI NAMCO Entertainment Europe",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "마이-다마고치-포에버-my-tamagotchi",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "머지 파라다이스:합성&머지(merge)": {
@@ -9753,38 +9765,44 @@
     },
     "Color Aura: Paint by number": {
       "appIds": {
-        "android": "com.oakever.coloraura"
+        "android": "com.oakever.coloraura",
+        "ios": 6451237392
       },
       "aliases": [],
       "developer": "Oakever Games",
       "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
       "slug": "color-aura-paint-by-number",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Connect Master – 매치 퍼즐": {
       "appIds": {
-        "android": "com.game.people.connector"
+        "android": "com.game.people.connector",
+        "ios": 6745692355
       },
       "aliases": [],
       "developer": "Rooftop Game",
       "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
       "slug": "connect-master-매치-퍼즐",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Space Waves": {
       "appIds": {
-        "android": "com.CrazyGames.SpaceWaves"
+        "android": "com.CrazyGames.SpaceWaves",
+        "ios": 6748645552
       },
       "aliases": [],
       "developer": "CrazyGames.com",
       "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
       "slug": "space-waves",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "Lethal Company": {
@@ -11079,14 +11097,16 @@
     },
     "잃어버린 감옥 (Lost Prison) - 서바이벌": {
       "appIds": {
-        "android": "com.finetosurvive.master"
+        "android": "com.finetosurvive.master",
+        "ios": 6755469510
       },
       "aliases": [],
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
       "slug": "잃어버린-감옥-lost-prison-서바이벌",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "BlockDown:Puzzle Games": {
