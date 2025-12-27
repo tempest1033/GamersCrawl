@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-webzen-muidle-google",
+    "slug": "com-a1gamesstudio-berserker",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -3024,7 +3024,7 @@
       "ios"
     ],
     "developer": "Webzen Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3171,7 +3171,7 @@
       "ios"
     ],
     "developer": "XD Entertainment Pte Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3190,7 +3190,7 @@
       "ios"
     ],
     "developer": "Netmarble",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4298,7 +4298,7 @@
       "android"
     ],
     "developer": "JIEUNK",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5037,7 +5037,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5531,7 +5531,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5579,7 +5579,7 @@
       "android"
     ],
     "developer": "JUMBO GAMES Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7760,7 +7760,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9922,7 +9922,7 @@
       "android"
     ],
     "developer": "DongUk Kim",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10006,7 +10006,7 @@
       "android"
     ],
     "developer": "Taihe Interactive",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10046,7 +10046,7 @@
       "android"
     ],
     "developer": "Netmarble Corporation",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10060,7 +10060,7 @@
       "android"
     ],
     "developer": "BANDAI NAMCO Entertainment Europe",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11408,7 +11408,7 @@
       "android"
     ],
     "developer": "GRAVITY Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11464,7 +11464,7 @@
       "android"
     ],
     "developer": "IDIOCRACY. INC",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
