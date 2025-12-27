@@ -9155,14 +9155,16 @@
     },
     "드래곤 엠파이어 : 전략 매니지먼트": {
       "appIds": {
-        "android": "com.ndreamgames.wod"
+        "android": "com.ndreamgames.wod",
+        "ios": 6450436248
       },
       "aliases": [],
       "developer": "NDREAM Corporation",
       "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
       "slug": "드래곤-엠파이어-전략-매니지먼트",
       "platforms": [
-        "android"
+        "android",
+        "ios"
       ]
     },
     "쿠노이치 키우기": {

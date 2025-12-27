@@ -1,17 +1,6 @@
 {
   "pending": [
     {
-      "title": "드래곤 엠파이어 : 전략 매니지먼트",
-      "status": "single",
-      "appIds": {
-        "android": "com.ndreamgames.wod"
-      },
-      "developer": "NDREAM Corporation",
-      "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
-      "searchResults": [],
-      "addedAt": "2025-12-22T09:40:15.150Z"
-    },
-    {
       "title": "공허의 방문자",
       "status": "single",
       "appIds": {
@@ -193,6 +182,18 @@
     }
   ],
   "approved": [
+    {
+      "title": "드래곤 엠파이어 : 전략 매니지먼트",
+      "status": "matched",
+      "appIds": {
+        "android": "com.ndreamgames.wod",
+        "ios": 6450436248
+      },
+      "developer": "NDREAM Corporation",
+      "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
+      "searchResults": [],
+      "addedAt": "2025-12-22T09:40:15.150Z"
+    },
     {
       "title": "건틀렛: 방치형 액션 RPG",
       "status": "matched",
