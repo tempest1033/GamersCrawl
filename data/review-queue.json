@@ -132,6 +132,64 @@
       ],
       "addedAt": "2025-12-27T00:46:57.554Z",
       "lastSearched": "2025-12-27T03:14:01.284Z"
+    },
+    {
+      "title": "건틀렛: 방치형 액션 RPG",
+      "status": "matched",
+      "appIds": {
+        "ios": "6754373623",
+        "android": "com.a1gamesstudio.berserker",
+        "android:kr": "com.metaboneent.gauntletrpg",
+        "ios:kr": "6446516059"
+      },
+      "developer": "Game Duo Co.,Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "버서커 키우기: 방치형 RPG - 신규서버 오픈",
+          "appId": "com.a1gamesstudio.berserker"
+        },
+        {
+          "title": "다크타워:전략 배틀 RPG",
+          "appId": "6748525811"
+        }
+      ],
+      "addedAt": "2025-12-27T03:51:23.073Z"
+    },
+    {
+      "title": "Age of Origins:Tower Defense",
+      "status": "single",
+      "appIds": {
+        "ios": "1376515087"
+      },
+      "developer": "Hong Kong Ke Mo software Co., Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/c9/2f/50c92f72-45cd-204f-ce29-5653827b294f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "에이지 오브 제트: 타워 디펜스",
+          "appId": "com.camelgames.aoz"
+        },
+        {
+          "title": "Kingdom Rush 킹덤 러쉬 전략형 타워 디펜스",
+          "appId": "com.ironhidegames.android.kingdomrush"
+        },
+        {
+          "title": "Realm Defense: Hero Legends TD",
+          "appId": "com.babeltimeus.legendstd"
+        }
+      ],
+      "addedAt": "2025-12-27T03:50:59.662Z"
+    },
+    {
+      "title": "에이지 오브 제트: 타워 디펜스",
+      "status": "single",
+      "appIds": {
+        "android": "com.camelgames.aoz"
+      },
+      "developer": "CamelStudio",
+      "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
+      "searchResults": [],
+      "addedAt": "2025-12-27T03:51:14.247Z"
     }
   ],
   "approved": [

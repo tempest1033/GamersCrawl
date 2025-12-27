@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-webzen-muidle-google",
+    "slug": "com-a1gamesstudio-berserker",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2424,28 +2424,6 @@
       "ios"
     ],
     "developer": "Plarium Global Ltd",
-    "hasRankings": true,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
-    "name": "에이지 오브 제트: 타워 디펜스",
-    "slug": "com-camelgames-aoz",
-    "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
-    "aliases": [
-      "Age of Origins---ゾンビ・末日戦記",
-      "Age of Origins",
-      "Age of Origins:Tower Defense",
-      "에이지오브제트",
-      "Age of Origins - حرب الزومبي",
-      "에이지오브오리진",
-      "에이지 오브 오리진"
-    ],
-    "platforms": [
-      "android",
-      "ios"
-    ],
-    "developer": "CamelStudio",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
@@ -9539,7 +9517,8 @@
     "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Easybrain",
     "hasRankings": true,
@@ -9593,7 +9572,8 @@
     "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Supersonic Studios LTD",
     "hasRankings": true,
@@ -9668,7 +9648,7 @@
   },
   {
     "name": "갓오브하이스쿨 X 신의탑",
-    "slug": "갓오브하이스쿨-x-신의탑",
+    "slug": "com-goh-daya-ydonline",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
     "aliases": [],
     "platforms": [
@@ -9681,11 +9661,12 @@
   },
   {
     "name": "로열 쿠킹: 요리 & 식당 게임",
-    "slug": "로열-쿠킹-요리-식당-게임",
+    "slug": "com-matryoshka-royal-cooking-kitchen-madness",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Matryoshka Games (CY) LTD",
     "hasRankings": false,
@@ -9964,7 +9945,8 @@
     "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -9991,7 +9973,8 @@
     "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Guru Puzzle Game",
     "hasRankings": true,
@@ -10068,11 +10051,12 @@
   },
   {
     "name": "마이 다마고치 포에버 My Tamagotchi",
-    "slug": "마이-다마고치-포에버-my-tamagotchi",
+    "slug": "eu-bandainamcoent-mytamagotchiforever",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/5f/d3/655fd3c1-d29f-5656-4bca-4181906deb5f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "BANDAI NAMCO Entertainment Europe",
     "hasRankings": false,
@@ -10115,7 +10099,8 @@
     "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Oakever Games",
     "hasRankings": true,
@@ -10128,7 +10113,8 @@
     "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "Rooftop Game",
     "hasRankings": false,
@@ -10141,7 +10127,8 @@
     "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "CrazyGames.com",
     "hasRankings": true,
@@ -11541,7 +11528,8 @@
     "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
     "aliases": [],
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -11571,6 +11559,32 @@
       "ios"
     ],
     "developer": "BELKA GAMES",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Age of Origins:Tower Defense",
+    "slug": "age-of-origins-tower-defense",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/c9/2f/50c92f72-45cd-204f-ce29-5653827b294f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Hong Kong Ke Mo software Co., Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "에이지 오브 제트: 타워 디펜스",
+    "slug": "com-camelgames-aoz",
+    "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "CamelStudio",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true

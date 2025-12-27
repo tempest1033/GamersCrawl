@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "ios": "6754373623",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -11134,8 +11134,32 @@
         "android",
         "ios"
       ]
+    },
+    "Age of Origins:Tower Defense": {
+      "appIds": {
+        "ios": "1376515087"
+      },
+      "aliases": [],
+      "developer": "Hong Kong Ke Mo software Co., Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/c9/2f/50c92f72-45cd-204f-ce29-5653827b294f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "age-of-originstower-defense",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "에이지 오브 제트: 타워 디펜스": {
+      "appIds": {
+        "android": "com.camelgames.aoz"
+      },
+      "aliases": [],
+      "developer": "CamelStudio",
+      "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
+      "slug": "에이지-오브-제트-타워-디펜스",
+      "platforms": [
+        "android"
+      ]
     }
   },
   "lastUpdated": "2025-12-27",
-  "totalGames": 768
+  "totalGames": 770
 }
