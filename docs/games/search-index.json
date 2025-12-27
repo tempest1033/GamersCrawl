@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-a1gamesstudio-berserker",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -5705,7 +5705,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecrafttrialpe",
+    "slug": "com-mojang-minecraftpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -11394,6 +11394,185 @@
     "developer": "ShareX Team",
     "hasRankings": false,
     "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "일곱 개의 대죄: GRAND CROSS",
+    "slug": "com-netmarble-nanakr",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/49/a0/4e49a063-4062-bf24-6ac3-a2d5b94acb10/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Netmarble Corporation",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "라그나로크X : Next Generation",
+    "slug": "com-gravity-rox-and",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/c5/45/2ac54533-817a-a620-8714-8dedc8beb560/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "GRAVITY Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "듀엣 나이트 어비스",
+    "slug": "com-panstudio-gplay-duetnightabyss-arpg-global",
+    "icon": "https://play-lh.googleusercontent.com/JynqYikH08XZ7XgRUzobGY2fIP8T3JwdqseP_y93B7acIy5VSFAHWaRVz-ACFTQACPjJJdmh9fVkJacYwWeNbQ",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Hong Kong Spiral Rising Technology Co., Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "페이트 워",
+    "slug": "com-igg-android-fatewar",
+    "icon": "https://play-lh.googleusercontent.com/LzScvHGRIUDY1RXfEdkIFWxcLSmBGpDhzWx1kaGATpxojRuk5Q0kD97xzo3wLWnA",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "IGG.COM",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "에오스 블랙",
+    "slug": "com-bluepotioncompany-eosblack",
+    "icon": "https://play-lh.googleusercontent.com/BlUH29X45WRImdgOAVl9O2qGezDaWn5_VKEr2R7TRgigtid3AIgcfYbLtoZAMlHHhrw",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "BluePotion Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "GO라니&DA람쥐 어드벤처",
+    "slug": "com-idiocracy-godaadventure",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/27/ef/4227ef27-07e0-74f0-46d0-36b97fd32d67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "IDIOCRACY. INC",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Offroad League Online",
+    "slug": "com-roostergames-offroadleague",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/e5/82/d8e58269-14f3-a64f-638e-499f51303c2b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Rooster Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "요괴 여친:요괴는 너를 사랑해",
+    "slug": "tokyo-chickenskin-yokai",
+    "icon": "https://play-lh.googleusercontent.com/7NlTwDOtVYbamTAInaBQGUjmjXc5QWpvKdAJyocilb6b205RHIpzdD53pbZtrr2cDCwRmrJP4qHvLjDHOCZ35w",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "CHICKEN SKIN LLC",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Battle Bag: War Zone",
+    "slug": "com-brewgames-battlebagwarzone",
+    "icon": "https://play-lh.googleusercontent.com/lCAB4fA3-2A-7qK-Ja0XYq9lkzlz_0gxTN_i4dcFaLG1JdV8ZuwqSs70BEvFKSBZuJrWZg3QExsWz_DPj3FL3To",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "VOODOO",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "머지 과일주스",
+    "slug": "com-stormborn-reverse-juice-suika",
+    "icon": "https://play-lh.googleusercontent.com/JCMInO0UPunayM0215EKuOM48jbbIkXIbg4_NTChm7es7qfIZd_6FqO_4RkR2A37lFB24Kjjmcp8pRaW6x56RQ",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Stormborn",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "잃어버린 감옥 (Lost Prison) - 서바이벌",
+    "slug": "com-finetosurvive-master",
+    "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "SayGames Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "BlockDown:Puzzle Games",
+    "slug": "com-puzzlegames-blockdown-relax",
+    "icon": "https://play-lh.googleusercontent.com/7iw2P_AO1-GAIT3PCd40WehJNg8uTG_nxhUQUsjI_qN5rrMfymw0POp24LcowhRlDd8UzUpD8yiN_pPYyHBA4Q",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "ECKERT GAMING",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Brilliant Sort: 다이아몬드 퍼즐",
+    "slug": "com-belkagames-ds",
+    "icon": "https://play-lh.googleusercontent.com/9f_R10NUsL336bwz1szQ8eE_IYDkSNG-FMKFemPw2m23B5fUCVqv2Zpd8vC3-Pn7iRVjUkRcFcNRIcAlKCqwLQ",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "BELKA GAMES",
+    "hasRankings": true,
+    "hasSteam": false,
     "hasData": true
   }
 ]

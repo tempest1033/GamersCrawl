@@ -933,8 +933,8 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6748525811",
-        "android": "net.gameduo.gv",
+        "ios": "6754373623",
+        "android": "com.a1gamesstudio.berserker",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -3164,8 +3164,9 @@
     "소드 오브 콘발라리아": {
       "appIds": {
         "android": "com.xd.ssrpgkr",
-        "ios": 6449961207
+        "ios": "6449961207"
       },
+      "aliases": [],
       "developer": "XD Entertainment Pte Ltd",
       "icon": "https://play-lh.googleusercontent.com/DEEgq5tChFEAv5dzO6qvzAXlCt2FHSEbzY02Pt7BOJBxxDsdkFrybfUYvcBGaNri6LLNSadqTy4Zopc1KCDWuQ",
       "slug": "소드-오브-콘발라리아",
@@ -5572,8 +5573,8 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecrafttrialpe",
-        "ios": "479516143"
+        "android": "com.mojang.minecraftpe",
+        "ios": 479516143
       },
       "aliases": [
         "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -10960,8 +10961,184 @@
       "platforms": [
         "steam"
       ]
+    },
+    "일곱 개의 대죄: GRAND CROSS": {
+      "appIds": {
+        "ios": "1449552940",
+        "android": "com.netmarble.nanakr"
+      },
+      "aliases": [],
+      "developer": "Netmarble Corporation",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/49/a0/4e49a063-4062-bf24-6ac3-a2d5b94acb10/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "일곱-개의-대죄-grand-cross",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "라그나로크X : Next Generation": {
+      "appIds": {
+        "ios": "1628711346",
+        "android": "com.gravity.rox.and"
+      },
+      "aliases": [],
+      "developer": "GRAVITY Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/c5/45/2ac54533-817a-a620-8714-8dedc8beb560/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "라그나로크x-next-generation",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "듀엣 나이트 어비스": {
+      "appIds": {
+        "android": "com.panstudio.gplay.duetnightabyss.arpg.global",
+        "ios": 6744096826
+      },
+      "aliases": [],
+      "developer": "Hong Kong Spiral Rising Technology Co., Limited",
+      "icon": "https://play-lh.googleusercontent.com/JynqYikH08XZ7XgRUzobGY2fIP8T3JwdqseP_y93B7acIy5VSFAHWaRVz-ACFTQACPjJJdmh9fVkJacYwWeNbQ",
+      "slug": "듀엣-나이트-어비스",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "페이트 워": {
+      "appIds": {
+        "android": "com.igg.android.fatewar",
+        "ios": 6737294814
+      },
+      "aliases": [],
+      "developer": "IGG.COM",
+      "icon": "https://play-lh.googleusercontent.com/LzScvHGRIUDY1RXfEdkIFWxcLSmBGpDhzWx1kaGATpxojRuk5Q0kD97xzo3wLWnA",
+      "slug": "페이트-워",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "에오스 블랙": {
+      "appIds": {
+        "android": "com.BluePotionCompany.EosBlack",
+        "ios": 6463600523
+      },
+      "aliases": [],
+      "developer": "BluePotion Games",
+      "icon": "https://play-lh.googleusercontent.com/BlUH29X45WRImdgOAVl9O2qGezDaWn5_VKEr2R7TRgigtid3AIgcfYbLtoZAMlHHhrw",
+      "slug": "에오스-블랙",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "GO라니&DA람쥐 어드벤처": {
+      "appIds": {
+        "ios": "6754908850",
+        "android": "com.idiocracy.godaadventure"
+      },
+      "aliases": [],
+      "developer": "IDIOCRACY. INC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/27/ef/4227ef27-07e0-74f0-46d0-36b97fd32d67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "go라니da람쥐-어드벤처",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Offroad League Online": {
+      "appIds": {
+        "ios": "6451036687",
+        "android": "com.RoosterGames.OffroadLeague"
+      },
+      "aliases": [],
+      "developer": "Rooster Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/e5/82/d8e58269-14f3-a64f-638e-499f51303c2b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "offroad-league-online",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "요괴 여친:요괴는 너를 사랑해": {
+      "appIds": {
+        "android": "tokyo.chickenskin.yokai",
+        "ios": 6746295219
+      },
+      "aliases": [],
+      "developer": "CHICKEN SKIN LLC",
+      "icon": "https://play-lh.googleusercontent.com/7NlTwDOtVYbamTAInaBQGUjmjXc5QWpvKdAJyocilb6b205RHIpzdD53pbZtrr2cDCwRmrJP4qHvLjDHOCZ35w",
+      "slug": "요괴-여친요괴는-너를-사랑해",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Battle Bag: War Zone": {
+      "appIds": {
+        "android": "com.brewgames.battlebagwarzone",
+        "ios": 6746075769
+      },
+      "aliases": [],
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/lCAB4fA3-2A-7qK-Ja0XYq9lkzlz_0gxTN_i4dcFaLG1JdV8ZuwqSs70BEvFKSBZuJrWZg3QExsWz_DPj3FL3To",
+      "slug": "battle-bag-war-zone",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "머지 과일주스": {
+      "appIds": {
+        "android": "com.stormborn.reverse.juice.suika"
+      },
+      "aliases": [],
+      "developer": "Stormborn",
+      "icon": "https://play-lh.googleusercontent.com/JCMInO0UPunayM0215EKuOM48jbbIkXIbg4_NTChm7es7qfIZd_6FqO_4RkR2A37lFB24Kjjmcp8pRaW6x56RQ",
+      "slug": "머지-과일주스",
+      "platforms": [
+        "android"
+      ]
+    },
+    "잃어버린 감옥 (Lost Prison) - 서바이벌": {
+      "appIds": {
+        "android": "com.finetosurvive.master"
+      },
+      "aliases": [],
+      "developer": "SayGames Ltd",
+      "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
+      "slug": "잃어버린-감옥-lost-prison-서바이벌",
+      "platforms": [
+        "android"
+      ]
+    },
+    "BlockDown:Puzzle Games": {
+      "appIds": {
+        "android": "com.puzzlegames.blockdown.relax"
+      },
+      "aliases": [],
+      "developer": "ECKERT GAMING",
+      "icon": "https://play-lh.googleusercontent.com/7iw2P_AO1-GAIT3PCd40WehJNg8uTG_nxhUQUsjI_qN5rrMfymw0POp24LcowhRlDd8UzUpD8yiN_pPYyHBA4Q",
+      "slug": "blockdownpuzzle-games",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Brilliant Sort: 다이아몬드 퍼즐": {
+      "appIds": {
+        "android": "com.belkagames.ds",
+        "ios": 6749456493
+      },
+      "aliases": [],
+      "developer": "BELKA GAMES",
+      "icon": "https://play-lh.googleusercontent.com/9f_R10NUsL336bwz1szQ8eE_IYDkSNG-FMKFemPw2m23B5fUCVqv2Zpd8vC3-Pn7iRVjUkRcFcNRIcAlKCqwLQ",
+      "slug": "brilliant-sort-다이아몬드-퍼즐",
+      "platforms": [
+        "android",
+        "ios"
+      ]
     }
   },
-  "lastUpdated": "2025-12-26",
-  "totalGames": 756
+  "lastUpdated": "2025-12-27",
+  "totalGames": 769
 }
