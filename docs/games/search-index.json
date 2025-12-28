@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-webzen-muidle-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -2388,7 +2388,7 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3311,7 +3311,7 @@
       "ios"
     ],
     "developer": "LING CHAI (HONG KONG) LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3922,7 +3922,7 @@
       "android"
     ],
     "developer": "Ho San Won",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5134,7 +5134,7 @@
       "android"
     ],
     "developer": "KARAAGE GAMES LLC.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5412,7 +5412,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5531,7 +5531,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5683,7 +5683,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecrafttrialpe",
+    "slug": "com-mojang-minecraftpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -5888,7 +5888,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5916,7 +5916,7 @@
       "ios"
     ],
     "developer": "NANOBIT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7177,7 +7177,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7205,7 +7205,7 @@
       "android"
     ],
     "developer": "BY4M STUDIO CO.,LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7430,7 +7430,7 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7573,7 +7573,7 @@
       "ios"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7760,7 +7760,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7774,7 +7774,7 @@
       "ios"
     ],
     "developer": "stick hunter",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9096,7 +9096,7 @@
       "android"
     ],
     "developer": "Ujoy Games Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9109,7 +9109,7 @@
       "ios"
     ],
     "developer": "SkyIsland Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9738,7 +9738,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9848,7 +9848,7 @@
       "android"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9964,7 +9964,7 @@
       "ios"
     ],
     "developer": "Playvalve",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10076,7 +10076,7 @@
       "ios"
     ],
     "developer": "StoryTaco.Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11478,7 +11478,7 @@
       "android"
     ],
     "developer": "Rooster Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11560,7 +11560,7 @@
       "ios"
     ],
     "developer": "BELKA GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11626,7 +11626,7 @@
       "android"
     ],
     "developer": "Morefun Technology Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
