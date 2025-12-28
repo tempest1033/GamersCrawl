@@ -994,8 +994,12 @@ UGC 플랫폼형 게임의 과금력이 모바일 매출 리스트에서도 유�
     .modal-close:hover { color: #fff; }
   </style>
   <script>
-    document.querySelectorAll('.adsbygoogle').forEach(function() {
-      (adsbygoogle = window.adsbygoogle || []).push({});
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.adsbygoogle').forEach(function() {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch(e) {}
+      });
     });
   </script>
   
