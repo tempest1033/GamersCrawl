@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -179,6 +179,164 @@
       "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
       "searchResults": [],
       "addedAt": "2025-12-27T03:51:14.247Z"
+    },
+    {
+      "title": "ONE PIECE TREASURE CRUISE",
+      "status": "single",
+      "appIds": {
+        "ios": "943690848"
+      },
+      "developer": "Bandai Namco Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/71/1f/7a711f35-42f6-c6c7-1269-a8937ed75ba5/AppIcon_en-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "ONE PIECE TREASURE CRUISE-RPG",
+          "appId": "com.namcobandaigames.spmoja010E"
+        },
+        {
+          "title": "ONE PIECE トレジャークルーズ",
+          "appId": "com.namcobandaigames.spmoja010"
+        },
+        {
+          "title": "ONE PIECE Bounty Rush",
+          "appId": "com.bandainamcoent.opbrww"
+        }
+      ],
+      "addedAt": "2025-12-28T00:54:29.579Z"
+    },
+    {
+      "title": "Minecraft 체험판",
+      "status": "matched",
+      "appIds": {
+        "android": "com.mojang.minecrafttrialpe",
+        "ios": "479516143"
+      },
+      "developer": "Mojang",
+      "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
+      "searchResults": [
+        {
+          "title": "Minecraft 체험판",
+          "appId": "com.mojang.minecrafttrialpe"
+        }
+      ],
+      "addedAt": "2025-12-28T00:54:35.595Z"
+    },
+    {
+      "title": "Woodturning 3D",
+      "status": "single",
+      "appIds": {
+        "ios": "1492451796"
+      },
+      "developer": "Voodoo",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Wood Turning 3D - Carving Game",
+          "appId": "com.Eliten.Turning"
+        },
+        {
+          "title": "나무 블럭 3D",
+          "appId": "com.infinitygames.woodblocks3d"
+        },
+        {
+          "title": "나무 블럭 퍼즐 WoodBlockPuzzle",
+          "appId": "blockpuzzle.wood.legend.jewel"
+        }
+      ],
+      "addedAt": "2025-12-28T00:55:02.950Z"
+    },
+    {
+      "title": "디펜덕: 머지 디펜스",
+      "status": "matched",
+      "appIds": {
+        "ios": "6479684413",
+        "android": "com.morefun.cjqstw"
+      },
+      "developer": "Morefun Technology Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/85/7a/11857a24-c58d-4231-6064-23cd2d0e15e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "디펜덕: 머지 디펜스",
+          "appId": "com.morefun.cjqstw"
+        },
+        {
+          "title": "Merge Defense 3D",
+          "appId": "com.tatemgames.mergedefense3d"
+        },
+        {
+          "title": "Fortress Merge: Puzzle Defense",
+          "appId": "com.ttt.fortressmerge"
+        }
+      ],
+      "addedAt": "2025-12-28T00:55:03.681Z"
+    },
+    {
+      "title": "Wizardry Variants Daphne",
+      "status": "matched",
+      "appIds": {
+        "android": "jp.co.drecom.wizardry.daphne",
+        "ios": 1663423521
+      },
+      "developer": "株式会社ドリコム",
+      "icon": "https://play-lh.googleusercontent.com/PQnAqYDPuV9yAMssbBkA5WPt68jaPyA_T4cbEDRjwMidLfxP0sEoH16bSV_5hSOm0ds",
+      "searchResults": [
+        {
+          "title": "Wizardry Variants Daphne",
+          "appId": 1663423521
+        }
+      ],
+      "addedAt": "2025-12-28T00:55:13.069Z"
+    },
+    {
+      "title": "오목 챔피언 (O-mok Champion)",
+      "status": "single",
+      "appIds": {
+        "android": "ai.easy.gomoku.board.free"
+      },
+      "developer": "COT Puzzle Game",
+      "icon": "https://play-lh.googleusercontent.com/JE5XsAwGuuLMEBUqH4PRc-chkbARMu9yYX34kJWRiKn7ciOIG2E1qRqokBGdkqkE8J_f",
+      "searchResults": [],
+      "addedAt": "2025-12-28T00:55:18.226Z"
+    },
+    {
+      "title": "Brain Out®: 넌센스 마스터, 두뇌 트레이닝",
+      "status": "single",
+      "appIds": {
+        "android": "com.mind.quiz.brain.out"
+      },
+      "developer": "Focus apps",
+      "icon": "https://play-lh.googleusercontent.com/cIZT8s6NiS_Ez_t0EbD_zoMgvdUsUIP8dgArn4iWcWynE4HYSsYdG7xJTuwkl-vZ3lE",
+      "searchResults": [
+        {
+          "title": "캣 브레인 월드 - 넌센스 퍼즐 게임",
+          "appId": 1568614454
+        },
+        {
+          "title": "캣 브레인 - 두뇌 아이큐 테스트 게임",
+          "appId": 1519389456
+        },
+        {
+          "title": "크레이지 지우개",
+          "appId": 1563114819
+        }
+      ],
+      "addedAt": "2025-12-28T00:55:18.592Z"
+    },
+    {
+      "title": "나이트메어 퍼즐: 미지",
+      "status": "single",
+      "appIds": {
+        "android": "com.fc.p.to.creepy.annoying.puzzle.story"
+      },
+      "developer": "CYLINDER GLOBAL PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/DoU9jXstazUP65ZU7t4pc0RCKtHn-ZR56hsD9M5fdqKv74tVM-izRYVl_fQoM5kSeg",
+      "searchResults": [
+        {
+          "title": "나이트메어 퍼즐: 미지의 세계",
+          "appId": 6739485516
+        }
+      ],
+      "addedAt": "2025-12-28T00:55:19.053Z"
     }
   ],
   "approved": [

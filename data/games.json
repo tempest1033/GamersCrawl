@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -5548,8 +5548,8 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecraftpe",
-        "ios": 479516143
+        "android": "com.mojang.minecrafttrialpe",
+        "ios": "479516143"
       },
       "aliases": [
         "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -11160,8 +11160,120 @@
       "platforms": [
         "android"
       ]
+    },
+    "ONE PIECE TREASURE CRUISE": {
+      "appIds": {
+        "ios": "943690848"
+      },
+      "aliases": [],
+      "developer": "Bandai Namco Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/71/1f/7a711f35-42f6-c6c7-1269-a8937ed75ba5/AppIcon_en-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "one-piece-treasure-cruise",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Woodturning 3D": {
+      "appIds": {
+        "ios": "1492451796"
+      },
+      "aliases": [],
+      "developer": "Voodoo",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "woodturning-3d",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "디펜덕: 머지 디펜스": {
+      "appIds": {
+        "ios": "6479684413",
+        "android": "com.morefun.cjqstw"
+      },
+      "aliases": [],
+      "developer": "Morefun Technology Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/85/7a/11857a24-c58d-4231-6064-23cd2d0e15e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "디펜덕-머지-디펜스",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Wizardry Variants Daphne": {
+      "appIds": {
+        "android": "jp.co.drecom.wizardry.daphne",
+        "ios": 1663423521
+      },
+      "aliases": [],
+      "developer": "株式会社ドリコム",
+      "icon": "https://play-lh.googleusercontent.com/PQnAqYDPuV9yAMssbBkA5WPt68jaPyA_T4cbEDRjwMidLfxP0sEoH16bSV_5hSOm0ds",
+      "slug": "wizardry-variants-daphne",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "오목 챔피언 (O-mok Champion)": {
+      "appIds": {
+        "android": "ai.easy.gomoku.board.free"
+      },
+      "aliases": [],
+      "developer": "COT Puzzle Game",
+      "icon": "https://play-lh.googleusercontent.com/JE5XsAwGuuLMEBUqH4PRc-chkbARMu9yYX34kJWRiKn7ciOIG2E1qRqokBGdkqkE8J_f",
+      "slug": "오목-챔피언-o-mok-champion",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Brain Out®: 넌센스 마스터, 두뇌 트레이닝": {
+      "appIds": {
+        "android": "com.mind.quiz.brain.out"
+      },
+      "aliases": [],
+      "developer": "Focus apps",
+      "icon": "https://play-lh.googleusercontent.com/cIZT8s6NiS_Ez_t0EbD_zoMgvdUsUIP8dgArn4iWcWynE4HYSsYdG7xJTuwkl-vZ3lE",
+      "slug": "brain-out-넌센스-마스터-두뇌-트레이닝",
+      "platforms": [
+        "android"
+      ]
+    },
+    "나이트메어 퍼즐: 미지": {
+      "appIds": {
+        "android": "com.fc.p.to.creepy.annoying.puzzle.story"
+      },
+      "aliases": [],
+      "developer": "CYLINDER GLOBAL PTE. LTD.",
+      "icon": "https://play-lh.googleusercontent.com/DoU9jXstazUP65ZU7t4pc0RCKtHn-ZR56hsD9M5fdqKv74tVM-izRYVl_fQoM5kSeg",
+      "slug": "나이트메어-퍼즐-미지",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Hollow Knight": {
+      "appIds": {
+        "steam": "367520"
+      },
+      "aliases": [],
+      "developer": "Team Cherry",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg?t=1764916620",
+      "slug": "hollow-knight",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ICARUS": {
+      "appIds": {
+        "steam": "1149460"
+      },
+      "aliases": [],
+      "developer": "RocketWerkz",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1149460/header.jpg?t=1764892501",
+      "slug": "icarus",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-27",
-  "totalGames": 770
+  "lastUpdated": "2025-12-28",
+  "totalGames": 779
 }

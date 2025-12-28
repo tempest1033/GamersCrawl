@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-webzen-muidle-google",
+    "slug": "net-gameduo-gv",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -5683,7 +5683,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecraftpe",
+    "slug": "com-mojang-minecrafttrialpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -11588,6 +11588,125 @@
     "developer": "CamelStudio",
     "hasRankings": true,
     "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "ONE PIECE TREASURE CRUISE",
+    "slug": "one-piece-treasure-cruise",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/71/1f/7a711f35-42f6-c6c7-1269-a8937ed75ba5/AppIcon_en-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Bandai Namco Entertainment Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Woodturning 3D",
+    "slug": "woodturning-3d",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Voodoo",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "디펜덕: 머지 디펜스",
+    "slug": "com-morefun-cjqstw",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/85/7a/11857a24-c58d-4231-6064-23cd2d0e15e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Morefun Technology Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Wizardry Variants Daphne",
+    "slug": "jp-co-drecom-wizardry-daphne",
+    "icon": "https://play-lh.googleusercontent.com/PQnAqYDPuV9yAMssbBkA5WPt68jaPyA_T4cbEDRjwMidLfxP0sEoH16bSV_5hSOm0ds",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "株式会社ドリコム",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "오목 챔피언 (O-mok Champion)",
+    "slug": "ai-easy-gomoku-board-free",
+    "icon": "https://play-lh.googleusercontent.com/JE5XsAwGuuLMEBUqH4PRc-chkbARMu9yYX34kJWRiKn7ciOIG2E1qRqokBGdkqkE8J_f",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "COT Puzzle Game",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Brain Out®: 넌센스 마스터, 두뇌 트레이닝",
+    "slug": "com-mind-quiz-brain-out",
+    "icon": "https://play-lh.googleusercontent.com/cIZT8s6NiS_Ez_t0EbD_zoMgvdUsUIP8dgArn4iWcWynE4HYSsYdG7xJTuwkl-vZ3lE",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Focus apps",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "나이트메어 퍼즐: 미지",
+    "slug": "com-fc-p-to-creepy-annoying-puzzle-story",
+    "icon": "https://play-lh.googleusercontent.com/DoU9jXstazUP65ZU7t4pc0RCKtHn-ZR56hsD9M5fdqKv74tVM-izRYVl_fQoM5kSeg",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "CYLINDER GLOBAL PTE. LTD.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Hollow Knight",
+    "slug": "hollow-knight",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg?t=1764916620",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Team Cherry",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "ICARUS",
+    "slug": "icarus",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1149460/header.jpg?t=1764892501",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "RocketWerkz",
+    "hasRankings": false,
+    "hasSteam": true,
     "hasData": true
   }
 ]
