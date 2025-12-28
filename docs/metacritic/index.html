@@ -202,11 +202,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank top2">2</div>
         <div class="metacritic-card-poster">
-          <img src="https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="metacritic-card-score" style="background:#66cc33">95</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">The Legend of Zelda: Breath of the Wild - Nintendo Switch 2 Edition</div>
+          <div class="metacritic-card-title">Hades II</div>
           
         </div>
       </div>
@@ -214,11 +214,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank top3">3</div>
         <div class="metacritic-card-poster">
-          <img src="https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-          <div class="metacritic-card-score" style="background:#66cc33">95</div>
+          <img src="https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <div class="metacritic-card-score" style="background:#66cc33">94</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Hades II</div>
+          <div class="metacritic-card-title">The Legend of Zelda: Breath of the Wild - Nintendo Switch 2 Edition</div>
           
         </div>
       </div>
@@ -526,11 +526,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">29</div>
         <div class="metacritic-card-poster">
-          <img src="https://media.rawg.io/media/games/7b7/7b7f740c7f21ca6028cfc420c3f79a76.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="metacritic-card-score" style="background:#ffcc33">87</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Lonely Mountains: Snow Riders</div>
+          <div class="metacritic-card-title">Absolum</div>
           
         </div>
       </div>
@@ -538,11 +538,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">30</div>
         <div class="metacritic-card-poster">
-          <img src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-          <div class="metacritic-card-score" style="background:#ffcc33">86</div>
+          <img src="https://media.rawg.io/media/games/7b7/7b7f740c7f21ca6028cfc420c3f79a76.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <div class="metacritic-card-score" style="background:#ffcc33">87</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Absolum</div>
+          <div class="metacritic-card-title">Lonely Mountains: Snow Riders</div>
           
         </div>
       </div>
@@ -651,6 +651,23 @@
 	        return true;
 	      }
 
+	      function syncAdSlotVisibility() {
+	        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+	          const status = el.getAttribute('data-ad-status');
+	          if (!status) return;
+	          const slot = el.closest('.ad-slot');
+	          if (!slot) return;
+	          if (status === 'unfilled') slot.classList.add('ad-slot--unfilled');
+	          else slot.classList.remove('ad-slot--unfilled');
+	        });
+	      }
+
+	      let visibilityTimer = null;
+	      function scheduleVisibilityCheck() {
+	        clearTimeout(visibilityTimer);
+	        visibilityTimer = setTimeout(syncAdSlotVisibility, 3000);
+	      }
+
 	      function initAds() {
 	        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
 	          if (el.dataset.gcAdsInit === '1') return;
@@ -664,12 +681,18 @@
 	        });
 	      }
 
-	      window.addEventListener('load', initAds);
+	      window.addEventListener('load', function() {
+	        initAds();
+	        scheduleVisibilityCheck();
+	      });
 
 	      let resizeTimer = null;
 	      window.addEventListener('resize', function() {
 	        clearTimeout(resizeTimer);
-	        resizeTimer = setTimeout(initAds, 200);
+	        resizeTimer = setTimeout(function() {
+	          initAds();
+	          scheduleVisibilityCheck();
+	        }, 200);
 	      }, { passive: true });
 	    })();
 	  </script>
