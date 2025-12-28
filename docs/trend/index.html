@@ -62,15 +62,15 @@
   <link rel="prefetch" href="/youtube/" as="document">
   <link rel="prefetch" href="/rankings/" as="document">
   <link rel="prefetch" href="/steam/" as="document">
-  <link rel="prefetch" href="/upcoming/" as="document">
-  <link rel="prefetch" href="/metacritic/" as="document">
-  <!-- Font Preload -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-  <style>.header-title a{color:#f1f5f9}</style>
-  <link rel="stylesheet" href="/styles.css">
+	  <link rel="prefetch" href="/upcoming/" as="document">
+	  <link rel="prefetch" href="/metacritic/" as="document">
+	  <!-- Font Preload -->
+	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+	  <style>.header-title a{color:#f1f5f9}</style>
+	  <link rel="stylesheet" href="/styles.css">
   <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <!-- Firebase Analytics (프로덕션만) -->
   <script type="module">
@@ -904,8 +904,8 @@ UGC 플랫폼형 게임의 과금력이 모바일 매출 리스트에서도 유�
       </div>
     </section>
   
-  </main>
-  
+	  </main>
+	  
   <!-- Footer -->
   <footer class="site-footer">
     <span>© 2025 게이머스크롤</span>
@@ -993,16 +993,40 @@ UGC 플랫폼형 게임의 과금력이 모바일 매출 리스트에서도 유�
     }
     .modal-close:hover { color: #fff; }
   </style>
-  <script>
-    window.addEventListener('load', function() {
-      document.querySelectorAll('.adsbygoogle').forEach(function() {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch(e) {}
-      });
-    });
-  </script>
-  
+	  <script>
+	    (function() {
+	      function canInit(el) {
+	        if (!el || !el.isConnected) return false;
+	        const rect = el.getBoundingClientRect();
+	        if (!rect || rect.width <= 0) return false;
+	        const style = window.getComputedStyle(el);
+	        if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+	        return true;
+	      }
+
+	      function initAds() {
+	        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+	          if (el.dataset.gcAdsInit === '1') return;
+	          if (!canInit(el)) return;
+	          el.dataset.gcAdsInit = '1';
+	          try {
+	            (adsbygoogle = window.adsbygoogle || []).push({});
+	          } catch (e) {
+	            el.removeAttribute('data-gc-ads-init');
+	          }
+	        });
+	      }
+
+	      window.addEventListener('load', initAds);
+
+	      let resizeTimer = null;
+	      window.addEventListener('resize', function() {
+	        clearTimeout(resizeTimer);
+	        resizeTimer = setTimeout(initAds, 200);
+	      }, { passive: true });
+	    })();
+	  </script>
+	  
   <script>
     // 폰트 로딩
     if (document.fonts && document.fonts.ready) {
@@ -1029,7 +1053,7 @@ UGC 플랫폼형 게임의 과금력이 모바일 매출 리스트에서도 유�
       });
     });
   </script>
-  
+	  
 <script>
 (function() {
   const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
@@ -1277,7 +1301,7 @@ UGC 플랫폼형 게임의 과금력이 모바일 매출 리스트에서도 유�
   }
 })();
 </script>
-  
+	  
 <script>
 (function() {
   const prefetched = new Set();
