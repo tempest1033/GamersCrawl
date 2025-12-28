@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "net.gameduo.gv",
+        "android": "com.webzen.muidle.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -208,7 +208,7 @@
       "title": "Minecraft 체험판",
       "status": "matched",
       "appIds": {
-        "android": "com.mojang.minecrafttrialpe",
+        "android": "com.mojang.minecraftpe",
         "ios": "479516143"
       },
       "developer": "Mojang",
@@ -217,6 +217,10 @@
         {
           "title": "Minecraft 체험판",
           "appId": "com.mojang.minecrafttrialpe"
+        },
+        {
+          "title": "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요",
+          "appId": "479516143"
         }
       ],
       "addedAt": "2025-12-28T00:54:35.595Z"
