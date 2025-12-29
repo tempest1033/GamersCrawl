@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -141,6 +141,10 @@
         {
           "title": "다크타워:전략 배틀 RPG",
           "appId": "6748525811"
+        },
+        {
+          "title": "캣 히어로 : 방치형 RPG",
+          "appId": "net.gameduo.gv"
         }
       ],
       "addedAt": "2025-12-27T03:51:23.073Z"
@@ -208,7 +212,7 @@
       "title": "Minecraft 체험판",
       "status": "matched",
       "appIds": {
-        "android": "com.mojang.minecraftpe",
+        "android": "com.mojang.minecrafttrialpe",
         "ios": "479516143"
       },
       "developer": "Mojang",
@@ -341,6 +345,177 @@
         }
       ],
       "addedAt": "2025-12-28T00:55:19.053Z"
+    },
+    {
+      "title": "엘피스 전기: 소울링",
+      "status": "matched",
+      "appIds": {
+        "android": "com.lrgame.dldl.kr",
+        "ios": "6742874430"
+      },
+      "developer": "LING CHAI (HONG KONG) LIMITED",
+      "icon": "https://play-lh.googleusercontent.com/Sh6mpGuUdEQAZrkDv-GOL6N125ej8F-4qavF5ITSu45Ng8OaHroqkJP0nuhAKeZ_zg",
+      "searchResults": [
+        {
+          "title": "엘피스 전기: 소울링",
+          "appId": "com.lrgame.dldl.kr"
+        },
+        {
+          "title": "소울 오프 링- 100%드랍률 mmorpg",
+          "appId": "com.dt.rpg.kr.mobile"
+        },
+        {
+          "title": "Soul Land: New World",
+          "appId": "com.lrgame.dldl.sea"
+        }
+      ],
+      "addedAt": "2025-12-29T00:43:41.391Z"
+    },
+    {
+      "title": "Hero Wars: Alliance",
+      "status": "single",
+      "appIds": {
+        "android": "com.nexters.herowars"
+      },
+      "developer": "NEXTERS GLOBAL LTD",
+      "icon": "https://play-lh.googleusercontent.com/KJaZRX11izQfrRMJ-NaXZeLniayMxlFL1lxPanQi9vi38m4eV2pCqyV3iP3-MC601gM",
+      "searchResults": [
+        {
+          "title": "Hero Wars: Alliance RPG",
+          "appId": 1158967485
+        },
+        {
+          "title": "얼라이언스 : 전쟁 게임",
+          "appId": 1059604202
+        },
+        {
+          "title": "War Alliance - PvP Royale",
+          "appId": 1244206559
+        }
+      ],
+      "addedAt": "2025-12-29T00:44:01.187Z"
+    },
+    {
+      "title": "Clawtopia - 인형뽑기 연습게임",
+      "status": "matched",
+      "appIds": {
+        "ios": "1594193052",
+        "android": "com.clawplus.app2"
+      },
+      "developer": "SHINSEI, K.K.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/e0/e7/6be0e7d8-d9ad-4b89-57f8-bc8faf9d2219/AppIcon-1x_U007emarketing-0-6-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Clawtopia - 인형뽑기 연습게임",
+          "appId": "com.clawplus.app2"
+        },
+        {
+          "title": "온라인 뽑기게임【프라고레】",
+          "appId": "puracolle.app"
+        },
+        {
+          "title": "인형뽑기 마스터: 인형 박물관 타이쿤",
+          "appId": "supa.game.claw"
+        }
+      ],
+      "addedAt": "2025-12-29T00:44:03.120Z"
+    },
+    {
+      "title": "라마 - 게으른 브이로거",
+      "status": "single",
+      "appIds": {
+        "ios": "1595314851"
+      },
+      "developer": "Crazy Labs",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/48/5b/bd485bf8-5166-9957-cdd5-21d48ee4e830/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "라마 - 게으른 블로거",
+          "appId": "com.advant.streamer"
+        },
+        {
+          "title": "Van - Idle Vlogger",
+          "appId": "com.advant.van"
+        },
+        {
+          "title": "Idle Vlogger: Tuber Simulator",
+          "appId": "com.playcroc.idleblogger"
+        }
+      ],
+      "addedAt": "2025-12-29T00:44:07.525Z"
+    },
+    {
+      "title": "Archery Clash!",
+      "status": "matched",
+      "appIds": {
+        "android": "archery.clash.tournament",
+        "ios": "6458097001"
+      },
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/r6gFqSgxmF6R5KAed8ozJDzQJ-6gkIIj6WaiwF1ap4eROry4IpxED_lz0qCs0rOzJr-T3HukOOrSD8MNAxfguqs",
+      "searchResults": [
+        {
+          "title": "Archery Clash!",
+          "appId": "archery.clash.tournament"
+        },
+        {
+          "title": "Archery Battle 3D",
+          "appId": "com.cg.archery"
+        },
+        {
+          "title": "Archery Bastions: Castle War",
+          "appId": "com.bastion.archers"
+        }
+      ],
+      "addedAt": "2025-12-29T00:44:08.315Z"
+    },
+    {
+      "title": "Brain Out -Tricky riddle games",
+      "status": "single",
+      "appIds": {
+        "ios": "1477841973"
+      },
+      "developer": "EYEWIND LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/46/49/10/46491036-3dbe-eb97-3ef3-d05ceb9673be/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Math Riddle Puzzle Brain Games",
+          "appId": "com.mathgame.riddles.puzzles.brain.teasers"
+        },
+        {
+          "title": "Brain Code: Mind Puzzle Games",
+          "appId": "com.kk.braincode"
+        },
+        {
+          "title": "아이큐 테스트:두뇌 게임,메모리 트레이너,브레인 테스트",
+          "appId": "com.iq.test.maths.intelligence.logic.iqtest"
+        }
+      ],
+      "addedAt": "2025-12-29T00:44:09.978Z"
+    },
+    {
+      "title": "Shuriken Cut",
+      "status": "single",
+      "appIds": {
+        "android": "com.Kayac.ShurikenCut"
+      },
+      "developer": "KAYAC Inc.",
+      "icon": "https://play-lh.googleusercontent.com/27M26Ai8VoBJ6eEoWPAAE3e26GOT6o5fjUlGT7Q6PQoNyGp8MHAVWTjx0QFBI7ywR9U",
+      "searchResults": [
+        {
+          "title": "Shuriken Cut: Split",
+          "appId": 6741509379
+        },
+        {
+          "title": "소드 플레이! 닌자 슬라이스 러너 3D",
+          "appId": 1559030764
+        },
+        {
+          "title": "Stealth Ninja Blade Cut ASMR",
+          "appId": 6747116955
+        }
+      ],
+      "addedAt": "2025-12-29T00:44:24.315Z"
     }
   ],
   "approved": [

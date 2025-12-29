@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -3275,8 +3275,9 @@
     "엘피스 전기: 소울링": {
       "appIds": {
         "android": "com.lrgame.dldl.kr",
-        "ios": 6742874430
+        "ios": "6742874430"
       },
+      "aliases": [],
       "developer": "LING CHAI (HONG KONG) LIMITED",
       "icon": "https://play-lh.googleusercontent.com/Sh6mpGuUdEQAZrkDv-GOL6N125ej8F-4qavF5ITSu45Ng8OaHroqkJP0nuhAKeZ_zg",
       "slug": "엘피스-전기-소울링",
@@ -5548,7 +5549,7 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecraftpe",
+        "android": "com.mojang.minecrafttrialpe",
         "ios": "479516143"
       },
       "aliases": [
@@ -5730,8 +5731,9 @@
     "Archery Clash!": {
       "appIds": {
         "android": "archery.clash.tournament",
-        "ios": 6458097001
+        "ios": "6458097001"
       },
+      "aliases": [],
       "developer": "VOODOO",
       "icon": "https://play-lh.googleusercontent.com/r6gFqSgxmF6R5KAed8ozJDzQJ-6gkIIj6WaiwF1ap4eROry4IpxED_lz0qCs0rOzJr-T3HukOOrSD8MNAxfguqs",
       "slug": "archery-clash",
@@ -11272,8 +11274,94 @@
       "platforms": [
         "steam"
       ]
+    },
+    "Hero Wars: Alliance": {
+      "appIds": {
+        "android": "com.nexters.herowars"
+      },
+      "aliases": [],
+      "developer": "NEXTERS GLOBAL LTD",
+      "icon": "https://play-lh.googleusercontent.com/KJaZRX11izQfrRMJ-NaXZeLniayMxlFL1lxPanQi9vi38m4eV2pCqyV3iP3-MC601gM",
+      "slug": "hero-wars-alliance",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Clawtopia - 인형뽑기 연습게임": {
+      "appIds": {
+        "ios": "1594193052",
+        "android": "com.clawplus.app2"
+      },
+      "aliases": [],
+      "developer": "SHINSEI, K.K.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/e0/e7/6be0e7d8-d9ad-4b89-57f8-bc8faf9d2219/AppIcon-1x_U007emarketing-0-6-0-85-220-0.png/100x100bb.png",
+      "slug": "clawtopia-인형뽑기-연습게임",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "라마 - 게으른 브이로거": {
+      "appIds": {
+        "ios": "1595314851"
+      },
+      "aliases": [],
+      "developer": "Crazy Labs",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/48/5b/bd485bf8-5166-9957-cdd5-21d48ee4e830/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "라마-게으른-브이로거",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Brain Out -Tricky riddle games": {
+      "appIds": {
+        "ios": "1477841973"
+      },
+      "aliases": [],
+      "developer": "EYEWIND LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/46/49/10/46491036-3dbe-eb97-3ef3-d05ceb9673be/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "brain-out-tricky-riddle-games",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Shuriken Cut": {
+      "appIds": {
+        "android": "com.Kayac.ShurikenCut"
+      },
+      "aliases": [],
+      "developer": "KAYAC Inc.",
+      "icon": "https://play-lh.googleusercontent.com/27M26Ai8VoBJ6eEoWPAAE3e26GOT6o5fjUlGT7Q6PQoNyGp8MHAVWTjx0QFBI7ywR9U",
+      "slug": "shuriken-cut",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Divinity: Original Sin 2 - Definitive Edition": {
+      "appIds": {
+        "steam": "435150"
+      },
+      "aliases": [],
+      "developer": "Larian Studios",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/435150/3f6ee788cb01bd65097c52399d536eb424b4876f/header.jpg?t=1765811123",
+      "slug": "divinity-original-sin-2-definitive-edition",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Schedule I": {
+      "appIds": {
+        "steam": "3164500"
+      },
+      "aliases": [],
+      "developer": "TVGS",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1751926051",
+      "slug": "schedule-i",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2025-12-28",
-  "totalGames": 779
+  "lastUpdated": "2025-12-29",
+  "totalGames": 786
 }

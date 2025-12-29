@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-webzen-muidle-google",
+    "slug": "studio-gameberry-idlehunter",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -5683,7 +5683,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecraftpe",
+    "slug": "com-mojang-minecrafttrialpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -11705,6 +11705,98 @@
       "steam"
     ],
     "developer": "RocketWerkz",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Hero Wars: Alliance",
+    "slug": "com-nexters-herowars",
+    "icon": "https://play-lh.googleusercontent.com/KJaZRX11izQfrRMJ-NaXZeLniayMxlFL1lxPanQi9vi38m4eV2pCqyV3iP3-MC601gM",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "NEXTERS GLOBAL LTD",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Clawtopia - 인형뽑기 연습게임",
+    "slug": "com-clawplus-app2",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/e0/e7/6be0e7d8-d9ad-4b89-57f8-bc8faf9d2219/AppIcon-1x_U007emarketing-0-6-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "SHINSEI, K.K.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "라마 - 게으른 브이로거",
+    "slug": "라마-게으른-브이로거",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/48/5b/bd485bf8-5166-9957-cdd5-21d48ee4e830/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Crazy Labs",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Brain Out -Tricky riddle games",
+    "slug": "brain-out-tricky-riddle-games",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/46/49/10/46491036-3dbe-eb97-3ef3-d05ceb9673be/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "EYEWIND LIMITED",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Shuriken Cut",
+    "slug": "com-kayac-shurikencut",
+    "icon": "https://play-lh.googleusercontent.com/27M26Ai8VoBJ6eEoWPAAE3e26GOT6o5fjUlGT7Q6PQoNyGp8MHAVWTjx0QFBI7ywR9U",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "KAYAC Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Divinity: Original Sin 2 - Definitive Edition",
+    "slug": "divinity-original-sin-2-definitive-edition",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/435150/3f6ee788cb01bd65097c52399d536eb424b4876f/header.jpg?t=1765811123",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Larian Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Schedule I",
+    "slug": "schedule-i",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1751926051",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "TVGS",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
