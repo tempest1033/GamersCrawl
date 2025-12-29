@@ -2175,9 +2175,8 @@
       max-height: 600px;
     }
 
-    /* 메인 영역 가로형 광고 - 전체 너비 */
+    /* 메인 영역 가로형 광고 - 중앙 정렬 */
     .home-main .ad-slot.pc-only > ins.adsbygoogle {
-      width: 100% !important;
       max-width: 728px;
     }
 
@@ -2196,6 +2195,7 @@
     /* 여백(빈 슬롯) 없이 사용해야 하는 위치는 높이 예약을 하지 않음 */
     .ad-slot.ad-slot--no-reserve > ins.adsbygoogle {
       min-height: 0 !important;
+      height: auto !important;
     }
 
     .ad-slot.ad-slot--unfilled {
@@ -2219,9 +2219,16 @@
     .ad-slot-section + [class*="-controls"],
     .ad-slot-section + [class*="-container"],
     .ad-slot-section + [class*="-card-container"],
-    .ad-slot-section + .home-card {
+    .ad-slot-section + .home-card,
+    .ad-slot-section + .search-page,
+    .ad-slot-section + .game-page {
       margin-top: 0 !important;
       padding-top: 0 !important;
+    }
+
+    /* 사이드바 광고 슬롯 - flex gap으로 이미 여백 있으므로 패딩 제거 */
+    .home-sidebar .ad-slot-section {
+      padding: 0;
     }
 
     .ad-slot.mobile-only {
