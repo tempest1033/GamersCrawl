@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -212,7 +212,7 @@
       "title": "Minecraft 체험판",
       "status": "matched",
       "appIds": {
-        "android": "com.mojang.minecraftpe",
+        "android": "com.mojang.minecrafttrialpe",
         "ios": "479516143"
       },
       "developer": "Mojang",
@@ -516,6 +516,167 @@
         }
       ],
       "addedAt": "2025-12-29T00:44:24.315Z"
+    },
+    {
+      "title": "콜 오브 드래곤즈",
+      "status": "matched",
+      "appIds": {
+        "android": "com.farlightgames.samo.gp.kr",
+        "ios": "6450363898"
+      },
+      "developer": "FARLIGHT",
+      "icon": "https://play-lh.googleusercontent.com/_RfXWqDkmCbpur-TDq-bkfIlu6sXt5noe9bk9lij53cfr7u8ySbwUjilvlWSsWTgIJs",
+      "searchResults": [
+        {
+          "title": "콜 오브 드래곤즈",
+          "appId": "com.farlightgames.samo.gp.kr"
+        },
+        {
+          "title": "Call of Dragons",
+          "appId": "com.farlightgames.samo.gp"
+        },
+        {
+          "title": "Call of Dragons - Funtap",
+          "appId": "com.farlightgames.samo.gp.vn"
+        }
+      ],
+      "addedAt": "2025-12-30T00:41:49.603Z"
+    },
+    {
+      "title": "Idol Company",
+      "status": "single",
+      "appIds": {
+        "ios": "6744967286"
+      },
+      "developer": "Larks Holding Hong Kong Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/15/40/1c1540a9-f4fb-d698-2ec2-987992dba33f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "아이돌 주식회사  (오프라인 게임)",
+          "appId": "com.appplus.idolstarGooglePlay"
+        },
+        {
+          "title": "퀸즈 아이돌(Idol Queens Production)",
+          "appId": "sunbeesoft.queensidol.com"
+        },
+        {
+          "title": "월간아이돌 : 아이돌키우기",
+          "appId": "com.factory608.MI"
+        }
+      ],
+      "addedAt": "2025-12-30T00:41:50.409Z"
+    },
+    {
+      "title": "ONE PIECE TREASURE CRUISE-RPG",
+      "status": "single",
+      "appIds": {
+        "android": "com.namcobandaigames.spmoja010E"
+      },
+      "developer": "Bandai Namco Entertainment Inc.",
+      "icon": "https://play-lh.googleusercontent.com/tH9AB-VJZFUE5u1X5X7jDm_--jmrxsyG3hLpt14SPF3c1lh6-nKY7itklO8JyZliXtgV3T_NMmPJ43CdDRAxVD0",
+      "searchResults": [
+        {
+          "title": "ONE PIECE TREASURE CRUISE",
+          "appId": 943690848
+        },
+        {
+          "title": "ONE PIECE Bounty Rush",
+          "appId": 1343688545
+        }
+      ],
+      "addedAt": "2025-12-30T00:42:07.031Z"
+    },
+    {
+      "title": "Satisday ASMR: 스트레스 해소",
+      "status": "single",
+      "appIds": {
+        "android": "com.an.satisday.antistress.organizinggame"
+      },
+      "developer": "TVC Global., Ltd",
+      "icon": "https://play-lh.googleusercontent.com/rBdMOuTcOWI7BJzmSvRODsXhboHutvbAjasFgmf3A0bXW4SFesVApivuYwNAJ_MvwyQ",
+      "searchResults": [
+        {
+          "title": "완벽한 만족: 정리 게임",
+          "appId": 6736516181
+        },
+        {
+          "title": "완벽한 정리: 정리 게임",
+          "appId": 6737414215
+        }
+      ],
+      "addedAt": "2025-12-30T00:42:30.422Z"
+    },
+    {
+      "title": "Move People",
+      "status": "matched",
+      "appIds": {
+        "android": "com.paurau.MakeHer",
+        "ios": 1581537053
+      },
+      "developer": "Supersonic Studios LTD",
+      "icon": "https://play-lh.googleusercontent.com/9LKFZ7zWDIF68RKb8_-tSBk5gNu0mmUK8iMba5s6Rm0la-6q5Wvv4f8eukakO9x-yLE",
+      "searchResults": [
+        {
+          "title": "Move People",
+          "appId": 1581537053
+        },
+        {
+          "title": "스컬핑 피플",
+          "appId": 1539324945
+        },
+        {
+          "title": "Couples Yoga",
+          "appId": 1563288539
+        }
+      ],
+      "addedAt": "2025-12-30T00:42:32.144Z"
+    },
+    {
+      "title": "Monkey Student: School Prank",
+      "status": "single",
+      "appIds": {
+        "android": "com.u1.prank.school.monkey"
+      },
+      "developer": "Unicorn Studio Official",
+      "icon": "https://play-lh.googleusercontent.com/Y4JfyKwGgNQ6m6542mz_sQPFv_Cdbza3DKqatE4ghAl3cHXQnwh744FNbkEMQ6htu1skR7_3X8gn4k7IMAbx",
+      "searchResults": [],
+      "addedAt": "2025-12-30T00:42:32.688Z"
+    },
+    {
+      "title": "Brainrod Mini Games",
+      "status": "single",
+      "appIds": {
+        "android": "com.brainrott.minigame.challenge"
+      },
+      "developer": "FunWave Studio",
+      "icon": "https://play-lh.googleusercontent.com/ZdLvKNycHWq7aAAmK6Be2jhlDbJMYEqwe3ljj-xHMwf36Dxp3Ra31BGATvNUv9ogQ4g",
+      "searchResults": [],
+      "addedAt": "2025-12-30T00:42:33.728Z"
+    },
+    {
+      "title": "Build A Queen",
+      "status": "matched",
+      "appIds": {
+        "android": "com.Polystation.BuildABabe",
+        "ios": 1660583025
+      },
+      "developer": "Supersonic Studios LTD",
+      "icon": "https://play-lh.googleusercontent.com/4SYLl-Gr6B6-N9lvPkvGv_2yt6dktP14wMl1w4pLeEkLbwj15o7_vdxaVh-J3lktnac",
+      "searchResults": [
+        {
+          "title": "Build A Queen",
+          "appId": 1660583025
+        },
+        {
+          "title": "Become a Queen",
+          "appId": 1604418225
+        },
+        {
+          "title": "High Heels!",
+          "appId": 1545306176
+        }
+      ],
+      "addedAt": "2025-12-30T00:42:34.391Z"
     }
   ],
   "approved": [

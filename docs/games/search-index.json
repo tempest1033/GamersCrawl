@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-webzen-muidle-google",
+    "slug": "studio-gameberry-idlehunter",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -5683,7 +5683,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecraftpe",
+    "slug": "com-mojang-minecrafttrialpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -11798,6 +11798,112 @@
     ],
     "developer": "TVGS",
     "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Idol Company",
+    "slug": "idol-company",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/15/40/1c1540a9-f4fb-d698-2ec2-987992dba33f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Larks Holding Hong Kong Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "ONE PIECE TREASURE CRUISE-RPG",
+    "slug": "com-namcobandaigames-spmoja010e",
+    "icon": "https://play-lh.googleusercontent.com/tH9AB-VJZFUE5u1X5X7jDm_--jmrxsyG3hLpt14SPF3c1lh6-nKY7itklO8JyZliXtgV3T_NMmPJ43CdDRAxVD0",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Bandai Namco Entertainment Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Satisday ASMR: 스트레스 해소",
+    "slug": "com-an-satisday-antistress-organizinggame",
+    "icon": "https://play-lh.googleusercontent.com/rBdMOuTcOWI7BJzmSvRODsXhboHutvbAjasFgmf3A0bXW4SFesVApivuYwNAJ_MvwyQ",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "TVC Global., Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Move People",
+    "slug": "com-paurau-makeher",
+    "icon": "https://play-lh.googleusercontent.com/9LKFZ7zWDIF68RKb8_-tSBk5gNu0mmUK8iMba5s6Rm0la-6q5Wvv4f8eukakO9x-yLE",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Supersonic Studios LTD",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Monkey Student: School Prank",
+    "slug": "com-u1-prank-school-monkey",
+    "icon": "https://play-lh.googleusercontent.com/Y4JfyKwGgNQ6m6542mz_sQPFv_Cdbza3DKqatE4ghAl3cHXQnwh744FNbkEMQ6htu1skR7_3X8gn4k7IMAbx",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Unicorn Studio Official",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Brainrod Mini Games",
+    "slug": "com-brainrott-minigame-challenge",
+    "icon": "https://play-lh.googleusercontent.com/ZdLvKNycHWq7aAAmK6Be2jhlDbJMYEqwe3ljj-xHMwf36Dxp3Ra31BGATvNUv9ogQ4g",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "FunWave Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Build A Queen",
+    "slug": "com-polystation-buildababe",
+    "icon": "https://play-lh.googleusercontent.com/4SYLl-Gr6B6-N9lvPkvGv_2yt6dktP14wMl1w4pLeEkLbwj15o7_vdxaVh-J3lktnac",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Supersonic Studios LTD",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Shadowverse: Worlds Beyond",
+    "slug": "shadowverse-worlds-beyond",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Cygames, Inc.",
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   }
