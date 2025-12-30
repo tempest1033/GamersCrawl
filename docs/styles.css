@@ -2211,7 +2211,6 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      min-height: 140px;
       overflow: hidden;
     }
 
@@ -2319,14 +2318,12 @@
         display: none;
       }
 
-      /* 모바일 가로형 광고 높이 제한 - 세로형 광고 방지 */
+      /* 모바일 가로형 광고 - 자동 높이 + 가로 중앙 */
       .ad-slot.mobile-only.ad-slot--horizontal {
+        display: block;
+        text-align: center;
         max-height: 120px;
         overflow: hidden;
-      }
-
-      .ad-slot.mobile-only.ad-slot--horizontal > ins.adsbygoogle {
-        max-height: 120px;
       }
 
       .home-video-split {
