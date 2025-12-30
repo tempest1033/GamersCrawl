@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-30T15:04:17.242Z",
+  "timestamp": "2025-12-30T15:32:07.585Z",
   "news": {
     "inven": [
       {
@@ -307,233 +307,117 @@
         "thumbnail": "https://cdn.gamemeca.com/gmdata/0001/769/679/resize_gm786782_251230-risell-tt1.jpg"
       }
     ],
-    "thisisgame": [
-      {
-        "title": "스텔라 소라, 가볍지만 분명 '즐거운' 서브컬처 게임",
-        "link": "https://www.thisisgame.com/articles/410259",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2gsyt0006t5012nlq9doe%2F2025%2F12%2F30%2F1639026916773954659_54fe0f6c-2b8b-4be5-a6a3-4bbde963a8d7_0-6.jpg&w=1920&q=75",
-        "tag": "즐거운"
-      },
-      {
-        "title": "연말은 마비노기 모바일과 함께? '만남' 강조한 특별 이벤트 예고",
-        "link": "https://www.thisisgame.com/articles/410519",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F30%2F1639026826056342216_c3024fbc-48a2-4caf-9fb5-6b5bc3e68021_02.%25ED%2592%258D%25EB%2593%25B1%25EC%259D%25B4%25EB%25B2%25A4%25ED%258A%25B8.jpg&w=1200&q=75",
-        "tag": "만남"
-      },
-      {
-        "title": "신규 필그림부터 '선택권' 판매까지… 니케, 신년 업데이트 내용은?",
-        "link": "https://www.thisisgame.com/articles/410460",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2gsyt0006t5012nlq9doe%2F2025%2F12%2F29%2F1639026204032715110_bfa56b10-7689-482f-ae11-c1ec3bb6523e_A-1.jpg&w=1200&q=75",
-        "tag": "선택권"
-      },
-      {
-        "title": "분노와 희망이 공존한 한 해? 2025년 게임 업계 10대 이슈",
-        "link": "https://www.thisisgame.com/articles/410441",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F29%2F1639026051766222780_02a8680f-ca66-46da-b915-dfc1e4b6bd37_%25ED%258E%25981.jpg&w=1200&q=75",
-        "tag": ""
-      },
-      {
-        "title": "스팀에서 화제된 2025년 국산 인디게임 10선",
-        "link": "https://www.thisisgame.com/articles/410373",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F26%2F1639023370723558171_4e189aa4-807e-42a6-a796-94600b2e906d_collage.jpg&w=1200&q=75",
-        "tag": ""
-      },
-      {
-        "title": "승리의 여신: 니케, 신규 업데이트 ‘ARK GUARDIAN’ 출시",
-        "link": "https://www.thisisgame.com/articles/410524",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2gsyt0006t5012nlq9doe%2F2025%2F12%2F30%2F1639026946352379945_53908ebf-1af4-4947-b144-3cbfbe74f510_2._%25EC%258A%25A4%25EB%2585%25B8%25EC%259A%25B0_%25ED%2599%2594%25EC%259D%25B4%25ED%258A%25B8_%25ED%2597%25A4%25EB%25B9%2584%25EC%2595%2594%25EC%25A6%2588_%25ED%2594%25BD%25EC%2597%2585_%25EB%25B0%25B0%25EB%2584%2588.jpg&w=640&q=75",
-        "tag": "승리의 여신: 니케"
-      },
-      {
-        "title": "'아주르 프로밀리아' 개발사, 넥슨과 손잡은 이유는?",
-        "link": "https://www.thisisgame.com/articles/410511",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F30%2F1639026859699541019_d5224cbf-c10c-4087-9dd0-11b7c1924221_videoframe_42091.jpg&w=640&q=75",
-        "tag": "아주르 프로밀리아"
-      },
-      {
-        "title": "CDPR, ‘개발 집중’ 위해 공동 창업자에 GOG 매각",
-        "link": "https://www.thisisgame.com/articles/410499",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F30%2F1639026581322076793_62879c4c-9f13-45c2-8825-c5dbb67f01f5_cyberpunk_2077_emergency_worker.jpg&w=640&q=75",
-        "tag": ""
-      },
-      {
-        "title": "iOS 제3자 결제 또 격변? 법원에 제동 걸린 애플",
-        "link": "https://www.thisisgame.com/articles/410501",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fupload%2Femail-attachments%2F2025%2F12%2F30%2F1639026580347385236_a9830c3c-2478-4bc8-a4e6-485704898e0a_az1.jpg&w=640&q=75",
-        "tag": ""
-      },
-      {
-        "title": "GOTY는  '33 원정대'! 무려 9관왕",
-        "link": "https://www.thisisgame.com/articles/409263",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F12%2F1639011095236521997_5ab64fa0-5368-4e5d-8546-829f57278323_%25ED%258E%2598.jpg&w=640&q=75",
-        "tag": "33 원정대"
-      },
-      {
-        "title": "명조 3.0, 먼저 체험한 '린네', '모니에' 신 캐릭터들 감상은?",
-        "link": "https://www.thisisgame.com/articles/409237",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2gsyt0006t5012nlq9doe%2F2025%2F12%2F11%2F1639010714321870519_c42c5d14-4949-41d0-a6c7-b1cc2f7b58e5_BOSS%25EC%25A0%2584-%25ED%2595%2598%25EC%259D%25B4%25EC%2599%2580%25ED%258B%25B0%25EC%2595%25842.mp4_20251212_021332.262.jpg&w=640&q=75",
-        "tag": "린네"
-      },
-      {
-        "title": "18년 만에 돌아온 ‘메트로이드 프라임 4 비욘드’",
-        "link": "https://www.thisisgame.com/articles/410014",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F22%2F1639019663529234706_05f55817-352a-401e-9194-72ba6a5c0e56_01_%25C3%25AB__%25C3%25AC__%25C3%25AB__%25C3%25AC__%25C3%25AC__.jpg&w=640&q=75",
-        "tag": ""
-      },
-      {
-        "title": "90년대 향수로 빚어진 '터미네이터 2D: 노 페이트'",
-        "link": "https://www.thisisgame.com/articles/409420",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F15%2F1639013625414090029_4ffbcf97-e435-456d-967c-fef0d9db6d00_title.jpg&w=640&q=75",
-        "tag": "터미네이터 2D: 노 페이트"
-      },
-      {
-        "title": "심장박동 리듬게임! 완벽에 가까운 처방전 '리듬 닥터'",
-        "link": "https://www.thisisgame.com/articles/409009",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2025%2F12%2F13%2F1639012110764134978_27f0ee75-5534-424b-b95f-dea5044eee8b_001mig-65240fab5b22b699025e7d4a-Skate20Story20Key20Art205120x28802016x9-JPG-0.jpg&w=640&q=75",
-        "tag": "리듬 닥터"
-      },
-      {
-        "title": "펄어비스의 공든 탑 '붉은사막'이 해줄 역할",
-        "link": "https://www.thisisgame.com/articles/409569",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F17%2F1639015589649300861_ff2887dc-780c-4194-aed0-661bcccae88d_%25ED%2583%25911.jpg&w=640&q=75",
-        "tag": "붉은사막"
-      },
-      {
-        "title": "디아블로4 '증오의 군주'에선 메피스토와 최종 결전?",
-        "link": "https://www.thisisgame.com/articles/409473",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F15%2F1639014015374803009_37dab731-ea7b-4336-b78d-c0618beed1bc_%25ED%258E%2598.jpg&w=640&q=75",
-        "tag": "증오의 군주"
-      },
-      {
-        "title": "호요버스 '바르사푸라' 플레이 공개! \"외계인이 만드나?\"",
-        "link": "https://www.thisisgame.com/articles/407763",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F11%2F21%2F1638993111068028793_27bba6dc-8029-4440-a884-9c1daf2c884e_%25ED%258E%2598.jpg&w=640&q=75",
-        "tag": "바르사푸라"
-      },
-      {
-        "title": "모바일과는 얼마나 달라졌을까 '나혼렙 오버드라이브'",
-        "link": "https://www.thisisgame.com/articles/407770",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F11%2F21%2F1638993215347862616_fd53508a-0ff0-477f-9010-761c137e8524_twitchcon-overdrive-keyart-2-1760553920004.jpg&w=640&q=75",
-        "tag": "나혼렙 오버드라이브"
-      },
-      {
-        "title": "\"T1은 나의 전부\"... 페이커, 전설을 넘어 2029년까지 동행",
-        "link": "https://www.thisisgame.com/articles/409814",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2025%2F12%2F18%2F1639016424092997103_692cb49d-6a01-41a3-88ab-f7490b011c84_batch_T1%2520Faker(9).jpg&w=640&q=75",
-        "tag": ""
-      },
-      {
-        "title": "30년 '경영통' CEO가 쓴 헬로키티 게임 성공 공식",
-        "link": "https://www.thisisgame.com/articles/409003",
-        "thumbnail": "https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F09%2F1639008602032788801_30442933-0456-4a0f-8879-aff5578933fa_%25ED%258E%2598.jpg&w=640&q=75",
-        "tag": "경영통"
-      }
-    ]
+    "thisisgame": []
   },
   "community": {
     "ruliweb": [
+      {
+        "title": "소전2)소녀전선2 보이스 드라마 제작 소식",
+        "link": "https://bbs.ruliweb.com/best/board/184404/read/348091?m=game",
+        "channel": "소녀전선 2: 망명"
+      },
       {
         "title": "[개발자노트] 1월 업데이트 예고",
         "link": "https://bbs.ruliweb.com/best/board/184992/read/171347?m=game",
         "channel": "라스트 오리진"
       },
       {
-        "title": "소전2)소녀전선2 보이스 드라마 제작 소식",
-        "link": "https://bbs.ruliweb.com/best/board/184404/read/348091?m=game",
-        "channel": ""
+        "title": "유닛으로 정방빌드 바꿨습니다.",
+        "link": "https://bbs.ruliweb.com/best/board/184778/read/105006?m=game",
+        "channel": "더 디비전2"
       },
       {
-        "title": "반란 5주차 추격전 목표",
-        "link": "https://bbs.ruliweb.com/best/board/184778/read/105008?m=game",
-        "channel": ""
-      },
-      {
-        "title": "[마소스토어/엑박/PC] 사이쿄 슈팅 게임 70% 할인 2,970원",
-        "link": "https://bbs.ruliweb.com/market/board/1020/read/100569",
-        "channel": ""
+        "title": "[네이버페이] 일일적립, 클릭 23원",
+        "link": "https://bbs.ruliweb.com/market/board/1020/read/100576",
+        "channel": "유저 예판 핫딜 뽐뿌 게시판"
       },
       {
         "title": "블루아카) 편~안",
         "link": "https://bbs.ruliweb.com/best/board/185438/read/1393256?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
-      },
-      {
-        "title": "[홈월드3] 최근 구매하여 찍은 플레이 스크린샷+전투움짤+플레이 영상",
-        "link": "https://bbs.ruliweb.com/best/board/300535/read/348342?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "블루 아카이브"
       },
       {
         "title": "스텔라 블레이드.jpg",
         "link": "https://bbs.ruliweb.com/best/board/300535/read/348341?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "PC패키지 스샷"
+      },
+      {
+        "title": "[홈월드3] 최근 구매하여 찍은 플레이 스크린샷+전투움짤+플레이 영상",
+        "link": "https://bbs.ruliweb.com/best/board/300535/read/348342?orderby=recommend&range=24h&m=game&t=now",
+        "channel": "PC패키지 스샷"
       },
       {
         "title": "코미케에서 티타니아 피규어 공개",
         "link": "https://bbs.ruliweb.com/best/board/184992/read/171335?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "라스트 오리진"
       },
       {
         "title": "반란 5주차 추격전 목표",
         "link": "https://bbs.ruliweb.com/best/board/184778/read/105008?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "더 디비전2"
       },
       {
         "title": "[개발자노트] 1월 업데이트 예고",
         "link": "https://bbs.ruliweb.com/best/board/184992/read/171347?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "라스트 오리진"
       },
       {
         "title": "이번 페스 정산 결과",
         "link": "https://bbs.ruliweb.com/best/board/185438/read/1393257?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
-      },
-      {
-        "title": "소전2)소녀전선2 보이스 드라마 제작 소식",
-        "link": "https://bbs.ruliweb.com/best/board/184404/read/348091?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
-      },
-      {
-        "title": "이부키 그려왔어요",
-        "link": "https://bbs.ruliweb.com/best/board/185438/read/1393264?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "블루 아카이브"
       },
       {
         "title": "정의실현부에 가장 중요한걸 가진 코하루.manhwa",
         "link": "https://bbs.ruliweb.com/best/board/185438/read/1393265?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "블루 아카이브"
+      },
+      {
+        "title": "소전2)소녀전선2 보이스 드라마 제작 소식",
+        "link": "https://bbs.ruliweb.com/best/board/184404/read/348091?orderby=recommend&range=24h&m=game&t=now",
+        "channel": "소녀전선 2: 망명"
+      },
+      {
+        "title": "이부키 그려왔어요",
+        "link": "https://bbs.ruliweb.com/best/board/185438/read/1393264?orderby=recommend&range=24h&m=game&t=now",
+        "channel": "블루 아카이브"
       },
       {
         "title": "2025년 12월 30일 ~ 2026년 01월 06일 디비전 2 주간 상점 목록",
         "link": "https://bbs.ruliweb.com/best/board/184778/read/105010?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "더 디비전2"
       },
       {
         "title": "올드 레이더가 루키 레이더에게.",
         "link": "https://bbs.ruliweb.com/best/board/186905/read/1151?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "아크 레이더스"
       },
       {
         "title": "유닛으로 정방빌드 바꿨습니다.",
         "link": "https://bbs.ruliweb.com/best/board/184778/read/105006?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "더 디비전2"
       },
       {
         "title": "종합전술시험 돌파시험 42차 - 140코인",
         "link": "https://bbs.ruliweb.com/best/board/185438/read/1393269?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "블루 아카이브"
+      },
+      {
+        "title": "처음 겪어보는...",
+        "link": "https://bbs.ruliweb.com/best/board/185438/read/1393268?orderby=recommend&range=24h&m=game&t=now",
+        "channel": "블루 아카이브"
       },
       {
         "title": "12/30(화) 업데이트 상세 안내",
         "link": "https://bbs.ruliweb.com/best/board/185438/read/1393259?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
-      },
-      {
-        "title": "이벤트 보너스 수치가....",
-        "link": "https://bbs.ruliweb.com/best/board/185438/read/1393263?orderby=recommend&range=24h&m=game&t=now",
-        "channel": ""
+        "channel": "블루 아카이브"
       }
     ],
     "arca": [
+      {
+        "title": "34]",
+        "link": "https://arca.live/b/live/158225857?p=1",
+        "channel": ""
+      },
       {
         "title": "ㅋㅋㅋㅋㅋ념글 존나웃기네",
         "link": "https://arca.live/b/live/158235035?p=1",
@@ -628,14 +512,19 @@
         "title": "라케라말린 글여옴",
         "link": "https://arca.live/b/live/158164335?p=1",
         "channel": "명일방주"
-      },
-      {
-        "title": "25]",
-        "link": "https://arca.live/b/live/158226901?p=1",
-        "channel": "명일방주 엔드필드"
       }
     ],
     "dcinside": [
+      {
+        "title": "스포) <몰락하는 자\\> 읽은 만화",
+        "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=392868&_dcbest=1&page=1",
+        "channel": "독갤"
+      },
+      {
+        "title": "4평외톨이 가게 가격 변천사...jpg",
+        "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=392866&_dcbest=1&page=1",
+        "channel": "흑갤"
+      },
       {
         "title": "싱글벙글 여작가식 패싸움vs남작가식 패싸움..jpg",
         "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=392862&_dcbest=1&page=1",
@@ -725,16 +614,6 @@
         "title": "싱글벙글 여초딩이 된 할머니.manhwa",
         "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=392824&_dcbest=1&page=1",
         "channel": "싱갤"
-      },
-      {
-        "title": "\"쿠팡 보상 쿠폰 사용하지 마세요\" 법조계가 경고한 이유?",
-        "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=392822&_dcbest=1&page=1",
-        "channel": "야갤"
-      },
-      {
-        "title": "싱글벙글 일본 성우들 AI 소송 근황",
-        "link": "https://gall.dcinside.com/board/view/?id=dcbest&no=392820&_dcbest=1&page=1",
-        "channel": "싱갤"
       }
     ],
     "inven": [
@@ -774,14 +653,14 @@
         "channel": "아이온2"
       },
       {
-        "title": "이사람 왜이럼? 사사게 없어서 올림",
-        "link": "https://www.inven.co.kr/board/aion2/6388/55674",
-        "channel": "아이온2"
-      },
-      {
         "title": "구마유시가 욕먹는 이유는 페이즈 영상 보면 잘 드러남",
         "link": "https://www.inven.co.kr/board/lol/4625/4178736",
         "channel": "LoL"
+      },
+      {
+        "title": "이사람 왜이럼? 사사게 없어서 올림",
+        "link": "https://www.inven.co.kr/board/aion2/6388/55674",
+        "channel": "아이온2"
       },
       {
         "title": "●▅▇█▇▆▅▄▇ 치유성들아 드러눕자!",
@@ -799,14 +678,14 @@
         "channel": "로아"
       },
       {
-        "title": "모먼트 강화 사고 제대로 쳤다 ㅋㅋㅋ",
-        "link": "https://www.inven.co.kr/board/fifaonline4/3146/8543927",
-        "channel": "FCO"
-      },
-      {
         "title": "아직도 치유성 템보는",
         "link": "https://www.inven.co.kr/board/aion2/6388/55833",
         "channel": "아이온2"
+      },
+      {
+        "title": "모먼트 강화 사고 제대로 쳤다 ㅋㅋㅋ",
+        "link": "https://www.inven.co.kr/board/fifaonline4/3146/8543927",
+        "channel": "FCO"
       },
       {
         "title": "다음 리믹스는 뭘까....",
@@ -819,24 +698,24 @@
         "channel": "LoL"
       },
       {
-        "title": "도핑 시스템도 까보면 ㅈㄴ 기괴함",
-        "link": "https://www.inven.co.kr/board/maple/5974/6086753",
-        "channel": "메이플"
-      },
-      {
         "title": "이 무기 아시는분?",
         "link": "https://www.inven.co.kr/board/wow/4739/259819",
         "channel": "와우"
       },
       {
-        "title": "NC의 수준은 2000년대에 머물러있다 (장문)",
-        "link": "https://www.inven.co.kr/board/aion2/6388/55653",
+        "title": "도핑 시스템도 까보면 ㅈㄴ 기괴함",
+        "link": "https://www.inven.co.kr/board/maple/5974/6086753",
+        "channel": "메이플"
+      },
+      {
+        "title": "시공 어뷰징 미쳤네 ㅋㅋㅋ pvp 삭제하자 그냥",
+        "link": "https://www.inven.co.kr/board/aion2/6388/55990",
         "channel": "아이온2"
       },
       {
-        "title": "희대의 병신 비엠 자석펫 역대급으로 싸다고 신났네 ㅋㅋㅋ조련 줜나 잘됐다 ㅋㅋ",
-        "link": "https://www.inven.co.kr/board/maple/5974/6087752",
-        "channel": "메이플"
+        "title": "NC의 수준은 2000년대에 머물러있다 (장문)",
+        "link": "https://www.inven.co.kr/board/aion2/6388/55653",
+        "channel": "아이온2"
       }
     ]
   },
@@ -1423,7 +1302,7 @@
           {
             "title": "Screwdom : 나사와 볼트 퍼즐",
             "developer": "Zego Global Pte Ltd",
-            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/1c/54/101c546c-9ad0-81e6-0480-92343a9899e9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/c7/be/3ec7be87-b591-7c12-2211-b8ed485df760/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
             "appId": "6740043080"
           },
           {
@@ -4681,7 +4560,7 @@
           {
             "title": "Screwdom",
             "developer": "Zego Global Pte Ltd",
-            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/1c/54/101c546c-9ad0-81e6-0480-92343a9899e9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/c7/be/3ec7be87-b591-7c12-2211-b8ed485df760/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
             "appId": "6740043080"
           },
           {
@@ -6093,7 +5972,7 @@
           {
             "title": "Mob Control",
             "developer": "VOODOO",
-            "icon": "https://play-lh.googleusercontent.com/fYW81WEQjExj4VrCNcoWLJpn_YDRCTi_vdgwF7O61Th5715qbzopngJd7Ae2-ec-r24",
+            "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
             "appId": "com.vincentb.MobControl"
           },
           {
@@ -8780,7 +8659,7 @@
           {
             "title": "Screwdom : 나사와 볼트 퍼즐",
             "developer": "Zego Global Pte Ltd",
-            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/1c/54/101c546c-9ad0-81e6-0480-92343a9899e9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/c7/be/3ec7be87-b591-7c12-2211-b8ed485df760/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
             "appId": "6740043080"
           },
           {
@@ -10664,7 +10543,7 @@
           {
             "title": "Screwdom : ボルトパズルゲーム",
             "developer": "Zego Global Pte Ltd",
-            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/1c/54/101c546c-9ad0-81e6-0480-92343a9899e9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/c7/be/3ec7be87-b591-7c12-2211-b8ed485df760/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
             "appId": "6740043080"
           },
           {
@@ -11668,7 +11547,7 @@
           {
             "title": "Mob Control",
             "developer": "VOODOO",
-            "icon": "https://play-lh.googleusercontent.com/fYW81WEQjExj4VrCNcoWLJpn_YDRCTi_vdgwF7O61Th5715qbzopngJd7Ae2-ec-r24",
+            "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
             "appId": "com.vincentb.MobControl"
           },
           {
@@ -12866,7 +12745,7 @@
           {
             "title": "Screwdom",
             "developer": "Zego Global Pte Ltd",
-            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/1c/54/101c546c-9ad0-81e6-0480-92343a9899e9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/c7/be/3ec7be87-b591-7c12-2211-b8ed485df760/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
             "appId": "6740043080"
           },
           {
@@ -13306,7 +13185,7 @@
           {
             "title": "Mob Control",
             "developer": "VOODOO",
-            "icon": "https://play-lh.googleusercontent.com/fYW81WEQjExj4VrCNcoWLJpn_YDRCTi_vdgwF7O61Th5715qbzopngJd7Ae2-ec-r24",
+            "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
             "appId": "com.vincentb.MobControl"
           },
           {
@@ -16107,7 +15986,7 @@
           {
             "title": "Mob Control",
             "developer": "VOODOO",
-            "icon": "https://play-lh.googleusercontent.com/fYW81WEQjExj4VrCNcoWLJpn_YDRCTi_vdgwF7O61Th5715qbzopngJd7Ae2-ec-r24",
+            "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
             "appId": "com.vincentb.MobControl"
           },
           {
@@ -16510,7 +16389,7 @@
         "rank": 1,
         "appid": "730",
         "name": "Counter-Strike 2",
-        "ccu": 1403245,
+        "ccu": 1505723,
         "developer": "Valve",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861"
       },
@@ -16518,7 +16397,7 @@
         "rank": 2,
         "appid": "570",
         "name": "Dota 2",
-        "ccu": 700707,
+        "ccu": 749605,
         "developer": "Valve",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1766010373"
       },
@@ -16526,7 +16405,7 @@
         "rank": 3,
         "appid": "578080",
         "name": "PUBG: BATTLEGROUNDS",
-        "ccu": 609405,
+        "ccu": 639509,
         "developer": "PUBG Corporation",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1764817633"
       },
@@ -16534,31 +16413,31 @@
         "rank": 4,
         "appid": "1808500",
         "name": "ARC Raiders",
-        "ccu": 187260,
+        "ccu": 212215,
         "developer": "Embark Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/b26e2a315d32ef462a07cf0e36eb06a2b810d0c9/header_alt_assets_0.jpg?t=1765441443"
       },
       {
         "rank": 5,
-        "appid": "3419430",
-        "name": "Bongo Cat",
-        "ccu": 160449,
-        "developer": "Marcel Zurawka",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/2e6c93c020fe13d09d8120bb9164ed7cb58f00c5/header.jpg?t=1759317272"
+        "appid": "1172470",
+        "name": "Apex Legends",
+        "ccu": 168614,
+        "developer": "Respawn",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6ae90b012e725a93622c3694d9d866b886cfd0f8/header.jpg?t=1762457261"
       },
       {
         "rank": 6,
-        "appid": "1172470",
-        "name": "Apex Legends",
-        "ccu": 152857,
-        "developer": "Respawn",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6ae90b012e725a93622c3694d9d866b886cfd0f8/header.jpg?t=1762457261"
+        "appid": "3419430",
+        "name": "Bongo Cat",
+        "ccu": 160542,
+        "developer": "Marcel Zurawka",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/2e6c93c020fe13d09d8120bb9164ed7cb58f00c5/header.jpg?t=1759317272"
       },
       {
         "rank": 7,
         "appid": "1203220",
         "name": "NARAKA: BLADEPOINT",
-        "ccu": 138884,
+        "ccu": 139531,
         "developer": "24 Entertainment",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203220/ac3c1ef5595921372c532ce21c9d8e874fec08a4/header.jpg?t=1767091986"
       },
@@ -16566,7 +16445,7 @@
         "rank": 8,
         "appid": "252490",
         "name": "Rust",
-        "ccu": 132913,
+        "ccu": 139373,
         "developer": "Facepunch Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1761667247"
       },
@@ -16574,7 +16453,7 @@
         "rank": 9,
         "appid": "2507950",
         "name": "Delta Force",
-        "ccu": 124618,
+        "ccu": 133160,
         "developer": "Team Jade",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2507950/101a3e4306c04915793803ccd496c062af57020a/header_alt_assets_6.jpg?t=1766386644"
       },
@@ -16582,7 +16461,7 @@
         "rank": 10,
         "appid": "431960",
         "name": "Wallpaper Engine",
-        "ccu": 122536,
+        "ccu": 128478,
         "developer": "Wallpaper Engine Team",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header.jpg?t=1739211362"
       },
@@ -16590,7 +16469,7 @@
         "rank": 11,
         "appid": "413150",
         "name": "Stardew Valley",
-        "ccu": 114771,
+        "ccu": 128413,
         "developer": "ConcernedApe",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865"
       },
@@ -16598,7 +16477,7 @@
         "rank": 12,
         "appid": "271590",
         "name": "Grand Theft Auto V Legacy",
-        "ccu": 111451,
+        "ccu": 116660,
         "developer": "Rockstar North",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725"
       },
@@ -16606,7 +16485,7 @@
         "rank": 13,
         "appid": "3240220",
         "name": "Grand Theft Auto V Enhanced",
-        "ccu": 105599,
+        "ccu": 114712,
         "developer": "Rockstar North",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header_koreana.jpg?t=1765479644"
       },
@@ -16614,7 +16493,7 @@
         "rank": 14,
         "appid": "230410",
         "name": "Warframe",
-        "ccu": 99232,
+        "ccu": 105094,
         "developer": "Digital Extremes",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/64cb9deaae9055003fd76ba0f6df6b6fba38e808/header.jpg?t=1765508208"
       },
@@ -16622,7 +16501,7 @@
         "rank": 15,
         "appid": "236390",
         "name": "War Thunder",
-        "ccu": 95495,
+        "ccu": 100331,
         "developer": "Gaijin Entertainment",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/cab234fd4c0ae2f049e34e7bcb2393679b02bf91/header.jpg?t=1766582455"
       },
@@ -16630,63 +16509,63 @@
         "rank": 16,
         "appid": "2694490",
         "name": "Path of Exile 2",
-        "ccu": 91221,
-        "developer": "Grinding Gear Games",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694490/cf9f17c1f9eaa59a6a87f2faf3c03ac5a750b9da/header.jpg?t=1765823280"
+        "ccu": 99571,
+        "developer": "",
+        "img": "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg"
       },
       {
         "rank": 17,
         "appid": "3564740",
         "name": "Where Winds Meet",
-        "ccu": 81544,
+        "ccu": 91391,
         "developer": "Everstone Studio",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/57c4616f97e270b88a947ea18682c27af9ae3874/header_koreana.jpg?t=1765434865"
       },
       {
         "rank": 18,
-        "appid": "2622380",
-        "name": "ELDEN RING NIGHTREIGN",
-        "ccu": 71990,
-        "developer": "FromSoftware, Inc.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622380/header.jpg?t=1764808750"
-      },
-      {
-        "rank": 19,
-        "appid": "2807960",
-        "name": "Battlefield™ 6",
-        "ccu": 67536,
-        "developer": "Battlefield Studios",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1765583938"
-      },
-      {
-        "rank": 20,
         "appid": "3241660",
         "name": "R.E.P.O.",
-        "ccu": 66839,
+        "ccu": 82388,
         "developer": "semiwork",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg?t=1765552338"
       },
       {
+        "rank": 19,
+        "appid": "2622380",
+        "name": "ELDEN RING NIGHTREIGN",
+        "ccu": 79878,
+        "developer": "FromSoftware, Inc.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622380/header.jpg?t=1764808750"
+      },
+      {
+        "rank": 20,
+        "appid": "2807960",
+        "name": "Battlefield™ 6",
+        "ccu": 76712,
+        "developer": "Battlefield Studios",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1765583938"
+      },
+      {
         "rank": 21,
-        "appid": "1623730",
-        "name": "Palworld",
-        "ccu": 63370,
-        "developer": "Pocketpair",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/46c7a93f68e36766853bba2ad41de54da1ff625d/header_alt_assets_3.jpg?t=1766121276"
+        "appid": "1086940",
+        "name": "Baldur's Gate 3",
+        "ccu": 68938,
+        "developer": "Larian Studios",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1765505948"
       },
       {
         "rank": 22,
-        "appid": "1086940",
-        "name": "Baldur's Gate 3",
-        "ccu": 61840,
-        "developer": "Larian Studios",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1765505948"
+        "appid": "1623730",
+        "name": "Palworld",
+        "ccu": 68048,
+        "developer": "Pocketpair",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/46c7a93f68e36766853bba2ad41de54da1ff625d/header_alt_assets_3.jpg?t=1766121276"
       },
       {
         "rank": 23,
         "appid": "2246340",
         "name": "Monster Hunter Wilds",
-        "ccu": 59147,
+        "ccu": 65293,
         "developer": "CAPCOM Co., Ltd.",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1766102696"
       },
@@ -16694,7 +16573,7 @@
         "rank": 24,
         "appid": "322170",
         "name": "Geometry Dash",
-        "ccu": 57702,
+        "ccu": 62895,
         "developer": "RobTop Games",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148"
       },
@@ -16702,7 +16581,7 @@
         "rank": 25,
         "appid": "322330",
         "name": "Don't Starve Together",
-        "ccu": 57558,
+        "ccu": 62230,
         "developer": "Klei Entertainment",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/a43e9b0ec0d787b4fa8b68e30b95501d96cfd6ab/header_alt_assets_48.jpg?t=1766081346"
       },
@@ -16710,63 +16589,63 @@
         "rank": 26,
         "appid": "480",
         "name": "Spacewar",
-        "ccu": 54623,
+        "ccu": 60035,
         "developer": "",
         "img": "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg"
       },
       {
         "rank": 27,
-        "appid": "440",
-        "name": "Team Fortress 2",
-        "ccu": 52554,
-        "developer": "Valve",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372"
+        "appid": "3405690",
+        "name": "EA SPORTS FC™ 26",
+        "ccu": 58498,
+        "developer": "EA Canada",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1765797265"
       },
       {
         "rank": 28,
         "appid": "646570",
         "name": "Slay the Spire",
-        "ccu": 51375,
+        "ccu": 54644,
         "developer": "Mega Crit",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg?t=1764833720"
       },
       {
         "rank": 29,
-        "appid": "3405690",
-        "name": "EA SPORTS FC™ 26",
-        "ccu": 51319,
-        "developer": "EA Canada",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1765797265"
+        "appid": "440",
+        "name": "Team Fortress 2",
+        "ccu": 54340,
+        "developer": "Valve",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372"
       },
       {
         "rank": 30,
-        "appid": "394360",
-        "name": "Hearts of Iron IV",
-        "ccu": 48988,
-        "developer": "Paradox Development Studio",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1765368663"
-      },
-      {
-        "rank": 31,
         "appid": "227300",
         "name": "Euro Truck Simulator 2",
-        "ccu": 48584,
+        "ccu": 53633,
         "developer": "SCS Software",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1764266628"
       },
       {
-        "rank": 32,
+        "rank": 31,
         "appid": "1091500",
         "name": "Cyberpunk 2077",
-        "ccu": 48538,
+        "ccu": 53330,
         "developer": "CD PROJEKT RED",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1766141193"
+      },
+      {
+        "rank": 32,
+        "appid": "394360",
+        "name": "Hearts of Iron IV",
+        "ccu": 52425,
+        "developer": "Paradox Development Studio",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1765368663"
       },
       {
         "rank": 33,
         "appid": "1174180",
         "name": "Red Dead Redemption 2",
-        "ccu": 46730,
+        "ccu": 51152,
         "developer": "Rockstar Games",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961"
       },
@@ -16774,7 +16653,7 @@
         "rank": 34,
         "appid": "381210",
         "name": "Dead by Daylight",
-        "ccu": 45231,
+        "ccu": 50535,
         "developer": "Behaviour Interactive Inc.",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg?t=1766160502"
       },
@@ -16782,95 +16661,95 @@
         "rank": 35,
         "appid": "1245620",
         "name": "ELDEN RING",
-        "ccu": 44430,
+        "ccu": 49117,
         "developer": "FromSoftware, Inc.",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1748630546"
       },
       {
         "rank": 36,
-        "appid": "3551340",
-        "name": "Football Manager 26",
-        "ccu": 42885,
-        "developer": "Sports Interactive",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3551340/7d28b9aa8dcfcd96593d112736f58b4b1d3cc7a4/header.jpg?t=1765983195"
-      },
-      {
-        "rank": 37,
-        "appid": "1366800",
-        "name": "Crosshair X",
-        "ccu": 42409,
-        "developer": "CenterPoint Gaming",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1366800/header_alt_assets_0.jpg?t=1765850544"
-      },
-      {
-        "rank": 38,
-        "appid": "289070",
-        "name": "Sid Meier's Civilization VI",
-        "ccu": 42111,
-        "developer": "Firaxis Games",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1740607040"
-      },
-      {
-        "rank": 39,
-        "appid": "261550",
-        "name": "Mount & Blade II: Bannerlord",
-        "ccu": 41348,
-        "developer": "TaleWorlds Entertainment",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/header.jpg?t=1764252300"
-      },
-      {
-        "rank": 40,
-        "appid": "438100",
-        "name": "VRChat",
-        "ccu": 41286,
-        "developer": "VRChat Inc.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454"
-      },
-      {
-        "rank": 41,
-        "appid": "1281930",
-        "name": "tModLoader",
-        "ccu": 41227,
-        "developer": "TML Team",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1281930/header.jpg?t=1718143594"
-      },
-      {
-        "rank": 42,
         "appid": "1326470",
         "name": "Sons Of The Forest",
-        "ccu": 41186,
+        "ccu": 48569,
         "developer": "Endnight Games Ltd",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856"
       },
       {
-        "rank": 43,
+        "rank": 37,
+        "appid": "3551340",
+        "name": "Football Manager 26",
+        "ccu": 47001,
+        "developer": "Sports Interactive",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3551340/7d28b9aa8dcfcd96593d112736f58b4b1d3cc7a4/header.jpg?t=1765983195"
+      },
+      {
+        "rank": 38,
+        "appid": "438100",
+        "name": "VRChat",
+        "ccu": 46383,
+        "developer": "VRChat Inc.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454"
+      },
+      {
+        "rank": 39,
         "appid": "359550",
         "name": "Tom Clancy's Rainbow Six® Siege X",
-        "ccu": 40817,
+        "ccu": 46046,
         "developer": "Ubisoft Montreal",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/04ce6157b86ce2f2b5436437c21fdf5b4c348270/header_alt_assets_17.jpg?t=1766176190"
       },
       {
-        "rank": 44,
+        "rank": 40,
+        "appid": "105600",
+        "name": "Terraria",
+        "ccu": 45412,
+        "developer": "Re-Logic",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1731252354"
+      },
+      {
+        "rank": 41,
         "appid": "2767030",
         "name": "Marvel Rivals",
-        "ccu": 40456,
+        "ccu": 45398,
         "developer": "NetEase Games",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/5565a23d15c87e4dc921affd50dde4d86554c413/header.jpg?t=1765778992"
       },
       {
+        "rank": 42,
+        "appid": "289070",
+        "name": "Sid Meier's Civilization VI",
+        "ccu": 45234,
+        "developer": "Firaxis Games",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1740607040"
+      },
+      {
+        "rank": 43,
+        "appid": "1366800",
+        "name": "Crosshair X",
+        "ccu": 45065,
+        "developer": "CenterPoint Gaming",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1366800/header_alt_assets_0.jpg?t=1765850544"
+      },
+      {
+        "rank": 44,
+        "appid": "1281930",
+        "name": "tModLoader",
+        "ccu": 44588,
+        "developer": "TML Team",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1281930/header.jpg?t=1718143594"
+      },
+      {
         "rank": 45,
-        "appid": "105600",
-        "name": "Terraria",
-        "ccu": 40423,
-        "developer": "Re-Logic",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1731252354"
+        "appid": "261550",
+        "name": "Mount & Blade II: Bannerlord",
+        "ccu": 44463,
+        "developer": "TaleWorlds Entertainment",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/header.jpg?t=1764252300"
       },
       {
         "rank": 46,
         "appid": "1771300",
         "name": "Kingdom Come: Deliverance II",
-        "ccu": 40105,
+        "ccu": 43768,
         "developer": "Warhorse Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1766074183"
       },
@@ -16878,7 +16757,7 @@
         "rank": 47,
         "appid": "1142710",
         "name": "Total War: WARHAMMER III",
-        "ccu": 39526,
+        "ccu": 42980,
         "developer": "CREATIVE ASSEMBLY",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/header.jpg?t=1764870033"
       },
@@ -16886,7 +16765,7 @@
         "rank": 48,
         "appid": "1938090",
         "name": "Call of Duty®",
-        "ccu": 37809,
+        "ccu": 41605,
         "developer": "Treyarch",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/3c66561c9d6f46605a9134b2bb43c0f4424332ac/header_koreana.jpg?t=1766101980"
       },
@@ -16894,175 +16773,175 @@
         "rank": 49,
         "appid": "251570",
         "name": "7 Days to Die",
-        "ccu": 37124,
+        "ccu": 40885,
         "developer": "The Fun Pimps",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1766024790"
       },
       {
         "rank": 50,
-        "appid": "552990",
-        "name": "World of Warships",
-        "ccu": 36450,
-        "developer": "Wargaming Group Limited",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552990/ac7b926dde8748e62e4f156bc9cdbb47c0ac83e8/header.jpg?t=1766591474"
-      },
-      {
-        "rank": 51,
         "appid": "221100",
         "name": "DayZ",
-        "ccu": 36328,
+        "ccu": 40156,
         "developer": "Bohemia Interactive",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1764581773"
       },
       {
-        "rank": 52,
+        "rank": 51,
         "appid": "108600",
         "name": "Project Zomboid",
-        "ccu": 35030,
+        "ccu": 39367,
         "developer": "The Indie Stone",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1762369969"
       },
       {
-        "rank": 53,
+        "rank": 52,
         "appid": "1426210",
         "name": "It Takes Two",
-        "ccu": 33472,
+        "ccu": 38961,
         "developer": "Hazelight Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header_koreana.jpg?t=1763484491"
+      },
+      {
+        "rank": 53,
+        "appid": "3527290",
+        "name": "PEAK",
+        "ccu": 37916,
+        "developer": "Team PEAK",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1764003551"
       },
       {
         "rank": 54,
         "appid": "1903340",
         "name": "Clair Obscur: Expedition 33",
-        "ccu": 32893,
+        "ccu": 37343,
         "developer": "Sandfall Interactive",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/be3305b02d4db0dffa3458537118423bf2792d7e/header.jpg?t=1766050625"
       },
       {
         "rank": 55,
-        "appid": "3527290",
-        "name": "PEAK",
-        "ccu": 32201,
-        "developer": "Team PEAK",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1764003551"
+        "appid": "552990",
+        "name": "World of Warships",
+        "ccu": 37277,
+        "developer": "Wargaming Group Limited",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552990/ac7b926dde8748e62e4f156bc9cdbb47c0ac83e8/header.jpg?t=1766591474"
       },
       {
         "rank": 56,
-        "appid": "294100",
-        "name": "RimWorld",
-        "ccu": 31925,
-        "developer": "Ludeon Studios",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg?t=1762524275"
+        "appid": "553850",
+        "name": "HELLDIVERS™ 2",
+        "ccu": 34918,
+        "developer": "Arrowhead Game Studios",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/c2c44d365f3ec236ff4d91f07b2d8450346ac01e/header_alt_assets_0_koreana.jpg?t=1766051960"
       },
       {
         "rank": 57,
+        "appid": "2399830",
+        "name": "ARK: Survival Ascended",
+        "ccu": 33964,
+        "developer": "Studio Wildcard",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399830/2a934025a1abd14f18b5c5298b510e4d2b0b1847/header_alt_assets_5.jpg?t=1766710980"
+      },
+      {
+        "rank": 58,
         "appid": "3932890",
         "name": "Escape from Tarkov",
-        "ccu": 31877,
+        "ccu": 33854,
         "developer": "Battlestate Games",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3932890/e1367f10d469137a2ced522b642a9b1ee10450da/header.jpg?t=1764759405"
       },
       {
-        "rank": 58,
-        "appid": "218620",
-        "name": "PAYDAY 2",
-        "ccu": 31759,
-        "developer": "OVERKILL - a Starbreeze Studio.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/8498e0a434d1026a5b99154ddeffe7fc00f71127/header_alt_assets_20.jpg?t=1766139387"
-      },
-      {
         "rank": 59,
-        "appid": "1364780",
-        "name": "Street Fighter™ 6",
-        "ccu": 31740,
-        "developer": "CAPCOM Co., Ltd.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg?t=1761116384"
+        "appid": "294100",
+        "name": "RimWorld",
+        "ccu": 33636,
+        "developer": "Ludeon Studios",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg?t=1762524275"
       },
       {
         "rank": 60,
-        "appid": "553850",
-        "name": "HELLDIVERS™ 2",
-        "ccu": 31255,
-        "developer": "Arrowhead Game Studios",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/c2c44d365f3ec236ff4d91f07b2d8450346ac01e/header_alt_assets_0_koreana.jpg?t=1766051960"
+        "appid": "1364780",
+        "name": "Street Fighter™ 6",
+        "ccu": 33495,
+        "developer": "CAPCOM Co., Ltd.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg?t=1761116384"
       },
       {
         "rank": 61,
         "appid": "2300320",
         "name": "Farming Simulator 25",
-        "ccu": 31183,
+        "ccu": 33310,
         "developer": "GIANTS Software",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300320/c2a205133d23cd24faf3c152d972a1d0177661b8/header.jpg?t=1764249746"
       },
       {
         "rank": 62,
-        "appid": "2399830",
-        "name": "ARK: Survival Ascended",
-        "ccu": 31062,
-        "developer": "Studio Wildcard",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399830/2a934025a1abd14f18b5c5298b510e4d2b0b1847/header_alt_assets_5.jpg?t=1766710980"
+        "appid": "550",
+        "name": "Left 4 Dead 2",
+        "ccu": 33115,
+        "developer": "Valve",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562"
       },
       {
         "rank": 63,
         "appid": "2923300",
         "name": "Banana",
-        "ccu": 31038,
+        "ccu": 32172,
         "developer": "Sky",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2923300/6d550eab6dcbc01a824763edbafa9e439e625d5e/header.jpg?t=1748551280"
       },
       {
         "rank": 64,
+        "appid": "218620",
+        "name": "PAYDAY 2",
+        "ccu": 31909,
+        "developer": "OVERKILL - a Starbreeze Studio.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/8498e0a434d1026a5b99154ddeffe7fc00f71127/header_alt_assets_20.jpg?t=1766139387"
+      },
+      {
+        "rank": 65,
         "appid": "346110",
         "name": "ARK: Survival Evolved",
-        "ccu": 28634,
+        "ccu": 30515,
         "developer": "Studio Wildcard",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1765677889"
       },
       {
-        "rank": 65,
-        "appid": "550",
-        "name": "Left 4 Dead 2",
-        "ccu": 28593,
-        "developer": "Valve",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562"
-      },
-      {
         "rank": 66,
-        "appid": "594650",
-        "name": "Hunt: Showdown 1896",
-        "ccu": 27742,
-        "developer": "Crytek",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/12ae33eb49c548a6789ce26088c64cea5850eefc/header_alt_assets_22.jpg?t=1766145084"
-      },
-      {
-        "rank": 67,
-        "appid": "1973530",
-        "name": "Limbus Company",
-        "ccu": 27400,
-        "developer": "ProjectMoon",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1765534954"
-      },
-      {
-        "rank": 68,
         "appid": "1222670",
         "name": "The Sims™ 4",
-        "ccu": 27396,
+        "ccu": 30358,
         "developer": "Maxis",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg?t=1765476116"
       },
       {
-        "rank": 69,
+        "rank": 67,
+        "appid": "594650",
+        "name": "Hunt: Showdown 1896",
+        "ccu": 29519,
+        "developer": "Crytek",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/12ae33eb49c548a6789ce26088c64cea5850eefc/header_alt_assets_22.jpg?t=1766145084"
+      },
+      {
+        "rank": 68,
         "appid": "292030",
         "name": "The Witcher 3: Wild Hunt",
-        "ccu": 26566,
+        "ccu": 28685,
         "developer": "CD PROJEKT RED",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1765462356"
+      },
+      {
+        "rank": 69,
+        "appid": "2357570",
+        "name": "Overwatch® 2",
+        "ccu": 28441,
+        "developer": "Blizzard Entertainment, Inc.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/d503d7c3b87bc386c8fdc8f0af3837a7554516e2/header_alt_assets_18_koreana.jpg?t=1766101535"
       },
       {
         "rank": 70,
         "appid": "3472040",
         "name": "NBA 2K26",
-        "ccu": 26180,
+        "ccu": 28094,
         "developer": "Visual Concepts",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3472040/21edd260352a3a5a8aac0e340091d94c87a01287/header_alt_assets_1.jpg?t=1764346316"
       },
@@ -17070,241 +16949,241 @@
         "rank": 71,
         "appid": "250900",
         "name": "The Binding of Isaac: Rebirth",
-        "ccu": 25834,
+        "ccu": 27591,
         "developer": "Nicalis, Inc.",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg?t=1731977365"
       },
       {
         "rank": 72,
-        "appid": "1905180",
-        "name": "OBS Studio",
-        "ccu": 25535,
-        "developer": "OBS Project",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1905180/header.jpg?t=1733595297"
+        "appid": "1973530",
+        "name": "Limbus Company",
+        "ccu": 27562,
+        "developer": "ProjectMoon",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1765534954"
       },
       {
         "rank": 73,
-        "appid": "2584990",
-        "name": "Shadowverse: Worlds Beyond",
-        "ccu": 24951,
-        "developer": "Cygames, Inc.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606"
+        "appid": "489830",
+        "name": "The Elder Scrolls V: Skyrim Special Edition",
+        "ccu": 27253,
+        "developer": "Bethesda Game Studios",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1753715778"
       },
       {
         "rank": 74,
-        "appid": "2357570",
-        "name": "Overwatch® 2",
-        "ccu": 24878,
-        "developer": "Blizzard Entertainment, Inc.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/d503d7c3b87bc386c8fdc8f0af3837a7554516e2/header_alt_assets_18_koreana.jpg?t=1766101535"
-      },
-      {
-        "rank": 75,
         "appid": "582010",
         "name": "Monster Hunter: World",
-        "ccu": 24681,
+        "ccu": 27099,
         "developer": "CAPCOM Co., Ltd.",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg?t=1758246558"
       },
       {
+        "rank": 75,
+        "appid": "1905180",
+        "name": "OBS Studio",
+        "ccu": 26626,
+        "developer": "OBS Project",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1905180/header.jpg?t=1733595297"
+      },
+      {
         "rank": 76,
-        "appid": "489830",
-        "name": "The Elder Scrolls V: Skyrim Special Edition",
-        "ccu": 24651,
-        "developer": "Bethesda Game Studios",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1753715778"
+        "appid": "990080",
+        "name": "Hogwarts Legacy",
+        "ccu": 26524,
+        "developer": "Avalanche Software",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/a3cdc6f40d97df8ac993679c2dd1edeb5222421e/header.jpg?t=1765473525"
       },
       {
         "rank": 77,
         "appid": "284160",
         "name": "BeamNG.drive",
-        "ccu": 24510,
+        "ccu": 26127,
         "developer": "BeamNG",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/17f8af1312bc48e6cd90e5fb639d4981682af260/header.jpg?t=1765821591"
       },
       {
         "rank": 78,
-        "appid": "766570",
-        "name": "Russian Fishing 4",
-        "ccu": 24142,
-        "developer": "FishSoft LLC",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/766570/header.jpg?t=1752656375"
+        "appid": "526870",
+        "name": "Satisfactory",
+        "ccu": 25818,
+        "developer": "Coffee Stain Studios",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg?t=1749717464"
       },
       {
         "rank": 79,
-        "appid": "990080",
-        "name": "Hogwarts Legacy",
-        "ccu": 24052,
-        "developer": "Avalanche Software",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/a3cdc6f40d97df8ac993679c2dd1edeb5222421e/header.jpg?t=1765473525"
+        "appid": "1030300",
+        "name": "Hollow Knight: Silksong",
+        "ccu": 25637,
+        "developer": "Team Cherry",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1764916587"
       },
       {
         "rank": 80,
         "appid": "4000",
         "name": "Garry's Mod",
-        "ccu": 23984,
+        "ccu": 25574,
         "developer": "Facepunch Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1764757984"
       },
       {
         "rank": 81,
-        "appid": "526870",
-        "name": "Satisfactory",
-        "ccu": 23888,
-        "developer": "Coffee Stain Studios",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg?t=1749717464"
+        "appid": "2584990",
+        "name": "Shadowverse: Worlds Beyond",
+        "ccu": 25041,
+        "developer": "Cygames, Inc.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606"
       },
       {
         "rank": 82,
-        "appid": "1030300",
-        "name": "Hollow Knight: Silksong",
-        "ccu": 23455,
-        "developer": "Team Cherry",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1764916587"
-      },
-      {
-        "rank": 83,
         "appid": "1551360",
         "name": "Forza Horizon 5",
-        "ccu": 23088,
+        "ccu": 24646,
         "developer": "Playground Games",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1746471508"
       },
       {
-        "rank": 84,
-        "appid": "1158310",
-        "name": "Crusader Kings III",
-        "ccu": 21836,
-        "developer": "Paradox Development Studio",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/8a7e814d13f8e73c0d40471f585ece908f9be282/header.jpg?t=1765537474"
+        "rank": 83,
+        "appid": "766570",
+        "name": "Russian Fishing 4",
+        "ccu": 24392,
+        "developer": "FishSoft LLC",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/766570/header.jpg?t=1752656375"
       },
       {
-        "rank": 85,
+        "rank": 84,
         "appid": "377160",
         "name": "Fallout 4",
-        "ccu": 21456,
+        "ccu": 23726,
         "developer": "Bethesda Game Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1764687456"
       },
       {
-        "rank": 86,
-        "appid": "1818450",
-        "name": "STALCRAFT: X",
-        "ccu": 21450,
-        "developer": "EXBO",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1818450/fe514f00c69172814cbd920bdaa54c20a9678bec/header.jpg?t=1766696326"
-      },
-      {
-        "rank": 87,
-        "appid": "3513350",
-        "name": "Wuthering Waves",
-        "ccu": 21286,
-        "developer": "KURO GAMES",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/e8636c72652c97dc0f7d29cb8a2354ecfe281c79/header_koreana.jpg?t=1766608603"
-      },
-      {
-        "rank": 88,
-        "appid": "2344520",
-        "name": "Diablo® IV",
-        "ccu": 21164,
-        "developer": "Blizzard Entertainment, Inc.",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/80f21a42e378b93e8fbb68ee43103be8ab84891b/header.jpg?t=1766192109"
-      },
-      {
-        "rank": 89,
-        "appid": "813780",
-        "name": "Age of Empires II: Definitive Edition",
-        "ccu": 20960,
-        "developer": "World's Edge",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg?t=1760473253"
-      },
-      {
-        "rank": 90,
-        "appid": "2252570",
-        "name": "Football Manager 2024",
-        "ccu": 20760,
-        "developer": "Sports Interactive",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2252570/header.jpg?t=1763646323"
-      },
-      {
-        "rank": 91,
+        "rank": 85,
         "appid": "1304930",
         "name": "The Outlast Trials",
-        "ccu": 20590,
+        "ccu": 23626,
         "developer": "Red Barrels",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/e3b40443eb87d075818ec45883d85c1c47d15c00/header.jpg?t=1765832625"
       },
       {
+        "rank": 86,
+        "appid": "1158310",
+        "name": "Crusader Kings III",
+        "ccu": 23557,
+        "developer": "Paradox Development Studio",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/8a7e814d13f8e73c0d40471f585ece908f9be282/header.jpg?t=1765537474"
+      },
+      {
+        "rank": 87,
+        "appid": "1818450",
+        "name": "STALCRAFT: X",
+        "ccu": 23252,
+        "developer": "EXBO",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1818450/fe514f00c69172814cbd920bdaa54c20a9678bec/header.jpg?t=1766696326"
+      },
+      {
+        "rank": 88,
+        "appid": "813780",
+        "name": "Age of Empires II: Definitive Edition",
+        "ccu": 23184,
+        "developer": "World's Edge",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg?t=1760473253"
+      },
+      {
+        "rank": 89,
+        "appid": "3513350",
+        "name": "Wuthering Waves",
+        "ccu": 22851,
+        "developer": "KURO GAMES",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/e8636c72652c97dc0f7d29cb8a2354ecfe281c79/header_koreana.jpg?t=1766608603"
+      },
+      {
+        "rank": 90,
+        "appid": "2344520",
+        "name": "Diablo® IV",
+        "ccu": 22743,
+        "developer": "Blizzard Entertainment, Inc.",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/80f21a42e378b93e8fbb68ee43103be8ab84891b/header.jpg?t=1766192109"
+      },
+      {
+        "rank": 91,
+        "appid": "892970",
+        "name": "Valheim",
+        "ccu": 22714,
+        "developer": "Iron Gate AB",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1765967243"
+      },
+      {
         "rank": 92,
-        "appid": "582660",
-        "name": "Black Desert",
-        "ccu": 20330,
-        "developer": "Pearl Abyss",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582660/4f0ea9284b5fae9464dadc528bb572c629666313/header_alt_assets_27.jpg?t=1765935954"
+        "appid": "2252570",
+        "name": "Football Manager 2024",
+        "ccu": 21952,
+        "developer": "Sports Interactive",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2252570/header.jpg?t=1763646323"
       },
       {
         "rank": 93,
         "appid": "2073620",
         "name": "Arena Breakout: Infinite",
-        "ccu": 20042,
+        "ccu": 21702,
         "developer": "Morefun Studios",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073620/1b60ef4c79943bfca0b57c39c2d1e3d5941c77ed/header.jpg?t=1766714715"
       },
       {
         "rank": 94,
-        "appid": "892970",
-        "name": "Valheim",
-        "ccu": 19943,
-        "developer": "Iron Gate AB",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1765967243"
+        "appid": "1149460",
+        "name": "ICARUS",
+        "ccu": 21439,
+        "developer": "RocketWerkz",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1149460/header.jpg?t=1764892501"
       },
       {
         "rank": 95,
-        "appid": "1222140",
-        "name": "Detroit: Become Human",
-        "ccu": 19160,
-        "developer": "Quantic Dream",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479"
+        "appid": "1203620",
+        "name": "Enshrouded",
+        "ccu": 20968,
+        "developer": "Keen Games GmbH",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/7b462e81072e94d96cb4242a75f8adddd9ec1cbd/header.jpg?t=1765290696"
       },
       {
         "rank": 96,
-        "appid": "1149460",
-        "name": "ICARUS",
-        "ccu": 19074,
-        "developer": "RocketWerkz",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1149460/header.jpg?t=1764892501"
+        "appid": "582660",
+        "name": "Black Desert",
+        "ccu": 20757,
+        "developer": "",
+        "img": "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg"
       },
       {
         "rank": 97,
         "appid": "513710",
         "name": "SCUM",
-        "ccu": 19062,
+        "ccu": 20212,
         "developer": "Gamepires",
         "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/513710/a33eb72f52841f591b296f78e46824d7aabb2c87/header.jpg?t=1759911435"
       },
       {
         "rank": 98,
-        "appid": "240",
-        "name": "Counter-Strike: Source",
-        "ccu": 18997,
-        "developer": "Valve",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240/header.jpg?t=1745368575"
+        "appid": "1222140",
+        "name": "Detroit: Become Human",
+        "ccu": 20199,
+        "developer": "Quantic Dream",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479"
       },
       {
         "rank": 99,
-        "appid": "1203620",
-        "name": "Enshrouded",
-        "ccu": 18669,
-        "developer": "Keen Games GmbH",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/7b462e81072e94d96cb4242a75f8adddd9ec1cbd/header.jpg?t=1765290696"
+        "appid": "367520",
+        "name": "Hollow Knight",
+        "ccu": 19776,
+        "developer": "Team Cherry",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg?t=1764916620"
       },
       {
         "rank": 100,
-        "appid": "3167020",
-        "name": "Escape from Duckov 逃离鸭科夫",
-        "ccu": 18504,
-        "developer": "Team Soda",
-        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3167020/header.jpg?t=1764328964"
+        "appid": "1085660",
+        "name": "Destiny 2",
+        "ccu": 19759,
+        "developer": "Bungie",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/header_koreana.jpg?t=1765904462"
       }
     ],
     "topSellers": []
@@ -17317,7 +17196,7 @@
         "title": "지피지기",
         "channel": "PAKA",
         "thumbnail": "https://i.ytimg.com/vi/e9bKMJGDrzA/mqdefault.jpg",
-        "views": 143055,
+        "views": 151583,
         "publishedAt": "2025-12-30T08:30:24Z"
       },
       {
@@ -17326,7 +17205,7 @@
         "title": "4코 3성 주제에 1vs 9 가되는 미친 믹서기 등장",
         "channel": "잡상싱",
         "thumbnail": "https://i.ytimg.com/vi/qgee0I2Oo_k/mqdefault.jpg",
-        "views": 217210,
+        "views": 217723,
         "publishedAt": "2025-12-29T11:01:37Z"
       },
       {
@@ -17335,7 +17214,7 @@
         "title": "신화급 듀오",
         "channel": "괴물쥐 유튜브",
         "thumbnail": "https://i.ytimg.com/vi/MqGVK0uCW9M/mqdefault.jpg",
-        "views": 309744,
+        "views": 311812,
         "publishedAt": "2025-12-29T13:00:51Z"
       },
       {
@@ -17344,7 +17223,7 @@
         "title": "영화보다 소름도는 초고퀄 마인크래프트 *기차 마피아*",
         "channel": "잠뜰 TV",
         "thumbnail": "https://i.ytimg.com/vi/C_ZxUI8V8oc/mqdefault.jpg",
-        "views": 111084,
+        "views": 117208,
         "publishedAt": "2025-12-30T08:07:43Z"
       },
       {
@@ -17353,7 +17232,7 @@
         "title": "2025 한동숙 유튜브 연말결산 上편",
         "channel": "동수칸TV",
         "thumbnail": "https://i.ytimg.com/vi/n6RaBqEApdY/mqdefault.jpg",
-        "views": 169081,
+        "views": 170248,
         "publishedAt": "2025-12-29T10:16:45Z"
       },
       {
@@ -17362,26 +17241,26 @@
         "title": "메소도 녹고 나도 녹았다",
         "channel": "타튜브 TATUBE",
         "thumbnail": "https://i.ytimg.com/vi/QsPRWyTSHqc/mqdefault.jpg",
-        "views": 103859,
+        "views": 108876,
         "publishedAt": "2025-12-30T09:01:07Z"
       },
       {
         "rank": 7,
-        "videoId": "OgMip3H2J6A",
-        "title": "야생에서 살아남기 대결ㅋㅋㅋ",
-        "channel": "핫소스",
-        "thumbnail": "https://i.ytimg.com/vi/OgMip3H2J6A/mqdefault.jpg",
-        "views": 404900,
-        "publishedAt": "2025-12-28T10:45:03Z"
-      },
-      {
-        "rank": 8,
         "videoId": "rRtL66gkR9g",
         "title": "끝날 때까지 결과를 알 수 없는 반전의 대장장이 ㄷㄷ [팡이요,  메이플스토리]",
         "channel": "팡이요",
         "thumbnail": "https://i.ytimg.com/vi/rRtL66gkR9g/mqdefault.jpg",
-        "views": 65964,
+        "views": 70241,
         "publishedAt": "2025-12-30T09:01:21Z"
+      },
+      {
+        "rank": 8,
+        "videoId": "OgMip3H2J6A",
+        "title": "야생에서 살아남기 대결ㅋㅋㅋ",
+        "channel": "핫소스",
+        "thumbnail": "https://i.ytimg.com/vi/OgMip3H2J6A/mqdefault.jpg",
+        "views": 407418,
+        "publishedAt": "2025-12-28T10:45:03Z"
       },
       {
         "rank": 9,
@@ -17389,7 +17268,7 @@
         "title": "감스트 본캐 1경 서민스쿼드 공개합니다!! 피파4",
         "channel": "감스트GAMST",
         "thumbnail": "https://i.ytimg.com/vi/ll7oM8OHGFc/mqdefault.jpg",
-        "views": 421731,
+        "views": 422192,
         "publishedAt": "2025-12-28T11:01:31Z"
       },
       {
@@ -17398,7 +17277,7 @@
         "title": "이젠 하다하다 공룡과 브록을 같이 써버리는 예술의 경지에 오른 팔협지,,",
         "channel": "팔차선 [8LJAYWALKING]",
         "thumbnail": "https://i.ytimg.com/vi/S3I-8JLnh8s/mqdefault.jpg",
-        "views": 129327,
+        "views": 129805,
         "publishedAt": "2025-12-29T13:01:02Z"
       },
       {
@@ -17407,44 +17286,44 @@
         "title": "배그 15배율 SR로 학살하기",
         "channel": "주키니TV",
         "thumbnail": "https://i.ytimg.com/vi/Zxn2OFHg8XY/mqdefault.jpg",
-        "views": 146941,
+        "views": 147253,
         "publishedAt": "2025-12-29T10:30:22Z"
       },
       {
         "rank": 12,
+        "videoId": "I6GlFiwRTwY",
+        "title": "돌아온 경찰과 도둑",
+        "channel": "왈도쿤",
+        "thumbnail": "https://i.ytimg.com/vi/I6GlFiwRTwY/mqdefault.jpg",
+        "views": 53314,
+        "publishedAt": "2025-12-30T11:00:35Z"
+      },
+      {
+        "rank": 13,
         "videoId": "Zza5qOcUd-0",
         "title": "공짜로 10렙 찍어서 황금알까지 까는 레전드 개사기판 ㅋㅋㅋㅋ 4코 3성도 순삭 시켜버리는 꿈의 조합을 만들었습니다 ㄷㄷㄷㄷ",
         "channel": "전쓰트의 게임 채널 Junsst",
         "thumbnail": "https://i.ytimg.com/vi/Zza5qOcUd-0/mqdefault.jpg",
-        "views": 83731,
+        "views": 85397,
         "publishedAt": "2025-12-30T03:15:03Z"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "videoId": "NGluyqUWubI",
         "title": "라이벌 랭킹1등 마노 vs 쫄쫄이 패밀리 과연 운명의 승자는?",
         "channel": "싸모스",
         "thumbnail": "https://i.ytimg.com/vi/NGluyqUWubI/mqdefault.jpg",
-        "views": 53344,
+        "views": 54860,
         "publishedAt": "2025-12-30T06:00:06Z"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "videoId": "Cx7R4ari79g",
         "title": "새로나온 무기만 사용하여 4시간만에 네메시스 달성하기!!",
         "channel": "양세돌",
         "thumbnail": "https://i.ytimg.com/vi/Cx7R4ari79g/mqdefault.jpg",
-        "views": 50461,
+        "views": 51449,
         "publishedAt": "2025-12-30T06:41:54Z"
-      },
-      {
-        "rank": 15,
-        "videoId": "s-Pl3kHUtXQ",
-        "title": "도파민 미쳤다...땅따먹기 온라인 서버1위 찍었습니다ㄷㄷ",
-        "channel": "혜안",
-        "thumbnail": "https://i.ytimg.com/vi/s-Pl3kHUtXQ/mqdefault.jpg",
-        "views": 379565,
-        "publishedAt": "2025-12-29T10:15:55Z"
       },
       {
         "rank": 16,
@@ -17452,116 +17331,116 @@
         "title": "2년반이 걸렸습니다.",
         "channel": "콕끼리",
         "thumbnail": "https://i.ytimg.com/vi/GeG0oRw16uE/mqdefault.jpg",
-        "views": 54681,
+        "views": 59600,
         "publishedAt": "2025-12-30T08:30:10Z"
       },
       {
         "rank": 17,
-        "videoId": "z6mjVKOc1ck",
-        "title": "패배가 뭔지 모른다며 두들겨 패주겠다고 도발하는 상대, 알파고는 지는 기분이 뭔지 알려주기로 하는데?ㅋㅋ",
+        "videoId": "2_U8mDSj0TE",
+        "title": "800승 제물을 찾는 상대 앞에 나타난 멘탈 분쇄기 알파고ㅋㅋ",
         "channel": "[ALTUBE] 김성현TV",
-        "thumbnail": "https://i.ytimg.com/vi/z6mjVKOc1ck/mqdefault.jpg",
-        "views": 104381,
-        "publishedAt": "2025-12-29T09:30:38Z"
+        "thumbnail": "https://i.ytimg.com/vi/2_U8mDSj0TE/mqdefault.jpg",
+        "views": 73010,
+        "publishedAt": "2025-12-30T02:30:07Z"
       },
       {
         "rank": 18,
+        "videoId": "s-Pl3kHUtXQ",
+        "title": "도파민 미쳤다...땅따먹기 온라인 서버1위 찍었습니다ㄷㄷ",
+        "channel": "혜안",
+        "thumbnail": "https://i.ytimg.com/vi/s-Pl3kHUtXQ/mqdefault.jpg",
+        "views": 381547,
+        "publishedAt": "2025-12-29T10:15:55Z"
+      },
+      {
+        "rank": 19,
         "videoId": "l_PiyPNQ9_U",
         "title": "팡이요를 뒤 이을 아델 ‘글이요’",
         "channel": "글자네",
         "thumbnail": "https://i.ytimg.com/vi/l_PiyPNQ9_U/mqdefault.jpg",
-        "views": 39633,
+        "views": 41887,
         "publishedAt": "2025-12-30T08:15:38Z"
       },
       {
-        "rank": 19,
+        "rank": 20,
+        "videoId": "u0rjZHtL8TY",
+        "title": "나조차 몰랐던 \"IAM 경기 레전드 장면 월드컵\", 이 장면은 진짜 다시 하래도 못해ㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "channel": "김된모",
+        "thumbnail": "https://i.ytimg.com/vi/u0rjZHtL8TY/mqdefault.jpg",
+        "views": 44427,
+        "publishedAt": "2025-12-30T08:01:14Z"
+      },
+      {
+        "rank": 21,
         "videoId": "uPzspStkCWU",
         "title": "\"배틀그라운드 세계랭킹 1위 프로는 총을 얼마나 잘쏠까\" 눈호강.. 미쳤습니다☠️",
         "channel": "악동 김블루",
         "thumbnail": "https://i.ytimg.com/vi/uPzspStkCWU/mqdefault.jpg",
-        "views": 154615,
+        "views": 155374,
         "publishedAt": "2025-12-29T10:01:47Z"
       },
       {
-        "rank": 20,
-        "videoId": "hUfImTKtBq0",
-        "title": "[ 12. 29 live ] 리니지m : 깡깡이 왔습니다. 2025년의 끝이 보이네요.",
-        "channel": "수삼티비",
-        "thumbnail": "https://i.ytimg.com/vi/hUfImTKtBq0/mqdefault.jpg",
-        "views": 107098,
-        "publishedAt": "2025-12-29T16:42:58Z"
-      },
-      {
-        "rank": 21,
+        "rank": 22,
         "videoId": "NhCEgCCXhz0",
         "title": "진짜 전적보고 얕봤다가 큰코 다친 홍구 ... 과연 이대로 계속 쳐맞을지?;;",
         "channel": "발스타홍구",
         "thumbnail": "https://i.ytimg.com/vi/NhCEgCCXhz0/mqdefault.jpg",
-        "views": 79812,
+        "views": 80964,
         "publishedAt": "2025-12-30T02:30:08Z"
       },
       {
-        "rank": 22,
+        "rank": 23,
+        "videoId": "hUfImTKtBq0",
+        "title": "[ 12. 29 live ] 리니지m : 깡깡이 왔습니다. 2025년의 끝이 보이네요.",
+        "channel": "수삼티비",
+        "thumbnail": "https://i.ytimg.com/vi/hUfImTKtBq0/mqdefault.jpg",
+        "views": 107503,
+        "publishedAt": "2025-12-29T16:42:58Z"
+      },
+      {
+        "rank": 24,
         "videoId": "dsK-R_Smi58",
         "title": "【 탬탬버린 】 - 이 세계를 지키는 영웅이 되려면 가장 먼저 물어봐야 할 것 (멋사공책RPG 1편)",
         "channel": "탬탬버린",
         "thumbnail": "https://i.ytimg.com/vi/dsK-R_Smi58/mqdefault.jpg",
-        "views": 46383,
+        "views": 49787,
         "publishedAt": "2025-12-30T10:04:58Z"
       },
       {
-        "rank": 23,
+        "rank": 25,
         "videoId": "DuwIwpFoUoI",
         "title": "결국 섀도어로 돌아왔습니다",
         "channel": "김데데",
         "thumbnail": "https://i.ytimg.com/vi/DuwIwpFoUoI/mqdefault.jpg",
-        "views": 65913,
+        "views": 70041,
         "publishedAt": "2025-12-30T09:06:03Z"
       },
       {
-        "rank": 24,
-        "videoId": "xD125HcG0fY",
-        "title": "새로운 삼촌들은 궁금한게 많다",
-        "channel": "텐코 시부키 TENKO SHIBUKI",
-        "thumbnail": "https://i.ytimg.com/vi/xD125HcG0fY/mqdefault.jpg",
-        "views": 155647,
-        "publishedAt": "2025-12-29T08:46:16Z"
-      },
-      {
-        "rank": 25,
+        "rank": 26,
         "videoId": "O9RaqRlmiCE",
         "title": "99일 숲에서 무기고 업그레이드 했습니다!! 3층에 꽉찬 엄청난 무기들!! 대박 멋있다!!!! (로블록스 99나이트인더포레스트)",
         "channel": "쉐어TV",
         "thumbnail": "https://i.ytimg.com/vi/O9RaqRlmiCE/mqdefault.jpg",
-        "views": 49026,
+        "views": 50288,
         "publishedAt": "2025-12-30T06:30:13Z"
       },
       {
-        "rank": 26,
+        "rank": 27,
+        "videoId": "xD125HcG0fY",
+        "title": "새로운 삼촌들은 궁금한게 많다",
+        "channel": "텐코 시부키 TENKO SHIBUKI",
+        "thumbnail": "https://i.ytimg.com/vi/xD125HcG0fY/mqdefault.jpg",
+        "views": 155879,
+        "publishedAt": "2025-12-29T08:46:16Z"
+      },
+      {
+        "rank": 28,
         "videoId": "_-vBPJ5NEUA",
         "title": "에메랄드 손목 꺾기",
         "channel": "랄로",
         "thumbnail": "https://i.ytimg.com/vi/_-vBPJ5NEUA/mqdefault.jpg",
-        "views": 689084,
+        "views": 689605,
         "publishedAt": "2025-12-27T13:56:50Z"
-      },
-      {
-        "rank": 27,
-        "videoId": "NrkyfCTNA3A",
-        "title": "뒷일을 부탁해야 되는 예언자 게임ㅋㅋㅋ",
-        "channel": "왈도쿤",
-        "thumbnail": "https://i.ytimg.com/vi/NrkyfCTNA3A/mqdefault.jpg",
-        "views": 132720,
-        "publishedAt": "2025-12-29T11:00:42Z"
-      },
-      {
-        "rank": 28,
-        "videoId": "Ma8puxKNy4Y",
-        "title": "된모와 텍쳐의 레디찍기 대소동",
-        "channel": "김된모",
-        "thumbnail": "https://i.ytimg.com/vi/Ma8puxKNy4Y/mqdefault.jpg",
-        "views": 97305,
-        "publishedAt": "2025-12-29T08:34:48Z"
       },
       {
         "rank": 29,
@@ -17569,7 +17448,7 @@
         "title": "[박정환 60개 대마 잡고 왕싱하오에게 200집 승리] 한중슈퍼매치 박정환 vs 왕싱하오 #김성룡바둑랩 #바둑",
         "channel": "김성룡 바둑랩",
         "thumbnail": "https://i.ytimg.com/vi/CPF33eGARuo/mqdefault.jpg",
-        "views": 45410,
+        "views": 46752,
         "publishedAt": "2025-12-30T05:38:02Z"
       },
       {
@@ -17578,53 +17457,53 @@
         "title": "[LOL] 칼바람 아수라장 프레이 카시오페아 : 손가락도 타들어가는 지옥의 전도체 카시오페아 (Feat. 증바람 랜드)",
         "channel": "프레이 TV",
         "thumbnail": "https://i.ytimg.com/vi/TZ9Yk9T7yV4/mqdefault.jpg",
-        "views": 74952,
+        "views": 75186,
         "publishedAt": "2025-12-29T08:00:38Z"
       },
       {
         "rank": 31,
-        "videoId": "9u0a31D5uRk",
-        "title": "31살 챌린저",
-        "channel": "가재맨",
-        "thumbnail": "https://i.ytimg.com/vi/9u0a31D5uRk/mqdefault.jpg",
-        "views": 107900,
-        "publishedAt": "2025-12-29T15:00:30Z"
-      },
-      {
-        "rank": 32,
         "videoId": "tUEneA8CNL4",
         "title": "아크네메시스 다시 갈 수 있을까???",
         "channel": "신생",
         "thumbnail": "https://i.ytimg.com/vi/tUEneA8CNL4/mqdefault.jpg",
-        "views": 49790,
+        "views": 51237,
         "publishedAt": "2025-12-30T08:33:35Z"
       },
       {
+        "rank": 32,
+        "videoId": "9u0a31D5uRk",
+        "title": "31살 챌린저",
+        "channel": "가재맨",
+        "thumbnail": "https://i.ytimg.com/vi/9u0a31D5uRk/mqdefault.jpg",
+        "views": 108669,
+        "publishedAt": "2025-12-29T15:00:30Z"
+      },
+      {
         "rank": 33,
+        "videoId": "LPP5Y8VhT54",
+        "title": "챌섭 8일차 279레벨.. 하드 카이까지 단 1업..!! [챌린저스 월드 시즌3]",
+        "channel": "청묘",
+        "thumbnail": "https://i.ytimg.com/vi/LPP5Y8VhT54/mqdefault.jpg",
+        "views": 38280,
+        "publishedAt": "2025-12-30T07:25:02Z"
+      },
+      {
+        "rank": 34,
         "videoId": "WSHn2VC0lmI",
         "title": "철권태그 화요일 점심 철권 | Tekken Tag | Retro Game | 2025-12-30",
         "channel": "블랙의철권TV",
         "thumbnail": "https://i.ytimg.com/vi/WSHn2VC0lmI/mqdefault.jpg",
-        "views": 58702,
+        "views": 58705,
         "publishedAt": "2025-12-30T05:39:12Z"
       },
       {
-        "rank": 34,
+        "rank": 35,
         "videoId": "spYKevhISSA",
         "title": "말파이트 전세계 1위, 0티어 된 기념으로 모셨습니다 ㅋㅋㅋ 제로거 장인초대석 [테스터훈]",
         "channel": "테스터훈 TesterHoon",
         "thumbnail": "https://i.ytimg.com/vi/spYKevhISSA/mqdefault.jpg",
-        "views": 255468,
+        "views": 256026,
         "publishedAt": "2025-12-28T11:11:11Z"
-      },
-      {
-        "rank": 35,
-        "videoId": "y6XnuVl40x0",
-        "title": "LCK 6대 미드라이너들의 시그니처 픽은 무엇일까?",
-        "channel": "프로관전러 P.S",
-        "thumbnail": "https://i.ytimg.com/vi/y6XnuVl40x0/mqdefault.jpg",
-        "views": 161830,
-        "publishedAt": "2025-12-29T13:16:22Z"
       },
       {
         "rank": 36,
@@ -17632,53 +17511,53 @@
         "title": "절대 비버를 화나게 해선 안돼",
         "channel": "우주하마",
         "thumbnail": "https://i.ytimg.com/vi/jTV8cYR5Q0o/mqdefault.jpg",
-        "views": 67469,
+        "views": 68679,
         "publishedAt": "2025-12-30T02:30:48Z"
       },
       {
         "rank": 37,
-        "videoId": "LPP5Y8VhT54",
-        "title": "챌섭 8일차 279레벨.. 하드 카이까지 단 1업..!! [챌린저스 월드 시즌3]",
-        "channel": "청묘",
-        "thumbnail": "https://i.ytimg.com/vi/LPP5Y8VhT54/mqdefault.jpg",
-        "views": 37082,
-        "publishedAt": "2025-12-30T07:25:02Z"
+        "videoId": "y6XnuVl40x0",
+        "title": "LCK 6대 미드라이너들의 시그니처 픽은 무엇일까?",
+        "channel": "프로관전러 P.S",
+        "thumbnail": "https://i.ytimg.com/vi/y6XnuVl40x0/mqdefault.jpg",
+        "views": 162617,
+        "publishedAt": "2025-12-29T13:16:22Z"
       },
       {
         "rank": 38,
+        "videoId": "83_LoULUfeA",
+        "title": "비키니 시티에서 99일 생존하기",
+        "channel": "김왼팔",
+        "thumbnail": "https://i.ytimg.com/vi/83_LoULUfeA/mqdefault.jpg",
+        "views": 31033,
+        "publishedAt": "2025-12-30T08:50:00Z"
+      },
+      {
+        "rank": 39,
         "videoId": "fktZcGi8BsQ",
         "title": "그 녀석들의 \"경찰과 도둑 2\"",
         "channel": "하우카우",
         "thumbnail": "https://i.ytimg.com/vi/fktZcGi8BsQ/mqdefault.jpg",
-        "views": 60051,
+        "views": 60162,
         "publishedAt": "2025-12-29T10:16:30Z"
       },
       {
-        "rank": 39,
+        "rank": 40,
         "videoId": "o6ed4RTC0C4",
         "title": "\"6분 다르킨\" 이게 된다고? 변신 게이지 복사하는 덤불조끼 탑케인 출격",
         "channel": "캐인유튜브",
         "thumbnail": "https://i.ytimg.com/vi/o6ed4RTC0C4/mqdefault.jpg",
-        "views": 69590,
+        "views": 69769,
         "publishedAt": "2025-12-29T12:32:39Z"
       },
       {
-        "rank": 40,
+        "rank": 41,
         "videoId": "QYCdx4rgZPI",
         "title": "히어로 얼음 골렘 성능 무쳤다 [클래시로얄] [June]",
         "channel": "JUNE",
         "thumbnail": "https://i.ytimg.com/vi/QYCdx4rgZPI/mqdefault.jpg",
-        "views": 100999,
+        "views": 101879,
         "publishedAt": "2025-12-29T15:00:37Z"
-      },
-      {
-        "rank": 41,
-        "videoId": "Okmmci_tpHo",
-        "title": "버진석과 캠히나",
-        "channel": "시라유키 히나 SHIRAYUKI HINA",
-        "thumbnail": "https://i.ytimg.com/vi/Okmmci_tpHo/mqdefault.jpg",
-        "views": 107014,
-        "publishedAt": "2025-12-29T07:00:31Z"
       },
       {
         "rank": 42,
@@ -17686,17 +17565,17 @@
         "title": "2023년 마인크래프트 뷰어쉽 세계 1위였던 킴성태의 진실",
         "channel": "킴성태TV",
         "thumbnail": "https://i.ytimg.com/vi/pFPqr2JivVA/mqdefault.jpg",
-        "views": 113483,
+        "views": 113873,
         "publishedAt": "2025-12-29T11:00:39Z"
       },
       {
         "rank": 43,
-        "videoId": "6qy7JPDA9L8",
-        "title": "25.12.29(월) 【 인피쉰 생방송 다시보기 】 스타 빨무 스타크래프트 Starcraft",
-        "channel": "인피쉰",
-        "thumbnail": "https://i.ytimg.com/vi/6qy7JPDA9L8/mqdefault.jpg",
-        "views": 89851,
-        "publishedAt": "2025-12-29T16:12:42Z"
+        "videoId": "Okmmci_tpHo",
+        "title": "버진석과 캠히나",
+        "channel": "시라유키 히나 SHIRAYUKI HINA",
+        "thumbnail": "https://i.ytimg.com/vi/Okmmci_tpHo/mqdefault.jpg",
+        "views": 107433,
+        "publishedAt": "2025-12-29T07:00:31Z"
       },
       {
         "rank": 44,
@@ -17704,62 +17583,62 @@
         "title": "저보다 동생이시라구요? 피파 뉴페이스 채진석 강사 합방",
         "channel": "두치와뿌꾸",
         "thumbnail": "https://i.ytimg.com/vi/lty5dmp67Yo/mqdefault.jpg",
-        "views": 37294,
+        "views": 37849,
         "publishedAt": "2025-12-30T03:01:00Z"
       },
       {
         "rank": 45,
-        "videoId": "2DWNkDqEcJk",
-        "title": "사수찬 1등 드샤크 한번 만들어보겠습니다!",
-        "channel": "수찬 Suchan",
-        "thumbnail": "https://i.ytimg.com/vi/2DWNkDqEcJk/mqdefault.jpg",
-        "views": 73097,
-        "publishedAt": "2025-12-29T06:09:26Z"
+        "videoId": "6qy7JPDA9L8",
+        "title": "25.12.29(월) 【 인피쉰 생방송 다시보기 】 스타 빨무 스타크래프트 Starcraft",
+        "channel": "인피쉰",
+        "thumbnail": "https://i.ytimg.com/vi/6qy7JPDA9L8/mqdefault.jpg",
+        "views": 89895,
+        "publishedAt": "2025-12-29T16:12:42Z"
       },
       {
         "rank": 46,
-        "videoId": "Bohtf60nIGw",
-        "title": "한국 1등 클랜과 붙어봤습니다.",
-        "channel": "10B",
-        "thumbnail": "https://i.ytimg.com/vi/Bohtf60nIGw/mqdefault.jpg",
-        "views": 72000,
-        "publishedAt": "2025-12-29T08:00:25Z"
-      },
-      {
-        "rank": 47,
         "videoId": "mSNLRDDGsPQ",
         "title": "【롤토체스 강의】T헥스를 힘으로 찍어누르는 미친 덱파워 이쉬탈 아리 고밸류덱 핵심공략(롤체 시즌16 티어덱 1티어 챌린저 구루루 롤토체스 초보자 강의 스카너브록 라이즈 바드 )",
         "channel": "구루루",
         "thumbnail": "https://i.ytimg.com/vi/mSNLRDDGsPQ/mqdefault.jpg",
-        "views": 37078,
+        "views": 37496,
         "publishedAt": "2025-12-30T02:00:51Z"
       },
       {
+        "rank": 47,
+        "videoId": "2DWNkDqEcJk",
+        "title": "사수찬 1등 드샤크 한번 만들어보겠습니다!",
+        "channel": "수찬 Suchan",
+        "thumbnail": "https://i.ytimg.com/vi/2DWNkDqEcJk/mqdefault.jpg",
+        "views": 73311,
+        "publishedAt": "2025-12-29T06:09:26Z"
+      },
+      {
         "rank": 48,
+        "videoId": "Bohtf60nIGw",
+        "title": "한국 1등 클랜과 붙어봤습니다.",
+        "channel": "10B",
+        "thumbnail": "https://i.ytimg.com/vi/Bohtf60nIGw/mqdefault.jpg",
+        "views": 72186,
+        "publishedAt": "2025-12-29T08:00:25Z"
+      },
+      {
+        "rank": 49,
         "videoId": "o52yxIDFLWI",
         "title": "드디어 본색을 드러내는 유니",
         "channel": "피닉스박",
         "thumbnail": "https://i.ytimg.com/vi/o52yxIDFLWI/mqdefault.jpg",
-        "views": 54518,
+        "views": 54721,
         "publishedAt": "2025-12-29T11:36:11Z"
       },
       {
-        "rank": 49,
+        "rank": 50,
         "videoId": "p_NFseyOUQ8",
         "title": "결국 10조 전투력 달성했다ㅋㅋㅋ근데 이제 진짜 거지가 됐어요;;ㅋㅋㅋㅋ : 메이플키우기",
         "channel": "텔론",
         "thumbnail": "https://i.ytimg.com/vi/p_NFseyOUQ8/mqdefault.jpg",
-        "views": 124562,
+        "views": 124851,
         "publishedAt": "2025-12-29T09:55:16Z"
-      },
-      {
-        "rank": 50,
-        "videoId": "vVkov5ZV4Uo",
-        "title": "산타, 저는 왜 선물을 주시지 않는 겁니까? (공포게임/Butcher of the North)",
-        "channel": "수탉",
-        "thumbnail": "https://i.ytimg.com/vi/vVkov5ZV4Uo/mqdefault.jpg",
-        "views": 175781,
-        "publishedAt": "2025-12-28T12:37:54Z"
       }
     ],
     "music": [
@@ -17769,7 +17648,7 @@
         "title": "DUET",
         "channel": "ZICO - Topic",
         "thumbnail": "https://i.ytimg.com/vi/zfESlU8diD0/mqdefault.jpg",
-        "views": 3079940,
+        "views": 3083583,
         "publishedAt": "2025-12-18T15:01:52Z"
       },
       {
@@ -17778,7 +17657,7 @@
         "title": "[응답하라 1988 10주년 OST Part 2] 쌍문동 아이들 - 혜화동 (혹은 쌍문동) (Hyehwadong (or Ssangmundong)) MV",
         "channel": "Stone Music Entertainment",
         "thumbnail": "https://i.ytimg.com/vi/hd8oTfHG2fg/mqdefault.jpg",
-        "views": 649347,
+        "views": 652158,
         "publishedAt": "2025-12-26T15:01:24Z"
       },
       {
@@ -17787,7 +17666,7 @@
         "title": "그래 늦지 않았어(2025)-녹색지대(곽창선),아샤트리,이예은 ",
         "channel": "아샤트리 AshaTree",
         "thumbnail": "https://i.ytimg.com/vi/9jsCiTGU8Zw/mqdefault.jpg",
-        "views": 309782,
+        "views": 310467,
         "publishedAt": "2025-12-24T09:00:06Z"
       },
       {
@@ -17796,7 +17675,7 @@
         "title": "NCT WISH 엔시티 위시 'TT' @Practice Room",
         "channel": "NCT WISH",
         "thumbnail": "https://i.ytimg.com/vi/-gA4IYS0Kco/mqdefault.jpg",
-        "views": 378236,
+        "views": 379144,
         "publishedAt": "2025-12-25T12:00:00Z"
       },
       {
@@ -17805,7 +17684,7 @@
         "title": "Lovin' the Christmas",
         "channel": "DAY6 - Topic",
         "thumbnail": "https://i.ytimg.com/vi/RFwpRB0Ecoo/mqdefault.jpg",
-        "views": 1357528,
+        "views": 1358002,
         "publishedAt": "2025-12-15T09:04:49Z"
       },
       {
@@ -17814,7 +17693,7 @@
         "title": "Twelfth Night",
         "channel": "HANHAE - Topic",
         "thumbnail": "https://i.ytimg.com/vi/8kMHnD9XYjI/mqdefault.jpg",
-        "views": 876291,
+        "views": 876855,
         "publishedAt": "2025-12-15T09:01:14Z"
       },
       {
@@ -17823,7 +17702,7 @@
         "title": "I Happen to Love You (2025)",
         "channel": "Gain - Topic",
         "thumbnail": "https://i.ytimg.com/vi/uvH37JTMgVI/mqdefault.jpg",
-        "views": 693452,
+        "views": 694748,
         "publishedAt": "2025-12-17T09:04:51Z"
       },
       {
@@ -17832,7 +17711,7 @@
         "title": "거리에서",
         "channel": "Sung Si-kyung - Topic",
         "thumbnail": "https://i.ytimg.com/vi/mLwfuskNDOo/mqdefault.jpg",
-        "views": 95389,
+        "views": 95976,
         "publishedAt": "2025-12-23T08:04:01Z"
       },
       {
@@ -17841,7 +17720,7 @@
         "title": "365 Days",
         "channel": "LEE CHANGSUB - Topic",
         "thumbnail": "https://i.ytimg.com/vi/CSUE7lufvE4/mqdefault.jpg",
-        "views": 1751817,
+        "views": 1753029,
         "publishedAt": "2025-12-11T09:02:31Z"
       },
       {
@@ -17850,7 +17729,7 @@
         "title": "Shakira - Zoo (From \"Zootopia 2\")",
         "channel": "DisneyMusicVEVO",
         "thumbnail": "https://i.ytimg.com/vi/kCIf6yaJisQ/mqdefault.jpg",
-        "views": 14842662,
+        "views": 14859187,
         "publishedAt": "2025-12-19T17:00:07Z"
       },
       {
@@ -17859,7 +17738,7 @@
         "title": "EVE",
         "channel": "YANGHONGWON - Topic",
         "thumbnail": "https://i.ytimg.com/vi/5A9T1vIOKRo/mqdefault.jpg",
-        "views": 63968,
+        "views": 64048,
         "publishedAt": "2025-12-28T09:00:12Z"
       },
       {
@@ -17868,7 +17747,7 @@
         "title": "[응답하라 1988 10주년 OST Part 2] 들개들 (Deulgaedeul) - 걱정말아요 그대 (Don’t Worry) MV",
         "channel": "Stone Music Entertainment",
         "thumbnail": "https://i.ytimg.com/vi/TQK-NiX-PLw/mqdefault.jpg",
-        "views": 269585,
+        "views": 270228,
         "publishedAt": "2025-12-26T09:00:57Z"
       },
       {
@@ -17877,7 +17756,7 @@
         "title": "HAN \"유성우 (Raining stars)\" | [Stray Kids : SKZ-RECORD]",
         "channel": "Stray Kids",
         "thumbnail": "https://i.ytimg.com/vi/YsvbN665LZE/mqdefault.jpg",
-        "views": 1336761,
+        "views": 1338311,
         "publishedAt": "2025-12-27T14:00:00Z"
       },
       {
@@ -17886,7 +17765,7 @@
         "title": "MEGA PIECE HARMONY",
         "channel": "하데스(HADES) - Topic",
         "thumbnail": "https://i.ytimg.com/vi/6y5tJCkMggI/mqdefault.jpg",
-        "views": 88109,
+        "views": 88165,
         "publishedAt": "2025-12-26T03:04:32Z"
       },
       {
@@ -17895,7 +17774,7 @@
         "title": "So life goes on",
         "channel": "Heo Hoy Kyung - Topic",
         "thumbnail": "https://i.ytimg.com/vi/ctCpLl8Ny_8/mqdefault.jpg",
-        "views": 191344,
+        "views": 191838,
         "publishedAt": "2025-12-10T18:25:06Z"
       },
       {
@@ -17904,7 +17783,7 @@
         "title": "Make Me Wonder",
         "channel": "OFFICIAL HIGE DANDISM - Topic",
         "thumbnail": "https://i.ytimg.com/vi/v6y7Z0F1h5g/mqdefault.jpg",
-        "views": 371602,
+        "views": 373786,
         "publishedAt": "2025-12-28T10:01:21Z"
       },
       {
@@ -17913,7 +17792,7 @@
         "title": "TOO BAD – Alan Walker Remix",
         "channel": "G-DRAGON - Topic",
         "thumbnail": "https://i.ytimg.com/vi/WPCE408oXp0/mqdefault.jpg",
-        "views": 255969,
+        "views": 256146,
         "publishedAt": "2025-12-20T05:03:11Z"
       },
       {
@@ -17922,7 +17801,7 @@
         "title": "'사랑한 마음엔 죄가 없다' with 은호 (PLAVE)",
         "channel": "소란 / SORAN",
         "thumbnail": "https://i.ytimg.com/vi/NNf9QhWjG58/mqdefault.jpg",
-        "views": 733103,
+        "views": 733452,
         "publishedAt": "2025-12-16T09:00:06Z"
       },
       {
@@ -17931,7 +17810,7 @@
         "title": "SONAGY",
         "channel": "YANGHONGWON - Topic",
         "thumbnail": "https://i.ytimg.com/vi/cGvXjNciVac/mqdefault.jpg",
-        "views": 87171,
+        "views": 87602,
         "publishedAt": "2025-12-28T09:01:02Z"
       },
       {
@@ -17940,7 +17819,7 @@
         "title": "White Memories",
         "channel": "fromis_9 - Topic",
         "thumbnail": "https://i.ytimg.com/vi/JG6YHjbj4zQ/mqdefault.jpg",
-        "views": 6964671,
+        "views": 6967874,
         "publishedAt": "2025-12-02T09:00:36Z"
       },
       {
@@ -17949,7 +17828,7 @@
         "title": "LOVERS",
         "channel": "Car, the Garden - Topic",
         "thumbnail": "https://i.ytimg.com/vi/3AbjxMctQGY/mqdefault.jpg",
-        "views": 510297,
+        "views": 510692,
         "publishedAt": "2025-12-16T09:04:18Z"
       },
       {
@@ -17958,7 +17837,7 @@
         "title": "LOOK AT ME ",
         "channel": "ALLDAY PROJECT - Topic",
         "thumbnail": "https://i.ytimg.com/vi/TETa0j79byM/mqdefault.jpg",
-        "views": 1949563,
+        "views": 1950462,
         "publishedAt": "2025-12-08T09:01:47Z"
       },
       {
@@ -17967,7 +17846,7 @@
         "title": "이세계아이돌(ISEGYE IDOL) '화이트 (White)' Special Clip",
         "channel": "이세계아이돌 ISEGYE IDOL",
         "thumbnail": "https://i.ytimg.com/vi/hT8ahye6kTg/mqdefault.jpg",
-        "views": 922744,
+        "views": 922790,
         "publishedAt": "2025-12-19T09:00:01Z"
       },
       {
@@ -17976,7 +17855,7 @@
         "title": "The Moment My Heart",
         "channel": "Boramiyu - Topic",
         "thumbnail": "https://i.ytimg.com/vi/7FwvAKbgakQ/mqdefault.jpg",
-        "views": 171820,
+        "views": 172055,
         "publishedAt": "2025-12-21T09:03:43Z"
       },
       {
@@ -17985,7 +17864,7 @@
         "title": "[LIVE] 한로로 (HANRORO) - 0+0 I 4TH 단독콘서트 [자몽살구클럽]",
         "channel": "한로로 HANRORO",
         "thumbnail": "https://i.ytimg.com/vi/ILDol5yPM0Q/mqdefault.jpg",
-        "views": 94803,
+        "views": 95323,
         "publishedAt": "2025-12-25T08:00:21Z"
       },
       {
@@ -17994,7 +17873,7 @@
         "title": "차마...",
         "channel": "Sung Si-kyung - Topic",
         "thumbnail": "https://i.ytimg.com/vi/leyIfb-aY9c/mqdefault.jpg",
-        "views": 76080,
+        "views": 76338,
         "publishedAt": "2025-12-20T11:52:40Z"
       },
       {
@@ -18003,7 +17882,7 @@
         "title": "White",
         "channel": "ISEGYE IDOL - Topic",
         "thumbnail": "https://i.ytimg.com/vi/Hp9rG4n5AKI/mqdefault.jpg",
-        "views": 266149,
+        "views": 266235,
         "publishedAt": "2025-12-19T09:00:35Z"
       },
       {
@@ -18012,26 +17891,26 @@
         "title": "ONE MORE TIME",
         "channel": "ALLDAY PROJECT - Topic",
         "thumbnail": "https://i.ytimg.com/vi/EPUrWIOj3I0/mqdefault.jpg",
-        "views": 1216182,
+        "views": 1216840,
         "publishedAt": "2025-12-08T09:01:19Z"
       },
       {
         "rank": 29,
-        "videoId": "fvaB8ykanec",
-        "title": "Think About You",
-        "channel": "KyoungSeo - Topic",
-        "thumbnail": "https://i.ytimg.com/vi/fvaB8ykanec/mqdefault.jpg",
-        "views": 333974,
-        "publishedAt": "2025-12-16T09:03:20Z"
-      },
-      {
-        "rank": 30,
         "videoId": "eDlYB_e5k3c",
         "title": "Borrow your night",
         "channel": "PLAVE - Topic",
         "thumbnail": "https://i.ytimg.com/vi/eDlYB_e5k3c/mqdefault.jpg",
-        "views": 57694,
+        "views": 58519,
         "publishedAt": "2025-12-29T09:04:16Z"
+      },
+      {
+        "rank": 30,
+        "videoId": "fvaB8ykanec",
+        "title": "Think About You",
+        "channel": "KyoungSeo - Topic",
+        "thumbnail": "https://i.ytimg.com/vi/fvaB8ykanec/mqdefault.jpg",
+        "views": 334510,
+        "publishedAt": "2025-12-16T09:03:20Z"
       }
     ]
   },
@@ -18041,243 +17920,243 @@
       "title": "총쏴서 상대방 템 모두 가지는 게임 ",
       "channel": "풍월량",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26453996/live/16435840/record/48689967/thumbnail/image_480.jpg",
-      "viewers": 13719,
+      "viewers": 13422,
       "category": "이스케이프 프롬 타르코프",
       "channelId": "7ce8032370ac5121dcabce7bad375ced"
     },
     {
       "rank": 2,
-      "title": "반갑습니다",
-      "channel": "랄로",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27588676/live/16441000/record/48696452/thumbnail/image_480.jpg",
-      "viewers": 7146,
-      "category": "리그 오브 레전드",
-      "channelId": "3497a9a7221cc3ee5d3f95991d9f95e9"
+      "title": "요즘 유행하는게임인데 일본어같은거 안 읽어도되 초록색을 찾아서 개약서를 동의 헤야헤 동의함을 찾아 ,,,,,,, ",
+      "channel": "아야츠노 유니",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27314095/live/16435283/record/48689145/thumbnail/image_480.jpg",
+      "viewers": 5359,
+      "category": "종합 게임",
+      "channelId": "45e71a76e949e16a34764deb962f9d9f"
     },
     {
       "rank": 3,
       "title": "연말특집 스빠룬키 !!",
       "channel": "녹두로",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26446748/live/16434054/record/48687535/thumbnail/image_480.jpg",
-      "viewers": 6099,
+      "viewers": 4878,
       "category": "스펠렁키 2",
       "channelId": "6e06f5e1907f17eff543abd06cb62891"
     },
     {
       "rank": 4,
-      "title": "요즘 유행하는게임인데 일본어같은거 안 읽어도되 초록색을 찾아서 개약서를 동의 헤야헤 동의함을 찾아 ,,,,,,, ",
-      "channel": "아야츠노 유니",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27314095/live/16435283/record/48689145/thumbnail/image_480.jpg",
-      "viewers": 5483,
-      "category": "종합 게임",
-      "channelId": "45e71a76e949e16a34764deb962f9d9f"
-    },
-    {
-      "rank": 5,
-      "title": "[지누]",
-      "channel": "지누",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441904/live/16428978/record/48679242/thumbnail/image_480.jpg",
-      "viewers": 3752,
-      "category": "종합 게임",
-      "channelId": "2086f44c7b09a17cef6786f21389db3b"
-    },
-    {
-      "rank": 6,
       "title": "배틀그라운드 자낳대 3팀 (제발 내 전력을 막아줘..)",
       "channel": "따효니",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26446357/live/16439583/record/48694844/thumbnail/image_480.jpg",
-      "viewers": 3166,
+      "viewers": 3273,
       "category": "PUBG: 배틀그라운드",
       "channelId": "0dad8baf12a436f722faa8e5001c5011"
     },
     {
-      "rank": 7,
+      "rank": 5,
       "title": "늦은 나이지만 사랑을 해도 되나요",
       "channel": "피닉스박",
       "thumbnail": "",
-      "viewers": 2021,
+      "viewers": 1962,
       "category": "러브 딜리버리",
       "channelId": "c100f81959d1c17044be0541eed56f5b"
     },
     {
-      "rank": 8,
+      "rank": 6,
       "title": "총쏘다가 집안살림 다 박살나는 게임",
       "channel": "빅헤드",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26448554/live/16429488/record/48680106/thumbnail/image_480.jpg",
-      "viewers": 1972,
+      "viewers": 1954,
       "category": "이스케이프 프롬 타르코프",
       "channelId": "ca1850b2eceb7f86146695fd9bb9cefc"
     },
     {
-      "rank": 9,
-      "title": "드래곤테일과 멜리스의 가장 완벽한천적  '히어로'",
-      "channel": "인간젤리",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441898/live/16435678/record/48689740/thumbnail/image_480.jpg",
-      "viewers": 1811,
-      "category": "유희왕 마스터 듀얼",
-      "channelId": "034449b176b163a705b9c0e81f7a51c2"
-    },
-    {
-      "rank": 10,
+      "rank": 7,
       "title": "이게임이 어렵나요? 33원정대 전문가",
       "channel": "울프",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26465562/live/16431414/record/48683405/thumbnail/image_480.jpg",
-      "viewers": 1799,
+      "viewers": 1862,
       "category": "클레르 옵스퀴르: 33 원정대",
       "channelId": "0b33823ac81de48d5b78a38cdbc0ab94"
     },
     {
-      "rank": 11,
+      "rank": 8,
+      "title": "드래곤테일과 멜리스의 가장 완벽한천적  '히어로'",
+      "channel": "인간젤리",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441898/live/16435678/record/48689740/thumbnail/image_480.jpg",
+      "viewers": 1787,
+      "category": "유희왕 마스터 듀얼",
+      "channelId": "034449b176b163a705b9c0e81f7a51c2"
+    },
+    {
+      "rank": 9,
       "title": "젠존제 2.4 스토리 밀기",
       "channel": "샘웨",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26479878/live/16433507/record/48686690/thumbnail/image_480.jpg",
-      "viewers": 1667,
+      "viewers": 1539,
       "category": "젠레스 존 제로",
       "channelId": "feb20a676694b1163fed010da0848303"
     },
     {
-      "rank": 12,
-      "title": "[왈도쿤] 9시  <체인소맨 레제편> 갈틱폰",
+      "rank": 10,
+      "title": "[왈도쿤] 12시 원정대 : 플라이 나이트",
       "channel": "왈도쿤",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26495745/live/16436434/record/48690792/thumbnail/image_480.jpg",
-      "viewers": 1681,
-      "category": "종합 게임",
+      "viewers": 1674,
+      "category": "플라이나이트",
       "channelId": "912b559dcdd9c9ea1fe97864925738bf"
     },
     {
-      "rank": 13,
-      "title": "화요일 타르코프 씨랙",
-      "channel": "씨랙",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/16432004/record/48684340/thumbnail/image_480.jpg",
-      "viewers": 1146,
-      "category": "이스케이프 프롬 타르코프",
-      "channelId": "bf4df7913fcc6c4bd0932a37310a761f"
-    },
-    {
-      "rank": 14,
-      "title": "마블 배너로드 - 배너로드 철인;;",
-      "channel": "멀럭킹",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/16432011/record/48684358/thumbnail/image_480.jpg",
-      "viewers": 1157,
-      "category": "마운트 앤 블레이드 2: 배너로드",
-      "channelId": "0a0a0b83c6af289507ef57a5f3d623c0"
-    },
-    {
-      "rank": 15,
-      "title": "나야 마스터^^",
-      "channel": "0영듀0",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26646484/live/16432411/record/48685046/thumbnail/image_480.jpg",
-      "viewers": 849,
-      "category": "전략적 팀 전투: 신화와 전설",
-      "channelId": "732f6f16d20991243ec3f2d7afed8821"
-    },
-    {
-      "rank": 16,
+      "rank": 11,
       "title": "리듬 감각으로 환자들의 생명 구하기 ",
       "channel": "정령왕임",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27379049/live/16433860/record/48687272/thumbnail/image_480.jpg",
-      "viewers": 925,
+      "viewers": 836,
       "category": "리듬 닥터",
       "channelId": "a9b3377345a2a37e68a6072ba5e77fec"
     },
     {
-      "rank": 17,
-      "title": "안녕하세요",
-      "channel": "고수달",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26590865/live/16429551/record/48680215/thumbnail/image_480.jpg",
-      "viewers": 1024,
-      "category": "사랑 한 잔 말아주세요!",
-      "channelId": "1343a0e30ff0acb09f2477a698d070a4"
+      "rank": 12,
+      "title": "나야 마스터^^",
+      "channel": "0영듀0",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26646484/live/16432411/record/48685046/thumbnail/image_480.jpg",
+      "viewers": 861,
+      "category": "전략적 팀 전투: 신화와 전설",
+      "channelId": "732f6f16d20991243ec3f2d7afed8821"
     },
     {
-      "rank": 18,
+      "rank": 13,
+      "title": "이게임이 나오다니.. 마이 윈터 카 My Winter Car",
+      "channel": "쉐리",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441750/live/16440145/record/48695474/thumbnail/image_480.jpg",
+      "viewers": 1327,
+      "category": "마이 윈터 카",
+      "channelId": "b8263cd74372864eacb2d5bd16551882"
+    },
+    {
+      "rank": 14,
+      "title": "화요일 타르코프 씨랙",
+      "channel": "씨랙",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/16432004/record/48684340/thumbnail/image_480.jpg",
+      "viewers": 1211,
+      "category": "이스케이프 프롬 타르코프",
+      "channelId": "bf4df7913fcc6c4bd0932a37310a761f"
+    },
+    {
+      "rank": 15,
+      "title": "마블 배너로드 - 배너로드 철인;;",
+      "channel": "멀럭킹",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/16432011/record/48684358/thumbnail/image_480.jpg",
+      "viewers": 1132,
+      "category": "마운트 앤 블레이드 2: 배너로드",
+      "channelId": "0a0a0b83c6af289507ef57a5f3d623c0"
+    },
+    {
+      "rank": 16,
+      "title": "강행",
+      "channel": "너불",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27370372/live/16436674/record/48691146/thumbnail/image_480.jpg",
+      "viewers": 1113,
+      "category": "이스케이프 프롬 타르코프",
+      "channelId": "af3323d30e11ae42c39d7203c7e07fa2"
+    },
+    {
+      "rank": 17,
       "title": "배그 연습",
       "channel": "소우릎",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26442044/live/16439422/record/48694654/thumbnail/image_480.jpg",
-      "viewers": 1018,
+      "viewers": 1016,
       "category": "이스케이프 프롬 타르코프",
       "channelId": "fc00d47a77ed2d1156cd5997eba30310"
     },
     {
+      "rank": 18,
+      "title": "[자낳대: PUBG SUBZERO]  제발 젭라 존버 제발. 그냥 저는 총들고다니는 바보입니다.",
+      "channel": "맹숙",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/34444720/live/16431339/record/48683237/thumbnail/image_480.jpg",
+      "viewers": 382,
+      "category": "PUBG: 배틀그라운드",
+      "channelId": "61f73be23ed1d1d650ba24f268570036"
+    },
+    {
       "rank": 19,
-      "title": "강행",
-      "channel": "너불",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27370372/live/16436674/record/48691146/thumbnail/image_480.jpg",
-      "viewers": 1009,
-      "category": "이스케이프 프롬 타르코프",
-      "channelId": "af3323d30e11ae42c39d7203c7e07fa2"
+      "title": "Man vs. Dinosaur",
+      "channel": "팔차선8",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27740665/live/16433411/record/48686546/thumbnail/image_480.jpg",
+      "viewers": 992,
+      "category": "전략적 팀 전투: 신화와 전설",
+      "channelId": "484d1909f202b582e7a02fc80176127f"
     },
     {
       "rank": 20,
       "title": "연말맞이 어나더레드 제작자님의 새로운 신작 올라라 포켓몬 타워",
       "channel": "눈파티입니다",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26853333/live/16438776/record/48693892/thumbnail/image_480.jpg",
-      "viewers": 972,
+      "viewers": 1018,
       "category": "종합 게임",
       "channelId": "6fccf2c08f2e9f801fc3152a8923e1c2"
     },
     {
       "rank": 21,
-      "title": "이게임이 나오다니.. 마이 윈터 카 My Winter Car",
-      "channel": "쉐리",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441750/live/16440145/record/48695474/thumbnail/image_480.jpg",
-      "viewers": 960,
-      "category": "마이 윈터 카",
-      "channelId": "b8263cd74372864eacb2d5bd16551882"
+      "title": "안녕하세요",
+      "channel": "고수달",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26590865/live/16429551/record/48680215/thumbnail/image_480.jpg",
+      "viewers": 957,
+      "category": "사랑 한 잔 말아주세요!",
+      "channelId": "1343a0e30ff0acb09f2477a698d070a4"
     },
     {
       "rank": 22,
       "title": "에스더 엔더드래곤 합방 🩵❤️🩷💜",
       "channel": "에리스",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27484146/live/16429065/record/48679402/thumbnail/image_480.jpg",
-      "viewers": 912,
+      "viewers": 895,
       "category": "마인크래프트",
       "channelId": "17d8605fc37fb5ef49f5f67ae786fe4e"
     },
     {
       "rank": 23,
-      "title": "Man vs. Dinosaur",
-      "channel": "팔차선8",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27740665/live/16433411/record/48686546/thumbnail/image_480.jpg",
-      "viewers": 924,
-      "category": "전략적 팀 전투: 신화와 전설",
-      "channelId": "484d1909f202b582e7a02fc80176127f"
-    },
-    {
-      "rank": 24,
-      "title": "[자낳대: PUBG SUBZERO]  제발 젭라 존버 제발. 그냥 저는 총들고다니는 바보입니다.",
-      "channel": "맹숙",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/34444720/live/16431339/record/48683237/thumbnail/image_480.jpg",
-      "viewers": 394,
-      "category": "PUBG: 배틀그라운드",
-      "channelId": "61f73be23ed1d1d650ba24f268570036"
-    },
-    {
-      "rank": 25,
       "title": "지옥의 이해도 옵션작 ㄷㄷ / 질답 하면서 한무 펫작",
       "channel": "포셔",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441915/live/16428698/record/48678770/thumbnail/image_480.jpg",
-      "viewers": 862,
+      "viewers": 855,
       "category": "아이온2",
       "channelId": "f39c3d74e33a81ab3080356b91bb8de5"
     },
     {
-      "rank": 26,
-      "title": "8시 싼악회",
-      "channel": "인섹",
-      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26480071/live/16427279/record/48676370/thumbnail/image_480.jpg",
-      "viewers": 821,
-      "category": "던전앤파이터",
-      "channelId": "47c49bff55111a6cfd30bb299e9d2e5d"
-    },
-    {
-      "rank": 27,
+      "rank": 24,
       "title": "연말엔 배그지",
       "channel": "주키니TV",
       "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26483500/live/16440020/record/48695335/thumbnail/image_480.jpg",
-      "viewers": 791,
+      "viewers": 845,
       "category": "PUBG: 배틀그라운드",
       "channelId": "a07f0b18426abd609b4a8916c85546c1"
+    },
+    {
+      "rank": 25,
+      "title": "에스더 엔더드래곤 켠왕 🔪",
+      "channel": "엘리",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26704757/live/16428734/record/48678819/thumbnail/image_480.jpg",
+      "viewers": 724,
+      "category": "마인크래프트",
+      "channelId": "475313e6c26639d5763628313b4c130e"
+    },
+    {
+      "rank": 26,
+      "title": "연말기념 맹여왕님과 띵타이쿤",
+      "channel": "앰비션",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441925/live/16429193/record/48679638/thumbnail/image_480.jpg",
+      "viewers": 783,
+      "category": "마인크래프트",
+      "channelId": "8a59b34b46271960c1bf172bb0fac758"
+    },
+    {
+      "rank": 27,
+      "title": "삼국지12PK 공손공",
+      "channel": "세롱",
+      "thumbnail": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26639900/live/16432200/record/48684732/thumbnail/image_480.jpg",
+      "viewers": 698,
+      "category": "삼국지14",
+      "channelId": "375dfefbe6264ae507efee64eedfb574"
     }
   ],
   "upcoming": {
