@@ -2235,6 +2235,15 @@
       max-height: 250px;
     }
 
+    /* 버티컬 광고 - 실제 광고 크기에 맞춰 가변 높이 */
+    .ad-slot.ad-slot--vertical {
+      transition: height 0.3s ease-out;
+      overflow: hidden;
+    }
+    .ad-slot.ad-slot--vertical > ins.adsbygoogle {
+      transition: height 0.3s ease-out;
+    }
+
     /* 여백(빈 슬롯) 없이 사용해야 하는 위치는 높이 예약을 하지 않음 (rectangle 제외 - 300x250 고정 높이 필요) */
     .ad-slot.ad-slot--no-reserve:not(.ad-slot--rectangle) > ins.adsbygoogle {
       min-height: 0 !important;
@@ -2289,7 +2298,8 @@
       padding: 0;
     }
 
-    .ad-slot.mobile-only {
+    .ad-slot.mobile-only,
+    ins.adsbygoogle.mobile-only {
       display: none;
     }
 
@@ -2334,7 +2344,8 @@
       /* 홈 카드 헤더 - 패딩은 파일 끝 통합 블록에서 관리 */
 
       /* 모바일에서 PC only 광고 숨기기 */
-      .ad-slot.pc-only {
+      .ad-slot.pc-only,
+      ins.adsbygoogle.pc-only {
         display: none;
       }
 
@@ -2400,7 +2411,8 @@
         height: auto;
       }
 
-      .ad-slot.mobile-only {
+      .ad-slot.mobile-only,
+      ins.adsbygoogle.mobile-only {
         display: block;
       }
 
