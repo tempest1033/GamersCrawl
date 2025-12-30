@@ -2215,12 +2215,10 @@
       overflow: hidden;
     }
 
-    /* 가로형 광고 내부 중앙 정렬 */
+    /* 가로형 광고 내부 중앙 정렬 - inline style 덮어쓰기 */
     .home-section .ad-slot--horizontal > ins.adsbygoogle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 140px;
+      display: block !important;
+      vertical-align: middle;
     }
 
     .ad-slot--rectangle.pc-only > ins.adsbygoogle {
@@ -2319,6 +2317,16 @@
       /* 모바일에서 PC only 광고 숨기기 */
       .ad-slot.pc-only {
         display: none;
+      }
+
+      /* 모바일 가로형 광고 높이 제한 - 세로형 광고 방지 */
+      .ad-slot.mobile-only.ad-slot--horizontal {
+        max-height: 120px;
+        overflow: hidden;
+      }
+
+      .ad-slot.mobile-only.ad-slot--horizontal > ins.adsbygoogle {
+        max-height: 120px;
       }
 
       .home-video-split {
