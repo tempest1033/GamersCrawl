@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "studio.gameberry.idlehunter",
+        "android": "com.webzen.muidle.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -212,7 +212,7 @@
       "title": "Minecraft 체험판",
       "status": "matched",
       "appIds": {
-        "android": "com.mojang.minecrafttrialpe",
+        "android": "com.mojang.minecraftpe",
         "ios": "479516143"
       },
       "developer": "Mojang",
