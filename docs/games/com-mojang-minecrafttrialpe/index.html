@@ -181,7 +181,7 @@
     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846"></ins>
   </div>
   <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
-    <ins class="adsbygoogle" style="display:inline-block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:inline-block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
   </div>
     <div class="game-page">
       <!-- 게임 히어로 -->
@@ -758,12 +758,37 @@
 		        });
 		      }
 
+		      // IntersectionObserver: 뷰포트 진입 시 광고 초기화
+		      function setupAdIntersectionObserver() {
+		        if (window.__gcAdIntersectionObserver) return;
+		        if (!('IntersectionObserver' in window)) return;
+		        window.__gcAdIntersectionObserver = new IntersectionObserver(function(entries) {
+		          entries.forEach(function(entry) {
+		            if (entry.isIntersecting) {
+		              var el = entry.target.querySelector('ins.adsbygoogle');
+		              if (el && el.dataset.gcAdsInit !== '1' && canInit(el)) {
+		                el.dataset.gcAdsInit = '1';
+		                try {
+		                  (adsbygoogle = window.adsbygoogle || []).push({});
+		                } catch (e) {
+		                  delete el.dataset.gcAdsInit;
+		                }
+		              }
+		            }
+		          });
+		        }, { rootMargin: '200px 0px', threshold: 0 });
+		        document.querySelectorAll('.ad-slot').forEach(function(slot) {
+		          window.__gcAdIntersectionObserver.observe(slot);
+		        });
+		      }
+
 		      function runInit() {
 		        ensureAdStatusObserver();
 		        initAds();
 		        runVisibilityPass();
 		        scheduleVisibilityCheck();
 		        scheduleInitRetries();
+		        setupAdIntersectionObserver();
 		        kickResizeOnce();
 		      }
 
