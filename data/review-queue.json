@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -677,6 +677,212 @@
         }
       ],
       "addedAt": "2025-12-30T00:42:34.391Z"
+    },
+    {
+      "title": "Identity V -제5인격",
+      "status": "single",
+      "appIds": {
+        "ios": "1347780764"
+      },
+      "developer": "NetEase Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "第五人格",
+          "appId": "com.netease.idv_tw.googleplay"
+        },
+        {
+          "title": "Microsoft OneDrive",
+          "appId": "com.microsoft.skydrive"
+        },
+        {
+          "title": "Google 렌즈",
+          "appId": "com.google.ar.lens"
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:00.000Z"
+    },
+    {
+      "title": "페이트/그랜드 오더",
+      "status": "matched",
+      "appIds": {
+        "android": "com.netmarble.fgok",
+        "ios": "1241893973"
+      },
+      "developer": "Netmarble",
+      "icon": "https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w",
+      "searchResults": [
+        {
+          "title": "페이트/그랜드 오더",
+          "appId": "com.netmarble.fgok"
+        },
+        {
+          "title": "Fate/Grand Order",
+          "appId": "com.aniplex.fategrandorder"
+        },
+        {
+          "title": "Fate/Grand Order (English)",
+          "appId": "com.aniplex.fategrandorder.en"
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:02.862Z"
+    },
+    {
+      "title": "해적GO! 보물탐험대",
+      "status": "single",
+      "appIds": {
+        "android": "com.bztxd.googlelb"
+      },
+      "developer": "广州互视通科技有限公司",
+      "icon": "https://play-lh.googleusercontent.com/fejWK1Ju3A-grk7ltp8Fco_b9RwLver5VBU8qt09C2wSL-Jdld4sOw27SJpdvWOp8_xY09K97mmBurBgy1mm",
+      "searchResults": [],
+      "addedAt": "2025-12-31T00:34:26.465Z"
+    },
+    {
+      "title": "앵커패닉",
+      "status": "single",
+      "appIds": {
+        "ios": "6741319337"
+      },
+      "developer": "Neptune Company",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/de/2d/3dde2d2a-b73a-2f44-2211-d51c05142ba6/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "앵커패닉 : 산타걸의 크리스마스 선물 대작전!",
+          "appId": "com.neptune.anchorpanic"
+        },
+        {
+          "title": "Anchor Panic",
+          "appId": "com.hygame.anchorpanic.gp"
+        },
+        {
+          "title": "アンカーパニック",
+          "appId": "com.anchorpanicjapan.gp"
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:27.639Z"
+    },
+    {
+      "title": "War Drone: 3D Shooting Games",
+      "status": "matched",
+      "appIds": {
+        "android": "com.miniclip.drone1",
+        "ios": "6642710010"
+      },
+      "developer": "Mobile Gaming Studios Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/PVAaDyPvgiW_t__S9bsPoh-ocJSsh--LhD7hdWweNIPEVrtZbx2ckfL5IkTHCbU1Ibc",
+      "searchResults": [
+        {
+          "title": "War Drone: 3D Shooting Games",
+          "appId": "com.miniclip.drone1"
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:33.351Z"
+    },
+    {
+      "title": "Braindom: Brain Games Test Out",
+      "status": "single",
+      "appIds": {
+        "ios": "1513009813"
+      },
+      "developer": "Lahana Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/1b/e9/4e1be92c-c698-4dbb-d0c6-8a6aaeec2165/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
+          "appId": "com.braindom"
+        },
+        {
+          "title": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
+          "appId": "com.unicostudio.braintest"
+        },
+        {
+          "title": "브레인 테스트 (Brain Test) 2:교묘한 이야기",
+          "appId": "com.unicostudio.braintest2new"
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:34.171Z"
+    },
+    {
+      "title": "Brick Blast - 벽돌깨기 공튀기기",
+      "status": "single",
+      "appIds": {
+        "android": "com.easybrain.brick.balls.blast"
+      },
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/WPk1QPZRP-tKLHqJwhLqgRR39XWejFN7peg4XPsD2XJQz2K3L-oAFcNEOEzxUJSpfgFojtE1lrkNKdxmUnQSwGE",
+      "searchResults": [],
+      "addedAt": "2025-12-31T00:34:47.171Z"
+    },
+    {
+      "title": "Rope Escape Master",
+      "status": "matched",
+      "appIds": {
+        "android": "com.sp.rope.escape.master",
+        "ios": 6756253780
+      },
+      "developer": "PoseidonJoy",
+      "icon": "https://play-lh.googleusercontent.com/tgW1f51Jc_ALH05AZxox9Zo24lPeGqjSKLIP0SyrHT2NrEI9cJaqkSDyAYeSdnQQrJ6J",
+      "searchResults": [
+        {
+          "title": "Rope Escape Master",
+          "appId": 6756253780
+        },
+        {
+          "title": "Wool Master 3D - 털실 나사매치 게임",
+          "appId": 6743842802
+        },
+        {
+          "title": "Escape Island: Fun Color Sort",
+          "appId": 1597481031
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:48.376Z"
+    },
+    {
+      "title": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
+      "status": "single",
+      "appIds": {
+        "android": "com.braindom"
+      },
+      "developer": "Lahana Game Studio",
+      "icon": "https://play-lh.googleusercontent.com/6skyXaefYf3uMAhHL0q0jYQSvtIQiQavOMkab6m6DHuJyweNfg4TEi350baUMQ82ZHk",
+      "searchResults": [
+        {
+          "title": "Brain Who? 까다로운 수수께끼 테스트",
+          "appId": 1526842079
+        },
+        {
+          "title": "스마트 브레인: 중독성 두뇌 퍼즐 게임",
+          "appId": 1535521299
+        },
+        {
+          "title": "Riddle Test: 브레인 티저 게임",
+          "appId": 1580064408
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:48.854Z"
+    },
+    {
+      "title": "Card Queen: Duel",
+      "status": "matched",
+      "appIds": {
+        "android": "com.card.battle.queen.duel.pretty",
+        "ios": 6755225967
+      },
+      "developer": "Arfa IT",
+      "icon": "https://play-lh.googleusercontent.com/GZpYcH5oe0Yikv49q-V38G2DITs4e7l-xJ9k4OSSrRpqD6IPk9Wei-IoaR3pFpf3sF9S-ZzVnBbTo1RKTu6-eA",
+      "searchResults": [
+        {
+          "title": "Card Queen:Duel",
+          "appId": 6755225967
+        },
+        {
+          "title": "Morbleu",
+          "appId": 1589689381
+        }
+      ],
+      "addedAt": "2025-12-31T00:34:49.438Z"
     }
   ],
   "approved": [

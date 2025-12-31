@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -1968,21 +1968,21 @@
     "페이트/그랜드 오더": {
       "appIds": {
         "android": "com.netmarble.fgok",
-        "ios": 1241893973
+        "ios": "1241893973"
       },
-      "developer": "Netmarble",
-      "icon": "https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w",
-      "slug": "페이트그랜드-오더",
-      "platforms": [
-        "android",
-        "ios"
-      ],
       "aliases": [
         "페그오",
         "FGO",
         "페이트그랜드오더",
         "페이트 그랜드 오더",
         "Fate/Grand Order"
+      ],
+      "developer": "Netmarble",
+      "icon": "https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w",
+      "slug": "페이트그랜드-오더",
+      "platforms": [
+        "android",
+        "ios"
       ]
     },
     "로드나인": {
@@ -5549,7 +5549,7 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecraftpe",
+        "android": "com.mojang.minecrafttrialpe",
         "ios": "479516143"
       },
       "aliases": [
@@ -5745,8 +5745,9 @@
     "War Drone: 3D Shooting Games": {
       "appIds": {
         "android": "com.miniclip.drone1",
-        "ios": 6642710010
+        "ios": "6642710010"
       },
+      "aliases": [],
       "developer": "Mobile Gaming Studios Ltd.",
       "icon": "https://play-lh.googleusercontent.com/PVAaDyPvgiW_t__S9bsPoh-ocJSsh--LhD7hdWweNIPEVrtZbx2ckfL5IkTHCbU1Ibc",
       "slug": "war-drone-3d-shooting-games",
@@ -11460,8 +11461,110 @@
       "platforms": [
         "steam"
       ]
+    },
+    "Identity V -제5인격": {
+      "appIds": {
+        "ios": "1347780764"
+      },
+      "aliases": [],
+      "developer": "NetEase Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "identity-v-제5인격",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "해적GO! 보물탐험대": {
+      "appIds": {
+        "android": "com.bztxd.googlelb"
+      },
+      "aliases": [],
+      "developer": "广州互视通科技有限公司",
+      "icon": "https://play-lh.googleusercontent.com/fejWK1Ju3A-grk7ltp8Fco_b9RwLver5VBU8qt09C2wSL-Jdld4sOw27SJpdvWOp8_xY09K97mmBurBgy1mm",
+      "slug": "해적go-보물탐험대",
+      "platforms": [
+        "android"
+      ]
+    },
+    "앵커패닉": {
+      "appIds": {
+        "ios": "6741319337"
+      },
+      "aliases": [],
+      "developer": "Neptune Company",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/de/2d/3dde2d2a-b73a-2f44-2211-d51c05142ba6/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "앵커패닉",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Braindom: Brain Games Test Out": {
+      "appIds": {
+        "ios": "1513009813"
+      },
+      "aliases": [],
+      "developer": "Lahana Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/1b/e9/4e1be92c-c698-4dbb-d0c6-8a6aaeec2165/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "braindom-brain-games-test-out",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Brick Blast - 벽돌깨기 공튀기기": {
+      "appIds": {
+        "android": "com.easybrain.brick.balls.blast"
+      },
+      "aliases": [],
+      "developer": "Easybrain",
+      "icon": "https://play-lh.googleusercontent.com/WPk1QPZRP-tKLHqJwhLqgRR39XWejFN7peg4XPsD2XJQz2K3L-oAFcNEOEzxUJSpfgFojtE1lrkNKdxmUnQSwGE",
+      "slug": "brick-blast-벽돌깨기-공튀기기",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Rope Escape Master": {
+      "appIds": {
+        "android": "com.sp.rope.escape.master",
+        "ios": 6756253780
+      },
+      "aliases": [],
+      "developer": "PoseidonJoy",
+      "icon": "https://play-lh.googleusercontent.com/tgW1f51Jc_ALH05AZxox9Zo24lPeGqjSKLIP0SyrHT2NrEI9cJaqkSDyAYeSdnQQrJ6J",
+      "slug": "rope-escape-master",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐": {
+      "appIds": {
+        "android": "com.braindom"
+      },
+      "aliases": [],
+      "developer": "Lahana Game Studio",
+      "icon": "https://play-lh.googleusercontent.com/6skyXaefYf3uMAhHL0q0jYQSvtIQiQavOMkab6m6DHuJyweNfg4TEi350baUMQ82ZHk",
+      "slug": "braindom-브레인-게임-테스트-까다로운-퍼즐",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Card Queen: Duel": {
+      "appIds": {
+        "android": "com.card.battle.queen.duel.pretty",
+        "ios": 6755225967
+      },
+      "aliases": [
+        "Card Queen:Duel"
+      ],
+      "developer": "Arfa IT",
+      "icon": "https://play-lh.googleusercontent.com/GZpYcH5oe0Yikv49q-V38G2DITs4e7l-xJ9k4OSSrRpqD6IPk9Wei-IoaR3pFpf3sF9S-ZzVnBbTo1RKTu6-eA",
+      "slug": "card-queen-duel",
+      "platforms": [
+        "android",
+        "ios"
+      ]
     }
   },
-  "lastUpdated": "2025-12-30",
-  "totalGames": 794
+  "lastUpdated": "2025-12-31",
+  "totalGames": 802
 }

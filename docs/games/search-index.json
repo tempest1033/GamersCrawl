@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "com-webzen-muidle-google",
+    "slug": "net-gameduo-gv",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -5683,7 +5683,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecraftpe",
+    "slug": "com-mojang-minecrafttrialpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -11905,6 +11905,114 @@
     "developer": "Cygames, Inc.",
     "hasRankings": true,
     "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Identity V -제5인격",
+    "slug": "identity-v-제5인격",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "NetEase Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "해적GO! 보물탐험대",
+    "slug": "com-bztxd-googlelb",
+    "icon": "https://play-lh.googleusercontent.com/fejWK1Ju3A-grk7ltp8Fco_b9RwLver5VBU8qt09C2wSL-Jdld4sOw27SJpdvWOp8_xY09K97mmBurBgy1mm",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "广州互视通科技有限公司",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "앵커패닉",
+    "slug": "앵커패닉",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/de/2d/3dde2d2a-b73a-2f44-2211-d51c05142ba6/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Neptune Company",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Braindom: Brain Games Test Out",
+    "slug": "braindom-brain-games-test-out",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/1b/e9/4e1be92c-c698-4dbb-d0c6-8a6aaeec2165/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Lahana Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Brick Blast - 벽돌깨기 공튀기기",
+    "slug": "com-easybrain-brick-balls-blast",
+    "icon": "https://play-lh.googleusercontent.com/WPk1QPZRP-tKLHqJwhLqgRR39XWejFN7peg4XPsD2XJQz2K3L-oAFcNEOEzxUJSpfgFojtE1lrkNKdxmUnQSwGE",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Easybrain",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Rope Escape Master",
+    "slug": "com-sp-rope-escape-master",
+    "icon": "https://play-lh.googleusercontent.com/tgW1f51Jc_ALH05AZxox9Zo24lPeGqjSKLIP0SyrHT2NrEI9cJaqkSDyAYeSdnQQrJ6J",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "PoseidonJoy",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
+    "slug": "com-braindom",
+    "icon": "https://play-lh.googleusercontent.com/6skyXaefYf3uMAhHL0q0jYQSvtIQiQavOMkab6m6DHuJyweNfg4TEi350baUMQ82ZHk",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Lahana Game Studio",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Card Queen: Duel",
+    "slug": "com-card-battle-queen-duel-pretty",
+    "icon": "https://play-lh.googleusercontent.com/GZpYcH5oe0Yikv49q-V38G2DITs4e7l-xJ9k4OSSrRpqD6IPk9Wei-IoaR3pFpf3sF9S-ZzVnBbTo1RKTu6-eA",
+    "aliases": [
+      "Card Queen:Duel"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Arfa IT",
+    "hasRankings": true,
+    "hasSteam": false,
     "hasData": true
   }
 ]
