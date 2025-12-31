@@ -94,11 +94,11 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
   
 </head>
-<body>
+<body class="page-game">
   
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-title">
+      <div class="header-title">
         <a href="/" style="text-decoration: none; color: inherit;">
           <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
           <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -119,7 +119,7 @@
             <rect x="642" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
           </svg>
         </a>
-      </h1>
+      </div>
     </div>
   </header>
   
@@ -128,7 +128,7 @@
       <a href="/" class="search-home-icon" aria-label="홈으로 이동">
         <img src="/favicon.svg" alt="" width="20" height="20">
       </a>
-      <input type="text" class="search-input" placeholder="게임 이름을 입력해주세요" autocomplete="off">
+      <input type="text" class="search-input" placeholder="게임 검색" autocomplete="off">
       <button class="search-btn" type="button" aria-label="검색">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
@@ -145,17 +145,17 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
         트렌드 리포트
       </a>
-      <a class="nav-item" href="/news">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-        주요 뉴스
+      <a class="nav-item" href="/games">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        게임 DB
       </a>
       <a class="nav-item" href="/rankings">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
         모바일 순위
       </a>
-      <a class="nav-item" href="/community">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
-        커뮤니티
+      <a class="nav-item" href="/news">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+        주요 뉴스
       </a>
       <a class="nav-item" href="/youtube">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -193,6 +193,9 @@
             <div class="game-hero-developer">Funcom</div>
             <div class="game-hero-platforms"><span class="game-platform-badge">steam</span></div>
           </div>
+          <a href="/games/" class="game-back-btn" title="게임 DB로 돌아가기">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
           
         </div>
       </div>
@@ -203,7 +206,7 @@
         <!-- 트렌드 리포트 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
           <div class="home-card-header">
-            <div class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> 트렌드 리포트</div>
+            <h2 class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> 트렌드 리포트</h2>
           </div>
           <div class="home-card-body"><div class="gm-container gm-container-wide">
         <div class="gm-tab-row">
@@ -223,7 +226,7 @@
 		  
   <!-- Footer -->
   <footer class="site-footer">
-    <span>© 2025 게이머스크롤</span>
+    <span>© 2026 게이머스크롤</span>
     <span class="footer-divider">|</span>
     <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
   </footer>
@@ -615,15 +618,15 @@
 
     // 최근 본 게임 저장
     (function() {
-      const VISITED_KEY = 'recentVisitedGames';
-      const MAX_VISITED = 10;
-      const gameInfo = { name: 'Dune: Awakening', slug: 'dune-awakening' };
+      const RECENT_KEY = 'gamerscrawl_recent_searches';
+      const MAX_RECENT = 8;
+      const gameInfo = { name: 'Dune: Awakening', slug: 'dune-awakening', icon: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172710/6a328e09f60e192094e3cd1b22faca6739605f99/header_alt_assets_6_koreana.jpg?t=1766090061' };
       try {
-        let visited = JSON.parse(localStorage.getItem(VISITED_KEY)) || [];
-        visited = visited.filter(g => g.slug !== gameInfo.slug);
-        visited.unshift(gameInfo);
-        visited = visited.slice(0, MAX_VISITED);
-        localStorage.setItem(VISITED_KEY, JSON.stringify(visited));
+        let recent = JSON.parse(localStorage.getItem(RECENT_KEY)) || [];
+        recent = recent.filter(g => g.slug !== gameInfo.slug);
+        recent.unshift(gameInfo);
+        recent = recent.slice(0, MAX_RECENT);
+        localStorage.setItem(RECENT_KEY, JSON.stringify(recent));
       } catch (e) {}
     })();
 
@@ -905,11 +908,11 @@
               location.href = '/games/' + game.slug + '/';
             } else {
               removeRecentSearch(game.slug);
-              location.href = '/search/';
+              location.href = '/games/';
             }
           } catch {
             removeRecentSearch(game.slug);
-            location.href = '/search/';
+            location.href = '/games/';
           }
         });
       });
@@ -1028,7 +1031,7 @@
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
-      window.location.href = '/search/?q=' + encodeURIComponent(query);
+      window.location.href = '/games/?q=' + encodeURIComponent(query);
     }
   }
 
@@ -1073,7 +1076,7 @@
 <script>
 (function() {
   // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
-  const navSections = ['trend', 'news', 'rankings', 'community', 'youtube', 'steam', 'upcoming', 'metacritic'];
+  const navSections = ['trend', 'games', 'rankings', 'news', 'youtube', 'steam', 'upcoming', 'metacritic'];
   const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
@@ -1226,6 +1229,34 @@
       }
       touchedElement = null;
       isTouchMoving = false;
+    }
+  }, { passive: true });
+})();
+</script>
+  
+<script>
+(function() {
+  if (window.innerWidth > 768) return;
+
+  let ticking = false;
+  const threshold = 50;
+
+  function updateSearchVisibility() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < threshold) {
+      document.body.classList.remove('search-hidden');
+    } else {
+      document.body.classList.add('search-hidden');
+    }
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateSearchVisibility);
+      ticking = true;
     }
   }, { passive: true });
 })();

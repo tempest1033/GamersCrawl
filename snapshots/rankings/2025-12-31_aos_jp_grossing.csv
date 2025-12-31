@@ -6799,6 +6799,7 @@ time,rank,id,title
 17:30,198,com.aidis.lastcloudiajpn,"ラストクラウディア"
 17:30,199,jp.pjfb,"ブルーロック Project: World Champion"
 17:30,200,com.xman.jp.gp,"X-Clash"
+<<<<<<< Updated upstream
 18:00,1,com.fun.lastwar.gp,"ラストウォー：サバイバル"
 18:00,2,jp.co.cygames.umamusume,"ウマ娘 プリティーダービー"
 18:00,3,com.gof.global,"ホワイトアウト・サバイバル"
@@ -7599,6 +7600,8 @@ time,rank,id,title
 19:30,198,com.lilithgames.rok.gp.jp,"Rise of Kingdoms ―万国覚醒―"
 19:30,199,jp.pjfb,"ブルーロック Project: World Champion"
 19:30,200,jp.goodsmile.touhoulostword_android,"東方LostWord"
+=======
+>>>>>>> Stashed changes
 20:00,1,com.fun.lastwar.gp,"ラストウォー：サバイバル"
 20:00,2,jp.co.cygames.umamusume,"ウマ娘 プリティーダービー"
 20:00,3,com.aniplex.fategrandorder,"Fate/Grand Order"
@@ -7685,8 +7688,13 @@ time,rank,id,title
 20:00,84,com.supercell.brawlstars,"ブロスタ"
 20:00,85,com.aniplex.magia.exedra.jp,"魔法少女まどかマギカ Magia Exedra"
 20:00,86,com.nintendo.zaba,"ファイアーエムブレム  ヒーローズ"
+<<<<<<< Updated upstream
 20:00,87,com.fatmerge.global,"グルメ・ジャーニー"
 20:00,88,com.gamedots.seasideescape,"シーサイド　エスケープ：マージ & ストーリー"
+=======
+20:00,87,com.gamedots.seasideescape,"シーサイド　エスケープ：マージ & ストーリー"
+20:00,88,com.fatmerge.global,"グルメ・ジャーニー"
+>>>>>>> Stashed changes
 20:00,89,com.topwar.gp,"トップウォー"
 20:00,90,jp.dgeg.dragonegg2,"ドラゴンエッグ 仲間との出会い 友達対戦RPG"
 20:00,91,com.zigzagame.evertalefree,"エバーテイル"
@@ -7974,10 +7982,17 @@ time,rank,id,title
 20:30,173,com.joycastle.mergematch,"Matching Story - Puzzle Games"
 20:30,174,com.justgame.jails,"この監獄ほんmoneyすぎんご"
 20:30,175,com.pandadagames.ninja.global,"忍者マストダイ"
+<<<<<<< Updated upstream
 20:30,176,com.square_enix.WOTVffbejp,"FFBE幻影戦争 WAR OF THE VISIONS"
 20:30,177,com.xq.archeroii,"アーチャー伝説2"
 20:30,178,com.global.sgdbzja,"モーマンタイム"
 20:30,179,jp.co.koeitecmo.resleriana,"レスレリアーナのアトリエ"
+=======
+20:30,176,jp.co.koeitecmo.resleriana,"レスレリアーナのアトリエ"
+20:30,177,com.square_enix.WOTVffbejp,"FFBE幻影戦争 WAR OF THE VISIONS"
+20:30,178,com.xq.archeroii,"アーチャー伝説2"
+20:30,179,com.global.sgdbzja,"モーマンタイム"
+>>>>>>> Stashed changes
 20:30,180,jp.co.gu3.delta,"乃木坂的フラクタル"
 20:30,181,jp.konami.wecc,"eFootball™ウイコレ CHAMPION SQUADS"
 20:30,182,net.room6.horizon,"ローグウィズデッド: 1000時間遊べるドット絵放置RPG"
@@ -8199,6 +8214,7 @@ time,rank,id,title
 21:00,198,jp.pjfb,"ブルーロック Project: World Champion"
 21:00,199,jp.goodsmile.touhoulostword_android,"東方LostWord"
 21:00,200,jp.colopl.wcat,"白猫プロジェクト"
+<<<<<<< Updated upstream
 22:00,1,com.fun.lastwar.gp,"ラストウォー：サバイバル"
 22:00,2,jp.co.cygames.umamusume,"ウマ娘 プリティーダービー"
 22:00,3,com.aniplex.fategrandorder,"Fate/Grand Order"
@@ -8999,3 +9015,5 @@ time,rank,id,title
 23:30,198,jp.pjfb,"ブルーロック Project: World Champion"
 23:30,199,jp.goodsmile.touhoulostword_android,"東方LostWord"
 23:30,200,jp.colopl.wcat,"白猫プロジェクト"
+=======
+>>>>>>> Stashed changes

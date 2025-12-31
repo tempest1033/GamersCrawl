@@ -62,15 +62,15 @@
   <link rel="prefetch" href="/youtube/" as="document">
   <link rel="prefetch" href="/rankings/" as="document">
   <link rel="prefetch" href="/steam/" as="document">
-  <link rel="prefetch" href="/upcoming/" as="document">
-  <link rel="prefetch" href="/metacritic/" as="document">
-  <!-- Font Preload -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-  <style>.header-title a{color:#f1f5f9}</style>
-  <link rel="stylesheet" href="/styles.css">
+	  <link rel="prefetch" href="/upcoming/" as="document">
+	  <link rel="prefetch" href="/metacritic/" as="document">
+	  <!-- Font Preload -->
+	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+	  <style>.header-title a{color:#f1f5f9}</style>
+	  <link rel="stylesheet" href="/styles.css">
   <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <!-- Firebase Analytics (프로덕션만) -->
   <script type="module">
@@ -94,11 +94,11 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
   
 </head>
-<body>
+<body class="page-game">
   
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-title">
+      <div class="header-title">
         <a href="/" style="text-decoration: none; color: inherit;">
           <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
           <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -119,7 +119,7 @@
             <rect x="642" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
           </svg>
         </a>
-      </h1>
+      </div>
     </div>
   </header>
   
@@ -128,7 +128,7 @@
       <a href="/" class="search-home-icon" aria-label="홈으로 이동">
         <img src="/favicon.svg" alt="" width="20" height="20">
       </a>
-      <input type="text" class="search-input" placeholder="게임 이름을 입력해주세요" autocomplete="off">
+      <input type="text" class="search-input" placeholder="게임 검색" autocomplete="off">
       <button class="search-btn" type="button" aria-label="검색">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
@@ -145,17 +145,17 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
         트렌드 리포트
       </a>
-      <a class="nav-item" href="/news">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-        주요 뉴스
+      <a class="nav-item" href="/games">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        게임 DB
       </a>
       <a class="nav-item" href="/rankings">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
         모바일 순위
       </a>
-      <a class="nav-item" href="/community">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
-        커뮤니티
+      <a class="nav-item" href="/news">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+        주요 뉴스
       </a>
       <a class="nav-item" href="/youtube">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -177,7 +177,12 @@
   </nav>
   <main class="container">
     
-    
+    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only ">
+    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  </div>
+  <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
+    <ins class="adsbygoogle" style="display:block;width:100%;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins>
+  </div>
     <div class="game-page">
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
@@ -186,8 +191,11 @@
           <div class="game-hero-info">
             <h1 class="game-hero-title">로열 쿠킹: 요리 & 식당 게임</h1>
             <div class="game-hero-developer">Matryoshka Games (CY) LTD</div>
-            <div class="game-hero-platforms"><span class="game-platform-badge">iOS</span></div>
+            <div class="game-hero-platforms"><span class="game-platform-badge">iOS</span><span class="game-platform-badge">Android</span></div>
           </div>
+          <a href="/games/" class="game-back-btn" title="게임 DB로 돌아가기">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
           
         </div>
       </div>
@@ -197,15 +205,115 @@
         <!-- 실시간 모바일 순위 카드 -->
         <div class="home-card">
           <div class="home-card-header">
-            <div class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg> 실시간 모바일 순위</div>
+            <h2 class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg> 실시간 모바일 순위</h2>
           </div>
-          <div class="home-card-body"><div class="game-empty">현재 순위 데이터가 없습니다</div></div>
+          <div class="home-card-body"><div class="rank-trend-section realtime-rank-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-left"><button class="tab-btn active" data-realtime-cat="grossing">매출</button><button class="tab-btn" data-realtime-cat="free">인기</button></div><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-realtime-view="summary">요약</button><button class="tab-btn disabled" data-realtime-view="realtime" disabled>실시간</button></div></div><div class="trend-legend-row realtime-legend-row" style="display:none;"><div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" style="background:#FF4757"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" style="background:#2ED573"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" style="background:#3742FA"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" style="background:#FFA502"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" style="background:#A55EEA"></span>대만</span></div><div class="trend-market-toggle"><button class="market-toggle-btn active" data-market-toggle="ios">iOS</button><button class="market-toggle-btn" data-market-toggle="aos">Android</button></div></div><div class="realtime-content active" data-realtime-cat="grossing" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=32" alt="">Android</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">77</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=32" alt="">Android</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div></div></div></div></div>
         </div>
 
         <!-- 모바일 추이 카드 -->
         <div class="home-card">
           <div class="home-card-header">
-            <div class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg> 모바일 순위 추이</div>
+            <h2 class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg> 모바일 순위 추이</h2>
           </div>
           <div class="home-card-body">
       <div class="rank-trend-section mobile-trend-section">
@@ -231,10 +339,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월17일</text><text class="chart-xlabel" x="103.2" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="172.4" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="241.6" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="310.8" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월17일</text><text class="chart-xlabel" x="103.2" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="172.4" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="241.6" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="310.8" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
         </div>
       
@@ -244,10 +352,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
         </div>
       
@@ -257,10 +365,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
         </div>
       
@@ -270,10 +378,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="67.3953488372093" x2="396" y2="67.3953488372093" /><line class="chart-grid" x1="18" y1="128.7906976744186" x2="396" y2="128.7906976744186" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="103.2,165.62790697674419 172.4,112.41860465116278 241.6,108.32558139534885 310.8,149.25581395348837" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,124.69767441860465 103.2,71.48837209302326 172.4,108.32558139534885 241.6,22.372093023255815 310.8,55.116279069767444 380,87.86046511627907" /><polyline class="chart-line" data-region="kr" style="stroke:#FF4757" points="241.6,96.04651162790698 310.8,59.20930232558139 380,75.5813953488372" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="103.2" cy="165.62790697674419" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="172.4" cy="112.41860465116278" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="241.6" cy="108.32558139534885" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="310.8" cy="149.25581395348837" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="124.69767441860465" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="103.2" cy="71.48837209302326" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="172.4" cy="108.32558139534885" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="241.6" cy="22.372093023255815" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="310.8" cy="55.116279069767444" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="87.86046511627907" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="241.6" cy="96.04651162790698" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="310.8" cy="59.20930232558139" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="380" cy="75.5813953488372" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="103.2" y="159.62790697674419" text-anchor="middle">100</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="172.4" y="106.41860465116278" text-anchor="middle">87</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="241.6" y="102.32558139534885" text-anchor="middle">86</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="310.8" y="143.25581395348837" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="118.69767441860465" text-anchor="middle">90</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="103.2" y="65.48837209302326" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="172.4" y="102.32558139534885" text-anchor="middle">86</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="241.6" y="16.372093023255815" text-anchor="middle">65</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="310.8" y="49.116279069767444" text-anchor="middle">73</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="81.86046511627907" text-anchor="middle">81</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="241.6" y="90.04651162790698" text-anchor="middle">83</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="310.8" y="53.20930232558139" text-anchor="middle">74</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="380" y="69.5813953488372" text-anchor="middle">78</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">61</text><text class="chart-ylabel" x="14" y="70.3953488372093" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="131.7906976744186" text-anchor="end">91</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">104</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월17일</text><text class="chart-xlabel" x="103.2" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="172.4" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="241.6" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="310.8" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="67.3953488372093" x2="396" y2="67.3953488372093" /><line class="chart-grid" x1="18" y1="128.7906976744186" x2="396" y2="128.7906976744186" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,165.62790697674419 91.66666666666666,112.41860465116278 149.33333333333331,108.32558139534885 207,149.25581395348837 322.33333333333337,124.69767441860465 380,71.48837209302326" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,71.48837209302326 91.66666666666666,108.32558139534885 149.33333333333331,22.372093023255815 207,55.116279069767444 264.66666666666663,87.86046511627907" /><polyline class="chart-line" data-region="kr" style="stroke:#FF4757" points="149.33333333333331,96.04651162790698 207,59.20930232558139 264.66666666666663,75.5813953488372" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="165.62790697674419" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="91.66666666666666" cy="112.41860465116278" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="108.32558139534885" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="149.25581395348837" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="322.33333333333337" cy="124.69767441860465" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="71.48837209302326" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="71.48837209302326" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="91.66666666666666" cy="108.32558139534885" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="22.372093023255815" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="207" cy="55.116279069767444" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="264.66666666666663" cy="87.86046511627907" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="149.33333333333331" cy="96.04651162790698" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="207" cy="59.20930232558139" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="264.66666666666663" cy="75.5813953488372" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="159.62790697674419" text-anchor="middle">100</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="91.66666666666666" y="106.41860465116278" text-anchor="middle">87</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="102.32558139534885" text-anchor="middle">86</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="207" y="143.25581395348837" text-anchor="middle">96</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="322.33333333333337" y="118.69767441860465" text-anchor="middle">90</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="65.48837209302326" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="65.48837209302326" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="91.66666666666666" y="102.32558139534885" text-anchor="middle">86</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="16.372093023255815" text-anchor="middle">65</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="207" y="49.116279069767444" text-anchor="middle">73</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="264.66666666666663" y="81.86046511627907" text-anchor="middle">81</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="149.33333333333331" y="90.04651162790698" text-anchor="middle">83</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="207" y="53.20930232558139" text-anchor="middle">74</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="264.66666666666663" y="69.5813953488372" text-anchor="middle">78</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">61</text><text class="chart-ylabel" x="14" y="70.3953488372093" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="131.7906976744186" text-anchor="end">91</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">104</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월17일</text><text class="chart-xlabel" x="103.2" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="172.4" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="241.6" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="310.8" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월22일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월24일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
         </div>
       
@@ -283,10 +391,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,103.77777777777779 380,25.555555555555554" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="162.44444444444443" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="103.77777777777779" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="25.555555555555554" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="156.44444444444443" text-anchor="middle">86</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="97.77777777777779" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="19.555555555555554" text-anchor="middle">65</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">62</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">71</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">80</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">89</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="207,162.44444444444443 380,103.77777777777779" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,103.77777777777779 207,25.555555555555554" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="162.44444444444443" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="103.77777777777779" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="103.77777777777779" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="207" cy="25.555555555555554" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="207" y="156.44444444444443" text-anchor="middle">86</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="97.77777777777779" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="97.77777777777779" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="207" y="19.555555555555554" text-anchor="middle">65</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">62</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">71</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">80</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">89</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월25일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월18일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월25일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월1일</text>
         </svg></div>
         </div>
       
@@ -296,10 +404,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="94" r="2.5" /><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="88" text-anchor="middle">65</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">64</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">65</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">66</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="72" x2="396" y2="72" /><line class="chart-grid" x1="18" y1="138" x2="396" y2="138" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="160" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="28" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="154" text-anchor="middle">77</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="22" text-anchor="middle">65</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">63</text><text class="chart-ylabel" x="14" y="75" text-anchor="end">69</text><text class="chart-ylabel" x="14" y="141" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">79</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
         </div>
       
@@ -395,7 +503,7 @@
         <!-- 트렌드 리포트 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
           <div class="home-card-header">
-            <div class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> 트렌드 리포트</div>
+            <h2 class="home-card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> 트렌드 리포트</h2>
           </div>
           <div class="home-card-body"><div class="gm-container gm-container-wide">
         <div class="gm-tab-row">
@@ -411,11 +519,11 @@
       </div>
     </div>
   
-  </main>
-  
+	  </main>
+		  
   <!-- Footer -->
   <footer class="site-footer">
-    <span>© 2025 게이머스크롤</span>
+    <span>© 2026 게이머스크롤</span>
     <span class="footer-divider">|</span>
     <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
   </footer>
@@ -500,7 +608,302 @@
     }
     .modal-close:hover { color: #fff; }
   </style>
-  <script>
+		  <script>
+		    (function() {
+		      function canInit(el) {
+		        if (!el || !el.isConnected) return false;
+		        const style = window.getComputedStyle(el);
+		        if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+		        return true;
+		      }
+
+		      function hasRenderedAd(el) {
+		        try {
+		          return !!(el && el.querySelector && el.querySelector('iframe'));
+		        } catch {
+		          return false;
+		        }
+		      }
+
+		      function isNearViewport(el, marginPx) {
+		        try {
+		          const rect = el.getBoundingClientRect();
+		          const vh = window.innerHeight || document.documentElement.clientHeight || 0;
+		          const margin = typeof marginPx === 'number' ? marginPx : 0;
+		          return rect.bottom >= -margin && rect.top <= (vh + margin);
+		        } catch {
+		          return false;
+		        }
+		      }
+
+		      let lastResizeKickAt = 0;
+		      function kickResizeSoon() {
+		        const now = Date.now();
+		        if (now - lastResizeKickAt < 1000) return;
+		        lastResizeKickAt = now;
+		        setTimeout(function() {
+		          window.dispatchEvent(new Event('resize'));
+		        }, 50);
+		      }
+
+		      function markSeen(el) {
+		        if (!el || el.dataset.gcAdsSeenAt) return;
+		        if (!isNearViewport(el, 200)) return;
+		        el.dataset.gcAdsSeenAt = String(Date.now());
+		        kickResizeSoon();
+		      }
+
+		      function syncOneAdSlot(el) {
+		        const slot = el.closest('.ad-slot');
+		        if (!slot) return;
+		        const status = el.getAttribute('data-ad-status');
+		        if (status === 'unfilled') slot.classList.add('ad-slot--unfilled');
+		        else if (status === 'filled' || hasRenderedAd(el)) slot.classList.remove('ad-slot--unfilled');
+		      }
+
+		      function syncAdSlotVisibility() {
+		        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+		          markSeen(el);
+		          syncOneAdSlot(el);
+		        });
+		      }
+
+		      function collapseEmptySeenSlots() {
+		        const now = Date.now();
+		        let delayMs = 6000;
+		        try {
+		          if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) delayMs = 3500;
+		        } catch {}
+
+		        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+		          markSeen(el);
+		          const slot = el.closest('.ad-slot');
+		          if (!slot) return;
+		          if (slot.classList.contains('ad-slot--unfilled')) return;
+
+		          const status = el.getAttribute('data-ad-status');
+		          if (status === 'filled' || hasRenderedAd(el)) return;
+
+		          const seenAt = Number(el.dataset.gcAdsSeenAt || 0);
+		          if (!seenAt) return;
+		          if (now - seenAt < delayMs) return;
+
+		          // 늦게 로드되는 광고를 "미노출"로 오판해 숨기지 않도록,
+		          // data-ad-status="unfilled" 처럼 명확히 unfilled인 경우에만 접기.
+		          if (status === 'unfilled') slot.classList.add('ad-slot--unfilled');
+		        });
+		      }
+
+		      function runVisibilityPass() {
+		        syncAdSlotVisibility();
+		        collapseEmptySeenSlots();
+		      }
+
+		      function ensureAdStatusObserver() {
+		        if (window.__gcAdsStatusObserverInstalled) return;
+		        window.__gcAdsStatusObserverInstalled = true;
+		        try {
+		          const obs = new MutationObserver(function(mutations) {
+		            mutations.forEach(function(m) {
+		              if (m.type !== 'attributes') return;
+		              if (m.attributeName !== 'data-ad-status') return;
+		              const el = m.target;
+		              if (!el || !el.closest) return;
+		              syncOneAdSlot(el);
+		            });
+		          });
+		          document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+		            obs.observe(el, { attributes: true, attributeFilter: ['data-ad-status'] });
+		          });
+		        } catch (e) {}
+		      }
+
+		      let visibilityTimers = [];
+		      function scheduleVisibilityCheck() {
+		        visibilityTimers.forEach(clearTimeout);
+		        visibilityTimers = [];
+		        [500, 1500, 3000, 6000].forEach(function(delay) {
+		          visibilityTimers.push(setTimeout(runVisibilityPass, delay));
+		        });
+		      }
+
+		      function kickResizeOnce() {
+		        if (window.__gcAdsKickResizeOnce) return;
+		        window.__gcAdsKickResizeOnce = true;
+		        setTimeout(function() {
+		          window.dispatchEvent(new Event('resize'));
+		        }, 800);
+		      }
+
+		      function initAds() {
+		        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+		          if (el.dataset.gcAdsInit === '1') return;
+	          if (!canInit(el)) return;
+	          el.dataset.gcAdsInit = '1';
+	          try {
+	            (adsbygoogle = window.adsbygoogle || []).push({});
+	          } catch (e) {
+	            delete el.dataset.gcAdsInit;
+		          }
+		        });
+		      }
+
+		      let initRetryTimers = [];
+		      function scheduleInitRetries() {
+		        if (window.__gcAdsInitRetriesScheduled) return;
+		        window.__gcAdsInitRetriesScheduled = true;
+		        initRetryTimers.forEach(clearTimeout);
+		        initRetryTimers = [];
+		        [100, 300, 500, 1000, 2000].forEach(function(delay) {
+		          initRetryTimers.push(setTimeout(initAds, delay));
+		        });
+		      }
+
+		      // IntersectionObserver: 뷰포트 진입 시 광고 초기화
+		      function setupAdIntersectionObserver() {
+		        if (window.__gcAdIntersectionObserver) return;
+		        if (!('IntersectionObserver' in window)) return;
+		        window.__gcAdIntersectionObserver = new IntersectionObserver(function(entries) {
+		          entries.forEach(function(entry) {
+		            if (entry.isIntersecting) {
+		              // .ad-slot이면 내부 ins 찾기, 아니면 자기 자신(ins)
+		              var el = entry.target.classList.contains('adsbygoogle')
+		                ? entry.target
+		                : entry.target.querySelector('ins.adsbygoogle');
+		              if (el && el.dataset.gcAdsInit !== '1' && el.isConnected) {
+		                var style = window.getComputedStyle(el);
+		                if (style && style.display !== 'none' && style.visibility !== 'hidden') {
+		                  el.dataset.gcAdsInit = '1';
+		                  try {
+		                    (adsbygoogle = window.adsbygoogle || []).push({});
+		                  } catch (e) {
+		                    delete el.dataset.gcAdsInit;
+		                  }
+		                }
+		              }
+		            }
+		          });
+		        }, { rootMargin: '200px 0px', threshold: 0 });
+		        // .ad-slot wrapper와 wrapper 없는 ins.adsbygoogle 모두 관찰
+		        document.querySelectorAll('.ad-slot').forEach(function(slot) {
+		          window.__gcAdIntersectionObserver.observe(slot);
+		        });
+		        document.querySelectorAll('ins.adsbygoogle').forEach(function(ins) {
+		          if (!ins.closest('.ad-slot')) {
+		            window.__gcAdIntersectionObserver.observe(ins);
+		          }
+		        });
+		      }
+
+		      function runInit() {
+		        ensureAdStatusObserver();
+		        initAds();
+		        runVisibilityPass();
+		        scheduleVisibilityCheck();
+		        scheduleInitRetries();
+		        setupAdIntersectionObserver();
+		        kickResizeOnce();
+		      }
+
+		      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+		        requestAnimationFrame(runInit);
+		      } else {
+	        document.addEventListener('DOMContentLoaded', runInit);
+	      }
+
+	      window.addEventListener('load', runInit);
+
+	      // 광고 높이 감지 및 unfilled 숨김
+	      function adjustAdSlots() {
+	        // 모바일 가로 광고 높이 조정
+	        document.querySelectorAll('.ad-slot.mobile-only.ad-slot--horizontal').forEach(function(slot) {
+	          var ins = slot.querySelector('ins.adsbygoogle');
+	          if (ins) {
+	            var iframe = ins.querySelector('iframe');
+	            if (iframe && iframe.offsetHeight > 0 && iframe.offsetHeight <= 55) {
+	              slot.classList.add('ad-height-50');
+	            } else if (iframe && iframe.offsetHeight > 55) {
+	              slot.classList.remove('ad-height-50');
+	            }
+	          }
+	        });
+	        // 버티컬 광고 높이 조정 (실제 iframe 높이에 맞춤)
+	        document.querySelectorAll('.ad-slot.ad-slot--vertical').forEach(function(slot) {
+	          var ins = slot.querySelector('ins.adsbygoogle');
+	          if (ins) {
+	            var iframe = ins.querySelector('iframe');
+	            if (iframe && iframe.offsetHeight > 0) {
+	              slot.style.height = iframe.offsetHeight + 'px';
+	              ins.style.height = iframe.offsetHeight + 'px';
+	            }
+	          }
+	        });
+	        // unfilled 광고 컨테이너 숨김 (CSS :has 미지원 브라우저 대응)
+	        document.querySelectorAll('.ad-slot').forEach(function(slot) {
+	          var ins = slot.querySelector('ins.adsbygoogle');
+	          if (ins && ins.getAttribute('data-ad-status') === 'unfilled') {
+	            slot.style.display = 'none';
+	          }
+	        });
+	        // wrapper 없는 ins도 unfilled 시 숨김 (홈페이지 상단 광고 등)
+	        document.querySelectorAll('ins.adsbygoogle[data-ad-status="unfilled"]').forEach(function(ins) {
+	          ins.style.display = 'none';
+	          ins.style.height = '0';
+	        });
+	        // 초기화됐지만 빈 광고 숨김 (iframe 1px = AdSense가 광고 못 채움)
+	        document.querySelectorAll('.ad-slot').forEach(function(slot) {
+	          var ins = slot.querySelector('ins.adsbygoogle');
+	          if (ins && ins.getAttribute('data-adsbygoogle-status') === 'done') {
+	            var iframe = ins.querySelector('iframe');
+	            if (iframe && iframe.offsetHeight <= 1) {
+	              slot.classList.add('ad-slot--empty');
+	            } else if (iframe && iframe.offsetHeight > 10) {
+	              slot.classList.remove('ad-slot--empty');
+	            }
+	          }
+	        });
+	        // wrapper 없는 ins도 빈 광고 숨김
+	        document.querySelectorAll('ins.adsbygoogle[data-adsbygoogle-status="done"]').forEach(function(ins) {
+	          if (!ins.closest('.ad-slot')) {
+	            var iframe = ins.querySelector('iframe');
+	            if (iframe && iframe.offsetHeight <= 1) {
+	              ins.classList.add('ad-ins--empty');
+	            } else if (iframe && iframe.offsetHeight > 10) {
+	              ins.classList.remove('ad-ins--empty');
+	            }
+	          }
+	        });
+	      }
+
+	      // 광고 로드 후 체크 (빠른 주기)
+	      setTimeout(adjustAdSlots, 300);
+	      setTimeout(adjustAdSlots, 500);
+	      setTimeout(adjustAdSlots, 800);
+	      setTimeout(adjustAdSlots, 1000);
+	      setTimeout(adjustAdSlots, 1500);
+	      setTimeout(adjustAdSlots, 2000);
+	      setTimeout(adjustAdSlots, 3000);
+	      setTimeout(adjustAdSlots, 5000);
+
+	      let resizeTimer = null;
+	      window.addEventListener('resize', function() {
+	        clearTimeout(resizeTimer);
+	        resizeTimer = setTimeout(function() {
+	          runInit();
+	        }, 200);
+	      }, { passive: true });
+
+	      let scrollTimer = null;
+	      window.addEventListener('scroll', function() {
+	        clearTimeout(scrollTimer);
+	        scrollTimer = setTimeout(function() {
+	          initAds();
+	          runVisibilityPass();
+	        }, 200);
+	      }, { passive: true });
+	    })();
+	  </script>
+	  <script>
     if (document.fonts && document.fonts.ready) {
       document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
     } else {
@@ -512,15 +915,15 @@
 
     // 최근 본 게임 저장
     (function() {
-      const VISITED_KEY = 'recentVisitedGames';
-      const MAX_VISITED = 10;
-      const gameInfo = { name: '로열 쿠킹: 요리 & 식당 게임', slug: '로열-쿠킹-요리-식당-게임' };
+      const RECENT_KEY = 'gamerscrawl_recent_searches';
+      const MAX_RECENT = 8;
+      const gameInfo = { name: '로열 쿠킹: 요리 & 식당 게임', slug: '로열-쿠킹-요리-식당-게임', icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/7c/3b/7f7c3b8d-879b-760f-f263-4a628d498e19/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png' };
       try {
-        let visited = JSON.parse(localStorage.getItem(VISITED_KEY)) || [];
-        visited = visited.filter(g => g.slug !== gameInfo.slug);
-        visited.unshift(gameInfo);
-        visited = visited.slice(0, MAX_VISITED);
-        localStorage.setItem(VISITED_KEY, JSON.stringify(visited));
+        let recent = JSON.parse(localStorage.getItem(RECENT_KEY)) || [];
+        recent = recent.filter(g => g.slug !== gameInfo.slug);
+        recent.unshift(gameInfo);
+        recent = recent.slice(0, MAX_RECENT);
+        localStorage.setItem(RECENT_KEY, JSON.stringify(recent));
       } catch (e) {}
     })();
 
@@ -699,7 +1102,7 @@
       updatePagination();
     })();
   </script>
-  
+	  
 <script>
 (function() {
   const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
@@ -802,11 +1205,11 @@
               location.href = '/games/' + game.slug + '/';
             } else {
               removeRecentSearch(game.slug);
-              location.href = '/search/';
+              location.href = '/games/';
             }
           } catch {
             removeRecentSearch(game.slug);
-            location.href = '/search/';
+            location.href = '/games/';
           }
         });
       });
@@ -925,7 +1328,7 @@
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
-      window.location.href = '/search/?q=' + encodeURIComponent(query);
+      window.location.href = '/games/?q=' + encodeURIComponent(query);
     }
   }
 
@@ -947,7 +1350,7 @@
   }
 })();
 </script>
-  
+	  
 <script>
 (function() {
   const prefetched = new Set();
@@ -970,7 +1373,7 @@
 <script>
 (function() {
   // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
-  const navSections = ['trend', 'news', 'rankings', 'community', 'youtube', 'steam', 'upcoming', 'metacritic'];
+  const navSections = ['trend', 'games', 'rankings', 'news', 'youtube', 'steam', 'upcoming', 'metacritic'];
   const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
@@ -1123,6 +1526,34 @@
       }
       touchedElement = null;
       isTouchMoving = false;
+    }
+  }, { passive: true });
+})();
+</script>
+  
+<script>
+(function() {
+  if (window.innerWidth > 768) return;
+
+  let ticking = false;
+  const threshold = 50;
+
+  function updateSearchVisibility() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < threshold) {
+      document.body.classList.remove('search-hidden');
+    } else {
+      document.body.classList.add('search-hidden');
+    }
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateSearchVisibility);
+      ticking = true;
     }
   }, { passive: true });
 })();

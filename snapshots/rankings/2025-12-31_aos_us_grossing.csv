@@ -6799,6 +6799,7 @@ time,rank,id,title
 17:30,198,com.sbg.knitout,"Knit Out"
 17:30,199,com.tinyco.potter,"Harry Potter: Hogwarts Mystery"
 17:30,200,com.zombie.idleminertycoon,"Idle Zombie Miner: Gold Tycoon"
+<<<<<<< Updated upstream
 18:00,1,com.scopely.monopolygo,"MONOPOLY GO!"
 18:00,2,com.fun.lastwar.gp,"Last War:Survival Game"
 18:00,3,com.roblox.client,"Roblox"
@@ -7599,6 +7600,8 @@ time,rank,id,title
 19:30,198,jp.co.ponos.battlecatsen,"The Battle Cats"
 19:30,199,com.netease.yysls,"Where Winds Meet"
 19:30,200,com.readygo.aps.gp,"Build Master: Bridge Race"
+=======
+>>>>>>> Stashed changes
 20:00,1,com.scopely.monopolygo,"MONOPOLY GO!"
 20:00,2,com.fun.lastwar.gp,"Last War:Survival Game"
 20:00,3,com.roblox.client,"Roblox"
@@ -8199,6 +8202,7 @@ time,rank,id,title
 21:00,198,jp.co.ponos.battlecatsen,"The Battle Cats"
 21:00,199,com.netease.yysls,"Where Winds Meet"
 21:00,200,com.readygo.aps.gp,"Build Master: Bridge Race"
+<<<<<<< Updated upstream
 22:00,1,com.scopely.monopolygo,"MONOPOLY GO!"
 22:00,2,com.fun.lastwar.gp,"Last War:Survival Game"
 22:00,3,com.roblox.client,"Roblox"
@@ -8999,3 +9003,5 @@ time,rank,id,title
 23:30,198,jp.co.ponos.battlecatsen,"The Battle Cats"
 23:30,199,com.netease.yysls,"Where Winds Meet"
 23:30,200,com.readygo.aps.gp,"Build Master: Bridge Race"
+=======
+>>>>>>> Stashed changes

@@ -3399,6 +3399,7 @@ time,rank,id,title
 17:30,98,447553564,"Slotomania™ Slots Machine Game"
 17:30,99,6444043291,"Domino Dreams™"
 17:30,100,1059665257,"MLB 9 Innings 26"
+<<<<<<< Updated upstream
 18:00,1,6448786147,"Last War:Survival"
 18:00,2,1621328561,"MONOPOLY GO!"
 18:00,3,1482155847,"Royal Match"
@@ -3799,6 +3800,8 @@ time,rank,id,title
 19:30,98,447553564,"Slotomania™ Slots Machine Game"
 19:30,99,6444043291,"Domino Dreams™"
 19:30,100,1059665257,"MLB 9 Innings 26"
+=======
+>>>>>>> Stashed changes
 20:00,1,6448786147,"Last War:Survival"
 20:00,2,1482155847,"Royal Match"
 20:00,3,1621328561,"MONOPOLY GO!"
@@ -4099,6 +4102,7 @@ time,rank,id,title
 21:00,98,1065980436,"POP! Slots™"
 21:00,99,447553564,"Slotomania™ Slots Machine Game"
 21:00,100,6444043291,"Domino Dreams™"
+<<<<<<< Updated upstream
 22:00,1,6448786147,"Last War:Survival"
 22:00,2,1482155847,"Royal Match"
 22:00,3,1621328561,"MONOPOLY GO!"
@@ -4499,3 +4503,5 @@ time,rank,id,title
 23:30,98,1207472156,"Wordscapes: Word puzzle game"
 23:30,99,506627515,"Hay Day"
 23:30,100,6444043291,"Domino Dreams™"
+=======
+>>>>>>> Stashed changes

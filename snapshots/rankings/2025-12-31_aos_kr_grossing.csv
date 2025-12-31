@@ -6799,6 +6799,7 @@ time,rank,id,title
 17:30,198,com.happyelements.es2.kr.gp,"앙상블스타즈"
 17:30,199,net.kernys.aooni,"좀비고등학교"
 17:30,200,com.nhn.wooparoo.kr,"우파루 오딧세이"
+<<<<<<< Updated upstream
 18:00,1,com.nexon.ma,"메이플 키우기"
 18:00,2,com.fun.lastwar.gp,"라스트 워: 서바이벌"
 18:00,3,com.roblox.client,"Roblox"
@@ -7599,6 +7600,8 @@ time,rank,id,title
 19:30,198,com.wjcsasia.android,"검선귀환 - 비승입마"
 19:30,199,com.nhn.wooparoo.kr,"우파루 오딧세이"
 19:30,200,com.gamerepublickor.google.gdsm,"천만여신 : 가장 치명적인 AFK"
+=======
+>>>>>>> Stashed changes
 20:00,1,com.nexon.ma,"메이플 키우기"
 20:00,2,com.fun.lastwar.gp,"라스트 워: 서바이벌"
 20:00,3,com.roblox.client,"Roblox"
@@ -8199,6 +8202,7 @@ time,rank,id,title
 21:00,198,com.happyelements.es2.kr.gp,"앙상블스타즈"
 21:00,199,com.wjcsasia.android,"검선귀환 - 비승입마"
 21:00,200,com.nhn.wooparoo.kr,"우파루 오딧세이"
+<<<<<<< Updated upstream
 22:00,1,com.nexon.ma,"메이플 키우기"
 22:00,2,com.fun.lastwar.gp,"라스트 워: 서바이벌"
 22:00,3,com.roblox.client,"Roblox"
@@ -8999,3 +9003,5 @@ time,rank,id,title
 23:30,198,com.happyelements.es2.kr.gp,"앙상블스타즈"
 23:30,199,com.wjcsasia.android,"검선귀환 - 비승입마"
 23:30,200,com.nhn.wooparoo.kr,"우파루 오딧세이"
+=======
+>>>>>>> Stashed changes

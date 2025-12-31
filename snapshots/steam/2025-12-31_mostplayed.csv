@@ -3399,6 +3399,7 @@ time,rank,id,title
 17:30,98,427520,"Factorio"
 17:30,99,2300320,"Farming Simulator 25"
 17:30,100,1476970,"IdleOn - The Idle RPG"
+<<<<<<< Updated upstream
 18:00,1,730,"Counter-Strike 2"
 18:00,2,570,"Dota 2"
 18:00,3,578080,"PUBG: BATTLEGROUNDS"
@@ -3799,6 +3800,8 @@ time,rank,id,title
 19:30,98,513710,"SCUM"
 19:30,99,1476970,"IdleOn - The Idle RPG"
 19:30,100,1149460,"ICARUS"
+=======
+>>>>>>> Stashed changes
 20:00,1,730,"Counter-Strike 2"
 20:00,2,570,"Dota 2"
 20:00,3,578080,"PUBG: BATTLEGROUNDS"
@@ -4099,6 +4102,7 @@ time,rank,id,title
 21:00,98,367520,"Hollow Knight"
 21:00,99,892970,"Valheim"
 21:00,100,1085660,"Destiny 2"
+<<<<<<< Updated upstream
 22:00,1,730,"Counter-Strike 2"
 22:00,2,570,"Dota 2"
 22:00,3,578080,"PUBG: BATTLEGROUNDS"
@@ -4499,3 +4503,5 @@ time,rank,id,title
 23:30,98,513710,"SCUM"
 23:30,99,1222140,"Detroit: Become Human"
 23:30,100,4124950,"Ashes of Creation"
+=======
+>>>>>>> Stashed changes

@@ -6799,6 +6799,7 @@ time,rank,id,title
 17:30,198,net.gamon.bdTW,"BanG Dream! 少女樂團派對"
 17:30,199,com.gtarcade.ioe.global,"Infinity Kingdom"
 17:30,200,com.slsmsecond.tw.and,"遺跡的地平線"
+<<<<<<< Updated upstream
 18:00,1,com.gamania.lineagem,"天堂M"
 18:00,2,com.fun.lastwar.gp,"最後的戰爭 - Last War"
 18:00,3,game.xin.hd.g,"星城Online-範馬刃牙地表最強SLOT"
@@ -7599,6 +7600,8 @@ time,rank,id,title
 19:30,198,com.billionairegames.serares,"變身傳奇"
 19:30,199,com.gtarcade.ioe.global,"Infinity Kingdom"
 19:30,200,com.slsmsecond.tw.and,"遺跡的地平線"
+=======
+>>>>>>> Stashed changes
 20:00,1,com.gamania.lineagem,"天堂M"
 20:00,2,com.fun.lastwar.gp,"最後的戰爭 - Last War"
 20:00,3,com.gof.global,"寒霜啟示錄"
@@ -8199,6 +8202,7 @@ time,rank,id,title
 21:00,198,com.billionairegames.serares,"變身傳奇"
 21:00,199,com.gtarcade.ioe.global,"Infinity Kingdom"
 21:00,200,com.slsmsecond.tw.and,"遺跡的地平線"
+<<<<<<< Updated upstream
 22:00,1,com.gamania.lineagem,"天堂M"
 22:00,2,com.fun.lastwar.gp,"最後的戰爭 - Last War"
 22:00,3,com.gof.global,"寒霜啟示錄"
@@ -8999,3 +9003,5 @@ time,rank,id,title
 23:30,198,com.billionairegames.serares,"變身傳奇"
 23:30,199,com.gtarcade.ioe.global,"Infinity Kingdom"
 23:30,200,com.slsmsecond.tw.and,"遺跡的地平線"
+=======
+>>>>>>> Stashed changes

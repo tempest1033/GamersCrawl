@@ -94,11 +94,11 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
   
 </head>
-<body>
+<body class="page-news">
   
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-title">
+      <div class="header-title">
         <a href="/" style="text-decoration: none; color: inherit;">
           <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
           <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -119,7 +119,7 @@
             <rect x="642" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
           </svg>
         </a>
-      </h1>
+      </div>
     </div>
   </header>
   
@@ -128,7 +128,7 @@
       <a href="/" class="search-home-icon" aria-label="홈으로 이동">
         <img src="/favicon.svg" alt="" width="20" height="20">
       </a>
-      <input type="text" class="search-input" placeholder="게임 이름을 입력해주세요" autocomplete="off">
+      <input type="text" class="search-input" placeholder="게임 검색" autocomplete="off">
       <button class="search-btn" type="button" aria-label="검색">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
@@ -145,17 +145,17 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
         트렌드 리포트
       </a>
-      <a class="nav-item active" href="/news">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-        주요 뉴스
+      <a class="nav-item" href="/games">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        게임 DB
       </a>
       <a class="nav-item" href="/rankings">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
         모바일 순위
       </a>
-      <a class="nav-item" href="/community">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
-        커뮤니티
+      <a class="nav-item active" href="/news">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+        주요 뉴스
       </a>
       <a class="nav-item" href="/youtube">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -178,6 +178,7 @@
   <main class="container">
     
     <section class="section active" id="news">
+      <h1 class="visually-hidden">게임 뉴스</h1>
       <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only ">
     <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
   </div>
@@ -199,7 +200,7 @@
           <div class="news-panel active" id="news-inven">
             <div class="news-panel-header">
               <img src="https://www.google.com/s2/favicons?domain=inven.co.kr&sz=32" alt="" class="news-favicon">
-              <span class="news-panel-title">인벤</span>
+              <h2 class="news-panel-title">인벤</h2>
               <a href="https://www.inven.co.kr/webzine/news/" target="_blank" class="news-more-link">더보기 →</a>
             </div>
             <div class="news-list">
@@ -367,175 +368,15 @@
           <div class="news-panel" id="news-thisisgame">
             <div class="news-panel-header">
               <img src="https://www.google.com/s2/favicons?domain=thisisgame.com&sz=32" alt="" class="news-favicon">
-              <span class="news-panel-title">디스이즈게임</span>
+              <h2 class="news-panel-title">디스이즈게임</h2>
               <a href="https://www.thisisgame.com/webzine/news/nboard/4/" target="_blank" class="news-more-link">더보기 →</a>
             </div>
-            <div class="news-list">
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410423" target="_blank" rel="noopener">
-        <span class="news-num">1</span>
-        <div class="news-content">
-          <span class="news-title">오픈월드 풍년, 눈은 즐겁고 지갑은 아프다 (上)</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410259" target="_blank" rel="noopener">
-        <span class="news-num">2</span>
-        <div class="news-content">
-          <span class="news-title">스텔라 소라, 가볍지만 분명 '즐거운' 서브컬처 게임</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410519" target="_blank" rel="noopener">
-        <span class="news-num">3</span>
-        <div class="news-content">
-          <span class="news-title">연말은 마비노기 모바일과 함께? '만남' 강조한 특별 이벤트 예고</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410460" target="_blank" rel="noopener">
-        <span class="news-num">4</span>
-        <div class="news-content">
-          <span class="news-title">신규 필그림부터 '선택권' 판매까지… 니케, 신년 업데이트 내용은?</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410579" target="_blank" rel="noopener">
-        <span class="news-num">5</span>
-        <div class="news-content">
-          <span class="news-title">"가상이 현실을 움직이다", 블룸버그가 ‘우마무스메’에 주목한 이유</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410594" target="_blank" rel="noopener">
-        <span class="news-num">6</span>
-        <div class="news-content">
-          <span class="news-title">2026년 신년, '뽑기'에 주목해보자</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410511" target="_blank" rel="noopener">
-        <span class="news-num">7</span>
-        <div class="news-content">
-          <span class="news-title">'아주르 프로밀리아' 개발사, 넥슨과 손잡은 이유는?</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410569" target="_blank" rel="noopener">
-        <span class="news-num">8</span>
-        <div class="news-content">
-          <span class="news-title">"유저는 튜토리얼을 싫어한다", 30초 단축이 불러온 변화</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410522" target="_blank" rel="noopener">
-        <span class="news-num">9</span>
-        <div class="news-content">
-          <span class="news-title">베데스다 이어 유비소프트까지, 북미에 부는 '노조 열풍'</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409263" target="_blank" rel="noopener">
-        <span class="news-num">10</span>
-        <div class="news-content">
-          <span class="news-title">GOTY는  '33 원정대'! 무려 9관왕</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409237" target="_blank" rel="noopener">
-        <span class="news-num">11</span>
-        <div class="news-content">
-          <span class="news-title">명조 3.0, 먼저 체험한 '린네', '모니에' 신 캐릭터들 감상은?</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/410014" target="_blank" rel="noopener">
-        <span class="news-num">12</span>
-        <div class="news-content">
-          <span class="news-title">18년 만에 돌아온 ‘메트로이드 프라임 4 비욘드’</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409420" target="_blank" rel="noopener">
-        <span class="news-num">13</span>
-        <div class="news-content">
-          <span class="news-title">90년대 향수로 빚어진 '터미네이터 2D: 노 페이트'</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409009" target="_blank" rel="noopener">
-        <span class="news-num">14</span>
-        <div class="news-content">
-          <span class="news-title">심장박동 리듬게임! 완벽에 가까운 처방전 '리듬 닥터'</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409569" target="_blank" rel="noopener">
-        <span class="news-num">15</span>
-        <div class="news-content">
-          <span class="news-title">펄어비스의 공든 탑 '붉은사막'이 해줄 역할</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409473" target="_blank" rel="noopener">
-        <span class="news-num">16</span>
-        <div class="news-content">
-          <span class="news-title">디아블로4 '증오의 군주'에선 메피스토와 최종 결전?</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/407763" target="_blank" rel="noopener">
-        <span class="news-num">17</span>
-        <div class="news-content">
-          <span class="news-title">호요버스 '바르사푸라' 플레이 공개! "외계인이 만드나?"</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/407770" target="_blank" rel="noopener">
-        <span class="news-num">18</span>
-        <div class="news-content">
-          <span class="news-title">모바일과는 얼마나 달라졌을까 '나혼렙 오버드라이브'</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409814" target="_blank" rel="noopener">
-        <span class="news-num">19</span>
-        <div class="news-content">
-          <span class="news-title">"T1은 나의 전부"... 페이커, 전설을 넘어 2029년까지 동행</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    
-      <a class="news-item clickable" href="https://www.thisisgame.com/articles/409003" target="_blank" rel="noopener">
-        <span class="news-num">20</span>
-        <div class="news-content">
-          <span class="news-title">30년 '경영통' CEO가 쓴 헬로키티 게임 성공 공식</span>
-          <div class="news-tags"><span class="community-tag source-tag">디스이즈게임</span></div>
-        </div>
-      </a>
-    </div>
+            <div class="news-list"><div class="no-data">뉴스를 불러올 수 없습니다</div></div>
           </div>
           <div class="news-panel" id="news-gamemeca">
             <div class="news-panel-header">
               <img src="https://www.google.com/s2/favicons?domain=gamemeca.com&sz=32" alt="" class="news-favicon">
-              <span class="news-panel-title">게임메카</span>
+              <h2 class="news-panel-title">게임메카</h2>
               <a href="https://www.gamemeca.com/news.php" target="_blank" class="news-more-link">더보기 →</a>
             </div>
             <div class="news-list">
@@ -663,7 +504,7 @@
           <div class="news-panel" id="news-ruliweb">
             <div class="news-panel-header">
               <img src="https://www.google.com/s2/favicons?domain=ruliweb.com&sz=32" alt="" class="news-favicon">
-              <span class="news-panel-title">루리웹</span>
+              <h2 class="news-panel-title">루리웹</h2>
               <a href="https://bbs.ruliweb.com/news" target="_blank" class="news-more-link">더보기 →</a>
             </div>
             <div class="news-list">
@@ -796,7 +637,7 @@
 		  
   <!-- Footer -->
   <footer class="site-footer">
-    <span>© 2025 게이머스크롤</span>
+    <span>© 2026 게이머스크롤</span>
     <span class="footer-divider">|</span>
     <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
   </footer>
@@ -1319,11 +1160,11 @@
               location.href = '/games/' + game.slug + '/';
             } else {
               removeRecentSearch(game.slug);
-              location.href = '/search/';
+              location.href = '/games/';
             }
           } catch {
             removeRecentSearch(game.slug);
-            location.href = '/search/';
+            location.href = '/games/';
           }
         });
       });
@@ -1442,7 +1283,7 @@
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
-      window.location.href = '/search/?q=' + encodeURIComponent(query);
+      window.location.href = '/games/?q=' + encodeURIComponent(query);
     }
   }
 
@@ -1487,7 +1328,7 @@
 <script>
 (function() {
   // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
-  const navSections = ['trend', 'news', 'rankings', 'community', 'youtube', 'steam', 'upcoming', 'metacritic'];
+  const navSections = ['trend', 'games', 'rankings', 'news', 'youtube', 'steam', 'upcoming', 'metacritic'];
   const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
@@ -1640,6 +1481,34 @@
       }
       touchedElement = null;
       isTouchMoving = false;
+    }
+  }, { passive: true });
+})();
+</script>
+  
+<script>
+(function() {
+  if (window.innerWidth > 768) return;
+
+  let ticking = false;
+  const threshold = 50;
+
+  function updateSearchVisibility() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < threshold) {
+      document.body.classList.remove('search-hidden');
+    } else {
+      document.body.classList.add('search-hidden');
+    }
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateSearchVisibility);
+      ticking = true;
     }
   }, { passive: true });
 })();

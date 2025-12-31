@@ -94,11 +94,11 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
   
 </head>
-<body>
+<body class="page-youtube">
   
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-title">
+      <div class="header-title">
         <a href="/" style="text-decoration: none; color: inherit;">
           <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
           <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -119,7 +119,7 @@
             <rect x="642" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
           </svg>
         </a>
-      </h1>
+      </div>
     </div>
   </header>
   
@@ -128,7 +128,7 @@
       <a href="/" class="search-home-icon" aria-label="홈으로 이동">
         <img src="/favicon.svg" alt="" width="20" height="20">
       </a>
-      <input type="text" class="search-input" placeholder="게임 이름을 입력해주세요" autocomplete="off">
+      <input type="text" class="search-input" placeholder="게임 검색" autocomplete="off">
       <button class="search-btn" type="button" aria-label="검색">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
@@ -145,17 +145,17 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
         트렌드 리포트
       </a>
-      <a class="nav-item" href="/news">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-        주요 뉴스
+      <a class="nav-item" href="/games">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        게임 DB
       </a>
       <a class="nav-item" href="/rankings">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
         모바일 순위
       </a>
-      <a class="nav-item" href="/community">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
-        커뮤니티
+      <a class="nav-item" href="/news">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+        주요 뉴스
       </a>
       <a class="nav-item active" href="/youtube">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -178,11 +178,12 @@
   <main class="container">
     
     <section class="section active" id="youtube">
+      <h1 class="visually-hidden">게임 영상 순위</h1>
       <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only ">
     <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
   </div>
   <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
-    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block;width:100%;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins>
   </div>
       <div class="video-controls">
         <div class="tab-group" id="videoTab">
@@ -407,7 +408,7 @@
             <div class="youtube-info">
               <div class="youtube-title">홍구 : 2025년 마지막까지 선 넘네 사기맵놈들은...?</div>
               <div class="youtube-channel">발스타홍구</div>
-              <div class="youtube-views">조회수 82,659회</div>
+              <div class="youtube-views">조회수 82,541회</div>
             </div>
           </a>
         
@@ -527,7 +528,7 @@
             <div class="youtube-info">
               <div class="youtube-title">2년반이 걸렸습니다.</div>
               <div class="youtube-channel">콕끼리</div>
-              <div class="youtube-views">조회수 155,620회</div>
+              <div class="youtube-views">조회수 155,571회</div>
             </div>
           </a>
         
@@ -659,7 +660,7 @@
             <div class="youtube-info">
               <div class="youtube-title">베드락으로 4대1도 이길 수 있어?!</div>
               <div class="youtube-channel">로빈</div>
-              <div class="youtube-views">조회수 25,761회</div>
+              <div class="youtube-views">조회수 25,716회</div>
             </div>
           </a>
         
@@ -812,7 +813,7 @@
             <div class="youtube-info">
               <div class="youtube-title">풍월량 올해의게임  풍고티 </div>
               <div class="youtube-channel">풍월량</div>
-              <div class="youtube-views">시청자 20,525명</div>
+              <div class="youtube-views">시청자 20,643명</div>
             </div>
           </a>
         
@@ -825,7 +826,7 @@
             <div class="youtube-info">
               <div class="youtube-title">2025 마지막을 함께</div>
               <div class="youtube-channel">랄로</div>
-              <div class="youtube-views">시청자 13,941명</div>
+              <div class="youtube-views">시청자 13,940명</div>
             </div>
           </a>
         
@@ -838,7 +839,7 @@
             <div class="youtube-info">
               <div class="youtube-title">첫 힐링캠프 합방 엔더런 ㄹㅇ이가? ٩(●'▿'●)۶</div>
               <div class="youtube-channel">탬탬버린</div>
-              <div class="youtube-views">시청자 5,630명</div>
+              <div class="youtube-views">시청자 5,683명</div>
             </div>
           </a>
         
@@ -851,7 +852,7 @@
             <div class="youtube-info">
               <div class="youtube-title">골고라이언 가야지</div>
               <div class="youtube-channel">괴물쥐</div>
-              <div class="youtube-views">시청자 4,942명</div>
+              <div class="youtube-views">시청자 5,007명</div>
             </div>
           </a>
         
@@ -864,7 +865,7 @@
             <div class="youtube-info">
               <div class="youtube-title">올해 첫 룬키 ㅇㅅㅇ;;</div>
               <div class="youtube-channel">녹두로</div>
-              <div class="youtube-views">시청자 4,691명</div>
+              <div class="youtube-views">시청자 4,687명</div>
             </div>
           </a>
         
@@ -877,7 +878,7 @@
             <div class="youtube-info">
               <div class="youtube-title">( ܸ ⩌⩊⩌ ܸ )</div>
               <div class="youtube-channel">강지</div>
-              <div class="youtube-views">시청자 3,922명</div>
+              <div class="youtube-views">시청자 3,890명</div>
             </div>
           </a>
         
@@ -890,7 +891,7 @@
             <div class="youtube-info">
               <div class="youtube-title">룩삼 연말 영도트럭2</div>
               <div class="youtube-channel">룩삼</div>
-              <div class="youtube-views">시청자 3,990명</div>
+              <div class="youtube-views">시청자 3,942명</div>
             </div>
           </a>
         
@@ -903,7 +904,7 @@
             <div class="youtube-info">
               <div class="youtube-title">광고/ 26신년 니케 합방 w기션</div>
               <div class="youtube-channel">고뇨</div>
-              <div class="youtube-views">시청자 2,846명</div>
+              <div class="youtube-views">시청자 2,932명</div>
             </div>
           </a>
         
@@ -916,46 +917,46 @@
             <div class="youtube-info">
               <div class="youtube-title">[왈도쿤] 첫새해 기념 싱크롬</div>
               <div class="youtube-channel">왈도쿤</div>
-              <div class="youtube-views">시청자 2,710명</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/effe648202c8f7fba081c2f2aeea1979" target="_blank">
-            <div class="youtube-thumbnail">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26445174/live/16457122/record/48718838/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-rank ">10</span>
-              <span class="live-badge">LIVE</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">신년맞이 궁극의임페리얼마제스티 황제4슈리마 3배봉자코스</div>
-              <div class="youtube-channel">꼴랑이</div>
-              <div class="youtube-views">시청자 2,199명</div>
+              <div class="youtube-views">시청자 2,717명</div>
             </div>
           </a>
         
           <a class="youtube-card" href="https://chzzk.naver.com/live/1c231568d0b13de5703b3f6a5e86dc47" target="_blank">
             <div class="youtube-thumbnail">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26449187/live/16453215/record/48713646/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-rank ">11</span>
+              <span class="youtube-rank ">10</span>
               <span class="live-badge">LIVE</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">매긍94퍼 공포게임 아만다</div>
               <div class="youtube-channel">삼식</div>
-              <div class="youtube-views">시청자 2,561명</div>
+              <div class="youtube-views">시청자 2,541명</div>
             </div>
           </a>
         
           <a class="youtube-card" href="https://chzzk.naver.com/live/f39c3d74e33a81ab3080356b91bb8de5" target="_blank">
             <div class="youtube-thumbnail">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441915/live/16444449/record/48701347/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-rank ">12</span>
+              <span class="youtube-rank ">11</span>
               <span class="live-badge">LIVE</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">2026년 기룡왕 보주</div>
               <div class="youtube-channel">포셔</div>
-              <div class="youtube-views">시청자 2,264명</div>
+              <div class="youtube-views">시청자 2,296명</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/effe648202c8f7fba081c2f2aeea1979" target="_blank">
+            <div class="youtube-thumbnail">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26445174/live/16457122/record/48718838/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-rank ">12</span>
+              <span class="live-badge">LIVE</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">신년맞이 궁극의임페리얼마제스티 황제4슈리마 3배봉자코스</div>
+              <div class="youtube-channel">꼴랑이</div>
+              <div class="youtube-views">시청자 2,237명</div>
             </div>
           </a>
         
@@ -968,7 +969,7 @@
             <div class="youtube-info">
               <div class="youtube-title">발더스3 강풍 듀오 드디어 지옥 입성! (불)명예 난이도 몰살당하면 구독권 뿌리는 저주걸림</div>
               <div class="youtube-channel">강소연</div>
-              <div class="youtube-views">시청자 1,688명</div>
+              <div class="youtube-views">시청자 1,699명</div>
             </div>
           </a>
         
@@ -981,7 +982,7 @@
             <div class="youtube-info">
               <div class="youtube-title">94년생 최필립 최후의 미궁 끌어치기</div>
               <div class="youtube-channel">빅헤드</div>
-              <div class="youtube-views">시청자 1,553명</div>
+              <div class="youtube-views">시청자 1,556명</div>
             </div>
           </a>
         
@@ -994,7 +995,7 @@
             <div class="youtube-info">
               <div class="youtube-title">2025년 마무리는 역시 힐링캠프 엔더런 목숨 5개 새로운 세상 2번째 (남은 목숨 : 2개)</div>
               <div class="youtube-channel">이춘향</div>
-              <div class="youtube-views">시청자 1,517명</div>
+              <div class="youtube-views">시청자 1,532명</div>
             </div>
           </a>
         
@@ -1007,7 +1008,7 @@
             <div class="youtube-info">
               <div class="youtube-title">오케이 7연순방갈게요</div>
               <div class="youtube-channel">두니주니</div>
-              <div class="youtube-views">시청자 1,034명</div>
+              <div class="youtube-views">시청자 1,055명</div>
             </div>
           </a>
         
@@ -1020,7 +1021,7 @@
             <div class="youtube-info">
               <div class="youtube-title">올해의 최고의 게임 발더게3 진짜 지옥이다! (몰살 시 구독권)</div>
               <div class="youtube-channel">소풍왔니</div>
-              <div class="youtube-views">시청자 1,137명</div>
+              <div class="youtube-views">시청자 1,143명</div>
             </div>
           </a>
         
@@ -1033,20 +1034,7 @@
             <div class="youtube-info">
               <div class="youtube-title">림버스 컴퍼니 9장 상~ 료슈 드걔쟤 🔮</div>
               <div class="youtube-channel">소니쇼</div>
-              <div class="youtube-views">시청자 977명</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/6fccf2c08f2e9f801fc3152a8923e1c2" target="_blank">
-            <div class="youtube-thumbnail">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26853333/live/16458816/record/48720818/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-rank ">19</span>
-              <span class="live-badge">LIVE</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">새해맞이 어나더레드 제작자님의 새로운 신작 올라라 포켓몬 타워</div>
-              <div class="youtube-channel">눈파티입니다</div>
-              <div class="youtube-views">시청자 1,111명</div>
+              <div class="youtube-views">시청자 998명</div>
             </div>
           </a>
         
@@ -1059,7 +1047,7 @@
 		  
   <!-- Footer -->
   <footer class="site-footer">
-    <span>© 2025 게이머스크롤</span>
+    <span>© 2026 게이머스크롤</span>
     <span class="footer-divider">|</span>
     <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
   </footer>
@@ -1569,11 +1557,11 @@
               location.href = '/games/' + game.slug + '/';
             } else {
               removeRecentSearch(game.slug);
-              location.href = '/search/';
+              location.href = '/games/';
             }
           } catch {
             removeRecentSearch(game.slug);
-            location.href = '/search/';
+            location.href = '/games/';
           }
         });
       });
@@ -1692,7 +1680,7 @@
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
-      window.location.href = '/search/?q=' + encodeURIComponent(query);
+      window.location.href = '/games/?q=' + encodeURIComponent(query);
     }
   }
 
@@ -1737,7 +1725,7 @@
 <script>
 (function() {
   // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
-  const navSections = ['trend', 'news', 'rankings', 'community', 'youtube', 'steam', 'upcoming', 'metacritic'];
+  const navSections = ['trend', 'games', 'rankings', 'news', 'youtube', 'steam', 'upcoming', 'metacritic'];
   const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
@@ -1890,6 +1878,34 @@
       }
       touchedElement = null;
       isTouchMoving = false;
+    }
+  }, { passive: true });
+})();
+</script>
+  
+<script>
+(function() {
+  if (window.innerWidth > 768) return;
+
+  let ticking = false;
+  const threshold = 50;
+
+  function updateSearchVisibility() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < threshold) {
+      document.body.classList.remove('search-hidden');
+    } else {
+      document.body.classList.add('search-hidden');
+    }
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateSearchVisibility);
+      ticking = true;
     }
   }, { passive: true });
 })();
