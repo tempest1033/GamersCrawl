@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "net.gameduo.gv",
+        "android": "com.webzen.muidle.google",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -5549,8 +5549,8 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecrafttrialpe",
-        "ios": "479516143"
+        "android": "com.mojang.minecraftpe",
+        "ios": 479516143
       },
       "aliases": [
         "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
