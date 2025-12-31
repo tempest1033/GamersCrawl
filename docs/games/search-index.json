@@ -928,7 +928,7 @@
   },
   {
     "name": "건틀렛: 방치형 액션 RPG",
-    "slug": "net-gameduo-gv",
+    "slug": "com-webzen-muidle-google",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [
       "캣 히어로 : 방치형 RPG",
@@ -1137,7 +1137,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2644,7 +2644,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3922,7 +3922,7 @@
       "android"
     ],
     "developer": "Ho San Won",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4347,7 +4347,7 @@
       "android"
     ],
     "developer": "Play With Us Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5339,7 +5339,7 @@
       "ios"
     ],
     "developer": "Solaird Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5579,7 +5579,7 @@
       "android"
     ],
     "developer": "JUMBO GAMES Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5619,7 +5619,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5633,7 +5633,7 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5683,7 +5683,7 @@
   },
   {
     "name": "Minecraft 체험판",
-    "slug": "com-mojang-minecrafttrialpe",
+    "slug": "com-mojang-minecraftpe",
     "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
     "aliases": [
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
@@ -5794,7 +5794,7 @@
       "ios"
     ],
     "developer": "ABI GAME",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5888,7 +5888,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5957,7 +5957,7 @@
       "ios"
     ],
     "developer": "Fastone Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7320,7 +7320,7 @@
       "ios"
     ],
     "developer": "Devsisters Corporation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7374,7 +7374,7 @@
       "ios"
     ],
     "developer": "Qookka Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7760,7 +7760,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8363,7 +8363,7 @@
       "ios"
     ],
     "developer": "GALA Sports",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8445,7 +8445,7 @@
       "ios"
     ],
     "developer": "TapNation",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8557,7 +8557,7 @@
       "ios"
     ],
     "developer": "부산만동게임즈",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9848,7 +9848,7 @@
       "android"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9922,7 +9922,7 @@
       "android"
     ],
     "developer": "DongUk Kim",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11758,7 +11758,7 @@
       "ios"
     ],
     "developer": "EYEWIND LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11955,7 +11955,7 @@
       "ios"
     ],
     "developer": "Lahana Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
