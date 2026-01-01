@@ -2952,7 +2952,10 @@
     }
 
     /* 페이지 래퍼 - 광고 패딩만 사용 (홈페이지 제외) */
-    .page-wrapper {
+    .page-wrapper,
+    .insight-page-container,
+    .games-hub-page,
+    .game-page {
       padding-top: 0;
     }
 
@@ -2970,13 +2973,13 @@
       align-items: center !important;
     }
 
-    /* 개별 페이지 컨트롤 - 상하 마진 추가 */
+    /* 개별 페이지 컨트롤 - 하단 마진만 (상단은 광고 패딩 사용) */
     .page-wrapper .news-controls,
     .page-wrapper .rankings-controls,
     .page-wrapper .steam-controls,
     .page-wrapper .video-controls,
     .page-wrapper .upcoming-controls {
-      margin: var(--space-sm) 0;
+      margin-bottom: var(--space-sm);
     }
 
     /* 랭킹, 스팀, 영상, 출시작품: 항상 표시 */
@@ -7719,7 +7722,6 @@
   box-shadow: var(--shadow);
   overflow: hidden;
   border: 1px solid var(--border);
-  margin-top: 20px;
 }
 
 .metacritic-header {
