@@ -1001,7 +1001,7 @@
       "android"
     ],
     "developer": "Tianjin Heyuan Network Technology Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -1138,7 +1138,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2388,7 +2388,7 @@
       "ios"
     ],
     "developer": "Kakao Games Corp.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2567,7 +2567,7 @@
       "ios"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2644,7 +2644,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2801,7 +2801,7 @@
       "ios"
     ],
     "developer": "MOONTON",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2848,7 +2848,7 @@
       "ios"
     ],
     "developer": "Wemade Play Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3217,7 +3217,7 @@
       "ios"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3922,7 +3922,7 @@
       "android"
     ],
     "developer": "Ho San Won",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4032,7 +4032,7 @@
       "android"
     ],
     "developer": "GOODROID,Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4223,7 +4223,7 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4284,7 +4284,7 @@
       "android"
     ],
     "developer": "Archosaur Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4298,7 +4298,7 @@
       "android"
     ],
     "developer": "JIEUNK",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4522,7 +4522,7 @@
       "ios"
     ],
     "developer": "The Pokémon Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5177,7 +5177,7 @@
       "ios"
     ],
     "developer": "Bobodoo Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5749,7 +5749,7 @@
       "ios"
     ],
     "developer": "HM Games Pty Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5957,7 +5957,7 @@
       "ios"
     ],
     "developer": "Fastone Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6089,7 +6089,7 @@
       "steam"
     ],
     "developer": "Everstone Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": true,
     "hasData": true
   },
@@ -7333,7 +7333,7 @@
       "android"
     ],
     "developer": "JOYNEX GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7374,7 +7374,7 @@
       "ios"
     ],
     "developer": "Qookka Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7402,7 +7402,7 @@
       "android"
     ],
     "developer": "WILD CALY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7760,7 +7760,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8363,7 +8363,7 @@
       "ios"
     ],
     "developer": "GALA Sports",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9139,7 +9139,7 @@
       "android"
     ],
     "developer": "Jammsworks Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9316,7 +9316,7 @@
       "ios"
     ],
     "developer": "FARLIGHT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9508,7 +9508,7 @@
       "android"
     ],
     "developer": "D Link",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9535,7 +9535,7 @@
       "android"
     ],
     "developer": "WONDER GROUP",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9710,7 +9710,7 @@
       "android"
     ],
     "developer": "LINE Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9834,7 +9834,7 @@
       "android"
     ],
     "developer": "Highbrow",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9922,7 +9922,7 @@
       "android"
     ],
     "developer": "DongUk Kim",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11422,7 +11422,7 @@
       "ios"
     ],
     "developer": "Hong Kong Spiral Rising Technology Co., Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11436,7 +11436,7 @@
       "ios"
     ],
     "developer": "IGG.COM",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11519,7 +11519,7 @@
       "android"
     ],
     "developer": "Stormborn",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11876,7 +11876,7 @@
       "android"
     ],
     "developer": "FunWave Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11955,7 +11955,7 @@
       "ios"
     ],
     "developer": "Lahana Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -12025,7 +12025,7 @@
       "android"
     ],
     "developer": "Natris",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
