@@ -329,7 +329,23 @@
 		        if (!slot) return;
 		        const status = el.getAttribute('data-ad-status');
 		        if (status === 'unfilled') slot.classList.add('ad-slot--unfilled');
-		        else if (status === 'filled' || hasRenderedAd(el)) slot.classList.remove('ad-slot--unfilled');
+		        else if (status === 'filled' || hasRenderedAd(el)) {
+		          slot.classList.remove('ad-slot--unfilled');
+		          // 모바일 광고 높이 자동 조절
+		          adjustAdSlotHeight(slot, el);
+		        }
+		      }
+
+		      function adjustAdSlotHeight(slot, ins) {
+		        if (!slot.classList.contains('mobile-only')) return;
+		        const iframe = ins.querySelector('iframe');
+		        if (iframe) {
+		          const h = iframe.offsetHeight || iframe.clientHeight;
+		          if (h > 0 && h < 250) {
+		            slot.style.maxHeight = h + 'px';
+		            slot.style.overflow = 'hidden';
+		          }
+		        }
 		      }
 
 		      function syncAdSlotVisibility() {
