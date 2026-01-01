@@ -943,7 +943,8 @@
       "다크타워:전략 배틀 RPG",
       "소울 헌터 키우기 : 방치형 RPG",
       "버서커 키우기: 방치형 RPG",
-      "버서커 키우기: 방치형 RPG - 신규서버 오픈"
+      "버서커 키우기: 방치형 RPG - 신규서버 오픈",
+      "삼국지 올스타 : 방치형 RPG"
     ],
     "platforms": [
       "ios",
@@ -1806,7 +1807,6 @@
     "aliases": [
       "트릭컬",
       "트릭컬리바이브",
-      "트릭컬 리바이브",
       "Trickcal Revive",
       "トリッカル"
     ],
@@ -12011,6 +12011,64 @@
       "ios"
     ],
     "developer": "Arfa IT",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "아이러브커피 키우기",
+    "slug": "아이러브커피-키우기",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/0d/3f/c90d3fcf-0daa-fdcc-a9a3-94a07fefc74a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Natris",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "용구탄생의비밀",
+    "slug": "용구탄생의비밀",
+    "icon": "https://play-lh.googleusercontent.com/O1DMR3M_XqPCTP5N_Mqanc7JWXntSLPvmNaJqvRsz1WfAj0i4N2m1h6W6vNhx1uWGYA",
+    "aliases": [
+      "용구 탄생의 비밀"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "GT Games Korea",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "XP Hero (XP 히어로)",
+    "slug": "xp-hero-xp-히어로",
+    "icon": "https://play-lh.googleusercontent.com/XOPOfmlptKTGdffWIxYNC43p68aeCDkraqJADHdWZL4u3h313q_w2e0jRY3ym0X9yIqpDiJiiCXW2-cgp4ZKQA",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Supercent, Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Associations - Colorwood 게임",
+    "slug": "associations-colorwood-게임",
+    "icon": "https://play-lh.googleusercontent.com/bwNj3Phx8c5VWiXvCYMMcMs3ULNFqockg6BTcirDGbnUig0gSitTidoDQlOzSbl3Zbrd6Vc9Wj2TB9LpItR3Sw",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Burny Games",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true

@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -951,7 +951,8 @@
         "다크타워:전략 배틀 RPG",
         "소울 헌터 키우기 : 방치형 RPG",
         "버서커 키우기: 방치형 RPG",
-        "버서커 키우기: 방치형 RPG - 신규서버 오픈"
+        "버서커 키우기: 방치형 RPG - 신규서버 오픈",
+        "삼국지 올스타 : 방치형 RPG"
       ],
       "developer": "Game Duo Co.,Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -1804,21 +1805,20 @@
     "트릭컬 리바이브": {
       "appIds": {
         "android": "com.epidgames.trickcalrevive",
-        "ios": 6443824730
+        "ios": "6443824730"
       },
+      "aliases": [
+        "트릭컬",
+        "트릭컬리바이브",
+        "Trickcal Revive",
+        "トリッカル"
+      ],
       "developer": "EPIDGames",
       "icon": "https://play-lh.googleusercontent.com/OCiuBv70Dnuw9wcGet3EtTUF2nEkS1vhYYkvOahe9-MmKg6EhxGkf-9ZVxnWIJXflQSmfOIjTcaSbwJSJyuzHA",
       "slug": "트릭컬-리바이브",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "트릭컬",
-        "트릭컬리바이브",
-        "트릭컬 리바이브",
-        "Trickcal Revive",
-        "トリッカル"
       ]
     },
     "Limbus Company": {
@@ -5287,8 +5287,9 @@
     "캣점프": {
       "appIds": {
         "android": "com.seeplay.catjump",
-        "ios": 1455441206
+        "ios": "1455441206"
       },
+      "aliases": [],
       "developer": "Seeplay Inc.",
       "icon": "https://play-lh.googleusercontent.com/PhHx-WaS8QbMbsipZBU_C2GRKvAZYEBZYuVN0atzyqB-axqedEouITb7yDkQ7CEsZg",
       "slug": "캣점프",
@@ -7078,7 +7079,7 @@
     "쿠키런: 모험의 탑": {
       "appIds": {
         "android": "com.devsisters.cba",
-        "ios": 6449445178
+        "ios": "6449445178"
       },
       "aliases": [],
       "developer": "Devsisters Corporation",
@@ -8068,7 +8069,7 @@
     "Total Football - 25/26 시즌": {
       "appIds": {
         "android": "com.galasports.totalfootball.kr",
-        "ios": 6457256716
+        "ios": "6457256716"
       },
       "aliases": [],
       "developer": "GALA Sports",
@@ -11563,8 +11564,66 @@
         "android",
         "ios"
       ]
+    },
+    "아이러브커피 키우기": {
+      "appIds": {
+        "ios": "6748330491",
+        "android": "com.natris.ilcg"
+      },
+      "aliases": [],
+      "developer": "Natris",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/0d/3f/c90d3fcf-0daa-fdcc-a9a3-94a07fefc74a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "아이러브커피-키우기",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "용구탄생의비밀": {
+      "appIds": {
+        "android": "com.iug.yonggu",
+        "ios": 1581565882
+      },
+      "aliases": [
+        "용구 탄생의 비밀"
+      ],
+      "developer": "GT Games Korea",
+      "icon": "https://play-lh.googleusercontent.com/O1DMR3M_XqPCTP5N_Mqanc7JWXntSLPvmNaJqvRsz1WfAj0i4N2m1h6W6vNhx1uWGYA",
+      "slug": "용구탄생의비밀",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "XP Hero (XP 히어로)": {
+      "appIds": {
+        "android": "io.supercent.weaponrpg",
+        "ios": 6740618570
+      },
+      "aliases": [],
+      "developer": "Supercent, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/XOPOfmlptKTGdffWIxYNC43p68aeCDkraqJADHdWZL4u3h313q_w2e0jRY3ym0X9yIqpDiJiiCXW2-cgp4ZKQA",
+      "slug": "xp-hero-xp-히어로",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Associations - Colorwood 게임": {
+      "appIds": {
+        "android": "games.burny.associations.word.puzzle",
+        "ios": 6749696890
+      },
+      "aliases": [],
+      "developer": "Burny Games",
+      "icon": "https://play-lh.googleusercontent.com/bwNj3Phx8c5VWiXvCYMMcMs3ULNFqockg6BTcirDGbnUig0gSitTidoDQlOzSbl3Zbrd6Vc9Wj2TB9LpItR3Sw",
+      "slug": "associations-colorwood-게임",
+      "platforms": [
+        "android",
+        "ios"
+      ]
     }
   },
-  "lastUpdated": "2025-12-31",
-  "totalGames": 802
+  "lastUpdated": "2026-01-01",
+  "totalGames": 806
 }

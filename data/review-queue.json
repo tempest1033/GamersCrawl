@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -883,6 +883,206 @@
         }
       ],
       "addedAt": "2025-12-31T00:34:49.438Z"
+    },
+    {
+      "title": "쿠키런: 모험의 탑",
+      "status": "matched",
+      "appIds": {
+        "android": "com.devsisters.cba",
+        "ios": "6449445178"
+      },
+      "developer": "Devsisters Corporation",
+      "icon": "https://play-lh.googleusercontent.com/2rUa7BlTumKdfztTJhHvy0XzheDbbf3RCGMmtt118S1HPsLxFywrtory1FTJ-qaBrGM",
+      "searchResults": [
+        {
+          "title": "쿠키런: 모험의 탑",
+          "appId": "com.devsisters.cba"
+        },
+        {
+          "title": "쿠키런: 킹덤",
+          "appId": "com.devsisters.ck"
+        },
+        {
+          "title": "쿠키런",
+          "appId": "com.devsisters.CookieRunForKakao"
+        }
+      ],
+      "addedAt": "2026-01-01T00:54:55.537Z"
+    },
+    {
+      "title": "트릭컬 리바이브",
+      "status": "matched",
+      "appIds": {
+        "android": "com.epidgames.trickcalrevive",
+        "ios": "6443824730"
+      },
+      "developer": "EPIDGames",
+      "icon": "https://play-lh.googleusercontent.com/OCiuBv70Dnuw9wcGet3EtTUF2nEkS1vhYYkvOahe9-MmKg6EhxGkf-9ZVxnWIJXflQSmfOIjTcaSbwJSJyuzHA",
+      "searchResults": [
+        {
+          "title": "트릭컬 리바이브",
+          "appId": "com.epidgames.trickcalrevive"
+        },
+        {
+          "title": "Trickcal:Chibi Go",
+          "appId": "com.bilibili.trickcal"
+        },
+        {
+          "title": "타르타르전설: 픽셀 로그라이크 RPG",
+          "appId": "com.byabyak.Tartar"
+        }
+      ],
+      "addedAt": "2026-01-01T00:54:58.785Z"
+    },
+    {
+      "title": "아이러브커피 키우기",
+      "status": "matched",
+      "appIds": {
+        "ios": "6748330491",
+        "android": "com.natris.ilcg"
+      },
+      "developer": "Natris",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/0d/3f/c90d3fcf-0daa-fdcc-a9a3-94a07fefc74a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "아이러브커피 키우기",
+          "appId": "com.natris.ilcg"
+        },
+        {
+          "title": "아이러브커피",
+          "appId": "com.patistudio.milc4kakao"
+        },
+        {
+          "title": "아이러브파스타",
+          "appId": "com.patigames.ilovepasta4kakao"
+        }
+      ],
+      "addedAt": "2026-01-01T00:55:01.436Z"
+    },
+    {
+      "title": "Total Football - 25/26 시즌",
+      "status": "matched",
+      "appIds": {
+        "android": "com.galasports.totalfootball.kr",
+        "ios": "6457256716"
+      },
+      "developer": "GALA Sports",
+      "icon": "https://play-lh.googleusercontent.com/mCwa1MZLN9aFF_7bZx22BMZO34EKMW3ZcL4BkPuEfGp07hGkY4XwaWfwAdgRP0_EZ7gJ9M3ESGosAZOhhsxr8g8",
+      "searchResults": [
+        {
+          "title": "Total Football - 25/26 시즌",
+          "appId": "com.galasports.totalfootball.kr"
+        },
+        {
+          "title": "Total Football - 25/26シーズン",
+          "appId": "com.galasports.totalfootball.jp"
+        },
+        {
+          "title": "Total Football",
+          "appId": "com.galasports.totalfootball.global"
+        }
+      ],
+      "addedAt": "2026-01-01T00:55:03.160Z"
+    },
+    {
+      "title": "캣점프",
+      "status": "matched",
+      "appIds": {
+        "android": "com.seeplay.catjump",
+        "ios": "1455441206"
+      },
+      "developer": "Seeplay Inc.",
+      "icon": "https://play-lh.googleusercontent.com/PhHx-WaS8QbMbsipZBU_C2GRKvAZYEBZYuVN0atzyqB-axqedEouITb7yDkQ7CEsZg",
+      "searchResults": [
+        {
+          "title": "캣점프",
+          "appId": "com.seeplay.catjump"
+        },
+        {
+          "title": "점핑캣: KPOP 음악 게임, 모든 노래",
+          "appId": "magic.brainrot.music.dream.clash"
+        },
+        {
+          "title": "길건너 친구들",
+          "appId": "com.yodo1.crossyroad"
+        }
+      ],
+      "addedAt": "2026-01-01T00:55:31.072Z"
+    },
+    {
+      "title": "용구탄생의비밀",
+      "status": "matched",
+      "appIds": {
+        "android": "com.iug.yonggu",
+        "ios": 1581565882
+      },
+      "developer": "GT Games Korea",
+      "icon": "https://play-lh.googleusercontent.com/O1DMR3M_XqPCTP5N_Mqanc7JWXntSLPvmNaJqvRsz1WfAj0i4N2m1h6W6vNhx1uWGYA",
+      "searchResults": [
+        {
+          "title": "용구탄생의비밀",
+          "appId": 1581565882
+        },
+        {
+          "title": "드랍더넘버 - 넘버매치",
+          "appId": 1663643678
+        },
+        {
+          "title": "블록퍼즐 - 진화된 블록 퍼즐의 전설",
+          "appId": 1529984287
+        }
+      ],
+      "addedAt": "2026-01-01T00:55:31.609Z"
+    },
+    {
+      "title": "XP Hero (XP 히어로)",
+      "status": "matched",
+      "appIds": {
+        "android": "io.supercent.weaponrpg",
+        "ios": 6740618570
+      },
+      "developer": "Supercent, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/XOPOfmlptKTGdffWIxYNC43p68aeCDkraqJADHdWZL4u3h313q_w2e0jRY3ym0X9yIqpDiJiiCXW2-cgp4ZKQA",
+      "searchResults": [
+        {
+          "title": "XP Hero (XP 히어로)",
+          "appId": 6740618570
+        },
+        {
+          "title": "Eternal Hero: 액션 RPG",
+          "appId": 6503089848
+        },
+        {
+          "title": "G-HOX - HEROES OBTAIN XP",
+          "appId": 6742321938
+        }
+      ],
+      "addedAt": "2026-01-01T00:55:45.068Z"
+    },
+    {
+      "title": "Associations - Colorwood 게임",
+      "status": "matched",
+      "appIds": {
+        "android": "games.burny.associations.word.puzzle",
+        "ios": 6749696890
+      },
+      "developer": "Burny Games",
+      "icon": "https://play-lh.googleusercontent.com/bwNj3Phx8c5VWiXvCYMMcMs3ULNFqockg6BTcirDGbnUig0gSitTidoDQlOzSbl3Zbrd6Vc9Wj2TB9LpItR3Sw",
+      "searchResults": [
+        {
+          "title": "Associations - Colorwood 게임",
+          "appId": 6749696890
+        },
+        {
+          "title": "단어 합병 - 분류 퍼즐게임",
+          "appId": 6751377873
+        },
+        {
+          "title": "연관 찾기: 단어 게임",
+          "appId": 6754324503
+        }
+      ],
+      "addedAt": "2026-01-01T00:55:45.849Z"
     }
   ],
   "approved": [
