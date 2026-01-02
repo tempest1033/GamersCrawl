@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -2583,19 +2583,19 @@
     "에픽세븐": {
       "appIds": {
         "android": "com.stove.epic7.google",
-        "ios": 1322399438
+        "ios": "1322399438"
       },
+      "aliases": [
+        "에픽7",
+        "Epic Seven",
+        "에픽 세븐"
+      ],
       "developer": "Smilegate Holdings, Inc",
       "icon": "https://play-lh.googleusercontent.com/siMf4o-c3G8qXYjviTBYmVpUihRTOEqmiWC9BEdkDqPIdciir3_2pqFg8cvZekv1_y_L3sl1qtA6b_E6mwJt",
       "slug": "에픽세븐",
       "platforms": [
         "android",
         "ios"
-      ],
-      "aliases": [
-        "에픽7",
-        "Epic Seven",
-        "에픽 세븐"
       ]
     },
     "Apex Girl": {
@@ -11453,14 +11453,18 @@
     },
     "Shadowverse: Worlds Beyond": {
       "appIds": {
-        "steam": "2584990"
+        "steam": "2584990",
+        "android": "jp.co.cygames.ShadowverseWorldsBeyond",
+        "ios": 6472019540
       },
       "aliases": [],
       "developer": "Cygames, Inc.",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606",
       "slug": "shadowverse-worlds-beyond",
       "platforms": [
-        "steam"
+        "steam",
+        "android",
+        "ios"
       ]
     },
     "Identity V -제5인격": {
@@ -11622,8 +11626,90 @@
         "android",
         "ios"
       ]
+    },
+    "THE 라그나로크": {
+      "appIds": {
+        "android": "com.gravity.tr.google",
+        "ios": 6504503612
+      },
+      "aliases": [],
+      "developer": "GRAVITY Co., Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/XVg36jSw9Rbq9lfdyHmJgNSDo-LNiMXg93Gh7jCdbiwt7yzZBKcGiQrPP1FUG1BqiGU",
+      "slug": "the-라그나로크",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "언더길드: 오펜스": {
+      "appIds": {
+        "ios": "6752882356",
+        "android": "com.FreeDust.UnderDarkOffense"
+      },
+      "aliases": [],
+      "developer": "SeungHo Chung",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/4b/dd/d84bddf9-80fa-43f5-1cd0-905d184a7d66/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "언더길드-오펜스",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "웨스트 게임 II": {
+      "appIds": {
+        "ios": "6751625353",
+        "android": "leyi.cowboyclash3"
+      },
+      "aliases": [],
+      "developer": "LEXIANGCO.,LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/a8/fc/57a8fc3a-6b78-e31b-ec6e-4c5798fbcea7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "웨스트-게임-ii",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "사냥 전설": {
+      "appIds": {
+        "android": "com.kr.hxcsgp"
+      },
+      "aliases": [],
+      "developer": "tagertilt",
+      "icon": "https://play-lh.googleusercontent.com/HWobuiTZa4L5irzyQ-tAhrfwK2jWUIdZgNrtBqMdHJDoclm2y64kMnno5c1_cjToT5wBE81o4KwLg5en0VCfOg",
+      "slug": "사냥-전설",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Paper Fold : 논리 게임": {
+      "appIds": {
+        "android": "com.game.foldpuzzle",
+        "ios": 1558177980
+      },
+      "aliases": [],
+      "developer": "CASUAL AZUR GAMES",
+      "icon": "https://play-lh.googleusercontent.com/btXhKSa4JsIiEuT0z5ouy_D_ceFlTlxbf-gTc1X6XYsqqYlYBsTYex_Os28VpUfoSiF5",
+      "slug": "paper-fold-논리-게임",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Mob Control": {
+      "appIds": {
+        "android": "com.vincentb.MobControl",
+        "ios": 1562817072
+      },
+      "aliases": [],
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
+      "slug": "mob-control",
+      "platforms": [
+        "android",
+        "ios"
+      ]
     }
   },
-  "lastUpdated": "2026-01-01",
-  "totalGames": 806
+  "lastUpdated": "2026-01-02",
+  "totalGames": 812
 }

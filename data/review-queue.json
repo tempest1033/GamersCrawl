@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -1083,6 +1083,202 @@
         }
       ],
       "addedAt": "2026-01-01T00:55:45.849Z"
+    },
+    {
+      "title": "에픽세븐",
+      "status": "matched",
+      "appIds": {
+        "android": "com.stove.epic7.google",
+        "ios": "1322399438"
+      },
+      "developer": "Smilegate Holdings, Inc",
+      "icon": "https://play-lh.googleusercontent.com/siMf4o-c3G8qXYjviTBYmVpUihRTOEqmiWC9BEdkDqPIdciir3_2pqFg8cvZekv1_y_L3sl1qtA6b_E6mwJt",
+      "searchResults": [
+        {
+          "title": "에픽세븐",
+          "appId": "com.stove.epic7.google"
+        },
+        {
+          "title": "세븐나이츠 리버스",
+          "appId": "com.netmarble.tskgb"
+        },
+        {
+          "title": "Epic Summoners",
+          "appId": "com.feelingtouch.idl"
+        }
+      ],
+      "addedAt": "2026-01-02T00:48:45.794Z"
+    },
+    {
+      "title": "Shadowverse: Worlds Beyond",
+      "status": "matched",
+      "appIds": {
+        "steam": "2584990",
+        "android": "jp.co.cygames.ShadowverseWorldsBeyond",
+        "ios": 6472019540
+      },
+      "developer": "Cygames, Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606",
+      "searchResults": [
+        {
+          "title": "Shadowverse: Worlds Beyond",
+          "appId": 6472019540
+        },
+        {
+          "title": "섀도우버스(Shadowverse)",
+          "appId": 1091512762
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:06.613Z"
+    },
+    {
+      "title": "THE 라그나로크",
+      "status": "matched",
+      "appIds": {
+        "android": "com.gravity.tr.google",
+        "ios": 6504503612
+      },
+      "developer": "GRAVITY Co., Ltd.",
+      "icon": "https://play-lh.googleusercontent.com/XVg36jSw9Rbq9lfdyHmJgNSDo-LNiMXg93Gh7jCdbiwt7yzZBKcGiQrPP1FUG1BqiGU",
+      "searchResults": [
+        {
+          "title": "THE 라그나로크",
+          "appId": 6504503612
+        },
+        {
+          "title": "라그나로크 : Back to Glory",
+          "appId": 6740310216
+        },
+        {
+          "title": "라그나로크X : Next Generation",
+          "appId": 1628711346
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:08.329Z"
+    },
+    {
+      "title": "언더길드: 오펜스",
+      "status": "matched",
+      "appIds": {
+        "ios": "6752882356",
+        "android": "com.FreeDust.UnderDarkOffense"
+      },
+      "developer": "SeungHo Chung",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/4b/dd/d84bddf9-80fa-43f5-1cd0-905d184a7d66/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "언더길드: 오펜스",
+          "appId": "com.FreeDust.UnderDarkOffense"
+        },
+        {
+          "title": "언더다크:디펜스",
+          "appId": "com.FreeDust.UnderDark"
+        },
+        {
+          "title": "콩콩던전",
+          "appId": "com.game.kingrush"
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:11.876Z"
+    },
+    {
+      "title": "웨스트 게임 II",
+      "status": "matched",
+      "appIds": {
+        "ios": "6751625353",
+        "android": "leyi.cowboyclash3"
+      },
+      "developer": "LEXIANGCO.,LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/a8/fc/57a8fc3a-6b78-e31b-ec6e-4c5798fbcea7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "웨스트 게임 II",
+          "appId": "leyi.cowboyclash3"
+        },
+        {
+          "title": "오징어 게임: 모바일 서바이벌",
+          "appId": "com.netflix.NGP.ProjectKraken"
+        },
+        {
+          "title": "웨스트 게임",
+          "appId": "leyi.westgamekr"
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:15.673Z"
+    },
+    {
+      "title": "사냥 전설",
+      "status": "single",
+      "appIds": {
+        "android": "com.kr.hxcsgp"
+      },
+      "developer": "tagertilt",
+      "icon": "https://play-lh.googleusercontent.com/HWobuiTZa4L5irzyQ-tAhrfwK2jWUIdZgNrtBqMdHJDoclm2y64kMnno5c1_cjToT5wBE81o4KwLg5en0VCfOg",
+      "searchResults": [
+        {
+          "title": "컴뱃 퀘스트・궁수의전설・던전 몬스타즈・에픽 로그라이크",
+          "appId": 1558423382
+        },
+        {
+          "title": "미르의 전설:승자위왕-1주년",
+          "appId": 6476600692
+        },
+        {
+          "title": "Monster Hunter Now",
+          "appId": 6445906110
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:19.861Z"
+    },
+    {
+      "title": "Paper Fold : 논리 게임",
+      "status": "matched",
+      "appIds": {
+        "android": "com.game.foldpuzzle",
+        "ios": 1558177980
+      },
+      "developer": "CASUAL AZUR GAMES",
+      "icon": "https://play-lh.googleusercontent.com/btXhKSa4JsIiEuT0z5ouy_D_ceFlTlxbf-gTc1X6XYsqqYlYBsTYex_Os28VpUfoSiF5",
+      "searchResults": [
+        {
+          "title": "Paper Fold : 논리 게임",
+          "appId": 1558177980
+        },
+        {
+          "title": "Unfoldit – Paper Puzzle Game",
+          "appId": 1248922247
+        },
+        {
+          "title": "Origami Fold: Paper Puzzle 3D",
+          "appId": 6747361838
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:30.271Z"
+    },
+    {
+      "title": "Mob Control",
+      "status": "matched",
+      "appIds": {
+        "android": "com.vincentb.MobControl",
+        "ios": 1562817072
+      },
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
+      "searchResults": [
+        {
+          "title": "Mob Control",
+          "appId": 1562817072
+        },
+        {
+          "title": "탑 워",
+          "appId": 1479198816
+        },
+        {
+          "title": "에보니 - 왕의 귀환",
+          "appId": 1098157959
+        }
+      ],
+      "addedAt": "2026-01-02T00:49:31.271Z"
     }
   ],
   "approved": [
