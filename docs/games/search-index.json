@@ -2347,7 +2347,7 @@
       "ios"
     ],
     "developer": "Blizzard Entertainment, Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2918,7 +2918,7 @@
       "ios"
     ],
     "developer": "SPGAME",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3122,7 +3122,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3217,7 +3217,7 @@
       "ios"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3311,7 +3311,7 @@
       "ios"
     ],
     "developer": "LING CHAI (HONG KONG) LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4032,7 +4032,7 @@
       "android"
     ],
     "developer": "GOODROID,Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4237,7 +4237,7 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5023,7 +5023,7 @@
       "ios"
     ],
     "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5093,7 +5093,7 @@
       "ios"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5177,7 +5177,7 @@
       "ios"
     ],
     "developer": "Bobodoo Game",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5749,7 +5749,7 @@
       "ios"
     ],
     "developer": "HM Games Pty Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6823,7 +6823,7 @@
       "android"
     ],
     "developer": "Starry Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": true,
     "hasData": true
   },
@@ -7264,7 +7264,7 @@
       "ios"
     ],
     "developer": "HaoPlay Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7333,7 +7333,7 @@
       "android"
     ],
     "developer": "JOYNEX GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7573,7 +7573,7 @@
       "ios"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7687,7 +7687,7 @@
       "ios"
     ],
     "developer": "VisionStudio(HK)",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7760,7 +7760,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8557,7 +8557,7 @@
       "ios"
     ],
     "developer": "부산만동게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8628,7 +8628,7 @@
       "android"
     ],
     "developer": "AppteenPlanet Co.,Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8697,7 +8697,7 @@
       "steam"
     ],
     "developer": "NEXON Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": true,
     "hasData": true
   },
@@ -8741,7 +8741,7 @@
       "ios"
     ],
     "developer": "racoonDigi",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8826,7 +8826,7 @@
       "android"
     ],
     "developer": "Mindful Daily Puzzles",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8839,7 +8839,7 @@
       "android"
     ],
     "developer": "Brainteaser Puzzle Game Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9302,7 +9302,7 @@
       "ios"
     ],
     "developer": "NEXON Company",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9738,7 +9738,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9848,7 +9848,7 @@
       "android"
     ],
     "developer": "NHN Corp.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9906,7 +9906,7 @@
       "android"
     ],
     "developer": "Ujoy Games Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10019,7 +10019,7 @@
       "android"
     ],
     "developer": "GEAR2",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11560,7 +11560,7 @@
       "ios"
     ],
     "developer": "BELKA GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11944,7 +11944,7 @@
       "ios"
     ],
     "developer": "Neptune Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11957,7 +11957,7 @@
       "ios"
     ],
     "developer": "Lahana Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12085,7 +12085,7 @@
       "ios"
     ],
     "developer": "GRAVITY Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
