@@ -11900,7 +11900,9 @@
     "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606",
     "aliases": [],
     "platforms": [
-      "steam"
+      "steam",
+      "android",
+      "ios"
     ],
     "developer": "Cygames, Inc.",
     "hasRankings": true,
@@ -12069,6 +12071,89 @@
       "ios"
     ],
     "developer": "Burny Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "THE 라그나로크",
+    "slug": "the-라그나로크",
+    "icon": "https://play-lh.googleusercontent.com/XVg36jSw9Rbq9lfdyHmJgNSDo-LNiMXg93Gh7jCdbiwt7yzZBKcGiQrPP1FUG1BqiGU",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "GRAVITY Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "언더길드: 오펜스",
+    "slug": "언더길드-오펜스",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d8/4b/dd/d84bddf9-80fa-43f5-1cd0-905d184a7d66/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "SeungHo Chung",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "웨스트 게임 II",
+    "slug": "웨스트-게임-ii",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/a8/fc/57a8fc3a-6b78-e31b-ec6e-4c5798fbcea7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "LEXIANGCO.,LIMITED",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "사냥 전설",
+    "slug": "사냥-전설",
+    "icon": "https://play-lh.googleusercontent.com/HWobuiTZa4L5irzyQ-tAhrfwK2jWUIdZgNrtBqMdHJDoclm2y64kMnno5c1_cjToT5wBE81o4KwLg5en0VCfOg",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "tagertilt",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Paper Fold : 논리 게임",
+    "slug": "paper-fold-논리-게임",
+    "icon": "https://play-lh.googleusercontent.com/btXhKSa4JsIiEuT0z5ouy_D_ceFlTlxbf-gTc1X6XYsqqYlYBsTYex_Os28VpUfoSiF5",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "CASUAL AZUR GAMES",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Mob Control",
+    "slug": "mob-control",
+    "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "VOODOO",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
