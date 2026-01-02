@@ -48,15 +48,21 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
   <link rel="manifest" href="/manifest.json">
-  <!-- Preconnect -->
+  <!-- AdSense 최우선 로드 -->
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+  <link rel="dns-prefetch" href="https://adservice.google.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
+  <link rel="preconnect" href="https://adservice.google.com" crossorigin>
+  <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" as="script" crossorigin>
+  <!-- Preconnect (이미지/기타) -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://play-lh.googleusercontent.com">
   <link rel="preconnect" href="https://is1-ssl.mzstatic.com">
   <link rel="preconnect" href="https://i.ytimg.com">
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
   <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
   <!-- Prefetch 다른 페이지 미리 로드 -->
   <link rel="prefetch" href="/trend/" as="document">
   <link rel="prefetch" href="/news/" as="document">
@@ -93,7 +99,7 @@
       const analytics = getAnalytics(app);
     }
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous" onload="window.gcAdsSDKLoaded=true; if(typeof window.gcOnAdsSDKLoad==='function') window.gcOnAdsSDKLoad();"></script>
+  <script async fetchpriority="high" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous" onload="window.gcAdsSDKLoaded=true; if(typeof window.gcOnAdsSDKLoad==='function') window.gcOnAdsSDKLoad();"></script>
   
 </head>
 <body class="page-youtube">
@@ -185,7 +191,7 @@
     <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
   </div>
   <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
-    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block;width:100%;max-height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins>
   </div>
         <h1 class="visually-hidden">게임 영상 순위</h1>
 
@@ -263,16 +269,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=Sg4UrrkEsME" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/Sg4UrrkEsME/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">이도원</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">백룸 전문가</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=IzUwyOg5BoM" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/IzUwyOg5BoM/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -280,6 +276,16 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">이상호 피파 복귀 기념 유봉훈의 뮤지컬 쇼 ㅋㅋㅋㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=Sg4UrrkEsME" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/Sg4UrrkEsME/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">이도원</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">백룸 전문가</div>
             </div>
           </a>
         
@@ -293,6 +299,16 @@
             </div>
           </a>
         
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=K96rdCdtn5c" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/K96rdCdtn5c/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">팡이요</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">카이TOP10도전 : 수명 갈아 만든 미친 챌린저스 캐릭터 탄생 [팡이요,  메이플스토리]</div>
+            </div>
+          </a>
+        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=gdf2vTKGDjI" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/gdf2vTKGDjI/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -303,13 +319,13 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=K96rdCdtn5c" target="_blank">
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=GHOIsIOmaks" target="_blank">
             <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/K96rdCdtn5c/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">팡이요</span>
+              <img src="https://i.ytimg.com/vi/GHOIsIOmaks/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">팔차선 [8LJAYWALKING]</span>
             </div>
             <div class="youtube-info">
-              <div class="youtube-title">카이TOP10도전 : 수명 갈아 만든 미친 챌린저스 캐릭터 탄생 [팡이요,  메이플스토리]</div>
+              <div class="youtube-title">공룡 잡는 소나 리롤덱</div>
             </div>
           </a>
         
@@ -333,16 +349,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=GHOIsIOmaks" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/GHOIsIOmaks/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">팔차선 [8LJAYWALKING]</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">공룡 잡는 소나 리롤덱</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=TGnKBYKU_XU" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/TGnKBYKU_XU/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -350,6 +356,16 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">지금 천상계 랭커들은 이렇게 씁니다! 몇가지 디테일만 알면 하늘과 땅 차이로 세지는 트린다미어덱!</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=LsDMAABLmnw" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/LsDMAABLmnw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">악어 유튜브</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">마크에이지 리턴즈3 맞서는 자들 5회차 4부 (완결) | 악어 마인크래프트 M.C.Age Returns 3</div>
             </div>
           </a>
         
@@ -373,13 +389,13 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=LsDMAABLmnw" target="_blank">
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=q5pYBXKWGEk" target="_blank">
             <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/LsDMAABLmnw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">악어 유튜브</span>
+              <img src="https://i.ytimg.com/vi/q5pYBXKWGEk/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">주키니TV</span>
             </div>
             <div class="youtube-info">
-              <div class="youtube-title">마크에이지 리턴즈3 맞서는 자들 5회차 4부 (완결) | 악어 마인크래프트 M.C.Age Returns 3</div>
+              <div class="youtube-title">이거 보고 안웃으면 진짜 책임짐ㅋㅋㅋㅋ</div>
             </div>
           </a>
         
@@ -390,6 +406,16 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">원신｜「네 번째 달」 버전 특별 방송</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=BVybSzHYZN0" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/BVybSzHYZN0/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">[ALTUBE] 김성현TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">서로 단점을 지적하면서 실력을 기르는 방에 들어간 알파고.. 상대는 곧바로 단점을 미친 듯이 지적하는데?ㅋㅋ</div>
             </div>
           </a>
         
@@ -410,26 +436,6 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">피넛.. 스트리머 데뷔 후 브실골티어랑 최초로 저티어 CK..【VS저라뎃】</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=BVybSzHYZN0" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/BVybSzHYZN0/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">[ALTUBE] 김성현TV</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">서로 단점을 지적하면서 실력을 기르는 방에 들어간 알파고.. 상대는 곧바로 단점을 미친 듯이 지적하는데?ㅋㅋ</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=q5pYBXKWGEk" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/q5pYBXKWGEk/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">주키니TV</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">이거 보고 안웃으면 진짜 책임짐ㅋㅋㅋㅋ</div>
             </div>
           </a>
         
@@ -493,16 +499,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=ZxhbDeJb1hc" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/ZxhbDeJb1hc/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">멜로우TV</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">팀나빠 최종 남은 멤버 '두명'</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=BCl8nARRMng" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/BCl8nARRMng/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -510,6 +506,16 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">개고기가 아니라고 증명하기 위해 발버둥 치는 엔씨 (아이온2)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=ZxhbDeJb1hc" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/ZxhbDeJb1hc/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">멜로우TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">팀나빠 최종 남은 멤버 '두명'</div>
             </div>
           </a>
         
@@ -543,16 +549,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=cTyyE9rboDw" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/cTyyE9rboDw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">까꿍프로_바둑채널</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">[생]바둑 황태자 까꿍프로</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=0WomcX1wyDQ" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/0WomcX1wyDQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -560,6 +556,16 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">"25분 풀코어.. 역대급 괴물 카사딘 강림💀" 선공 + 환급 + 노신발 날먹 돈복사 빌드로 완성된 "주문력 1072 레전드 대재앙 카사딘" 협곡 출현.. 이거 지금 진짜 못 막습</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=cTyyE9rboDw" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/cTyyE9rboDw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">까꿍프로_바둑채널</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[생]바둑 황태자 까꿍프로</div>
             </div>
           </a>
         
@@ -593,16 +599,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=0IvpyFgNjRg" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/0IvpyFgNjRg/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">아오니 AONI</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">미쳤다... 혜안 채널에서 공개된 적 없는, 아오니 시점 덕몽어스 영상</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=2KjeylOL3PQ" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/2KjeylOL3PQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -610,6 +606,26 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">서버1등 드샤크 + 샤프20, 30 한방에 지르는 날입니다...</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=R3m_jGf_T7c" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/R3m_jGf_T7c/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">김데데</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">이 맛에 섀도어한다 ㅋㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=0IvpyFgNjRg" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/0IvpyFgNjRg/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">아오니 AONI</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">미쳤다... 혜안 채널에서 공개된 적 없는, 아오니 시점 덕몽어스 영상</div>
             </div>
           </a>
         
@@ -633,16 +649,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=R3m_jGf_T7c" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/R3m_jGf_T7c/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">김데데</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">이 맛에 섀도어한다 ㅋㅋ</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=sG3GbFOGbbI" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/sG3GbFOGbbI/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -663,16 +669,6 @@
             </div>
           </a>
         
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=_96YcJY-vtQ" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/_96YcJY-vtQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">꽥</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">99일 동안 1년치 서운함을 폭로하면 생기는 일..꽥꽥탐험대는 이제 끝?😭 (로블록스 99 나이트 인 더 포레스트)</div>
-            </div>
-          </a>
-        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=zNX1ch_XLf0" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/zNX1ch_XLf0/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -683,6 +679,26 @@
             </div>
           </a>
         
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=4j6-xcU2CxI" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/4j6-xcU2CxI/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">청묘</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">드디어 끝난 카이 TOP 10 이벤트, 감사합니다 여러분 [챌린저스 월드 시즌3]</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=_96YcJY-vtQ" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/_96YcJY-vtQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">꽥</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">99일 동안 1년치 서운함을 폭로하면 생기는 일..꽥꽥탐험대는 이제 끝?😭 (로블록스 99 나이트 인 더 포레스트)</div>
+            </div>
+          </a>
+        
           <a class="youtube-card" href="https://www.youtube.com/watch?v=fySd2eceT5A" target="_blank">
             <div class="youtube-thumb">
               <img src="https://i.ytimg.com/vi/fySd2eceT5A/mqdefault.jpg" alt="" loading="lazy" decoding="async">
@@ -690,16 +706,6 @@
             </div>
             <div class="youtube-info">
               <div class="youtube-title">99일 가짜 산타 참교육 [로블록스 99 나이트 인 더 포레스트]</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://www.youtube.com/watch?v=ND-WhurDL9E" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://i.ytimg.com/vi/ND-WhurDL9E/mqdefault.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">마플 마인크래프트 채널</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">올해는 붉은 말의 해라는데....(마인크래프트 : 2026 새해)</div>
             </div>
           </a>
         
@@ -726,32 +732,10 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26464698/live/16492877/record/48765363/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">한동숙</span>
-              <span class="youtube-live">🔴 12,124</span>
+              <span class="youtube-live">🔴 11,927</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">랴이듬독터</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/a6c4ddb09cdb160478996007bff35296" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27313842/live/16489795/record/48760641/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">아라하시 타비</span>
-              <span class="youtube-live">🔴 5,778</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">린네 뒤12져따</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/8803cee946a9e610a76fbdee98d98c61" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26480710/live/16492665/record/48765029/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">룩삼</span>
-              <span class="youtube-live">🔴 2,508</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">룩삼 데바데 </div>
             </div>
           </a>
         
@@ -759,21 +743,10 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26449187/live/16493144/record/48765752/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">삼식</span>
-              <span class="youtube-live">🔴 2,371</span>
+              <span class="youtube-live">🔴 2,518</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">옵치 배치 시즌1 탑레72점</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/0dad8baf12a436f722faa8e5001c5011" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26446357/live/16496528/record/48770627/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">따효니</span>
-              <span class="youtube-live">🔴 2,394</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">【피학의 노엘】 ――불굴의 마인, 스트리머 따효니다! | 𝒮12 𝔭𝔥𝔞𝔫𝔱𝔬𝔪 𝔯𝔢𝔳𝔦𝔰𝔢</div>
             </div>
           </a>
         
@@ -781,21 +754,10 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441893/live/16488577/record/48758559/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">이 다</span>
-              <span class="youtube-live">🔴 2,262</span>
+              <span class="youtube-live">🔴 2,113</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">오오..이 앞 금강선...</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/34ea2a834c0022212290c26ac5e170a1" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26458504/live/16494581/record/48767855/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">웁</span>
-              <span class="youtube-live">🔴 1,961</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">멍청이 셋의 턴제게임</div>
             </div>
           </a>
         
@@ -803,10 +765,21 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441750/live/16498425/record/48772794/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">쉐리</span>
-              <span class="youtube-live">🔴 1,897</span>
+              <span class="youtube-live">🔴 2,006</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">거지같은 삑뚜 게임</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/34ea2a834c0022212290c26ac5e170a1" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26458504/live/16494581/record/48767855/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">웁</span>
+              <span class="youtube-live">🔴 1,894</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">멍청이 셋의 턴제게임</div>
             </div>
           </a>
         
@@ -814,7 +787,7 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26446321/live/16493957/record/48766898/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">마뫄</span>
-              <span class="youtube-live">🔴 1,868</span>
+              <span class="youtube-live">🔴 1,848</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">라이트하게 라이트한 것을 강행하는 것을 강행하는 2일차🐶</div>
@@ -825,10 +798,21 @@
             <div class="youtube-thumb youtube-thumb-empty">
               
               <span class="youtube-tag">독케익</span>
-              <span class="youtube-live">🔴 1,155</span>
+              <span class="youtube-live">🔴 1,136</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">크악펑크 2077 4화</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/7b1acb37b35928ff690d011296a9e5ab" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26651763/live/16496559/record/48770664/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">케인</span>
+              <span class="youtube-live">🔴 1,318</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[케인] 윷놀이 마무리</div>
             </div>
           </a>
         
@@ -836,32 +820,10 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26448554/live/16493687/record/48766483/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">빅헤드</span>
-              <span class="youtube-live">🔴 1,539</span>
+              <span class="youtube-live">🔴 1,491</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">러스트 공섭 2일차</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/61f73be23ed1d1d650ba24f268570036" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/34444720/live/16496438/record/48770516/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">맹숙</span>
-              <span class="youtube-live">🔴 273</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">난 스레기야</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/bf4df7913fcc6c4bd0932a37310a761f" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/16497319/record/48771523/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">씨랙</span>
-              <span class="youtube-live">🔴 1,356</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">1월 2일엔 타르코프 씨랙</div>
             </div>
           </a>
         
@@ -869,10 +831,21 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26445174/live/16485531/record/48754358/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">꼴랑이</span>
-              <span class="youtube-live">🔴 1,300</span>
+              <span class="youtube-live">🔴 1,322</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">올라라!! 포켓몬타워 20층까지</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/bf4df7913fcc6c4bd0932a37310a761f" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481994/live/16497319/record/48771523/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">씨랙</span>
+              <span class="youtube-live">🔴 1,395</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">1월 2일엔 타르코프 씨랙</div>
             </div>
           </a>
         
@@ -880,7 +853,7 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26465562/live/16493833/record/48766718/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">울프</span>
-              <span class="youtube-live">🔴 1,281</span>
+              <span class="youtube-live">🔴 1,276</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">어 러스트가보자 2일차  w. 많은멤버</div>
@@ -891,10 +864,43 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42122645/live/16491450/record/48763173/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">류시호 RyuSiho</span>
-              <span class="youtube-live">🔴 1,244</span>
+              <span class="youtube-live">🔴 1,174</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">🍌🐵소울성녀 엔딩 달리기1일차🍌올만에 소울하니까개잼잇음</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/c100f81959d1c17044be0541eed56f5b" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27298982/live/16498212/record/48772559/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">피닉스박</span>
+              <span class="youtube-live">🔴 1,124</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">두바위쫀득쿠키</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/0a0a0b83c6af289507ef57a5f3d623c0" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/16489999/record/48760913/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">멀럭킹</span>
+              <span class="youtube-live">🔴 1,055</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">마블2 배너로드 - 영주;; -</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/a3ceb9179d99be8d1e63b3e911fcd16b" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42926920/live/16488080/record/48757760/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">키유 Kiyuu</span>
+              <span class="youtube-live">🔴 855</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">비난쌈무</div>
             </div>
           </a>
         
@@ -902,7 +908,7 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/44268133/live/16500770/record/48775463/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">이리야 of HANAVI</span>
-              <span class="youtube-live">🔴 960</span>
+              <span class="youtube-live">🔴 907</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">[메이비] 리듬 (장) 의사셔</div>
@@ -913,98 +919,10 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26646484/live/16490605/record/48761905/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">0영듀0</span>
-              <span class="youtube-live">🔴 1,106</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">박치가 하는 리듬닥터^^ </div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/4f650f02bc4ab38a998d74e3abb1b68b" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/34527702/live/16493329/record/48765997/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">유레이 UREI</span>
-              <span class="youtube-live">🔴 191</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">애기 엘든링</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/a3ceb9179d99be8d1e63b3e911fcd16b" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42926920/live/16488080/record/48757760/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">키유 Kiyuu</span>
-              <span class="youtube-live">🔴 850</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">비난쌈무</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/0a0a0b83c6af289507ef57a5f3d623c0" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482723/live/16489999/record/48760913/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">멀럭킹</span>
-              <span class="youtube-live">🔴 1,069</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">마블2 배너로드 - 영주;; -</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/034449b176b163a705b9c0e81f7a51c2" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441898/live/16493754/record/48766585/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">인간젤리</span>
-              <span class="youtube-live">🔴 858</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">마무리 -근-담 이터널</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/c100f81959d1c17044be0541eed56f5b" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27298982/live/16498212/record/48772559/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">피닉스박</span>
-              <span class="youtube-live">🔴 1,087</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">두바위쫀득쿠키</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/29f20622463916fa48ad735057b145ce" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481214/live/16490896/record/48762430/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">멋사</span>
-              <span class="youtube-live">🔴 967</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">두바이쫀득잭스</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/7efa5b40ee1729ac57d3adbebf3ddb3c" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26442280/live/16495576/record/48769334/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">살구</span>
               <span class="youtube-live">🔴 907</span>
             </div>
             <div class="youtube-info">
-              <div class="youtube-title">켄시 최적화랑 그래픽 모드까지 다 받았다 캬</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/912b559dcdd9c9ea1fe97864925738bf" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26495745/live/16493616/record/48766371/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">왈도쿤</span>
-              <span class="youtube-live">🔴 833</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">[왈도쿤] 오버워치 8년만에 해보기</div>
+              <div class="youtube-title">다2 75p 시작 ^^ 오늘은 마스터 가는날 ^^</div>
             </div>
           </a>
         
@@ -1019,36 +937,36 @@
             </div>
           </a>
         
+          <a class="youtube-card" href="https://chzzk.naver.com/live/7efa5b40ee1729ac57d3adbebf3ddb3c" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26442280/live/16495576/record/48769334/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">살구</span>
+              <span class="youtube-live">🔴 910</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">켄시 최적화랑 그래픽 모드까지 다 받았다 캬</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/912b559dcdd9c9ea1fe97864925738bf" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26495745/live/16493616/record/48766371/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">왈도쿤</span>
+              <span class="youtube-live">🔴 829</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[왈도쿤] 오버워치 8년만에 해보기</div>
+            </div>
+          </a>
+        
           <a class="youtube-card" href="https://chzzk.naver.com/live/5fa7a876b66aca4903d1697582df124d" target="_blank">
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26663181/live/16493725/record/48766544/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">램램1</span>
-              <span class="youtube-live">🔴 745</span>
+              <span class="youtube-live">🔴 733</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">규바데</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/93fe884808459fb4e4a3c7d64f0eef03" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26481348/live/16492404/record/48764632/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">고차비</span>
-              <span class="youtube-live">🔴 712</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">뇽뇽</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/9107ff73efea18b598b9bd88ddfae369" target="_blank">
-            <div class="youtube-thumb youtube-thumb-empty">
-              
-              <span class="youtube-tag">쟁구임</span>
-              <span class="youtube-live">🔴 420</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">폴갓 -할머니 공포게임</div>
             </div>
           </a>
         
@@ -1056,43 +974,32 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26595476/live/16492686/record/48765062/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">박홍시1</span>
-              <span class="youtube-live">🔴 652</span>
+              <span class="youtube-live">🔴 651</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">이번주까지마스터가면 ... .. . ..</div>
             </div>
           </a>
         
-          <a class="youtube-card" href="https://chzzk.naver.com/live/375dfefbe6264ae507efee64eedfb574" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26639900/live/16490904/record/48762446/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">세롱</span>
-              <span class="youtube-live">🔴 619</span>
+          <a class="youtube-card" href="https://chzzk.naver.com/live/9107ff73efea18b598b9bd88ddfae369" target="_blank">
+            <div class="youtube-thumb youtube-thumb-empty">
+              
+              <span class="youtube-tag">쟁구임</span>
+              <span class="youtube-live">🔴 372</span>
             </div>
             <div class="youtube-info">
-              <div class="youtube-title">삼국지12PK 장안공방전 조진</div>
+              <div class="youtube-title">리듬닥터 리듬을지배하는자</div>
             </div>
           </a>
         
-          <a class="youtube-card" href="https://chzzk.naver.com/live/a54372e8197f6d241a43a318279860d6" target="_blank">
+          <a class="youtube-card" href="https://chzzk.naver.com/live/4f650f02bc4ab38a998d74e3abb1b68b" target="_blank">
             <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26771496/live/16493491/record/48766194/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">쿠레나이 나츠키</span>
-              <span class="youtube-live">🔴 530</span>
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/34527702/live/16493329/record/48765997/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">유레이 UREI</span>
+              <span class="youtube-live">🔴 219</span>
             </div>
             <div class="youtube-info">
-              <div class="youtube-title">2부 리듬감수련.👹</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/d9c00ea08106b660e26abcd730e7d796" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42541440/live/16495719/record/48769555/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">이샤 ISHA</span>
-              <span class="youtube-live">🔴 364</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">배그.............</div>
+              <div class="youtube-title">애기 엘든링</div>
             </div>
           </a>
         
@@ -1100,21 +1007,21 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28027517/live/16473705/record/48739668/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">슈퍼스피드런</span>
-              <span class="youtube-live">🔴 514</span>
+              <span class="youtube-live">🔴 494</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">데빌메이크라이3 스페셜 에디션 - NG+ No Item, Any%, Very Hard | 슈퍼 스피드런 마라톤 5 (러너: 식팡)</div>
             </div>
           </a>
         
-          <a class="youtube-card" href="https://chzzk.naver.com/live/332046a63d6cef0b6ecad546a84d36df" target="_blank">
+          <a class="youtube-card" href="https://chzzk.naver.com/live/a54372e8197f6d241a43a318279860d6" target="_blank">
             <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26632294/live/16497333/record/48771540/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">쾅준</span>
-              <span class="youtube-live">🔴 348</span>
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26771496/live/16493491/record/48766194/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">쿠레나이 나츠키</span>
+              <span class="youtube-live">🔴 506</span>
             </div>
             <div class="youtube-info">
-              <div class="youtube-title">문제가 있는 게임이긴해 </div>
+              <div class="youtube-title">2부 리듬감수련.👹</div>
             </div>
           </a>
         
@@ -1122,21 +1029,10 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441761/live/16494056/record/48767058/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">남봉</span>
-              <span class="youtube-live">🔴 513</span>
+              <span class="youtube-live">🔴 518</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">새해맞이 러스트 라이트 2일차</div>
-            </div>
-          </a>
-        
-          <a class="youtube-card" href="https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501" target="_blank">
-            <div class="youtube-thumb">
-              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/16488476/record/48758391/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
-              <span class="youtube-tag">청묘</span>
-              <span class="youtube-live">🔴 469</span>
-            </div>
-            <div class="youtube-info">
-              <div class="youtube-title">ㅎㅇ</div>
             </div>
           </a>
         
@@ -1144,10 +1040,32 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/33223062/live/16500001/record/48774592/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">RIOORI 리우리</span>
-              <span class="youtube-live">🔴 477</span>
+              <span class="youtube-live">🔴 461</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">폭풍전야.</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/d9c00ea08106b660e26abcd730e7d796" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42541440/live/16495719/record/48769555/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">이샤 ISHA</span>
+              <span class="youtube-live">🔴 414</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">배그.............</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/16488476/record/48758391/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">청묘</span>
+              <span class="youtube-live">🔴 437</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">ㅎㅇ</div>
             </div>
           </a>
         
@@ -1155,10 +1073,65 @@
             <div class="youtube-thumb">
               <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26495084/live/16491488/record/48763216/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
               <span class="youtube-tag">진격캐넌</span>
-              <span class="youtube-live">🔴 456</span>
+              <span class="youtube-live">🔴 425</span>
             </div>
             <div class="youtube-info">
               <div class="youtube-title">흉성퍼클런대비 영도재획 ㄱㄱ링 ㅇㅅㅇ;;</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/75c1dee192717e3aa6c7c78b2c939596" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27449588/live/16496878/record/48771039/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">immortalk</span>
+              <span class="youtube-live">🔴 420</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[임모탈k]26년 1월2일'금욕의 치수 '노드에게 깃발을 바치다 .노드바이킹 DLC 리트라이 중 - </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/0e8308b2b1ae5d371e7593d6f2dae5ca" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/28864667/live/16497698/record/48771974/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">내가미라지</span>
+              <span class="youtube-live">🔴 329</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">챔피언5 DPS ^^</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/f09d419e75984cec5cdb9a368b59e5d1" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27309522/live/16491025/record/48762624/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">름딱이</span>
+              <span class="youtube-live">🔴 47</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">라방라방라방 오나요~~?</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/ae55f4ea68021521462b1747efa38e59" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26631876/live/16493735/record/48766557/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">김피엔</span>
+              <span class="youtube-live">🔴 344</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">새해 맞이 새발동과 러스트 1.5일차 +ㅅ+</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/5a091442f87b638efb3e1fbb53643e95" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26611544/live/16493395/record/48766076/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">도다람</span>
+              <span class="youtube-live">🔴 332</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">뭐든지 물어보세요 와일즈 상담원 (◦'⌣'◦)</div>
             </div>
           </a>
         
