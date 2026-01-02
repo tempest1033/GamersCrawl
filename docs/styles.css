@@ -2299,12 +2299,12 @@
 
     .ad-slot--vertical {
       width: 100%;
-      min-height: 600px;
+      min-height: auto;
     }
 
     .ad-slot--rectangle {
       width: 100%;
-      min-height: 250px;
+      min-height: auto;
     }
 
     /* 홈페이지 모바일 광고 - 프레임 없이 유지 (원래 스타일) */
@@ -2353,11 +2353,18 @@
     }
 
     .ad-slot.ad-slot--unfilled {
-      display: none;
+      display: none !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden !important;
     }
 
     .ad-slot.ad-slot--no-reserve.ad-slot--unfilled {
-      display: none;
+      display: none !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
     }
 
     /* AdSense unfilled 광고 자동 숨김 */
