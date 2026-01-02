@@ -553,6 +553,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://gamerscrawl.com/games/삼국지-전략판/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://gamerscrawl.com/games/서머너즈-워-천공의-아레나/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -638,6 +644,12 @@
   </url>
   <url>
     <loc>https://gamerscrawl.com/games/운빨존많겜/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gamerscrawl.com/games/원신공월의-노래/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
