@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -5550,7 +5550,7 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecraftpe",
+        "android": "com.mojang.minecrafttrialpe",
         "ios": 479516143
       },
       "aliases": [
@@ -11064,7 +11064,7 @@
     "요괴 여친:요괴는 너를 사랑해": {
       "appIds": {
         "android": "tokyo.chickenskin.yokai",
-        "ios": 6746295219
+        "ios": "6746295219"
       },
       "aliases": [],
       "developer": "CHICKEN SKIN LLC",
@@ -11469,14 +11469,16 @@
     },
     "Identity V -제5인격": {
       "appIds": {
-        "ios": "1347780764"
+        "ios": "1347780764",
+        "android": "com.netease.idv.googleplay"
       },
       "aliases": [],
       "developer": "NetEase Games",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "identity-v-제5인격",
       "platforms": [
-        "ios"
+        "ios",
+        "android"
       ]
     },
     "해적GO! 보물탐험대": {
@@ -11708,8 +11710,98 @@
         "android",
         "ios"
       ]
+    },
+    "픽셀 히어로": {
+      "appIds": {
+        "ios": "1670875186",
+        "android": "com.ujoygp.pixel"
+      },
+      "aliases": [],
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/cc/eb/25cceb2b-50d6-c13d-d380-49aba56bad08/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/100x100bb.png",
+      "slug": "픽셀-히어로",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "SAKURA School Simulator": {
+      "appIds": {
+        "ios": "1439434588",
+        "android": "jp.garud.ssimulator"
+      },
+      "aliases": [],
+      "developer": "Garusoft LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/a5/9a/d4a59a38-bcf5-daf1-a1d1-0123d552569b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "sakura-school-simulator",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "디노 유니버스 (Dinosaur Universe)": {
+      "appIds": {
+        "android": "io.supercent.ageofdinosaurs"
+      },
+      "aliases": [],
+      "developer": "Supercent, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/4zrjGRozq6QqGL7baBNsBH-rlWXI1tCe243ZE8QzpiNzVBnWNEzkOWmlxiEC6aCUD22QVVeC_shsx2UJRfhl",
+      "slug": "디노-유니버스-dinosaur-universe",
+      "platforms": [
+        "android"
+      ]
+    },
+    "배구소녀 : 고등학교 배구 스토리": {
+      "appIds": {
+        "android": "com.daerigame.volleygirls",
+        "ios": 6737681316
+      },
+      "aliases": [],
+      "developer": "DAERI SOFT Inc",
+      "icon": "https://play-lh.googleusercontent.com/3xYKZjScJsUXxeqEkit6qyE72Hm5SxBeR0e5HYp26wq1ri8UnobvNRadIj7SlVsRUM4",
+      "slug": "배구소녀-고등학교-배구-스토리",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)": {
+      "appIds": {
+        "android": "com.ncroquis.beatyako"
+      },
+      "aliases": [],
+      "developer": "NCROQUIS",
+      "icon": "https://play-lh.googleusercontent.com/_sEc2--f3c_zQiyykg05tGWlkiSqQ736SAkRPeX14pXGXf46lKZ9UiQwDzJ0LGeoGm0",
+      "slug": "야코-런-리듬매니아무한의-계단-x-고양이-스낵바",
+      "platforms": [
+        "android"
+      ]
+    },
+    "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle": {
+      "appIds": {
+        "android": "com.zombie.idleminertycoon"
+      },
+      "aliases": [],
+      "developer": "Royal Ark",
+      "icon": "https://play-lh.googleusercontent.com/f5bdgKrSbD4OoqHqPAU1dmG8AJ9b7R_rtZz9ePDCH38nWfLiwgoO_q8z-CkGGLBc2_RW",
+      "slug": "좀비-광산타이쿤-금광-방치형-어드벤처-게임-idle",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Escape Run: Endless Die Fun": {
+      "appIds": {
+        "android": "com.higame.par.escape.prank.run.game"
+      },
+      "aliases": [],
+      "developer": "HIGAME LTD.",
+      "icon": "https://play-lh.googleusercontent.com/7DbgVztaqq103s2itgp3tZcFeI_3PtMqJ-XolB2ccM_puhVAY3ko6VYB4DROQbWNggYW",
+      "slug": "escape-run-endless-die-fun",
+      "platforms": [
+        "android"
+      ]
     }
   },
-  "lastUpdated": "2026-01-02",
-  "totalGames": 812
+  "lastUpdated": "2026-01-03",
+  "totalGames": 819
 }

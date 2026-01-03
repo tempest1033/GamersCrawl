@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -680,9 +680,10 @@
     },
     {
       "title": "Identity V -제5인격",
-      "status": "single",
+      "status": "matched",
       "appIds": {
-        "ios": "1347780764"
+        "ios": "1347780764",
+        "android": "com.netease.idv.googleplay"
       },
       "developer": "NetEase Games",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -1279,6 +1280,177 @@
         }
       ],
       "addedAt": "2026-01-02T00:49:31.271Z"
+    },
+    {
+      "title": "픽셀 히어로",
+      "status": "matched",
+      "appIds": {
+        "ios": "1670875186",
+        "android": "com.ujoygp.pixel"
+      },
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/cc/eb/25cceb2b-50d6-c13d-d380-49aba56bad08/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "픽셀 히어로",
+          "appId": "com.ujoygp.pixel"
+        },
+        {
+          "title": "Pixel Heroes: Tales of Emond",
+          "appId": "com.haoplay.game.and.hero"
+        },
+        {
+          "title": "픽셀 영웅전설 : 방치형 파티플RPG",
+          "appId": "com.dreamplay.pixelheroiclegend.google"
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:14.872Z"
+    },
+    {
+      "title": "SAKURA School Simulator",
+      "status": "matched",
+      "appIds": {
+        "ios": "1439434588",
+        "android": "jp.garud.ssimulator"
+      },
+      "developer": "Garusoft LLC",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/a5/9a/d4a59a38-bcf5-daf1-a1d1-0123d552569b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "SAKURA School Simulator",
+          "appId": "jp.garud.ssimulator"
+        },
+        {
+          "title": "Shoujo City 3D",
+          "appId": "com.shoujocity.sc3d"
+        },
+        {
+          "title": "Toca Boca World",
+          "appId": "com.tocaboca.tocalifeworld"
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:17.659Z"
+    },
+    {
+      "title": "요괴 여친:요괴는 너를 사랑해",
+      "status": "matched",
+      "appIds": {
+        "android": "tokyo.chickenskin.yokai",
+        "ios": "6746295219"
+      },
+      "developer": "CHICKEN SKIN LLC",
+      "icon": "https://play-lh.googleusercontent.com/7NlTwDOtVYbamTAInaBQGUjmjXc5QWpvKdAJyocilb6b205RHIpzdD53pbZtrr2cDCwRmrJP4qHvLjDHOCZ35w",
+      "searchResults": [
+        {
+          "title": "요괴 여친:요괴는 너를 사랑해",
+          "appId": "tokyo.chickenskin.yokai"
+        },
+        {
+          "title": "결심사 : AI 연애 상담, 결혼 고민 상담",
+          "appId": "com.ironpig.marriageConsulting2"
+        },
+        {
+          "title": "꿈꾸니까 로맨스인 거잖아: 여성향 연애 시뮬레이션 게임",
+          "appId": "com.buffstudio.luciddream"
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:21.818Z"
+    },
+    {
+      "title": "디노 유니버스 (Dinosaur Universe)",
+      "status": "single",
+      "appIds": {
+        "android": "io.supercent.ageofdinosaurs"
+      },
+      "developer": "Supercent, Inc.",
+      "icon": "https://play-lh.googleusercontent.com/4zrjGRozq6QqGL7baBNsBH-rlWXI1tCe243ZE8QzpiNzVBnWNEzkOWmlxiEC6aCUD22QVVeC_shsx2UJRfhl",
+      "searchResults": [
+        {
+          "title": "Dinosaur Universe",
+          "appId": 6448496802
+        },
+        {
+          "title": "Dino Run: Dinosaur Games",
+          "appId": 6736385856
+        },
+        {
+          "title": "The Cursed Dinosaur Isle: Game",
+          "appId": 1611891807
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:29.734Z"
+    },
+    {
+      "title": "배구소녀 : 고등학교 배구 스토리",
+      "status": "matched",
+      "appIds": {
+        "android": "com.daerigame.volleygirls",
+        "ios": 6737681316
+      },
+      "developer": "DAERI SOFT Inc",
+      "icon": "https://play-lh.googleusercontent.com/3xYKZjScJsUXxeqEkit6qyE72Hm5SxBeR0e5HYp26wq1ri8UnobvNRadIj7SlVsRUM4",
+      "searchResults": [
+        {
+          "title": "배구소녀 : 고등학교 배구 스토리",
+          "appId": 6737681316
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:30.588Z"
+    },
+    {
+      "title": "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)",
+      "status": "single",
+      "appIds": {
+        "android": "com.ncroquis.beatyako"
+      },
+      "developer": "NCROQUIS",
+      "icon": "https://play-lh.googleusercontent.com/_sEc2--f3c_zQiyykg05tGWlkiSqQ736SAkRPeX14pXGXf46lKZ9UiQwDzJ0LGeoGm0",
+      "searchResults": [],
+      "addedAt": "2026-01-03T00:46:34.884Z"
+    },
+    {
+      "title": "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle",
+      "status": "single",
+      "appIds": {
+        "android": "com.zombie.idleminertycoon"
+      },
+      "developer": "Royal Ark",
+      "icon": "https://play-lh.googleusercontent.com/f5bdgKrSbD4OoqHqPAU1dmG8AJ9b7R_rtZz9ePDCH38nWfLiwgoO_q8z-CkGGLBc2_RW",
+      "searchResults": [
+        {
+          "title": "좀비 광산타이쿤: 금광 방치형 게임 어드벤처 Idle",
+          "appId": 6471983323
+        },
+        {
+          "title": "네코식당: 고양이 요리 타이쿤",
+          "appId": 6737997970
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:35.828Z"
+    },
+    {
+      "title": "Escape Run: Endless Die Fun",
+      "status": "single",
+      "appIds": {
+        "android": "com.higame.par.escape.prank.run.game"
+      },
+      "developer": "HIGAME LTD.",
+      "icon": "https://play-lh.googleusercontent.com/7DbgVztaqq103s2itgp3tZcFeI_3PtMqJ-XolB2ccM_puhVAY3ko6VYB4DROQbWNggYW",
+      "searchResults": [
+        {
+          "title": "Temple Run 2: Endless Escape",
+          "appId": 572395608
+        },
+        {
+          "title": "Rotten Escape: Jump action",
+          "appId": 1362373679
+        },
+        {
+          "title": "Color Switch",
+          "appId": 1314725881
+        }
+      ],
+      "addedAt": "2026-01-03T00:46:36.629Z"
     }
   ],
   "approved": [

@@ -11915,7 +11915,8 @@
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
     "aliases": [],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NetEase Games",
     "hasRankings": true,
@@ -12154,6 +12155,100 @@
       "ios"
     ],
     "developer": "VOODOO",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "픽셀 히어로",
+    "slug": "픽셀-히어로",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/cc/eb/25cceb2b-50d6-c13d-d380-49aba56bad08/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Ujoy Games Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "SAKURA School Simulator",
+    "slug": "sakura-school-simulator",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/a5/9a/d4a59a38-bcf5-daf1-a1d1-0123d552569b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Garusoft LLC",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "디노 유니버스 (Dinosaur Universe)",
+    "slug": "디노-유니버스-dinosaur-universe",
+    "icon": "https://play-lh.googleusercontent.com/4zrjGRozq6QqGL7baBNsBH-rlWXI1tCe243ZE8QzpiNzVBnWNEzkOWmlxiEC6aCUD22QVVeC_shsx2UJRfhl",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Supercent, Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "배구소녀 : 고등학교 배구 스토리",
+    "slug": "배구소녀-고등학교-배구-스토리",
+    "icon": "https://play-lh.googleusercontent.com/3xYKZjScJsUXxeqEkit6qyE72Hm5SxBeR0e5HYp26wq1ri8UnobvNRadIj7SlVsRUM4",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "DAERI SOFT Inc",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)",
+    "slug": "야코-런-리듬매니아무한의-계단-x-고양이-스낵바",
+    "icon": "https://play-lh.googleusercontent.com/_sEc2--f3c_zQiyykg05tGWlkiSqQ736SAkRPeX14pXGXf46lKZ9UiQwDzJ0LGeoGm0",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "NCROQUIS",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle",
+    "slug": "좀비-광산타이쿤-금광-방치형-어드벤처-게임-idle",
+    "icon": "https://play-lh.googleusercontent.com/f5bdgKrSbD4OoqHqPAU1dmG8AJ9b7R_rtZz9ePDCH38nWfLiwgoO_q8z-CkGGLBc2_RW",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Royal Ark",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Escape Run: Endless Die Fun",
+    "slug": "escape-run-endless-die-fun",
+    "icon": "https://play-lh.googleusercontent.com/7DbgVztaqq103s2itgp3tZcFeI_3PtMqJ-XolB2ccM_puhVAY3ko6VYB4DROQbWNggYW",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "HIGAME LTD.",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
