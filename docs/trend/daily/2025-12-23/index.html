@@ -215,11 +215,11 @@
   <main class="container">
     
     <section class="section active" id="insight">
-      <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only ">
-    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-  </div>
-  <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
+      <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
     <ins class="adsbygoogle" style="display:block;width:100%;max-height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal"></ins>
+  </div>
+  <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only ">
+    <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
   </div>
       <div class="insight-page-container">
         <h1 class="visually-hidden">CS2 120만 동접, 올림픽 e스포츠 유치 논의 진행</h1>
@@ -268,11 +268,11 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
         
-    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-    </div>
     <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
       <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+    </div>
+    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
+      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
   
         
@@ -385,11 +385,11 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
         
-    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-    </div>
     <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
       <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+    </div>
+    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
+      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
   
         
@@ -609,7 +609,14 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
 
 		      function hasRenderedAd(el) {
 		        try {
-		          return !!(el && el.querySelector && el.querySelector('iframe'));
+		          if (!el || !el.querySelector) return false;
+		          // iframe (일반 디스플레이 광고)
+		          if (el.querySelector('iframe')) return true;
+		          // 텍스트/링크형 광고 (a 태그가 있는 경우)
+		          if (el.querySelector('a[href]')) return true;
+		          // 내부에 의미있는 콘텐츠가 있는지 (빈 ins가 아닌 경우)
+		          if (el.children.length > 0) return true;
+		          return false;
 		        } catch {
 		          return false;
 		        }
