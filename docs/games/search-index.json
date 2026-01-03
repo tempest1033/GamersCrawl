@@ -1138,7 +1138,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2783,7 +2783,7 @@
       "ios"
     ],
     "developer": "37GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3657,7 +3657,7 @@
       "android"
     ],
     "developer": "Ketchapp",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4032,7 +4032,7 @@
       "android"
     ],
     "developer": "GOODROID,Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4284,7 +4284,7 @@
       "android"
     ],
     "developer": "Archosaur Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4828,7 +4828,7 @@
       "ios"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5847,7 +5847,7 @@
       "android"
     ],
     "developer": "Stella Joy Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7149,7 +7149,7 @@
     "developer": "NEOWIZ",
     "hasRankings": false,
     "hasSteam": true,
-    "hasData": false
+    "hasData": true
   },
   {
     "name": "Hogwarts Legacy",
@@ -7177,7 +7177,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8628,7 +8628,7 @@
       "android"
     ],
     "developer": "AppteenPlanet Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8741,7 +8741,7 @@
       "ios"
     ],
     "developer": "racoonDigi",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8826,7 +8826,7 @@
       "android"
     ],
     "developer": "Mindful Daily Puzzles",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9670,7 +9670,7 @@
       "android"
     ],
     "developer": "Matryoshka Games (CY) LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9780,7 +9780,7 @@
       "ios"
     ],
     "developer": "CASUAL AZUR GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9794,7 +9794,7 @@
       "ios"
     ],
     "developer": "Rivvy Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11506,7 +11506,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11599,7 +11599,7 @@
       "ios"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11732,7 +11732,7 @@
       "android"
     ],
     "developer": "SHINSEI, K.K.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12127,7 +12127,7 @@
       "android"
     ],
     "developer": "tagertilt",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
