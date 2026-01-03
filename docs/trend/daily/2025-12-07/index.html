@@ -215,7 +215,7 @@
   <main class="container">
     
     <section class="section active" id="insight">
-      <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only ">
+      <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only " style="min-height:50px">
     <ins class="adsbygoogle" style="display:block;width:100%;max-height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal"></ins>
   </div>
   <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only ">
@@ -616,8 +616,8 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
 		          if (el.querySelector('iframe')) return true;
 		          // 텍스트/링크형 광고 (a 태그가 있는 경우)
 		          if (el.querySelector('a[href]')) return true;
-		          // 내부에 의미있는 콘텐츠가 있는지 (빈 ins가 아닌 경우)
-		          if (el.children.length > 0) return true;
+		          // 실제 높이가 있으면 광고가 렌더링된 것으로 판단
+		          if (el.offsetHeight > 10) return true;
 		          return false;
 		        } catch {
 		          return false;
@@ -685,6 +685,8 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
 
 		          const status = el.getAttribute('data-ad-status');
 		          if (status === 'filled' || hasRenderedAd(el)) return;
+		          // 높이가 있으면 광고가 로드된 것으로 판단 (접지 않음)
+		          if (el.offsetHeight > 10 || el.offsetWidth > 10) return;
 
 		          const seenAt = Number(el.dataset.gcAdsSeenAt || 0);
 		          if (!seenAt) return;
