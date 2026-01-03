@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -5550,7 +5550,7 @@
     },
     "Minecraft 체험판": {
       "appIds": {
-        "android": "com.mojang.minecraftpe",
+        "android": "com.mojang.minecrafttrialpe",
         "ios": 479516143
       },
       "aliases": [
