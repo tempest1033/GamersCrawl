@@ -10264,11 +10264,13 @@ a.gm-item:hover {
   body.search-hidden .container {
     padding-top: 56px !important;
   }
-  /* games-hub-page는 container 안에 있으므로 별도 padding 불필요 */
+  body.search-hidden .games-hub-page {
+    padding-top: 56px !important;
+  }
 
   /* ===== 게임 DB 자음 필터 sticky용 CSS 변수 ===== */
   /* 기본 상태: search(64px) + nav(52px) = 116px */
-  body {
+  :root {
     --games-hub-sticky-top: 116px;
   }
   /* search-hidden 상태: nav(52px)만 */
@@ -10746,25 +10748,20 @@ a.gm-item:hover {
     gap: 10px;
   }
 
-  /* 게임 페이지 전용 - fixed로 nav 아래 고정 (sticky/fixed 충돌 해결) */
+  /* 게임 페이지 전용 - CSS sticky로 자동 고정 */
   .games-hub-index {
-    position: fixed !important;
-    top: 116px !important; /* search(64px) + nav(52px) */
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 198 !important; /* nav(199) 바로 아래 */
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: var(--games-hub-sticky-top) !important;
+    z-index: 98 !important;
     background: var(--bg) !important;
-    padding: 8px 16px !important;
+    padding: 8px 12px !important;
     gap: 4px;
-    border-bottom: 1px solid var(--border) !important;
-  }
-  body.search-hidden .games-hub-index {
-    top: 52px !important; /* nav(52px)만 */
-  }
-
-  /* 자음 필터 높이(약 44px)만큼 본문 여백 추가 */
-  .games-hub-page {
-    padding-top: 48px !important;
+    /* 좌우 전체 너비 확장 */
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .index-link {
@@ -10793,10 +10790,7 @@ a.gm-item:hover {
 
   /* 자음 링크 클릭 시 섹션이 필터에 가려지지 않도록 */
   .games-hub-group {
-    scroll-margin-top: 176px; /* 116px + 60px */
-  }
-  body.search-hidden .games-hub-group {
-    scroll-margin-top: 112px; /* 52px + 60px */
+    scroll-margin-top: calc(var(--games-hub-sticky-top) + 60px);
   }
 }
 
