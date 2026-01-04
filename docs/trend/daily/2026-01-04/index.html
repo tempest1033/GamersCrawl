@@ -516,7 +516,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
     <div class="trend-detail-nav">
       <a href="/trend/daily/2026-01-03/" class="trend-nav-btn prev">‹ 이전</a>
       <a href="/trend/" class="trend-nav-btn list">목록</a>
-      <span class="trend-nav-btn disabled">다음 ›</span>
+      <a href="/trend/daily/2026-01-05/" class="trend-nav-btn next">다음 ›</a>
     </div>
   
       </div>
@@ -1098,8 +1098,6 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
     }
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
-    // 실제 크기가 0이면 초기화하지 않음 (숨김/탭 전환 케이스)
-    if (slot.offsetWidth === 0 || slot.offsetHeight === 0) return false;
     return true;
   }
 

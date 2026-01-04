@@ -251,7 +251,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1675112878.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/KBlch6pf-GjHuz6oal1Z-FyRUVkARDKlqpPfL8JGLydpkRbbcjCVj1sCaRGCNhswrmPTovbLpJ9fMDGSI78z9pA" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">AGF 2025, FGO 8주년 현장 열기</h4>
                 <p class="weekly-hot-desc">AGF 2025에서 페이트/그랜드 오더가 주장2 불가역폐기공 이드와 한국 서비스 8주년을 테마로 부스를 꾸려 큰 관심을 모았어요.
@@ -1056,8 +1056,6 @@
     }
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
-    // 실제 크기가 0이면 초기화하지 않음 (숨김/탭 전환 케이스)
-    if (slot.offsetWidth === 0 || slot.offsetHeight === 0) return false;
     return true;
   }
 
