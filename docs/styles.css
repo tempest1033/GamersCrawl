@@ -1,4 +1,4 @@
-
+﻿
     /* 접근성: 시각적으로 숨기지만 스크린리더/SEO에는 노출 */
     .visually-hidden {
       position: absolute;
@@ -2263,15 +2263,9 @@
       display: block;
     }
 
-    /* wrapper 없는 ins 광고 기본값 */
+    /* wrapper 없는 ins 광고 기본값 - AdSense 자체 스타일링 존중 */
     ins.adsbygoogle {
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-    }
-    ins.adsbygoogle[style*="display:inline-block"] {
-      display: inline-flex !important;
     }
 
     /* AdSense 내부 렌더링 요소 중앙 정렬 보정 */
