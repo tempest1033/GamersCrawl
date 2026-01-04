@@ -1098,6 +1098,8 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
     }
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+    // 실제 크기가 0이면 초기화하지 않음 (숨김/탭 전환 케이스)
+    if (slot.offsetWidth === 0 || slot.offsetHeight === 0) return false;
     return true;
   }
 

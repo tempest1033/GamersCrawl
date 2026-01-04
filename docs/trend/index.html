@@ -210,7 +210,7 @@
               
       <a href="/trend/weekly/2025-W53/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.inven.co.kr%2Fwebzine%2Fnews%2Fupload%2F312467_0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
           <span class="trend-feed-card-tag weekly">2025년 12월 29일 ~ 1월 4일</span>
         </div>
         <h3 class="trend-feed-card-title">페이커, e스포츠 최초 체육훈장 청룡장 수훈</h3>
@@ -266,14 +266,6 @@
           <div class="home-card-body">
             <div class="trend-feed-grid">
               
-      <a href="/trend/daily/2026-01-05/" class="trend-feed-card" data-type="daily">
-        <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-          <span class="trend-feed-card-tag">2026년 1월 5일 리포트</span>
-        </div>
-        <h3 class="trend-feed-card-title">할로우 나이트 실크송, 2025 스팀 어워드 올해의 게임 2관왕</h3>
-      </a>
-    
       <a href="/trend/daily/2026-01-04/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
           <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
@@ -1147,6 +1139,8 @@
     }
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+    // 실제 크기가 0이면 초기화하지 않음 (숨김/탭 전환 케이스)
+    if (slot.offsetWidth === 0 || slot.offsetHeight === 0) return false;
     return true;
   }
 
