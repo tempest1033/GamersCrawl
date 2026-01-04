@@ -1001,7 +1001,7 @@
       "android"
     ],
     "developer": "Tianjin Heyuan Network Technology Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2918,7 +2918,7 @@
       "ios"
     ],
     "developer": "SPGAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3203,7 +3203,7 @@
       "android"
     ],
     "developer": "SEAL Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4193,7 +4193,7 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5107,7 +5107,7 @@
       "ios"
     ],
     "developer": "GameeStudio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5412,7 +5412,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5489,7 +5489,7 @@
       "ios"
     ],
     "developer": "AMOBEAR TECHNOLOGY GROUP",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5531,7 +5531,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5808,7 +5808,7 @@
       "ios"
     ],
     "developer": "HungryStudio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7430,7 +7430,7 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7544,7 +7544,7 @@
       "ios"
     ],
     "developer": "Freeplay Inc",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7573,7 +7573,7 @@
       "ios"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7687,7 +7687,7 @@
       "ios"
     ],
     "developer": "VisionStudio(HK)",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7760,7 +7760,7 @@
       "ios"
     ],
     "developer": "Neron's Brother",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7774,7 +7774,7 @@
       "ios"
     ],
     "developer": "stick hunter",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8826,7 +8826,7 @@
       "android"
     ],
     "developer": "Mindful Daily Puzzles",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9670,7 +9670,7 @@
       "android"
     ],
     "developer": "Matryoshka Games (CY) LTD",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11836,7 +11836,7 @@
       "android"
     ],
     "developer": "TVC Global., Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
