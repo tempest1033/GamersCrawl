@@ -12252,5 +12252,461 @@
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
+  },
+  {
+    "name": "플레이투게더 (Play Together)",
+    "slug": "플레이투게더-play-together",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/cc/d7/06ccd795-e14b-3bb3-e572-fcb163748f67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "HAEGIN Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "두뇌우지끈",
+    "slug": "두뇌우지끈",
+    "icon": "https://play-lh.googleusercontent.com/vuIDQjcEl0TZEFnkk_OdEIb5-feuG8cLi421xVE0RrTdcStX70I2gEVjI5StIlme4XMndzH_sXBz3PXfLL7PUw",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Stormborn",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "DIY Phone Case Maker",
+    "slug": "diy-phone-case-maker",
+    "icon": "https://play-lh.googleusercontent.com/NAJROtgQG6BsgAINRtMbOAHPEaVstT6_ysXmP1Hd9bPf5czg-3gEq8guJGvDEsULyU0",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Bravestars Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "I Am Monkey",
+    "slug": "i-am-monkey",
+    "icon": "https://play-lh.googleusercontent.com/Qfc9KivAAH65ag0GAZEMSJbihSQbCcqdu2ZIWT9r-zIr3CM-nhxVOXeo9P9ZMie6BBFp7Murw_yvYxXkRPV9",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Estoty",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "와글와글 군단: 방치형 라인 디펜스",
+    "slug": "와글와글-군단-방치형-라인-디펜스",
+    "icon": "https://play-lh.googleusercontent.com/eEQuTri0-QJ9W0PMbBZNROGK1P7sbqYpz0QeY9GFwZxF8TD1XCZI5-wkEYD4xkZFTvWHKLi3aAS0hQ2dmu7GkA",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "EKGAMES",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Escape Simulator 2",
+    "slug": "escape-simulator-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2879840/fb97617460974d459baa46a6e5733e628dbe21b7/capsule_231x87_alt_assets_0.jpg?t=1765913600",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Pine Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Shape of Dreams",
+    "slug": "shape-of-dreams",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2444750/b1a6e28c147d9632d38ac54a93f3563a1b4f175c/capsule_231x87.jpg?t=1766041884",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Lizard Smoothie",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Overcooked! 2",
+    "slug": "overcooked-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728880/capsule_231x87.jpg?t=1765814547",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ghost Town Games Ltd.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Stellar Blade™",
+    "slug": "stellar-blade",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3489700/75914656cad450124a18fef914c5a5f4866ffb67/capsule_231x87.jpg?t=1763566418",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "SHIFT UP Corporation",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Split Fiction",
+    "slug": "split-fiction",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Hazelight Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Hades II",
+    "slug": "hades-ii",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/10c9138570a8d7ac9144f601ab0f2ccbc820337e/capsule_231x87.jpg?t=1765831644",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Supergiant Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Dead Island 2",
+    "slug": "dead-island-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/934700/a247bbfb249b71dfed4d6e582e5bea2b1dbd4358/capsule_231x87.jpg?t=1761231459",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Dambuster Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Hero's Land",
+    "slug": "heros-land",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2349820/0245cef61d0b3ffedb34d20b3d3a9b4ee211161f/capsule_231x87_alt_assets_3.jpg?t=1766546542",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "钢之直男工作室",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Tabletop Simulator",
+    "slug": "tabletop-simulator",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286160/capsule_231x87.jpg?t=1765809682",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Berserk Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Ready or Not",
+    "slug": "ready-or-not",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1144200/capsule_231x87.jpg?t=1753984272",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "VOID Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Ghost of Tsushima DIRECTOR'S CUT",
+    "slug": "ghost-of-tsushima-directors-cut",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/capsule_231x87.jpg?t=1763409398",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Sucker Punch Productions",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Assassin’s Creed Shadows",
+    "slug": "assassins-creed-shadows",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/fe6c8f40f405c8bb3a05788d1316ebd8e3c31b6a/capsule_231x87.jpg?t=1766171678",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Ubisoft Quebec",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Escape Simulator",
+    "slug": "escape-simulator",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1435790/45a7f618deb1486f4819e27d4b0d007fdcb5f4f3/capsule_231x87.jpg?t=1765484511",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Pine Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Library Of Ruina",
+    "slug": "library-of-ruina",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1256670/capsule_231x87.jpg?t=1670980516",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "ProjectMoon",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Backrooms: Escape Together",
+    "slug": "backrooms-escape-together",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2141730/dcc2e9cc8d5c08bae8b72bc266592434ecd24425/capsule_231x87.jpg?t=1765586995",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Triiodide Studios",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Warhammer 40,000: Space Marine 2",
+    "slug": "warhammer-40000-space-marine-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2183900/capsule_231x87.jpg?t=1764091362",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Saber Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "DON'T SCREAM TOGETHER",
+    "slug": "dont-scream-together",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2692990/4293bba212de2274133b4ecb6ac5c7d2043cedb8/capsule_231x87.jpg?t=1765328421",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Digital Cybercherries",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Sephiria",
+    "slug": "sephiria",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2436940/capsule_231x87.jpg?t=1766583408",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "TEAM HORAY",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "F1® 25",
+    "slug": "f1-25",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3059520/e5a63913fdbb2b641e64fddee542ab4c946b21cd/capsule_231x87.jpg?t=1762963192",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Codemasters",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Human Fall Flat",
+    "slug": "human-fall-flat",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/698850b369ddaa7e91fdff53f38ec657521690fd/capsule_231x87.jpg?t=1766514224",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "No Brakes Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Escape the Backrooms",
+    "slug": "escape-the-backrooms",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1943950/6f3b1691cc04c45eea651c42a4a3b4a30c062359/capsule_231x87_alt_assets_1.jpg?t=1766074518",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Fancy Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "TEKKEN 8",
+    "slug": "tekken-8",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1778820/capsule_231x87.jpg?t=1764891442",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Bandai Namco Studios Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "DAVE THE DIVER",
+    "slug": "dave-the-diver",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1868140/cfdc3d184fb5f3cbf9fff9b25bb1bce6f1baf673/capsule_231x87.jpg?t=1761737343",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "MINTROCKET",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "RV There Yet?",
+    "slug": "rv-there-yet",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3949040/05b77bc86d227612ded8e54753063e43c44698c4/capsule_231x87.jpg?t=1766020280",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Nuggets Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "BALL x PIT",
+    "slug": "ball-x-pit",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062430/93669476208e773101f9949b9e668322fc39ef85/capsule_231x87.jpg?t=1766773096",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Kenny Sun and Friends",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Marvel's Spider-Man 2",
+    "slug": "marvels-spider-man-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/379bd114fe5c23850555d1eb67fa8ac996bf702b/capsule_231x87.jpg?t=1763569811",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Insomniac Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Pummel Party",
+    "slug": "pummel-party",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/880940/capsule_231x87.jpg?t=1725311353",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Rebuilt Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+    "slug": "sekiro-shadows-die-twice-goty-edition",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/capsule_231x87.jpg?t=1762888662",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "FromSoftware, Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "DJMAX RESPECT V - V LIBERTY IV PACK",
+    "slug": "djmax-respect-v-v-liberty-iv-pack",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4077430/971adb4fdd4f8a3b8ebd2866b6989be4e9f32d9e/capsule_231x87.jpg?t=1766031327",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "NEOWIZ",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "PowerWash Simulator 2",
+    "slug": "powerwash-simulator-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2968420/33ef3ac597ce9813b4eb8da4eace0f5cb51869e5/capsule_231x87.jpg?t=1766070636",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "FuturLab",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
   }
 ]

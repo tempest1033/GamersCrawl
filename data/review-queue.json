@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "net.gameduo.gv",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -1451,6 +1451,106 @@
         }
       ],
       "addedAt": "2026-01-03T00:46:36.629Z"
+    },
+    {
+      "title": "플레이투게더 (Play Together)",
+      "status": "single",
+      "appIds": {
+        "ios": "1402384531"
+      },
+      "developer": "HAEGIN Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/cc/d7/06ccd795-e14b-3bb3-e572-fcb163748f67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "플레이투게더",
+          "appId": "com.haegin.playtogether"
+        },
+        {
+          "title": "Play Together VNG",
+          "appId": "com.vng.playtogether"
+        },
+        {
+          "title": "PK XD: 친구와 즐거운 게임",
+          "appId": "com.movile.playkids.pkxd"
+        }
+      ],
+      "addedAt": "2026-01-04T00:55:31.708Z"
+    },
+    {
+      "title": "두뇌우지끈",
+      "status": "single",
+      "appIds": {
+        "android": "com.stormborn.braincrunch"
+      },
+      "developer": "Stormborn",
+      "icon": "https://play-lh.googleusercontent.com/vuIDQjcEl0TZEFnkk_OdEIb5-feuG8cLi421xVE0RrTdcStX70I2gEVjI5StIlme4XMndzH_sXBz3PXfLL7PUw",
+      "searchResults": [],
+      "addedAt": "2026-01-04T00:56:11.439Z"
+    },
+    {
+      "title": "DIY Phone Case Maker",
+      "status": "matched",
+      "appIds": {
+        "android": "casual.phonecase.diy.maker",
+        "ios": 6478762495
+      },
+      "developer": "Bravestars Games",
+      "icon": "https://play-lh.googleusercontent.com/NAJROtgQG6BsgAINRtMbOAHPEaVstT6_ysXmP1Hd9bPf5czg-3gEq8guJGvDEsULyU0",
+      "searchResults": [
+        {
+          "title": "DIY Phone Case Maker",
+          "appId": 6478762495
+        },
+        {
+          "title": "폰케이스",
+          "appId": 1539408727
+        },
+        {
+          "title": "DIY Keyboard 3D",
+          "appId": 1587664214
+        }
+      ],
+      "addedAt": "2026-01-04T00:56:12.615Z"
+    },
+    {
+      "title": "I Am Monkey",
+      "status": "single",
+      "appIds": {
+        "android": "com.NewFolderGames.IAmMonkey"
+      },
+      "developer": "Estoty",
+      "icon": "https://play-lh.googleusercontent.com/Qfc9KivAAH65ag0GAZEMSJbihSQbCcqdu2ZIWT9r-zIr3CM-nhxVOXeo9P9ZMie6BBFp7Murw_yvYxXkRPV9",
+      "searchResults": [
+        {
+          "title": "I Am Monkey - original game",
+          "appId": 6752769771
+        },
+        {
+          "title": "I Am Cat",
+          "appId": 6740168334
+        },
+        {
+          "title": "I Am Security",
+          "appId": 6740168429
+        }
+      ],
+      "addedAt": "2026-01-04T00:56:13.584Z"
+    },
+    {
+      "title": "와글와글 군단: 방치형 라인 디펜스",
+      "status": "single",
+      "appIds": {
+        "android": "net.ekgames.projectz"
+      },
+      "developer": "EKGAMES",
+      "icon": "https://play-lh.googleusercontent.com/eEQuTri0-QJ9W0PMbBZNROGK1P7sbqYpz0QeY9GFwZxF8TD1XCZI5-wkEYD4xkZFTvWHKLi3aAS0hQ2dmu7GkA",
+      "searchResults": [
+        {
+          "title": "와글와글 군단",
+          "appId": 6752973592
+        }
+      ],
+      "addedAt": "2026-01-04T00:56:13.789Z"
     }
   ],
   "approved": [
