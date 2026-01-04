@@ -281,10 +281,10 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
     
         
     <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:336px;height:280px;margin:0 auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
     </div>
     <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4377097736" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
   
         
@@ -336,7 +336,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F768%2F911%2Fresize_gm819725_ps_sn.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">포르쉐 콜라보 후 배그 PC 지표 회복</h4>
           <p class="weekly-metric-desc">스팀에서 배틀그라운드가 약 65만 명 동시접속으로 상위권을 지키고 있어요.
@@ -406,10 +406,10 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
     
         
     <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:336px;height:280px;margin:0 auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
     </div>
     <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="2509466388" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
   
         
@@ -601,15 +601,36 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
 		        if (!el || !el.isConnected) return false;
 		        // 모바일/PC 전용 광고는 미디어 쿼리로 판단
 		        const slot = el.closest('.ad-slot');
-		        if (slot && slot.classList.contains('mobile-only')) {
-		          return window.matchMedia('(max-width: 768px)').matches;
-		        }
-		        if (slot && slot.classList.contains('pc-only')) {
-		          return window.matchMedia('(min-width: 769px)').matches;
-		        }
-		        const style = window.getComputedStyle(el);
+		        if (slot && slot.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+		        if (slot && slot.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+		        const target = slot || el;
+		        const style = window.getComputedStyle(target);
 		        if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+		        // display:none 조상/탭 패널 등으로 실제 폭이 0이면 초기화하지 않음
+		        try {
+		          const rect = target.getBoundingClientRect();
+		          if (!rect || rect.width <= 0) return false;
+		        } catch {
+		          return false;
+		        }
 		        return true;
+		      }
+
+		      function isSdkLoaded() {
+		        return !!(window.adsbygoogle && (window.adsbygoogle.loaded || window.adsbygoogle.push !== Array.prototype.push));
+		      }
+
+		      function tryInitAd(el) {
+		        if (!el || el.dataset.gcAdsInit === '1') return;
+		        if (!canInit(el)) return;
+		        // SDK 미로드 시 플래그 설정 안 함 (나중에 재시도)
+		        if (!isSdkLoaded()) return;
+		        el.dataset.gcAdsInit = '1';
+		        try {
+		          (adsbygoogle = window.adsbygoogle || []).push({});
+		        } catch (e) {
+		          delete el.dataset.gcAdsInit;
+		        }
 		      }
 
 		      function hasRenderedAd(el) {
@@ -670,19 +691,8 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
 		      }
 
 		      function initAds() {
-		        // SDK 로드 확인 - 미로드 시 나중에 재시도
-		        var sdkLoaded = window.adsbygoogle && (window.adsbygoogle.loaded || window.adsbygoogle.push !== Array.prototype.push);
 		        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
-		          if (el.dataset.gcAdsInit === '1') return;
-	          if (!canInit(el)) return;
-	          // SDK 미로드 시 플래그 설정 안 함 (나중에 재시도)
-	          if (!sdkLoaded) return;
-	          el.dataset.gcAdsInit = '1';
-	          try {
-	            (adsbygoogle = window.adsbygoogle || []).push({});
-	          } catch (e) {
-	            delete el.dataset.gcAdsInit;
-		          }
+		          tryInitAd(el);
 		        });
 		      }
 
@@ -708,17 +718,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
 		              var el = entry.target.classList.contains('adsbygoogle')
 		                ? entry.target
 		                : entry.target.querySelector('ins.adsbygoogle');
-		              if (el && el.dataset.gcAdsInit !== '1' && el.isConnected) {
-		                var style = window.getComputedStyle(el);
-		                if (style && style.display !== 'none' && style.visibility !== 'hidden') {
-		                  el.dataset.gcAdsInit = '1';
-		                  try {
-		                    (adsbygoogle = window.adsbygoogle || []).push({});
-		                  } catch (e) {
-		                    delete el.dataset.gcAdsInit;
-		                  }
-		                }
-		              }
+		              if (el && el.isConnected) tryInitAd(el);
 		            }
 		          });
 		        }, { rootMargin: '200px 0px', threshold: 0 });
@@ -747,7 +747,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
 		        var start = Date.now();
 		        function check() {
 		          // SDK가 로드되면 adsbygoogle.loaded가 true이거나 push가 실제 함수
-		          if (window.adsbygoogle && (window.adsbygoogle.loaded || window.adsbygoogle.push !== Array.prototype.push)) {
+		          if (isSdkLoaded()) {
 		            callback();
 		          } else if (Date.now() - start < maxWait) {
 		            setTimeout(check, 100);

@@ -241,7 +241,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fm_mabinogim%2Fglobal%2Fen%2Fmain%2Fmeta.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">마비노기 모바일, 스타필드 팝업 운영 중</h4>
                 <p class="weekly-hot-desc">넥슨이 스타필드 수원에서 마비노기 모바일 크리스마스 팝업을 운영 중이에요.
@@ -281,10 +281,10 @@
     
         
     <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:336px;height:280px;margin:0 auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
     </div>
     <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4377097736" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
   
         
@@ -306,7 +306,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.freeiconspng.com%2Fthumbs%2Fgavel-icon%2Fgavel-icon-1.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
         <div class="industry-content">
           <h4 class="industry-title">자율규제/등급기관, 이용자 대화 확대</h4>
           <p class="industry-desc">한국게임정책자율기구와 게임물관리위원회가 이용자 소통 토론회를 예고했어요. 규정 해석과 현장 사례가 공유되면 운영 공지 품질이 높아질 수 있습니다.</p>
@@ -406,10 +406,10 @@
     
         
     <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:336px;height:280px;margin:0 auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
     </div>
     <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+      <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="2509466388" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
   
         
@@ -616,15 +616,36 @@
 		        if (!el || !el.isConnected) return false;
 		        // 모바일/PC 전용 광고는 미디어 쿼리로 판단
 		        const slot = el.closest('.ad-slot');
-		        if (slot && slot.classList.contains('mobile-only')) {
-		          return window.matchMedia('(max-width: 768px)').matches;
-		        }
-		        if (slot && slot.classList.contains('pc-only')) {
-		          return window.matchMedia('(min-width: 769px)').matches;
-		        }
-		        const style = window.getComputedStyle(el);
+		        if (slot && slot.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+		        if (slot && slot.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+		        const target = slot || el;
+		        const style = window.getComputedStyle(target);
 		        if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+		        // display:none 조상/탭 패널 등으로 실제 폭이 0이면 초기화하지 않음
+		        try {
+		          const rect = target.getBoundingClientRect();
+		          if (!rect || rect.width <= 0) return false;
+		        } catch {
+		          return false;
+		        }
 		        return true;
+		      }
+
+		      function isSdkLoaded() {
+		        return !!(window.adsbygoogle && (window.adsbygoogle.loaded || window.adsbygoogle.push !== Array.prototype.push));
+		      }
+
+		      function tryInitAd(el) {
+		        if (!el || el.dataset.gcAdsInit === '1') return;
+		        if (!canInit(el)) return;
+		        // SDK 미로드 시 플래그 설정 안 함 (나중에 재시도)
+		        if (!isSdkLoaded()) return;
+		        el.dataset.gcAdsInit = '1';
+		        try {
+		          (adsbygoogle = window.adsbygoogle || []).push({});
+		        } catch (e) {
+		          delete el.dataset.gcAdsInit;
+		        }
 		      }
 
 		      function hasRenderedAd(el) {
@@ -685,19 +706,8 @@
 		      }
 
 		      function initAds() {
-		        // SDK 로드 확인 - 미로드 시 나중에 재시도
-		        var sdkLoaded = window.adsbygoogle && (window.adsbygoogle.loaded || window.adsbygoogle.push !== Array.prototype.push);
 		        document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
-		          if (el.dataset.gcAdsInit === '1') return;
-	          if (!canInit(el)) return;
-	          // SDK 미로드 시 플래그 설정 안 함 (나중에 재시도)
-	          if (!sdkLoaded) return;
-	          el.dataset.gcAdsInit = '1';
-	          try {
-	            (adsbygoogle = window.adsbygoogle || []).push({});
-	          } catch (e) {
-	            delete el.dataset.gcAdsInit;
-		          }
+		          tryInitAd(el);
 		        });
 		      }
 
@@ -723,17 +733,7 @@
 		              var el = entry.target.classList.contains('adsbygoogle')
 		                ? entry.target
 		                : entry.target.querySelector('ins.adsbygoogle');
-		              if (el && el.dataset.gcAdsInit !== '1' && el.isConnected) {
-		                var style = window.getComputedStyle(el);
-		                if (style && style.display !== 'none' && style.visibility !== 'hidden') {
-		                  el.dataset.gcAdsInit = '1';
-		                  try {
-		                    (adsbygoogle = window.adsbygoogle || []).push({});
-		                  } catch (e) {
-		                    delete el.dataset.gcAdsInit;
-		                  }
-		                }
-		              }
+		              if (el && el.isConnected) tryInitAd(el);
 		            }
 		          });
 		        }, { rootMargin: '200px 0px', threshold: 0 });
@@ -762,7 +762,7 @@
 		        var start = Date.now();
 		        function check() {
 		          // SDK가 로드되면 adsbygoogle.loaded가 true이거나 push가 실제 함수
-		          if (window.adsbygoogle && (window.adsbygoogle.loaded || window.adsbygoogle.push !== Array.prototype.push)) {
+		          if (isSdkLoaded()) {
 		            callback();
 		          } else if (Date.now() - start < maxWait) {
 		            setTimeout(check, 100);
