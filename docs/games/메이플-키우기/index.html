@@ -523,7 +523,7 @@
             <h2 class="home-card-title">메이플 키우기 뉴스</h2>
           </div>
           <div class="home-card-body">
-      <div class="gm-container gm-container-wide" data-all-count="32" data-weekly-count="7" data-monthly-count="32">
+      <div class="gm-container gm-container-wide" data-all-count="33" data-weekly-count="8" data-monthly-count="33">
         <div class="gm-tab-row">
       <div class="tab-group">
         <button class="tab-btn active" data-gm-period="all">전체</button>
@@ -537,7 +537,13 @@
       </div>
     </div>
         <div class="gm-period-content active" data-gm-content="all">
-          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-03">
+          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-05">
+        <div class="gm-item-header">
+          <span class="gm-item-title">메이플 키우기, 12월 마지막 주까지 양대 마켓 1위</span>
+          <span class="gm-item-date">01.05</span>
+        </div>
+        <div class="gm-item-desc">넥슨의 메이플 키우기가 12월 마지막 주에도 iOS와 Android 양대 마켓 매출 1위를 지켰어요. 글로벌에서는 미국이 매출 1위 국가로, 메이플스토리 IP의 향수와 방치형 트렌드 결합이 주효했다는 평가입니다.</div>
+      </div><div class="gm-item" data-type="metric" data-date="2026-01-03">
         <div class="gm-item-header">
           <span class="gm-item-title">메이플 키우기, iOS·Android 양대 마켓 1위 독주 지속</span>
           <span class="gm-item-date">01.03</span>
@@ -732,7 +738,13 @@
       </div></div>
         </div>
         <div class="gm-period-content" data-gm-content="weekly">
-          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-03">
+          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-05">
+        <div class="gm-item-header">
+          <span class="gm-item-title">메이플 키우기, 12월 마지막 주까지 양대 마켓 1위</span>
+          <span class="gm-item-date">01.05</span>
+        </div>
+        <div class="gm-item-desc">넥슨의 메이플 키우기가 12월 마지막 주에도 iOS와 Android 양대 마켓 매출 1위를 지켰어요. 글로벌에서는 미국이 매출 1위 국가로, 메이플스토리 IP의 향수와 방치형 트렌드 결합이 주효했다는 평가입니다.</div>
+      </div><div class="gm-item" data-type="metric" data-date="2026-01-03">
         <div class="gm-item-header">
           <span class="gm-item-title">메이플 키우기, iOS·Android 양대 마켓 1위 독주 지속</span>
           <span class="gm-item-date">01.03</span>
@@ -777,7 +789,13 @@
       </div></div>
         </div>
         <div class="gm-period-content" data-gm-content="monthly">
-          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-03">
+          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-05">
+        <div class="gm-item-header">
+          <span class="gm-item-title">메이플 키우기, 12월 마지막 주까지 양대 마켓 1위</span>
+          <span class="gm-item-date">01.05</span>
+        </div>
+        <div class="gm-item-desc">넥슨의 메이플 키우기가 12월 마지막 주에도 iOS와 Android 양대 마켓 매출 1위를 지켰어요. 글로벌에서는 미국이 매출 1위 국가로, 메이플스토리 IP의 향수와 방치형 트렌드 결합이 주효했다는 평가입니다.</div>
+      </div><div class="gm-item" data-type="metric" data-date="2026-01-03">
         <div class="gm-item-header">
           <span class="gm-item-title">메이플 키우기, iOS·Android 양대 마켓 1위 독주 지속</span>
           <span class="gm-item-date">01.03</span>
@@ -1742,8 +1760,6 @@
     }
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
-    // 실제 크기가 0이면 초기화하지 않음 (숨김/탭 전환 케이스)
-    if (slot.offsetWidth === 0 || slot.offsetHeight === 0) return false;
     return true;
   }
 

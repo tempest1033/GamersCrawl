@@ -256,7 +256,7 @@
             <h2 class="home-card-title">Counter-Strike 2 뉴스</h2>
           </div>
           <div class="home-card-body">
-      <div class="gm-container gm-container-wide" data-all-count="26" data-weekly-count="5" data-monthly-count="26">
+      <div class="gm-container gm-container-wide" data-all-count="27" data-weekly-count="6" data-monthly-count="27">
         <div class="gm-tab-row">
       <div class="tab-group">
         <button class="tab-btn active" data-gm-period="all">전체</button>
@@ -270,7 +270,13 @@
       </div>
     </div>
         <div class="gm-period-content active" data-gm-content="all">
-          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-03">
+          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-05">
+        <div class="gm-item-header">
+          <span class="gm-item-title">스팀 동접 TOP5, ARC Raiders 45만 명 기록</span>
+          <span class="gm-item-date">01.05</span>
+        </div>
+        <div class="gm-item-desc">스팀 동시접속 순위에서 Counter-Strike 2가 136만 명으로 1위, Dota 2가 70만 명으로 2위를 차지한 가운데, 넥슨의 ARC Raiders가 45만 명으로 3위에 올랐어요. 한국 게임사 최초로 스팀 동접 TOP3 진입이라는 기록을 세웠습니다.</div>
+      </div><div class="gm-item" data-type="metric" data-date="2026-01-03">
         <div class="gm-item-header">
           <span class="gm-item-title">Steam 동시접속 TOP5에 ARC Raiders 35만 명 돌풍</span>
           <span class="gm-item-date">01.03</span>
@@ -429,7 +435,13 @@
       </div></div>
         </div>
         <div class="gm-period-content" data-gm-content="weekly">
-          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-03">
+          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-05">
+        <div class="gm-item-header">
+          <span class="gm-item-title">스팀 동접 TOP5, ARC Raiders 45만 명 기록</span>
+          <span class="gm-item-date">01.05</span>
+        </div>
+        <div class="gm-item-desc">스팀 동시접속 순위에서 Counter-Strike 2가 136만 명으로 1위, Dota 2가 70만 명으로 2위를 차지한 가운데, 넥슨의 ARC Raiders가 45만 명으로 3위에 올랐어요. 한국 게임사 최초로 스팀 동접 TOP3 진입이라는 기록을 세웠습니다.</div>
+      </div><div class="gm-item" data-type="metric" data-date="2026-01-03">
         <div class="gm-item-header">
           <span class="gm-item-title">Steam 동시접속 TOP5에 ARC Raiders 35만 명 돌풍</span>
           <span class="gm-item-date">01.03</span>
@@ -462,7 +474,13 @@
       </div></div>
         </div>
         <div class="gm-period-content" data-gm-content="monthly">
-          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-03">
+          <div class="gm-items gm-items-grid"><div class="gm-item" data-type="metric" data-date="2026-01-05">
+        <div class="gm-item-header">
+          <span class="gm-item-title">스팀 동접 TOP5, ARC Raiders 45만 명 기록</span>
+          <span class="gm-item-date">01.05</span>
+        </div>
+        <div class="gm-item-desc">스팀 동시접속 순위에서 Counter-Strike 2가 136만 명으로 1위, Dota 2가 70만 명으로 2위를 차지한 가운데, 넥슨의 ARC Raiders가 45만 명으로 3위에 올랐어요. 한국 게임사 최초로 스팀 동접 TOP3 진입이라는 기록을 세웠습니다.</div>
+      </div><div class="gm-item" data-type="metric" data-date="2026-01-03">
         <div class="gm-item-header">
           <span class="gm-item-title">Steam 동시접속 TOP5에 ARC Raiders 35만 명 돌풍</span>
           <span class="gm-item-date">01.03</span>
@@ -1391,8 +1409,6 @@
     }
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
-    // 실제 크기가 0이면 초기화하지 않음 (숨김/탭 전환 케이스)
-    if (slot.offsetWidth === 0 || slot.offsetHeight === 0) return false;
     return true;
   }
 
