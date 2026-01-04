@@ -4595,7 +4595,7 @@
         "tag": "신작",
         "title": "명일방주 엔드필드, 1월 22일 PS5·PC·모바일 동시 출시",
         "desc": "그리프라인이 3D 전략 RPG '명일방주: 엔드필드'를 1월 22일 글로벌 정식 출시한다고 발표했어요. 사전예약 3000만 건을 돌파하며 기대감을 입증했고, 원리퍼블릭이 참여한 OST도 화제가 되고 있습니다.",
-        "thumbnail": "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/share-oversea.6f430b84.jpg"
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2286620/header.jpg"
       },
       {
         "tag": "콘솔",
@@ -4607,13 +4607,13 @@
         "tag": "업데이트",
         "title": "에픽세븐, 신규 월광 영웅 '어둠의 목자 디에네' 추가",
         "desc": "스마일게이트 에픽세븐이 신규 월광 영웅 '어둠의 목자 디에네'를 업데이트했어요. 불사 상태에서 협공을 발생시키는 독특한 스킬 구성과 함께 신년 접속 이벤트로 88레벨 장비 등 풍성한 보상을 제공하고 있습니다.",
-        "thumbnail": "https://play-lh.googleusercontent.com/siMf4o-c3G8qXYjviTBYmVpUihRTOEqmiWC9BEdkDqPIdciir3_2pqFg8cvZekv1_y_L3sl1qtA6b_E6mwJt"
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/2161700/header.jpg"
       },
       {
         "tag": "모바일",
         "title": "잠룡 도트 무협 RPG, iOS 인기 순위 급상승 중",
         "desc": "Stand Egg의 방치형 RPG '잠룡: 도트 무협 RPG'가 iOS 인기 순위 2위까지 올라섰어요. 레트로 픽셀 감성과 무협 세계관, 거래소 시스템이 유저들의 호응을 얻으며 신규 다크호스로 떠오르고 있습니다.",
-        "thumbnail": null
+        "thumbnail": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/82/2f/ba822f13-3d5f-ab3b-ca2e-e0dd12ef9d30/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png"
       }
     ],
     "industryIssues": [
@@ -4635,7 +4635,7 @@
         "tag": "동접",
         "title": "ARC Raiders, Steam 동시접속 38만 명 돌파",
         "desc": "넥슨 퍼블리싱의 ARC Raiders가 Steam 동시접속 TOP5에 진입하며 38만 명을 기록했어요. 출시 이후 매주 Steam 유료 게임 판매 1위를 차지하며 글로벌 흥행을 이어가고 있습니다.",
-        "thumbnail": "https://sht-vod.dn.nexoncdn.co.kr/arcraiders/static-assets/images/shared/arc-raiders-social.jpg"
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg"
       },
       {
         "tag": "인기",
@@ -4725,7 +4725,8 @@
         "name": "위메이드",
         "comment": "흑자 전환 성공, 미드나잇 워커스 등 신작 라인업에 기대"
       }
-    ]
+    ],
+    "thumbnail": "https://static.inven.co.kr/column/2026/01/03/news/thumb/s1155398617.jpg"
   },
   "aiGeneratedAt": "2026-01-03T21:16:04.148Z",
   "stockMap": {
