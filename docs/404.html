@@ -892,7 +892,7 @@
   }
 
   function syncAdSlotVisibility() {
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
       markSeen(el);
       syncOneAdSlot(el);
     });
@@ -905,7 +905,7 @@
       if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) delayMs = 3500;
     } catch (e) {}
 
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
       markSeen(el);
       var slot = el.closest('.ad-slot');
       if (!slot) return;
@@ -940,7 +940,7 @@
           syncOneAdSlot(el);
         });
       });
-      document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+      document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
         obs.observe(el, { attributes: true, attributeFilter: ['data-ad-status'] });
       });
     } catch (e) {}
@@ -962,7 +962,7 @@
   }
 
   function initAds() {
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
       if (el.dataset.gcAdsInit === '1') return;
       if (!canInit(el)) return;
       el.dataset.gcAdsInit = '1';
@@ -993,7 +993,7 @@
         if (entry.isIntersecting) {
           var el = entry.target.classList.contains('adsbygoogle')
             ? entry.target
-            : entry.target.querySelector('ins.adsbygoogle');
+            : entry.target.querySelector('ins.adsbygoogle[data-gc-ad="1"]');
           if (el && el.dataset.gcAdsInit !== '1' && el.isConnected && canInit(el)) {
             el.dataset.gcAdsInit = '1';
             try {
@@ -1008,7 +1008,7 @@
     document.querySelectorAll('.ad-slot').forEach(function(slot) {
       window.__gcAdIntersectionObserver.observe(slot);
     });
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(ins) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(ins) {
       if (!ins.closest('.ad-slot')) {
         window.__gcAdIntersectionObserver.observe(ins);
       }

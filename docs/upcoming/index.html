@@ -187,9 +187,9 @@
   <main class="container">
     
     <section class="section active" id="upcoming">
-      <ins class="adsbygoogle mobile-only ad-slot-section" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal"></ins>
+      <ins class="adsbygoogle mobile-only ad-slot-section" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="horizontal"></ins>
       <div class="page-wrapper">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:block;width:100%;max-height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins></div>
+        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%;max-height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins></div>
         <h1 class="visually-hidden">출시 게임 - 신작 게임, 출시 예정 게임</h1>
         <div class="upcoming-card home-card">
           <div class="home-card-header">
@@ -1826,7 +1826,7 @@
   }
 
   function syncAdSlotVisibility() {
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
       markSeen(el);
       syncOneAdSlot(el);
     });
@@ -1839,7 +1839,7 @@
       if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) delayMs = 3500;
     } catch (e) {}
 
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
       markSeen(el);
       var slot = el.closest('.ad-slot');
       if (!slot) return;
@@ -1874,7 +1874,7 @@
           syncOneAdSlot(el);
         });
       });
-      document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+      document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
         obs.observe(el, { attributes: true, attributeFilter: ['data-ad-status'] });
       });
     } catch (e) {}
@@ -1896,7 +1896,7 @@
   }
 
   function initAds() {
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(el) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(el) {
       if (el.dataset.gcAdsInit === '1') return;
       if (!canInit(el)) return;
       el.dataset.gcAdsInit = '1';
@@ -1927,7 +1927,7 @@
         if (entry.isIntersecting) {
           var el = entry.target.classList.contains('adsbygoogle')
             ? entry.target
-            : entry.target.querySelector('ins.adsbygoogle');
+            : entry.target.querySelector('ins.adsbygoogle[data-gc-ad="1"]');
           if (el && el.dataset.gcAdsInit !== '1' && el.isConnected && canInit(el)) {
             el.dataset.gcAdsInit = '1';
             try {
@@ -1942,7 +1942,7 @@
     document.querySelectorAll('.ad-slot').forEach(function(slot) {
       window.__gcAdIntersectionObserver.observe(slot);
     });
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(ins) {
+    document.querySelectorAll('ins.adsbygoogle[data-gc-ad="1"]').forEach(function(ins) {
       if (!ins.closest('.ad-slot')) {
         window.__gcAdIntersectionObserver.observe(ins);
       }
