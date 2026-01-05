@@ -1189,11 +1189,26 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
     });
   }
 
+  function checkEmptyAds() {
+    setTimeout(function() {
+      document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) {
+        if (!ins.isConnected) return;
+        var slot = ins.closest ? ins.closest('.ad-slot') : null;
+        if (!slot || slot.style.display === 'none') return;
+        var rect = ins.getBoundingClientRect();
+        if (rect.height < 10) {
+          collapseUnfilled(ins);
+        }
+      });
+    }, 3000);
+  }
+
   function start() {
     initAll();
     observeSizes();
     bindMediaChange();
     observeUnfilled();
+    checkEmptyAds();
   }
 
   if (document.readyState === 'loading') {
