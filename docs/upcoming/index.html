@@ -1102,7 +1102,7 @@
           <span class="upcoming-rank top2">2</span>
         </div>
         <div class="upcoming-col-game">
-          <img class="upcoming-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/48/86/86/488686ba-52fc-fb6d-e613-069f89660d29/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" decoding="async" onerror="this.parentElement.querySelector('.upcoming-icon-placeholder')?.classList.remove('hidden');this.style.display='none'"><div class="upcoming-icon-placeholder hidden"><svg viewBox="0 0 24 24" fill="#34a853"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#34a853" stroke-width="2" fill="none"/><circle cx="12" cy="18" r="1.5" fill="#34a853"/></svg></div>
+          <img class="upcoming-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/db/1d/f3db1d72-c7fd-bfaa-36b2-be3532f47763/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" decoding="async" onerror="this.parentElement.querySelector('.upcoming-icon-placeholder')?.classList.remove('hidden');this.style.display='none'"><div class="upcoming-icon-placeholder hidden"><svg viewBox="0 0 24 24" fill="#34a853"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#34a853" stroke-width="2" fill="none"/><circle cx="12" cy="18" r="1.5" fill="#34a853"/></svg></div>
           <div class="upcoming-info">
             <div class="upcoming-name">Dawn Watch: Survival</div>
             <div class="upcoming-publisher">STARFORTUNE INTERACTIVE ENTERTAINMENT TECHNOLOGY CO., LIMITED</div>
@@ -1777,23 +1777,20 @@
   function canInit(el) {
     if (!el || !el.isConnected) return false;
     var slot = el.closest('.ad-slot') || el;
-    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
-    var rect = el.getBoundingClientRect();
-    if (rect.width < 1) return false;
-    if (slot.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (slot.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
-    if (el.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (el.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
+    if (slot.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (slot.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+    if (el.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (el.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+
+    var slotStyle = window.getComputedStyle(slot);
+    if (!slotStyle || slotStyle.display === 'none' || slotStyle.visibility === 'hidden') return false;
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+
+    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
+    var rect = slot.getBoundingClientRect();
+    if (rect.width < 1) rect = el.getBoundingClientRect();
+    if (rect.width < 1) return false;
     return true;
   }
 
@@ -1921,8 +1918,6 @@
 
   var initRetryTimers = [];
   function scheduleInitRetries() {
-    if (window.__gcAdsInitRetriesScheduled) return;
-    window.__gcAdsInitRetriesScheduled = true;
     initRetryTimers.forEach(clearTimeout);
     initRetryTimers = [];
     [100, 300, 500, 1000, 2000].forEach(function(delay) {

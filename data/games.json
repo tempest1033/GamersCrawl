@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "studio.gameberry.idlehunter",
+        "android": "com.ryonggame.soulhunteridle",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4587,7 +4587,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
@@ -11532,7 +11532,7 @@
     "Rope Escape Master": {
       "appIds": {
         "android": "com.sp.rope.escape.master",
-        "ios": 6756253780
+        "ios": "6756253780"
       },
       "aliases": [],
       "developer": "PoseidonJoy",
@@ -12222,8 +12222,172 @@
       "platforms": [
         "steam"
       ]
+    },
+    "히어로즈 오브 크라운": {
+      "appIds": {
+        "ios": "6476544470",
+        "android": "com.ujoy.hoc"
+      },
+      "aliases": [],
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/2c/74/442c74e3-7313-6d95-3d37-4f70e46120ac/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "히어로즈-오브-크라운",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "디바인: 신을 모시는 자": {
+      "appIds": {
+        "ios": "6744669416",
+        "android": "com.zy.gpkr"
+      },
+      "aliases": [],
+      "developer": "HONGKONG FAME CHAMPION TRADING CO., LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/d5/4a/7bd54a42-651c-59f0-4e04-b2be17e05c06/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/100x100bb.png",
+      "slug": "디바인-신을-모시는-자",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "I Am Monkey - original game": {
+      "appIds": {
+        "ios": "6752769771"
+      },
+      "aliases": [],
+      "developer": "Estoty",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/04/f9/7904f9d0-0021-2cea-0c5e-6a9deb298c8e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "i-am-monkey-original-game",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Solitaire Day-Fun card game": {
+      "appIds": {
+        "android": "com.solitaireday.cardgame"
+      },
+      "aliases": [],
+      "developer": "Game Cock Team",
+      "icon": "https://play-lh.googleusercontent.com/fGSnhmbMoQsAf6Qxr-Ewc3fAbu3UhSSZwigO_4vYRgCNtQMawVKo3DejvNF7u_8vNsLTdNyl82uf4Ig8-el70A",
+      "slug": "solitaire-day-fun-card-game",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Walk King - Race on Stairs": {
+      "appIds": {
+        "android": "com.walk.king.race.on.stairs",
+        "ios": 6738349199
+      },
+      "aliases": [],
+      "developer": "Skyloft Yazılım Bilişim ve Anonim Şirketi",
+      "icon": "https://play-lh.googleusercontent.com/_azlI3FJACT4sHBfka-aO7jsogdlyUzux1HE9J5A6xG7-ncsiIhtSGgyNW-8nSQ3Ghs",
+      "slug": "walk-king-race-on-stairs",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Kick & Break The Ragdoll Games": {
+      "appIds": {
+        "android": "com.playflix.kick.breakragdoll.games"
+      },
+      "aliases": [],
+      "developer": "Game District LLC",
+      "icon": "https://play-lh.googleusercontent.com/rgGNjWhQNxqqn365nYiqZoH2qq5Txqnr2JxNSfigs6lLIKv8kHRh8UymElZ6iFjEhHI",
+      "slug": "kick-break-the-ragdoll-games",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Ragdoll Blade": {
+      "appIds": {
+        "android": "games.tatsumaki.ragdollblade",
+        "ios": 6741186588
+      },
+      "aliases": [],
+      "developer": "tatsumaki games",
+      "icon": "https://play-lh.googleusercontent.com/ULCwTpPEaYWxsY6MBKC9GjigZryy5C3dY0IXVbbR5rXQH2jcnFLCGV-Nk9CsuFlaWXIG",
+      "slug": "ragdoll-blade",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Chill with You : Lo-Fi Story": {
+      "appIds": {
+        "steam": "3548580"
+      },
+      "aliases": [],
+      "developer": "Nestopi Inc.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3548580/93b90984505a42b94ff78f244d0a95e732364158/capsule_231x87.jpg?t=1766722191",
+      "slug": "chill-with-you-lo-fi-story",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Assassin's Creed Valhalla": {
+      "appIds": {
+        "steam": "2208920"
+      },
+      "aliases": [],
+      "developer": "Ubisoft Montreal",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2208920/capsule_231x87.jpg?t=1754572990",
+      "slug": "assassins-creed-valhalla",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Town to City": {
+      "appIds": {
+        "steam": "3115220"
+      },
+      "aliases": [],
+      "developer": "Galaxy Grove",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3115220/afb81e9e9cd4cc5d942d9b50e3f4d99b541bca84/capsule_231x87.jpg?t=1764859457",
+      "slug": "town-to-city",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Resident Evil 4": {
+      "appIds": {
+        "steam": "2050650"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/capsule_231x87.jpg?t=1736385712",
+      "slug": "resident-evil-4",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Persona 5 Royal": {
+      "appIds": {
+        "steam": "1687950"
+      },
+      "aliases": [],
+      "developer": "ATLUS",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/capsule_231x87.jpg?t=1763530018",
+      "slug": "persona-5-royal",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "SILENT HILL f": {
+      "appIds": {
+        "steam": "2947440"
+      },
+      "aliases": [],
+      "developer": "NeoBards Entertainment Ltd.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947440/0059b56f4400fe95555b8145d5f8f05b160a54e5/capsule_231x87.jpg?t=1766449377",
+      "slug": "silent-hill-f",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2026-01-04",
-  "totalGames": 854
+  "lastUpdated": "2026-01-05",
+  "totalGames": 867
 }

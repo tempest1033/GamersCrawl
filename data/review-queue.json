@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "studio.gameberry.idlehunter",
+        "android": "com.ryonggame.soulhunteridle",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -820,7 +820,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.sp.rope.escape.master",
-        "ios": 6756253780
+        "ios": "6756253780"
       },
       "developer": "PoseidonJoy",
       "icon": "https://play-lh.googleusercontent.com/tgW1f51Jc_ALH05AZxox9Zo24lPeGqjSKLIP0SyrHT2NrEI9cJaqkSDyAYeSdnQQrJ6J",
@@ -1551,6 +1551,195 @@
         }
       ],
       "addedAt": "2026-01-04T00:56:13.789Z"
+    },
+    {
+      "title": "히어로즈 오브 크라운",
+      "status": "matched",
+      "appIds": {
+        "ios": "6476544470",
+        "android": "com.ujoy.hoc"
+      },
+      "developer": "Ujoy Games Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/2c/74/442c74e3-7313-6d95-3d37-4f70e46120ac/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "히어로즈 오브 크라운",
+          "appId": "com.ujoy.hoc"
+        },
+        {
+          "title": "로드 오브 히어로즈",
+          "appId": "com.clovergames.lordofheroes"
+        },
+        {
+          "title": "Idle Heroes - 아이들 히어로즈",
+          "appId": "com.droidhang.ad"
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:21.597Z"
+    },
+    {
+      "title": "디바인: 신을 모시는 자",
+      "status": "matched",
+      "appIds": {
+        "ios": "6744669416",
+        "android": "com.zy.gpkr"
+      },
+      "developer": "HONGKONG FAME CHAMPION TRADING CO., LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/d5/4a/7bd54a42-651c-59f0-4e04-b2be17e05c06/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "디바인: 신을 모시는 자",
+          "appId": "com.zy.gpkr"
+        },
+        {
+          "title": "알케미아 스토리 - MMORPG",
+          "appId": "com.asobimo.alchemiastory"
+        },
+        {
+          "title": "신명2:오행의 신",
+          "appId": "com.indie.jz3d.google.kr"
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:22.080Z"
+    },
+    {
+      "title": "I Am Monkey - original game",
+      "status": "single",
+      "appIds": {
+        "ios": "6752769771"
+      },
+      "developer": "Estoty",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/04/f9/7904f9d0-0021-2cea-0c5e-6a9deb298c8e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "I Am Monkey",
+          "appId": "com.NewFolderGames.IAmMonkey"
+        },
+        {
+          "title": "I Am a Monkey Prank Battle",
+          "appId": "com.fun.prankster.monkey.game"
+        },
+        {
+          "title": "I Am Prankster Monkey Zoo",
+          "appId": "com.gtmmad.prankster.monkeyzoo"
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:26.881Z"
+    },
+    {
+      "title": "Solitaire Day-Fun card game",
+      "status": "single",
+      "appIds": {
+        "android": "com.solitaireday.cardgame"
+      },
+      "developer": "Game Cock Team",
+      "icon": "https://play-lh.googleusercontent.com/fGSnhmbMoQsAf6Qxr-Ewc3fAbu3UhSSZwigO_4vYRgCNtQMawVKo3DejvNF7u_8vNsLTdNyl82uf4Ig8-el70A",
+      "searchResults": [
+        {
+          "title": "Solitaire Grand Harvest",
+          "appId": 1223338261
+        },
+        {
+          "title": "솔리테어",
+          "appId": 359917414
+        },
+        {
+          "title": "Solitaire Home Design",
+          "appId": 1492964317
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:37.205Z"
+    },
+    {
+      "title": "Walk King - Race on Stairs",
+      "status": "matched",
+      "appIds": {
+        "android": "com.walk.king.race.on.stairs",
+        "ios": 6738349199
+      },
+      "developer": "Skyloft Yazılım Bilişim ve Anonim Şirketi",
+      "icon": "https://play-lh.googleusercontent.com/_azlI3FJACT4sHBfka-aO7jsogdlyUzux1HE9J5A6xG7-ncsiIhtSGgyNW-8nSQ3Ghs",
+      "searchResults": [
+        {
+          "title": "Walk King - Race on Stairs",
+          "appId": 6738349199
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:38.379Z"
+    },
+    {
+      "title": "Kick & Break The Ragdoll Games",
+      "status": "single",
+      "appIds": {
+        "android": "com.playflix.kick.breakragdoll.games"
+      },
+      "developer": "Game District LLC",
+      "icon": "https://play-lh.googleusercontent.com/rgGNjWhQNxqqn365nYiqZoH2qq5Txqnr2JxNSfigs6lLIKv8kHRh8UymElZ6iFjEhHI",
+      "searchResults": [
+        {
+          "title": "Ragdoll Games - Kick & Break",
+          "appId": 6476128010
+        },
+        {
+          "title": "정신나간 사무실  — 슬랩 앤 스매시 게임",
+          "appId": 1623395612
+        },
+        {
+          "title": "Kick the Buddy: 스트레스 해소 미니게임",
+          "appId": 1278869953
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:41.569Z"
+    },
+    {
+      "title": "스킨케어 타임: 메이크오버 ASMR",
+      "status": "matched",
+      "appIds": {
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "ios": 6738948332
+      },
+      "developer": "FALCON GAME",
+      "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
+      "searchResults": [
+        {
+          "title": "스킨케어 타임: 메이크오버 ASMR",
+          "appId": 6738948332
+        },
+        {
+          "title": "SatisCare: 깔끔한 ASMR 게임",
+          "appId": 6742741718
+        },
+        {
+          "title": "Makeup ASMR: Makeover Story",
+          "appId": 6465175605
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:43.089Z"
+    },
+    {
+      "title": "Ragdoll Blade",
+      "status": "matched",
+      "appIds": {
+        "android": "games.tatsumaki.ragdollblade",
+        "ios": 6741186588
+      },
+      "developer": "tatsumaki games",
+      "icon": "https://play-lh.googleusercontent.com/ULCwTpPEaYWxsY6MBKC9GjigZryy5C3dY0IXVbbR5rXQH2jcnFLCGV-Nk9CsuFlaWXIG",
+      "searchResults": [
+        {
+          "title": "Ragdoll Blade",
+          "appId": 6741186588
+        },
+        {
+          "title": "Bloody Bastards",
+          "appId": 1593430099
+        },
+        {
+          "title": "Ragdoll Games - Kick & Break",
+          "appId": 6476128010
+        }
+      ],
+      "addedAt": "2026-01-05T00:47:44.408Z"
     }
   ],
   "approved": [

@@ -252,7 +252,7 @@
             <h2 class="home-card-title">Eternal Return 뉴스</h2>
           </div>
           <div class="home-card-body">
-      <div class="gm-container gm-container-wide" data-all-count="4" data-weekly-count="1" data-monthly-count="4">
+      <div class="gm-container gm-container-wide" data-all-count="4" data-weekly-count="1" data-monthly-count="3">
         <div class="gm-tab-row">
       <div class="tab-group">
         <button class="tab-btn active" data-gm-period="all">전체</button>
@@ -314,12 +314,6 @@
           <span class="gm-item-date">12.08</span>
         </div>
         <div class="gm-item-desc">치지직에서는 치지직컵 플레이오프와 '도파의시선', '룩삼 치지직컵 마지막날' 같은 개인 방송, 이터널 리턴 시즌 9 슈퍼컵 결승 중계가 모두 상단을 차지하고 있어요. 인기 스트리머와 프로-세미프로가 한 무대에 서는 이벤트라 경기력과 입담을 함께 즐기려는 시청자들이 오래 머무는 편이에요.</div>
-      </div><div class="gm-item" data-type="streaming" data-date="2025-12-05">
-        <div class="gm-item-header">
-          <span class="gm-item-title">배틀그라운드-PC 게임쇼 같이보기 인기</span>
-          <span class="gm-item-date">12.05</span>
-        </div>
-        <div class="gm-item-desc">치지직에선 겨울 에란겔을 즐기는 배틀그라운드 방송과 2025 PC 게임쇼 같이보기가 동시에 상단을 차지하고 있어요. 이터널 리턴 솔랭-먹방-잡담 방송도 늦은 밤 시청자를 꾸준히 모으며 플랫폼 체류 시간을 늘리고 있어요.</div>
       </div><div class="gm-item" data-type="streaming" data-date="2025-12-01 ~ 2025-12-07">
         <div class="gm-item-header">
           <span class="gm-item-title">치지직컵과 이터널 리턴 이벤트로 주말 시청률 견인</span>
@@ -894,7 +888,7 @@
 <script>
 (function() {
   // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
-  const navSections = ['news', 'trend', 'games', 'rankings', 'steam', 'youtube', 'upcoming', 'metacritic'];
+  const navSections = ['trend', 'games', 'rankings', 'steam', 'youtube', 'upcoming', 'metacritic'];
   const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
@@ -971,9 +965,8 @@
     const navInner = document.querySelector('.nav-inner');
     if (window.innerWidth <= 768 && navInner) {
       let offset = 0;
-      if (index >= 6) offset = -60;
-      else if (index >= 5) offset = -40;
-      else if (index >= 4) offset = -20;
+      if (index >= 4) offset = -40;
+      else if (index === 3) offset = -20;
       navInner.style.transform = 'translateX(' + offset + '%)';
     }
   }
@@ -985,9 +978,8 @@
     if (window.innerWidth <= 768 && navInner) {
       navInner.style.transition = 'none';
       let offset = 0;
-      if (currentIdx >= 6) offset = -60;
-      else if (currentIdx >= 5) offset = -40;
-      else if (currentIdx >= 4) offset = -20;
+      if (currentIdx >= 4) offset = -40;
+      else if (currentIdx === 3) offset = -20;
       navInner.style.transform = 'translateX(' + offset + '%)';
       // 강제 리플로우로 즉시 적용
       void navInner.offsetHeight;
@@ -1085,23 +1077,20 @@
   function canInit(el) {
     if (!el || !el.isConnected) return false;
     var slot = el.closest('.ad-slot') || el;
-    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
-    var rect = el.getBoundingClientRect();
-    if (rect.width < 1) return false;
-    if (slot.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (slot.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
-    if (el.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (el.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
+    if (slot.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (slot.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+    if (el.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (el.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+
+    var slotStyle = window.getComputedStyle(slot);
+    if (!slotStyle || slotStyle.display === 'none' || slotStyle.visibility === 'hidden') return false;
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+
+    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
+    var rect = slot.getBoundingClientRect();
+    if (rect.width < 1) rect = el.getBoundingClientRect();
+    if (rect.width < 1) return false;
     return true;
   }
 
@@ -1229,8 +1218,6 @@
 
   var initRetryTimers = [];
   function scheduleInitRetries() {
-    if (window.__gcAdsInitRetriesScheduled) return;
-    window.__gcAdsInitRetriesScheduled = true;
     initRetryTimers.forEach(clearTimeout);
     initRetryTimers = [];
     [100, 300, 500, 1000, 2000].forEach(function(delay) {

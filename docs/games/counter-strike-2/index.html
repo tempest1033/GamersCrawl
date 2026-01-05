@@ -252,7 +252,7 @@
             <h2 class="home-card-title">Counter-Strike 2 뉴스</h2>
           </div>
           <div class="home-card-body">
-      <div class="gm-container gm-container-wide" data-all-count="27" data-weekly-count="6" data-monthly-count="27">
+      <div class="gm-container gm-container-wide" data-all-count="27" data-weekly-count="5" data-monthly-count="25">
         <div class="gm-tab-row">
       <div class="tab-group">
         <button class="tab-btn active" data-gm-period="all">전체</button>
@@ -461,12 +461,6 @@
           <span class="gm-item-date">12.30</span>
         </div>
         <div class="gm-item-desc">스팀 동시접속 상위권은 Counter-Strike 2가 1,285,170명, Dota 2가 698,226명으로 격차가 컸어요. PUBG: BATTLEGROUNDS(216,131명)와 Rust(165,642명)도 상위권을 지켰습니다.</div>
-      </div><div class="gm-item" data-type="metric" data-date="2025-12-28">
-        <div class="gm-item-header">
-          <span class="gm-item-title">CS2 동시접속 135만 7천 명</span>
-          <span class="gm-item-date">12.28</span>
-        </div>
-        <div class="gm-item-desc">PC 플랫폼에서 'Counter-Strike 2' 동시접속이 135만 7천 명으로 집계됐어요. 연말에도 장기 흥행작이 트래픽을 크게 끌어올리는 모습이에요.</div>
       </div></div>
         </div>
         <div class="gm-period-content" data-gm-content="monthly">
@@ -608,18 +602,6 @@
           <span class="gm-item-date">12.06</span>
         </div>
         <div class="gm-item-desc">CS2-도타2-배틀그라운드가 스팀 동시접속 상위를 지키고 있어요. PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 관심이 다시 커지고 있어요.</div>
-      </div><div class="gm-item" data-type="issue" data-date="2025-12-05">
-        <div class="gm-item-header">
-          <span class="gm-item-title">CS2-도타2 견고, ARC Raiders 급부상</span>
-          <span class="gm-item-date">12.05</span>
-        </div>
-        <div class="gm-item-desc">스팀 동시접속은 여전히 CS2와 도타2가 최상위를 유지하고 있어요. ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC 대작으로 존재감을 드러내고 있어요.</div>
-      </div><div class="gm-item" data-type="metric" data-date="2025-12-05">
-        <div class="gm-item-header">
-          <span class="gm-item-title">스팀 동접, CS2-도타2 쌍두체제 유지</span>
-          <span class="gm-item-date">12.05</span>
-        </div>
-        <div class="gm-item-desc">Counter-Strike 2가 약 67만 명, 도타2가 약 46만 명 동시접속을 기록하며 스팀 1-2위를 지키고 있어요. ARC Raiders와 배틀필드6, Rust 등도 10만 명 안팎 동접으로 장기 서비스 경쟁에 합류하고 있어요.</div>
       </div><div class="gm-item" data-type="issue" data-date="2025-12-01 ~ 2025-12-07">
         <div class="gm-item-header">
           <span class="gm-item-title">토탈워: 미디블3 발표로 PC 전략 팬 설렘</span>
@@ -1200,7 +1182,7 @@
 <script>
 (function() {
   // 네비게이션 섹션 정의 (모바일 순서 기준, PC는 CSS order로 시각 조정)
-  const navSections = ['news', 'trend', 'games', 'rankings', 'steam', 'youtube', 'upcoming', 'metacritic'];
+  const navSections = ['trend', 'games', 'rankings', 'steam', 'youtube', 'upcoming', 'metacritic'];
   const getNavSections = () => navSections;
   let touchStartX = 0;
   let touchStartY = 0;
@@ -1277,9 +1259,8 @@
     const navInner = document.querySelector('.nav-inner');
     if (window.innerWidth <= 768 && navInner) {
       let offset = 0;
-      if (index >= 6) offset = -60;
-      else if (index >= 5) offset = -40;
-      else if (index >= 4) offset = -20;
+      if (index >= 4) offset = -40;
+      else if (index === 3) offset = -20;
       navInner.style.transform = 'translateX(' + offset + '%)';
     }
   }
@@ -1291,9 +1272,8 @@
     if (window.innerWidth <= 768 && navInner) {
       navInner.style.transition = 'none';
       let offset = 0;
-      if (currentIdx >= 6) offset = -60;
-      else if (currentIdx >= 5) offset = -40;
-      else if (currentIdx >= 4) offset = -20;
+      if (currentIdx >= 4) offset = -40;
+      else if (currentIdx === 3) offset = -20;
       navInner.style.transform = 'translateX(' + offset + '%)';
       // 강제 리플로우로 즉시 적용
       void navInner.offsetHeight;
@@ -1391,23 +1371,20 @@
   function canInit(el) {
     if (!el || !el.isConnected) return false;
     var slot = el.closest('.ad-slot') || el;
-    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
-    var rect = el.getBoundingClientRect();
-    if (rect.width < 1) return false;
-    if (slot.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (slot.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
-    if (el.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (el.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
+    if (slot.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (slot.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+    if (el.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (el.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+
+    var slotStyle = window.getComputedStyle(slot);
+    if (!slotStyle || slotStyle.display === 'none' || slotStyle.visibility === 'hidden') return false;
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+
+    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
+    var rect = slot.getBoundingClientRect();
+    if (rect.width < 1) rect = el.getBoundingClientRect();
+    if (rect.width < 1) return false;
     return true;
   }
 
@@ -1535,8 +1512,6 @@
 
   var initRetryTimers = [];
   function scheduleInitRetries() {
-    if (window.__gcAdsInitRetriesScheduled) return;
-    window.__gcAdsInitRetriesScheduled = true;
     initRetryTimers.forEach(clearTimeout);
     initRetryTimers = [];
     [100, 300, 500, 1000, 2000].forEach(function(delay) {

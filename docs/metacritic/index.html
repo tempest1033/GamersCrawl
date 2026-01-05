@@ -532,11 +532,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">29</div>
         <div class="metacritic-card-poster">
-          <img src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://media.rawg.io/media/games/773/7739920af75d01f6a3b7e76a21d1633a.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="metacritic-card-score" style="background:#ffcc33">87</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Absolum</div>
+          <div class="metacritic-card-title">Xenoblade Chronicles X: Definitive Edition</div>
           
         </div>
       </div>
@@ -544,11 +544,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">30</div>
         <div class="metacritic-card-poster">
-          <img src="https://media.rawg.io/media/games/773/7739920af75d01f6a3b7e76a21d1633a.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="metacritic-card-score" style="background:#ffcc33">87</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Xenoblade Chronicles X: Definitive Edition</div>
+          <div class="metacritic-card-title">Absolum</div>
           
         </div>
       </div>
@@ -1124,23 +1124,20 @@
   function canInit(el) {
     if (!el || !el.isConnected) return false;
     var slot = el.closest('.ad-slot') || el;
-    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
-    var rect = el.getBoundingClientRect();
-    if (rect.width < 1) return false;
-    if (slot.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (slot.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
-    if (el.classList.contains('mobile-only')) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    if (el.classList.contains('pc-only')) {
-      return window.matchMedia('(min-width: 769px)').matches;
-    }
+    if (slot.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (slot.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+    if (el.classList.contains('mobile-only') && !window.matchMedia('(max-width: 768px)').matches) return false;
+    if (el.classList.contains('pc-only') && !window.matchMedia('(min-width: 769px)').matches) return false;
+
+    var slotStyle = window.getComputedStyle(slot);
+    if (!slotStyle || slotStyle.display === 'none' || slotStyle.visibility === 'hidden') return false;
     var style = window.getComputedStyle(el);
     if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+
+    // 슬롯 크기가 0이면 초기화하지 않음 (레이아웃 미완료)
+    var rect = slot.getBoundingClientRect();
+    if (rect.width < 1) rect = el.getBoundingClientRect();
+    if (rect.width < 1) return false;
     return true;
   }
 
@@ -1268,8 +1265,6 @@
 
   var initRetryTimers = [];
   function scheduleInitRetries() {
-    if (window.__gcAdsInitRetriesScheduled) return;
-    window.__gcAdsInitRetriesScheduled = true;
     initRetryTimers.forEach(clearTimeout);
     initRetryTimers = [];
     [100, 300, 500, 1000, 2000].forEach(function(delay) {
