@@ -1001,7 +1001,7 @@
       "android"
     ],
     "developer": "Tianjin Heyuan Network Technology Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -1138,7 +1138,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3341,7 +3341,7 @@
       "ios"
     ],
     "developer": "ONEMT SGP",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4093,7 +4093,7 @@
       "android"
     ],
     "developer": "Perfeggs",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4403,7 +4403,7 @@
       "android"
     ],
     "developer": "Moca",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5412,7 +5412,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5531,7 +5531,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5619,7 +5619,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7219,7 +7219,7 @@
       "android"
     ],
     "developer": "Changgon Woo",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7402,7 +7402,7 @@
       "android"
     ],
     "developer": "WILD CALY PTE. LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7774,7 +7774,7 @@
       "ios"
     ],
     "developer": "stick hunter",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8628,7 +8628,7 @@
       "android"
     ],
     "developer": "AppteenPlanet Co.,Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8826,7 +8826,7 @@
       "android"
     ],
     "developer": "Mindful Daily Puzzles",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9370,7 +9370,7 @@
       "android"
     ],
     "developer": "DownTownApps",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9398,7 +9398,7 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10006,7 +10006,7 @@
       "android"
     ],
     "developer": "Taihe Interactive",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11506,7 +11506,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -12183,7 +12183,7 @@
       "android"
     ],
     "developer": "Garusoft LLC",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
