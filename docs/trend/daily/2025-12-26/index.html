@@ -1181,26 +1181,11 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
     });
   }
 
-  function checkEmptyAds() {
-    setTimeout(function() {
-      document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) {
-        if (!ins.isConnected) return;
-        var slot = ins.closest ? ins.closest('.ad-slot') : null;
-        if (!slot || slot.style.display === 'none') return;
-        var rect = ins.getBoundingClientRect();
-        if (rect.height < 10) {
-          collapseUnfilled(ins);
-        }
-      });
-    }, 3000);
-  }
-
   function start() {
     initAll();
     observeSizes();
     bindMediaChange();
     observeUnfilled();
-    checkEmptyAds();
   }
 
   if (document.readyState === 'loading') {
