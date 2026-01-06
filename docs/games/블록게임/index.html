@@ -222,8 +222,8 @@
     <section class="section active" id="game">
       
       <div class="game-container">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins></div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
+        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="gc-ads-placeholder" style="display:inline-block;width:320px;height:100px" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="5825162341" data-gc-ins-class="adsbygoogle"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="gc-ads-placeholder" style="display:inline-block;width:970px;height:90px" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="8458886930" data-gc-ins-class="adsbygoogle"></ins></div>
         <h1 class="visually-hidden">블록게임 매출, 모바일 게임 순위, 뉴스</h1>
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
@@ -442,8 +442,8 @@
         
 
 	        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
-		        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
+		        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="gc-ads-placeholder" style="display:block;width:100%" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="5039620326" data-gc-ins-class="adsbygoogle" data-gc-ad-format="auto" data-gc-full-width-responsive="true"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full"><ins class="gc-ads-placeholder" style="display:inline-block;width:970px;height:90px" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="8458886930" data-gc-ins-class="adsbygoogle"></ins></div>
 
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
@@ -1381,7 +1381,8 @@
 <script>
 (function() {
   var CLIENT = 'ca-pub-9477874183990825';
-  var ADS_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
+  var PLACEHOLDER_SELECTOR = 'ins[data-gc-ad-client="' + CLIENT + '"][data-gc-ad-slot]';
+  var LEGACY_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
 
   function isVisible(el) {
     if (!el || !el.isConnected) return false;
@@ -1390,12 +1391,53 @@
     return (el.offsetWidth >= 1 || el.offsetHeight >= 1);
   }
 
+  function alreadyProcessed(ins) {
+    if (!ins) return false;
+    if (ins.dataset.gcAdsInit === '1') return true;
+    var status = ins.getAttribute('data-adsbygoogle-status');
+    if (status === 'done') return true;
+    var adStatus = ins.getAttribute('data-ad-status');
+    if (adStatus) return true;
+    return false;
+  }
+
+  function ensureActive(ins) {
+    if (!ins) return false;
+    if (ins.getAttribute('data-ad-client') && ins.getAttribute('data-ad-slot') && ins.classList && ins.classList.contains('adsbygoogle')) {
+      return true;
+    }
+
+    var slotId = ins.getAttribute('data-gc-ad-slot');
+    if (!slotId) return false;
+
+    var classValue = ins.getAttribute('data-gc-ins-class') || 'adsbygoogle';
+    var classes = String(classValue).split(/\s+/).filter(Boolean);
+    if (classes.indexOf('adsbygoogle') < 0) classes.unshift('adsbygoogle');
+    ins.setAttribute('class', classes.join(' '));
+
+    ins.setAttribute('data-ad-client', CLIENT);
+    ins.setAttribute('data-ad-slot', slotId);
+
+    var format = ins.getAttribute('data-gc-ad-format');
+    if (format) ins.setAttribute('data-ad-format', format);
+
+    if (ins.getAttribute('data-gc-full-width-responsive') === 'true') {
+      ins.setAttribute('data-full-width-responsive', 'true');
+    }
+
+    return true;
+  }
+
   function tryInit(ins) {
     if (!ins || !ins.isConnected) return;
-    if (ins.dataset.gcAdsInit === '1') return;
+    if (alreadyProcessed(ins)) {
+      ins.dataset.gcAdsInit = '1';
+      return;
+    }
 
     var slot = ins.closest ? (ins.closest('.ad-slot') || ins) : ins;
     if (!isVisible(slot) || !isVisible(ins)) return;
+    if (!ensureActive(ins)) return;
 
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -1406,7 +1448,8 @@
   }
 
   function initAll() {
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { tryInit(ins); });
+    document.querySelectorAll(PLACEHOLDER_SELECTOR).forEach(function(ins) { tryInit(ins); });
+    document.querySelectorAll(LEGACY_SELECTOR).forEach(function(ins) { tryInit(ins); });
   }
 
   function scheduleInit() {
@@ -1434,7 +1477,7 @@
     var mo = new MutationObserver(function(mutations) {
       for (var i = 0; i < mutations.length; i++) {
         var target = mutations[i].target;
-        if (target && target.closest && target.closest('ins.adsbygoogle[data-gc-ads-init="1"]')) continue;
+        if (target && target.closest && target.closest('ins[data-gc-ads-init="1"]')) continue;
         scheduleInit();
         break;
       }
