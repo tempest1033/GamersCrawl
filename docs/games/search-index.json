@@ -1001,7 +1001,7 @@
       "android"
     ],
     "developer": "Tianjin Heyuan Network Technology Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2961,7 +2961,7 @@
       "ios"
     ],
     "developer": "Glaciers Game",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4093,7 +4093,7 @@
       "android"
     ],
     "developer": "Perfeggs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4223,7 +4223,7 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4403,7 +4403,7 @@
       "android"
     ],
     "developer": "Moca",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4828,7 +4828,7 @@
       "ios"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5412,7 +5412,7 @@
       "ios"
     ],
     "developer": "Seeplay Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5957,7 +5957,7 @@
       "ios"
     ],
     "developer": "Fastone Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7177,7 +7177,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7333,7 +7333,7 @@
       "android"
     ],
     "developer": "JOYNEX GAMES",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7544,7 +7544,7 @@
       "ios"
     ],
     "developer": "Freeplay Inc",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9007,7 +9007,7 @@
       "ios"
     ],
     "developer": "Wonderful  Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9398,7 +9398,7 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9834,7 +9834,7 @@
       "android"
     ],
     "developer": "Highbrow",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9936,7 +9936,7 @@
       "ios"
     ],
     "developer": "SayGames Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10006,7 +10006,7 @@
       "android"
     ],
     "developer": "Taihe Interactive",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11408,7 +11408,7 @@
       "android"
     ],
     "developer": "GRAVITY Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11506,7 +11506,7 @@
       "ios"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12746,7 +12746,7 @@
       "ios"
     ],
     "developer": "Estoty",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
