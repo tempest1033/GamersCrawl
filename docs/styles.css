@@ -666,6 +666,13 @@
   text-align: center;
 }
 
+/* ===== 플랫폼별 광고 숨김 (ins 자체에 적용 - 구글 예시 방식) ===== */
+
+/* 기본(PC): 모바일 전용 광고는 ins를 display:none 처리 */
+.ad-slot > ins.adsbygoogle.mobile-only {
+  display: none !important;
+}
+
 /* AdSense 내부 요소 중앙 정렬 */
 ins.adsbygoogle > ins,
 ins.adsbygoogle > div,
@@ -736,6 +743,16 @@ ins.adsbygoogle iframe {
 /* ===== 미디어쿼리: 모바일 (768px 이하) ===== */
 
 @media (max-width: 768px) {
+  /* 모바일: PC 전용 광고는 ins를 display:none 처리 */
+  .ad-slot > ins.adsbygoogle.pc-only {
+    display: none !important;
+  }
+
+  /* 모바일: 모바일 전용 광고는 ins를 다시 표시 */
+  .ad-slot > ins.adsbygoogle.mobile-only {
+    display: block !important;
+  }
+
   /* PC 광고 숨기기 - 광고 요청 차단 */
   .ad-slot.pc-only {
     display: none !important;
