@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4587,7 +4587,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -12386,8 +12386,108 @@
       "platforms": [
         "steam"
       ]
+    },
+    "Dawn Watch: Survival": {
+      "appIds": {
+        "ios": "6752848516",
+        "android": "com.allstarunion.watch"
+      },
+      "aliases": [],
+      "developer": "STARFORTUNE INTERACTIVE ENTERTAINMENT TECHNOLOGY CO., LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/db/1d/f3db1d72-c7fd-bfaa-36b2-be3532f47763/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "dawn-watch-survival",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Survival Shelter": {
+      "appIds": {
+        "android": "com.fattoy.shelter",
+        "ios": 6742174757
+      },
+      "aliases": [],
+      "developer": "FATTOY",
+      "icon": "https://play-lh.googleusercontent.com/RwhB4QoN5kr9OLshc8_exaN9spQ_vAyKSR41y2ahPVMYukYv-7KfxOFWs07BaOgeW3z291hSF6FzDIw1is6Bww",
+      "slug": "survival-shelter",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "ARMORED CORE™ VI FIRES OF RUBICON™": {
+      "appIds": {
+        "steam": "1888160"
+      },
+      "aliases": [],
+      "developer": "FromSoftware, Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/capsule_231x87.jpg?t=1748630736",
+      "slug": "armored-core-vi-fires-of-rubicon",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "EZ2ON REBOOT : R": {
+      "appIds": {
+        "steam": "1477590"
+      },
+      "aliases": [],
+      "developer": "Neonovice Co., Ltd.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1477590/capsule_231x87.jpg?t=1759394987",
+      "slug": "ez2on-reboot-r",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Lies of P": {
+      "appIds": {
+        "steam": "1627720"
+      },
+      "aliases": [],
+      "developer": "NEOWIZ",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/capsule_231x87.jpg?t=1764565054",
+      "slug": "lies-of-p",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Travellers Rest": {
+      "appIds": {
+        "steam": "1139980"
+      },
+      "aliases": [],
+      "developer": "Isolated Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1139980/3d0b741ad371b56cd8d112c400287843f0b92d0a/capsule_231x87.jpg?t=1765793902",
+      "slug": "travellers-rest",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Planet Zoo": {
+      "appIds": {
+        "steam": "703080"
+      },
+      "aliases": [],
+      "developer": "Frontier Developments",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/703080/capsule_231x87.jpg?t=1765896213",
+      "slug": "planet-zoo",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Last of Us™ Part I": {
+      "appIds": {
+        "steam": "1888930"
+      },
+      "aliases": [],
+      "developer": "Naughty Dog LLC",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/capsule_231x87.jpg?t=1750959031",
+      "slug": "the-last-of-us-part-i",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2026-01-05",
-  "totalGames": 867
+  "lastUpdated": "2026-01-06",
+  "totalGames": 875
 }

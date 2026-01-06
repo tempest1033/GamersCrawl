@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -1740,6 +1740,56 @@
         }
       ],
       "addedAt": "2026-01-05T00:47:44.408Z"
+    },
+    {
+      "title": "Dawn Watch: Survival",
+      "status": "matched",
+      "appIds": {
+        "ios": "6752848516",
+        "android": "com.allstarunion.watch"
+      },
+      "developer": "STARFORTUNE INTERACTIVE ENTERTAINMENT TECHNOLOGY CO., LIMITED",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/db/1d/f3db1d72-c7fd-bfaa-36b2-be3532f47763/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Dawn Watch: Survival",
+          "appId": "com.allstarunion.watch"
+        },
+        {
+          "title": "Dawn of Zombies: 좀비 생존게임",
+          "appId": "com.survival.last"
+        },
+        {
+          "title": "에이지 오브 제트: 타워 디펜스",
+          "appId": "com.camelgames.aoz"
+        }
+      ],
+      "addedAt": "2026-01-06T00:49:27.431Z"
+    },
+    {
+      "title": "Survival Shelter",
+      "status": "matched",
+      "appIds": {
+        "android": "com.fattoy.shelter",
+        "ios": 6742174757
+      },
+      "developer": "FATTOY",
+      "icon": "https://play-lh.googleusercontent.com/RwhB4QoN5kr9OLshc8_exaN9spQ_vAyKSR41y2ahPVMYukYv-7KfxOFWs07BaOgeW3z291hSF6FzDIw1is6Bww",
+      "searchResults": [
+        {
+          "title": "Survival Shelter",
+          "appId": 6742174757
+        },
+        {
+          "title": "라스트 쉘터: 서바이벌",
+          "appId": 1342290011
+        },
+        {
+          "title": "Last Day on Earth: Survival",
+          "appId": 1241932094
+        }
+      ],
+      "addedAt": "2026-01-06T00:49:47.886Z"
     }
   ],
   "approved": [

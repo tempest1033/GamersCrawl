@@ -12881,5 +12881,111 @@
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
+  },
+  {
+    "name": "Dawn Watch: Survival",
+    "slug": "dawn-watch-survival",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/db/1d/f3db1d72-c7fd-bfaa-36b2-be3532f47763/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "STARFORTUNE INTERACTIVE ENTERTAINMENT TECHNOLOGY CO., LIMITED",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Survival Shelter",
+    "slug": "survival-shelter",
+    "icon": "https://play-lh.googleusercontent.com/RwhB4QoN5kr9OLshc8_exaN9spQ_vAyKSR41y2ahPVMYukYv-7KfxOFWs07BaOgeW3z291hSF6FzDIw1is6Bww",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "FATTOY",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "ARMORED CORE™ VI FIRES OF RUBICON™",
+    "slug": "armored-core-vi-fires-of-rubicon",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/capsule_231x87.jpg?t=1748630736",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "FromSoftware, Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "EZ2ON REBOOT : R",
+    "slug": "ez2on-reboot-r",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1477590/capsule_231x87.jpg?t=1759394987",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Neonovice Co., Ltd.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Lies of P",
+    "slug": "lies-of-p",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/capsule_231x87.jpg?t=1764565054",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "NEOWIZ",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Travellers Rest",
+    "slug": "travellers-rest",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1139980/3d0b741ad371b56cd8d112c400287843f0b92d0a/capsule_231x87.jpg?t=1765793902",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Isolated Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Planet Zoo",
+    "slug": "planet-zoo",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/703080/capsule_231x87.jpg?t=1765896213",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Frontier Developments",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "The Last of Us™ Part I",
+    "slug": "the-last-of-us-part-i",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/capsule_231x87.jpg?t=1750959031",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Naughty Dog LLC",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
   }
 ]
