@@ -4,38 +4,15 @@
   
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <script>
-	    (function() {
-	      var host = location.hostname;
-	      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
-	        document.documentElement.classList.add('is-localhost');
-	      }
-	    })();
-	  </script>
-	  <script>
-	    (function() {
-	      function getCurrentAdIns() {
-	        var script = document.currentScript;
-	        if (!script) return null;
-	        var ins = script.previousElementSibling;
-	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
-	        return ins;
-	      }
-
-	      window.gcAdsensePush = function() {
-	        try {
-	          var ins = getCurrentAdIns();
-	          if (!ins) return;
-
-	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
-	          if ((ins.offsetWidth || 0) <= 0) return;
-
-	          (adsbygoogle = window.adsbygoogle || []).push({});
-	        } catch (e) {}
-	      };
-	    })();
-	  </script>
-	  <title>메타크리틱 - 게임 평점, 게임 리뷰</title>
+		  <script>
+		    (function() {
+		      var host = location.hostname;
+		      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+		        document.documentElement.classList.add('is-localhost');
+		      }
+		    })();
+		  </script>
+		  <title>메타크리틱 - 게임 평점, 게임 리뷰</title>
   <!-- SEO -->
   <meta name="description" content="메타크리틱 - 게임 평점, 게임 리뷰를 한눈에.">
   <meta name="keywords" content="메타크리틱, 게임 평점, 게임 리뷰, 메타스코어, 명작 게임">
@@ -246,11 +223,11 @@
 	      <div class="page-container metacritic-container">
 	        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 	        <h1 class="visually-hidden">메타크리틱 - 게임 평점, 게임 리뷰</h1>
 	        

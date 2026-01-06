@@ -5,38 +5,15 @@
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta name="robots" content="noindex, nofollow">
-	  <script>
-	    (function() {
-	      var host = location.hostname;
-	      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
-	        document.documentElement.classList.add('is-localhost');
-	      }
-	    })();
-	  </script>
-	  <script>
-	    (function() {
-	      function getCurrentAdIns() {
-	        var script = document.currentScript;
-	        if (!script) return null;
-	        var ins = script.previousElementSibling;
-	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
-	        return ins;
-	      }
-
-	      window.gcAdsensePush = function() {
-	        try {
-	          var ins = getCurrentAdIns();
-	          if (!ins) return;
-
-	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
-	          if ((ins.offsetWidth || 0) <= 0) return;
-
-	          (adsbygoogle = window.adsbygoogle || []).push({});
-	        } catch (e) {}
-	      };
-	    })();
-	  </script>
-	  <title>페이지를 찾을 수 없습니다 | 게이머스크롤</title>
+		  <script>
+		    (function() {
+		      var host = location.hostname;
+		      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+		        document.documentElement.classList.add('is-localhost');
+		      }
+		    })();
+		  </script>
+		  <title>페이지를 찾을 수 없습니다 | 게이머스크롤</title>
   <!-- SEO -->
   <meta name="description" content="요청하신 페이지가 존재하지 않습니다.">
   <meta name="keywords" content="게임 순위, 모바일 게임, 스팀 순위, 게임 뉴스, 앱스토어 순위, 플레이스토어 순위, 게임 업계, 게임주, 게이머스크롤">
