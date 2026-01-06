@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>메이플 키우기 양대 마켓 1위 굳건, 넷플릭스-워너 인수설 충격</title>
   <!-- SEO -->
   <meta name="description" content="메이플 키우기 양대 마켓 1위 굳건, 넷플릭스-워너 인수설 충격">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">메이플 키우기 양대 마켓 1위 굳건, 넷플릭스-워너 인수설 충격</h1>
         
@@ -285,7 +378,7 @@
       <div class="weekly-hot-issues weekly-hot-grid">
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F03%2Fd1%2F5e%2F03d15ec4-3e1d-cd2f-56b3-c3f9d7b1b7da%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F03%2Fd1%2F5e%2F03d15ec4-3e1d-cd2f-56b3-c3f9d7b1b7da%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">메이플 키우기와 서바이벌, 매출 1위 수성</h4>
               <p class="weekly-hot-desc">양대 마켓에서 메이플 키우기가 매출 1위를 지키고, 화이트아웃 서바이벌과 라스트 워가 상위권을 채우며 방치형과 생존 장르 조합이 대세로 자리 잡았어요. 과금 부담은 있지만 이벤트 효과로 결제가 이어졌습니다.</p>
@@ -293,7 +386,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F05%2Fnews%2Fthumb%2Fs1330717510.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F05%2Fnews%2Fthumb%2Fs1330717510.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">토탈워: 미디블3 발표로 PC 전략 팬 설렘</h4>
               <p class="weekly-hot-desc">토탈워: 미디블3 개발 소식이 공개되며 중세 전략 팬들의 기대가 커졌어요. 스팀에서는 CS2, 도타2, 배틀그라운드가 동시접속 상위를 유지하며 핵심 트래픽을 만들었습니다.</p>
@@ -301,7 +394,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F06%2Fnews%2Fthumb%2Fs1522162613.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F06%2Fnews%2Fthumb%2Fs1522162613.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">NHN 서브컬처 RPG '어비스디아' 본격 공개</h4>
               <p class="weekly-hot-desc">NHN이 2026년 출시 예정 서브컬처 RPG 어비스디아를 소개하고 한국 사전등록을 시작했어요. 음악 및 버튜버 공연과 체험 부스로 첫 팬덤 반응을 현장에서 확인했습니다.</p>
@@ -309,7 +402,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple221%2Fv4%2F67%2F26%2F62%2F67266262-92eb-f8c8-35e7-751750245088%2FAppIcon-1x_U007emarketing-0-5-85-220-0.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple221%2Fv4%2F67%2F26%2F62%2F67266262-92eb-f8c8-35e7-751750245088%2FAppIcon-1x_U007emarketing-0-5-85-220-0.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">켈로그 콜라보로 확장된 '운빨존많겜'</h4>
               <p class="weekly-hot-desc">농심켈로그 한정 시리얼 기획팩과 인게임 이벤트가 연계되며 운빨존많겜이 오프라인까지 활동 반경을 넓혔어요. 실물 굿즈와 게임 보상이 함께 주어져 커뮤니티에 인증샷이 쏟아졌습니다.</p>
@@ -322,11 +415,11 @@
       
       <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
       
     <div class="weekly-section weekly-section-industry">
@@ -339,7 +432,7 @@
       <div class="industry-grid">
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F04%2Fnews%2Fthumb%2Fs1649834030.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F04%2Fnews%2Fthumb%2Fs1649834030.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">넥슨, 전 직원 격려금과 신규 스튜디오 발표</h4>
               <p class="industry-desc">넥슨이 2025년 성과를 바탕으로 전 직원에게 100만원 격려금을 지급하고 신규 개발 자회사 '딜로퀘스트' 설립을 알렸어요. 인기 IP 확장과 실험적 신작 발굴을 동시에 노린 행보로 해석됐습니다.</p>
@@ -347,7 +440,7 @@
           </div>
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2gsyt0006t5012nlq9doe%252F2025%252F12%252F30%252F1639026916773954659_54fe0f6c-2b8b-4be5-a6a3-4bbde963a8d7_0-6.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2gsyt0006t5012nlq9doe%252F2025%252F12%252F30%252F1639026916773954659_54fe0f6c-2b8b-4be5-a6a3-4bbde963a8d7_0-6.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">NHN, 어비스디아와 최애의 아이로 서브컬처 강화</h4>
               <p class="industry-desc">NHN이 어비스디아와 '최애의 아이 Puzzle Star'를 동시에 내세우며 서브컬처 RPG와 퍼즐 라인업을 키우고 있어요. 2026년 출시 예정작까지 공개해 장기 포트폴리오를 미리 알리는 전략이었습니다.</p>
@@ -355,7 +448,7 @@
           </div>
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F24%2F19b4f107315_zqtjwh.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F24%2F19b4f107315_zqtjwh.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">게임을 국가전략산업으로, 법과 제도 논의 본격화</h4>
               <p class="industry-desc">법무법인 화우와 학회가 게임산업의 국가전략산업 육성을 주제로 세미나를 열었어요. 게임산업진흥법 개정, 근로시간 유연화, 규제 완화 등 제도 개선 과제가 공론화됐습니다.</p>
@@ -376,7 +469,7 @@
       <div class="weekly-metrics-grid">
         
             <div class="weekly-metric-card has-thumb">
-              <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F29%2F19b68dc51dd_zjncpf.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F29%2F19b68dc51dd_zjncpf.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-metric-content">
                 <h4 class="weekly-metric-title">메이플 키우기, 양대 마켓 매출 1위 유지</h4>
                 <p class="weekly-metric-desc">12월 초 기준 메이플 키우기가 iOS와 안드로이드 양대 마켓에서 매출 1위를 지키며 넥슨 모바일 매출을 견인했어요. 화이트아웃 서바이벌과 라스트 워도 상위권에 머물며 생존 전략 장르 비중이 높아졌습니다.</p>
@@ -384,7 +477,7 @@
             </div>
           
             <div class="weekly-metric-card has-thumb">
-              <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F29%2F19b695afd02_yngrxb.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F29%2F19b695afd02_yngrxb.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-metric-content">
                 <h4 class="weekly-metric-title">CS2, 도타2, 배틀그라운드 스팀 동접 상위 유지</h4>
                 <p class="weekly-metric-desc">스팀 통계에서 카운터 스트라이크2, 도타2, 배틀그라운드가 동시접속자 상위권을 유지했어요. 국내에서는 PUBG UNITED 2025 등 대회 소식과 함께 배틀그라운드 관전 및 플레이 관심이 다시 늘었습니다.</p>
@@ -405,7 +498,7 @@
       <div class="global-grid">
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F04%2FNetflix-Logo.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F04%2FNetflix-Logo.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">넷플릭스-워너 인수 발표, OTT와 IP 재편 신호</h4>
               <p class="global-desc">넷플릭스가 워너 브라더스 디스커버리 스트리밍과 스튜디오 부문 인수를 발표하며 글로벌 OTT 지형 변화가 거론됐어요. 해리포터, DC 등 대형 IP의 게임 및 애니 콜라보 방향도 함께 주목받았습니다.</p>
@@ -413,7 +506,7 @@
           </div>
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Flogo%2Ffaf892ef687a7fe22a9e430e8f4527ec.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Flogo%2Ffaf892ef687a7fe22a9e430e8f4527ec.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">블루 프로토콜 신작, 서브컬처 MMORPG 공략</h4>
               <p class="global-desc">반다이남코가 블루 프로토콜: 스타 레조넌스를 12월 모바일과 PC MMORPG로 선보인다는 소식이 전해졌어요. 일본발 애니풍 온라인 RPG 후속작으로 한국을 포함한 아시아 시장 기대가 커졌습니다.</p>
@@ -421,7 +514,7 @@
           </div>
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fflagcdn.com%2Fw640%2Fcn.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fflagcdn.com%2Fw640%2Fcn.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">중국, 게임 판호 184개 발급해 완화 기조 부각</h4>
               <p class="global-desc">중국 국가신문출판서가 11월 말 한 달 기준 역대 최다인 184개 게임 판호를 발급했다는 소식이에요. 텐센트와 빌리빌리 신작, 인디 비중이 높아 생태계 회복과 판호 완화 기조에 관심이 모였습니다.</p>
@@ -433,11 +526,11 @@
   
       <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
       
     <div class="weekly-section weekly-section-stocks">
@@ -1355,7 +1448,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

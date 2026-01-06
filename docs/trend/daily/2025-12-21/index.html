@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>크래프톤, 네이버/미래에셋과 1조원 규모 아시아 펀드 추진</title>
   <!-- SEO -->
   <meta name="description" content="모바일 매출은 서바이벌 3종 강세가 이어졌고, 겨울 시즌 업데이트 영향으로 순위 변동도 크게 나타났어요. 국내에서는 크래프톤의 대형 투자 소식과 PUBG 라이브 운영 로드맵이 주목받았고, e스포츠에서는 LCK 어워드 수상 결과가 화제였습니다. 콘솔에서는 배틀필드6 판매 성과가 부각됐어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">크래프톤, 네이버/미래에셋과 1조원 규모 아시아 펀드 추진</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F19%2F19b356de817_fugehy.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F19%2F19b356de817_fugehy.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">크래프톤, 1조원 규모 아시아 펀드 추진</h4>
                 <p class="weekly-hot-desc">크래프톤이 네이버, 미래에셋그룹과 함께 최대 1조원 규모의 유니콘 그로쓰 펀드 조성을 추진한다고 알려졌어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">PUBG, 에란겔 서브제로 운영 확장</h4>
                 <p class="weekly-hot-desc">PUBG STUDIOS가 연말 적용된 에란겔 서브제로 등 주요 업데이트 흐름과 향후 로드맵 공개 계획을 알렸어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F19%2F19b36b4c514_teqfjr.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F19%2F19b36b4c514_teqfjr.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">2025 LCK 어워드, 비디디 올해의 선수</h4>
                 <p class="weekly-hot-desc">비디디 곽보성이 2025 LCK 어워드에서 올해의 선수로 선정됐어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F19%2Fnews%2Fthumb%2Fs1837849388.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F19%2Fnews%2Fthumb%2Fs1837849388.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">배틀필드6, 북미 연간 판매 1위 달성</h4>
                 <p class="weekly-hot-desc">서카나(Circana) 집계를 인용한 보도에서 배틀필드6가 북미 연간 게임 판매 순위 1위를 기록했다고 전해졌어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F19%2F19b356de817_fugehy.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F19%2F19b356de817_fugehy.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">네이버/미래에셋과 대형 펀드 추진</h4>
           <p class="industry-desc">크래프톤이 네이버, 미래에셋그룹과 함께 대규모 펀드 조성 계획을 밝힌 것으로 보도됐어요. 게임사 주도의 투자와 제휴가 단순 퍼블리싱을 넘어 장기 성장동력 확보 수단으로 확대되는 사례입니다.</p>
@@ -346,7 +439,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F414%2Fresize_gm508046_251219-risell-yy16.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F414%2Fresize_gm508046_251219-risell-yy16.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">뱀피르 개발자 라이브 로드맵 예고</h4>
           <p class="industry-desc">넷마블이 MMORPG 뱀피르에서 개발자 라이브 방송을 통해 2026년 상반기 로드맵과 주요 개선 사항을 공개할 예정이라고 전해졌어요. 라이브 Q&A 중심의 소통 방식이 핵심 운영 포인트로 자리 잡는 분위기입니다.</p>
@@ -367,7 +460,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/2sOxb_s3uan-AmiF_XRh_K2yqRrmVeuzHAqtYCrwrFP-s1u_FMKo1NtlPz0kdn0qQUH8" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/2sOxb_s3uan-AmiF_XRh_K2yqRrmVeuzHAqtYCrwrFP-s1u_FMKo1NtlPz0kdn0qQUH8" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">서바이벌, Android 매출 TOP5에 3종 포진</h4>
           <p class="weekly-metric-desc">Android 매출 TOP5에 라스트 워: 서바이벌, WOS: 화이트아웃 서바이벌, 라스트 Z: 서바이벌 슈터가 함께 올라 서바이벌 장르가 매출 상위권을 두텁게 채웠어요.
@@ -376,7 +469,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fmaplestoryidle%2Fimages%2Fmeta%2Fmeta_1200x630.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fmaplestoryidle%2Fimages%2Fmeta%2Fmeta_1200x630.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">iOS 인기, 퍼즐/캐주얼 타이틀 강세</h4>
           <p class="weekly-metric-desc">iOS 인기 TOP5에서 블록 블라스트, 킹방치: 빵지의 제왕, Arrows - Puzzle Escape 같은 캐주얼/퍼즐 계열이 다수를 차지했어요.
@@ -398,7 +491,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/77/33/017733c4-5c9b-4141-6049-913ace308ddf/PesMobile-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">eFootball</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/77/33/017733c4-5c9b-4141-6049-913ace308ddf/PesMobile-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">eFootball</h4>
         
       <span class="weekly-ranking-badge up">
         Android 141위 → 94위 (+47)
@@ -409,7 +502,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/be/82/c9be82cb-9744-f4b4-03e3-0e2936fb14f5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">메이플스토리M</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/be/82/c9be82cb-9744-f4b4-03e3-0e2936fb14f5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">메이플스토리M</h4>
         
       <span class="weekly-ranking-badge up">
         Android 65위 → 25위 (+40)
@@ -420,7 +513,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/PhWYBc79bJkDl8ZCxH7U88kLQ57TEzkn2iWq4ysOzuBDJNqAszP08zzqZr1wTqbia9WnXIC9tD0JjovLwgvxMw" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">트리 오브 세이비어: 네버랜드</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/PhWYBc79bJkDl8ZCxH7U88kLQ57TEzkn2iWq4ysOzuBDJNqAszP08zzqZr1wTqbia9WnXIC9tD0JjovLwgvxMw" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">트리 오브 세이비어: 네버랜드</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 32위 → 63위 (-31)
@@ -430,7 +523,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/LiiheyoiGgPkF5rBMV1Nv3nPD1X3JGU91vo2MAlR5H6z1Vb4xo333KGoby-faBnFJn0" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">레이싱 마스터</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/LiiheyoiGgPkF5rBMV1Nv3nPD1X3JGU91vo2MAlR5H6z1Vb4xo333KGoby-faBnFJn0" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">레이싱 마스터</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 29위 → 55위 (-26)
@@ -445,11 +538,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1221,7 +1314,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

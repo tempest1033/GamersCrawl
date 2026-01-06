@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>메이플 키우기·라스트 워 매출 강세, 게임 국가전략산업화 논의 본격화</title>
   <!-- SEO -->
   <meta name="description" content="모바일에선 메이플 키우기와 라스트 워가 양대 마켓 매출 상위를 굳건히 지키고 있어요. 콘솔 쪽에선 툼레이더 신작 예고와 SD건담 신작 이벤트가 동시에 주목받고 있고요. 한편 게임을 국가전략 산업으로 키우자는 법·제도 논의도 본격적으로 시작됐어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">메이플 키우기·라스트 워 매출 강세, 게임 국가전략산업화 논의 본격화</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">방치·전략 신작이 매출 상위 동시 장악</h4>
                 <p class="weekly-hot-desc">메이플 키우기와 라스트 워: 서바이벌이 양대 마켓 매출 1~3위를 나눠 가지며 초반 흥행을 이어가고 있어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fi1771712463.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fi1771712463.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">툼레이더 신작, TGA에서 공개 예고</h4>
                 <p class="weekly-hot-desc">TGA 2025에서 툼레이더 신작이 공개된다고 공식 발표되면서 국내 콘솔 액션 팬들의 기대가 커지고 있어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F08%2F19afc22639e_tsqedr.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F08%2F19afc22639e_tsqedr.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">SD건담 이터널, 반주년과 수상 겹호재</h4>
                 <p class="weekly-hot-desc">SD건담 지 제네레이션 이터널이 반주년 대규모 업데이트와 무료 46연차 보급으로 한일 건담 팬 유입을 키우고 있어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FLux_0.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FLux_0.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">LoL KeSPA CUP, 겨울 e스포츠 핵심 무대로</h4>
                 <p class="weekly-hot-desc">KeSPA CUP 2025 그룹 스테이지에서 국내 팀이 전승으로 4강을 확정하며 LoL 하이라이트와 리액션 영상이 빠르게 공유되고 있어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.khgames.co.kr%2Fnews%2Fphoto%2F202512%2F248151_295114_3442.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.khgames.co.kr%2Fnews%2Fphoto%2F202512%2F248151_295114_3442.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">게임법 개편과 노동규제, 새 변수로 부상</h4>
           <p class="industry-desc">화우 세미나에선 규제 조항 중심인 현행 게임산업진흥법보다 전략 산업 관점의 별도 입법이 필요하다는 제안이 나왔어요. 노란봉투법 시행 등 노동 규제 변화가 노사 분쟁 증가와 개발 일정, 서비스 안정성에 영향을 줄 수 있다는 지적도 이어지고 있어요.</p>
@@ -346,7 +439,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimage.dnews.co.kr%2Fphoto%2Fphoto%2F2025%2F12%2F21%2F202512191627328870523-2-637723.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimage.dnews.co.kr%2Fphoto%2Fphoto%2F2025%2F12%2F21%2F202512191627328870523-2-637723.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">실적은 늘었는데 게임주는 할인, 신뢰가 과제</h4>
           <p class="industry-desc">증권사 리포트에 따르면 2025년 국내 주요 게임사 매출과 이익은 두 자릿수 성장세지만 주가수익률은 지수를 밑돌고 있어요. GTA6 출시가 예고된 2026년 경쟁 심화 속에서 다작, 글로벌 IP 확장, 자체결제 도입 등으로 실적 지속 가능성을 입증해야 한다는 분석이 나오고 있어요.</p>
@@ -367,7 +460,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">방치·전략·수집형이 매출 최상단 유지</h4>
           <p class="weekly-metric-desc">오늘 iOS와 Android 매출 상위권에 메이플 키우기, 라스트 워: 서바이벌, WOS: 화이트아웃 서바이벌이 나란히 이름을 올리며 방치·전략 조합의 강세를 보여주고 있어요.
@@ -376,7 +469,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">PUBG·Rust, 생존·샌드박스 동접의 버팀목</h4>
           <p class="weekly-metric-desc">스팀 동시접속 상위에서 PUBG: BATTLEGROUNDS와 Rust가 각각 약 21만 명, 13만 명대를 기록하며 생존·샌드박스 장르의 꾸준한 수요를 보여주고 있어요.
@@ -398,7 +491,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/14/d6/5414d699-1761-ec47-94f2-f9ebf932c660/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">클래시 오브 클랜</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/14/d6/5414d699-1761-ec47-94f2-f9ebf932c660/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">클래시 오브 클랜</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 74위 → 41위 (+33)
@@ -409,7 +502,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/77/33/017733c4-5c9b-4141-6049-913ace308ddf/PesMobile-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">eFootball</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/77/33/017733c4-5c9b-4141-6049-913ace308ddf/PesMobile-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">eFootball</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 44위 → 19위 (+25)
@@ -420,7 +513,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/dc/b3/cadcb3be-ad33-1409-88f2-4d1301e57364/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">와다다 던전런</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/dc/b3/cadcb3be-ad33-1409-88f2-4d1301e57364/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">와다다 던전런</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 57위 → 89위 (-32)
@@ -431,7 +524,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/a0/79/e1a07981-8523-e2ae-141f-e468e9b6e5ec/AppIcon-kr-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">냥코 대전쟁</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/a0/79/e1a07981-8523-e2ae-141f-e468e9b6e5ec/AppIcon-kr-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">냥코 대전쟁</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 53위 → 73위 (-20)
@@ -446,11 +539,11 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1222,7 +1315,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

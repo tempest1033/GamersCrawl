@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>엔씨소프트 INDYGO 지분 취득 공시, 콘진원 미국 규제 보고서 발표</title>
   <!-- SEO -->
   <meta name="description" content="연말 시즌 이벤트가 iOS 퍼즐과 카드 장르 순위 변동을 만들었고, 콘진원의 미국 규제 보고서가 해외 서비스 리스크 점검 포인트를 제시했어요. 엔씨소프트의 INDYGO 지분 취득 공시와 펄어비스 교차 이벤트도 시장의 관심사였어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">엔씨소프트 INDYGO 지분 취득 공시, 콘진원 미국 규제 보고서 발표</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimage.edaily.co.kr%2Fimages%2FPhoto%2Ffiles%2FNP%2FS%2F2025%2F12%2FPS25121800483.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimage.edaily.co.kr%2Fimages%2FPhoto%2Ffiles%2FNP%2FS%2F2025%2F12%2FPS25121800483.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">콘진원, 미국 게임 규제 보고서 발간</h4>
                 <p class="weekly-hot-desc">콘진원은 12/17 '2025 글로벌 게임 정책 및 법제 연구' 보고서를 발간했어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'007 퍼스트 라이트' 2026/5/28 연기</h4>
                 <p class="weekly-hot-desc">IO 인터랙티브는 완성도 향상을 이유로 '007 퍼스트 라이트' 출시를 2026년 5월 28일로 미뤘어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1348759128.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1348759128.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">옥토패스 트래블러, 600만 장 돌파</h4>
                 <p class="weekly-hot-desc">스퀘어 에닉스는 시리즈 누적 출하와 다운로드 판매가 600만 장을 넘겼다고 알렸어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fweb-files-cdn.masangsoft.com%2F_Kingsraid%2Fimages%2Fcbt%2F251224%2Fog.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fweb-files-cdn.masangsoft.com%2F_Kingsraid%2Fimages%2Fcbt%2F251224%2Fog.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'킹스레이드' CBT, 1/29~2/4 진행</h4>
                 <p class="weekly-hot-desc">마상소프트는 '킹스레이드' CBT를 2026년 1월 29일부터 2월 4일까지 진행한다고 공개했어요.
@@ -321,11 +414,11 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fthumbnews.nateimg.co.kr%2Fview610%2F%2F%2Fnews.nateimg.co.kr%2ForgImg%2Fsm%2F2025%2F12%2F19%2F130192_232167_917.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fthumbnews.nateimg.co.kr%2Fview610%2F%2F%2Fnews.nateimg.co.kr%2ForgImg%2Fsm%2F2025%2F12%2F19%2F130192_232167_917.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">엔씨소프트, INDYGO 지분 67% 취득</h4>
           <p class="industry-desc">엔씨소프트는 12/19 공시로 INDYGO GROUP PTE. LTD. 주식 67%를 현금 취득하기로 결정했어요. 모바일 캐주얼 강화를 목적으로, 베트남 개발사 LIHUHU 경영권 확보를 설명했어요.</p>
@@ -346,7 +439,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fs1.blackdesertm.com%2FGL%2Fforum%2FBDM%2FUpload%2FOGMetaTag%2F0aca1a54b3120251229052052957.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fs1.blackdesertm.com%2FGL%2Fforum%2FBDM%2FUpload%2FOGMetaTag%2F0aca1a54b3120251229052052957.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">검은사막과 붉은사막 교차 이벤트 전개</h4>
           <p class="industry-desc">펄어비스는 12/13부터 '검은사막 X 붉은사막' 콜라보를 진행한다고 밝혔어요. 사전 구매자에게 한정 아이템 지급을 안내했고, 글로벌 이용자 대상으로 참여 동선을 열었어요.</p>
@@ -367,7 +460,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.ctfassets.net%2Fvfkpgemp7ek3%2F1Yvy1c5s3lAQ4UGz6wviOq%2Fc5fab7bd4eecb97921f44f4202201165%2F-KR-_Top_Grossing_Mobile_Games_Worldwide_for_October_2025.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimages.ctfassets.net%2Fvfkpgemp7ek3%2F1Yvy1c5s3lAQ4UGz6wviOq%2Fc5fab7bd4eecb97921f44f4202201165%2F-KR-_Top_Grossing_Mobile_Games_Worldwide_for_October_2025.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">라스트 워, iOS와 Android 매출 2위</h4>
           <p class="weekly-metric-desc">모바일 매출 차트에서 '라스트 워: 서바이벌'이 iOS 2위, Android 2위를 기록했어요.
@@ -376,7 +469,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">CS2 동시접속 135만 7천 명</h4>
           <p class="weekly-metric-desc">PC 플랫폼에서 'Counter-Strike 2' 동시접속이 135만 7천 명으로 집계됐어요.
@@ -398,7 +491,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fb/db/15/fbdb15b2-ac01-75ce-1461-cdeef09ec1e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">로얄 킹덤 (Royal Kingdom)</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fb/db/15/fbdb15b2-ac01-75ce-1461-cdeef09ec1e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">로얄 킹덤 (Royal Kingdom)</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 49위 → 32위 (+17)
@@ -409,7 +502,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/13/91/c2139134-df43-fb9f-5895-d6e8ca17f295/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">컴투스프로야구2026</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/13/91/c2139134-df43-fb9f-5895-d6e8ca17f295/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">컴투스프로야구2026</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 68위 → 54위 (+14)
@@ -420,7 +513,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/b0/8e/bab08e10-40d3-4811-a007-01ed06deabfb/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">피쉬돔 (Fishdom)</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/b0/8e/bab08e10-40d3-4811-a007-01ed06deabfb/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">피쉬돔 (Fishdom)</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 84위 → 71위 (+13)
@@ -431,7 +524,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0b/e1/1d/0be11d13-0e81-1ae0-f549-1c22d3125110/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Disney Solitaire</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0b/e1/1d/0be11d13-0e81-1ae0-f549-1c22d3125110/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Disney Solitaire</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 85위 → 72위 (+13)
@@ -446,11 +539,11 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1222,7 +1315,7 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

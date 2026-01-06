@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>게임 DB - 모바일 게임 순위, 스팀 게임 순위, 뉴스 검색</title>
   <!-- SEO -->
   <meta name="description" content="게임 DB - 모바일 게임 순위, 스팀 게임 순위, 뉴스 검색을 한눈에.">
@@ -104,6 +127,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -220,14 +313,14 @@
 	    
     <section class="section active" id="games">
       
-      <div class="games-hub-container" id="top">
+      <div class="games-hub-container content-deferred" id="top">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">게임 DB - 모바일 게임 순위, 스팀 게임 순위, 뉴스 검색</h1>
         
@@ -256,7 +349,7 @@
         
           <a href="/games/승리의-여신-니케/" class="games-hub-popular-card">
             <span class="popular-rank">1</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/82/fd/c682fdd1-1851-cf63-4306-b7c36e52fecc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="승리의 여신: 니케" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/82/fd/c682fdd1-1851-cf63-4306-b7c36e52fecc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="승리의 여신: 니케" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">승리의 여신: 니케</span>
               <span class="popular-views">113회 조회</span>
@@ -265,7 +358,7 @@
         
           <a href="/games/limbus-company/" class="games-hub-popular-card">
             <span class="popular-rank">2</span>
-            <img src="https://play-lh.googleusercontent.com/fO39aiPOm1Mf1UajvE8FU9c8UQLlAyltnGFuKUwiZ96s41kHppeuyT89phTrJOi9PdY" alt="Limbus Company" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://play-lh.googleusercontent.com/fO39aiPOm1Mf1UajvE8FU9c8UQLlAyltnGFuKUwiZ96s41kHppeuyT89phTrJOi9PdY" alt="Limbus Company" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">Limbus Company</span>
               <span class="popular-views">71회 조회</span>
@@ -274,7 +367,7 @@
         
           <a href="/games/브라운더스트2-가슴-벅찬-rpg/" class="games-hub-popular-card">
             <span class="popular-rank">3</span>
-            <img src="https://play-lh.googleusercontent.com/frPGVrz_hwSOyNm3y9RoVkfxD5I5ibKv0C5RD9Ub1188PJtv3BXa7KkfSyzr_-9SeNk50AVt3P2XvS_jtzTa" alt="브라운더스트2 - 가슴 벅찬 RPG" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://play-lh.googleusercontent.com/frPGVrz_hwSOyNm3y9RoVkfxD5I5ibKv0C5RD9Ub1188PJtv3BXa7KkfSyzr_-9SeNk50AVt3P2XvS_jtzTa" alt="브라운더스트2 - 가슴 벅찬 RPG" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">브라운더스트2 - 가슴 벅찬 RPG</span>
               <span class="popular-views">41회 조회</span>
@@ -283,7 +376,7 @@
         
           <a href="/games/스타세이비어/" class="games-hub-popular-card">
             <span class="popular-rank">4</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/e3/1a/33e31a78-a336-db98-4765-b97bf3854191/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="스타세이비어" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/e3/1a/33e31a78-a336-db98-4765-b97bf3854191/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="스타세이비어" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">스타세이비어</span>
               <span class="popular-views">40회 조회</span>
@@ -292,7 +385,7 @@
         
           <a href="/games/카트라이더-러쉬플러스/" class="games-hub-popular-card">
             <span class="popular-rank">5</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/45/b5/8245b5c4-fc65-d991-ca11-3847906c55ed/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="카트라이더 러쉬플러스" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/45/b5/8245b5c4-fc65-d991-ca11-3847906c55ed/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="카트라이더 러쉬플러스" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">카트라이더 러쉬플러스</span>
               <span class="popular-views">40회 조회</span>
@@ -301,7 +394,7 @@
         
           <a href="/games/메이플-키우기/" class="games-hub-popular-card">
             <span class="popular-rank">6</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/d1/5e/03d15ec4-3e1d-cd2f-56b3-c3f9d7b1b7da/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="메이플 키우기" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/d1/5e/03d15ec4-3e1d-cd2f-56b3-c3f9d7b1b7da/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="메이플 키우기" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">메이플 키우기</span>
               <span class="popular-views">28회 조회</span>
@@ -310,7 +403,7 @@
         
           <a href="/games/리니지m/" class="games-hub-popular-card">
             <span class="popular-rank">7</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/82/f8/6982f887-3fb8-1199-ae18-4ca9e4715bbf/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="리니지M" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/82/f8/6982f887-3fb8-1199-ae18-4ca9e4715bbf/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="리니지M" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">리니지M</span>
               <span class="popular-views">16회 조회</span>
@@ -319,7 +412,7 @@
         
           <a href="/games/마비노기-모바일/" class="games-hub-popular-card">
             <span class="popular-rank">8</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/5e/d0/ac5ed063-a9e7-8e3e-784e-506bfa9e5ad9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="마비노기 모바일" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/5e/d0/ac5ed063-a9e7-8e3e-784e-506bfa9e5ad9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="마비노기 모바일" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">마비노기 모바일</span>
               <span class="popular-views">16회 조회</span>
@@ -328,7 +421,7 @@
         
           <a href="/games/라스트-워-서바이벌/" class="games-hub-popular-card">
             <span class="popular-rank">9</span>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/f0/ef/13f0efa0-317c-a37e-3d2d-13772276ef4c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="라스트 워: 서바이벌" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/f0/ef/13f0efa0-317c-a37e-3d2d-13772276ef4c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="라스트 워: 서바이벌" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">라스트 워: 서바이벌</span>
               <span class="popular-views">14회 조회</span>
@@ -337,7 +430,7 @@
         
           <a href="/games/트릭컬-리바이브/" class="games-hub-popular-card">
             <span class="popular-rank">10</span>
-            <img src="https://play-lh.googleusercontent.com/OCiuBv70Dnuw9wcGet3EtTUF2nEkS1vhYYkvOahe9-MmKg6EhxGkf-9ZVxnWIJXflQSmfOIjTcaSbwJSJyuzHA" alt="트릭컬 리바이브" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="https://play-lh.googleusercontent.com/OCiuBv70Dnuw9wcGet3EtTUF2nEkS1vhYYkvOahe9-MmKg6EhxGkf-9ZVxnWIJXflQSmfOIjTcaSbwJSJyuzHA" alt="트릭컬 리바이브" class="popular-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <div class="popular-info">
               <span class="popular-name">트릭컬 리바이브</span>
               <span class="popular-views">14회 조회</span>
@@ -4611,7 +4704,7 @@
             </svg>
           </button>
           <a href="/games/${game.slug}/" class="recent-link">
-            <img src="${iconUrl}" alt="${game.name}" class="recent-icon" loading="lazy" data-slug="${game.slug}"${needsIcon} data-img-fallback-src="/icon-192.png">
+            <img data-src="${iconUrl}" alt="${game.name}" class="recent-icon" loading="lazy" data-slug="${game.slug}"${needsIcon} data-img-fallback-src="/icon-192.png">
             <span class="recent-name">${game.name}</span>
           </a>
         </div>
@@ -4695,7 +4788,7 @@
       } else {
         grid.innerHTML = results.slice(0, 50).map(game => `
           <a href="/games/${game.slug}/" class="games-hub-recent-card">
-            <img src="${game.icon || '/icon-192.png'}" alt="${game.name}" class="recent-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
+            <img data-src="${game.icon || '/icon-192.png'}" alt="${game.name}" class="recent-icon" loading="lazy" data-img-fallback-src="/icon-192.png">
             <span class="recent-name">${game.name}</span>
           </a>
         `).join('');
@@ -5215,7 +5308,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

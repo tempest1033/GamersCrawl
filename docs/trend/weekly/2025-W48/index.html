@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>아이온2 PC방 5위 진입, 카발RED 구글 인기 1위 석권</title>
   <!-- SEO -->
   <meta name="description" content="아이온2 PC방 5위 진입, 카발RED 구글 인기 1위 석권">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">아이온2 PC방 5위 진입, 카발RED 구글 인기 1위 석권</h1>
         
@@ -285,7 +378,7 @@
       <div class="weekly-hot-issues weekly-hot-grid">
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F11%2Fnews%2Fthumb%2Fs1402231269.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F11%2Fnews%2Fthumb%2Fs1402231269.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">카발RED, 출시 첫 주 구글 인기 1위 등극</h4>
               <p class="weekly-hot-desc">11월 25일 정식 출시된 '카발RED'가 구글플레이 인기 순위 1위를 차지했어요. PC와 모바일 크로스플랫폼 지원, 저사양 최적화가 강점으로 꼽히며 복귀 유저와 신규 유저 모두 뜨거운 관심을 보였습니다.</p>
@@ -293,7 +386,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1296359854.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1296359854.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">아이온2, PC방 점유율 톱5 진입 성공</h4>
               <p class="weekly-hot-desc">엔씨소프트 신작 '아이온2'가 11월 4주차 PC방 점유율 5.06%로 5위에 올랐어요. 출시 2주 만에 톱5에 진입하고 구글플레이 매출 TOP10까지 기록하며 PC와 모바일 양쪽에서 좋은 성과를 냈습니다.</p>
@@ -301,7 +394,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F07%2F19af9245161_aqdbxt.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F07%2F19af9245161_aqdbxt.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">던전앤파이터 20주년 페스티벌 성황</h4>
               <p class="weekly-hot-desc">22~23일 열린 '2025 던파 페스티벌'에 약 1만 명이 다녀가며 역대급 행사로 기록됐어요. 겨울 레이드와 신규 캐릭터가 공개됐고, PC방 점유율도 8위까지 오르며 오랜 흥행 저력을 다시 한번 증명했습니다.</p>
@@ -309,7 +402,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F506%2Fresize_gm384222_251223-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F506%2Fresize_gm384222_251223-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">블루 아카이브 4주년 페스티벌 성료</h4>
               <p class="weekly-hot-desc">모바일 RPG '블루 아카이브' 글로벌 4주년 오프라인 페스티벌이 11월 29~30일 일산 킨텍스에서 열렸어요. 약 1만4천 명이 방문한 대형 행사로, 굿즈와 공연 프로그램에 서브컬처 팬들이 열광했습니다.</p>
@@ -322,11 +415,11 @@
       
       <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
       
     <div class="weekly-section weekly-section-industry">
@@ -339,7 +432,7 @@
       <div class="industry-grid">
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2gsyt0006t5012nlq9doe%252F2025%252F12%252F06%252F1639005891348644987_491fd5af-52f6-4630-a2ff-7e0a047a72cf_a-3.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2gsyt0006t5012nlq9doe%252F2025%252F12%252F06%252F1639005891348644987_491fd5af-52f6-4630-a2ff-7e0a047a72cf_a-3.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">AGF 2025에 3N 포함 대형사 총출동</h4>
               <p class="industry-desc">네오위즈, 넥슨, 넷마블, 엔씨소프트, 스마일게이트, NHN 등이 12월 5~7일 'AGF 2025' 참가를 예고했어요. 서브컬처 중심 라인업으로 지스타 이후 연말 핵심 게임 행사로 AGF의 위상이 높아졌다는 분석이 나왔습니다.</p>
@@ -347,7 +440,7 @@
           </div>
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F784%2Fresize_gm182734_24075568511252151262376.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F784%2Fresize_gm182734_24075568511252151262376.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">게임업계 최초 네오플 파업, 사실상 종료</h4>
               <p class="industry-desc">네오플 노동조합의 PS 4% 도입 요구가 무산되며 게임업계 최초 파업이 사실상 마무리됐어요. 던파 모바일 대흥행 이후 성과 배분과 임금 구조를 둘러싼 갈등이 노사 문화 개선 과제로 남았다는 평가입니다.</p>
@@ -355,7 +448,7 @@
           </div>
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F30%2F19b6dee5ac3_qmwdry.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F30%2F19b6dee5ac3_qmwdry.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">넷마블 PC게임 사이트 대규모 정보 유출</h4>
               <p class="industry-desc">넷마블이 11월 22일 해킹을 인지하고 26일 PC게임 사이트 회원 611만 명의 정보와 약 3,100만 개 ID 유출 사실을 공지했어요. 개인정보보호위원회와 과기정통부, 경찰이 조사에 착수하며 게임사 보안 체계 재정비 필요성이 대두됐습니다.</p>
@@ -376,7 +469,7 @@
       <div class="weekly-metrics-grid">
         
             <div class="weekly-metric-card has-thumb">
-              <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F11%2Fnews%2Fthumb%2Fs1402231269.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F11%2Fnews%2Fthumb%2Fs1402231269.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-metric-content">
                 <h4 class="weekly-metric-title">카발RED, 출시 첫 주 구글 인기 1위</h4>
                 <p class="weekly-metric-desc">'카발RED'가 11월 4주차 구글플레이 인기 순위 정상에 오르며 초반 흥행을 입증했어요. CBT와 사전 다운로드 이후 기대가 실제 다운로드로 이어지며 원작 IP의 힘이 지표로 확인됐습니다.</p>
@@ -384,7 +477,7 @@
             </div>
           
             <div class="weekly-metric-card has-thumb">
-              <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1296359854.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1296359854.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-metric-content">
                 <h4 class="weekly-metric-title">아이온2, PC방과 모바일 매출 지표 동반 상승</h4>
                 <p class="weekly-metric-desc">아이온2가 11월 4주차 PC방 점유율 5.06%로 5위를 기록하고, 구글플레이 매출에서도 10위에 올랐어요. PC 자체 결제 비중이 90% 이상인데도 모바일 매출 상위권을 유지하며 멀티 플랫폼 수익 구조가 주목받았습니다.</p>
@@ -405,7 +498,7 @@
       <div class="global-grid">
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.citypng.com%2Fpublic%2Fuploads%2Fpreview%2Fhd-valorant-white-official-logo-with-symbol-png-701751694788076hx3eqqqtmc.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.citypng.com%2Fpublic%2Fuploads%2Fpreview%2Fhd-valorant-white-official-logo-with-symbol-png-701751694788076hx3eqqqtmc.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">상하이 발로란트 초청전, Leviatan 우승</h4>
               <p class="global-desc">11월 29~30일 중국 상하이에서 열린 'China Esports Festival Super Champions Cup 2025'에서 라틴팀 Leviatan이 우승하고 DRX가 준우승을 차지했어요. 중국에서 열린 국제 발로란트 이벤트로, 한국팀 DRX의 결승 진출 소식도 함께 화제가 됐습니다.</p>
@@ -413,7 +506,7 @@
           </div>
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2Fbc%2F43%2F4d%2Fbc434dac-66b7-083c-67e2-e2490ac02d15%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2Fbc%2F43%2F4d%2Fbc434dac-66b7-083c-67e2-e2490ac02d15%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">블루 아카이브 4주년, 글로벌 서브컬처 위상 각인</h4>
               <p class="global-desc">한국 일산 킨텍스에서 열린 '블루 아카이브' 글로벌 4주년 페스티벌에 1만4천여 명이 몰리며 일본풍 서브컬처 RPG의 세계적 인기를 입증했어요. 스토리 전시, 굿즈, 공연이 결합된 행사 구성은 게임이 하나의 IP 생태계로 확장되는 흐름을 보여줬다는 평가입니다.</p>
@@ -421,7 +514,7 @@
           </div>
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/0f2bb607ca3f9cc7c795818b955542d076b2bebf/header_alt_assets_0.jpg?t=1765542896" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/0f2bb607ca3f9cc7c795818b955542d076b2bebf/header_alt_assets_0.jpg?t=1765542896" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">AP, 'Clair Obscur'를 올해의 게임으로 선정</h4>
               <p class="global-desc">11월 25일 AP가 발표한 2025년 게임 TOP10에서 프랑스 RPG 'Clair Obscur: Expedition 33'가 1위에 올랐어요. 어쌔신 크리드 섀도우스, Silent Hill f 등과 함께 스토리 중심 싱글플레이 타이틀이 북미 미디어 연말 GOTY 리스트를 장식했습니다.</p>
@@ -433,11 +526,11 @@
   
       <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
       
     <div class="weekly-section weekly-section-stocks">
@@ -1355,7 +1448,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

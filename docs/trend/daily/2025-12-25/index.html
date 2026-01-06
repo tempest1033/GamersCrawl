@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>주술회전 50계단 급상승, ARC Raiders 동접 26만 돌파</title>
   <!-- SEO -->
   <meta name="description" content="모바일 매출 상위권은 방치와 서바이벌 계열이 iOS와 Android 모두에서 견고했고, 크리스마스 시즌 보상형 이벤트로 일부 장수 타이틀의 순위가 크게 흔들렸어요. PC에선 Steam 동접이 FPS와 익스트랙션 장르로 쏠리며, 팬덤 굿즈와 참여형 콜라보가 존재감을 키웠어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">주술회전 50계단 급상승, ARC Raiders 동접 26만 돌파</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/aYiAWQdXNsr3xZ6odA03uTFDAbu5fDLata-Lfu08mxRAQC3dTRsY4fu-sF_BKslo7OMKWtM4vAODZPWgwf2dDlc=w240-h480" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/aYiAWQdXNsr3xZ6odA03uTFDAbu5fDLata-Lfu08mxRAQC3dTRsY4fu-sF_BKslo7OMKWtM4vAODZPWgwf2dDlc=w240-h480" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'퍼즐 세븐틴', 어프어프 콜라보 시작</h4>
                 <p class="weekly-hot-desc">드림에이지가 '퍼즐 세븐틴'과 어프어프 콜라보를 시작했어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1583275181.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1583275181.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">콘진원, 글로벌 게임 법제 보고서 발간</h4>
                 <p class="weekly-hot-desc">한국콘텐츠진흥원이 '2025 글로벌 게임 정책과 법제 연구' 보고서를 발간했어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1729558320.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1729558320.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">2025 서브컬쳐 게임, 분기 흐름 재점검</h4>
                 <p class="weekly-hot-desc">2025년 서브컬쳐 게임 시장을 분기별로 정리한 결산형 콘텐츠가 나왔어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">Steam, ARC Raiders 동접 26만 돌파</h4>
                 <p class="weekly-hot-desc">Steam 동시접속 상위권에서 'ARC Raiders'가 26만 명대 동접으로 급부상했어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F52%2FNetmarble_Logo.svg%2F330px-Netmarble_Logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F52%2FNetmarble_Logo.svg%2F330px-Netmarble_Logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">한국기업평가, 넷마블 전망 '안정적' 변경</h4>
           <p class="industry-desc">한국기업평가가 넷마블의 등급전망을 '안정적(Stable)'으로 변경했어요. 신작 성과와 비용 효율화로 실적과 재무 부담 개선 흐름이 이어진다는 평가가 함께 제시됐어요.</p>
@@ -359,7 +452,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FNexon.svg%2F330px-Nexon.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FNexon.svg%2F330px-Nexon.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">iOS와 Android 매출 TOP3 완전 동일</h4>
           <p class="weekly-metric-desc">양대 마켓 매출 TOP3가 '메이플 키우기', '라스트 워: 서바이벌', 'WOS: 화이트아웃 서바이벌'로 같았어요.
@@ -368,7 +461,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">Steam 동접, CS2 113만으로 1위 유지</h4>
           <p class="weekly-metric-desc">Steam 동시접속 TOP 구간에서 'Counter-Strike 2'가 113만 명대로 1위를 유지했어요.
@@ -390,7 +483,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">주술회전 팬텀 퍼레이드</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">주술회전 팬텀 퍼레이드</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 74위 → 24위 (+50)
@@ -401,7 +494,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/FVQXdzxDphpLdMRqIc5kG4C_Dc4AEO7-9uKHPt85v5_6Sp3J4mTV1S6P3ipLEoK6lDer" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">서머너즈 워: 천공의 아레나</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/FVQXdzxDphpLdMRqIc5kG4C_Dc4AEO7-9uKHPt85v5_6Sp3J4mTV1S6P3ipLEoK6lDer" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">서머너즈 워: 천공의 아레나</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 90위 → 58위 (+32)
@@ -412,7 +505,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/e3/1a/33e31a78-a336-db98-4765-b97bf3854191/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">스타세이비어</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/e3/1a/33e31a78-a336-db98-4765-b97bf3854191/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">스타세이비어</h4>
         
       <span class="weekly-ranking-badge up">
         Android 96위 → 66위 (+30)
@@ -423,7 +516,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/38/0a/94380aff-df7f-654f-4fc1-7cc575da4fb7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">MLB 라이벌</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/38/0a/94380aff-df7f-654f-4fc1-7cc575da4fb7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">MLB 라이벌</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 43위 → 76위 (-33)
@@ -438,11 +531,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1214,7 +1307,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

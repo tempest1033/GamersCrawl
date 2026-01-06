@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스</title>
   <!-- SEO -->
   <meta name="description" content="게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스를 한눈에.">
@@ -104,6 +127,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -220,14 +313,14 @@
 	    
     <section class="section active" id="trends-hub">
       
-      <div class="game-container trends-hub-container">
+      <div class="game-container trends-hub-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스</h1>
 
@@ -249,7 +342,7 @@
               
       <a href="/trend/weekly/2025-W53/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 29일 ~ 1월 4일</span>
         </div>
         <h3 class="trend-feed-card-title">페이커, e스포츠 최초 체육훈장 청룡장 수훈</h3>
@@ -257,7 +350,7 @@
     
       <a href="/trend/weekly/2025-W51/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1270518015.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1270518015.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 15일 ~ 12월 21일</span>
         </div>
         <h3 class="trend-feed-card-title">확률형 아이템 과징금 강화 주문, LCK 국내 중계 재편 발표</h3>
@@ -265,7 +358,7 @@
     
       <a href="/trend/weekly/2025-W50/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 8일 ~ 12월 14일</span>
         </div>
         <h3 class="trend-feed-card-title">브라운더스트2 스팀 취소, 마비노기 모바일 P2W 논란 확산</h3>
@@ -273,7 +366,7 @@
     
       <a href="/trend/weekly/2025-W49/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1955039616.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1955039616.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 1일 ~ 12월 7일</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위 굳건, 넷플릭스-워너 인수설 충격</h3>
@@ -281,7 +374,7 @@
     
       <a href="/trend/weekly/2025-W48/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F03%2Fnews%2Fthumb%2Fs1424686401.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F03%2Fnews%2Fthumb%2Fs1424686401.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 11월 24일 ~ 11월 30일</span>
         </div>
         <h3 class="trend-feed-card-title">아이온2 PC방 5위 진입, 카발RED 구글 인기 1위 석권</h3>
@@ -307,7 +400,7 @@
               
       <a href="/trend/daily/2026-01-06/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1932001156.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1932001156.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 6일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">크래프톤 김창한, 대통령 중국 국빈 방문 동행으로 K-게임 외교 시작</h3>
@@ -315,7 +408,7 @@
     
       <a href="/trend/daily/2026-01-05/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 5일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">아크 레이더스, TGA 이어 스팀 어워드 혁신상 2관왕</h3>
@@ -323,7 +416,7 @@
     
       <a href="/trend/daily/2026-01-04/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 4일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">DN 수퍼스 2026 출정식 개최, 명일방주 엔드필드 1월 22일 출시 확정</h3>
@@ -331,7 +424,7 @@
     
       <a href="/trend/daily/2026-01-03/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 3일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">페이커, e스포츠 최초 체육훈장 청룡장 수훈</h3>
@@ -339,7 +432,7 @@
     
       <a href="/trend/daily/2026-01-01/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/769/715/resize_gm450740_Untitled-1.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/715/resize_gm450740_Untitled-1.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 1일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">엔씨, AI 모델 '배키' 오픈소스 공개하며 기술력 과시</h3>
@@ -347,7 +440,7 @@
     
       <a href="/trend/daily/2025-12-31/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1999717063.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1999717063.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 31일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">포트리스3 블루 PC 얼리액세스 시작, 아주르 프로밀리아 넥슨 파트너 확정</h3>
@@ -355,7 +448,7 @@
     
       <a href="/trend/daily/2025-12-30/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1576929025.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1576929025.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 30일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">니케 무료 100뽑 공개, eFootball v5.0.0 대형 업데이트</h3>
@@ -363,7 +456,7 @@
     
       <a href="/trend/daily/2025-12-29/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 29일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 전 서버 품앗이 성공, SOOP AI 매니저 공개</h3>
@@ -371,7 +464,7 @@
     
       <a href="/trend/daily/2025-12-28/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fupload%2Femail-attachments%2F2025%2F12%2F21%2F1639019552567126173_d204769a-c1e2-4454-84b3-51226abb0179_%255B%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%255D%2520%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%2520CI.jpg&w=1200&q=75" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fupload%2Femail-attachments%2F2025%2F12%2F21%2F1639019552567126173_d204769a-c1e2-4454-84b3-51226abb0179_%255B%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%255D%2520%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%2520CI.jpg&w=1200&q=75" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 28일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">엔씨소프트 INDYGO 지분 취득 공시, 콘진원 미국 규제 보고서 발표</h3>
@@ -379,7 +472,7 @@
     
       <a href="/trend/daily/2025-12-27/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 27일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 '서버 품앗이' 미담, 다크 앤 다커 대법원行</h3>
@@ -387,7 +480,7 @@
     
       <a href="/trend/daily/2025-12-26/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 26일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">007 퍼스트 라이트 연기, T1 오너 재계약으로 연말 화제 집중</h3>
@@ -395,7 +488,7 @@
     
       <a href="/trend/daily/2025-12-25/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 25일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">주술회전 50계단 급상승, ARC Raiders 동접 26만 돌파</h3>
@@ -403,7 +496,7 @@
     
       <a href="/trend/daily/2025-12-24/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_esports_logo.svg/330px-T1_esports_logo.svg.png" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_esports_logo.svg/330px-T1_esports_logo.svg.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 24일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">T1 오너 재계약, 마피아42 시즌17 급상승, 3N AGF 경쟁 예고</h3>
@@ -411,7 +504,7 @@
     
       <a href="/trend/daily/2025-12-23/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1108147138.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1108147138.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 23일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">CS2 120만 동접, 올림픽 e스포츠 유치 논의 진행</h3>
@@ -419,7 +512,7 @@
     
       <a href="/trend/daily/2025-12-22/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 22일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 스타필드 팝업 화제, P의 거짓 해외 시상식 수상</h3>
@@ -427,7 +520,7 @@
     
       <a href="/trend/daily/2025-12-21/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://img.ruliweb.com/data/news/tn/25/12/19/19b356de817_fugehy.avif" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://img.ruliweb.com/data/news/tn/25/12/19/19b356de817_fugehy.avif" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 21일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">크래프톤, 네이버/미래에셋과 1조원 규모 아시아 펀드 추진</h3>
@@ -435,7 +528,7 @@
     
       <a href="/trend/daily/2025-12-20/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 20일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위, 마비노기 모바일 71계단 급등</h3>
@@ -443,7 +536,7 @@
     
       <a href="/trend/daily/2025-12-19/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F16%2F1639014500075595121_42552c76-0ea6-4188-8044-618543a0c1b9_%25ED%258E%2598.jpg&w=1200&q=75" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F16%2F1639014500075595121_42552c76-0ea6-4188-8044-618543a0c1b9_%25ED%258E%2598.jpg&w=1200&q=75" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 19일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">확률형 아이템 즉시 과징금 주문, 블루아카 콜라보 카페 오픈</h3>
@@ -451,7 +544,7 @@
     
       <a href="/trend/daily/2025-12-18/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/tcg-pocket/launch/tcg-pocket-169-en.png" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/tcg-pocket/launch/tcg-pocket-169-en.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 18일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">포켓몬 Pocket 확장팩 공개, PC 동접 CS2-Dota2 강세</h3>
@@ -459,7 +552,7 @@
     
       <a href="/trend/daily/2025-12-17/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1972353021.png" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1972353021.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 17일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">아이온2 프리뷰 공개, ARC Raiders 30만 동접 돌파</h3>
@@ -467,7 +560,7 @@
     
       <a href="/trend/daily/2025-12-16/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/769/221/resize_gm808461_Untitled-1.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/221/resize_gm808461_Untitled-1.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 16일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">2025년 스팀 출시작 1만9천개 돌파, 신작 노출 경쟁 심화</h3>
@@ -475,7 +568,7 @@
     
       <a href="/trend/daily/2025-12-15/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F14%2Fnews%2Fthumb%2Fs1317442484.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F14%2Fnews%2Fthumb%2Fs1317442484.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 15일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">T1, KeSPA컵 첫 우승으로 연말 e스포츠 화제 집중</h3>
@@ -483,7 +576,7 @@
     
       <a href="/trend/daily/2025-12-14/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1702138958.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1702138958.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 14일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">검은사막 모바일, PC 클라이언트와 리마스터 로드맵 공개</h3>
@@ -491,7 +584,7 @@
     
       <a href="/trend/daily/2025-12-13/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1674343392.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1674343392.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 13일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">TGA 2025 신작 발표 쏟아져, AI 허위 광고 규제 논의도 주목</h3>
@@ -499,7 +592,7 @@
     
       <a href="/trend/daily/2025-12-12/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F10%2F1639009402899612023_3f63d559-8379-4044-9caa-c6c0a11df7a6_signal-2025-11-14-15-54-12-867-1-1.jpg&w=640&q=75" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F10%2F1639009402899612023_3f63d559-8379-4044-9caa-c6c0a11df7a6_signal-2025-11-14-15-54-12-867-1-1.jpg&w=640&q=75" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 12일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">GTA 6 개발사 대량 해고, 영국 정치권까지 논쟁 확산</h3>
@@ -507,7 +600,7 @@
     
       <a href="/trend/daily/2025-12-11/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://img.ruliweb.com/data/news/tn/25/12/10/19b06ff341e_iagecy.avif" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://img.ruliweb.com/data/news/tn/25/12/10/19b06ff341e_iagecy.avif" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 11일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위, 시프트업 김형태 대표 대통령표창</h3>
@@ -515,7 +608,7 @@
     
       <a href="/trend/daily/2025-12-10/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 10일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 웨카 경매장 전면 재검토, 더 파이널스 e스포츠 확장</h3>
@@ -523,7 +616,7 @@
     
       <a href="/trend/daily/2025-12-09/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/768/961/resize_gm580395_251208-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://cdn.gamemeca.com/gmdata/0001/768/961/resize_gm580395_251208-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 9일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기·라스트 워 매출 강세, 게임 국가전략산업화 논의 본격화</h3>
@@ -531,7 +624,7 @@
     
       <a href="/trend/daily/2025-12-08/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/af73819d08ad3bbb80a79dcfb048f847923bda56-5120x1280.png" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/af73819d08ad3bbb80a79dcfb048f847923bda56-5120x1280.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 8일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">T1 발로란트 SVL 우승, 스마일게이트 제주 테마파크 진출 발표</h3>
@@ -539,7 +632,7 @@
     
       <a href="/trend/daily/2025-12-07/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1582664392.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1582664392.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 7일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">아크 레이더스 스팀 동접 46만 돌파, 넥슨-아이언메이스 소송 승소</h3>
@@ -547,7 +640,7 @@
     
       <a href="/trend/daily/2025-12-06/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/768/911/resize_gm819725_ps_sn.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://cdn.gamemeca.com/gmdata/0001/768/911/resize_gm819725_ps_sn.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 6일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">배그 포르쉐 콜라보 35계단 급등, AGF 2025 게임사 참가 50% 증가</h3>
@@ -555,7 +648,7 @@
     
       <a href="/trend/daily/2025-12-05/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/768/861/resize_gm552849_wt_sn.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://cdn.gamemeca.com/gmdata/0001/768/861/resize_gm552849_wt_sn.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 5일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위, 니케 겨울 이벤트로 40계단 급등</h3>
@@ -1286,7 +1379,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

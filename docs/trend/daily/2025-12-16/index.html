@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>2025년 스팀 출시작 1만9천개 돌파, 신작 노출 경쟁 심화</title>
   <!-- SEO -->
   <meta name="description" content="모바일 매출 상위권은 서바이벌과 MMORPG가 함께 강세였고, iOS 인기 지표에서는 가벼운 방치와 퍼즐 게임이 눈에 띄었어요. PC 글로벌 동접은 상위 2개가 크게 벌어졌습니다. 순위 변동은 스포츠 게임 상승과 캐주얼 하락이 교차했어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">2025년 스팀 출시작 1만9천개 돌파, 신작 노출 경쟁 심화</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fgame.donga.com%2Fmedia%2F__sized__%2Fimages%2F2025%2F12%2F10%2Fd67f7097082443ed-thumbnail-1920x1080-70.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fgame.donga.com%2Fmedia%2F__sized__%2Fimages%2F2025%2F12%2F10%2Fd67f7097082443ed-thumbnail-1920x1080-70.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">데프캣, '안티 브이 리부트' 개발기 공개</h4>
                 <p class="weekly-hot-desc">1인 프로젝트에서 3인 팀으로 커진 과정을 인터뷰로 풀었어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1119564909.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1119564909.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">마영전, 겨울 업데이트 로드맵 발표</h4>
                 <p class="weekly-hot-desc">공식 라이브를 통해 성장 시스템과 신규 콘텐츠 방향을 설명했어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F199%2Fresize_gm254086_pjh251215-1.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F199%2Fresize_gm254086_pjh251215-1.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">G123 '도라에몽 코믹 트래블러' 출시</h4>
                 <p class="weekly-hot-desc">텍스트 어드벤처와 로그라이크를 결합한 전략형 RPG로 서비스가 시작됐어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimage.fnnews.com%2Fresource%2Fmedia%2Fimage%2F2025%2F12%2F10%2F202512101608064708_l.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimage.fnnews.com%2Fresource%2Fmedia%2Fimage%2F2025%2F12%2F10%2F202512101608064708_l.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">콘텐츠대상, 게임 유공 부문 확대</h4>
                 <p class="weekly-hot-desc">문체부와 한콘진이 '대한민국 콘텐츠대상' 시상식을 진행했어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.logo.wine%2Fa%2Flogo%2FNCSoft%2FNCSoft-Logo.wine.svg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.logo.wine%2Fa%2Flogo%2FNCSoft%2FNCSoft-Logo.wine.svg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">100대 브랜드 10년 연속 선정</h4>
           <p class="industry-desc">브랜드스탁 '대한민국 100대 브랜드'에 10년 연속 이름을 올렸어요. BSTI 851.3점으로 전년 대비 5계단 오른 41위를 기록했습니다.</p>
@@ -359,7 +452,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/2sOxb_s3uan-AmiF_XRh_K2yqRrmVeuzHAqtYCrwrFP-s1u_FMKo1NtlPz0kdn0qQUH8" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/2sOxb_s3uan-AmiF_XRh_K2yqRrmVeuzHAqtYCrwrFP-s1u_FMKo1NtlPz0kdn0qQUH8" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">양대 마켓 상위권 교집합 확대</h4>
           <p class="weekly-metric-desc">iOS와 Android 매출 상위 5개에 '라스트 워: 서바이벌'과 'WOS: 화이트아웃 서바이벌'이 함께 들어갔어요.
@@ -368,7 +461,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">PC 동접, 상위 2개가 독주 중</h4>
           <p class="weekly-metric-desc">Counter-Strike 2가 1,174,013명, Dota 2가 674,102명을 기록했어요.
@@ -390,7 +483,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/13/91/c2139134-df43-fb9f-5895-d6e8ca17f295/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">컴투스프로야구2025</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/13/91/c2139134-df43-fb9f-5895-d6e8ca17f295/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">컴투스프로야구2025</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 72위 → 47위 (+25)
@@ -401,7 +494,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/a0/79/e1a07981-8523-e2ae-141f-e468e9b6e5ec/AppIcon-kr-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">냥코 대전쟁</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/a0/79/e1a07981-8523-e2ae-141f-e468e9b6e5ec/AppIcon-kr-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">냥코 대전쟁</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 42위 → 61위 (-19)
@@ -412,7 +505,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/20/bf/5c20bfd1-19e1-7880-4f13-a6a63547ec20/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Pikmin Bloom</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/20/bf/5c20bfd1-19e1-7880-4f13-a6a63547ec20/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Pikmin Bloom</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 69위 → 88위 (-19)
@@ -423,7 +516,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/13/f8/c313f839-70d0-6c8f-bedd-b48c966c92d1/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">펭귄 대모험 : 꽁꽁 방어전</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/13/f8/c313f839-70d0-6c8f-bedd-b48c966c92d1/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">펭귄 대모험 : 꽁꽁 방어전</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 83위 → 100위 (-17)
@@ -438,11 +531,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1214,7 +1307,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

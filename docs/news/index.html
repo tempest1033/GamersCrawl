@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>게임 뉴스</title>
   <!-- SEO -->
   <meta name="description" content="게임 뉴스를 한눈에.">
@@ -104,6 +127,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -220,14 +313,14 @@
 	    
     <section class="section active" id="news">
       
-      <div class="page-container">
+      <div class="page-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">게임 뉴스</h1>
         <div class="news-sources-grid">
@@ -248,7 +341,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/410674" target="_blank" rel="noopener" data-index="0">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2026%2F01%2F06%2F1639032617138766488_e0b16a4f-df4c-4470-a787-ef6cd5cbf1b5_010101.jpg&w=1920&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmce6sqlv0000sk01l1lf63uu%2F2026%2F01%2F06%2F1639032617138766488_e0b16a4f-df4c-4470-a787-ef6cd5cbf1b5_010101.jpg&w=1920&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">멈추면 죽는다… 덱빌딩 설국열차 ‘프로스트레인2’</div>
@@ -256,7 +349,7 @@
       
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/410771" target="_blank" rel="noopener" data-index="1">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2026%2F01%2F05%2F1639031940905263565_b10e6aca-a064-4921-8308-a7072f6c85d4_2-1.%2520KV.jpg&w=1200&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2026%2F01%2F05%2F1639031940905263565_b10e6aca-a064-4921-8308-a7072f6c85d4_2-1.%2520KV.jpg&w=1200&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">소울라이크 아류작은 잊어라! 7년 만에 증명한 '코드 베인'의 진화</div>
@@ -281,7 +374,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/410855" target="_blank" rel="noopener" data-index="5">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2gsyt0006t5012nlq9doe%2F2026%2F01%2F06%2F1639032815921465692_fe7ab3c5-5a24-4257-9824-5804f5ffa7d8_0-2.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2gsyt0006t5012nlq9doe%2F2026%2F01%2F06%2F1639032815921465692_fe7ab3c5-5a24-4257-9824-5804f5ffa7d8_0-2.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">'명조' 쿠로게임즈, 김준희 한국 지사장 선임</div>
@@ -289,7 +382,7 @@
       
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/410846" target="_blank" rel="noopener" data-index="6">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2026%2F01%2F06%2F1639032686671511427_03b6abb0-05bf-4343-bb7a-f826f4c518f1_steam_share_image.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2grqk0003t501uit9rzw9%2F2026%2F01%2F06%2F1639032686671511427_03b6abb0-05bf-4343-bb7a-f826f4c518f1_steam_share_image.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">"파죽지세" 스팀, 새해 벽두부터 동접자 4,100만 명 넘었다</div>
@@ -314,7 +407,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/410423" target="_blank" rel="noopener" data-index="10">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F31%2F1639027533790606807_564d539d-594c-4aa3-aa03-76f027f63d24_%25ED%258E%2598.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F31%2F1639027533790606807_564d539d-594c-4aa3-aa03-76f027f63d24_%25ED%258E%2598.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">오픈월드 풍년, 눈은 즐겁고 지갑은 아프다</div>
@@ -322,7 +415,7 @@
       
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/410643" target="_blank" rel="noopener" data-index="11">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2026%2F01%2F02%2F1639029184595292535_20041495-d307-446d-bb35-d7e3351c280e_videoframe_82322.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2026%2F01%2F02%2F1639029184595292535_20041495-d307-446d-bb35-d7e3351c280e_videoframe_82322.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">스위치 2 선택이 아닌 필수? 취향저격 라인업</div>
@@ -347,7 +440,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.thisisgame.com/articles/409003" target="_blank" rel="noopener" data-index="15">
           <div class="news-grid-card-thumb">
-            <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F09%2F1639008602032788801_30442933-0456-4a0f-8879-aff5578933fa_%25ED%258E%2598.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F09%2F1639008602032788801_30442933-0456-4a0f-8879-aff5578933fa_%25ED%258E%2598.jpg&w=640&q=75" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">30년 '경영통' CEO가 쓴 헬로키티 게임 성공 공식</div>
@@ -376,7 +469,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.gamemeca.com/view.php?gid=1769864" target="_blank" rel="noopener" data-index="0">
           <div class="news-grid-card-thumb">
-            <img src="https://cdn.gamemeca.com/gmdata/0001/769/864/resize_gm351565_pjh260106-1.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/864/resize_gm351565_pjh260106-1.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">대체재 없는 게이밍 태블릿, 레드매직 ‘아스트라’ 6일 출시</div>
@@ -384,7 +477,7 @@
       
         <a class="news-grid-card" href="https://www.gamemeca.com/view.php?gid=1769877" target="_blank" rel="noopener" data-index="1">
           <div class="news-grid-card-thumb">
-            <img src="https://cdn.gamemeca.com/gmdata/0001/769/877/resize_gm423615_pjh260106-2.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/877/resize_gm423615_pjh260106-2.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">텐가이 포함, 사이쿄 게임 한국어판 출시</div>
@@ -409,7 +502,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.gamemeca.com/view.php?gid=1769856" target="_blank" rel="noopener" data-index="5">
           <div class="news-grid-card-thumb">
-            <img src="https://cdn.gamemeca.com/gmdata/0001/769/856/resize_gm843950_464747.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/856/resize_gm843950_464747.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">스타세이비어 1 대 1 문의에서 'AI 환각' 발견, 개발사 사과</div>
@@ -417,7 +510,7 @@
       
         <a class="news-grid-card" href="https://www.gamemeca.com/view.php?gid=1769855" target="_blank" rel="noopener" data-index="6">
           <div class="news-grid-card-thumb">
-            <img src="https://cdn.gamemeca.com/gmdata/0001/769/855/resize_gm358566_16161717.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/855/resize_gm358566_16161717.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">지글거림 없는 프레임 보간, 엔비디아 DLSS 4.5 공개</div>
@@ -442,7 +535,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.gamemeca.com/view.php?gid=1769850" target="_blank" rel="noopener" data-index="10">
           <div class="news-grid-card-thumb">
-            <img src="https://cdn.gamemeca.com/gmdata/0001/769/850/resize_gm582062_55757575.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/850/resize_gm582062_55757575.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">테마는 겨울 '인더섬 위드 BTS' 신년 맞이 콘텐츠 추가</div>
@@ -450,7 +543,7 @@
       
         <a class="news-grid-card" href="https://www.gamemeca.com/view.php?gid=1769848" target="_blank" rel="noopener" data-index="11">
           <div class="news-grid-card-thumb">
-            <img src="https://cdn.gamemeca.com/gmdata/0001/769/848/resize_gm136164_gm309883_260106-risell-yy322.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://cdn.gamemeca.com/gmdata/0001/769/848/resize_gm136164_gm309883_260106-risell-yy322.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">"나 바뀐 거 없어?" 여친 이변 찾는 8번 출구식 신작 출시</div>
@@ -491,7 +584,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219894" target="_blank" rel="noopener" data-index="0">
           <div class="news-grid-card-thumb">
-            <img src="//img.ruliweb.com/data/news/tn/22/09/06/1831312471f_ahjltg.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="//img.ruliweb.com/data/news/tn/22/09/06/1831312471f_ahjltg.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">Xbox 게임패스, 1월 1차 추가 타이틀 소개</div>
@@ -499,7 +592,7 @@
       
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219893" target="_blank" rel="noopener" data-index="1">
           <div class="news-grid-card-thumb">
-            <img src="//img.ruliweb.com/data/news/tn/26/01/06/19b9393d412_ynqiez.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="//img.ruliweb.com/data/news/tn/26/01/06/19b9393d412_ynqiez.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">콘솔 게임 주간 판매 순위 : 25.12.22~25.12.28</div>
@@ -524,7 +617,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219888" target="_blank" rel="noopener" data-index="5">
           <div class="news-grid-card-thumb">
-            <img src="//img.ruliweb.com/data/news/tn/26/01/06/19b91a91cb7_tloejv.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="//img.ruliweb.com/data/news/tn/26/01/06/19b91a91cb7_tloejv.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">파이널 판타지 택틱스 - 이발리스 크로니클즈, 출하량 100만 장 돌파</div>
@@ -532,7 +625,7 @@
       
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219889" target="_blank" rel="noopener" data-index="6">
           <div class="news-grid-card-thumb">
-            <img src="//img.ruliweb.com/data/news/tn/26/01/06/19b927dd7b7_fnsuzv.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="//img.ruliweb.com/data/news/tn/26/01/06/19b927dd7b7_fnsuzv.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">AMD, 자동차·산업·피지컬 AI 전반에서 몰입형 AI 경험을 구현하는 라이젠 AI 임베디드 프로세</div>
@@ -557,7 +650,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219885" target="_blank" rel="noopener" data-index="10">
           <div class="news-grid-card-thumb">
-            <img src="//img.ruliweb.com/data/news/tn/26/01/06/19b917ac7c5_xouczq.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="//img.ruliweb.com/data/news/tn/26/01/06/19b917ac7c5_xouczq.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">㈜네오위즈 ‘피망 뉴맞고’,  청소년의 ‘패밀리’되어 1,000만 원 기부</div>
@@ -565,7 +658,7 @@
       
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219884" target="_blank" rel="noopener" data-index="11">
           <div class="news-grid-card-thumb">
-            <img src="//img.ruliweb.com/data/news/tn/26/01/06/19b916bf1f6_glskut.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="//img.ruliweb.com/data/news/tn/26/01/06/19b916bf1f6_glskut.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">엔비디아, 블루필드-4로 차세대 AI 위한 최신 AI 네이티브 스토리지 인프라 구현</div>
@@ -606,7 +699,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312535&hotnews=1" target="_blank" rel="noopener" data-index="0">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1241421885.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1241421885.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">시즌2 로드맵 공개! 장비 조율 계승도? 아이온2 1/6 방송 요약</div>
@@ -614,7 +707,7 @@
       
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312534&hotnews=1" target="_blank" rel="noopener" data-index="1">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1573401257.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1573401257.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">AAA급 '존 윅' 게임 볼 수 있을까? 라이언스게이트 IP AAA게임화 물색</div>
@@ -639,7 +732,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312501&hotnews=1" target="_blank" rel="noopener" data-index="5">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1657159010.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1657159010.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">지하철에서 '애니팡' 하던 사람들은 다 어디로 갔을까</div>
@@ -647,7 +740,7 @@
       
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312522&hotnews=1" target="_blank" rel="noopener" data-index="6">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1940443469.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/2026/01/06/news/thumb/s1940443469.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">메타크리틱 선정 2025년 최고의 PC 게임은 '하데스2'</div>
@@ -672,7 +765,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312505&hotnews=1" target="_blank" rel="noopener" data-index="10">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/webzine3/news/202601/i1327389463.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/webzine3/news/202601/i1327389463.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">네오위즈, AI는 개발 아닌 '출판'에...PC/콘솔 신작 5종 이상 준비</div>
@@ -680,7 +773,7 @@
       
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312502&hotnews=1" target="_blank" rel="noopener" data-index="11">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/webzine3/news/202601/i1182495762.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/webzine3/news/202601/i1182495762.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">'명조' 쿠로게임즈, 한국 지사장 김준희 선임... 서비스 강화 본격화</div>
@@ -705,7 +798,7 @@
           <div class="news-cards-row">
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312486&hotnews=1" target="_blank" rel="noopener" data-index="15">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/2026/01/05/news/thumb/s1425339542.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/2026/01/05/news/thumb/s1425339542.jpg" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">누구나 참가하는 전국 대회! '발로란트' PC방 지표 상승</div>
@@ -713,7 +806,7 @@
       
         <a class="news-grid-card" href="https://www.inven.co.kr/webzine/news/?news=312491&hotnews=1" target="_blank" rel="noopener" data-index="16">
           <div class="news-grid-card-thumb">
-            <img src="https://static.inven.co.kr/column/2026/01/05/news/thumb/s1194092376.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
+            <img data-src="https://static.inven.co.kr/column/2026/01/05/news/thumb/s1194092376.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
           <div class="news-grid-card-title">출시 1년도 안됐는데...'와일드게이트' 에픽스토어 무료 배포</div>
@@ -1445,7 +1538,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

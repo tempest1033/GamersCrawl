@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>CS2 120만 동접, 올림픽 e스포츠 유치 논의 진행</title>
   <!-- SEO -->
   <meta name="description" content="12/23 기준 모바일 매출 상위권은 생존과 전략 장르가 강세를 이어가고 있어요. PC는 스팀에서 Counter-Strike 2가 120만 동접을 유지하며 트래픽을 견인했어요. 정책에선 올림픽 e스포츠 국내 유치 논의가 진행됐고, 콘솔은 차량 내 원격 플레이처럼 '플레이 공간 확장' 소식이 눈에 띄었어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">CS2 120만 동접, 올림픽 e스포츠 유치 논의 진행</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/2sOxb_s3uan-AmiF_XRh_K2yqRrmVeuzHAqtYCrwrFP-s1u_FMKo1NtlPz0kdn0qQUH8" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/2sOxb_s3uan-AmiF_XRh_K2yqRrmVeuzHAqtYCrwrFP-s1u_FMKo1NtlPz0kdn0qQUH8" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">생존과 전략 장르, 매출 상위권 고정</h4>
                 <p class="weekly-hot-desc">iOS와 Android 매출 TOP5에 '라스트 워: 서바이벌'과 'WOS: 화이트아웃 서바이벌'이 함께 올라 안정적인 상위권 흐름을 보여요.
@@ -290,7 +383,7 @@ iOS에는 '전략적 팀 전투'도 상위권을 지켰어요.</p>
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">스팀 동접, CS2 120만 명으로 1위</h4>
                 <p class="weekly-hot-desc">스팀 동시접속 TOP5에서 Counter-Strike 2가 1,209,636명으로 1위를 기록했어요.
@@ -299,7 +392,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F22%2Fnews%2Fthumb%2Fs1803652558.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F22%2Fnews%2Fthumb%2Fs1803652558.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">AFEELA, 차량 내 PS 리모트 플레이 지원</h4>
                 <p class="weekly-hot-desc">소니와 혼다 전기차 AFEELA가 PS 리모트 플레이를 탑재한다는 소식이 전해졌어요.
@@ -308,7 +401,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1108147138.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1108147138.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">국회, 올림픽 e스포츠 유치 논의 진행</h4>
                 <p class="weekly-hot-desc">국회에서 올림픽 e스포츠 국내 유치 관련 토론회가 열렸다는 보도가 나왔어요.
@@ -321,11 +414,11 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1838534118.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1838534118.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">김창한 대표 발언, 주총 변수로 재부각</h4>
           <p class="industry-desc">김창한 대표가 과거 주주총회에서 언급했던 책임 관련 발언이 재조명됐어요. 2026년 3월 주주총회가 주요 분기점이 될 수 있다는 관측이 기사로 다뤄지며 투자자 관심이 모였어요.</p>
@@ -346,7 +439,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F21%2Fnews%2Fthumb%2Fs1182868315.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F21%2Fnews%2Fthumb%2Fs1182868315.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">생성형 AI 사용, 시상 기준이 엄격해져요</h4>
           <p class="industry-desc">해외 인디 게임 어워드에서 생성형 AI 관련 서약 위반을 이유로 수상이 취소됐다는 보도가 나왔어요. 개발 과정의 도구 사용 공개와 심사 기준 정비가 업계 공통 과제로 떠올랐어요.</p>
@@ -367,7 +460,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">스팀 TOP5, CS2 1,209,636명 기록</h4>
           <p class="weekly-metric-desc">스팀 동시접속 TOP5는 Counter-Strike 2(1,209,636명), ARC Raiders(334,996명), PUBG: BATTLEGROUNDS(208,495명) 등이 상위권을 형성했어요.</p>
@@ -375,7 +468,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F4c8897_c9000568457645ff8a741d13bd62a02a~mv2.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F4c8897_c9000568457645ff8a741d13bd62a02a~mv2.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">iOS 인기, 방치형과 퍼즐 장르 혼합</h4>
           <p class="weekly-metric-desc">iOS 인기 TOP5는 '쿠노이치 키우기', '카드캡터 체리: 추억의 열쇠', '블록 블라스트', '귀판오분전', '킹방치: 빵지의 제왕'으로 구성돼 장르가 분산된 흐름이에요.</p>
@@ -396,7 +489,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/eb/fc/7bebfc6e-01d0-579a-23c2-7738d09d4edd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">명조:워더링 웨이브</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/eb/fc/7bebfc6e-01d0-579a-23c2-7738d09d4edd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">명조:워더링 웨이브</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 54위 → 40위 (+14)
@@ -407,7 +500,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/9c/76/5e9c7692-8783-cbb3-1dec-f4d9090f2a87/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">추억의 잡화점</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/9c/76/5e9c7692-8783-cbb3-1dec-f4d9090f2a87/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">추억의 잡화점</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 93위 → 79위 (+14)
@@ -418,7 +511,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Pokemon GO</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Pokemon GO</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 41위 → 30위 (+11)
@@ -429,7 +522,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/b7/ec/b7b7ec3f-1532-5467-1cfe-b165cb437097/NewAppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Travel Town - 결합 어드벤처</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/b7/ec/b7b7ec3f-1532-5467-1cfe-b165cb437097/NewAppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Travel Town - 결합 어드벤처</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 47위 → 37위 (+10)
@@ -444,11 +537,11 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1220,7 +1313,7 @@ ARC Raiders(334,996명)와 PUBG: BATTLEGROUNDS(208,495명)도 상위권에 올�
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

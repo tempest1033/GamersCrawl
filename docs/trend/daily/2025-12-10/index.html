@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>마비노기 모바일 웨카 경매장 전면 재검토, 더 파이널스 e스포츠 확장</title>
   <!-- SEO -->
   <meta name="description" content="오늘은 마비노기 모바일이 웨카 경매장을 전면 재검토한다는 발표와 더 파이널스의 e스포츠 확장, 넥스 플레이그라운드의 콘솔 판매 약진이 눈에 띄어요. 모바일에선 WOS와 리니지M, 컴투스프로야구V25가 매출 상위권을 지키고 있고, 중국 e스포츠 시장 성장세도 함께 주목받고 있어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">마비노기 모바일 웨카 경매장 전면 재검토, 더 파이널스 e스포츠 확장</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/TSJx_-ml28RDZAN1popUnr2G0AKJS8xeoCh975QKOeF21FQl5J5lNCuJmaOi_7ufCYI" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/TSJx_-ml28RDZAN1popUnr2G0AKJS8xeoCh975QKOeF21FQl5J5lNCuJmaOi_7ufCYI" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">생존과 MMORPG, 스포츠가 매출 상위 장악</h4>
                 <p class="weekly-hot-desc">오늘 양대 마켓 매출 상위는 WOS, 리니지M, 컴투스프로야구V25, 뱀피르 등 생존과 MMORPG, 스포츠 게임이 채우고 있어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F768%2F976%2Fresize_gm959248_251209-risell-yy2.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F768%2F976%2Fresize_gm959248_251209-risell-yy2.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">넥스 플레이그라운드, 블프에서 Xbox 제쳤다</h4>
                 <p class="weekly-hot-desc">미국 블랙프라이데이 콘솔 판매에서 넥스 플레이그라운드가 점유율 14%로 Xbox를 앞질렀다고 전해졌어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F09%2Fnews%2Fthumb%2Fs1670550376.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F09%2Fnews%2Fthumb%2Fs1670550376.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">더 파이널스, 정규 리그로 e스포츠 생태계 확장</h4>
                 <p class="weekly-hot-desc">넥슨은 팀 기반 FPS 더 파이널스가 정규 리그와 글로벌 대회를 통해 e스포츠 생태계를 넓혀가고 있다고 밝혔어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1406128798.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1406128798.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">중국 e스포츠 매출 6조 원, 6.4% 성장 전망</h4>
                 <p class="weekly-hot-desc">최근 자료에 따르면 2025년 중국 e스포츠 산업 매출이 6조 원을 넘고 전년 대비 약 6.4% 성장할 것으로 나왔어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">마비노기 모바일 과금 설계에 조기 제동 걸려</h4>
           <p class="industry-desc">넥슨 데브캣은 마비노기 모바일 웨카 경매장 이슈에 대해 사과하고 베타 종료 시점에 맞춰 시스템을 전면 재검토하겠다고 밝혔어요. P2W 논란을 키우기 전에 구조를 손보겠다는 메시지로 읽히며 넥슨 신작 라이브 전략에도 변화가 있을지 주목받고 있어요.</p>
@@ -346,7 +439,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F08%2Fnews%2Fthumb%2Fs1743076112.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F08%2Fnews%2Fthumb%2Fs1743076112.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">NXC, 1512억 자사주 소각으로 주주환원 신호</h4>
           <p class="industry-desc">넥슨 지주사 NXC가 약 1512억 원 규모의 자사주 소각을 진행하며 기획재정부를 포함한 전 주주가 참여했다고 전해졌어요. 비상장사지만 지배구조와 주주 환원 의지를 드러낸 움직임이라 넥슨 그룹 전체 기업 가치와 상장사 주가에도 간접적인 기대가 걸리고 있어요.</p>
@@ -367,7 +460,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/gtcDOls1xCaV_qtRKx3dsk75bNBqel81gWkhK2xvgq5KKHj_71lnZjXYO6He97w0j-U" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/gtcDOls1xCaV_qtRKx3dsk75bNBqel81gWkhK2xvgq5KKHj_71lnZjXYO6He97w0j-U" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">WOS와 리니지M, 컴투스 야구 상위권 유지</h4>
           <p class="weekly-metric-desc">iOS와 Android 매출 상위에서 WOS와 리니지M, 컴투스프로야구V25가 모두 톱5에 오르며 존재감을 보이고 있어요.
@@ -376,7 +469,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">ARC Raiders, 스팀 동접 3위 신흥 강자로 등장</h4>
           <p class="weekly-metric-desc">오늘 스팀 동시접속 순위에서 ARC Raiders가 약 25만 명 이상을 기록하며 3위에 올랐어요.
@@ -398,7 +491,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/9c/76/5e9c7692-8783-cbb3-1dec-f4d9090f2a87/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">추억의 잡화점</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/9c/76/5e9c7692-8783-cbb3-1dec-f4d9090f2a87/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">추억의 잡화점</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 68위 → 52위 (+16)
@@ -409,7 +502,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/_BjyLC_y-w36hAxYWkngsi2WWsppSLSC7SrZYnfBZSs4r-ljRrmiRY25qOo3MB6gBTw" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">변신 키우기</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/_BjyLC_y-w36hAxYWkngsi2WWsppSLSC7SrZYnfBZSs4r-ljRrmiRY25qOo3MB6gBTw" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">변신 키우기</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 95위 → 80위 (+15)
@@ -420,7 +513,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/19/56/47/195647d9-1bcc-e82b-f197-cf570f4d1db4/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">더 스파이크 크로스</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/19/56/47/195647d9-1bcc-e82b-f197-cf570f4d1db4/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">더 스파이크 크로스</h4>
         
       <span class="weekly-ranking-badge up">
         Android 110위 → 98위 (+12)
@@ -431,7 +524,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/66/5f/77665f12-bfbc-107a-4d01-97342a0cc119/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">앙상블스타즈!!</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/66/5f/77665f12-bfbc-107a-4d01-97342a0cc119/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">앙상블스타즈!!</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 59위 → 87위 (-28)
@@ -446,11 +539,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1222,7 +1315,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

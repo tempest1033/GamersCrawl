@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>포트리스3 블루 PC 얼리액세스 시작, 아주르 프로밀리아 넥슨 파트너 확정</title>
   <!-- SEO -->
   <meta name="description" content="포트리스3 블루가 PC 얼리 액세스로 포트리스 감성 슈팅의 재도전을 알렸고, 넥슨은 아주르 프로밀리아 한국 퍼블리싱 파트너로 선택됐어요. 치지직은 e스포츠 팀과 제휴를 넓히며 중계 경쟁을 키웠고, 연말 업데이트와 콜라보가 모바일 순위 변동을 만들었습니다.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">포트리스3 블루 PC 얼리액세스 시작, 아주르 프로밀리아 넥슨 파트너 확정</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1999717063.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1999717063.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">포트리스3 블루, PC 얼리액세스 시작</h4>
                 <p class="weekly-hot-desc">블로믹스는 씨씨알 개발 포트리스3 블루 PC 얼리 액세스를 12/30 시작했어요.
@@ -290,7 +383,7 @@ PC/모바일 크로스플랫폼을 예고했고, 얼리 액세스는 PC 버전�
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1869148619.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1869148619.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">타이베이 게임쇼 2026 라인업 공개</h4>
                 <p class="weekly-hot-desc">타이베이 게임쇼가 2026년 1/29~2/1 개최와 함께 서밋 프로그램 라인업을 공개했어요.
@@ -299,7 +392,7 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1969093207.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1969093207.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">아주르 프로밀리아, 한국 파트너 넥슨 확정</h4>
                 <p class="weekly-hot-desc">만쥬게임즈 아주르 프로밀리아가 한국 퍼블리싱 파트너로 넥슨을 선택했다고 밝혔어요.
@@ -308,7 +401,7 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1501961210.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1501961210.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">CDPR, GOG 지분 전량 매각</h4>
                 <p class="weekly-hot-desc">CD 프로젝트 레드가 GOG 지분 100%를 공동창업자 미하엘 키신스키에게 매각했다고 전해졌어요.
@@ -321,11 +414,11 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimage.thebell.co.kr%2Fnews%2Fphoto%2F2025%2F12%2F08%2F20251208145341048_n.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimage.thebell.co.kr%2Fnews%2Fphoto%2F2025%2F12%2F08%2F20251208145341048_n.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">퍼블리싱 협상에서 운영 역량이 전면에</h4>
           <p class="industry-desc">아주르 프로밀리아가 넥슨 선택 이유로 장기 운영 철학 공감대를 제시했어요. 퍼블리싱 계약에서 라이브 서비스 운영 역량이 핵심 평가축으로 언급된 사례입니다.</p>
@@ -346,7 +439,7 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fthumb.mt.co.kr%2Fcdn-cgi%2Fimage%2Fw%3D1200%2Ch%3D675%2Cf%3Dauto%2Cfit%3Dcrop%2Cg%3Dface%2F21%2F2025%2F12%2F2025123008295819091_1.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fthumb.mt.co.kr%2Fcdn-cgi%2Fimage%2Fw%3D1200%2Ch%3D675%2Cf%3Dauto%2Cfit%3Dcrop%2Cg%3Dface%2F21%2F2025%2F12%2F2025123008295819091_1.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">치지직, 팀 제휴로 콘텐츠 확보 강화</h4>
           <p class="industry-desc">치지직이 프로팀과 공식 파트너십을 늘리며 e스포츠 콘텐츠 확보를 강화했어요. 보도에선 2025~2027 Esports World Cup 한국어 중계권 보유도 함께 언급됐습니다.</p>
@@ -367,7 +460,7 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/7cIIPlWm4m7AGqVpEsIfyL-HW4cQla4ucXnfalMft1TMIYQIlf2vqgmthlZgbNAQoaQ" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/7cIIPlWm4m7AGqVpEsIfyL-HW4cQla4ucXnfalMft1TMIYQIlf2vqgmthlZgbNAQoaQ" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">Android 매출 TOP5에 Roblox 포함</h4>
           <p class="weekly-metric-desc">Android 매출 TOP5에 Roblox가 포함됐어요.
@@ -376,7 +469,7 @@ B2B/B2C 참가사 명단도 순차 공개 중입니다.</p>
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1764817633" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1764817633" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">스팀 TOP5에 PUBG 261,985명 기록</h4>
           <p class="weekly-metric-desc">스팀 동시접속 TOP5에서 PUBG: BATTLEGROUNDS가 261,985명(3위)으로 집계됐어요.
@@ -398,7 +491,7 @@ Bongo Cat도 149,168명(5위)으로 상위권에 들었습니다.</p>
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/e2/f1/fbe2f135-8e70-49e6-d5ca-5adec704cf3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">설레 삼국: 미인계</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/e2/f1/fbe2f135-8e70-49e6-d5ca-5adec704cf3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">설레 삼국: 미인계</h4>
         
       <span class="weekly-ranking-badge up">
         Android 138위 → 100위 (+38)
@@ -409,7 +502,7 @@ Bongo Cat도 149,168명(5위)으로 상위권에 들었습니다.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/62/0d/75620d24-746b-dab0-b63f-797cca34d6a5/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">쿠키런: 오븐브레이크</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/62/0d/75620d24-746b-dab0-b63f-797cca34d6a5/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">쿠키런: 오븐브레이크</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 32위 → 12위 (+20)
@@ -420,7 +513,7 @@ Bongo Cat도 149,168명(5위)으로 상위권에 들었습니다.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/8jEmEvTsNIRW1vLlrDXXCcDlKkQrNb8NzccOXrln4G_DOUZpcBPbN9ssjuwBWz7_yZQ" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">젠레스 존 제로</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/8jEmEvTsNIRW1vLlrDXXCcDlKkQrNb8NzccOXrln4G_DOUZpcBPbN9ssjuwBWz7_yZQ" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">젠레스 존 제로</h4>
         
       <span class="weekly-ranking-badge ">
         iOS null위 → 3위 (0)
@@ -431,7 +524,7 @@ Bongo Cat도 149,168명(5위)으로 상위권에 들었습니다.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Identity V -제5인격</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/7b/53/727b53c7-7b31-3700-1ff7-77489bc6c197/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Identity V -제5인격</h4>
         
       <span class="weekly-ranking-badge ">
         iOS null위 → 55위 (0)
@@ -446,11 +539,11 @@ Bongo Cat도 149,168명(5위)으로 상위권에 들었습니다.</p>
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1222,7 +1315,7 @@ Bongo Cat도 149,168명(5위)으로 상위권에 들었습니다.</p>
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

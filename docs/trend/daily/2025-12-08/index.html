@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>T1 발로란트 SVL 우승, 스마일게이트 제주 테마파크 진출 발표</title>
   <!-- SEO -->
   <meta name="description" content="오늘은 로스트아크 겨울 쇼케이스와 스마일게이트의 제주 테마파크 소식이 눈에 띄네요. 발로란트 글로벌 리그 우승과 AGF 2025 현장 열기도 뜨겁습니다.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">T1 발로란트 SVL 우승, 스마일게이트 제주 테마파크 진출 발표</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/RBS57n8UMbzGOezcYN1QTuE39rjV01haLomxwN5I3qIukvRaHTvq1OCRgjITvUHO7CiF" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/RBS57n8UMbzGOezcYN1QTuE39rjV01haLomxwN5I3qIukvRaHTvq1OCRgjITvUHO7CiF" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">중위권 끌어올리는 좀비와 디펜스 게임</h4>
                 <p class="weekly-hot-desc">iOS 순위 변동을 보면 좀비 웨이브스, Age of Origins, I9, 정령킹 키우기 같은 타이틀이 하루 사이 두 자릿수 순위 상승을 기록했어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/KBlch6pf-GjHuz6oal1Z-FyRUVkARDKlqpPfL8JGLydpkRbbcjCVj1sCaRGCNhswrmPTovbLpJ9fMDGSI78z9pA" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/KBlch6pf-GjHuz6oal1Z-FyRUVkARDKlqpPfL8JGLydpkRbbcjCVj1sCaRGCNhswrmPTovbLpJ9fMDGSI78z9pA" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">AGF 2025, FGO 8주년 현장 열기</h4>
                 <p class="weekly-hot-desc">AGF 2025에서 페이트/그랜드 오더가 주장2 불가역폐기공 이드와 한국 서비스 8주년을 테마로 부스를 꾸려 큰 관심을 모았어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcmsassets.rgpub.io%2Fsanity%2Fimages%2Fdsfx7636%2Fnews%2Faf73819d08ad3bbb80a79dcfb048f847923bda56-5120x1280.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcmsassets.rgpub.io%2Fsanity%2Fimages%2Fdsfx7636%2Fnews%2Faf73819d08ad3bbb80a79dcfb048f847923bda56-5120x1280.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">T1, 발로란트 SVL 2025 우승</h4>
                 <p class="weekly-hot-desc">서울 상암 SOOP 콜로세움에서 열린 발로란트 국제 리그 SVL 2025 결승에서 T1이 FNATIC을 세트 스코어 3대 2로 꺾고 우승을 차지했어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.smilegate.com%2Fassets%2Fimg%2Fmetatag.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.smilegate.com%2Fassets%2Fimg%2Fmetatag.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">스마일게이트, 제주 대형 테마파크 진출</h4>
                 <p class="weekly-hot-desc">스마일게이트가 서귀포 안덕면 소인국테마파크 부지 약 5만 제곱미터를 개발해 축구장 8배 규모의 신규 테마파크를 내년 상반기 개장할 예정이라고 밝혔어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.smilegate.com%2Fassets%2Fimg%2Fmetatag.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.smilegate.com%2Fassets%2Fimg%2Fmetatag.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">캣파크뮤지엄 통해 제주 테마파크 전담</h4>
           <p class="industry-desc">스마일게이트는 자본금 150억 원 규모 자회사 캣파크뮤지엄을 설립해 제주 소인국테마파크 부지를 개발하고 테마파크 운영을 맡기기로 했어요. 중국 크로스파이어 테마파크에 이어 국내에서도 부동산 개발과 오프라인 엔터테인먼트를 결합한 새 수익 축을 준비하는 모습입니다.</p>
@@ -346,7 +439,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1550535740.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1550535740.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">AGF 2025, 서브컬처와 굿즈 시장 열기</h4>
           <p class="industry-desc">AGF 2025에서 스마일게이트, 미래시, 에픽세븐이 메인 스폰서로 참여하고, 페이트/그랜드 오더 등 서브컬처 IP 부스가 붐비며 체험과 굿즈 판매가 함께 진행됐어요. 현장 라이브 방송과 오프라인 이벤트가 결합된 구조가 자리 잡으면서 게임사들의 2D 및 애니풍 포트폴리오 확대 압력도 커지는 분위기입니다.</p>
@@ -367,7 +460,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">CS2와 도타2 합산 120만 동시접속</h4>
           <p class="weekly-metric-desc">스팀 동시접속 지표에서 카운터 스트라이크 2와 도타 2가 합산 약 124만 명 수준을 기록하며 최상위권을 채우고 있어요.
@@ -376,7 +469,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/RBS57n8UMbzGOezcYN1QTuE39rjV01haLomxwN5I3qIukvRaHTvq1OCRgjITvUHO7CiF" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/RBS57n8UMbzGOezcYN1QTuE39rjV01haLomxwN5I3qIukvRaHTvq1OCRgjITvUHO7CiF" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">모바일 매출 중위권, 일간 변동 20계단</h4>
           <p class="weekly-metric-desc">iOS 매출 차트에서 좀비 웨이브스, Age of Origins, I9 등은 하루 사이 15에서 20계단씩 오르며 50위 안팎까지 진입했어요.
@@ -398,7 +491,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/39/bf/a939bf16-974b-94be-ae36-52371e5ec62c/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">좀비 웨이브스</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/39/bf/a939bf16-974b-94be-ae36-52371e5ec62c/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">좀비 웨이브스</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 73위 → 53위 (+20)
@@ -409,7 +502,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Age of Origins</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Age of Origins</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 78위 → 61위 (+17)
@@ -420,7 +513,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/dc/35/44dc35af-a14c-645f-ee4f-d7f414f68f7c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">I9: 인페르노 나인</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/dc/35/44dc35af-a14c-645f-ee4f-d7f414f68f7c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">I9: 인페르노 나인</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 90위 → 75위 (+15)
@@ -431,7 +524,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/fO39aiPOm1Mf1UajvE8FU9c8UQLlAyltnGFuKUwiZ96s41kHppeuyT89phTrJOi9PdY" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Limbus Company</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/fO39aiPOm1Mf1UajvE8FU9c8UQLlAyltnGFuKUwiZ96s41kHppeuyT89phTrJOi9PdY" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Limbus Company</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 72위 → 91위 (-19)
@@ -446,11 +539,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
         
@@ -1180,7 +1273,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

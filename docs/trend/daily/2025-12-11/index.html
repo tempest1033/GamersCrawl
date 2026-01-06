@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>메이플 키우기 양대 마켓 1위, 시프트업 김형태 대표 대통령표창</title>
   <!-- SEO -->
   <meta name="description" content="오늘은 메이플 키우기가 양대 마켓 매출 1위를 유지하는 가운데 넷마블 손자회사 구로발게임즈 청산과 시프트업 김형태 대표의 대통령표창 소식이 눈에 띄어요. 인디 쇼케이스와 e스포츠, 스트리밍 이슈가 겹치면서 연말 게임 시장 열기가 더해지고 있어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">메이플 키우기 양대 마켓 1위, 시프트업 김형태 대표 대통령표창</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">메이플 키우기, 방치형으로 양대 마켓 매출 석권</h4>
                 <p class="weekly-hot-desc">11월 6일 출시된 메이플 키우기가 국내 애플 앱스토어와 구글 플레이 매출 1위를 동시에 기록하고 있어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">ARC Raiders, 스팀 동접 26만 명 돌파</h4>
                 <p class="weekly-hot-desc">오늘 스팀 지표에서 ARC Raiders가 약 26만 동접으로 3위를 기록하며 PC 플랫폼 신작 후보로 떠오르고 있어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F11%2Fnews%2Fi1817262477.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F11%2Fnews%2Fi1817262477.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">데이 오브 더 데브스에서 인디 기대작 공개</h4>
                 <p class="weekly-hot-desc">비영리 인디 쇼케이스 데이 오브 더 데브스에서 어웨이시스와 루시드 폴스 등 2026년 발매 예정 인디가 소개됐어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">팰월드 모바일, 한일 알파테스트 예고</h4>
                 <p class="weekly-hot-desc">보도에 따르면 크래프톤이 팰월드 모바일 클로즈드 알파테스트를 12월 한국과 일본에서 진행한다고 밝혔어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F10%2F19b06ff341e_iagecy.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F10%2F19b06ff341e_iagecy.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">김형태 대표, 콘텐츠대상에서 대통령표창 수상</h4>
           <p class="industry-desc">시프트업 김형태 대표가 2025 대한민국 콘텐츠대상에서 게임산업발전유공 부문 대통령표창을 받았어요. 승리의 여신: 니케와 스텔라 블레이드의 글로벌 성과가 한국 콘솔과 모바일 개발사의 저력을 인정받은 사례예요.</p>
@@ -346,7 +439,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F10%2Fnews%2Fthumb%2Fs1558408164.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F10%2Fnews%2Fthumb%2Fs1558408164.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">구로발게임즈 청산으로 스튜디오 구조조정 논의</h4>
           <p class="industry-desc">넷마블 손자회사 구로발게임즈가 청산 절차에 들어가면서 노조와 직원들이 고용보장과 전환 배치를 요구하고 있다는 보도가 나왔어요. 대형 퍼블리셔가 수익성과 포트폴리오 재편을 위해 중소 스튜디오 구조를 손보는 흐름이 드러나고 있어요.</p>
@@ -367,7 +460,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/216150/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/216150/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">메이플 키우기, 한국과 대만 매출 1위 유지</h4>
           <p class="weekly-metric-desc">보도에 따르면 메이플 키우기는 국내와 대만 애플 앱스토어에서 매출 1위를 기록하며 연일 상위권을 지키고 있어요.
@@ -376,7 +469,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">CS2와 Dota2, 스팀 동접 1위와 2위 고정</h4>
           <p class="weekly-metric-desc">오늘 스팀 동시접속 순위에서 Counter-Strike 2가 약 113만 명, Dota 2가 약 72만 명으로 1위와 2위를 기록했어요.
@@ -398,7 +491,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/45/b5/8245b5c4-fc65-d991-ca11-3847906c55ed/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카트라이더 러쉬플러스</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/45/b5/8245b5c4-fc65-d991-ca11-3847906c55ed/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카트라이더 러쉬플러스</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 33위 → 5위 (+28)
@@ -409,7 +502,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/40/c7/7f40c706-d518-f23d-5e6f-930fa23bf22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">아키텍트: 랜드 오브 엑자일</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/40/c7/7f40c706-d518-f23d-5e6f-930fa23bf22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">아키텍트: 랜드 오브 엑자일</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 58위 → 20위 (+38)
@@ -420,7 +513,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/fAtV_m1pk3Li1JWR31xdv3vV-CjXH5Uq1YHtj_f1MjeiOdfBhv8MvG-gO8vzpEXoit4" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">스텔라 소라</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/fAtV_m1pk3Li1JWR31xdv3vV-CjXH5Uq1YHtj_f1MjeiOdfBhv8MvG-gO8vzpEXoit4" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">스텔라 소라</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 98위 → 68위 (+30)
@@ -431,7 +524,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/5a/1c/5b5a1cc6-be2c-a104-88f7-0a7296416a6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">SD건담 지 제네레이션 이터널</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/5a/1c/5b5a1cc6-be2c-a104-88f7-0a7296416a6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">SD건담 지 제네레이션 이터널</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 48위 → 86위 (-38)
@@ -446,11 +539,11 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1222,7 +1315,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

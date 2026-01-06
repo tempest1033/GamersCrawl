@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>명일방주 매출, 모바일 게임 순위, 뉴스</title>
   <!-- SEO -->
   <meta name="description" content="명일방주 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.">
@@ -104,6 +127,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -220,20 +313,20 @@
 	    
     <section class="section active" id="game">
       
-      <div class="game-container">
+      <div class="game-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">명일방주 매출, 모바일 게임 순위, 뉴스</h1>
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
         <div class="game-hero-content">
-          <img class="game-hero-icon" src="https://play-lh.googleusercontent.com/CV04ek0EGV3IGD9iZDPcMEIKlYKW30p7Gia4qIjdiXk8_XkzmKUvgjznxZ0WneN6dNg" alt="명일방주" loading="lazy" data-img-fallback="hide">
+          <img class="game-hero-icon" data-src="https://play-lh.googleusercontent.com/CV04ek0EGV3IGD9iZDPcMEIKlYKW30p7Gia4qIjdiXk8_XkzmKUvgjznxZ0WneN6dNg" alt="명일방주" loading="lazy" data-img-fallback="hide">
           <div class="game-hero-info">
             <div class="game-hero-title">명일방주</div>
             <div class="game-hero-developer">Yostar Limited.</div>
@@ -353,7 +446,7 @@
           <span class="game-rank-country-name">대만</span>
           <span class="game-rank-country-value">-</span>
           
-        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="grossing" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg realtime-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="81.42857142857143" x2="396" y2="81.42857142857143" /><line class="chart-grid" x1="18" y1="156.85714285714286" x2="396" y2="156.85714285714286" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">42</text><text class="chart-ylabel" x="14" y="84.42857142857143" text-anchor="end">45</text><text class="chart-ylabel" x="14" y="159.85714285714286" text-anchor="end">48</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">49</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일01시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일05시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일09시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일13시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일17시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일21시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일01시</text><polyline class="chart-line" data-region="cn" stroke="#FFA502" points="34,31.142857142857142 91.66666666666666,56.285714285714285 149.33333333333331,131.71428571428572 207,106.57142857142857 264.66666666666663,131.71428571428572 322.33333333333337,131.71428571428572 380,156.85714285714286" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="34" cy="31.142857142857142" r="2.5" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="91.66666666666666" cy="56.285714285714285" r="2.5" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="149.33333333333331" cy="131.71428571428572" r="2.5" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="207" cy="106.57142857142857" r="2.5" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="264.66666666666663" cy="131.71428571428572" r="2.5" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="322.33333333333337" cy="131.71428571428572" r="2.5" /><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="380" cy="156.85714285714286" r="2.5" /><text class="chart-rank-label" data-region="cn" x="34" y="25.142857142857142" fill="#FFA502" text-anchor="middle">43</text><text class="chart-rank-label" data-region="cn" x="91.66666666666666" y="50.285714285714285" fill="#FFA502" text-anchor="middle">44</text><text class="chart-rank-label" data-region="cn" x="149.33333333333331" y="125.71428571428572" fill="#FFA502" text-anchor="middle">47</text><text class="chart-rank-label" data-region="cn" x="207" y="100.57142857142857" fill="#FFA502" text-anchor="middle">46</text><text class="chart-rank-label" data-region="cn" x="264.66666666666663" y="125.71428571428572" fill="#FFA502" text-anchor="middle">47</text><text class="chart-rank-label" data-region="cn" x="322.33333333333337" y="125.71428571428572" fill="#FFA502" text-anchor="middle">47</text><text class="chart-rank-label" data-region="cn" x="380" y="150.85714285714286" fill="#FFA502" text-anchor="middle">48</text></svg></div><div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg realtime-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.51079136690647" x2="396" y2="65.51079136690647" /><line class="chart-grid" x1="18" y1="125.02158273381295" x2="396" y2="125.02158273381295" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">29</text><text class="chart-ylabel" x="14" y="68.51079136690647" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="128.02158273381295" text-anchor="end">123</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">168</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일01시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일05시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일09시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일13시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일17시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일21시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일01시</text><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,24.992805755395683 91.66666666666666,24.992805755395683 149.33333333333331,24.992805755395683 207,24.992805755395683 264.66666666666663,24.992805755395683 322.33333333333337,22.46043165467626 380,21.194244604316548" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,90.83453237410072 91.66666666666666,90.83453237410072 149.33333333333331,90.83453237410072 207,90.83453237410072 264.66666666666663,90.83453237410072 322.33333333333337,99.6978417266187 380,99.6978417266187" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,152.87769784172662 91.66666666666666,152.87769784172662 149.33333333333331,152.87769784172662 207,152.87769784172662 264.66666666666663,152.87769784172662 322.33333333333337,166.80575539568346 380,164.27338129496403" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="24.992805755395683" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="91.66666666666666" cy="24.992805755395683" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="24.992805755395683" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="207" cy="24.992805755395683" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="24.992805755395683" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="322.33333333333337" cy="22.46043165467626" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="21.194244604316548" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="90.83453237410072" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="90.83453237410072" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="90.83453237410072" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="90.83453237410072" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="90.83453237410072" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="99.6978417266187" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="99.6978417266187" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="152.87769784172662" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="91.66666666666666" cy="152.87769784172662" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="152.87769784172662" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="152.87769784172662" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="152.87769784172662" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="166.80575539568346" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="164.27338129496403" r="2.5" /><text class="chart-rank-label" data-region="tw" x="34" y="18.992805755395683" fill="#A55EEA" text-anchor="middle">44</text><text class="chart-rank-label" data-region="tw" x="91.66666666666666" y="18.992805755395683" fill="#A55EEA" text-anchor="middle">44</text><text class="chart-rank-label" data-region="tw" x="149.33333333333331" y="18.992805755395683" fill="#A55EEA" text-anchor="middle">44</text><text class="chart-rank-label" data-region="tw" x="207" y="18.992805755395683" fill="#A55EEA" text-anchor="middle">44</text><text class="chart-rank-label" data-region="tw" x="264.66666666666663" y="18.992805755395683" fill="#A55EEA" text-anchor="middle">44</text><text class="chart-rank-label" data-region="tw" x="322.33333333333337" y="16.46043165467626" fill="#A55EEA" text-anchor="middle">42</text><text class="chart-rank-label" data-region="tw" x="380" y="15.194244604316548" fill="#A55EEA" text-anchor="middle">41</text><text class="chart-rank-label" data-region="jp" x="34" y="84.83453237410072" fill="#2ED573" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" x="91.66666666666666" y="84.83453237410072" fill="#2ED573" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" x="149.33333333333331" y="84.83453237410072" fill="#2ED573" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" x="207" y="84.83453237410072" fill="#2ED573" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" x="264.66666666666663" y="84.83453237410072" fill="#2ED573" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" x="322.33333333333337" y="93.6978417266187" fill="#2ED573" text-anchor="middle">103</text><text class="chart-rank-label" data-region="jp" x="380" y="93.6978417266187" fill="#2ED573" text-anchor="middle">103</text><text class="chart-rank-label" data-region="kr" x="34" y="146.87769784172662" fill="#FF4757" text-anchor="middle">145</text><text class="chart-rank-label" data-region="kr" x="91.66666666666666" y="146.87769784172662" fill="#FF4757" text-anchor="middle">145</text><text class="chart-rank-label" data-region="kr" x="149.33333333333331" y="146.87769784172662" fill="#FF4757" text-anchor="middle">145</text><text class="chart-rank-label" data-region="kr" x="207" y="146.87769784172662" fill="#FF4757" text-anchor="middle">145</text><text class="chart-rank-label" data-region="kr" x="264.66666666666663" y="146.87769784172662" fill="#FF4757" text-anchor="middle">145</text><text class="chart-rank-label" data-region="kr" x="322.33333333333337" y="160.80575539568346" fill="#FF4757" text-anchor="middle">156</text><text class="chart-rank-label" data-region="kr" x="380" y="158.27338129496403" fill="#FF4757" text-anchor="middle">154</text></svg></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"></div><div class="chart-market-svg" data-market="aos"></div></div></div></div></div>
+        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="grossing" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg realtime-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">47</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">48</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">49</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일01시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일05시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일09시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일13시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일17시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일21시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일01시</text><circle class="chart-dot" data-region="cn" fill="#FFA502" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="cn" x="380" y="88" fill="#FFA502" text-anchor="middle">48</text></svg></div><div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg realtime-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.0948905109489" x2="396" y2="65.0948905109489" /><line class="chart-grid" x1="18" y1="124.1897810218978" x2="396" y2="124.1897810218978" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">29</text><text class="chart-ylabel" x="14" y="68.0948905109489" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="127.1897810218978" text-anchor="end">121</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">166</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일01시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일05시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일09시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일13시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일17시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일21시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일01시</text><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="21.416058394160586" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="101.06569343065694" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="166.5839416058394" r="2.5" /><text class="chart-rank-label" data-region="tw" x="380" y="15.416058394160586" fill="#A55EEA" text-anchor="middle">41</text><text class="chart-rank-label" data-region="jp" x="380" y="95.06569343065694" fill="#2ED573" text-anchor="middle">103</text><text class="chart-rank-label" data-region="kr" x="380" y="160.5839416058394" fill="#FF4757" text-anchor="middle">154</text></svg></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"></div><div class="chart-market-svg" data-market="aos"></div></div></div></div></div>
         </div>
 
         <!-- 모바일 게임 순위 히스토리 카드 -->
@@ -549,11 +642,11 @@
 	        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
 		        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
         <!-- 뉴스 (풀 너비 2그리드) -->
@@ -1513,7 +1606,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 

@@ -12,6 +12,29 @@
 	      }
 	    })();
 	  </script>
+	  <script>
+	    (function() {
+	      function getCurrentAdIns() {
+	        var script = document.currentScript;
+	        if (!script) return null;
+	        var ins = script.previousElementSibling;
+	        if (!ins || !ins.classList || !ins.classList.contains('adsbygoogle')) return null;
+	        return ins;
+	      }
+
+	      window.gcAdsensePush = function() {
+	        try {
+	          var ins = getCurrentAdIns();
+	          if (!ins) return;
+
+	          // display:none(PC/모바일 전용) 상태면 availableWidth=0 에러가 날 수 있어 스킵
+	          if ((ins.offsetWidth || 0) <= 0) return;
+
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	        } catch (e) {}
+	      };
+	    })();
+	  </script>
 	  <title>T1 오너 재계약, 마피아42 시즌17 급상승, 3N AGF 경쟁 예고</title>
   <!-- SEO -->
   <meta name="description" content="T1이 '오너' 문현준과 2028년까지 재계약을 공식화했고, 넥슨은 PC 타이틀 연말 업데이트를 이어갔어요. iOS 순위에선 '마피아42'가 시즌17 효과로 급등한 반면, 일부 캐주얼 타이틀은 이용자 피드백 이슈 속에 하락 흐름이 보였어요.">
@@ -133,6 +156,76 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
+  <script>
+    (function() {
+      var loaded = false;
+
+      function showDeferredContent() {
+        if (loaded) return;
+        loaded = true;
+        // 이미지 로딩 (완전히 로드된 후 페이드인)
+        var imgs = document.querySelectorAll('img[data-src]');
+        for (var i = 0; i < imgs.length; i++) {
+          (function(img) {
+            if (img.dataset.src) {
+              img.classList.add('img-loading');
+              var src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.onload = function() {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              };
+              img.onerror = function() {
+                img.classList.remove('img-loading');
+              };
+              img.src = src;
+            }
+          })(imgs[i]);
+        }
+        // 컨텐츠 영역 표시
+        var deferred = document.querySelectorAll('.content-deferred');
+        for (var j = 0; j < deferred.length; j++) {
+          deferred[j].classList.add('content-loaded');
+        }
+      }
+
+      // 광고 로드 완료 감지
+      var checkAds = function() {
+        var ads = document.querySelectorAll('ins.adsbygoogle');
+        var filledCount = 0;
+        for (var i = 0; i < ads.length; i++) {
+          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
+            filledCount++;
+          }
+        }
+        if (filledCount > 0) {
+          showDeferredContent();
+        } else {
+          setTimeout(checkAds, 100);
+        }
+      };
+
+      // 폰트 + 광고 로드 후 컨텐츠 표시
+      function init() {
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            checkAds();
+          });
+        } else {
+          checkAds();
+        }
+        // 3초 타임아웃
+        setTimeout(showDeferredContent, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -249,14 +342,14 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container">
+      <div class="insight-container content-deferred">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">T1 오너 재계약, 마피아42 시즌17 급상승, 3N AGF 경쟁 예고</h1>
         
@@ -281,7 +374,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3a%2FT1_esports_logo.svg%2F330px-T1_esports_logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3a%2FT1_esports_logo.svg%2F330px-T1_esports_logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">T1, '오너' 문현준 재계약 발표</h4>
                 <p class="weekly-hot-desc">T1이 정글러 '오너' 문현준과 계약을 2년 연장해 2028년까지 함께한다고 밝혔어요.
@@ -290,7 +383,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2gsyt0006t5012nlq9doe%252F2025%252F12%252F06%252F1639005891348644987_491fd5af-52f6-4630-a2ff-7e0a047a72cf_a-3.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2gsyt0006t5012nlq9doe%252F2025%252F12%252F06%252F1639005891348644987_491fd5af-52f6-4630-a2ff-7e0a047a72cf_a-3.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'3N', AGF에서 라인업 경쟁 예고</h4>
                 <p class="weekly-hot-desc">넥슨, 넷마블, 엔씨소프트 등 국내 대형 게임사가 'AGF(애니메이션X게임 페스티벌)' 참가 계획을 알렸어요.
@@ -299,7 +392,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fw7.pngwing.com%2Fpngs%2F822%2F895%2Fpng-transparent-sudden-attack-south-korea-nexon-design-angle-triangle-south-korea.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fw7.pngwing.com%2Fpngs%2F822%2F895%2Fpng-transparent-sudden-attack-south-korea-nexon-design-angle-triangle-south-korea.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'서든어택', 12/24 정기점검 업데이트</h4>
                 <p class="weekly-hot-desc">넥슨 '서든어택'이 12월 24일 정기점검 이후 적용되는 업데이트 내용을 공지했어요.
@@ -308,7 +401,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F23%2Fnews%2Fthumb%2Fs1717299576.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F23%2Fnews%2Fthumb%2Fs1717299576.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">댐버스터, '데드 아일랜드3' 개발 언급</h4>
                 <p class="weekly-hot-desc">댐버스터 스튜디오 관련 문서와 보도를 통해 '데드 아일랜드3'가 개발 중이며 2028년 상반기 목표 일정이 거론됐어요.
@@ -321,11 +414,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -338,7 +431,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/212160/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/212160/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">넥슨, '마비노기 영웅전' 겨울 업데이트</h4>
           <p class="industry-desc">넥슨이 '마비노기 영웅전' 겨울 대규모 업데이트 '모멘텀'을 실시했다고 전해졌어요. 접속 보상과 레이드 미션 연계 보상 등 시즌형 동선 강화가 핵심이에요.</p>
@@ -359,7 +452,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FNexon.svg%2F330px-Nexon.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FNexon.svg%2F330px-Nexon.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">넥슨, iOS와 Android TOP5에 2종 포진</h4>
           <p class="weekly-metric-desc">iOS와 Android 매출 TOP5에 '메이플 키우기'와 '마비노기 모바일'이 함께 올랐어요.
@@ -368,7 +461,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F4c8897_c9000568457645ff8a741d13bd62a02a~mv2.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F4c8897_c9000568457645ff8a741d13bd62a02a~mv2.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">iOS 다운로드 상위권에 IP 게임 확인</h4>
           <p class="weekly-metric-desc">iOS 다운로드 상위 5위권에 '카드캡터 체리: 추억의 열쇠'가 포함됐어요.
@@ -390,7 +483,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/65/2c/c9652c62-d092-5d2a-93b1-32eb8289d040/AppIcon-0-0-1x_U007ephone-0-1-0-0-sRGB-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">마피아42</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/65/2c/c9652c62-d092-5d2a-93b1-32eb8289d040/AppIcon-0-0-1x_U007ephone-0-1-0-0-sRGB-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">마피아42</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 41위 → 7위 (+34)
@@ -401,7 +494,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/cd/16/e7cd16a0-c255-9c1d-ce8b-76b5c95eedb9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">히어로 클래시: 강아지를 지키자</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/cd/16/e7cd16a0-c255-9c1d-ce8b-76b5c95eedb9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">히어로 클래시: 강아지를 지키자</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 67위 → 94위 (-27)
@@ -412,7 +505,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/b0/8e/bab08e10-40d3-4811-a007-01ed06deabfb/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">피쉬돔 (Fishdom)</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/b0/8e/bab08e10-40d3-4811-a007-01ed06deabfb/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">피쉬돔 (Fishdom)</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 69위 → 95위 (-26)
@@ -423,7 +516,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/RIHmknOlj55jKhugiS2b2p4u1yDuhV0lcGwyxh_Woy7o_Jfr6Fu9MpM4OJTaHo8ywp8" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">궁수의 전설2</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/RIHmknOlj55jKhugiS2b2p4u1yDuhV0lcGwyxh_Woy7o_Jfr6Fu9MpM4OJTaHo8ywp8" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">궁수의 전설2</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 56위 → 81위 (-25)
@@ -438,11 +531,11 @@
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
 <ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1214,7 +1307,7 @@
       if (diffX < 0 && !isAtStart) { cleanup(); return; }
     }
 
-    if (Math.abs(diffX) > 75) {
+    if (Math.abs(diffX) > 50) {
       isSwiping = true;
       setTimeout(() => { isSwiping = false; }, 300);
 
