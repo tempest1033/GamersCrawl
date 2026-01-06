@@ -151,6 +151,11 @@
                 img.classList.remove('img-loading');
               };
               img.src = src;
+              // 캐시된 이미지는 onload가 안 불릴 수 있음
+              if (img.complete) {
+                img.classList.remove('img-loading');
+                img.classList.add('img-loaded');
+              }
             }
           })(imgs[i]);
         }
@@ -657,11 +662,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">28</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://media.rawg.io/media/games/773/7739920af75d01f6a3b7e76a21d1633a.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Absolum</div>
+          <div class="metacritic-card-title">Xenoblade Chronicles X: Definitive Edition</div>
           
         </div>
       </div>
@@ -669,11 +674,11 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">29</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/773/7739920af75d01f6a3b7e76a21d1633a.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img data-src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Xenoblade Chronicles X: Definitive Edition</div>
+          <div class="metacritic-card-title">Absolum</div>
           
         </div>
       </div>
