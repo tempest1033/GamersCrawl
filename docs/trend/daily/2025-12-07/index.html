@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">메이플-리니지M, 양대 마켓 매출 독주</h4>
                 <p class="weekly-hot-desc">iOS와 Android 모두 메이플 키우기와 리니지M이 매출 1-2위를 유지하고, 화이트아웃 서바이벌-라스트 워-뱀피르까지 상위권을 지키고 있어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple221%2Fv4%2F09%2F8b%2F29%2F098b2909-01ea-8499-ec07-3fbe1d0da26a%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple221%2Fv4%2F09%2F8b%2F29%2F098b2909-01ea-8499-ec07-3fbe1d0da26a%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">iOS 인기차트, 퍼즐-RPG-스포츠 동시 강세</h4>
                 <p class="weekly-hot-desc">MLB 클러치 히트 베이스볼 25와 드래곤빌리지 럼블, Lost Soul이 iOS 인기 상위에 오르면서 스포츠-RPG 신작이 눈에 띄어요.
@@ -397,7 +322,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">아크 레이더스, 스팀 동접 40만 명대 돌파</h4>
                 <p class="weekly-hot-desc">인벤 보도에 따르면 아크 레이더스는 출시 직후 스팀 동시접속자 26만 명을 기록한 데 이어 46만 2천 명까지 경신하며 북미-유럽에서 돌풍을 일으켰어요.
@@ -406,7 +331,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/921570/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/921570/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">옥토패스 트래블러 0 체험판, 기대감 확대</h4>
                 <p class="weekly-hot-desc">네이버 블로그와 루리웹 후기에선 옥토패스 트래블러 0 체험판을 '올해 연말 최고 기대작'이라 부르며 HD-2D 그래픽과 음악을 특히 아름답다고 평가하고 있어요.
@@ -436,7 +361,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/2016590/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2016590/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">넥슨-아이언메이스 '다크앤다커 분쟁' 항소심 결론</h4>
           <p class="industry-desc">서울고법 항소심에서 넥슨이 다크앤다커 관련 영업비밀 침해 소송에서 승소해, 아이언메이스가 57억 원을 배상하라는 판결이 나왔어요. 소스코드-빌드파일까지 영업비밀로 인정되면서 개발 윤리와 지식재산 보호 기준을 다시 짚는 사례로 평가되고 있어요.</p>
@@ -444,7 +369,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.etnews.com%2Fnews%2Farticle%2F2025%2F06%2F19%2Fnews-p.v1.20250619.8925f1fa65b7427c92b41b7a3d16a8e1_P1.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.etnews.com%2Fnews%2Farticle%2F2025%2F06%2F19%2Fnews-p.v1.20250619.8925f1fa65b7427c92b41b7a3d16a8e1_P1.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">웹보드 결제한도 100만 원 상향 입법예고</h4>
           <p class="industry-desc">문화체육관광부가 웹보드 게임 월 결제 한도를 70만 원에서 100만 원으로 올리는 게임산업진흥법 시행령 개정안을 입법예고했어요. 고스톱-포커-온라인 바둑 사업자들은 3년 만의 추가 규제 완화로 매출 회복과 이용 제한 완화 효과를 기대하고 있어요.</p>
@@ -465,7 +390,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">아크 레이더스, 스팀 동접 46만 명 경신</h4>
           <p class="weekly-metric-desc">국내외 기사에 따르면 아크 레이더스는 출시 이후 스팀 최고 동시접속자 26만 명을 기록한 뒤 46만 2천 명까지 자체 기록을 다시 경신했어요.
@@ -474,7 +399,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/XPBW_sQGwtF3bADbMBWHjw1lNJgmeqCK4-UaTVl71J9ePWTjekdgNxqeF6EIbrO27NFY" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/XPBW_sQGwtF3bADbMBWHjw1lNJgmeqCK4-UaTVl71J9ePWTjekdgNxqeF6EIbrO27NFY" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">컴투스프로야구2025, 10년간 1700만 다운로드</h4>
           <p class="weekly-metric-desc">컴투스와 인벤 자료에서 컴투스프로야구2025는 2015년 3D 버전 출시 이후 누적 다운로드 1700만 건, 생성 구단 3100만 개, 선수 카드 84억 장을 기록한 것으로 집계됐어요.
@@ -496,7 +421,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/dc/b3/cadcb3be-ad33-1409-88f2-4d1301e57364/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">와다다 던전런</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ca/dc/b3/cadcb3be-ad33-1409-88f2-4d1301e57364/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">와다다 던전런</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 97위 → 68위 (+29)
@@ -507,7 +432,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/a9/83/48a983b8-ec8d-66fe-0086-55808edd6c9b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">브롤스타즈</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/a9/83/48a983b8-ec8d-66fe-0086-55808edd6c9b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">브롤스타즈</h4>
         
       <span class="weekly-ranking-badge up">
         Android 78위 → 50위 (+28)
@@ -518,7 +443,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/3e/eb/833eeb2b-dd8f-0d0a-a169-b2f00b39a6d9/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">배틀그라운드</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/3e/eb/833eeb2b-dd8f-0d0a-a169-b2f00b39a6d9/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">배틀그라운드</h4>
         
       <span class="weekly-ranking-badge up">
         Android 72위 → 46위 (+26)
@@ -529,7 +454,7 @@ PS5 체험판을 중심으로 첫인상이 좋다는 글이 올라오고 있어�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/51/39/5051396f-2d37-6cf3-5af8-62877a205c43/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Project Makeover</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/51/39/5051396f-2d37-6cf3-5af8-62877a205c43/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Project Makeover</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 99위 → 75위 (+24)

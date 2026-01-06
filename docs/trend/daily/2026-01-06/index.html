@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">LCK 2026 시즌 오프닝, 라인별 드래프트 공개</h4>
                 <p class="weekly-hot-desc">LCK가 2026 시즌 오프닝 '데마시아를 위하여' 드래프트 영상을 공개했어요.
@@ -389,7 +314,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1410142425.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1410142425.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">앤섬, 1월 13일 서비스 종료로 오프라인 불가 논란</h4>
                 <p class="weekly-hot-desc">EA와 바이오웨어의 앤섬이 1월 13일 서버를 종료해요.
@@ -399,7 +324,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1292015839.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1292015839.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">셰이프 오브 드림즈, 출시 3개월 반 만에 100만장 돌파</h4>
                 <p class="weekly-hot-desc">네오위즈가 퍼블리싱한 '셰이프 오브 드림즈'가 글로벌 밀리언셀러에 등극했어요.
@@ -409,7 +334,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1932523656.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1932523656.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">토치라이트 인피니트, 1월 10일 서울서 첫 글로벌 행사 '토치콘' 개최</h4>
                 <p class="weekly-hot-desc">XD Inc.가 토치라이트 인피니트의 글로벌 행사 '토치콘 서울'을 1월 10일 개최해요.
@@ -439,7 +364,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1699573950.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1699573950.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">김창한 대표, 대통령 중국 국빈 방문 경제사절단 동행</h4>
           <p class="industry-desc">크래프톤 김창한 대표가 이재명 대통령의 중국 국빈 방문에 게임업계 유일하게 동행했어요. 10개 기업만 참석한 고위급 간담회에 참석했고, 2대 주주 텐센트 류융 부회장도 함께해 한중 게임 협력 강화가 기대됩니다. 이 대통령은 '게임 수출이야말로 진짜 수출'이라고 강조했어요.</p>
@@ -447,7 +372,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1251153531.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1251153531.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">넥슨, 장중 4000엔 돌파하며 시가총액 30조원 견고</h4>
           <p class="industry-desc">넥슨이 도쿄증권거래소에서 장중 4000엔을 돌파하며 시가총액 30조원대를 굳건히 유지하고 있어요. 메이플 키우기의 양대 마켓 1위 독주와 아크 레이더스의 글로벌 흥행이 주가 상승을 이끌고 있습니다.</p>
@@ -468,7 +393,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1425339542.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F05%2Fnews%2Fthumb%2Fs1425339542.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">발로란트, 전국 PC방 대회로 점유율 6.4% 상승</h4>
           <p class="weekly-metric-desc">발로란트가 2025 National VALORANT Cup 진행 중 PC방 사용시간이 전주 대비 6.4% 증가했어요.
@@ -477,7 +402,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">ARC Raiders, 스팀 동시접속 32만 명으로 3위 기록</h4>
           <p class="weekly-metric-desc">넥슨의 ARC Raiders가 스팀 동시접속 32만 명을 기록하며 CS2, 도타2에 이어 3위를 차지했어요.
@@ -499,7 +424,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/a0/47/1ca047ea-f956-613c-99f5-c4f1de0878d7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">리그 오브 레전드: 와일드 리프트</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/a0/47/1ca047ea-f956-613c-99f5-c4f1de0878d7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">리그 오브 레전드: 와일드 리프트</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 60위 → 14위 (+46)
@@ -510,7 +435,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/40/c7/7f40c706-d518-f23d-5e6f-930fa23bf22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">아키텍트: 랜드 오브 엑자일</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/40/c7/7f40c706-d518-f23d-5e6f-930fa23bf22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">아키텍트: 랜드 오브 엑자일</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 93위 → 58위 (+35)
@@ -521,7 +446,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">페이트/그랜드 오더</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">페이트/그랜드 오더</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 64위 → 97위 (-33)
@@ -533,7 +458,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/d7/31/77d731b3-9c9f-f845-753a-b6c9afd8b842/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">RF 온라인 넥스트</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/d7/31/77d731b3-9c9f-f845-753a-b6c9afd8b842/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">RF 온라인 넥스트</h4>
         
       <span class="weekly-ranking-badge ">
         iOS 0위 → 78위 (0)

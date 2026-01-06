@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">아크 레이더스, 2025 스팀 어워드 혁신상 수상</h4>
                 <p class="weekly-hot-desc">넥슨의 익스트랙션 슈터 '아크 레이더스'가 스팀 어워드에서 '가장 혁신적인 게임플레이' 부문을 수상했어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">배틀그라운드, 에란겔 서브제로 업데이트로 80만 동접</h4>
                 <p class="weekly-hot-desc">크래프톤의 배틀그라운드가 에란겔 서브제로 업데이트 이후 동시접속 80만 명을 돌파했어요.
@@ -397,7 +322,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/1030300/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1030300/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">할로우 나이트 실크송, 스팀 어워드 2관왕</h4>
                 <p class="weekly-hot-desc">팀 체리의 '할로우 나이트: 실크송'이 2025 스팀 어워드에서 올해의 게임과 '내가 못하는 최고의 게임' 2개 부문을 석권했어요.
@@ -406,7 +331,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/MS_W-Ffhc542tO_idP1F_3FA2oL4-F7aohgeG0MeWSaxb7jYVprXN6TTMMz8mc30cWfeuDo2oACbuVTOvUH3" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/MS_W-Ffhc542tO_idP1F_3FA2oL4-F7aohgeG0MeWSaxb7jYVprXN6TTMMz8mc30cWfeuDo2oACbuVTOvUH3" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">주술회전 팬텀 퍼레이드, 1주년 이벤트로 급상승</h4>
                 <p class="weekly-hot-desc">주술회전 팬텀 퍼레이드가 1주년 3탄 이벤트로 iOS 매출 83위에서 34위로 49계단 급상승했어요.
@@ -436,7 +361,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">넥슨, 2025 스팀 어워드서 유일한 한국 게임사 수상</h4>
           <p class="industry-desc">넥슨의 아크 레이더스가 2025 스팀 어워드에서 혁신상을 수상하며 한국 게임사 중 유일하게 수상의 영예를 안았어요. TGA 2025 최고의 멀티플레이어 게임에 이어 연속 수상으로, 넥슨의 글로벌 IP 다각화 전략이 결실을 맺고 있습니다.</p>
@@ -444,7 +369,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">크래프톤, 2026년 배틀그라운드 9주년 로드맵 예고</h4>
           <p class="industry-desc">크래프톤이 배틀그라운드 2026년 e스포츠 로드맵에 이어 9주년 개발 로드맵을 순차 공개할 예정이에요. 서브제로 업데이트로 동접 80만을 기록한 가운데, IP 고유 경험 강화에 집중하겠다고 밝혔습니다.</p>
@@ -465,7 +390,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">스팀 동접 TOP5, ARC Raiders 45만 명 기록</h4>
           <p class="weekly-metric-desc">스팀 동시접속 순위에서 Counter-Strike 2가 136만 명으로 1위, Dota 2가 70만 명으로 2위를 차지한 가운데, 넥슨의 ARC Raiders가 45만 명으로 3위에 올랐어요.
@@ -474,7 +399,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">메이플 키우기, 12월 마지막 주까지 양대 마켓 1위</h4>
           <p class="weekly-metric-desc">넥슨의 메이플 키우기가 12월 마지막 주에도 iOS와 Android 양대 마켓 매출 1위를 지켰어요.
@@ -496,7 +421,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">주술회전 팬텀 퍼레이드</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">주술회전 팬텀 퍼레이드</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 83위 → 34위 (+49)
@@ -508,7 +433,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">테이스티 트레블: 합성 게임</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">테이스티 트레블: 합성 게임</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 45위 → 23위 (+22)
@@ -519,7 +444,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/ae/19/c3ae19a4-1f9f-024b-01b2-8aa6b67b33b8/AppIcon-kr-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">삼국지 전략판</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/ae/19/c3ae19a4-1f9f-024b-01b2-8aa6b67b33b8/AppIcon-kr-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">삼국지 전략판</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 22위 → 47위 (-25)
@@ -530,7 +455,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">페이트/그랜드 오더</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/Bg9J65PfGnJwZMpyALEY9pzh7VBUZ6fr7PAN8vYsJf2qXcUxRmtr0vnYjtMN-p3W0w" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">페이트/그랜드 오더</h4>
         
       <span class="weekly-ranking-badge ">
         iOS 0위 → 62위 (0)

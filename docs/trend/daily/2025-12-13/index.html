@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1780796589.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1780796589.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">AI 허위 게임 광고 대응 논의 본격화</h4>
                 <p class="weekly-hot-desc">12일 CKL 기업지원센터에서 게임 광고를 다룬 소통토론회가 열렸어요.
@@ -388,7 +313,7 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/216150/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/216150/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">메이플스토리 겨울 쇼케이스 '크라운' 예고</h4>
                 <p class="weekly-hot-desc">넥슨이 12/13 겨울 쇼케이스 '크라운' 진행을 예고했어요.
@@ -397,7 +322,7 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1742216990.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1742216990.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">에이스 컴뱃 8, 2026년 출시 공식 발표</h4>
                 <p class="weekly-hot-desc">반다이 남코가 The Game Awards 2025에서 신작을 공식 발표했어요.
@@ -406,7 +331,7 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">라리안 스튜디오, 신작 'Divinity' 공개</h4>
                 <p class="weekly-hot-desc">라리안 스튜디오가 The Game Awards 2025에서 'Divinity'를 공개했어요.
@@ -436,7 +361,7 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1780796589.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1780796589.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">허위 광고 제재 기준 재정비 필요성 대두</h4>
           <p class="industry-desc">AI로 만든 허위 및 과장 게임 광고가 늘며 이용자 피해가 문제로 떠올랐어요. 토론회에서는 신고와 차단 절차, 책임 주체를 더 명확히 하자는 의견이 나왔습니다.</p>
@@ -444,7 +369,7 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2Fc9%2Fbe%2F82%2Fc9be82cb-9744-f4b4-03e3-0e2936fb14f5%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2Fc9%2Fbe%2F82%2Fc9be82cb-9744-f4b4-03e3-0e2936fb14f5%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">쇼케이스에 현장 초청과 특전 결합</h4>
           <p class="industry-desc">넥슨이 12/13 '크라운' 쇼케이스를 예고하며 고레벨 이용자 초청 조건과 현장 특전을 공개했어요. 발표를 '팬 경험'과 연결하는 운영 흐름이 확인됐습니다.</p>
@@ -465,7 +390,7 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F03%2Fd1%2F5e%2F03d15ec4-3e1d-cd2f-56b3-c3f9d7b1b7da%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F03%2Fd1%2F5e%2F03d15ec4-3e1d-cd2f-56b3-c3f9d7b1b7da%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">앱마켓 매출 TOP5, 국내 IP 견조한 흐름</h4>
           <p class="weekly-metric-desc">iOS 매출 TOP5에서 '메이플 키우기'가 1위, '리니지M'이 4위를 차지했어요.
@@ -474,7 +399,7 @@ Android도 같은 두 타이틀이 1위와 4위에 자리했고, 해외 생존 �
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg?t=1749053861" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">Steam 동시 접속 20만대 신작들 두각</h4>
           <p class="weekly-metric-desc">Steam 동시 접속 TOP5에서 Counter-Strike 2가 124만 명으로 압도했어요.
@@ -496,7 +421,7 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/06/16/0906164c-4326-37e0-7981-1272a5aff338/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">꿈의 마을 (Township)</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/06/16/0906164c-4326-37e0-7981-1272a5aff338/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">꿈의 마을 (Township)</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 53위 → 29위 (+24)
@@ -507,7 +432,7 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/62/0d/75620d24-746b-dab0-b63f-797cca34d6a5/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">쿠키런: 오븐브레이크</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/62/0d/75620d24-746b-dab0-b63f-797cca34d6a5/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">쿠키런: 오븐브레이크</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 51위 → 31위 (+20)
@@ -518,7 +443,7 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/a9/83/48a983b8-ec8d-66fe-0086-55808edd6c9b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">브롤스타즈</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/a9/83/48a983b8-ec8d-66fe-0086-55808edd6c9b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">브롤스타즈</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 57위 → 37위 (+20)
@@ -529,7 +454,7 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카오스 제로 나이트메어</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카오스 제로 나이트메어</h4>
         
       <span class="weekly-ranking-badge down">
         Android 42위 → 84위 (-42)

@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">DN 수퍼스, 2026 LCK 출정식에서 롤드컵 진출 다짐</h4>
                 <p class="weekly-hot-desc">DN 프릭스에서 리브랜딩한 DN 수퍼스가 1월 3일 서울 잠실 DN 콜로세움에서 출정식을 개최했어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fpimg.mk.co.kr%2Fnews%2Fcms%2F202512%2F12%2Fnews-p.v1.20251212.905082bdfc06487a8d50b794b3f7455a_R.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fpimg.mk.co.kr%2Fnews%2Fcms%2F202512%2F12%2Fnews-p.v1.20251212.905082bdfc06487a8d50b794b3f7455a_R.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">명일방주 엔드필드, 1월 22일 PS5·PC·모바일 동시 출시</h4>
                 <p class="weekly-hot-desc">그리프라인이 3D 전략 RPG '명일방주: 엔드필드'를 1월 22일 글로벌 정식 출시한다고 발표했어요.
@@ -397,7 +322,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3679080/1c23d920733f5f9167b52c128dde624415e0568a/capsule_616x353.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3679080/1c23d920733f5f9167b52c128dde624415e0568a/capsule_616x353.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">일곱 개의 대죄 오리진, 1월 28일 글로벌 동시 출시</h4>
                 <p class="weekly-hot-desc">넷마블이 오픈월드 액션 RPG '일곱 개의 대죄: 오리진'을 1월 28일 PS5·PC·모바일로 글로벌 출시해요.
@@ -406,7 +331,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F782%2Fresize_gm527889_e7_sn.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F782%2Fresize_gm527889_e7_sn.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">에픽세븐, 신규 월광 영웅 '어둠의 목자 디에네' 추가</h4>
                 <p class="weekly-hot-desc">스마일게이트 에픽세븐이 신규 월광 영웅 '어둠의 목자 디에네'를 업데이트했어요.
@@ -436,7 +361,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa6%2FNCSOFT_logo.svg%2F330px-NCSOFT_logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa6%2FNCSOFT_logo.svg%2F330px-NCSOFT_logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">엔씨소프트, 2026년 영업이익률 19% 회복 전망</h4>
           <p class="industry-desc">DS투자증권이 엔씨소프트의 2026년 영업이익을 3600억원 수준으로 전망했어요. 아이온2의 높은 자체 결제 비중으로 비용 구조가 개선될 것이라는 분석인데요, 다만 NH투자증권은 신작 모멘텀 소멸을 반영해 목표주가를 6.3% 하향 조정했습니다.</p>
@@ -444,7 +369,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/2795540/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2795540/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">위메이드, 1월 29일 미드나잇 워커스 스팀 출시 예정</h4>
           <p class="industry-desc">위메이드맥스의 익스트랙션 슈터 '미드나잇 워커스'가 1월 29일 스팀 얼리 액세스로 출시돼요. 좀비 테마를 입힌 신작으로, MMORPG 중심이던 위메이드 라인업 다각화의 신호탄이 될 전망입니다.</p>
@@ -465,7 +390,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">ARC Raiders, Steam 동시접속 38만 명 돌파</h4>
           <p class="weekly-metric-desc">넥슨 퍼블리싱의 ARC Raiders가 Steam 동시접속 TOP5에 진입하며 38만 명을 기록했어요.
@@ -474,7 +399,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://lh3.googleusercontent.com/cTPcZbI8WPe0EmjAaadexSr40vK-25I3P9Hr-U9JZoAsUBABv0EYVp7-9Beztz3DeBQR1OhJqljiTVab1Z3GtexjiifyP-JlSMY" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://lh3.googleusercontent.com/cTPcZbI8WPe0EmjAaadexSr40vK-25I3P9Hr-U9JZoAsUBABv0EYVp7-9Beztz3DeBQR1OhJqljiTVab1Z3GtexjiifyP-JlSMY" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">블록 블라스트, iOS 인기 순위 1위 유지 중</h4>
           <p class="weekly-metric-desc">캐주얼 퍼즐 게임 '블록 블라스트'가 iOS 인기 순위 1위 자리를 굳건히 지키고 있어요.
@@ -496,7 +421,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/14/d6/5414d699-1761-ec47-94f2-f9ebf932c660/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">클래시 오브 클랜</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/14/d6/5414d699-1761-ec47-94f2-f9ebf932c660/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">클래시 오브 클랜</h4>
         
       <span class="weekly-ranking-badge up">
         Android 145위 → 93위 (+52)
@@ -507,7 +432,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">잠룡 : 도트 무협 RPG</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">잠룡 : 도트 무협 RPG</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 76위 → 52위 (+24)
@@ -518,7 +443,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/d7/31/77d731b3-9c9f-f845-753a-b6c9afd8b842/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">RF 온라인 넥스트</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/d7/31/77d731b3-9c9f-f845-753a-b6c9afd8b842/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">RF 온라인 넥스트</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 71위 → 97위 (-26)
@@ -529,7 +454,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/42/2c/96422ca3-e518-d129-3dba-365c1ea24ede/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">한게임 로얄홀덤</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/96/42/2c/96422ca3-e518-d129-3dba-365c1ea24ede/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">한게임 로얄홀덤</h4>
         
       <span class="weekly-ranking-badge ">
         iOS 0위 → 74위 (0)

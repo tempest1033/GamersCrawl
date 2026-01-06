@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">페이커, e스포츠 선수 최초 체육훈장 청룡장 수훈</h4>
                 <p class="weekly-hot-desc">프로게이머 '페이커' 이상혁이 1월 2일 청와대에서 체육훈장 최고 등급인 청룡장을 받았어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1795297058.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1795297058.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">리니지 클래식, 2월 7일 월정액 서비스 시작</h4>
                 <p class="weekly-hot-desc">엔씨소프트가 2000년대 초기 버전 리니지를 구현한 '리니지 클래식' 사전예약을 시작했어요.
@@ -397,7 +322,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1889601373.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1889601373.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">웹젠 드래곤소드, 1월 21일 정식 출시 확정</h4>
                 <p class="weekly-hot-desc">웹젠과 하운드13이 합작한 오픈월드 액션RPG '드래곤소드'가 1월 21일 모바일과 PC 동시 출시를 확정했어요.
@@ -406,7 +331,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1510030979.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1510030979.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">원신, 네 번째 달 버전 1월 14일 업데이트 예고</h4>
                 <p class="weekly-hot-desc">호요버스가 원신 '어느 겨울밤, 한 여행자' 버전을 1월 14일 업데이트한다고 발표했어요.
@@ -436,7 +361,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1498691751.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1498691751.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">박관호 대표, 2026년 '생존 분기점' 선언</h4>
           <p class="industry-desc">박관호 위메이드 대표가 신년사에서 2026년을 '창사 이래 가장 냉혹한 생존의 분기점'으로 규정했어요. MMORPG 의존에서 탈피해 스팀과 콘솔 중심 글로벌 플랫폼 전략을 추진하고, AI 전환을 생존 조건으로 강조했습니다.</p>
@@ -444,7 +369,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1785794257.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F02%2Fnews%2Fthumb%2Fs1785794257.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">장현국 대표, 2026년 화두로 '생각의 속도' 제시</h4>
           <p class="industry-desc">넥슨 장현국 대표가 2026년 화두로 '생각의 속도'를 제시하며 실행력이 경쟁력이라고 강조했어요. 메이플 키우기의 양대 마켓 1위 독주와 함께 빈딕투스 디파잉 페이트, 낙원 등 신작 라인업으로 4조 클럽 굳히기에 나섭니다.</p>
@@ -465,7 +390,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fmaplestoryidle%2Fimages%2Fmeta%2Fmeta_1200x630.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fmaplestoryidle%2Fimages%2Fmeta%2Fmeta_1200x630.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">메이플 키우기, iOS·Android 양대 마켓 1위 독주 지속</h4>
           <p class="weekly-metric-desc">넥슨의 방치형 RPG '메이플 키우기'가 출시 이후 양대 마켓 매출 1위를 굳건히 지키고 있어요.
@@ -474,7 +399,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">Steam 동시접속 TOP5에 ARC Raiders 35만 명 돌풍</h4>
           <p class="weekly-metric-desc">넥슨 자회사 엠바크 스튜디오의 ARC Raiders가 Steam 동시접속 35만 명을 기록하며 TOP5에 안착했어요.
@@ -496,7 +421,7 @@ Counter-Strike 2(140만), Dota 2(72만)와 함께 글로벌 PC 게임 트렌드�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/82/f8/6982f887-3fb8-1199-ae18-4ca9e4715bbf/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">리니지M(12)</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/82/f8/6982f887-3fb8-1199-ae18-4ca9e4715bbf/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">리니지M(12)</h4>
         
       <span class="weekly-ranking-badge up">
         Android 139위 → 54위 (+85)
@@ -507,7 +432,7 @@ Counter-Strike 2(140만), Dota 2(72만)와 함께 글로벌 PC 게임 트렌드�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/9a/ba/659abac6-8dfd-1f7c-201b-6ec2dd350689/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">던전앤파이터 모바일</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/9a/ba/659abac6-8dfd-1f7c-201b-6ec2dd350689/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">던전앤파이터 모바일</h4>
         
       <span class="weekly-ranking-badge up">
         Android 130위 → 48위 (+82)
@@ -517,7 +442,7 @@ Counter-Strike 2(140만), Dota 2(72만)와 함께 글로벌 PC 게임 트렌드�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카오스 제로 나이트메어</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카오스 제로 나이트메어</h4>
         
       <span class="weekly-ranking-badge down">
         Android 21위 → 46위 (-25)
@@ -528,7 +453,7 @@ Counter-Strike 2(140만), Dota 2(72만)와 함께 글로벌 PC 게임 트렌드�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/ae/19/c3ae19a4-1f9f-024b-01b2-8aa6b67b33b8/AppIcon-kr-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">삼국지 전략판</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/ae/19/c3ae19a4-1f9f-024b-01b2-8aa6b67b33b8/AppIcon-kr-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">삼국지 전략판</h4>
         
       <span class="weekly-ranking-badge ">
         iOS 0위 → 24위 (0)

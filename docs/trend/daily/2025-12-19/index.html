@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1676265603.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1676265603.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">확률형 아이템 위반, 즉시 과징금 주문</h4>
                 <p class="weekly-hot-desc">이재명 대통령이 12/16 문체부 업무보고에서 확률형 아이템 규제 위반 시 시정 절차가 복잡하다고 지적하며, 즉시 시정 요구와 과징금 부과 등 실효성 있는 제재를 주문했어요.</p>
@@ -387,7 +312,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F18%2Fnews%2Fthumb%2Fs1445181818.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F18%2Fnews%2Fthumb%2Fs1445181818.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">조선협객전 클래식, 12/18 CBT 시작</h4>
                 <p class="weekly-hot-desc">스마트나우가 '조선협객전 클래식' CBT를 12/18~12/23 원스토어(모바일)와 공식 라운지(PC)에서 진행한다고 밝혔어요.
@@ -396,7 +321,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fnxm-clw-cdn.dn.nexoncdn.co.kr%2Fba%2Fcommon%2Fog_en.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fnxm-clw-cdn.dn.nexoncdn.co.kr%2Fba%2Fcommon%2Fog_en.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">블루 아카이브, 애니플러스 카페 오픈</h4>
                 <p class="weekly-hot-desc">'블루 아카이브'가 '메이드 티파티 & 시스터후드' 테마로 애니플러스 콜라보 카페를 12/18~2026/2/1 운영해요.
@@ -405,7 +330,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews26%2F12m%2F18%2Fps5%2Fcd.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews26%2F12m%2F18%2Fps5%2Fcd.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">CLADUN X3 한글판, 12/18 판매 개시</h4>
                 <p class="weekly-hot-desc">Clouded Leopard Entertainment가 Switch/PS5/PS4용 'CLADUN X3' 한국어 다운로드판을 12/18부터 판매 시작했어요.
@@ -435,7 +360,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1676265603.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1676265603.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">확률 공개 제도, 위반 제재 속도 논쟁</h4>
           <p class="industry-desc">확률 정보 공개 제도 시행 이후 시정요청과 권고 사례가 누적되면서, 업계는 확률 표기, 검수, 재현 로그 관리까지 사후 대응 속도를 더 끌어올려야 하는 압박이 커졌어요.</p>
@@ -443,7 +368,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.khgames.co.kr%2Fnews%2Fphoto%2F202512%2F247513_293985_2532.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.khgames.co.kr%2Fnews%2Fphoto%2F202512%2F247513_293985_2532.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">인디크래프트, 글로벌 IR 데모데이 종료</h4>
           <p class="industry-desc">'2025 인디크래프트' 글로벌 IR 데모데이가 온라인으로 진행됐고, 선정사 4곳이 영문 피치 덱으로 발표했어요. 멘토링 및 매칭과 'Funding Club' 등록 지원이 안내됐습니다.</p>
@@ -464,7 +389,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F13%2Ff0%2Fef%2F13f0efa0-317c-a37e-3d2d-13772276ef4c%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F13%2Ff0%2Fef%2F13f0efa0-317c-a37e-3d2d-13772276ef4c%2FAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">서바이벌 장르, 양대 마켓 매출 강세</h4>
           <p class="weekly-metric-desc">'라스트 워: 서바이벌'이 앱스토어와 구글플레이 매출 TOP5에 함께 올랐고, 구글플레이에서는 'WOS: 화이트아웃 서바이벌'과 '라스트 Z: 서바이벌 슈터'가 상위권을 받치고 있어요.</p>
@@ -472,7 +397,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/bf3cf2254deb9697fe23e42932a14c60656a3007/capsule_616x353_alt_assets_0.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/bf3cf2254deb9697fe23e42932a14c60656a3007/capsule_616x353_alt_assets_0.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">ARC Raiders, 27만 동접 기록</h4>
           <p class="weekly-metric-desc">스팀 동시접속 상위권에서 'ARC Raiders'가 273,227명, 'PUBG'가 206,316명을 기록했어요.
@@ -494,7 +419,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/43/4d/bc434dac-66b7-083c-67e2-e2490ac02d15/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">블루 아카이브</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/43/4d/bc434dac-66b7-083c-67e2-e2490ac02d15/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">블루 아카이브</h4>
         
       <span class="weekly-ranking-badge up">
         Android 128위 → 47위 (+81)
@@ -505,7 +430,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/77/33/017733c4-5c9b-4141-6049-913ace308ddf/PesMobile-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">eFootball</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/77/33/017733c4-5c9b-4141-6049-913ace308ddf/PesMobile-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">eFootball</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 93위 → 13위 (+80)
@@ -516,7 +441,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/9d/32/269d326e-cece-8ba0-2066-f393d3975c18/AppIcon-0-0-1x_U007emarketing-0-7-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">오피스 퀸 키우기</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/9d/32/269d326e-cece-8ba0-2066-f393d3975c18/AppIcon-0-0-1x_U007emarketing-0-7-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">오피스 퀸 키우기</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 41위 → 80위 (-39)
@@ -527,7 +452,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Age of Origins: Tower Defense</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Age of Origins: Tower Defense</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 66위 → 94위 (-28)

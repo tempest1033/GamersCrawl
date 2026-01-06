@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'007 퍼스트 라이트' 출시 2개월 연기</h4>
                 <p class="weekly-hot-desc">IO 인터랙티브가 '007 퍼스트 라이트' 출시일을 2026년 5월 말로 연기했어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1348759128.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1348759128.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">'옥토패스 트래블러' 600만 장 돌파</h4>
                 <p class="weekly-hot-desc">스퀘어 에닉스가 '옥토패스 트래블러' 시리즈의 출하와 다운로드 판매 합계가 600만 장을 넘었다고 발표했어요.
@@ -397,7 +322,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1349933888.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1349933888.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">T1 '오너' 문현준, 2028년까지 동행</h4>
                 <p class="weekly-hot-desc">T1이 정글러 '오너' 문현준과 계약을 2년 연장해 2028년까지 함께한다고 공개했어요.
@@ -406,7 +331,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202512%2F25%2Fseoul%2F20251225141104733kxcc.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202512%2F25%2Fseoul%2F20251225141104733kxcc.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">RTS 플레이와 '뇌 나이' 연구 화제</h4>
                 <p class="weekly-hot-desc">인지 연구를 다룬 기사에서 실시간 전략 게임 숙련자의 '뇌 나이'가 더 젊게 측정됐다는 내용이 소개됐어요.
@@ -436,7 +361,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa6%2FNCSOFT_logo.svg%2F330px-NCSOFT_logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa6%2FNCSOFT_logo.svg%2F330px-NCSOFT_logo.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">엔씨소프트, INDYGO GROUP 지분 67% 취득</h4>
           <p class="industry-desc">엔씨소프트가 INDYGO GROUP PTE. LTD. 주식 67%를 현금으로 취득한다고 공시했어요. 동남아 캐주얼 게임 개발 역량을 흡수해 포트폴리오를 넓히려는 행보로 해석돼요.</p>
@@ -457,7 +382,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FNexon.svg%2F330px-Nexon.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FNexon.svg%2F330px-Nexon.svg.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">모바일 매출, 넥슨 타이틀 존재감 확대</h4>
           <p class="weekly-metric-desc">iOS 매출 TOP5에 '메이플 키우기'와 'FC 모바일'이, Android 매출 TOP5에 '메이플 키우기'와 '마비노기 모바일'이 올랐어요.
@@ -466,7 +391,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">PC 동시접속, FPS와 MOBA 상위 고정</h4>
           <p class="weekly-metric-desc">스팀 동시접속 상위권에서 'Counter-Strike 2'(119만 명)와 'Dota 2'(64만 명)가 선두를 지켰어요.
@@ -488,7 +413,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/bf/46/62bf46e1-ed47-0304-8c36-0fb497eb8a59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">포켓몬 카드 게임 Pocket</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/bf/46/62bf46e1-ed47-0304-8c36-0fb497eb8a59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">포켓몬 카드 게임 Pocket</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 98위 → 43위 (+55)
@@ -499,7 +424,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/a0/79/e1a07981-8523-e2ae-141f-e468e9b6e5ec/AppIcon-kr-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">냥코 대전쟁</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/a0/79/e1a07981-8523-e2ae-141f-e468e9b6e5ec/AppIcon-kr-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">냥코 대전쟁</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 76위 → 39위 (+37)
@@ -510,7 +435,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/a0/47/1ca047ea-f956-613c-99f5-c4f1de0878d7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">리그 오브 레전드: 와일드 리프트</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/a0/47/1ca047ea-f956-613c-99f5-c4f1de0878d7/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">리그 오브 레전드: 와일드 리프트</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 64위 → 37위 (+27)
@@ -521,7 +446,7 @@ HD-2D 장르의 대표 장기 흥행 사례로 다시 확인됐어요.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/40/c7/7f40c706-d518-f23d-5e6f-930fa23bf22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">아키텍트: 랜드 오브 엑자일</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/40/c7/7f40c706-d518-f23d-5e6f-930fa23bf22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">아키텍트: 랜드 오브 엑자일</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 38위 → 80위 (-42)

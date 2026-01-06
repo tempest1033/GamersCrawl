@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/582660/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/582660/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">칼페온 연회에서 검은사막M 로드맵 공개</h4>
                 <p class="weekly-hot-desc">12/13 칼페온 연회에서 신규 클래스 '세라핌'과 향후 업데이트 일정이 공개됐어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1119564909.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F12%2Fnews%2Fthumb%2Fs1119564909.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">마영전, 신규 영웅과 성장 시스템 예고</h4>
                 <p class="weekly-hot-desc">12/13 라이브 방송에서 신규 영웅 '칼리아'와 성장 시스템 개편 방향이 소개됐어요.
@@ -397,7 +322,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.logo.wine%2Fa%2Flogo%2FNetEase%2FNetEase-Logo.wine.svg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.logo.wine%2Fa%2Flogo%2FNetEase%2FNetEase-Logo.wine.svg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">넷이즈 '연운' 모바일 버전 정식 출시</h4>
                 <p class="weekly-hot-desc">'연운'이 iOS와 Android로 정식 출시됐어요.
@@ -406,7 +331,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimage.zdnet.co.kr%2F2024%2F12%2F04%2Fbe369a5f3f6ca252665f9787a6ce10a8.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimage.zdnet.co.kr%2F2024%2F12%2F04%2Fbe369a5f3f6ca252665f9787a6ce10a8.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">게임위, 재택 모니터링단 활동 마무리</h4>
                 <p class="weekly-hot-desc">게임위가 자체등급분류 게임물 재택 모니터링단 해단식을 진행했어요.
@@ -436,7 +361,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1702138958.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1702138958.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">검은사막M PC 클라이언트와 리마스터 발표</h4>
           <p class="industry-desc">펄어비스가 검은사막 모바일의 PC 클라이언트와 리마스터 계획을 공개했어요. 신규 클래스 업데이트와 함께 2026년까지의 일정이 제시됐습니다.</p>
@@ -444,7 +369,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F12%2F19b119e0473_ydxzbf.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F12%2F19b119e0473_ydxzbf.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">위메이드, 미르 저작권 분쟁에서 최종 승소</h4>
           <p class="industry-desc">위메이드가 액토즈소프트와의 '미르의 전설' 소송 상고심에서 최종 승소했어요. 대법원이 상고를 기각하며 로열티 분배 판단이 확정됐습니다.</p>
@@ -465,7 +390,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F69%2F82%2Ff8%2F6982f887-3fb8-1199-ae18-4ca9e4715bbf%2FAppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F69%2F82%2Ff8%2F6982f887-3fb8-1199-ae18-4ca9e4715bbf%2FAppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png%2F100x100bb.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">양 플랫폼 매출 상위 5개 중 4종 겹쳐</h4>
           <p class="weekly-metric-desc">iOS와 Android 매출 상위 5개 중 4개 타이틀이 동일했어요.
@@ -474,7 +399,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">PC 동시 접속 1위 CS2, 126만 명 기록</h4>
           <p class="weekly-metric-desc">Counter-Strike 2가 1,264,405명으로 최상단을 유지했어요.
@@ -496,7 +421,7 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/CV04ek0EGV3IGD9iZDPcMEIKlYKW30p7Gia4qIjdiXk8_XkzmKUvgjznxZ0WneN6dNg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">명일방주</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/CV04ek0EGV3IGD9iZDPcMEIKlYKW30p7Gia4qIjdiXk8_XkzmKUvgjznxZ0WneN6dNg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">명일방주</h4>
         
       <span class="weekly-ranking-badge up">
         Android 133위 → 72위 (+61)
@@ -507,7 +432,7 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Pokemon GO</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Pokemon GO</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 53위 → 26위 (+27)
@@ -518,7 +443,7 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/8a/1c/ce8a1c9b-18a8-5e12-a6e9-6ed2604386b9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Toon Blast</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/8a/1c/ce8a1c9b-18a8-5e12-a6e9-6ed2604386b9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Toon Blast</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 98위 → 71위 (+27)
@@ -529,7 +454,7 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">스타일라잇 x 카캡체 콜라보 출시</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">스타일라잇 x 카캡체 콜라보 출시</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 43위 → 79위 (-36)

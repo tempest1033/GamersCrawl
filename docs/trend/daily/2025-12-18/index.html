@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.pokemon.com%2Fstatic-assets%2Fcontent-assets%2Fcms2%2Fimg%2Fvideo-games%2F_tiles%2Ftcg-pocket%2Flaunch%2Ftcg-pocket-169-en.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.pokemon.com%2Fstatic-assets%2Fcontent-assets%2Fcms2%2Fimg%2Fvideo-games%2F_tiles%2Ftcg-pocket%2Flaunch%2Ftcg-pocket-169-en.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">포켓몬 Pocket, 12/17 확장팩 공개</h4>
                 <p class="weekly-hot-desc">포켓몬코리아가 '포켓몬 카드 게임 Pocket'에 테마 확장팩 '홍련 블레이즈' 추가를 공지했어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1493601654.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1493601654.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">서든어택 챔피언십 시즌2 결승</h4>
                 <p class="weekly-hot-desc">넥슨이 12/13 '2025 서든어택 챔피언십 시즌2' 결승전과 디렉터 라이브 쇼케이스를 진행했어요.
@@ -397,7 +322,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fmaplestoryidle%2Fimages%2Fmeta%2Fmeta_1200x630.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Flwi.nexon.com%2Fmaplestoryidle%2Fimages%2Fmeta%2Fmeta_1200x630.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">메이플 키우기, 신규 파티퀘스트 추가</h4>
                 <p class="weekly-hot-desc">넥슨이 '메이플 키우기' 첫 업데이트로 신규 파티 퀘스트를 공개했어요.
@@ -406,7 +331,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fnimage.g-enews.com%2Fphpwas%2Frestmb_allidxmake.php%3Fidx%3D5%26simg%3D2025122915001207846c5fa75ef8621814414730.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fnimage.g-enews.com%2Fphpwas%2Frestmb_allidxmake.php%3Fidx%3D5%26simg%3D2025122915001207846c5fa75ef8621814414730.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">PC 동접 상위권, 대형작 강세</h4>
                 <p class="weekly-hot-desc">PC 동시접속 TOP5에서 Counter-Strike 2(1,288,329명)와 Dota 2(718,370명) 같은 장기 흥행작이 여전히 강세예요.
@@ -436,7 +361,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fasec.ahnlab.com%2Fwp-content%2Fuploads%2F2024%2F09%2FmslytiL460WkYCNTRM2OfgRWE9knNBxUnyfADl1u-1024x585.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fasec.ahnlab.com%2Fwp-content%2Fuploads%2F2024%2F09%2FmslytiL460WkYCNTRM2OfgRWE9knNBxUnyfADl1u-1024x585.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">게임사 보안 역량 격차가 이슈로 부상</h4>
           <p class="industry-desc">국내 게임 업계에서 보안 역량의 양극화가 커졌다는 보도가 나왔어요. 계정, 결제, 개인정보 이슈가 반복될수록 이용자 신뢰가 실적과 직결되는 흐름이 강화되고 있습니다.</p>
@@ -457,7 +382,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">iOS 매출 상위권, 방치와 전략 장르 혼합</h4>
           <p class="weekly-metric-desc">iOS 매출 TOP5에서 '메이플 키우기'(1위)와 '전략적 팀 전투'(2위), '운빨존많겜'(3위)이 상위권을 형성했어요.
@@ -466,7 +391,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">PC 동접, 장르 분산이 뚜렷</h4>
           <p class="weekly-metric-desc">PC 동시접속 TOP5는 FPS(CS2), MOBA(Dota 2), ARPG(Path of Exile 2)처럼 장르가 분산됐어요.
@@ -488,7 +413,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/bf/46/62bf46e1-ed47-0304-8c36-0fb497eb8a59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">포켓몬 카드 게임 Pocket</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/bf/46/62bf46e1-ed47-0304-8c36-0fb497eb8a59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">포켓몬 카드 게임 Pocket</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 92위 → 22위 (+70)
@@ -499,7 +424,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/8jEmEvTsNIRW1vLlrDXXCcDlKkQrNb8NzccOXrln4G_DOUZpcBPbN9ssjuwBWz7_yZQ" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">젠레스 존 제로</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/8jEmEvTsNIRW1vLlrDXXCcDlKkQrNb8NzccOXrln4G_DOUZpcBPbN9ssjuwBWz7_yZQ" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">젠레스 존 제로</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 80위 → 30위 (+50)
@@ -510,7 +435,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/_BjyLC_y-w36hAxYWkngsi2WWsppSLSC7SrZYnfBZSs4r-ljRrmiRY25qOo3MB6gBTw" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">변신 키우기</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/_BjyLC_y-w36hAxYWkngsi2WWsppSLSC7SrZYnfBZSs4r-ljRrmiRY25qOo3MB6gBTw" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">변신 키우기</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 49위 → 70위 (-21)
@@ -521,7 +446,7 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/14/d6/5414d699-1761-ec47-94f2-f9ebf932c660/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">클래시 오브 클랜</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/14/d6/5414d699-1761-ec47-94f2-f9ebf932c660/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">클래시 오브 클랜</h4>
         
       <span class="weekly-ranking-badge down">
         Android 77위 → 97위 (-20)

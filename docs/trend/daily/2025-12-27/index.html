@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">마비노기 모바일, 전 서버 산타복 달성</h4>
                 <p class="weekly-hot-desc">데브캣 '마비노기 모바일'은 크리스마스 공동 목표 이벤트에서 유저들이 신규 캐릭터까지 만들어 저인구 서버 납품을 도우면서 전 서버가 3단계 보상을 달성했어요.</p>
@@ -387,7 +312,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1237124134.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1237124134.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">아이언메이스, 대법원 상고 공식화</h4>
                 <p class="weekly-hot-desc">아이언메이스는 넥슨과의 소송 항소심 판결과 관련해 대법원 상고 방침을 밝혔어요.
@@ -396,7 +321,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F22%2Fnews%2Fthumb%2Fs1557440370.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F22%2Fnews%2Fthumb%2Fs1557440370.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">아크 레이더스, 몰입 설계와 최적화 주목</h4>
                 <p class="weekly-hot-desc">넥슨 배급 'ARC Raiders'는 세계관 완결성, 사운드와 애니메이션, 최적화로 익스트랙션 장르의 진입 장벽을 낮추는 방향이 조명됐어요.</p>
@@ -404,7 +329,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F23%2Fnews%2Fthumb%2Fs1346445091.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F23%2Fnews%2Fthumb%2Fs1346445091.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">확률형 규제 후속 법안 논의 확대</h4>
                 <p class="weekly-hot-desc">확률형 정보 공개 제도 이후 후속 개정안 논의가 이어지고 있어요.
@@ -434,7 +359,7 @@
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">크래프톤, PUBG 2025 결산과 로드맵 예고</h4>
           <p class="industry-desc">크래프톤 펍지 스튜디오는 'PUBG: BATTLEGROUNDS'의 2025년 업데이트 이행과 이용자 흐름을 공유했고, 2026년 e스포츠 및 개발 로드맵을 순차 공개하겠다고 밝혔어요.</p>
@@ -442,7 +367,7 @@
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F26%2F19b592f0746_nxdgsh.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F26%2F19b592f0746_nxdgsh.webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">넷마블, 일곱 개의 대죄 신년 페스티벌</h4>
           <p class="industry-desc">넷마블은 '일곱 개의 대죄: GRAND CROSS'에 New Year 페스티벌 2026 업데이트를 적용하고 신규 뽑기, 코스튬, 패키지와 각종 이벤트 운영 계획을 공지했어요.</p>
@@ -463,7 +388,7 @@
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimages.ctfassets.net%2Fvfkpgemp7ek3%2F1Yvy1c5s3lAQ4UGz6wviOq%2Fc5fab7bd4eecb97921f44f4202201165%2F-KR-_Top_Grossing_Mobile_Games_Worldwide_for_October_2025.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.ctfassets.net%2Fvfkpgemp7ek3%2F1Yvy1c5s3lAQ4UGz6wviOq%2Fc5fab7bd4eecb97921f44f4202201165%2F-KR-_Top_Grossing_Mobile_Games_Worldwide_for_October_2025.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">Android 스토어 매출 TOP5 구성</h4>
           <p class="weekly-metric-desc">Android 스토어 매출 TOP5에는 'Roblox'(3위)와 '마비노기 모바일'(5위)처럼 장르가 다른 타이틀이 함께 올라왔어요.
@@ -472,7 +397,7 @@
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1808500/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">Steam 동접 TOP5, ARC Raiders 33만</h4>
           <p class="weekly-metric-desc">Steam 동시접속 TOP5에서 'ARC Raiders'가 33만 7천 명으로 상위권에 올랐어요.
@@ -494,7 +419,7 @@
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카오스 제로 나이트메어</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">카오스 제로 나이트메어</h4>
         
       <span class="weekly-ranking-badge up">
         Android 165위 → 31위 (+134)
@@ -505,7 +430,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">주술회전 팬텀 퍼레이드</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">주술회전 팬텀 퍼레이드</h4>
         
       <span class="weekly-ranking-badge up">
         Android 108위 → 72위 (+36)
@@ -516,7 +441,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/eb/fc/7bebfc6e-01d0-579a-23c2-7738d09d4edd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">명조:워더링 웨이브 - 라하이 로이를 향하여</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/eb/fc/7bebfc6e-01d0-579a-23c2-7738d09d4edd/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">명조:워더링 웨이브 - 라하이 로이를 향하여</h4>
         
       <span class="weekly-ranking-badge up">
         Android 45위 → 22위 (+23)
@@ -527,7 +452,7 @@
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/dc/35/44dc35af-a14c-645f-ee4f-d7f414f68f7c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">I9: 인페르노 나인</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/dc/35/44dc35af-a14c-645f-ee4f-d7f414f68f7c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">I9: 인페르노 나인</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 93위 → 74위 (+19)

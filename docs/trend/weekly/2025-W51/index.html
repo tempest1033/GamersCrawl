@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -383,7 +308,7 @@
       <div class="weekly-hot-issues weekly-hot-grid">
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1676265603.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1676265603.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">확률형 조작, 과징금 즉시 제재 주문</h4>
               <p class="weekly-hot-desc">이재명 대통령이 확률 정보 조작에 부당이득 환수형 과징금 도입을 주문했어요. 시정요구 중심 절차를 줄이고 위반 시 즉시 제재를 병행하라고 했습니다.</p>
@@ -391,7 +316,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F31%2Fnews%2Fthumb%2Fs1469282891.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F31%2Fnews%2Fthumb%2Fs1469282891.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">LCK, 2026~2030 국내 중계 재편 발표</h4>
               <p class="weekly-hot-desc">LCK가 2026~2030년 국내 생중계를 네이버(치지직)와 SOOP로 한정했어요. 유튜브 실시간 중계는 제외됐고, SOOP은 '타임머신' 기능 무료 제공 계획을 밝혔습니다.</p>
@@ -399,7 +324,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F23%2Fnews%2Fthumb%2Fs1603956904.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F23%2Fnews%2Fthumb%2Fs1603956904.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">LoL, 2027 기술 현대화 로드맵 공개</h4>
               <p class="weekly-hot-desc">Riot Games가 2027년 적용 목표로 통합 클라이언트 구축과 소환사의 협곡 비주얼 개편을 예고했어요. 대형 기술 개편 소식에 이용자 관심이 빠르게 모였습니다.</p>
@@ -407,7 +332,7 @@
           </div>
         
           <div class="weekly-hot-card has-thumb">
-            <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2grqk0003t501uit9rzw9%252F2025%252F12%252F17%252F1639015348136389974_1326afa8-71cf-4c63-ab49-b51a49d77fe0_%2525ED%25259D%252591%2525EB%2525B0%2525B1.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.thisisgame.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Ffile.thisisgame.com%252Fnext-upload%252Fcmcn2grqk0003t501uit9rzw9%252F2025%252F12%252F17%252F1639015348136389974_1326afa8-71cf-4c63-ab49-b51a49d77fe0_%2525ED%25259D%252591%2525EB%2525B0%2525B1.jpg%26w%3D1200%26q%3D75" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="weekly-hot-content">
               <h4 class="weekly-hot-title">엔씨소프트, '호연'과 '블소2' 종료 공지</h4>
               <p class="weekly-hot-desc">엔씨소프트가 '호연'과 '블레이드 & 소울 2' 서비스 종료 일정을 공지했어요. 성과가 약한 타이틀을 빠르게 정리하는 '선택과 집중' 흐름이 다시 주목받았습니다.</p>
@@ -437,7 +362,7 @@
       <div class="industry-grid">
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F15%2F19b2068b5d9_imhvey.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimg.ruliweb.com%2Fdata%2Fnews%2Ftn%2F25%2F12%2F15%2F19b2068b5d9_imhvey.avif&output=webp" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">AI 비서 'KIRA' 오픈소스 공개</h4>
               <p class="industry-desc">크래프톤이 슬랙 기반 개인용 AI 비서 'KIRA'를 깃허브로 공개했어요. 자연어로 툴과 프로그램을 실행하는 형태라 개발 워크플로우 자동화와 기술 브랜딩 이슈로도 주목받았습니다.</p>
@@ -445,7 +370,7 @@
           </div>
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1501961210.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1501961210.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">카카오VX 지분 매각 보도, 재무 개선 신호</h4>
               <p class="industry-desc">카카오게임즈가 카카오VX 지분을 매각해 재무건전성을 강화한다는 보도가 나왔어요. 비핵심 자산 정리와 게임 본업 집중 메시지로 해석됐습니다.</p>
@@ -453,7 +378,7 @@
           </div>
         
           <div class="industry-card has-thumb">
-            <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F684%2Fresize_gm267025_251230-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F684%2Fresize_gm267025_251230-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="industry-content">
               <h4 class="industry-title">콘진원, 게임종사자 노동환경 조사 공개</h4>
               <p class="industry-desc">문체부와 콘진원이 '2025 게임종사자 노동환경 실태조사'를 공개했어요. 주 42.9시간과 비공식 업무 9.2시간, 크런치 평균 16.2일 등 '장기화' 신호가 함께 언급됐습니다.</p>
@@ -474,7 +399,7 @@
       <div class="weekly-metrics-grid">
         
             <div class="weekly-metric-card has-thumb">
-              <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1156225109.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1156225109.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-metric-content">
                 <h4 class="weekly-metric-title">게임 이용률 50.2%로 하락</h4>
                 <p class="weekly-metric-desc">콘진원 '2025 게임이용자 실태조사'에서 최근 1년 게임 이용률이 50.2%로 집계됐어요. 전년 대비 9.7%p 감소로, '핵심 이용자' 중심 전략의 중요성이 강조됐습니다.</p>
@@ -482,7 +407,7 @@
             </div>
           
             <div class="weekly-metric-card has-thumb">
-              <div class="metric-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F787%2Fresize_gm229625_pjh260102-3.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="metric-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F769%2F787%2Fresize_gm229625_pjh260102-3.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-metric-content">
                 <h4 class="weekly-metric-title">ARC Raiders, 12/21 SteamDB 33만 동접</h4>
                 <p class="weekly-metric-desc">SteamDB에서 12월 21일 기준 'ARC Raiders' 실시간 동시접속이 330,211명으로 표시됐어요. 연말 PC 동접 상위권 흐름에서 존재감을 키웠습니다.</p>
@@ -503,7 +428,7 @@
       <div class="global-grid">
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1765583938" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1765583938" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">배틀필드6, 북미 연간 판매 1위 기록</h4>
               <p class="global-desc">서카나(Circana) 자료에서 '배틀필드6'가 2025년 북미 연간 게임 판매 1위를 기록했어요. 시리즈가 콜오브듀티를 앞질렀다는 점이 화제가 됐습니다.</p>
@@ -511,7 +436,7 @@
           </div>
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F02%2FFIFA-Logo.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F02%2FFIFA-Logo.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">넷플릭스와 FIFA, TV 축구게임 발표</h4>
               <p class="global-desc">넷플릭스가 FIFA와 협업해 TV에서 즐기는 축구 게임을 만든다고 발표했어요. 2026년 FIFA 월드컵 시기에 맞춰 넷플릭스 게임즈로 공개한다고 합니다.</p>
@@ -519,7 +444,7 @@
           </div>
         
           <div class="global-card has-thumb">
-            <div class="global-thumb"><img data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/header.jpg?t=1764870033" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+            <div class="global-thumb"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/header.jpg?t=1764870033" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
             <div class="global-content">
               <h4 class="global-title">토탈워: 워해머 40K, 비대칭 설계 강조</h4>
               <p class="global-desc">크리에이티브 어셈블리가 '토탈워: 워해머 40K'의 핵심으로 세력별 플레이 감각을 갈라주는 비대칭 설계를 소개했어요. 진영 특성이 전략 선택으로 직결되도록 설계했다고 합니다.</p>

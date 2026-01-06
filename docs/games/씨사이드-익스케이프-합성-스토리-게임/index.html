@@ -128,81 +128,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -319,7 +244,7 @@
 	    
     <section class="section active" id="game">
       
-      <div class="game-container content-deferred">
+      <div class="game-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -332,7 +257,7 @@
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
         <div class="game-hero-content">
-          <img class="game-hero-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/94/e1/a994e1ee-99ea-73f9-2aed-9b4b82afd822/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="씨사이드 익스케이프: 합성 & 스토리 게임" loading="lazy" data-img-fallback="hide">
+          <img class="game-hero-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/94/e1/a994e1ee-99ea-73f9-2aed-9b4b82afd822/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="씨사이드 익스케이프: 합성 & 스토리 게임" loading="lazy" data-img-fallback="hide">
           <div class="game-hero-info">
             <div class="game-hero-title">씨사이드 익스케이프: 합성 & 스토리 게임</div>
             <div class="game-hero-developer">Microfun Limited</div>
@@ -365,7 +290,7 @@
         </div><div class="game-rank-country-row">
           <span class="game-rank-country-flag">🇺🇸</span>
           <span class="game-rank-country-name">미국</span>
-          <span class="game-rank-country-value">52</span>
+          <span class="game-rank-country-value">53</span>
           
         </div><div class="game-rank-country-row">
           <span class="game-rank-country-flag">🇨🇳</span>
@@ -375,7 +300,7 @@
         </div><div class="game-rank-country-row">
           <span class="game-rank-country-flag">🇹🇼</span>
           <span class="game-rank-country-name">대만</span>
-          <span class="game-rank-country-value">64</span>
+          <span class="game-rank-country-value">67</span>
           
         </div></div></div><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=32" alt="">Android</div><div class="game-rank-rows"><div class="game-rank-country-row">
           <span class="game-rank-country-flag">🇰🇷</span>
@@ -452,7 +377,7 @@
           <span class="game-rank-country-name">대만</span>
           <span class="game-rank-country-value">-</span>
           
-        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="grossing" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg realtime-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">7</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">28</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">49</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">70</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일01시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일05시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일09시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일13시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일17시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일21시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일01시</text><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="165.23809523809524" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="131.71428571428572" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="131.71428571428572" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="22.76190476190476" r="2.5" /><text class="chart-rank-label" data-region="tw" x="380" y="159.23809523809524" fill="#A55EEA" text-anchor="middle">64</text><text class="chart-rank-label" data-region="us" x="380" y="125.71428571428572" fill="#3742FA" text-anchor="middle">52</text><text class="chart-rank-label" data-region="jp" x="380" y="125.71428571428572" fill="#2ED573" text-anchor="middle">52</text><text class="chart-rank-label" data-region="kr" x="380" y="16.76190476190476" fill="#FF4757" text-anchor="middle">13</text></svg></div><div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg realtime-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.21495327102804" x2="396" y2="65.21495327102804" /><line class="chart-grid" x1="18" y1="124.42990654205607" x2="396" y2="124.42990654205607" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">17</text><text class="chart-ylabel" x="14" y="68.21495327102804" text-anchor="end">53</text><text class="chart-ylabel" x="14" y="127.42990654205607" text-anchor="end">89</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">124</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일01시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일05시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일09시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일13시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일17시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일21시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일01시</text><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="142.5233644859813" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="111.27102803738318" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="167.19626168224298" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="20.80373831775701" r="2.5" /><text class="chart-rank-label" data-region="tw" x="380" y="136.5233644859813" fill="#A55EEA" text-anchor="middle">100</text><text class="chart-rank-label" data-region="us" x="380" y="105.27102803738318" fill="#3742FA" text-anchor="middle">81</text><text class="chart-rank-label" data-region="jp" x="380" y="161.19626168224298" fill="#2ED573" text-anchor="middle">115</text><text class="chart-rank-label" data-region="kr" x="380" y="14.80373831775701" fill="#FF4757" text-anchor="middle">26</text></svg></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"></div><div class="chart-market-svg" data-market="aos"></div></div></div></div></div>
+        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="grossing" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg realtime-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">7</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">29</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">51</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">73</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일02시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일06시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일10시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일14시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일18시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일22시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일02시</text><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="128.66666666666669" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="125.99999999999999" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="22" r="2.5" /><text class="chart-rank-label" data-region="tw" x="380" y="160" fill="#A55EEA" text-anchor="middle">67</text><text class="chart-rank-label" data-region="us" x="380" y="122.66666666666669" fill="#3742FA" text-anchor="middle">53</text><text class="chart-rank-label" data-region="jp" x="380" y="119.99999999999999" fill="#2ED573" text-anchor="middle">52</text><text class="chart-rank-label" data-region="kr" x="380" y="16" fill="#FF4757" text-anchor="middle">13</text></svg></div><div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg realtime-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.21495327102804" x2="396" y2="65.21495327102804" /><line class="chart-grid" x1="18" y1="124.42990654205607" x2="396" y2="124.42990654205607" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">17</text><text class="chart-ylabel" x="14" y="68.21495327102804" text-anchor="end">53</text><text class="chart-ylabel" x="14" y="127.42990654205607" text-anchor="end">89</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">124</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">06일02시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06일06시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">06일10시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일14시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일18시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일22시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07일02시</text><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="142.5233644859813" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="111.27102803738318" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="167.19626168224298" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="20.80373831775701" r="2.5" /><text class="chart-rank-label" data-region="tw" x="380" y="136.5233644859813" fill="#A55EEA" text-anchor="middle">100</text><text class="chart-rank-label" data-region="us" x="380" y="105.27102803738318" fill="#3742FA" text-anchor="middle">81</text><text class="chart-rank-label" data-region="jp" x="380" y="161.19626168224298" fill="#2ED573" text-anchor="middle">115</text><text class="chart-rank-label" data-region="kr" x="380" y="14.80373831775701" fill="#FF4757" text-anchor="middle">26</text></svg></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"></div><div class="chart-market-svg" data-market="aos"></div></div></div></div></div>
         </div>
 
         <!-- 모바일 게임 순위 히스토리 카드 -->

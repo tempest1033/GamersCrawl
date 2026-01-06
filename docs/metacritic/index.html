@@ -127,81 +127,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -318,7 +243,7 @@
 	    
 	    <section class="section active" id="metacritic">
 	      
-	      <div class="page-container metacritic-container content-deferred">
+	      <div class="page-container metacritic-container">
 	        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -338,7 +263,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank top1">1</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/556/55684bfd048706f4266d331d70050b37.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/556/55684bfd048706f4266d331d70050b37.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">95</div>
         </div>
         <div class="metacritic-card-info">
@@ -350,7 +275,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank top2">2</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">95</div>
         </div>
         <div class="metacritic-card-info">
@@ -362,7 +287,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank top3">3</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">94</div>
         </div>
         <div class="metacritic-card-info">
@@ -374,7 +299,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">4</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">92</div>
         </div>
         <div class="metacritic-card-info">
@@ -386,7 +311,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">5</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/258/258f88a911a4233d4f21c2f91dceb892.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/258/258f88a911a4233d4f21c2f91dceb892.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">92</div>
         </div>
         <div class="metacritic-card-info">
@@ -398,7 +323,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">6</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/02a/02ac22b3b90717dabaa535640c38534c.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/02a/02ac22b3b90717dabaa535640c38534c.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">91</div>
         </div>
         <div class="metacritic-card-info">
@@ -410,7 +335,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">7</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/db4/db4348b029d2cdaf826d7536bd75b71c.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/db4/db4348b029d2cdaf826d7536bd75b71c.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">91</div>
         </div>
         <div class="metacritic-card-info">
@@ -422,7 +347,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">8</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/27c/27cd8b7dead05a870f8a514a9a1915ad.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/27c/27cd8b7dead05a870f8a514a9a1915ad.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-high">90</div>
         </div>
         <div class="metacritic-card-info">
@@ -434,7 +359,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">9</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/07a/07ac3210d7bb25ce4edae3fc30b02356.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/07a/07ac3210d7bb25ce4edae3fc30b02356.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">89</div>
         </div>
         <div class="metacritic-card-info">
@@ -446,7 +371,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">10</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/73f/73fcd6848fd61454f95ab8ff4a2ab0e7.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/73f/73fcd6848fd61454f95ab8ff4a2ab0e7.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">89</div>
         </div>
         <div class="metacritic-card-info">
@@ -458,7 +383,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">11</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/aed/aed18d67d3edfa564c8930b778baf526.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/aed/aed18d67d3edfa564c8930b778baf526.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">89</div>
         </div>
         <div class="metacritic-card-info">
@@ -470,7 +395,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">12</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/b85/b85bc300d42588af66fb516b7563f74f.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/b85/b85bc300d42588af66fb516b7563f74f.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">89</div>
         </div>
         <div class="metacritic-card-info">
@@ -482,7 +407,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">13</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/d84/d842fec4ae7bbd782d330f678c980f7f.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/d84/d842fec4ae7bbd782d330f678c980f7f.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">89</div>
         </div>
         <div class="metacritic-card-info">
@@ -494,7 +419,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">14</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/91b/91b4edd8fecf88b2b5ca0752321382ee.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/91b/91b4edd8fecf88b2b5ca0752321382ee.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -506,7 +431,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">15</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/37a/37a2d3e2ef38c51785b05a08cf58c311.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/37a/37a2d3e2ef38c51785b05a08cf58c311.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -518,7 +443,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">16</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/172/172198bbcf9680d00fb621b50cbe630c.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/172/172198bbcf9680d00fb621b50cbe630c.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -530,7 +455,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">17</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -542,7 +467,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">18</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/screenshots/c67/c676619a84ce839af27413f8bb78381c.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/screenshots/c67/c676619a84ce839af27413f8bb78381c.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -554,7 +479,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">19</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/96b/96bb45a0f2d767dc62f44ae77f5a2387.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/96b/96bb45a0f2d767dc62f44ae77f5a2387.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -566,7 +491,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">20</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/20f/20f3db6b59c1c31e1f1623fa1cafc058.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/20f/20f3db6b59c1c31e1f1623fa1cafc058.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">88</div>
         </div>
         <div class="metacritic-card-info">
@@ -578,7 +503,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">21</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/screenshots/e67/e678fbaa49d29b3218c77484cf533794.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/screenshots/e67/e678fbaa49d29b3218c77484cf533794.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -590,7 +515,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">22</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/315/315d9e69af46bd985ed2dee284a8c0ac.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/315/315d9e69af46bd985ed2dee284a8c0ac.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -602,7 +527,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">23</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/413/4135e800918b4d9c0f6094ccd003a054.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/413/4135e800918b4d9c0f6094ccd003a054.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -614,7 +539,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">24</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/17a/17ae991fdf4afd2b4167daa4083b018f.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/17a/17ae991fdf4afd2b4167daa4083b018f.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -626,7 +551,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">25</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/53c/53c49c187c4daf9462aaeb021010f1ce.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/53c/53c49c187c4daf9462aaeb021010f1ce.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -638,7 +563,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">26</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/2ad/2ad33347237cdc941ba5312787dbe3f8.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/2ad/2ad33347237cdc941ba5312787dbe3f8.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -650,7 +575,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">27</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/2f6/2f6c45362818859574ac0e37edf3d3c4.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/2f6/2f6c45362818859574ac0e37edf3d3c4.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -662,19 +587,7 @@
       <div class="metacritic-card">
         <div class="metacritic-card-rank ">28</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/773/7739920af75d01f6a3b7e76a21d1633a.jpg" alt="" loading="lazy" data-img-fallback="hide">
-          <div class="metacritic-card-score score-good">87</div>
-        </div>
-        <div class="metacritic-card-info">
-          <div class="metacritic-card-title">Xenoblade Chronicles X: Definitive Edition</div>
-          
-        </div>
-      </div>
-    
-      <div class="metacritic-card">
-        <div class="metacritic-card-rank ">29</div>
-        <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/adb/adbb4ab0ecc7fc37e8dec23ec5db7154.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">
@@ -684,9 +597,21 @@
       </div>
     
       <div class="metacritic-card">
+        <div class="metacritic-card-rank ">29</div>
+        <div class="metacritic-card-poster">
+          <img src="https://media.rawg.io/media/games/773/7739920af75d01f6a3b7e76a21d1633a.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <div class="metacritic-card-score score-good">87</div>
+        </div>
+        <div class="metacritic-card-info">
+          <div class="metacritic-card-title">Xenoblade Chronicles X: Definitive Edition</div>
+          
+        </div>
+      </div>
+    
+      <div class="metacritic-card">
         <div class="metacritic-card-rank ">30</div>
         <div class="metacritic-card-poster">
-          <img data-src="https://media.rawg.io/media/games/7b7/7b7f740c7f21ca6028cfc420c3f79a76.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <img src="https://media.rawg.io/media/games/7b7/7b7f740c7f21ca6028cfc420c3f79a76.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <div class="metacritic-card-score score-good">87</div>
         </div>
         <div class="metacritic-card-info">

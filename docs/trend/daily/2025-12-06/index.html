@@ -156,81 +156,6 @@
 		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <!-- 컨텐츠 지연 로딩 (광고+폰트 우선) -->
-  <script>
-    (function() {
-      var loaded = false;
-
-      function showDeferredContent() {
-        if (loaded) return;
-        loaded = true;
-        // 이미지 로딩 (완전히 로드된 후 페이드인)
-        var imgs = document.querySelectorAll('img[data-src]');
-        for (var i = 0; i < imgs.length; i++) {
-          (function(img) {
-            if (img.dataset.src) {
-              img.classList.add('img-loading');
-              var src = img.dataset.src;
-              img.removeAttribute('data-src');
-              img.onload = function() {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              };
-              img.onerror = function() {
-                img.classList.remove('img-loading');
-              };
-              img.src = src;
-              // 캐시된 이미지는 onload가 안 불릴 수 있음
-              if (img.complete) {
-                img.classList.remove('img-loading');
-                img.classList.add('img-loaded');
-              }
-            }
-          })(imgs[i]);
-        }
-        // 컨텐츠 영역 표시
-        var deferred = document.querySelectorAll('.content-deferred');
-        for (var j = 0; j < deferred.length; j++) {
-          deferred[j].classList.add('content-loaded');
-        }
-      }
-
-      // 광고 로드 완료 감지
-      var checkAds = function() {
-        var ads = document.querySelectorAll('ins.adsbygoogle');
-        var filledCount = 0;
-        for (var i = 0; i < ads.length; i++) {
-          if (ads[i].dataset.adStatus === 'filled' || ads[i].childElementCount > 0) {
-            filledCount++;
-          }
-        }
-        if (filledCount > 0) {
-          showDeferredContent();
-        } else {
-          setTimeout(checkAds, 100);
-        }
-      };
-
-      // 폰트 + 광고 로드 후 컨텐츠 표시
-      function init() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(function() {
-            checkAds();
-          });
-        } else {
-          checkAds();
-        }
-        // 3초 타임아웃
-        setTimeout(showDeferredContent, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
 	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	  <!-- Firebase Analytics (프로덕션만) -->
 	  <script type="module">
@@ -347,7 +272,7 @@
 	    
     <section class="section active" id="insight">
       
-      <div class="insight-container content-deferred">
+      <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
 <ins class="adsbygoogle" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>window.gcAdsensePush ? window.gcAdsensePush() : (adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -379,7 +304,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">메이플 키우기와 서바이벌의 양강 구도</h4>
                 <p class="weekly-hot-desc">메이플 키우기가 양대 마켓 매출 1위를 굳히고 있어요.
@@ -388,7 +313,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">스팀 상위권, FPS-MOBA 중심 유지</h4>
                 <p class="weekly-hot-desc">CS2-도타2-배틀그라운드가 스팀 동시접속 상위를 지키고 있어요.
@@ -397,7 +322,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstore.nintendo.co.kr%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F3be328691086628caca32d01ffcc430a%2F8%2Fc%2F8cc76e54c89c832ed71749e46e9ee92f280979a32c8a90fba3230f655510a1d7.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstore.nintendo.co.kr%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F3be328691086628caca32d01ffcc430a%2F8%2Fc%2F8cc76e54c89c832ed71749e46e9ee92f280979a32c8a90fba3230f655510a1d7.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">어스토니시아 스토리, 스위치로 부활</h4>
                 <p class="weekly-hot-desc">국산 고전 RPG 어스토니시아 스토리가 스위치 패키지 예약 판매를 시작했어요.
@@ -406,7 +331,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fimages.igdb.com%2Figdb%2Fimage%2Fupload%2Ft_cover_big%2Fco1tfy.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.igdb.com%2Figdb%2Fimage%2Fupload%2Ft_cover_big%2Fco1tfy.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">크리에이터 리그 멸망전, 롤 팬 집결</h4>
                 <p class="weekly-hot-desc">유튜브에서 멸망전 8강-4강 하이라이트가 게임 인기 상단에 올랐어요.
@@ -436,7 +361,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1550535740.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1550535740.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">AGF 2025, 게임사 참가 50% 늘어</h4>
           <p class="industry-desc">AGF 2025가 1,075개 부스 규모로 개막했고, 게임사 참가 비율이 전년보다 50% 늘었어요. 서브컬쳐 게임-굿즈-버튜버가 한자리에 모이면서 지스타 못지않은 종합 게임 행사로 성장하고 있어요.</p>
@@ -444,7 +369,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img data-src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F05%2Fnews%2Fthumb%2Fs1946103374.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F05%2Fnews%2Fthumb%2Fs1946103374.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">게임을 국가전략산업으로, 법-제도 논의</h4>
           <p class="industry-desc">법무법인 화우와 학회가 게임산업의 국가전략산업적 발전 세미나를 열고 규제-지원 방향을 논의했어요. 게임산업진흥법 개정과 근로시간 유연화 등 제도 개선 과제가 공론화되면서 정책 이슈로 떠오르고 있어요.</p>
@@ -465,7 +390,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">첫 대형 패치 뒤 메이플 키우기 독주</h4>
           <p class="weekly-metric-desc">11월 말 첫 대형 업데이트 이후 메이플 키우기가 국내 모바일 매출 1위를 장기 유지하고 있어요.
@@ -474,7 +399,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img data-src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">포르쉐 콜라보 후 배그 PC 지표 회복</h4>
           <p class="weekly-metric-desc">스팀에서 배틀그라운드가 약 65만 명 동시접속으로 상위권을 지키고 있어요.
@@ -496,7 +421,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/3e/eb/833eeb2b-dd8f-0d0a-a169-b2f00b39a6d9/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">배틀그라운드</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/3e/eb/833eeb2b-dd8f-0d0a-a169-b2f00b39a6d9/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">배틀그라운드</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 37위 → 2위 (+35)
@@ -507,7 +432,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/fO39aiPOm1Mf1UajvE8FU9c8UQLlAyltnGFuKUwiZ96s41kHppeuyT89phTrJOi9PdY" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Limbus Company</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/fO39aiPOm1Mf1UajvE8FU9c8UQLlAyltnGFuKUwiZ96s41kHppeuyT89phTrJOi9PdY" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">Limbus Company</h4>
         
       <span class="weekly-ranking-badge up">
         Android 94위 → 62위 (+32)
@@ -518,7 +443,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/62/0d/75620d24-746b-dab0-b63f-797cca34d6a5/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">쿠키런</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/62/0d/75620d24-746b-dab0-b63f-797cca34d6a5/AppIcon-1x_U007epad-0-11-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">쿠키런</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 97위 → 67위 (+30)
@@ -529,7 +454,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" data-src="https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">러브앤딥스페이스</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">러브앤딥스페이스</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 53위 → 86위 (-33)
