@@ -2,9 +2,17 @@
 <html lang="ko">
 <head>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script>
+	    (function() {
+	      var host = location.hostname;
+	      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+	        document.documentElement.classList.add('is-localhost');
+	      }
+	    })();
+	  </script>
+	  <title>게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스</title>
   <!-- SEO -->
   <meta name="description" content="게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스를 한눈에.">
   <meta name="keywords" content="게임 트렌드, 게임 리포트, 게임 업계 이슈, 게임 순위, 모바일 게임 순위, 스팀 게임 순위, 게임 뉴스, 앱스토어 순위, 플레이스토어 순위">
@@ -61,62 +69,90 @@
   <link rel="preconnect" href="https://play-lh.googleusercontent.com">
   <link rel="preconnect" href="https://is1-ssl.mzstatic.com">
   <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
-  <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 다른 페이지 미리 로드 -->
-  <link rel="prefetch" href="/trend/" as="document">
-  <link rel="prefetch" href="/news/" as="document">
-  <link rel="prefetch" href="/community/" as="document">
-  <link rel="prefetch" href="/youtube/" as="document">
-  <link rel="prefetch" href="/rankings/" as="document">
-  <link rel="prefetch" href="/steam/" as="document">
-	  <link rel="prefetch" href="/upcoming/" as="document">
-	  <link rel="prefetch" href="/metacritic/" as="document">
+	  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
+	  <link rel="preconnect" href="https://www.google.com">
+	  <!-- Prefetch (load 이후, 네트워크 여건이 좋을 때만) -->
+	  <script>
+	    (function() {
+	      var urls = ['/trend/', '/news/', '/community/', '/youtube/', '/rankings/', '/steam/', '/upcoming/', '/metacritic/'];
+	      function shouldPrefetch() {
+	        var c = navigator.connection;
+	        if (!c) return true;
+	        if (c.saveData) return false;
+	        var type = String(c.effectiveType || '').toLowerCase();
+	        if (type.includes('2g')) return false;
+	        return true;
+	      }
+	      function addPrefetch() {
+	        if (!shouldPrefetch()) return;
+	        for (var i = 0; i < urls.length; i++) {
+	          var link = document.createElement('link');
+	          link.rel = 'prefetch';
+	          link.as = 'document';
+	          link.href = urls[i];
+	          document.head.appendChild(link);
+	        }
+	      }
+	      window.addEventListener('load', addPrefetch);
+	    })();
+	  </script>
 	  <!-- Font Preload -->
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-	  <style>.header-title a{color:#f1f5f9}</style>
-	  <link rel="stylesheet" href="/styles.css">
+		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
-  <!-- Firebase Analytics (프로덕션만) -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
-    // 프로덕션(gamerscrawl.com)에서만 Analytics 실행
-    if (window.location.hostname === 'gamerscrawl.com') {
-      const firebaseConfig = {
-        apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
-        authDomain: "gamerscrawl-b104b.firebaseapp.com",
-        projectId: "gamerscrawl-b104b",
-        storageBucket: "gamerscrawl-b104b.firebasestorage.app",
-        messagingSenderId: "831886529376",
-        appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
-        measurementId: "G-2269FV044J"
-      };
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    }
-  </script>
-  
+	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	  <!-- Firebase Analytics (프로덕션만) -->
+	  <script type="module">
+	    (function() {
+	      if (window.location.hostname !== 'gamerscrawl.com') return;
+
+	      var init = async function() {
+	        try {
+	          const [{ initializeApp }, { getAnalytics }] = await Promise.all([
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js'),
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js')
+	          ]);
+	          const firebaseConfig = {
+	            apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
+	            authDomain: "gamerscrawl-b104b.firebaseapp.com",
+	            projectId: "gamerscrawl-b104b",
+	            storageBucket: "gamerscrawl-b104b.firebasestorage.app",
+	            messagingSenderId: "831886529376",
+	            appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
+	            measurementId: "G-2269FV044J"
+	          };
+	          const app = initializeApp(firebaseConfig);
+	          getAnalytics(app);
+	        } catch (e) {}
+	      };
+
+	      if ('requestIdleCallback' in window) {
+	        requestIdleCallback(function() { init(); }, { timeout: 2000 });
+	      } else {
+	        setTimeout(function() { init(); }, 0);
+	      }
+	    })();
+	  </script>
+	  
 </head>
 <body class="page-trend">
   
   <header class="header">
-    <div class="header-inner">
-      <div class="header-title">
-        <a href="/" style="text-decoration: none; color: inherit;">
-          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
-          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#4f46e5" />
-                <stop offset="100%" stop-color="#06b6d4" />
-              </linearGradient>
-            </defs>
+	    <div class="header-inner">
+	      <div class="header-title">
+	        <a href="/">
+	          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
+	          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	            <defs>
+	              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+	                <stop offset="0%" stop-color="#4f46e5" />
+	                <stop offset="100%" stop-color="#06b6d4" />
+	              </linearGradient>
+	            </defs>
             <text class="logo-text-svg" x="50%" y="50%" dy="2" font-family="'Pretendard', -apple-system, sans-serif" font-size="62" font-weight="900" fill="currentColor" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">GAMERS CRAWL</text>
             <!-- 왼쪽 안테나 -->
             <rect x="8" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
@@ -180,13 +216,13 @@
       </a>
     </div>
   </nav>
-  <main class="container">
-    
+	  <main class="site-container">
+	    
     <section class="section active" id="trends-hub">
       
-      <div class="game-page">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins></div>
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins></div>
+      <div class="game-container trends-hub-container">
+        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
         <h1 class="visually-hidden">게임 트렌드 리포트 - 게임 업계 이슈, 게임 순위, 게임 뉴스</h1>
 
         <!-- Deep Dive 섹션 -->
@@ -207,7 +243,7 @@
               
       <a href="/trend/weekly/2025-W53/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 29일 ~ 1월 4일</span>
         </div>
         <h3 class="trend-feed-card-title">페이커, e스포츠 최초 체육훈장 청룡장 수훈</h3>
@@ -215,7 +251,7 @@
     
       <a href="/trend/weekly/2025-W51/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1270518015.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1270518015.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 15일 ~ 12월 21일</span>
         </div>
         <h3 class="trend-feed-card-title">확률형 아이템 과징금 강화 주문, LCK 국내 중계 재편 발표</h3>
@@ -223,7 +259,7 @@
     
       <a href="/trend/weekly/2025-W50/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 8일 ~ 12월 14일</span>
         </div>
         <h3 class="trend-feed-card-title">브라운더스트2 스팀 취소, 마비노기 모바일 P2W 논란 확산</h3>
@@ -231,7 +267,7 @@
     
       <a href="/trend/weekly/2025-W49/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1955039616.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1955039616.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 12월 1일 ~ 12월 7일</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위 굳건, 넷플릭스-워너 인수설 충격</h3>
@@ -239,7 +275,7 @@
     
       <a href="/trend/weekly/2025-W48/" class="trend-feed-card trend-feed-card-weekly" data-type="weekly">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F03%2Fnews%2Fthumb%2Fs1424686401.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F03%2Fnews%2Fthumb%2Fs1424686401.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag weekly">2025년 11월 24일 ~ 11월 30일</span>
         </div>
         <h3 class="trend-feed-card-title">아이온2 PC방 5위 진입, 카발RED 구글 인기 1위 석권</h3>
@@ -263,17 +299,9 @@
           <div class="home-card-body">
             <div class="trend-feed-grid">
               
-      <a href="/trend/daily/2026-01-06/" class="trend-feed-card" data-type="daily">
-        <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1932001156.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-          <span class="trend-feed-card-tag">2026년 1월 6일 리포트</span>
-        </div>
-        <h3 class="trend-feed-card-title">크래프톤 김창한, 대통령 중국 국빈 방문 동행으로 K-게임 외교 시작</h3>
-      </a>
-    
       <a href="/trend/daily/2026-01-05/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1547536102.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 5일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">아크 레이더스, TGA 이어 스팀 어워드 혁신상 2관왕</h3>
@@ -281,7 +309,7 @@
     
       <a href="/trend/daily/2026-01-04/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2026%2F01%2F03%2Fnews%2Fthumb%2Fs1155398617.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 4일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">DN 수퍼스 2026 출정식 개최, 명일방주 엔드필드 1월 22일 출시 확정</h3>
@@ -289,7 +317,7 @@
     
       <a href="/trend/daily/2026-01-03/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202601%2Fi1624946369.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 3일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">페이커, e스포츠 최초 체육훈장 청룡장 수훈</h3>
@@ -297,15 +325,23 @@
     
       <a href="/trend/daily/2026-01-01/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/769/715/resize_gm450740_Untitled-1.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://cdn.gamemeca.com/gmdata/0001/769/715/resize_gm450740_Untitled-1.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2026년 1월 1일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">엔씨, AI 모델 '배키' 오픈소스 공개하며 기술력 과시</h3>
       </a>
     
+      <a href="/trend/daily/2025-12-31/" class="trend-feed-card" data-type="daily">
+        <div class="trend-feed-card-image">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F30%2Fnews%2Fthumb%2Fs1999717063.jpg" alt="" loading="lazy" data-img-fallback="hide">
+          <span class="trend-feed-card-tag">2025년 12월 31일 리포트</span>
+        </div>
+        <h3 class="trend-feed-card-title">포트리스3 블루 PC 얼리액세스 시작, 아주르 프로밀리아 넥슨 파트너 확정</h3>
+      </a>
+    
       <a href="/trend/daily/2025-12-30/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1576929025.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F29%2Fnews%2Fthumb%2Fs1576929025.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 30일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">니케 무료 100뽑 공개, eFootball v5.0.0 대형 업데이트</h3>
@@ -313,7 +349,7 @@
     
       <a href="/trend/daily/2025-12-29/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 29일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 전 서버 품앗이 성공, SOOP AI 매니저 공개</h3>
@@ -321,7 +357,7 @@
     
       <a href="/trend/daily/2025-12-28/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fupload%2Femail-attachments%2F2025%2F12%2F21%2F1639019552567126173_d204769a-c1e2-4454-84b3-51226abb0179_%255B%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%255D%2520%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%2520CI.jpg&w=1200&q=75" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fupload%2Femail-attachments%2F2025%2F12%2F21%2F1639019552567126173_d204769a-c1e2-4454-84b3-51226abb0179_%255B%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%255D%2520%25EC%2597%2594%25EC%2594%25A8%25EC%2586%258C%25ED%2594%2584%25ED%258A%25B8%2520CI.jpg&w=1200&q=75" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 28일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">엔씨소프트 INDYGO 지분 취득 공시, 콘진원 미국 규제 보고서 발표</h3>
@@ -329,7 +365,7 @@
     
       <a href="/trend/daily/2025-12-27/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F26%2Fnews%2Fthumb%2Fs1267249515.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 27일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 '서버 품앗이' 미담, 다크 앤 다커 대법원行</h3>
@@ -337,7 +373,7 @@
     
       <a href="/trend/daily/2025-12-26/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F24%2Fnews%2Fthumb%2Fs1882750106.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 26일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">007 퍼스트 라이트 연기, T1 오너 재계약으로 연말 화제 집중</h3>
@@ -345,7 +381,7 @@
     
       <a href="/trend/daily/2025-12-25/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/d5/b4/ead5b42e-bce6-45d5-d3d5-c5fb8578fd86/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 25일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">주술회전 50계단 급상승, ARC Raiders 동접 26만 돌파</h3>
@@ -353,7 +389,7 @@
     
       <a href="/trend/daily/2025-12-24/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_esports_logo.svg/330px-T1_esports_logo.svg.png" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_esports_logo.svg/330px-T1_esports_logo.svg.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 24일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">T1 오너 재계약, 마피아42 시즌17 급상승, 3N AGF 경쟁 예고</h3>
@@ -361,7 +397,7 @@
     
       <a href="/trend/daily/2025-12-23/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1108147138.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1108147138.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 23일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">CS2 120만 동접, 올림픽 e스포츠 유치 논의 진행</h3>
@@ -369,7 +405,7 @@
     
       <a href="/trend/daily/2025-12-22/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 22일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 스타필드 팝업 화제, P의 거짓 해외 시상식 수상</h3>
@@ -377,7 +413,7 @@
     
       <a href="/trend/daily/2025-12-21/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://img.ruliweb.com/data/news/tn/25/12/19/19b356de817_fugehy.avif" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://img.ruliweb.com/data/news/tn/25/12/19/19b356de817_fugehy.avif" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 21일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">크래프톤, 네이버/미래에셋과 1조원 규모 아시아 펀드 추진</h3>
@@ -385,7 +421,7 @@
     
       <a href="/trend/daily/2025-12-20/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1170512319.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 20일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위, 마비노기 모바일 71계단 급등</h3>
@@ -393,7 +429,7 @@
     
       <a href="/trend/daily/2025-12-19/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F16%2F1639014500075595121_42552c76-0ea6-4188-8044-618543a0c1b9_%25ED%258E%2598.jpg&w=1200&q=75" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmcn2433x0000t5011sxa7g07%2F2025%2F12%2F16%2F1639014500075595121_42552c76-0ea6-4188-8044-618543a0c1b9_%25ED%258E%2598.jpg&w=1200&q=75" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 19일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">확률형 아이템 즉시 과징금 주문, 블루아카 콜라보 카페 오픈</h3>
@@ -401,7 +437,7 @@
     
       <a href="/trend/daily/2025-12-18/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/tcg-pocket/launch/tcg-pocket-169-en.png" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/tcg-pocket/launch/tcg-pocket-169-en.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 18일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">포켓몬 Pocket 확장팩 공개, PC 동접 CS2-Dota2 강세</h3>
@@ -409,7 +445,7 @@
     
       <a href="/trend/daily/2025-12-17/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1972353021.png" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F16%2Fnews%2Fthumb%2Fs1972353021.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 17일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">아이온2 프리뷰 공개, ARC Raiders 30만 동접 돌파</h3>
@@ -417,7 +453,7 @@
     
       <a href="/trend/daily/2025-12-16/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/769/221/resize_gm808461_Untitled-1.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://cdn.gamemeca.com/gmdata/0001/769/221/resize_gm808461_Untitled-1.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 16일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">2025년 스팀 출시작 1만9천개 돌파, 신작 노출 경쟁 심화</h3>
@@ -425,7 +461,7 @@
     
       <a href="/trend/daily/2025-12-15/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F14%2Fnews%2Fthumb%2Fs1317442484.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F14%2Fnews%2Fthumb%2Fs1317442484.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 15일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">T1, KeSPA컵 첫 우승으로 연말 e스포츠 화제 집중</h3>
@@ -433,7 +469,7 @@
     
       <a href="/trend/daily/2025-12-14/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1702138958.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2F2025%2F12%2F13%2Fnews%2Fthumb%2Fs1702138958.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 14일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">검은사막 모바일, PC 클라이언트와 리마스터 로드맵 공개</h3>
@@ -441,7 +477,7 @@
     
       <a href="/trend/daily/2025-12-13/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1674343392.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1674343392.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 13일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">TGA 2025 신작 발표 쏟아져, AI 허위 광고 규제 논의도 주목</h3>
@@ -449,7 +485,7 @@
     
       <a href="/trend/daily/2025-12-12/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F10%2F1639009402899612023_3f63d559-8379-4044-9caa-c6c0a11df7a6_signal-2025-11-14-15-54-12-867-1-1.jpg&w=640&q=75" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://www.thisisgame.com/_next/image?url=https%3A%2F%2Ffile.thisisgame.com%2Fnext-upload%2Fcmgyg62t70006xm01wcaix1nl%2F2025%2F12%2F10%2F1639009402899612023_3f63d559-8379-4044-9caa-c6c0a11df7a6_signal-2025-11-14-15-54-12-867-1-1.jpg&w=640&q=75" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 12일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">GTA 6 개발사 대량 해고, 영국 정치권까지 논쟁 확산</h3>
@@ -457,7 +493,7 @@
     
       <a href="/trend/daily/2025-12-11/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://img.ruliweb.com/data/news/tn/25/12/10/19b06ff341e_iagecy.avif" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://img.ruliweb.com/data/news/tn/25/12/10/19b06ff341e_iagecy.avif" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 11일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위, 시프트업 김형태 대표 대통령표창</h3>
@@ -465,7 +501,7 @@
     
       <a href="/trend/daily/2025-12-10/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1548248735.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 10일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">마비노기 모바일 웨카 경매장 전면 재검토, 더 파이널스 e스포츠 확장</h3>
@@ -473,7 +509,7 @@
     
       <a href="/trend/daily/2025-12-09/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/768/961/resize_gm580395_251208-risell-tt3.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://cdn.gamemeca.com/gmdata/0001/768/961/resize_gm580395_251208-risell-tt3.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 9일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기·라스트 워 매출 강세, 게임 국가전략산업화 논의 본격화</h3>
@@ -481,7 +517,7 @@
     
       <a href="/trend/daily/2025-12-08/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/af73819d08ad3bbb80a79dcfb048f847923bda56-5120x1280.png" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/af73819d08ad3bbb80a79dcfb048f847923bda56-5120x1280.png" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 8일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">T1 발로란트 SVL 우승, 스마일게이트 제주 테마파크 진출 발표</h3>
@@ -489,7 +525,7 @@
     
       <a href="/trend/daily/2025-12-07/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1582664392.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://wsrv.nl/?url=https%3A%2F%2Fstatic.inven.co.kr%2Fcolumn%2Fwebzine3%2Fnews%2F202512%2Fi1582664392.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 7일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">아크 레이더스 스팀 동접 46만 돌파, 넥슨-아이언메이스 소송 승소</h3>
@@ -497,7 +533,7 @@
     
       <a href="/trend/daily/2025-12-06/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/768/911/resize_gm819725_ps_sn.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://cdn.gamemeca.com/gmdata/0001/768/911/resize_gm819725_ps_sn.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 6일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">배그 포르쉐 콜라보 35계단 급등, AGF 2025 게임사 참가 50% 증가</h3>
@@ -505,7 +541,7 @@
     
       <a href="/trend/daily/2025-12-05/" class="trend-feed-card" data-type="daily">
         <div class="trend-feed-card-image">
-          <img src="https://cdn.gamemeca.com/gmdata/0001/768/861/resize_gm552849_wt_sn.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+          <img src="https://cdn.gamemeca.com/gmdata/0001/768/861/resize_gm552849_wt_sn.jpg" alt="" loading="lazy" data-img-fallback="hide">
           <span class="trend-feed-card-tag">2025년 12월 5일 리포트</span>
         </div>
         <h3 class="trend-feed-card-title">메이플 키우기 양대 마켓 1위, 니케 겨울 이벤트로 40계단 급등</h3>
@@ -518,28 +554,28 @@
       </div>
     </section>
   
-	  </main>
-		  
-  <!-- Footer -->
-  <footer class="site-footer">
-    <span>© 2026 게이머스크롤</span>
-    <span class="footer-divider">|</span>
-    <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
-  </footer>
+				  </main>
+					  
+	  <!-- Footer -->
+	  <footer class="site-footer">
+	    <span>© 2026 게이머스크롤</span>
+	    <span class="footer-divider">|</span>
+	    <a href="/privacy/" class="footer-privacy-link" data-modal-open="privacy-modal">개인정보처리방침</a>
+	  </footer>
 
-  <!-- Privacy Modal -->
-  <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this) this.style.display='none'">
-    <div class="modal-content">
-      <button class="modal-close" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</button>
-      <h2>개인정보처리방침</h2>
-      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
+	  <!-- Privacy Modal -->
+	  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+	    <div class="modal-content">
+	      <button class="modal-close" type="button" data-modal-close="privacy-modal" aria-label="닫기">&times;</button>
+	      <h2>개인정보처리방침</h2>
+	      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
 
       <h3>1. 개인정보의 수집 항목 및 방법</h3>
       <p>본 사이트는 별도의 회원가입 절차 없이 모든 서비스를 이용할 수 있으며, 이용자로부터 이름, 이메일, 연락처 등의 개인정보를 직접 수집하지 않습니다.</p>
 
       <h3>2. 자동으로 수집되는 정보</h3>
       <p>서비스 이용 과정에서 아래와 같은 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
-      <ul style="margin: 10px 0; padding-left: 20px; font-size: 13px;">
+      <ul class="privacy-modal-list">
         <li>접속 기기 정보 (기기 유형, 운영체제, 브라우저 종류)</li>
         <li>접속 로그 (접속 일시, 방문 페이지, 체류 시간)</li>
         <li>IP 주소 (익명화 처리됨)</li>
@@ -558,68 +594,201 @@
       <h3>6. 정책 변경</h3>
       <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
 
-      <p style="margin-top: 20px; color: #666; font-size: 12px;">시행일자: 2025년 12월 4일</p>
+      <p class="privacy-modal-effective-date">시행일자: 2025년 12월 4일</p>
     </div>
   </div>
 
-  <style>
-    .site-footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-size: 12px;
-    }
-    .site-footer a { color: var(--text-secondary); text-decoration: none; }
-    .site-footer a:hover { color: var(--text); }
-    .footer-divider { margin: 0 8px; }
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .modal-content {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 500px;
-      max-height: 80vh;
-      overflow-y: auto;
-      position: relative;
-      color: #ddd;
-    }
-    .modal-content h2 { margin-top: 0; color: #fff; }
-    .modal-content h3 { color: #aaa; margin-top: 20px; font-size: 14px; }
-    .modal-content p { font-size: 13px; line-height: 1.6; }
-    .modal-close {
-      position: absolute;
-      top: 10px; right: 15px;
-      background: none;
-      border: none;
-      color: #888;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    .modal-close:hover { color: #fff; }
-  </style>
-	  
-  <script>
-    // 폰트 로딩
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
-    } else {
-      setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 100);
-    }
-    // twemoji
-    if (typeof twemoji !== 'undefined') {
-      twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+				  
+<script>
+(function() {
+  function getModal(id) {
+    return id ? document.getElementById(id) : null;
+  }
+
+  function openModal(modal) {
+    if (!modal) return;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    var closeBtn = modal.querySelector('[data-modal-close]');
+    if (closeBtn && closeBtn.focus) closeBtn.focus();
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('[data-modal-open]').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      var id = trigger.getAttribute('data-modal-open');
+      var modal = getModal(id);
+      if (!modal) return;
+      e.preventDefault();
+      openModal(modal);
+    });
+  });
+
+  document.querySelectorAll('[data-modal-close]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var id = btn.getAttribute('data-modal-close');
+      var modal = getModal(id) || btn.closest('.modal-overlay');
+      if (!modal) return;
+      e.preventDefault();
+      closeModal(modal);
+    });
+  });
+
+  document.querySelectorAll('.modal-overlay').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    var open = document.querySelector('.modal-overlay.is-open');
+    if (open) closeModal(open);
+  });
+})();
+</script>
+				  
+<script>
+(function() {
+  var THUMB_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>';
+  var ICON_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect fill=%22%23374151%22 width=%2240%22 height=%2240%22 rx=%228%22/></svg>';
+
+  function placeholderById(id) {
+    if (id === 'thumb-rect') return THUMB_PLACEHOLDER;
+    if (id === 'icon-square') return ICON_PLACEHOLDER;
+    return '';
+  }
+
+  function showTarget(img) {
+    if (!img || img.dataset.imgFallbackShowNext !== '1') return;
+    var el = img.nextElementSibling;
+    if (!el) return;
+    el.classList.remove('hidden');
+    el.classList.remove('is-hidden');
+    var display = img.dataset.imgFallbackShowDisplay;
+    if (display) el.style.display = display;
+  }
+
+  function applyFallback(img) {
+    if (!img || img.tagName !== 'IMG') return;
+    if (img.dataset.gcImgFallbackApplied === '1') return;
+
+    // 1) 1회 재시도(src 교체)
+    var retrySrc = img.dataset.imgFallbackRetrySrc;
+    if (retrySrc && img.dataset.gcImgFallbackRetried !== '1') {
+      img.dataset.gcImgFallbackRetried = '1';
+      img.src = retrySrc;
+      return;
     }
 
+    // 2) placeholder id
+    var placeholderId = img.dataset.imgFallbackId;
+    if (placeholderId && img.dataset.gcImgFallbackIdDone !== '1') {
+      var src0 = placeholderById(placeholderId);
+      if (src0) {
+        img.dataset.gcImgFallbackIdDone = '1';
+        img.src = src0;
+        return;
+      }
+    }
+
+    // 3) fallback src
+    var fallbackSrc = img.dataset.imgFallbackSrc;
+    if (fallbackSrc && img.dataset.gcImgFallbackSrcDone !== '1') {
+      img.dataset.gcImgFallbackSrcDone = '1';
+      img.src = fallbackSrc;
+      return;
+    }
+
+    // 4) action
+    var action = img.dataset.imgFallback || '';
+    if (action === 'thumb-fallback') {
+      if (img.parentElement) img.parentElement.classList.add('thumb-fallback');
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'parent-hide') {
+      if (img.parentElement) img.parentElement.style.display = 'none';
+      else img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-show-next') {
+      img.style.display = 'none';
+      showTarget(img);
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-visibility') {
+      img.style.visibility = 'hidden';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide') {
+      img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    // fallback이 없으면 무한 루프 방지용으로만 마킹
+    img.dataset.gcImgFallbackApplied = '1';
+  }
+
+  document.addEventListener('error', function(e) {
+    var t = e && e.target;
+    if (t && t.tagName === 'IMG') applyFallback(t);
+  }, true);
+
+  function sweepBrokenImages() {
+    document.querySelectorAll('img[data-img-fallback],img[data-img-fallback-src],img[data-img-fallback-id],img[data-img-fallback-retry-src]').forEach(function(img) {
+      try {
+        if (img.complete && img.naturalWidth === 0) applyFallback(img);
+      } catch (e) {}
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sweepBrokenImages);
+  } else {
+    sweepBrokenImages();
+  }
+})();
+</script>
+			  
+<script>
+(function() {
+  function markFontsLoaded() {
+    document.documentElement.classList.add('fonts-loaded');
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(markFontsLoaded);
+  } else {
+    setTimeout(markFontsLoaded, 100);
+  }
+
+  function parseTwemojiOnce() {
+    if (window.__gcTwemojiParsed) return;
+    if (typeof twemoji === 'undefined') return;
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    window.__gcTwemojiParsed = '1';
+  }
+
+  parseTwemojiOnce();
+  window.addEventListener('load', parseTwemojiOnce);
+})();
+</script>
+			  
+  <script>
     // 각 섹션별 페이지네이션
     (function() {
       // PC: 8개(2줄), 모바일: 4개
@@ -676,12 +845,16 @@
       });
     })();
   </script>
-	  
-<script>
-(function() {
-  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
-  const MAX_RECENT = 8;
-  let gamesData = [];
+			  
+	<script>
+	(function() {
+	  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+	  const MAX_RECENT = 8;
+	  const SEARCH_INDEX_URL = '/games/search-index.json';
+	  const SEARCH_INDEX_CACHE_KEY = 'gamerscrawl_search_index_v1';
+	  let gamesData = [];
+	  let gamesDataLoaded = false;
+	  let gamesDataPromise = null;
 
   // 최근 검색 저장/로드
   function getRecentSearches() {
@@ -705,30 +878,52 @@
     localStorage.removeItem(RECENT_STORAGE_KEY);
   }
 
-  async function loadGamesData() {
-    try {
-      const response = await fetch('/games/search-index.json');
-      if (!response.ok) return;
-      const data = await response.json();
-      gamesData = Array.isArray(data) ? data : (data.games || []);
-    } catch (e) {
-      console.warn('검색 인덱스 로드 실패:', e);
-      gamesData = [];
-    }
-  }
+	  async function loadGamesDataOnce() {
+	    if (gamesDataLoaded) return;
+	    if (gamesDataPromise) return gamesDataPromise;
 
-  loadGamesData();
+	    gamesDataPromise = (async () => {
+	      // 1) 세션 캐시 우선
+	      try {
+	        const cached = sessionStorage.getItem(SEARCH_INDEX_CACHE_KEY);
+	        if (cached) {
+	          const parsed = JSON.parse(cached);
+	          gamesData = Array.isArray(parsed) ? parsed : (parsed.games || []);
+	          gamesDataLoaded = true;
+	          return;
+	        }
+	      } catch {}
+
+	      // 2) 네트워크 로드
+	      try {
+	        const response = await fetch(SEARCH_INDEX_URL);
+	        if (!response.ok) return;
+	        const data = await response.json();
+	        gamesData = Array.isArray(data) ? data : (data.games || []);
+	        try {
+	          sessionStorage.setItem(SEARCH_INDEX_CACHE_KEY, JSON.stringify(gamesData));
+	        } catch {}
+	      } catch (e) {
+	        console.warn('검색 인덱스 로드 실패:', e);
+	        gamesData = [];
+	      } finally {
+	        gamesDataLoaded = true;
+	      }
+	    })();
+
+	    return gamesDataPromise;
+	  }
 
   const searchInput = document.querySelector('.search-input');
   const searchDropdown = document.querySelector('.search-dropdown');
 
   if (!searchInput || !searchDropdown) return;
 
-  // 최근 검색 렌더링
-  function renderRecentSearches() {
-    const recent = getRecentSearches();
-    if (recent.length === 0) {
-      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+	  // 최근 검색 렌더링
+	  function renderRecentSearches() {
+	    const recent = getRecentSearches();
+	    if (recent.length === 0) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
     } else {
       const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
       const items = recent.map(game => {
@@ -791,14 +986,21 @@
     searchDropdown.classList.add('active');
   }
 
-  let currentResults = [];
+	  let currentResults = [];
 
-  function performSearch(query) {
-    if (!query || query.length < 1) {
-      currentResults = [];
-      renderRecentSearches();
-      return;
-    }
+	  function performSearch(query) {
+	    if (!query || query.length < 1) {
+	      currentResults = [];
+	      renderRecentSearches();
+	      return;
+	    }
+
+	    if (!gamesDataLoaded) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">검색 데이터를 불러오는 중...</div>';
+	      searchDropdown.classList.add('active');
+	      loadGamesDataOnce().then(() => performSearch(query));
+	      return;
+	    }
 
     const lowerQuery = query.toLowerCase();
     currentResults = gamesData.filter(game => {
@@ -849,19 +1051,20 @@
 
   const debouncedSearch = debounce(performSearch, 200);
 
-  // 입력 이벤트
-  searchInput.addEventListener('input', (e) => {
-    debouncedSearch(e.target.value.trim());
-  });
+	  // 입력 이벤트
+	  searchInput.addEventListener('input', (e) => {
+	    debouncedSearch(e.target.value.trim());
+	  });
 
-  // 포커스 시 드롭다운 열기
-  searchInput.addEventListener('focus', () => {
-    if (!searchInput.value.trim()) {
-      renderRecentSearches();
-    } else {
-      performSearch(searchInput.value.trim());
-    }
-  });
+	  // 포커스 시 드롭다운 열기
+	  searchInput.addEventListener('focus', () => {
+	    loadGamesDataOnce();
+	    if (!searchInput.value.trim()) {
+	      renderRecentSearches();
+	    } else {
+	      performSearch(searchInput.value.trim());
+	    }
+	  });
 
   // 외부 클릭 시 닫기
   document.addEventListener('click', (e) => {
@@ -888,17 +1091,18 @@
     }).slice(0, 10);
   }
 
-  // 검색 실행 (결과 1개면 바로 이동)
-  function executeSearch() {
-    const query = searchInput.value.trim();
-    if (!query) return;
+	  // 검색 실행 (결과 1개면 바로 이동)
+	  async function executeSearch() {
+	    const query = searchInput.value.trim();
+	    if (!query) return;
 
-    // 즉시 검색 실행
-    const results = searchImmediate(query);
+	    // 즉시 검색 실행
+	    await loadGamesDataOnce();
+	    const results = searchImmediate(query);
 
-    if (results.length === 1) {
-      const game = results[0];
-      const slug = game.slug || game.id || '';
+	    if (results.length === 1) {
+	      const game = results[0];
+	      const slug = game.slug || game.id || '';
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
@@ -906,16 +1110,16 @@
     }
   }
 
-  // 키보드 이벤트
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      searchInput.value = '';
-      searchDropdown.classList.remove('active');
-      searchInput.blur();
-    } else if (e.key === 'Enter') {
-      executeSearch();
-    }
-  });
+	  // 키보드 이벤트
+	  searchInput.addEventListener('keydown', (e) => {
+	    if (e.key === 'Escape') {
+	      searchInput.value = '';
+	      searchDropdown.classList.remove('active');
+	      searchInput.blur();
+	    } else if (e.key === 'Enter') {
+	      executeSearch();
+	    }
+	  });
 
   // 검색 버튼 클릭
   const searchBtn = document.querySelector('.search-btn');
@@ -924,7 +1128,7 @@
   }
 })();
 </script>
-	  
+			  
 <script>
 (function() {
   const prefetched = new Set();
@@ -1133,33 +1337,14 @@
   
 <script>
 (function() {
-  var ADS_SELECTOR = 'ins.adsbygoogle[data-gc-ad="1"]';
-  var MQ_MOBILE = '(max-width: 768px)';
-  var MQ_PC = '(min-width: 769px)';
+  var CLIENT = 'ca-pub-9477874183990825';
+  var ADS_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
 
-  function matchesBreakpoint(el) {
-    try {
-      if (!el || !el.classList) return true;
-      if (el.classList.contains('mobile-only')) return window.matchMedia(MQ_MOBILE).matches;
-      if (el.classList.contains('pc-only')) return window.matchMedia(MQ_PC).matches;
-      return true;
-    } catch (e) { return true; }
-  }
-
-  function isRenderable(el) {
-    try {
-      if (!el || !el.isConnected) return false;
-      var style = window.getComputedStyle(el);
-      return !!(style && style.display !== 'none' && style.visibility !== 'hidden');
-    } catch (e) { return false; }
-  }
-
-  function hasWidth(slot, ins) {
-    try {
-      var rect = (slot && slot.getBoundingClientRect) ? slot.getBoundingClientRect() : { width: 0 };
-      if (rect.width < 1 && ins && ins.getBoundingClientRect) rect = ins.getBoundingClientRect();
-      return rect.width >= 1;
-    } catch (e) { return false; }
+  function isVisible(el) {
+    if (!el || !el.isConnected) return false;
+    var style = window.getComputedStyle(el);
+    if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+    return (el.offsetWidth >= 1 || el.offsetHeight >= 1);
   }
 
   function tryInit(ins) {
@@ -1167,15 +1352,13 @@
     if (ins.dataset.gcAdsInit === '1') return;
 
     var slot = ins.closest ? (ins.closest('.ad-slot') || ins) : ins;
-    if (!matchesBreakpoint(slot) || !matchesBreakpoint(ins)) return;
-    if (!isRenderable(slot) || !isRenderable(ins)) return;
-    if (!hasWidth(slot, ins)) return;
+    if (!isVisible(slot) || !isVisible(ins)) return;
 
-    ins.dataset.gcAdsInit = '1';
     try {
-      (adsbygoogle = window.adsbygoogle || []).push({});
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      ins.dataset.gcAdsInit = '1';
     } catch (e) {
-      delete ins.dataset.gcAdsInit;
+      // 실패 시 다음 프레임에서 재시도 가능하도록 마킹하지 않음
     }
   }
 
@@ -1183,84 +1366,44 @@
     document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { tryInit(ins); });
   }
 
-  function observeSizes() {
-    if (!('ResizeObserver' in window)) return;
-    if (window.__gcAdsResizeObserver) return;
-
-    window.__gcAdsResizeObserver = new ResizeObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var el = entry && entry.target;
-        if (!el || !el.isConnected) return;
-        if (el.classList && el.classList.contains('adsbygoogle')) {
-          tryInit(el);
-          return;
-        }
-        if (el.classList && el.classList.contains('ad-slot')) {
-          var ins = el.querySelector(ADS_SELECTOR);
-          if (ins) tryInit(ins);
-        }
-      });
+  function scheduleInit() {
+    if (window.__gcAdsInitRaf) return;
+    window.__gcAdsInitRaf = requestAnimationFrame(function() {
+      window.__gcAdsInitRaf = 0;
+      initAll();
     });
-
-    document.querySelectorAll('.ad-slot').forEach(function(slot) { window.__gcAdsResizeObserver.observe(slot); });
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { window.__gcAdsResizeObserver.observe(ins); });
-  }
-
-  function bindMediaChange() {
-    try {
-      var mmMobile = window.matchMedia(MQ_MOBILE);
-      var mmPc = window.matchMedia(MQ_PC);
-      var handler = function() { initAll(); };
-      if (mmMobile && mmMobile.addEventListener) {
-        mmMobile.addEventListener('change', handler);
-        mmPc.addEventListener('change', handler);
-      } else if (mmMobile && mmMobile.addListener) {
-        mmMobile.addListener(handler);
-        mmPc.addListener(handler);
-      }
-    } catch (e) {}
-  }
-
-  function collapseUnfilled(ins) {
-    var slot = ins.closest ? ins.closest('.ad-slot') : null;
-    if (slot) slot.style.display = 'none';
-  }
-
-  function observeUnfilled() {
-    if (!('MutationObserver' in window)) return;
-    if (window.__gcAdsUnfilledObserver) return;
-
-    window.__gcAdsUnfilledObserver = new MutationObserver(function(mutations) {
-      mutations.forEach(function(m) {
-        if (m.type === 'attributes' && m.attributeName === 'data-ad-status') {
-          var ins = m.target;
-          if (ins && ins.dataset && ins.dataset.adStatus === 'unfilled') {
-            collapseUnfilled(ins);
-          }
-        }
-      });
-    });
-
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) {
-      window.__gcAdsUnfilledObserver.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
-    });
-  }
-
-  function start() {
-    initAll();
-    observeSizes();
-    bindMediaChange();
-    observeUnfilled();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { requestAnimationFrame(start); });
+    document.addEventListener('DOMContentLoaded', scheduleInit);
   } else {
-    requestAnimationFrame(start);
+    scheduleInit();
   }
 
-  window.addEventListener('load', function() { initAll(); });
-  window.addEventListener('resize', function() { initAll(); }, { passive: true });
+  window.addEventListener('load', scheduleInit);
+  window.addEventListener('pageshow', scheduleInit);
+  window.addEventListener('resize', scheduleInit, { passive: true });
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) scheduleInit();
+  });
+
+  try {
+    var mo = new MutationObserver(function(mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        var target = mutations[i].target;
+        if (target && target.closest && target.closest('ins.adsbygoogle[data-gc-ads-init="1"]')) continue;
+        scheduleInit();
+        break;
+      }
+    });
+
+    mo.observe(document.body, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ['class', 'style', 'hidden', 'aria-hidden']
+    });
+  } catch (e) {}
 })();
 </script>
 </body>

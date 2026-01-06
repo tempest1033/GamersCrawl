@@ -2,10 +2,18 @@
 <html lang="ko">
 <head>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>MONOPOLY GO! (모노폴리 GO!) 매출, 모바일 게임 순위, 뉴스</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="robots" content="noindex, nofollow">
+	  <script>
+	    (function() {
+	      var host = location.hostname;
+	      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+	        document.documentElement.classList.add('is-localhost');
+	      }
+	    })();
+	  </script>
+	  <title>MONOPOLY GO! (모노폴리 GO!) 매출, 모바일 게임 순위, 뉴스</title>
   <!-- SEO -->
   <meta name="description" content="MONOPOLY GO! (모노폴리 GO!) 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.">
   <meta name="keywords" content="MONOPOLY GO! (모노폴리 GO!), MONOPOLY GO! (모노폴리 GO!) 매출, MONOPOLY GO! (모노폴리 GO!) 순위, 모바일 게임 순위, MONOPOLY GO! (모노폴리 GO!) 앱스토어, MONOPOLY GO! (모노폴리 GO!) 플레이스토어, 앱스토어 순위, 플레이스토어 순위, 앱스토어 매출 순위, 플레이스토어 매출 순위, 게임 뉴스">
@@ -62,62 +70,90 @@
   <link rel="preconnect" href="https://play-lh.googleusercontent.com">
   <link rel="preconnect" href="https://is1-ssl.mzstatic.com">
   <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
-  <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 다른 페이지 미리 로드 -->
-  <link rel="prefetch" href="/trend/" as="document">
-  <link rel="prefetch" href="/news/" as="document">
-  <link rel="prefetch" href="/community/" as="document">
-  <link rel="prefetch" href="/youtube/" as="document">
-  <link rel="prefetch" href="/rankings/" as="document">
-  <link rel="prefetch" href="/steam/" as="document">
-	  <link rel="prefetch" href="/upcoming/" as="document">
-	  <link rel="prefetch" href="/metacritic/" as="document">
+	  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
+	  <link rel="preconnect" href="https://www.google.com">
+	  <!-- Prefetch (load 이후, 네트워크 여건이 좋을 때만) -->
+	  <script>
+	    (function() {
+	      var urls = ['/trend/', '/news/', '/community/', '/youtube/', '/rankings/', '/steam/', '/upcoming/', '/metacritic/'];
+	      function shouldPrefetch() {
+	        var c = navigator.connection;
+	        if (!c) return true;
+	        if (c.saveData) return false;
+	        var type = String(c.effectiveType || '').toLowerCase();
+	        if (type.includes('2g')) return false;
+	        return true;
+	      }
+	      function addPrefetch() {
+	        if (!shouldPrefetch()) return;
+	        for (var i = 0; i < urls.length; i++) {
+	          var link = document.createElement('link');
+	          link.rel = 'prefetch';
+	          link.as = 'document';
+	          link.href = urls[i];
+	          document.head.appendChild(link);
+	        }
+	      }
+	      window.addEventListener('load', addPrefetch);
+	    })();
+	  </script>
 	  <!-- Font Preload -->
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-	  <style>.header-title a{color:#f1f5f9}</style>
-	  <link rel="stylesheet" href="/styles.css">
+		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
-  <!-- Firebase Analytics (프로덕션만) -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
-    // 프로덕션(gamerscrawl.com)에서만 Analytics 실행
-    if (window.location.hostname === 'gamerscrawl.com') {
-      const firebaseConfig = {
-        apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
-        authDomain: "gamerscrawl-b104b.firebaseapp.com",
-        projectId: "gamerscrawl-b104b",
-        storageBucket: "gamerscrawl-b104b.firebasestorage.app",
-        messagingSenderId: "831886529376",
-        appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
-        measurementId: "G-2269FV044J"
-      };
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    }
-  </script>
-  
+	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	  <!-- Firebase Analytics (프로덕션만) -->
+	  <script type="module">
+	    (function() {
+	      if (window.location.hostname !== 'gamerscrawl.com') return;
+
+	      var init = async function() {
+	        try {
+	          const [{ initializeApp }, { getAnalytics }] = await Promise.all([
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js'),
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js')
+	          ]);
+	          const firebaseConfig = {
+	            apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
+	            authDomain: "gamerscrawl-b104b.firebaseapp.com",
+	            projectId: "gamerscrawl-b104b",
+	            storageBucket: "gamerscrawl-b104b.firebasestorage.app",
+	            messagingSenderId: "831886529376",
+	            appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
+	            measurementId: "G-2269FV044J"
+	          };
+	          const app = initializeApp(firebaseConfig);
+	          getAnalytics(app);
+	        } catch (e) {}
+	      };
+
+	      if ('requestIdleCallback' in window) {
+	        requestIdleCallback(function() { init(); }, { timeout: 2000 });
+	      } else {
+	        setTimeout(function() { init(); }, 0);
+	      }
+	    })();
+	  </script>
+	  
 </head>
 <body class="page-game">
   
   <header class="header">
-    <div class="header-inner">
-      <div class="header-title">
-        <a href="/" style="text-decoration: none; color: inherit;">
-          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
-          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#4f46e5" />
-                <stop offset="100%" stop-color="#06b6d4" />
-              </linearGradient>
-            </defs>
+	    <div class="header-inner">
+	      <div class="header-title">
+	        <a href="/">
+	          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
+	          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	            <defs>
+	              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+	                <stop offset="0%" stop-color="#4f46e5" />
+	                <stop offset="100%" stop-color="#06b6d4" />
+	              </linearGradient>
+	            </defs>
             <text class="logo-text-svg" x="50%" y="50%" dy="2" font-family="'Pretendard', -apple-system, sans-serif" font-size="62" font-weight="900" fill="currentColor" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">GAMERS CRAWL</text>
             <!-- 왼쪽 안테나 -->
             <rect x="8" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
@@ -181,18 +217,18 @@
       </a>
     </div>
   </nav>
-  <main class="container">
-    
+	  <main class="site-container">
+	    
     <section class="section active" id="game">
       
-      <div class="game-page">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins></div>
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins></div>
+      <div class="game-container">
+        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
         <h1 class="visually-hidden">MONOPOLY GO! (모노폴리 GO!) 매출, 모바일 게임 순위, 뉴스</h1>
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
         <div class="game-hero-content">
-          <img class="game-hero-icon" src="https://play-lh.googleusercontent.com/DfYkSl-nQoMNLX2bec7EwHemrvyDYmDgzIR1jcsyt0ZAcmO_SKjuu0a1o1iSwtnl8_g" alt="MONOPOLY GO! (모노폴리 GO!)" loading="lazy" onerror="this.style.display='none'">
+          <img class="game-hero-icon" src="https://play-lh.googleusercontent.com/DfYkSl-nQoMNLX2bec7EwHemrvyDYmDgzIR1jcsyt0ZAcmO_SKjuu0a1o1iSwtnl8_g" alt="MONOPOLY GO! (모노폴리 GO!)" loading="lazy" data-img-fallback="hide">
           <div class="game-hero-info">
             <div class="game-hero-title">MONOPOLY GO! (모노폴리 GO!)</div>
             <div class="game-hero-developer">Scopely</div>
@@ -212,7 +248,7 @@
           <div class="home-card-header">
             <h2 class="home-card-title">MONOPOLY GO! (모노폴리 GO!) 모바일 게임 순위</h2>
           </div>
-          <div class="home-card-body"><div class="rank-trend-section realtime-rank-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-left"><button class="tab-btn active" data-realtime-cat="grossing">매출</button><button class="tab-btn" data-realtime-cat="free">인기</button></div><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-realtime-view="summary">요약</button><button class="tab-btn" data-realtime-view="realtime">실시간</button></div></div><div class="trend-legend-row realtime-legend-row" style="display:none;"><div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" style="background:#FF4757"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" style="background:#2ED573"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" style="background:#3742FA"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" style="background:#FFA502"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" style="background:#A55EEA"></span>대만</span></div><div class="trend-market-toggle"><button class="market-toggle-btn active" data-market-toggle="ios">iOS</button><button class="market-toggle-btn" data-market-toggle="aos">Android</button></div></div><div class="realtime-content active" data-realtime-cat="grossing" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <div class="home-card-body"><div class="rank-trend-section realtime-rank-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-left"><button class="tab-btn active" data-realtime-cat="grossing">매출</button><button class="tab-btn" data-realtime-cat="free">인기</button></div><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-realtime-view="summary">요약</button><button class="tab-btn" data-realtime-view="realtime">실시간</button></div></div><div class="trend-legend-row realtime-legend-row is-hidden"><div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" data-region="kr"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" data-region="jp"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" data-region="us"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" data-region="cn"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" data-region="tw"></span>대만</span></div><div class="trend-market-toggle"><button class="market-toggle-btn active" data-market-toggle="ios">iOS</button><button class="market-toggle-btn" data-market-toggle="aos">Android</button></div></div><div class="realtime-content active" data-realtime-cat="grossing" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
           <span class="game-rank-country-flag">🇰🇷</span>
           <span class="game-rank-country-name">한국</span>
           <span class="game-rank-country-value">-</span>
@@ -312,7 +348,7 @@
           <span class="game-rank-country-name">대만</span>
           <span class="game-rank-country-value">62</span>
           
-        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="grossing" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg realtime-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">34</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">67</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">100</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">05일14시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">05일18시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">05일22시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일02시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일06시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일10시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">06일14시</text><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,6 91.66666666666666,7.777777777777778 149.33333333333331,9.555555555555555 207,9.555555555555555 264.66666666666663,7.777777777777778 322.33333333333337,7.777777777777778 380,6" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="91.66666666666666" cy="7.777777777777778" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="9.555555555555555" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="9.555555555555555" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="7.777777777777778" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="322.33333333333337" cy="7.777777777777778" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="6" r="2.5" /><text class="chart-rank-label" data-region="tw" x="34" y="160" style="fill:#A55EEA" text-anchor="middle">91</text><text class="chart-rank-label" data-region="us" x="34" y="20" style="fill:#3742FA" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" x="91.66666666666666" y="21.77777777777778" style="fill:#3742FA" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" x="149.33333333333331" y="23.555555555555557" style="fill:#3742FA" text-anchor="middle">3</text><text class="chart-rank-label" data-region="us" x="207" y="23.555555555555557" style="fill:#3742FA" text-anchor="middle">3</text><text class="chart-rank-label" data-region="us" x="264.66666666666663" y="21.77777777777778" style="fill:#3742FA" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" x="322.33333333333337" y="21.77777777777778" style="fill:#3742FA" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" x="380" y="20" style="fill:#3742FA" text-anchor="middle">1</text></svg></div><div class="chart-market-svg" data-market="aos"></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"></div><div class="chart-market-svg" data-market="aos"></div></div></div></div></div>
+        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="grossing" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg realtime-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"><line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">34</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">67</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">100</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">05일15시</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">05일19시</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">05일23시</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">06일03시</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">06일07시</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">06일11시</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">06일15시</text><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,6 91.66666666666666,7.777777777777778 149.33333333333331,9.555555555555555 207,9.555555555555555 264.66666666666663,7.777777777777778 322.33333333333337,7.777777777777778 380,6" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="7.777777777777778" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="9.555555555555555" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="9.555555555555555" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="7.777777777777778" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="7.777777777777778" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="6" r="2.5" /><text class="chart-rank-label" data-region="tw" x="34" y="160" fill="#A55EEA" text-anchor="middle">91</text><text class="chart-rank-label" data-region="us" x="34" y="20" fill="#3742FA" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" x="91.66666666666666" y="21.77777777777778" fill="#3742FA" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" x="149.33333333333331" y="23.555555555555557" fill="#3742FA" text-anchor="middle">3</text><text class="chart-rank-label" data-region="us" x="207" y="23.555555555555557" fill="#3742FA" text-anchor="middle">3</text><text class="chart-rank-label" data-region="us" x="264.66666666666663" y="21.77777777777778" fill="#3742FA" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" x="322.33333333333337" y="21.77777777777778" fill="#3742FA" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" x="380" y="20" fill="#3742FA" text-anchor="middle">1</text></svg></div><div class="chart-market-svg" data-market="aos"></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="realtime"><div class="chart-market-container"><div class="chart-market-svg active" data-market="ios"></div><div class="chart-market-svg" data-market="aos"></div></div></div></div></div>
         </div>
 
         <!-- 모바일 게임 순위 히스토리 카드 -->
@@ -331,7 +367,7 @@
           </div>
         </div>
         <div class="trend-legend-row">
-          <div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" style="background:#FF4757"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" style="background:#2ED573"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" style="background:#3742FA"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" style="background:#FFA502"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" style="background:#A55EEA"></span>대만</span></div>
+          <div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" data-region="kr"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" data-region="jp"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" data-region="us"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" data-region="cn"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" data-region="tw"></span>대만</span></div>
           
       <div class="trend-market-toggle">
         <button class="market-toggle-btn active" data-market-toggle="ios">iOS</button>
@@ -344,10 +380,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,64.66666666666666 91.66666666666666,123.33333333333333 149.33333333333331,64.66666666666666 207,64.66666666666666 264.66666666666663,64.66666666666666 322.33333333333337,64.66666666666666 380,123.33333333333333" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="91.66666666666666" cy="123.33333333333333" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="322.33333333333337" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="123.33333333333333" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="91.66666666666666" y="117.33333333333333" text-anchor="middle">3</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="207" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="322.33333333333337" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="117.33333333333333" text-anchor="middle">3</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">2</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">3</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">4</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,64.66666666666666 91.66666666666666,123.33333333333333 149.33333333333331,64.66666666666666 207,64.66666666666666 264.66666666666663,64.66666666666666 322.33333333333337,64.66666666666666 380,123.33333333333333" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="123.33333333333333" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="123.33333333333333" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="91.66666666666666" y="117.33333333333333" text-anchor="middle">3</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="58.66666666666666" text-anchor="middle">2</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="117.33333333333333" text-anchor="middle">3</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">2</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">3</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">4</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.27461139896373" x2="396" y2="65.27461139896373" /><line class="chart-grid" x1="18" y1="124.54922279792746" x2="396" y2="124.54922279792746" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,144.61139896373058 91.66666666666666,136.40414507772022 149.33333333333331,139.139896373057 207,150.08290155440415 264.66666666666663,162.84974093264248 322.33333333333337,161.0259067357513 380,165.58549222797927" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,6 91.66666666666666,6 149.33333333333331,6 207,6 264.66666666666663,6 322.33333333333337,6 380,6" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,157.3782383419689 91.66666666666666,157.3782383419689 149.33333333333331,158.2901554404145" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="144.61139896373058" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="91.66666666666666" cy="136.40414507772022" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="149.33333333333331" cy="139.139896373057" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="207" cy="150.08290155440415" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="264.66666666666663" cy="162.84974093264248" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="322.33333333333337" cy="161.0259067357513" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="165.58549222797927" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="91.66666666666666" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="322.33333333333337" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="6" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="157.3782383419689" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="91.66666666666666" cy="157.3782383419689" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="158.2901554404145" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="138.61139896373058" text-anchor="middle">153</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="91.66666666666666" y="130.40414507772022" text-anchor="middle">144</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="149.33333333333331" y="133.139896373057" text-anchor="middle">147</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="207" y="144.08290155440415" text-anchor="middle">159</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="264.66666666666663" y="156.84974093264248" text-anchor="middle">173</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="322.33333333333337" y="155.0259067357513" text-anchor="middle">171</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="159.58549222797927" text-anchor="middle">176</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="91.66666666666666" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="207" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="322.33333333333337" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="151.3782383419689" text-anchor="middle">167</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="91.66666666666666" y="151.3782383419689" text-anchor="middle">167</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="152.2901554404145" text-anchor="middle">168</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.27461139896373" text-anchor="end">66</text><text class="chart-ylabel" x="14" y="127.54922279792746" text-anchor="end">131</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">194</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.27461139896373" x2="396" y2="65.27461139896373" /><line class="chart-grid" x1="18" y1="124.54922279792746" x2="396" y2="124.54922279792746" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,144.61139896373058 91.66666666666666,136.40414507772022 149.33333333333331,139.139896373057 207,150.08290155440415 264.66666666666663,162.84974093264248 322.33333333333337,161.0259067357513 380,165.58549222797927" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,6 91.66666666666666,6 149.33333333333331,6 207,6 264.66666666666663,6 322.33333333333337,6 380,6" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,157.3782383419689 91.66666666666666,157.3782383419689 149.33333333333331,158.2901554404145" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="144.61139896373058" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="91.66666666666666" cy="136.40414507772022" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="139.139896373057" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="207" cy="150.08290155440415" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="162.84974093264248" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="322.33333333333337" cy="161.0259067357513" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="165.58549222797927" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="6" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="157.3782383419689" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="157.3782383419689" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="158.2901554404145" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="138.61139896373058" text-anchor="middle">153</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="91.66666666666666" y="130.40414507772022" text-anchor="middle">144</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="133.139896373057" text-anchor="middle">147</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="207" y="144.08290155440415" text-anchor="middle">159</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="156.84974093264248" text-anchor="middle">173</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="322.33333333333337" y="155.0259067357513" text-anchor="middle">171</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="159.58549222797927" text-anchor="middle">176</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="91.66666666666666" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="151.3782383419689" text-anchor="middle">167</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="91.66666666666666" y="151.3782383419689" text-anchor="middle">167</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="152.2901554404145" text-anchor="middle">168</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.27461139896373" text-anchor="end">66</text><text class="chart-ylabel" x="14" y="127.54922279792746" text-anchor="end">131</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">194</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
         </div>
       
@@ -357,10 +393,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,6 149.33333333333331,6 264.66666666666663,6 380,94" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="88" text-anchor="middle">2</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">2</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">3</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,6 149.33333333333331,6 264.66666666666663,6 380,94" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="88" text-anchor="middle">2</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">2</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">3</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.98378378378379" x2="396" y2="64.98378378378379" /><line class="chart-grid" x1="18" y1="123.96756756756757" x2="396" y2="123.96756756756757" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,156.31351351351353 149.33333333333331,142.04324324324324 264.66666666666663,155.36216216216215 380,142.04324324324324" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,6 149.33333333333331,6 264.66666666666663,6 380,6" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,165.82702702702704 149.33333333333331,153.45945945945945 264.66666666666663,164.87567567567567 380,163.92432432432435" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="156.31351351351353" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="149.33333333333331" cy="142.04324324324324" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="264.66666666666663" cy="155.36216216216215" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="142.04324324324324" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="6" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="165.82702702702704" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="153.45945945945945" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="264.66666666666663" cy="164.87567567567567" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="163.92432432432435" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="150.31351351351353" text-anchor="middle">159</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="149.33333333333331" y="136.04324324324324" text-anchor="middle">144</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="264.66666666666663" y="149.36216216216215" text-anchor="middle">158</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="136.04324324324324" text-anchor="middle">144</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="159.82702702702704" text-anchor="middle">169</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="147.45945945945945" text-anchor="middle">156</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="264.66666666666663" y="158.87567567567567" text-anchor="middle">168</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="157.92432432432435" text-anchor="middle">167</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.98378378378379" text-anchor="end">63</text><text class="chart-ylabel" x="14" y="126.96756756756757" text-anchor="end">125</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">186</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.98378378378379" x2="396" y2="64.98378378378379" /><line class="chart-grid" x1="18" y1="123.96756756756757" x2="396" y2="123.96756756756757" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,156.31351351351353 149.33333333333331,142.04324324324324 264.66666666666663,155.36216216216215 380,142.04324324324324" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,6 149.33333333333331,6 264.66666666666663,6 380,6" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,165.82702702702704 149.33333333333331,153.45945945945945 264.66666666666663,164.87567567567567 380,163.92432432432435" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="156.31351351351353" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="142.04324324324324" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="155.36216216216215" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="142.04324324324324" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="6" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="165.82702702702704" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="153.45945945945945" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="164.87567567567567" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="163.92432432432435" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="150.31351351351353" text-anchor="middle">159</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="136.04324324324324" text-anchor="middle">144</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="149.36216216216215" text-anchor="middle">158</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="136.04324324324324" text-anchor="middle">144</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="159.82702702702704" text-anchor="middle">169</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="147.45945945945945" text-anchor="middle">156</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="158.87567567567567" text-anchor="middle">168</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="157.92432432432435" text-anchor="middle">167</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.98378378378379" text-anchor="end">63</text><text class="chart-ylabel" x="14" y="126.96756756756757" text-anchor="end">125</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">186</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
         </div>
       
@@ -370,10 +406,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,6 380,94" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="88" text-anchor="middle">2</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">2</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">3</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,6 380,94" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="88" text-anchor="middle">2</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">2</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">3</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,143.53005464480873 380,143.53005464480873" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,6 380,6" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,155.07103825136613 380,165.65027322404373" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="143.53005464480873" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="143.53005464480873" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="6" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="155.07103825136613" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="165.65027322404373" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="137.53005464480873" text-anchor="middle">144</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="137.53005464480873" text-anchor="middle">144</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="149.07103825136613" text-anchor="middle">156</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="159.65027322404373" text-anchor="middle">167</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">62</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">123</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">184</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,143.53005464480873 380,143.53005464480873" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,6 380,6" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,155.07103825136613 380,165.65027322404373" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="143.53005464480873" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="143.53005464480873" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="6" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="6" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="155.07103825136613" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="165.65027322404373" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="137.53005464480873" text-anchor="middle">144</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="137.53005464480873" text-anchor="middle">144</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="20" text-anchor="middle">1</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="149.07103825136613" text-anchor="middle">156</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="159.65027322404373" text-anchor="middle">167</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">62</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">123</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">184</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
         </div>
       
@@ -383,10 +419,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.37349397590361" x2="396" y2="65.37349397590361" /><line class="chart-grid" x1="18" y1="124.74698795180723" x2="396" y2="124.74698795180723" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,154.43373493975903 91.66666666666666,150.19277108433735" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,20.843373493975903 91.66666666666666,25.08433734939759 149.33333333333331,33.566265060240966 207,25.08433734939759 264.66666666666663,22.96385542168675 322.33333333333337,25.08433734939759 380,25.08433734939759" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,92.93975903614458 91.66666666666666,118.38554216867469 149.33333333333331,122.62650602409639 207,167.15662650602408" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="154.43373493975903" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="91.66666666666666" cy="150.19277108433735" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="20.843373493975903" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="91.66666666666666" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="33.566265060240966" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="22.96385542168675" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="322.33333333333337" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="92.93975903614458" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="91.66666666666666" cy="118.38554216867469" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="122.62650602409639" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="207" cy="167.15662650602408" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="148.43373493975903" text-anchor="middle">90</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="91.66666666666666" y="144.19277108433735" text-anchor="middle">88</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="14.843373493975903" text-anchor="middle">27</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="91.66666666666666" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="27.566265060240966" text-anchor="middle">33</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="207" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="16.96385542168675" text-anchor="middle">28</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="322.33333333333337" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="86.93975903614458" text-anchor="middle">61</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="91.66666666666666" y="112.38554216867469" text-anchor="middle">73</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="116.62650602409639" text-anchor="middle">75</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="207" y="161.15662650602408" text-anchor="middle">96</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">20</text><text class="chart-ylabel" x="14" y="68.37349397590361" text-anchor="end">48</text><text class="chart-ylabel" x="14" y="127.74698795180723" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">103</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.37349397590361" x2="396" y2="65.37349397590361" /><line class="chart-grid" x1="18" y1="124.74698795180723" x2="396" y2="124.74698795180723" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,154.43373493975903 91.66666666666666,150.19277108433735" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,20.843373493975903 91.66666666666666,25.08433734939759 149.33333333333331,33.566265060240966 207,25.08433734939759 264.66666666666663,22.96385542168675 322.33333333333337,25.08433734939759 380,25.08433734939759" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,92.93975903614458 91.66666666666666,118.38554216867469 149.33333333333331,122.62650602409639 207,167.15662650602408" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="154.43373493975903" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="91.66666666666666" cy="150.19277108433735" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="20.843373493975903" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="33.566265060240966" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="22.96385542168675" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="25.08433734939759" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="92.93975903614458" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="118.38554216867469" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="122.62650602409639" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="167.15662650602408" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="148.43373493975903" text-anchor="middle">90</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="91.66666666666666" y="144.19277108433735" text-anchor="middle">88</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="14.843373493975903" text-anchor="middle">27</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="91.66666666666666" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="27.566265060240966" text-anchor="middle">33</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="16.96385542168675" text-anchor="middle">28</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="19.08433734939759" text-anchor="middle">29</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="86.93975903614458" text-anchor="middle">61</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="91.66666666666666" y="112.38554216867469" text-anchor="middle">73</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="116.62650602409639" text-anchor="middle">75</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="161.15662650602408" text-anchor="middle">96</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">20</text><text class="chart-ylabel" x="14" y="68.37349397590361" text-anchor="end">48</text><text class="chart-ylabel" x="14" y="127.74698795180723" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">103</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.98378378378379" x2="396" y2="64.98378378378379" /><line class="chart-grid" x1="18" y1="123.96756756756757" x2="396" y2="123.96756756756757" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,71.64324324324325 91.66666666666666,56.421621621621625 149.33333333333331,55.47027027027028 207,59.27567567567568 264.66666666666663,56.421621621621625 322.33333333333337,61.17837837837838 380,62.12972972972973" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,21.221621621621622 91.66666666666666,24.075675675675676 149.33333333333331,24.075675675675676 207,24.075675675675676 264.66666666666663,24.075675675675676 322.33333333333337,24.075675675675676 380,22.172972972972975" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,92.57297297297298 91.66666666666666,96.37837837837837 149.33333333333331,106.84324324324325 207,114.45405405405405 264.66666666666663,115.4054054054054 322.33333333333337,110.64864864864866 380,113.50270270270269" /><polyline class="chart-line" data-region="kr" style="stroke:#FF4757" points="34,161.07027027027027 91.66666666666666,166.77837837837836 149.33333333333331,159.16756756756757 207,162.02162162162162 264.66666666666663,157.26486486486488 322.33333333333337,153.45945945945945 380,154.41081081081083" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="71.64324324324325" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="91.66666666666666" cy="56.421621621621625" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="149.33333333333331" cy="55.47027027027028" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="207" cy="59.27567567567568" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="264.66666666666663" cy="56.421621621621625" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="322.33333333333337" cy="61.17837837837838" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="62.12972972972973" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="21.221621621621622" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="91.66666666666666" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="207" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="322.33333333333337" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="22.172972972972975" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="92.57297297297298" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="91.66666666666666" cy="96.37837837837837" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="106.84324324324325" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="207" cy="114.45405405405405" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="264.66666666666663" cy="115.4054054054054" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="322.33333333333337" cy="110.64864864864866" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="113.50270270270269" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="34" cy="161.07027027027027" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="91.66666666666666" cy="166.77837837837836" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="149.33333333333331" cy="159.16756756756757" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="207" cy="162.02162162162162" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="264.66666666666663" cy="157.26486486486488" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="322.33333333333337" cy="153.45945945945945" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="380" cy="154.41081081081083" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="65.64324324324325" text-anchor="middle">72</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="91.66666666666666" y="50.421621621621625" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="149.33333333333331" y="49.47027027027028" text-anchor="middle">55</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="207" y="53.27567567567568" text-anchor="middle">59</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="264.66666666666663" y="50.421621621621625" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="322.33333333333337" y="55.17837837837838" text-anchor="middle">61</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="56.12972972972973" text-anchor="middle">62</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="15.221621621621622" text-anchor="middle">19</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="91.66666666666666" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="207" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="322.33333333333337" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="16.172972972972975" text-anchor="middle">20</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="86.57297297297298" text-anchor="middle">94</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="91.66666666666666" y="90.37837837837837" text-anchor="middle">98</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="100.84324324324325" text-anchor="middle">109</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="207" y="108.45405405405405" text-anchor="middle">117</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="264.66666666666663" y="109.4054054054054" text-anchor="middle">118</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="322.33333333333337" y="104.64864864864866" text-anchor="middle">113</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="107.50270270270269" text-anchor="middle">116</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="34" y="155.07027027027027" text-anchor="middle">166</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="91.66666666666666" y="160.77837837837836" text-anchor="middle">172</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="149.33333333333331" y="153.16756756756757" text-anchor="middle">164</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="207" y="156.02162162162162" text-anchor="middle">167</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="264.66666666666663" y="151.26486486486488" text-anchor="middle">162</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="322.33333333333337" y="147.45945945945945" text-anchor="middle">158</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="380" y="148.41081081081083" text-anchor="middle">159</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">3</text><text class="chart-ylabel" x="14" y="67.98378378378379" text-anchor="end">65</text><text class="chart-ylabel" x="14" y="126.96756756756757" text-anchor="end">127</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">188</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.98378378378379" x2="396" y2="64.98378378378379" /><line class="chart-grid" x1="18" y1="123.96756756756757" x2="396" y2="123.96756756756757" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,71.64324324324325 91.66666666666666,56.421621621621625 149.33333333333331,55.47027027027028 207,59.27567567567568 264.66666666666663,56.421621621621625 322.33333333333337,61.17837837837838 380,62.12972972972973" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,21.221621621621622 91.66666666666666,24.075675675675676 149.33333333333331,24.075675675675676 207,24.075675675675676 264.66666666666663,24.075675675675676 322.33333333333337,24.075675675675676 380,22.172972972972975" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,92.57297297297298 91.66666666666666,96.37837837837837 149.33333333333331,106.84324324324325 207,114.45405405405405 264.66666666666663,115.4054054054054 322.33333333333337,110.64864864864866 380,113.50270270270269" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,161.07027027027027 91.66666666666666,166.77837837837836 149.33333333333331,159.16756756756757 207,162.02162162162162 264.66666666666663,157.26486486486488 322.33333333333337,153.45945945945945 380,154.41081081081083" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="71.64324324324325" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="91.66666666666666" cy="56.421621621621625" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="55.47027027027028" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="207" cy="59.27567567567568" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="56.421621621621625" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="322.33333333333337" cy="61.17837837837838" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="62.12972972972973" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="21.221621621621622" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="24.075675675675676" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="22.172972972972975" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="92.57297297297298" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="96.37837837837837" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="106.84324324324325" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="114.45405405405405" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="115.4054054054054" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="110.64864864864866" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="113.50270270270269" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="161.07027027027027" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="91.66666666666666" cy="166.77837837837836" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="159.16756756756757" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="162.02162162162162" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="157.26486486486488" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="153.45945945945945" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="154.41081081081083" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="65.64324324324325" text-anchor="middle">72</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="91.66666666666666" y="50.421621621621625" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="49.47027027027028" text-anchor="middle">55</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="207" y="53.27567567567568" text-anchor="middle">59</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="50.421621621621625" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="322.33333333333337" y="55.17837837837838" text-anchor="middle">61</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="56.12972972972973" text-anchor="middle">62</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="15.221621621621622" text-anchor="middle">19</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="91.66666666666666" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="18.075675675675676" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="16.172972972972975" text-anchor="middle">20</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="86.57297297297298" text-anchor="middle">94</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="91.66666666666666" y="90.37837837837837" text-anchor="middle">98</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="100.84324324324325" text-anchor="middle">109</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="108.45405405405405" text-anchor="middle">117</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="109.4054054054054" text-anchor="middle">118</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="322.33333333333337" y="104.64864864864866" text-anchor="middle">113</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="107.50270270270269" text-anchor="middle">116</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="155.07027027027027" text-anchor="middle">166</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="91.66666666666666" y="160.77837837837836" text-anchor="middle">172</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="149.33333333333331" y="153.16756756756757" text-anchor="middle">164</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="207" y="156.02162162162162" text-anchor="middle">167</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="151.26486486486488" text-anchor="middle">162</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="322.33333333333337" y="147.45945945945945" text-anchor="middle">158</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="148.41081081081083" text-anchor="middle">159</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">3</text><text class="chart-ylabel" x="14" y="67.98378378378379" text-anchor="end">65</text><text class="chart-ylabel" x="14" y="126.96756756756757" text-anchor="end">127</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">188</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월31일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월1일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월2일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월3일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월5일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
         </div>
       
@@ -396,10 +432,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="66" x2="396" y2="66" /><line class="chart-grid" x1="18" y1="125.99999999999999" x2="396" y2="125.99999999999999" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,62 149.33333333333331,148 264.66666666666663,146 380,166" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,22 149.33333333333331,24 264.66666666666663,34 380,44" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,64 149.33333333333331,56.00000000000001 264.66666666666663,98 380,112" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="62" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="149.33333333333331" cy="148" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="264.66666666666663" cy="146" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="22" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="24" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="34" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="44" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="64" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="56.00000000000001" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="264.66666666666663" cy="98" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="112" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="56" text-anchor="middle">36</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="149.33333333333331" y="142" text-anchor="middle">79</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="264.66666666666663" y="140" text-anchor="middle">78</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="160" text-anchor="middle">88</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="16" text-anchor="middle">16</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="18" text-anchor="middle">17</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="28" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="38" text-anchor="middle">27</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="58" text-anchor="middle">37</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="50.00000000000001" text-anchor="middle">33</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="264.66666666666663" y="92" text-anchor="middle">54</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="106" text-anchor="middle">61</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">8</text><text class="chart-ylabel" x="14" y="69" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="129" text-anchor="end">68</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">96</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="66" x2="396" y2="66" /><line class="chart-grid" x1="18" y1="125.99999999999999" x2="396" y2="125.99999999999999" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,62 149.33333333333331,148 264.66666666666663,146 380,166" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,22 149.33333333333331,24 264.66666666666663,34 380,44" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,64 149.33333333333331,56.00000000000001 264.66666666666663,98 380,112" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="62" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="148" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="146" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="22" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="24" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="34" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="44" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="64" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="56.00000000000001" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="98" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="112" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="56" text-anchor="middle">36</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="142" text-anchor="middle">79</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="140" text-anchor="middle">78</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="160" text-anchor="middle">88</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="16" text-anchor="middle">16</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="18" text-anchor="middle">17</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="28" text-anchor="middle">22</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="38" text-anchor="middle">27</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="58" text-anchor="middle">37</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="50.00000000000001" text-anchor="middle">33</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="92" text-anchor="middle">54</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="106" text-anchor="middle">61</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">8</text><text class="chart-ylabel" x="14" y="69" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="129" text-anchor="end">68</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">96</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.34883720930233" x2="396" y2="65.34883720930233" /><line class="chart-grid" x1="18" y1="124.69767441860465" x2="396" y2="124.69767441860465" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,78.65116279069768 149.33333333333331,62.27906976744186 264.66666666666663,68.4186046511628 380,61.25581395348837" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,14.186046511627907 149.33333333333331,13.162790697674419 264.66666666666663,19.302325581395348 380,24.41860465116279" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="149.33333333333331,54.093023255813954 264.66666666666663,58.186046511627914 380,101.16279069767441" /><polyline class="chart-line" data-region="kr" style="stroke:#FF4757" points="264.66666666666663,154.37209302325581 380,166.65116279069767" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="78.65116279069768" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="149.33333333333331" cy="62.27906976744186" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="264.66666666666663" cy="68.4186046511628" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="61.25581395348837" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="14.186046511627907" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="149.33333333333331" cy="13.162790697674419" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="264.66666666666663" cy="19.302325581395348" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="24.41860465116279" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="54.093023255813954" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="264.66666666666663" cy="58.186046511627914" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="101.16279069767441" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="264.66666666666663" cy="154.37209302325581" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="380" cy="166.65116279069767" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="72.65116279069768" text-anchor="middle">72</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="149.33333333333331" y="56.27906976744186" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="264.66666666666663" y="62.418604651162795" text-anchor="middle">62</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="55.25581395348837" text-anchor="middle">55</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="28.186046511627907" text-anchor="middle">9</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="149.33333333333331" y="27.162790697674417" text-anchor="middle">8</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="264.66666666666663" y="33.30232558139535" text-anchor="middle">14</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="18.41860465116279" text-anchor="middle">19</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="48.093023255813954" text-anchor="middle">48</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="264.66666666666663" y="52.186046511627914" text-anchor="middle">52</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="95.16279069767441" text-anchor="middle">94</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="264.66666666666663" y="148.37209302325581" text-anchor="middle">146</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="380" y="160.65116279069767" text-anchor="middle">158</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.34883720930233" text-anchor="end">59</text><text class="chart-ylabel" x="14" y="127.69767441860465" text-anchor="end">117</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">173</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.34883720930233" x2="396" y2="65.34883720930233" /><line class="chart-grid" x1="18" y1="124.69767441860465" x2="396" y2="124.69767441860465" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,78.65116279069768 149.33333333333331,62.27906976744186 264.66666666666663,68.4186046511628 380,61.25581395348837" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,14.186046511627907 149.33333333333331,13.162790697674419 264.66666666666663,19.302325581395348 380,24.41860465116279" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="149.33333333333331,54.093023255813954 264.66666666666663,58.186046511627914 380,101.16279069767441" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="264.66666666666663,154.37209302325581 380,166.65116279069767" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="78.65116279069768" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="62.27906976744186" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="68.4186046511628" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="61.25581395348837" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="14.186046511627907" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="13.162790697674419" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="19.302325581395348" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="24.41860465116279" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="54.093023255813954" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="58.186046511627914" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="101.16279069767441" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="154.37209302325581" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="166.65116279069767" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="72.65116279069768" text-anchor="middle">72</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="56.27906976744186" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="62.418604651162795" text-anchor="middle">62</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="55.25581395348837" text-anchor="middle">55</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="28.186046511627907" text-anchor="middle">9</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="27.162790697674417" text-anchor="middle">8</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="33.30232558139535" text-anchor="middle">14</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="18.41860465116279" text-anchor="middle">19</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="48.093023255813954" text-anchor="middle">48</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="52.186046511627914" text-anchor="middle">52</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="95.16279069767441" text-anchor="middle">94</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="148.37209302325581" text-anchor="middle">146</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="160.65116279069767" text-anchor="middle">158</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.34883720930233" text-anchor="end">59</text><text class="chart-ylabel" x="14" y="127.69767441860465" text-anchor="end">117</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">173</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월16일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월23일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월30일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월6일</text>
         </svg></div>
         </div>
       
@@ -409,10 +445,10 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="66" x2="396" y2="66" /><line class="chart-grid" x1="18" y1="125.99999999999999" x2="396" y2="125.99999999999999" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,62 380,166" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,22 380,46" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="34,56.00000000000001 380,136" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="62" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="22" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="46" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="34" cy="56.00000000000001" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="136" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="56" text-anchor="middle">36</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="160" text-anchor="middle">88</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="16" text-anchor="middle">16</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="40" text-anchor="middle">28</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="34" y="50.00000000000001" text-anchor="middle">33</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="130" text-anchor="middle">73</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">8</text><text class="chart-ylabel" x="14" y="69" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="129" text-anchor="end">68</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">96</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="66" x2="396" y2="66" /><line class="chart-grid" x1="18" y1="125.99999999999999" x2="396" y2="125.99999999999999" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,62 380,166" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,22 380,46" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,56.00000000000001 380,136" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="62" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="166" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="22" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="46" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="56.00000000000001" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="136" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="56" text-anchor="middle">36</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="160" text-anchor="middle">88</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="16" text-anchor="middle">16</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="40" text-anchor="middle">28</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="50.00000000000001" text-anchor="middle">33</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="130" text-anchor="middle">73</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">8</text><text class="chart-ylabel" x="14" y="69" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="129" text-anchor="end">68</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">96</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.34883720930233" x2="396" y2="65.34883720930233" /><line class="chart-grid" x1="18" y1="124.69767441860465" x2="396" y2="124.69767441860465" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" style="stroke:#A55EEA" points="34,62.27906976744186 380,61.25581395348837" /><polyline class="chart-line" data-region="us" style="stroke:#3742FA" points="34,13.162790697674419 380,25.441860465116278" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="34" cy="62.27906976744186" r="2.5" /><circle class="chart-dot" data-region="tw" style="fill:#A55EEA" cx="380" cy="61.25581395348837" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="34" cy="13.162790697674419" r="2.5" /><circle class="chart-dot" data-region="us" style="fill:#3742FA" cx="380" cy="25.441860465116278" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="380" cy="105.25581395348837" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="380" cy="166.65116279069767" r="2.5" /><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="34" y="56.27906976744186" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" style="fill:#A55EEA" x="380" y="55.25581395348837" text-anchor="middle">55</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="34" y="27.162790697674417" text-anchor="middle">8</text><text class="chart-rank-label" data-region="us" style="fill:#3742FA" x="380" y="19.441860465116278" text-anchor="middle">20</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="380" y="99.25581395348837" text-anchor="middle">98</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="380" y="160.65116279069767" text-anchor="middle">158</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.34883720930233" text-anchor="end">59</text><text class="chart-ylabel" x="14" y="127.69767441860465" text-anchor="end">117</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">173</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.34883720930233" x2="396" y2="65.34883720930233" /><line class="chart-grid" x1="18" y1="124.69767441860465" x2="396" y2="124.69767441860465" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,62.27906976744186 380,61.25581395348837" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,13.162790697674419 380,25.441860465116278" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="62.27906976744186" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="61.25581395348837" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="13.162790697674419" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="25.441860465116278" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="105.25581395348837" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="166.65116279069767" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="56.27906976744186" text-anchor="middle">56</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="55.25581395348837" text-anchor="middle">55</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="27.162790697674417" text-anchor="middle">8</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="19.441860465116278" text-anchor="middle">20</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="99.25581395348837" text-anchor="middle">98</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="160.65116279069767" text-anchor="middle">158</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.34883720930233" text-anchor="end">59</text><text class="chart-ylabel" x="14" y="127.69767441860465" text-anchor="end">117</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">173</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
         </div>
       
@@ -505,15 +541,9 @@
         </div>
         
 
-        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
-        
-        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-          <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
-        </div>
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full">
-          <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4377097736" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-        </div>
-        
+	        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
+		        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
 
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
@@ -535,28 +565,28 @@
     </div>
     </section>
   
-	  </main>
-		  
-  <!-- Footer -->
-  <footer class="site-footer">
-    <span>© 2026 게이머스크롤</span>
-    <span class="footer-divider">|</span>
-    <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
-  </footer>
+				  </main>
+					  
+	  <!-- Footer -->
+	  <footer class="site-footer">
+	    <span>© 2026 게이머스크롤</span>
+	    <span class="footer-divider">|</span>
+	    <a href="/privacy/" class="footer-privacy-link" data-modal-open="privacy-modal">개인정보처리방침</a>
+	  </footer>
 
-  <!-- Privacy Modal -->
-  <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this) this.style.display='none'">
-    <div class="modal-content">
-      <button class="modal-close" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</button>
-      <h2>개인정보처리방침</h2>
-      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
+	  <!-- Privacy Modal -->
+	  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+	    <div class="modal-content">
+	      <button class="modal-close" type="button" data-modal-close="privacy-modal" aria-label="닫기">&times;</button>
+	      <h2>개인정보처리방침</h2>
+	      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
 
       <h3>1. 개인정보의 수집 항목 및 방법</h3>
       <p>본 사이트는 별도의 회원가입 절차 없이 모든 서비스를 이용할 수 있으며, 이용자로부터 이름, 이메일, 연락처 등의 개인정보를 직접 수집하지 않습니다.</p>
 
       <h3>2. 자동으로 수집되는 정보</h3>
       <p>서비스 이용 과정에서 아래와 같은 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
-      <ul style="margin: 10px 0; padding-left: 20px; font-size: 13px;">
+      <ul class="privacy-modal-list">
         <li>접속 기기 정보 (기기 유형, 운영체제, 브라우저 종류)</li>
         <li>접속 로그 (접속 일시, 방문 페이지, 체류 시간)</li>
         <li>IP 주소 (익명화 처리됨)</li>
@@ -575,65 +605,200 @@
       <h3>6. 정책 변경</h3>
       <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
 
-      <p style="margin-top: 20px; color: #666; font-size: 12px;">시행일자: 2025년 12월 4일</p>
+      <p class="privacy-modal-effective-date">시행일자: 2025년 12월 4일</p>
     </div>
   </div>
 
-  <style>
-    .site-footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-size: 12px;
-    }
-    .site-footer a { color: var(--text-secondary); text-decoration: none; }
-    .site-footer a:hover { color: var(--text); }
-    .footer-divider { margin: 0 8px; }
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .modal-content {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 500px;
-      max-height: 80vh;
-      overflow-y: auto;
-      position: relative;
-      color: #ddd;
-    }
-    .modal-content h2 { margin-top: 0; color: #fff; }
-    .modal-content h3 { color: #aaa; margin-top: 20px; font-size: 14px; }
-    .modal-content p { font-size: 13px; line-height: 1.6; }
-    .modal-close {
-      position: absolute;
-      top: 10px; right: 15px;
-      background: none;
-      border: none;
-      color: #888;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    .modal-close:hover { color: #fff; }
-  </style>
-	  <script>
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
-    } else {
-      setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 100);
-    }
-    if (typeof twemoji !== 'undefined') {
-      twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+				  
+<script>
+(function() {
+  function getModal(id) {
+    return id ? document.getElementById(id) : null;
+  }
+
+  function openModal(modal) {
+    if (!modal) return;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    var closeBtn = modal.querySelector('[data-modal-close]');
+    if (closeBtn && closeBtn.focus) closeBtn.focus();
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('[data-modal-open]').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      var id = trigger.getAttribute('data-modal-open');
+      var modal = getModal(id);
+      if (!modal) return;
+      e.preventDefault();
+      openModal(modal);
+    });
+  });
+
+  document.querySelectorAll('[data-modal-close]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var id = btn.getAttribute('data-modal-close');
+      var modal = getModal(id) || btn.closest('.modal-overlay');
+      if (!modal) return;
+      e.preventDefault();
+      closeModal(modal);
+    });
+  });
+
+  document.querySelectorAll('.modal-overlay').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    var open = document.querySelector('.modal-overlay.is-open');
+    if (open) closeModal(open);
+  });
+})();
+</script>
+				  
+<script>
+(function() {
+  var THUMB_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>';
+  var ICON_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect fill=%22%23374151%22 width=%2240%22 height=%2240%22 rx=%228%22/></svg>';
+
+  function placeholderById(id) {
+    if (id === 'thumb-rect') return THUMB_PLACEHOLDER;
+    if (id === 'icon-square') return ICON_PLACEHOLDER;
+    return '';
+  }
+
+  function showTarget(img) {
+    if (!img || img.dataset.imgFallbackShowNext !== '1') return;
+    var el = img.nextElementSibling;
+    if (!el) return;
+    el.classList.remove('hidden');
+    el.classList.remove('is-hidden');
+    var display = img.dataset.imgFallbackShowDisplay;
+    if (display) el.style.display = display;
+  }
+
+  function applyFallback(img) {
+    if (!img || img.tagName !== 'IMG') return;
+    if (img.dataset.gcImgFallbackApplied === '1') return;
+
+    // 1) 1회 재시도(src 교체)
+    var retrySrc = img.dataset.imgFallbackRetrySrc;
+    if (retrySrc && img.dataset.gcImgFallbackRetried !== '1') {
+      img.dataset.gcImgFallbackRetried = '1';
+      img.src = retrySrc;
+      return;
     }
 
+    // 2) placeholder id
+    var placeholderId = img.dataset.imgFallbackId;
+    if (placeholderId && img.dataset.gcImgFallbackIdDone !== '1') {
+      var src0 = placeholderById(placeholderId);
+      if (src0) {
+        img.dataset.gcImgFallbackIdDone = '1';
+        img.src = src0;
+        return;
+      }
+    }
+
+    // 3) fallback src
+    var fallbackSrc = img.dataset.imgFallbackSrc;
+    if (fallbackSrc && img.dataset.gcImgFallbackSrcDone !== '1') {
+      img.dataset.gcImgFallbackSrcDone = '1';
+      img.src = fallbackSrc;
+      return;
+    }
+
+    // 4) action
+    var action = img.dataset.imgFallback || '';
+    if (action === 'thumb-fallback') {
+      if (img.parentElement) img.parentElement.classList.add('thumb-fallback');
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'parent-hide') {
+      if (img.parentElement) img.parentElement.style.display = 'none';
+      else img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-show-next') {
+      img.style.display = 'none';
+      showTarget(img);
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-visibility') {
+      img.style.visibility = 'hidden';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide') {
+      img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    // fallback이 없으면 무한 루프 방지용으로만 마킹
+    img.dataset.gcImgFallbackApplied = '1';
+  }
+
+  document.addEventListener('error', function(e) {
+    var t = e && e.target;
+    if (t && t.tagName === 'IMG') applyFallback(t);
+  }, true);
+
+  function sweepBrokenImages() {
+    document.querySelectorAll('img[data-img-fallback],img[data-img-fallback-src],img[data-img-fallback-id],img[data-img-fallback-retry-src]').forEach(function(img) {
+      try {
+        if (img.complete && img.naturalWidth === 0) applyFallback(img);
+      } catch (e) {}
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sweepBrokenImages);
+  } else {
+    sweepBrokenImages();
+  }
+})();
+</script>
+			  
+<script>
+(function() {
+  function markFontsLoaded() {
+    document.documentElement.classList.add('fonts-loaded');
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(markFontsLoaded);
+  } else {
+    setTimeout(markFontsLoaded, 100);
+  }
+
+  function parseTwemojiOnce() {
+    if (window.__gcTwemojiParsed) return;
+    if (typeof twemoji === 'undefined') return;
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    window.__gcTwemojiParsed = '1';
+  }
+
+  parseTwemojiOnce();
+  window.addEventListener('load', parseTwemojiOnce);
+})();
+</script>
+			  <script>
     // 최근 본 게임 저장
     (function() {
       const RECENT_KEY = 'gamerscrawl_recent_searches';
@@ -660,17 +825,17 @@
 
       const legendRow = section.querySelector('.realtime-legend-row');
 
-      function updateContent() {
-        section.querySelectorAll('.realtime-content').forEach(c => {
-          const isCat = c.dataset.realtimeCat === activeCat;
-          const isView = c.dataset.realtimeView === activeView;
-          c.classList.toggle('active', isCat && isView);
-        });
-        // 실시간 뷰일 때만 범례 표시
-        if (legendRow) {
-          legendRow.style.display = activeView === 'realtime' ? 'flex' : 'none';
-        }
-      }
+	      function updateContent() {
+	        section.querySelectorAll('.realtime-content').forEach(c => {
+	          const isCat = c.dataset.realtimeCat === activeCat;
+	          const isView = c.dataset.realtimeView === activeView;
+	          c.classList.toggle('active', isCat && isView);
+	        });
+	        // 실시간 뷰일 때만 범례 표시
+	        if (legendRow) {
+	          legendRow.classList.toggle('is-hidden', activeView !== 'realtime');
+	        }
+	      }
 
       function updateMarket() {
         section.querySelectorAll('.chart-market-svg').forEach(el => {
@@ -823,12 +988,16 @@
       updatePagination();
     })();
   </script>
-	  
-<script>
-(function() {
-  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
-  const MAX_RECENT = 8;
-  let gamesData = [];
+			  
+	<script>
+	(function() {
+	  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+	  const MAX_RECENT = 8;
+	  const SEARCH_INDEX_URL = '/games/search-index.json';
+	  const SEARCH_INDEX_CACHE_KEY = 'gamerscrawl_search_index_v1';
+	  let gamesData = [];
+	  let gamesDataLoaded = false;
+	  let gamesDataPromise = null;
 
   // 최근 검색 저장/로드
   function getRecentSearches() {
@@ -852,30 +1021,52 @@
     localStorage.removeItem(RECENT_STORAGE_KEY);
   }
 
-  async function loadGamesData() {
-    try {
-      const response = await fetch('/games/search-index.json');
-      if (!response.ok) return;
-      const data = await response.json();
-      gamesData = Array.isArray(data) ? data : (data.games || []);
-    } catch (e) {
-      console.warn('검색 인덱스 로드 실패:', e);
-      gamesData = [];
-    }
-  }
+	  async function loadGamesDataOnce() {
+	    if (gamesDataLoaded) return;
+	    if (gamesDataPromise) return gamesDataPromise;
 
-  loadGamesData();
+	    gamesDataPromise = (async () => {
+	      // 1) 세션 캐시 우선
+	      try {
+	        const cached = sessionStorage.getItem(SEARCH_INDEX_CACHE_KEY);
+	        if (cached) {
+	          const parsed = JSON.parse(cached);
+	          gamesData = Array.isArray(parsed) ? parsed : (parsed.games || []);
+	          gamesDataLoaded = true;
+	          return;
+	        }
+	      } catch {}
+
+	      // 2) 네트워크 로드
+	      try {
+	        const response = await fetch(SEARCH_INDEX_URL);
+	        if (!response.ok) return;
+	        const data = await response.json();
+	        gamesData = Array.isArray(data) ? data : (data.games || []);
+	        try {
+	          sessionStorage.setItem(SEARCH_INDEX_CACHE_KEY, JSON.stringify(gamesData));
+	        } catch {}
+	      } catch (e) {
+	        console.warn('검색 인덱스 로드 실패:', e);
+	        gamesData = [];
+	      } finally {
+	        gamesDataLoaded = true;
+	      }
+	    })();
+
+	    return gamesDataPromise;
+	  }
 
   const searchInput = document.querySelector('.search-input');
   const searchDropdown = document.querySelector('.search-dropdown');
 
   if (!searchInput || !searchDropdown) return;
 
-  // 최근 검색 렌더링
-  function renderRecentSearches() {
-    const recent = getRecentSearches();
-    if (recent.length === 0) {
-      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+	  // 최근 검색 렌더링
+	  function renderRecentSearches() {
+	    const recent = getRecentSearches();
+	    if (recent.length === 0) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
     } else {
       const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
       const items = recent.map(game => {
@@ -938,14 +1129,21 @@
     searchDropdown.classList.add('active');
   }
 
-  let currentResults = [];
+	  let currentResults = [];
 
-  function performSearch(query) {
-    if (!query || query.length < 1) {
-      currentResults = [];
-      renderRecentSearches();
-      return;
-    }
+	  function performSearch(query) {
+	    if (!query || query.length < 1) {
+	      currentResults = [];
+	      renderRecentSearches();
+	      return;
+	    }
+
+	    if (!gamesDataLoaded) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">검색 데이터를 불러오는 중...</div>';
+	      searchDropdown.classList.add('active');
+	      loadGamesDataOnce().then(() => performSearch(query));
+	      return;
+	    }
 
     const lowerQuery = query.toLowerCase();
     currentResults = gamesData.filter(game => {
@@ -996,19 +1194,20 @@
 
   const debouncedSearch = debounce(performSearch, 200);
 
-  // 입력 이벤트
-  searchInput.addEventListener('input', (e) => {
-    debouncedSearch(e.target.value.trim());
-  });
+	  // 입력 이벤트
+	  searchInput.addEventListener('input', (e) => {
+	    debouncedSearch(e.target.value.trim());
+	  });
 
-  // 포커스 시 드롭다운 열기
-  searchInput.addEventListener('focus', () => {
-    if (!searchInput.value.trim()) {
-      renderRecentSearches();
-    } else {
-      performSearch(searchInput.value.trim());
-    }
-  });
+	  // 포커스 시 드롭다운 열기
+	  searchInput.addEventListener('focus', () => {
+	    loadGamesDataOnce();
+	    if (!searchInput.value.trim()) {
+	      renderRecentSearches();
+	    } else {
+	      performSearch(searchInput.value.trim());
+	    }
+	  });
 
   // 외부 클릭 시 닫기
   document.addEventListener('click', (e) => {
@@ -1035,17 +1234,18 @@
     }).slice(0, 10);
   }
 
-  // 검색 실행 (결과 1개면 바로 이동)
-  function executeSearch() {
-    const query = searchInput.value.trim();
-    if (!query) return;
+	  // 검색 실행 (결과 1개면 바로 이동)
+	  async function executeSearch() {
+	    const query = searchInput.value.trim();
+	    if (!query) return;
 
-    // 즉시 검색 실행
-    const results = searchImmediate(query);
+	    // 즉시 검색 실행
+	    await loadGamesDataOnce();
+	    const results = searchImmediate(query);
 
-    if (results.length === 1) {
-      const game = results[0];
-      const slug = game.slug || game.id || '';
+	    if (results.length === 1) {
+	      const game = results[0];
+	      const slug = game.slug || game.id || '';
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
@@ -1053,16 +1253,16 @@
     }
   }
 
-  // 키보드 이벤트
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      searchInput.value = '';
-      searchDropdown.classList.remove('active');
-      searchInput.blur();
-    } else if (e.key === 'Enter') {
-      executeSearch();
-    }
-  });
+	  // 키보드 이벤트
+	  searchInput.addEventListener('keydown', (e) => {
+	    if (e.key === 'Escape') {
+	      searchInput.value = '';
+	      searchDropdown.classList.remove('active');
+	      searchInput.blur();
+	    } else if (e.key === 'Enter') {
+	      executeSearch();
+	    }
+	  });
 
   // 검색 버튼 클릭
   const searchBtn = document.querySelector('.search-btn');
@@ -1071,7 +1271,7 @@
   }
 })();
 </script>
-	  
+			  
 <script>
 (function() {
   const prefetched = new Set();
@@ -1280,33 +1480,14 @@
   
 <script>
 (function() {
-  var ADS_SELECTOR = 'ins.adsbygoogle[data-gc-ad="1"]';
-  var MQ_MOBILE = '(max-width: 768px)';
-  var MQ_PC = '(min-width: 769px)';
+  var CLIENT = 'ca-pub-9477874183990825';
+  var ADS_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
 
-  function matchesBreakpoint(el) {
-    try {
-      if (!el || !el.classList) return true;
-      if (el.classList.contains('mobile-only')) return window.matchMedia(MQ_MOBILE).matches;
-      if (el.classList.contains('pc-only')) return window.matchMedia(MQ_PC).matches;
-      return true;
-    } catch (e) { return true; }
-  }
-
-  function isRenderable(el) {
-    try {
-      if (!el || !el.isConnected) return false;
-      var style = window.getComputedStyle(el);
-      return !!(style && style.display !== 'none' && style.visibility !== 'hidden');
-    } catch (e) { return false; }
-  }
-
-  function hasWidth(slot, ins) {
-    try {
-      var rect = (slot && slot.getBoundingClientRect) ? slot.getBoundingClientRect() : { width: 0 };
-      if (rect.width < 1 && ins && ins.getBoundingClientRect) rect = ins.getBoundingClientRect();
-      return rect.width >= 1;
-    } catch (e) { return false; }
+  function isVisible(el) {
+    if (!el || !el.isConnected) return false;
+    var style = window.getComputedStyle(el);
+    if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+    return (el.offsetWidth >= 1 || el.offsetHeight >= 1);
   }
 
   function tryInit(ins) {
@@ -1314,15 +1495,13 @@
     if (ins.dataset.gcAdsInit === '1') return;
 
     var slot = ins.closest ? (ins.closest('.ad-slot') || ins) : ins;
-    if (!matchesBreakpoint(slot) || !matchesBreakpoint(ins)) return;
-    if (!isRenderable(slot) || !isRenderable(ins)) return;
-    if (!hasWidth(slot, ins)) return;
+    if (!isVisible(slot) || !isVisible(ins)) return;
 
-    ins.dataset.gcAdsInit = '1';
     try {
-      (adsbygoogle = window.adsbygoogle || []).push({});
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      ins.dataset.gcAdsInit = '1';
     } catch (e) {
-      delete ins.dataset.gcAdsInit;
+      // 실패 시 다음 프레임에서 재시도 가능하도록 마킹하지 않음
     }
   }
 
@@ -1330,84 +1509,44 @@
     document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { tryInit(ins); });
   }
 
-  function observeSizes() {
-    if (!('ResizeObserver' in window)) return;
-    if (window.__gcAdsResizeObserver) return;
-
-    window.__gcAdsResizeObserver = new ResizeObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var el = entry && entry.target;
-        if (!el || !el.isConnected) return;
-        if (el.classList && el.classList.contains('adsbygoogle')) {
-          tryInit(el);
-          return;
-        }
-        if (el.classList && el.classList.contains('ad-slot')) {
-          var ins = el.querySelector(ADS_SELECTOR);
-          if (ins) tryInit(ins);
-        }
-      });
+  function scheduleInit() {
+    if (window.__gcAdsInitRaf) return;
+    window.__gcAdsInitRaf = requestAnimationFrame(function() {
+      window.__gcAdsInitRaf = 0;
+      initAll();
     });
-
-    document.querySelectorAll('.ad-slot').forEach(function(slot) { window.__gcAdsResizeObserver.observe(slot); });
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { window.__gcAdsResizeObserver.observe(ins); });
-  }
-
-  function bindMediaChange() {
-    try {
-      var mmMobile = window.matchMedia(MQ_MOBILE);
-      var mmPc = window.matchMedia(MQ_PC);
-      var handler = function() { initAll(); };
-      if (mmMobile && mmMobile.addEventListener) {
-        mmMobile.addEventListener('change', handler);
-        mmPc.addEventListener('change', handler);
-      } else if (mmMobile && mmMobile.addListener) {
-        mmMobile.addListener(handler);
-        mmPc.addListener(handler);
-      }
-    } catch (e) {}
-  }
-
-  function collapseUnfilled(ins) {
-    var slot = ins.closest ? ins.closest('.ad-slot') : null;
-    if (slot) slot.style.display = 'none';
-  }
-
-  function observeUnfilled() {
-    if (!('MutationObserver' in window)) return;
-    if (window.__gcAdsUnfilledObserver) return;
-
-    window.__gcAdsUnfilledObserver = new MutationObserver(function(mutations) {
-      mutations.forEach(function(m) {
-        if (m.type === 'attributes' && m.attributeName === 'data-ad-status') {
-          var ins = m.target;
-          if (ins && ins.dataset && ins.dataset.adStatus === 'unfilled') {
-            collapseUnfilled(ins);
-          }
-        }
-      });
-    });
-
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) {
-      window.__gcAdsUnfilledObserver.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
-    });
-  }
-
-  function start() {
-    initAll();
-    observeSizes();
-    bindMediaChange();
-    observeUnfilled();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { requestAnimationFrame(start); });
+    document.addEventListener('DOMContentLoaded', scheduleInit);
   } else {
-    requestAnimationFrame(start);
+    scheduleInit();
   }
 
-  window.addEventListener('load', function() { initAll(); });
-  window.addEventListener('resize', function() { initAll(); }, { passive: true });
+  window.addEventListener('load', scheduleInit);
+  window.addEventListener('pageshow', scheduleInit);
+  window.addEventListener('resize', scheduleInit, { passive: true });
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) scheduleInit();
+  });
+
+  try {
+    var mo = new MutationObserver(function(mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        var target = mutations[i].target;
+        if (target && target.closest && target.closest('ins.adsbygoogle[data-gc-ads-init="1"]')) continue;
+        scheduleInit();
+        break;
+      }
+    });
+
+    mo.observe(document.body, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ['class', 'style', 'hidden', 'aria-hidden']
+    });
+  } catch (e) {}
 })();
 </script>
 </body>

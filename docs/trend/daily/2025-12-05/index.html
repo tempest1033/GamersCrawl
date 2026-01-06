@@ -2,9 +2,17 @@
 <html lang="ko">
 <head>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메이플 키우기 양대 마켓 1위, 니케 겨울 이벤트로 40계단 급등</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script>
+	    (function() {
+	      var host = location.hostname;
+	      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+	        document.documentElement.classList.add('is-localhost');
+	      }
+	    })();
+	  </script>
+	  <title>메이플 키우기 양대 마켓 1위, 니케 겨울 이벤트로 40계단 급등</title>
   <!-- SEO -->
   <meta name="description" content="메이플 키우기가 iOS와 Android 매출 1위를 굳건히 지키는 가운데, 생존-전략 신작들이 상위권을 넓혀가고 있어요. 스팀-콘솔 대작 소식과 넥슨 소송, 디아블로4-POE2 새 시즌까지 겹치면서 국내 게이머들의 관심이 여러 방향으로 나뉘고 있어요.">
   <meta name="keywords" content="게임 트렌드, 메이플 키우기 독주 속 생존-전략 선전, CS2-도타2 견고, ARC Raiders 급부상, PS5 이스 X 한국어판 날짜 확정, 멸망전 인기에 발로란트 포맷도 화제">
@@ -90,62 +98,90 @@
   <link rel="preconnect" href="https://play-lh.googleusercontent.com">
   <link rel="preconnect" href="https://is1-ssl.mzstatic.com">
   <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
-  <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 다른 페이지 미리 로드 -->
-  <link rel="prefetch" href="/trend/" as="document">
-  <link rel="prefetch" href="/news/" as="document">
-  <link rel="prefetch" href="/community/" as="document">
-  <link rel="prefetch" href="/youtube/" as="document">
-  <link rel="prefetch" href="/rankings/" as="document">
-  <link rel="prefetch" href="/steam/" as="document">
-	  <link rel="prefetch" href="/upcoming/" as="document">
-	  <link rel="prefetch" href="/metacritic/" as="document">
+	  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
+	  <link rel="preconnect" href="https://www.google.com">
+	  <!-- Prefetch (load 이후, 네트워크 여건이 좋을 때만) -->
+	  <script>
+	    (function() {
+	      var urls = ['/trend/', '/news/', '/community/', '/youtube/', '/rankings/', '/steam/', '/upcoming/', '/metacritic/'];
+	      function shouldPrefetch() {
+	        var c = navigator.connection;
+	        if (!c) return true;
+	        if (c.saveData) return false;
+	        var type = String(c.effectiveType || '').toLowerCase();
+	        if (type.includes('2g')) return false;
+	        return true;
+	      }
+	      function addPrefetch() {
+	        if (!shouldPrefetch()) return;
+	        for (var i = 0; i < urls.length; i++) {
+	          var link = document.createElement('link');
+	          link.rel = 'prefetch';
+	          link.as = 'document';
+	          link.href = urls[i];
+	          document.head.appendChild(link);
+	        }
+	      }
+	      window.addEventListener('load', addPrefetch);
+	    })();
+	  </script>
 	  <!-- Font Preload -->
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-	  <style>.header-title a{color:#f1f5f9}</style>
-	  <link rel="stylesheet" href="/styles.css">
+		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
-  <!-- Firebase Analytics (프로덕션만) -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
-    // 프로덕션(gamerscrawl.com)에서만 Analytics 실행
-    if (window.location.hostname === 'gamerscrawl.com') {
-      const firebaseConfig = {
-        apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
-        authDomain: "gamerscrawl-b104b.firebaseapp.com",
-        projectId: "gamerscrawl-b104b",
-        storageBucket: "gamerscrawl-b104b.firebasestorage.app",
-        messagingSenderId: "831886529376",
-        appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
-        measurementId: "G-2269FV044J"
-      };
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    }
-  </script>
-  
+	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	  <!-- Firebase Analytics (프로덕션만) -->
+	  <script type="module">
+	    (function() {
+	      if (window.location.hostname !== 'gamerscrawl.com') return;
+
+	      var init = async function() {
+	        try {
+	          const [{ initializeApp }, { getAnalytics }] = await Promise.all([
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js'),
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js')
+	          ]);
+	          const firebaseConfig = {
+	            apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
+	            authDomain: "gamerscrawl-b104b.firebaseapp.com",
+	            projectId: "gamerscrawl-b104b",
+	            storageBucket: "gamerscrawl-b104b.firebasestorage.app",
+	            messagingSenderId: "831886529376",
+	            appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
+	            measurementId: "G-2269FV044J"
+	          };
+	          const app = initializeApp(firebaseConfig);
+	          getAnalytics(app);
+	        } catch (e) {}
+	      };
+
+	      if ('requestIdleCallback' in window) {
+	        requestIdleCallback(function() { init(); }, { timeout: 2000 });
+	      } else {
+	        setTimeout(function() { init(); }, 0);
+	      }
+	    })();
+	  </script>
+	  
 </head>
 <body class="page-trend">
   
   <header class="header">
-    <div class="header-inner">
-      <div class="header-title">
-        <a href="/" style="text-decoration: none; color: inherit;">
-          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
-          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#4f46e5" />
-                <stop offset="100%" stop-color="#06b6d4" />
-              </linearGradient>
-            </defs>
+	    <div class="header-inner">
+	      <div class="header-title">
+	        <a href="/">
+	          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
+	          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	            <defs>
+	              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+	                <stop offset="0%" stop-color="#4f46e5" />
+	                <stop offset="100%" stop-color="#06b6d4" />
+	              </linearGradient>
+	            </defs>
             <text class="logo-text-svg" x="50%" y="50%" dy="2" font-family="'Pretendard', -apple-system, sans-serif" font-size="62" font-weight="900" fill="currentColor" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">GAMERS CRAWL</text>
             <!-- 왼쪽 안테나 -->
             <rect x="8" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
@@ -209,17 +245,17 @@
       </a>
     </div>
   </nav>
-  <main class="container">
-    
+	  <main class="site-container">
+	    
     <section class="section active" id="insight">
       
-      <div class="insight-page-container">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins></div>
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins></div>
+      <div class="insight-container">
+        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
         <h1 class="visually-hidden">메이플 키우기 양대 마켓 1위, 니케 겨울 이벤트로 40계단 급등</h1>
         
         <div class="weekly-header-card has-hero-image">
-          <div class="weekly-header-image"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F768%2F861%2Fresize_gm552849_wt_sn.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+          <div class="weekly-header-image"><img src="https://wsrv.nl/?url=https%3A%2F%2Fcdn.gamemeca.com%2Fgmdata%2F0001%2F768%2F861%2Fresize_gm552849_wt_sn.jpg" alt="" loading="eager" data-img-fallback="thumb-fallback"></div>
           <div class="weekly-header-text">
             <div class="weekly-header-title">메이플 키우기 양대 마켓 1위, 니케 겨울 이벤트로 40계단 급등</div>
             <div class="weekly-header-meta">
@@ -239,7 +275,7 @@
         <div class="weekly-hot-issues weekly-hot-grid">
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+              <div class="weekly-hot-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">메이플 키우기 독주 속 생존-전략 선전</h4>
                 <p class="weekly-hot-desc">iOS-Android 매출 1위를 메이플 키우기가 지키고, 리니지M과 생존-전략 신작들이 뒤를 잇고 있어요.
@@ -248,7 +284,7 @@
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">CS2-도타2 견고, ARC Raiders 급부상</h4>
                 <p class="weekly-hot-desc">스팀 동시접속은 여전히 CS2와 도타2가 최상위를 유지하고 있어요.
@@ -257,7 +293,7 @@ ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2731870/header.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+              <div class="weekly-hot-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2731870/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">PS5 이스 X 한국어판 날짜 확정</h4>
                 <p class="weekly-hot-desc">PS5용 '이스 X -프라우드 노딕스-' 한국어판이 2026년 2월 26일 발매로 공식 확정됐어요.
@@ -266,7 +302,7 @@ ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC
             </div>
           
             <div class="weekly-hot-card has-thumb">
-              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.igdb.com%2Figdb%2Fimage%2Fupload%2Ft_cover_big%2Fco1wyy.png" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+              <div class="weekly-hot-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fimages.igdb.com%2Figdb%2Fimage%2Fupload%2Ft_cover_big%2Fco1wyy.png" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
               <div class="weekly-hot-content">
                 <h4 class="weekly-hot-title">멸망전 인기에 발로란트 포맷도 화제</h4>
                 <p class="weekly-hot-desc">멸망전 명경기 하이라이트가 유튜브 인기에 오르면서 스트리머-아마추어 e스포츠에 대한 관심이 이어지고 있어요.
@@ -277,14 +313,8 @@ ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC
         </div>
       </div>
     
-        
-    <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-      <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
-    </div>
-    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4377097736" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-    </div>
-  
+        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
         
       <div class="weekly-section weekly-section-industry">
         <div class="weekly-section-header">
@@ -296,7 +326,7 @@ ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC
         <div class="industry-grid">
           
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F5b%2FNexon_Logo.svg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F5b%2FNexon_Logo.svg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">넥슨-아이언메이스 2심과 복지 이슈</h4>
           <p class="industry-desc">넥슨-아이언메이스 2심에서 쟁점이 '영업비밀' 소스코드까지 확대되면서 판결 방향에 업계 이목이 쏠리고 있어요. 동시에 넥슨은 전 직원에게 100만 원 격려금을 지급하며 인력-조직 문화 투자 행보도 이어가고 있어요.</p>
@@ -304,7 +334,7 @@ ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC
       </div>
     
       <div class="industry-card has-thumb">
-        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fnimage.g-enews.com%2Fphpwas%2Frestmb_allidxmake.php%3Fidx%3D5%26simg%3D2025101310443300001c5fa75ef8617521127178.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+        <div class="industry-thumb"><img src="https://wsrv.nl/?url=https%3A%2F%2Fnimage.g-enews.com%2Fphpwas%2Frestmb_allidxmake.php%3Fidx%3D5%26simg%3D2025101310443300001c5fa75ef8617521127178.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="industry-content">
           <h4 class="industry-title">대형사, 인턴-장기 투자로 인력 확대</h4>
           <p class="industry-desc">라이온하트 스튜디오가 내년도 채용 연계형 인턴 모집을 시작했다고 밝히면서 대형 RPG 스튜디오의 인력 확충이 이어지고 있어요. 텐센트도 5년을 내다보는 게임 투자 비전을 강조하며 라이브 서비스-글로벌 RPG 중심의 장기 투자 기조가 다시 확인되고 있어요.</p>
@@ -325,7 +355,7 @@ ARC Raiders와 배틀필드6가 10만 명대 동접을 기록하며 새로운 PC
         <div class="weekly-metrics-grid">
           
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+        <div class="metric-thumb"><img src="https://play-lh.googleusercontent.com/jV9Qr5SJcdTxjSNM83_T0voYwyFWnErzyM9HsQLopigYZM4unH-_2HRTVLSmJv17OrSW" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">양대 마켓, 메이플 키우기-리니지M 구도</h4>
           <p class="weekly-metric-desc">iOS-Android 매출 1위는 모두 메이플 키우기가 차지했고, 2위는 리니지M이 유지하고 있어요.
@@ -334,7 +364,7 @@ WOS: 화이트아웃 서바이벌과 라스트 워, 라스트 Z 같은 생존-�
       </div>
     
       <div class="weekly-metric-card has-thumb">
-        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" onerror="this.parentElement.classList.add('thumb-fallback')"></div>
+        <div class="metric-thumb"><img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="" loading="lazy" data-img-fallback="thumb-fallback"></div>
         <div class="weekly-metric-content">
           <h4 class="weekly-metric-title">스팀 동접, CS2-도타2 쌍두체제 유지</h4>
           <p class="weekly-metric-desc">Counter-Strike 2가 약 67만 명, 도타2가 약 46만 명 동시접속을 기록하며 스팀 1-2위를 지키고 있어요.
@@ -356,7 +386,7 @@ ARC Raiders와 배틀필드6, Rust 등도 10만 명 안팎 동접으로 장기 �
         <div class="weekly-hot-issues">
           
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/82/fd/c682fdd1-1851-cf63-4306-b7c36e52fecc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" onerror="this.src='/favicon.svg';this.onerror=null">승리의 여신: 니케</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/82/fd/c682fdd1-1851-cf63-4306-b7c36e52fecc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">승리의 여신: 니케</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 45위 → 3위 (+42)
@@ -367,7 +397,7 @@ ARC Raiders와 배틀필드6, Rust 등도 10만 명 안팎 동접으로 장기 �
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga" alt="" loading="lazy" onerror="this.src='/favicon.svg';this.onerror=null">러브앤딥스페이스</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">러브앤딥스페이스</h4>
         
       <span class="weekly-ranking-badge up">
         Android 122위 → 93위 (+29)
@@ -378,7 +408,7 @@ ARC Raiders와 배틀필드6, Rust 등도 10만 명 안팎 동접으로 장기 �
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga" alt="" loading="lazy" onerror="this.src='/favicon.svg';this.onerror=null">러브앤딥스페이스</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://play-lh.googleusercontent.com/KV_ElEn6-mnRtWP7_mfKpijLAElpcrzgOuNJyn9u8b0wuYCWxiMlwbP8aZCdte60_tga" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">러브앤딥스페이스</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 35위 → 61위 (-26)
@@ -389,7 +419,7 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/13/91/c2139134-df43-fb9f-5895-d6e8ca17f295/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" onerror="this.src='/favicon.svg';this.onerror=null">컴투스프로야구2025</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/13/91/c2139134-df43-fb9f-5895-d6e8ca17f295/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">컴투스프로야구2025</h4>
         
       <span class="weekly-ranking-badge down">
         iOS 66위 → 94위 (-28)
@@ -402,14 +432,8 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
         </div>
       </div>
     
-        
-    <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-      <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
-    </div>
-    <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-      <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="2509466388" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-    </div>
-  
+        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
         
       <div class="weekly-section weekly-section-stocks">
         <div class="weekly-section-header">
@@ -431,7 +455,7 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
               <span class="stock-change-badge down">▼ -0.16%</span>
             </div>
           </div>
-          <img class="stock-chart" src="https://ssl.pstatic.net/imgfinance/chart/item/candle/day/078340.png" alt="컴투스 일봉 차트" onerror="this.src='/favicon.svg';this.onerror=null">
+          <img class="stock-chart" src="https://ssl.pstatic.net/imgfinance/chart/item/candle/day/078340.png" alt="컴투스 일봉 차트" data-img-fallback-src="/favicon.svg">
           <p class="stock-comment">'컴투스프로야구2025' 야구의 날-2026 시즌 준비 이벤트 등 야구 게임 라이브 강화 소식으로 관심을 받고 있어요.</p>
         </a>
       
@@ -504,28 +528,28 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
       </div>
     </section>
   
-	  </main>
-		  
-  <!-- Footer -->
-  <footer class="site-footer">
-    <span>© 2026 게이머스크롤</span>
-    <span class="footer-divider">|</span>
-    <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
-  </footer>
+				  </main>
+					  
+	  <!-- Footer -->
+	  <footer class="site-footer">
+	    <span>© 2026 게이머스크롤</span>
+	    <span class="footer-divider">|</span>
+	    <a href="/privacy/" class="footer-privacy-link" data-modal-open="privacy-modal">개인정보처리방침</a>
+	  </footer>
 
-  <!-- Privacy Modal -->
-  <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this) this.style.display='none'">
-    <div class="modal-content">
-      <button class="modal-close" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</button>
-      <h2>개인정보처리방침</h2>
-      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
+	  <!-- Privacy Modal -->
+	  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+	    <div class="modal-content">
+	      <button class="modal-close" type="button" data-modal-close="privacy-modal" aria-label="닫기">&times;</button>
+	      <h2>개인정보처리방침</h2>
+	      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
 
       <h3>1. 개인정보의 수집 항목 및 방법</h3>
       <p>본 사이트는 별도의 회원가입 절차 없이 모든 서비스를 이용할 수 있으며, 이용자로부터 이름, 이메일, 연락처 등의 개인정보를 직접 수집하지 않습니다.</p>
 
       <h3>2. 자동으로 수집되는 정보</h3>
       <p>서비스 이용 과정에서 아래와 같은 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
-      <ul style="margin: 10px 0; padding-left: 20px; font-size: 13px;">
+      <ul class="privacy-modal-list">
         <li>접속 기기 정보 (기기 유형, 운영체제, 브라우저 종류)</li>
         <li>접속 로그 (접속 일시, 방문 페이지, 체류 시간)</li>
         <li>IP 주소 (익명화 처리됨)</li>
@@ -544,72 +568,210 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
       <h3>6. 정책 변경</h3>
       <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
 
-      <p style="margin-top: 20px; color: #666; font-size: 12px;">시행일자: 2025년 12월 4일</p>
+      <p class="privacy-modal-effective-date">시행일자: 2025년 12월 4일</p>
     </div>
   </div>
 
-  <style>
-    .site-footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-size: 12px;
-    }
-    .site-footer a { color: var(--text-secondary); text-decoration: none; }
-    .site-footer a:hover { color: var(--text); }
-    .footer-divider { margin: 0 8px; }
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .modal-content {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 500px;
-      max-height: 80vh;
-      overflow-y: auto;
-      position: relative;
-      color: #ddd;
-    }
-    .modal-content h2 { margin-top: 0; color: #fff; }
-    .modal-content h3 { color: #aaa; margin-top: 20px; font-size: 14px; }
-    .modal-content p { font-size: 13px; line-height: 1.6; }
-    .modal-close {
-      position: absolute;
-      top: 10px; right: 15px;
-      background: none;
-      border: none;
-      color: #888;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    .modal-close:hover { color: #fff; }
-  </style>
-	  
-  <script>
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
-    } else {
-      setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 100);
-    }
-    if (typeof twemoji !== 'undefined') {
-      twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
-    }
-  </script>
-	  
+				  
 <script>
 (function() {
-  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
-  const MAX_RECENT = 8;
-  let gamesData = [];
+  function getModal(id) {
+    return id ? document.getElementById(id) : null;
+  }
+
+  function openModal(modal) {
+    if (!modal) return;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    var closeBtn = modal.querySelector('[data-modal-close]');
+    if (closeBtn && closeBtn.focus) closeBtn.focus();
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('[data-modal-open]').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      var id = trigger.getAttribute('data-modal-open');
+      var modal = getModal(id);
+      if (!modal) return;
+      e.preventDefault();
+      openModal(modal);
+    });
+  });
+
+  document.querySelectorAll('[data-modal-close]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var id = btn.getAttribute('data-modal-close');
+      var modal = getModal(id) || btn.closest('.modal-overlay');
+      if (!modal) return;
+      e.preventDefault();
+      closeModal(modal);
+    });
+  });
+
+  document.querySelectorAll('.modal-overlay').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    var open = document.querySelector('.modal-overlay.is-open');
+    if (open) closeModal(open);
+  });
+})();
+</script>
+				  
+<script>
+(function() {
+  var THUMB_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>';
+  var ICON_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect fill=%22%23374151%22 width=%2240%22 height=%2240%22 rx=%228%22/></svg>';
+
+  function placeholderById(id) {
+    if (id === 'thumb-rect') return THUMB_PLACEHOLDER;
+    if (id === 'icon-square') return ICON_PLACEHOLDER;
+    return '';
+  }
+
+  function showTarget(img) {
+    if (!img || img.dataset.imgFallbackShowNext !== '1') return;
+    var el = img.nextElementSibling;
+    if (!el) return;
+    el.classList.remove('hidden');
+    el.classList.remove('is-hidden');
+    var display = img.dataset.imgFallbackShowDisplay;
+    if (display) el.style.display = display;
+  }
+
+  function applyFallback(img) {
+    if (!img || img.tagName !== 'IMG') return;
+    if (img.dataset.gcImgFallbackApplied === '1') return;
+
+    // 1) 1회 재시도(src 교체)
+    var retrySrc = img.dataset.imgFallbackRetrySrc;
+    if (retrySrc && img.dataset.gcImgFallbackRetried !== '1') {
+      img.dataset.gcImgFallbackRetried = '1';
+      img.src = retrySrc;
+      return;
+    }
+
+    // 2) placeholder id
+    var placeholderId = img.dataset.imgFallbackId;
+    if (placeholderId && img.dataset.gcImgFallbackIdDone !== '1') {
+      var src0 = placeholderById(placeholderId);
+      if (src0) {
+        img.dataset.gcImgFallbackIdDone = '1';
+        img.src = src0;
+        return;
+      }
+    }
+
+    // 3) fallback src
+    var fallbackSrc = img.dataset.imgFallbackSrc;
+    if (fallbackSrc && img.dataset.gcImgFallbackSrcDone !== '1') {
+      img.dataset.gcImgFallbackSrcDone = '1';
+      img.src = fallbackSrc;
+      return;
+    }
+
+    // 4) action
+    var action = img.dataset.imgFallback || '';
+    if (action === 'thumb-fallback') {
+      if (img.parentElement) img.parentElement.classList.add('thumb-fallback');
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'parent-hide') {
+      if (img.parentElement) img.parentElement.style.display = 'none';
+      else img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-show-next') {
+      img.style.display = 'none';
+      showTarget(img);
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-visibility') {
+      img.style.visibility = 'hidden';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide') {
+      img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    // fallback이 없으면 무한 루프 방지용으로만 마킹
+    img.dataset.gcImgFallbackApplied = '1';
+  }
+
+  document.addEventListener('error', function(e) {
+    var t = e && e.target;
+    if (t && t.tagName === 'IMG') applyFallback(t);
+  }, true);
+
+  function sweepBrokenImages() {
+    document.querySelectorAll('img[data-img-fallback],img[data-img-fallback-src],img[data-img-fallback-id],img[data-img-fallback-retry-src]').forEach(function(img) {
+      try {
+        if (img.complete && img.naturalWidth === 0) applyFallback(img);
+      } catch (e) {}
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sweepBrokenImages);
+  } else {
+    sweepBrokenImages();
+  }
+})();
+</script>
+			  
+<script>
+(function() {
+  function markFontsLoaded() {
+    document.documentElement.classList.add('fonts-loaded');
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(markFontsLoaded);
+  } else {
+    setTimeout(markFontsLoaded, 100);
+  }
+
+  function parseTwemojiOnce() {
+    if (window.__gcTwemojiParsed) return;
+    if (typeof twemoji === 'undefined') return;
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    window.__gcTwemojiParsed = '1';
+  }
+
+  parseTwemojiOnce();
+  window.addEventListener('load', parseTwemojiOnce);
+})();
+</script>
+			  
+			  
+	<script>
+	(function() {
+	  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+	  const MAX_RECENT = 8;
+	  const SEARCH_INDEX_URL = '/games/search-index.json';
+	  const SEARCH_INDEX_CACHE_KEY = 'gamerscrawl_search_index_v1';
+	  let gamesData = [];
+	  let gamesDataLoaded = false;
+	  let gamesDataPromise = null;
 
   // 최근 검색 저장/로드
   function getRecentSearches() {
@@ -633,30 +795,52 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     localStorage.removeItem(RECENT_STORAGE_KEY);
   }
 
-  async function loadGamesData() {
-    try {
-      const response = await fetch('/games/search-index.json');
-      if (!response.ok) return;
-      const data = await response.json();
-      gamesData = Array.isArray(data) ? data : (data.games || []);
-    } catch (e) {
-      console.warn('검색 인덱스 로드 실패:', e);
-      gamesData = [];
-    }
-  }
+	  async function loadGamesDataOnce() {
+	    if (gamesDataLoaded) return;
+	    if (gamesDataPromise) return gamesDataPromise;
 
-  loadGamesData();
+	    gamesDataPromise = (async () => {
+	      // 1) 세션 캐시 우선
+	      try {
+	        const cached = sessionStorage.getItem(SEARCH_INDEX_CACHE_KEY);
+	        if (cached) {
+	          const parsed = JSON.parse(cached);
+	          gamesData = Array.isArray(parsed) ? parsed : (parsed.games || []);
+	          gamesDataLoaded = true;
+	          return;
+	        }
+	      } catch {}
+
+	      // 2) 네트워크 로드
+	      try {
+	        const response = await fetch(SEARCH_INDEX_URL);
+	        if (!response.ok) return;
+	        const data = await response.json();
+	        gamesData = Array.isArray(data) ? data : (data.games || []);
+	        try {
+	          sessionStorage.setItem(SEARCH_INDEX_CACHE_KEY, JSON.stringify(gamesData));
+	        } catch {}
+	      } catch (e) {
+	        console.warn('검색 인덱스 로드 실패:', e);
+	        gamesData = [];
+	      } finally {
+	        gamesDataLoaded = true;
+	      }
+	    })();
+
+	    return gamesDataPromise;
+	  }
 
   const searchInput = document.querySelector('.search-input');
   const searchDropdown = document.querySelector('.search-dropdown');
 
   if (!searchInput || !searchDropdown) return;
 
-  // 최근 검색 렌더링
-  function renderRecentSearches() {
-    const recent = getRecentSearches();
-    if (recent.length === 0) {
-      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+	  // 최근 검색 렌더링
+	  function renderRecentSearches() {
+	    const recent = getRecentSearches();
+	    if (recent.length === 0) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
     } else {
       const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
       const items = recent.map(game => {
@@ -719,14 +903,21 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     searchDropdown.classList.add('active');
   }
 
-  let currentResults = [];
+	  let currentResults = [];
 
-  function performSearch(query) {
-    if (!query || query.length < 1) {
-      currentResults = [];
-      renderRecentSearches();
-      return;
-    }
+	  function performSearch(query) {
+	    if (!query || query.length < 1) {
+	      currentResults = [];
+	      renderRecentSearches();
+	      return;
+	    }
+
+	    if (!gamesDataLoaded) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">검색 데이터를 불러오는 중...</div>';
+	      searchDropdown.classList.add('active');
+	      loadGamesDataOnce().then(() => performSearch(query));
+	      return;
+	    }
 
     const lowerQuery = query.toLowerCase();
     currentResults = gamesData.filter(game => {
@@ -777,19 +968,20 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
 
   const debouncedSearch = debounce(performSearch, 200);
 
-  // 입력 이벤트
-  searchInput.addEventListener('input', (e) => {
-    debouncedSearch(e.target.value.trim());
-  });
+	  // 입력 이벤트
+	  searchInput.addEventListener('input', (e) => {
+	    debouncedSearch(e.target.value.trim());
+	  });
 
-  // 포커스 시 드롭다운 열기
-  searchInput.addEventListener('focus', () => {
-    if (!searchInput.value.trim()) {
-      renderRecentSearches();
-    } else {
-      performSearch(searchInput.value.trim());
-    }
-  });
+	  // 포커스 시 드롭다운 열기
+	  searchInput.addEventListener('focus', () => {
+	    loadGamesDataOnce();
+	    if (!searchInput.value.trim()) {
+	      renderRecentSearches();
+	    } else {
+	      performSearch(searchInput.value.trim());
+	    }
+	  });
 
   // 외부 클릭 시 닫기
   document.addEventListener('click', (e) => {
@@ -816,17 +1008,18 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     }).slice(0, 10);
   }
 
-  // 검색 실행 (결과 1개면 바로 이동)
-  function executeSearch() {
-    const query = searchInput.value.trim();
-    if (!query) return;
+	  // 검색 실행 (결과 1개면 바로 이동)
+	  async function executeSearch() {
+	    const query = searchInput.value.trim();
+	    if (!query) return;
 
-    // 즉시 검색 실행
-    const results = searchImmediate(query);
+	    // 즉시 검색 실행
+	    await loadGamesDataOnce();
+	    const results = searchImmediate(query);
 
-    if (results.length === 1) {
-      const game = results[0];
-      const slug = game.slug || game.id || '';
+	    if (results.length === 1) {
+	      const game = results[0];
+	      const slug = game.slug || game.id || '';
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
@@ -834,16 +1027,16 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     }
   }
 
-  // 키보드 이벤트
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      searchInput.value = '';
-      searchDropdown.classList.remove('active');
-      searchInput.blur();
-    } else if (e.key === 'Enter') {
-      executeSearch();
-    }
-  });
+	  // 키보드 이벤트
+	  searchInput.addEventListener('keydown', (e) => {
+	    if (e.key === 'Escape') {
+	      searchInput.value = '';
+	      searchDropdown.classList.remove('active');
+	      searchInput.blur();
+	    } else if (e.key === 'Enter') {
+	      executeSearch();
+	    }
+	  });
 
   // 검색 버튼 클릭
   const searchBtn = document.querySelector('.search-btn');
@@ -852,7 +1045,7 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
   }
 })();
 </script>
-	  
+			  
 <script>
 (function() {
   const prefetched = new Set();
@@ -1061,33 +1254,14 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
   
 <script>
 (function() {
-  var ADS_SELECTOR = 'ins.adsbygoogle[data-gc-ad="1"]';
-  var MQ_MOBILE = '(max-width: 768px)';
-  var MQ_PC = '(min-width: 769px)';
+  var CLIENT = 'ca-pub-9477874183990825';
+  var ADS_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
 
-  function matchesBreakpoint(el) {
-    try {
-      if (!el || !el.classList) return true;
-      if (el.classList.contains('mobile-only')) return window.matchMedia(MQ_MOBILE).matches;
-      if (el.classList.contains('pc-only')) return window.matchMedia(MQ_PC).matches;
-      return true;
-    } catch (e) { return true; }
-  }
-
-  function isRenderable(el) {
-    try {
-      if (!el || !el.isConnected) return false;
-      var style = window.getComputedStyle(el);
-      return !!(style && style.display !== 'none' && style.visibility !== 'hidden');
-    } catch (e) { return false; }
-  }
-
-  function hasWidth(slot, ins) {
-    try {
-      var rect = (slot && slot.getBoundingClientRect) ? slot.getBoundingClientRect() : { width: 0 };
-      if (rect.width < 1 && ins && ins.getBoundingClientRect) rect = ins.getBoundingClientRect();
-      return rect.width >= 1;
-    } catch (e) { return false; }
+  function isVisible(el) {
+    if (!el || !el.isConnected) return false;
+    var style = window.getComputedStyle(el);
+    if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+    return (el.offsetWidth >= 1 || el.offsetHeight >= 1);
   }
 
   function tryInit(ins) {
@@ -1095,15 +1269,13 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     if (ins.dataset.gcAdsInit === '1') return;
 
     var slot = ins.closest ? (ins.closest('.ad-slot') || ins) : ins;
-    if (!matchesBreakpoint(slot) || !matchesBreakpoint(ins)) return;
-    if (!isRenderable(slot) || !isRenderable(ins)) return;
-    if (!hasWidth(slot, ins)) return;
+    if (!isVisible(slot) || !isVisible(ins)) return;
 
-    ins.dataset.gcAdsInit = '1';
     try {
-      (adsbygoogle = window.adsbygoogle || []).push({});
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      ins.dataset.gcAdsInit = '1';
     } catch (e) {
-      delete ins.dataset.gcAdsInit;
+      // 실패 시 다음 프레임에서 재시도 가능하도록 마킹하지 않음
     }
   }
 
@@ -1111,84 +1283,44 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { tryInit(ins); });
   }
 
-  function observeSizes() {
-    if (!('ResizeObserver' in window)) return;
-    if (window.__gcAdsResizeObserver) return;
-
-    window.__gcAdsResizeObserver = new ResizeObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var el = entry && entry.target;
-        if (!el || !el.isConnected) return;
-        if (el.classList && el.classList.contains('adsbygoogle')) {
-          tryInit(el);
-          return;
-        }
-        if (el.classList && el.classList.contains('ad-slot')) {
-          var ins = el.querySelector(ADS_SELECTOR);
-          if (ins) tryInit(ins);
-        }
-      });
+  function scheduleInit() {
+    if (window.__gcAdsInitRaf) return;
+    window.__gcAdsInitRaf = requestAnimationFrame(function() {
+      window.__gcAdsInitRaf = 0;
+      initAll();
     });
-
-    document.querySelectorAll('.ad-slot').forEach(function(slot) { window.__gcAdsResizeObserver.observe(slot); });
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { window.__gcAdsResizeObserver.observe(ins); });
-  }
-
-  function bindMediaChange() {
-    try {
-      var mmMobile = window.matchMedia(MQ_MOBILE);
-      var mmPc = window.matchMedia(MQ_PC);
-      var handler = function() { initAll(); };
-      if (mmMobile && mmMobile.addEventListener) {
-        mmMobile.addEventListener('change', handler);
-        mmPc.addEventListener('change', handler);
-      } else if (mmMobile && mmMobile.addListener) {
-        mmMobile.addListener(handler);
-        mmPc.addListener(handler);
-      }
-    } catch (e) {}
-  }
-
-  function collapseUnfilled(ins) {
-    var slot = ins.closest ? ins.closest('.ad-slot') : null;
-    if (slot) slot.style.display = 'none';
-  }
-
-  function observeUnfilled() {
-    if (!('MutationObserver' in window)) return;
-    if (window.__gcAdsUnfilledObserver) return;
-
-    window.__gcAdsUnfilledObserver = new MutationObserver(function(mutations) {
-      mutations.forEach(function(m) {
-        if (m.type === 'attributes' && m.attributeName === 'data-ad-status') {
-          var ins = m.target;
-          if (ins && ins.dataset && ins.dataset.adStatus === 'unfilled') {
-            collapseUnfilled(ins);
-          }
-        }
-      });
-    });
-
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) {
-      window.__gcAdsUnfilledObserver.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
-    });
-  }
-
-  function start() {
-    initAll();
-    observeSizes();
-    bindMediaChange();
-    observeUnfilled();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { requestAnimationFrame(start); });
+    document.addEventListener('DOMContentLoaded', scheduleInit);
   } else {
-    requestAnimationFrame(start);
+    scheduleInit();
   }
 
-  window.addEventListener('load', function() { initAll(); });
-  window.addEventListener('resize', function() { initAll(); }, { passive: true });
+  window.addEventListener('load', scheduleInit);
+  window.addEventListener('pageshow', scheduleInit);
+  window.addEventListener('resize', scheduleInit, { passive: true });
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) scheduleInit();
+  });
+
+  try {
+    var mo = new MutationObserver(function(mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        var target = mutations[i].target;
+        if (target && target.closest && target.closest('ins.adsbygoogle[data-gc-ads-init="1"]')) continue;
+        scheduleInit();
+        break;
+      }
+    });
+
+    mo.observe(document.body, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ['class', 'style', 'hidden', 'aria-hidden']
+    });
+  } catch (e) {}
 })();
 </script>
 </body>

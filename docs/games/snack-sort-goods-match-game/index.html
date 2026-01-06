@@ -2,10 +2,18 @@
 <html lang="ko">
 <head>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Snack Sort: Goods Match Game 매출, 모바일 게임 순위, 뉴스</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="robots" content="noindex, nofollow">
+	  <script>
+	    (function() {
+	      var host = location.hostname;
+	      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+	        document.documentElement.classList.add('is-localhost');
+	      }
+	    })();
+	  </script>
+	  <title>Snack Sort: Goods Match Game 매출, 모바일 게임 순위, 뉴스</title>
   <!-- SEO -->
   <meta name="description" content="Snack Sort: Goods Match Game 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.">
   <meta name="keywords" content="Snack Sort: Goods Match Game, Snack Sort: Goods Match Game 매출, Snack Sort: Goods Match Game 순위, 모바일 게임 순위, Snack Sort: Goods Match Game 앱스토어, Snack Sort: Goods Match Game 플레이스토어, 앱스토어 순위, 플레이스토어 순위, 앱스토어 매출 순위, 플레이스토어 매출 순위, 게임 뉴스">
@@ -62,62 +70,90 @@
   <link rel="preconnect" href="https://play-lh.googleusercontent.com">
   <link rel="preconnect" href="https://is1-ssl.mzstatic.com">
   <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
-  <link rel="preconnect" href="https://www.google.com">
-  <!-- Prefetch 다른 페이지 미리 로드 -->
-  <link rel="prefetch" href="/trend/" as="document">
-  <link rel="prefetch" href="/news/" as="document">
-  <link rel="prefetch" href="/community/" as="document">
-  <link rel="prefetch" href="/youtube/" as="document">
-  <link rel="prefetch" href="/rankings/" as="document">
-  <link rel="prefetch" href="/steam/" as="document">
-	  <link rel="prefetch" href="/upcoming/" as="document">
-	  <link rel="prefetch" href="/metacritic/" as="document">
+	  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
+	  <link rel="preconnect" href="https://www.google.com">
+	  <!-- Prefetch (load 이후, 네트워크 여건이 좋을 때만) -->
+	  <script>
+	    (function() {
+	      var urls = ['/trend/', '/news/', '/community/', '/youtube/', '/rankings/', '/steam/', '/upcoming/', '/metacritic/'];
+	      function shouldPrefetch() {
+	        var c = navigator.connection;
+	        if (!c) return true;
+	        if (c.saveData) return false;
+	        var type = String(c.effectiveType || '').toLowerCase();
+	        if (type.includes('2g')) return false;
+	        return true;
+	      }
+	      function addPrefetch() {
+	        if (!shouldPrefetch()) return;
+	        for (var i = 0; i < urls.length; i++) {
+	          var link = document.createElement('link');
+	          link.rel = 'prefetch';
+	          link.as = 'document';
+	          link.href = urls[i];
+	          document.head.appendChild(link);
+	        }
+	      }
+	      window.addEventListener('load', addPrefetch);
+	    })();
+	  </script>
 	  <!-- Font Preload -->
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-	  <style>.header-title a{color:#f1f5f9}</style>
-	  <link rel="stylesheet" href="/styles.css">
+		  <link rel="stylesheet" href="/styles.css">
   <!-- AdSense 스크립트 (CSS 직후 최우선 로드) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
-  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
-  <!-- Firebase Analytics (프로덕션만) -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
-    // 프로덕션(gamerscrawl.com)에서만 Analytics 실행
-    if (window.location.hostname === 'gamerscrawl.com') {
-      const firebaseConfig = {
-        apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
-        authDomain: "gamerscrawl-b104b.firebaseapp.com",
-        projectId: "gamerscrawl-b104b",
-        storageBucket: "gamerscrawl-b104b.firebasestorage.app",
-        messagingSenderId: "831886529376",
-        appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
-        measurementId: "G-2269FV044J"
-      };
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    }
-  </script>
-  
+	  <script async src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	  <!-- Firebase Analytics (프로덕션만) -->
+	  <script type="module">
+	    (function() {
+	      if (window.location.hostname !== 'gamerscrawl.com') return;
+
+	      var init = async function() {
+	        try {
+	          const [{ initializeApp }, { getAnalytics }] = await Promise.all([
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js'),
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js')
+	          ]);
+	          const firebaseConfig = {
+	            apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
+	            authDomain: "gamerscrawl-b104b.firebaseapp.com",
+	            projectId: "gamerscrawl-b104b",
+	            storageBucket: "gamerscrawl-b104b.firebasestorage.app",
+	            messagingSenderId: "831886529376",
+	            appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
+	            measurementId: "G-2269FV044J"
+	          };
+	          const app = initializeApp(firebaseConfig);
+	          getAnalytics(app);
+	        } catch (e) {}
+	      };
+
+	      if ('requestIdleCallback' in window) {
+	        requestIdleCallback(function() { init(); }, { timeout: 2000 });
+	      } else {
+	        setTimeout(function() { init(); }, 0);
+	      }
+	    })();
+	  </script>
+	  
 </head>
 <body class="page-game">
   
   <header class="header">
-    <div class="header-inner">
-      <div class="header-title">
-        <a href="/" style="text-decoration: none; color: inherit;">
-          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
-          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#4f46e5" />
-                <stop offset="100%" stop-color="#06b6d4" />
-              </linearGradient>
-            </defs>
+	    <div class="header-inner">
+	      <div class="header-title">
+	        <a href="/">
+	          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
+	          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	            <defs>
+	              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+	                <stop offset="0%" stop-color="#4f46e5" />
+	                <stop offset="100%" stop-color="#06b6d4" />
+	              </linearGradient>
+	            </defs>
             <text class="logo-text-svg" x="50%" y="50%" dy="2" font-family="'Pretendard', -apple-system, sans-serif" font-size="62" font-weight="900" fill="currentColor" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">GAMERS CRAWL</text>
             <!-- 왼쪽 안테나 -->
             <rect x="8" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
@@ -181,18 +217,18 @@
       </a>
     </div>
   </nav>
-  <main class="container">
-    
+	  <main class="site-container">
+	    
     <section class="section active" id="game">
       
-      <div class="game-page">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168"></ins></div>
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="3935062846" data-ad-format="horizontal" data-full-width-responsive="true"></ins></div>
+      <div class="game-container">
+        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
         <h1 class="visually-hidden">Snack Sort: Goods Match Game 매출, 모바일 게임 순위, 뉴스</h1>
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
         <div class="game-hero-content">
-          <img class="game-hero-icon" src="https://play-lh.googleusercontent.com/yIAJp_TzX9mzKU5cxnH4sVlhju2fL_Hz-jc1bQhQsr3SI64fF0-Q-nxAUyQUwqF-Wj_ZkfWD6Hpmx5mA6w0EDA" alt="Snack Sort: Goods Match Game" loading="lazy" onerror="this.style.display='none'">
+          <img class="game-hero-icon" src="https://play-lh.googleusercontent.com/yIAJp_TzX9mzKU5cxnH4sVlhju2fL_Hz-jc1bQhQsr3SI64fF0-Q-nxAUyQUwqF-Wj_ZkfWD6Hpmx5mA6w0EDA" alt="Snack Sort: Goods Match Game" loading="lazy" data-img-fallback="hide">
           <div class="game-hero-info">
             <div class="game-hero-title">Snack Sort: Goods Match Game</div>
             <div class="game-hero-developer">Concave IT Ltd</div>
@@ -231,7 +267,7 @@
           </div>
         </div>
         <div class="trend-legend-row">
-          <div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" style="background:#FF4757"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" style="background:#2ED573"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" style="background:#3742FA"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" style="background:#FFA502"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" style="background:#A55EEA"></span>대만</span></div>
+          <div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" data-region="kr"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" data-region="jp"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" data-region="us"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" data-region="cn"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" data-region="tw"></span>대만</span></div>
           
       <div class="trend-market-toggle">
         <button class="market-toggle-btn active" data-market-toggle="ios">iOS</button>
@@ -286,7 +322,7 @@
           <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월10일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월11일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월12일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월13일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월15일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월16일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="jp" style="stroke:#2ED573" points="91.66666666666666,162.02836879432624 149.33333333333331,133.31914893617022 207,132.0709219858156 264.66666666666663,130.82269503546098 322.33333333333337,167.02127659574467" /><polyline class="chart-line" data-region="kr" style="stroke:#FF4757" points="34,52.184397163120565 91.66666666666666,35.95744680851064 149.33333333333331,20.97872340425532 207,44.69503546099291 264.66666666666663,69.65957446808511 322.33333333333337,139.56028368794327 380,164.52482269503545" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="91.66666666666666" cy="162.02836879432624" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="149.33333333333331" cy="133.31914893617022" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="207" cy="132.0709219858156" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="264.66666666666663" cy="130.82269503546098" r="2.5" /><circle class="chart-dot" data-region="jp" style="fill:#2ED573" cx="322.33333333333337" cy="167.02127659574467" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="34" cy="52.184397163120565" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="91.66666666666666" cy="35.95744680851064" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="149.33333333333331" cy="20.97872340425532" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="207" cy="44.69503546099291" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="264.66666666666663" cy="69.65957446808511" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="322.33333333333337" cy="139.56028368794327" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="380" cy="164.52482269503545" r="2.5" /><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="91.66666666666666" y="156.02836879432624" text-anchor="middle">194</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="149.33333333333331" y="127.31914893617022" text-anchor="middle">171</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="207" y="126.0709219858156" text-anchor="middle">170</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="264.66666666666663" y="124.82269503546098" text-anchor="middle">169</text><text class="chart-rank-label" data-region="jp" style="fill:#2ED573" x="322.33333333333337" y="161.02127659574467" text-anchor="middle">198</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="34" y="46.184397163120565" text-anchor="middle">106</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="91.66666666666666" y="29.95744680851064" text-anchor="middle">93</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="149.33333333333331" y="14.97872340425532" text-anchor="middle">81</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="207" y="38.69503546099291" text-anchor="middle">100</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="264.66666666666663" y="63.65957446808511" text-anchor="middle">120</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="322.33333333333337" y="133.56028368794327" text-anchor="middle">176</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="380" y="158.52482269503545" text-anchor="middle">196</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">69</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">116</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">163</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">210</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월10일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월11일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월12일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월13일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월15일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월16일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="91.66666666666666,162.02836879432624 149.33333333333331,133.31914893617022 207,132.0709219858156 264.66666666666663,130.82269503546098 322.33333333333337,167.02127659574467" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,52.184397163120565 91.66666666666666,35.95744680851064 149.33333333333331,20.97872340425532 207,44.69503546099291 264.66666666666663,69.65957446808511 322.33333333333337,139.56028368794327 380,164.52482269503545" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="162.02836879432624" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="133.31914893617022" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="132.0709219858156" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="130.82269503546098" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="167.02127659574467" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="52.184397163120565" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="91.66666666666666" cy="35.95744680851064" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="20.97872340425532" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="44.69503546099291" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="69.65957446808511" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="139.56028368794327" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="164.52482269503545" r="2.5" /><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="91.66666666666666" y="156.02836879432624" text-anchor="middle">194</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="127.31914893617022" text-anchor="middle">171</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="126.0709219858156" text-anchor="middle">170</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="124.82269503546098" text-anchor="middle">169</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="322.33333333333337" y="161.02127659574467" text-anchor="middle">198</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="46.184397163120565" text-anchor="middle">106</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="91.66666666666666" y="29.95744680851064" text-anchor="middle">93</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="149.33333333333331" y="14.97872340425532" text-anchor="middle">81</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="207" y="38.69503546099291" text-anchor="middle">100</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="63.65957446808511" text-anchor="middle">120</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="322.33333333333337" y="133.56028368794327" text-anchor="middle">176</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="158.52482269503545" text-anchor="middle">196</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">69</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">116</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">163</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">210</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월10일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월11일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월12일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월13일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">12월15일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월16일</text>
         </svg></div>
         </div>
       
@@ -299,7 +335,7 @@
           <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월9일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월16일</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="81.42857142857143" x2="396" y2="81.42857142857143" /><line class="chart-grid" x1="18" y1="156.85714285714286" x2="396" y2="156.85714285714286" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="kr" style="stroke:#FF4757" points="34,31.142857142857142 380,156.85714285714286" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="34" cy="31.142857142857142" r="2.5" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="380" cy="156.85714285714286" r="2.5" /><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="34" y="25.142857142857142" text-anchor="middle">76</text><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="380" y="150.85714285714286" text-anchor="middle">81</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="84.42857142857143" text-anchor="end">78</text><text class="chart-ylabel" x="14" y="159.85714285714286" text-anchor="end">81</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">82</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월9일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월16일</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="81.42857142857143" x2="396" y2="81.42857142857143" /><line class="chart-grid" x1="18" y1="156.85714285714286" x2="396" y2="156.85714285714286" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,31.142857142857142 380,156.85714285714286" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="31.142857142857142" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="156.85714285714286" r="2.5" /><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="25.142857142857142" text-anchor="middle">76</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="150.85714285714286" text-anchor="middle">81</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="84.42857142857143" text-anchor="end">78</text><text class="chart-ylabel" x="14" y="159.85714285714286" text-anchor="end">81</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">82</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월9일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">12월16일</text>
         </svg></div>
         </div>
       
@@ -312,7 +348,7 @@
           <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><circle class="chart-dot" data-region="kr" style="fill:#FF4757" cx="34" cy="94" r="2.5" /><text class="chart-rank-label" data-region="kr" style="fill:#FF4757" x="34" y="88" text-anchor="middle">76</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">77</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="94" r="2.5" /><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="88" text-anchor="middle">76</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">77</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text>
         </svg></div>
         </div>
       
@@ -405,15 +441,9 @@
         </div>
         
 
-        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
-        
-        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-          <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
-        </div>
-        <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full">
-          <ins class="adsbygoogle" data-gc-ad="1" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4377097736" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-        </div>
-        
+	        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
+		        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full"><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins></div>
 
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
@@ -435,28 +465,28 @@
     </div>
     </section>
   
-	  </main>
-		  
-  <!-- Footer -->
-  <footer class="site-footer">
-    <span>© 2026 게이머스크롤</span>
-    <span class="footer-divider">|</span>
-    <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex'; return false;">개인정보처리방침</a>
-  </footer>
+				  </main>
+					  
+	  <!-- Footer -->
+	  <footer class="site-footer">
+	    <span>© 2026 게이머스크롤</span>
+	    <span class="footer-divider">|</span>
+	    <a href="/privacy/" class="footer-privacy-link" data-modal-open="privacy-modal">개인정보처리방침</a>
+	  </footer>
 
-  <!-- Privacy Modal -->
-  <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this) this.style.display='none'">
-    <div class="modal-content">
-      <button class="modal-close" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</button>
-      <h2>개인정보처리방침</h2>
-      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
+	  <!-- Privacy Modal -->
+	  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+	    <div class="modal-content">
+	      <button class="modal-close" type="button" data-modal-close="privacy-modal" aria-label="닫기">&times;</button>
+	      <h2>개인정보처리방침</h2>
+	      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
 
       <h3>1. 개인정보의 수집 항목 및 방법</h3>
       <p>본 사이트는 별도의 회원가입 절차 없이 모든 서비스를 이용할 수 있으며, 이용자로부터 이름, 이메일, 연락처 등의 개인정보를 직접 수집하지 않습니다.</p>
 
       <h3>2. 자동으로 수집되는 정보</h3>
       <p>서비스 이용 과정에서 아래와 같은 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
-      <ul style="margin: 10px 0; padding-left: 20px; font-size: 13px;">
+      <ul class="privacy-modal-list">
         <li>접속 기기 정보 (기기 유형, 운영체제, 브라우저 종류)</li>
         <li>접속 로그 (접속 일시, 방문 페이지, 체류 시간)</li>
         <li>IP 주소 (익명화 처리됨)</li>
@@ -475,65 +505,200 @@
       <h3>6. 정책 변경</h3>
       <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
 
-      <p style="margin-top: 20px; color: #666; font-size: 12px;">시행일자: 2025년 12월 4일</p>
+      <p class="privacy-modal-effective-date">시행일자: 2025년 12월 4일</p>
     </div>
   </div>
 
-  <style>
-    .site-footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-size: 12px;
-    }
-    .site-footer a { color: var(--text-secondary); text-decoration: none; }
-    .site-footer a:hover { color: var(--text); }
-    .footer-divider { margin: 0 8px; }
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    .modal-content {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 500px;
-      max-height: 80vh;
-      overflow-y: auto;
-      position: relative;
-      color: #ddd;
-    }
-    .modal-content h2 { margin-top: 0; color: #fff; }
-    .modal-content h3 { color: #aaa; margin-top: 20px; font-size: 14px; }
-    .modal-content p { font-size: 13px; line-height: 1.6; }
-    .modal-close {
-      position: absolute;
-      top: 10px; right: 15px;
-      background: none;
-      border: none;
-      color: #888;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    .modal-close:hover { color: #fff; }
-  </style>
-	  <script>
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
-    } else {
-      setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 100);
-    }
-    if (typeof twemoji !== 'undefined') {
-      twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+				  
+<script>
+(function() {
+  function getModal(id) {
+    return id ? document.getElementById(id) : null;
+  }
+
+  function openModal(modal) {
+    if (!modal) return;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    var closeBtn = modal.querySelector('[data-modal-close]');
+    if (closeBtn && closeBtn.focus) closeBtn.focus();
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('[data-modal-open]').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      var id = trigger.getAttribute('data-modal-open');
+      var modal = getModal(id);
+      if (!modal) return;
+      e.preventDefault();
+      openModal(modal);
+    });
+  });
+
+  document.querySelectorAll('[data-modal-close]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var id = btn.getAttribute('data-modal-close');
+      var modal = getModal(id) || btn.closest('.modal-overlay');
+      if (!modal) return;
+      e.preventDefault();
+      closeModal(modal);
+    });
+  });
+
+  document.querySelectorAll('.modal-overlay').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal(modal);
+    });
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    var open = document.querySelector('.modal-overlay.is-open');
+    if (open) closeModal(open);
+  });
+})();
+</script>
+				  
+<script>
+(function() {
+  var THUMB_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 80%22><rect fill=%22%23374151%22 width=%22120%22 height=%2280%22/></svg>';
+  var ICON_PLACEHOLDER = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect fill=%22%23374151%22 width=%2240%22 height=%2240%22 rx=%228%22/></svg>';
+
+  function placeholderById(id) {
+    if (id === 'thumb-rect') return THUMB_PLACEHOLDER;
+    if (id === 'icon-square') return ICON_PLACEHOLDER;
+    return '';
+  }
+
+  function showTarget(img) {
+    if (!img || img.dataset.imgFallbackShowNext !== '1') return;
+    var el = img.nextElementSibling;
+    if (!el) return;
+    el.classList.remove('hidden');
+    el.classList.remove('is-hidden');
+    var display = img.dataset.imgFallbackShowDisplay;
+    if (display) el.style.display = display;
+  }
+
+  function applyFallback(img) {
+    if (!img || img.tagName !== 'IMG') return;
+    if (img.dataset.gcImgFallbackApplied === '1') return;
+
+    // 1) 1회 재시도(src 교체)
+    var retrySrc = img.dataset.imgFallbackRetrySrc;
+    if (retrySrc && img.dataset.gcImgFallbackRetried !== '1') {
+      img.dataset.gcImgFallbackRetried = '1';
+      img.src = retrySrc;
+      return;
     }
 
+    // 2) placeholder id
+    var placeholderId = img.dataset.imgFallbackId;
+    if (placeholderId && img.dataset.gcImgFallbackIdDone !== '1') {
+      var src0 = placeholderById(placeholderId);
+      if (src0) {
+        img.dataset.gcImgFallbackIdDone = '1';
+        img.src = src0;
+        return;
+      }
+    }
+
+    // 3) fallback src
+    var fallbackSrc = img.dataset.imgFallbackSrc;
+    if (fallbackSrc && img.dataset.gcImgFallbackSrcDone !== '1') {
+      img.dataset.gcImgFallbackSrcDone = '1';
+      img.src = fallbackSrc;
+      return;
+    }
+
+    // 4) action
+    var action = img.dataset.imgFallback || '';
+    if (action === 'thumb-fallback') {
+      if (img.parentElement) img.parentElement.classList.add('thumb-fallback');
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'parent-hide') {
+      if (img.parentElement) img.parentElement.style.display = 'none';
+      else img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-show-next') {
+      img.style.display = 'none';
+      showTarget(img);
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide-visibility') {
+      img.style.visibility = 'hidden';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    if (action === 'hide') {
+      img.style.display = 'none';
+      img.dataset.gcImgFallbackApplied = '1';
+      return;
+    }
+
+    // fallback이 없으면 무한 루프 방지용으로만 마킹
+    img.dataset.gcImgFallbackApplied = '1';
+  }
+
+  document.addEventListener('error', function(e) {
+    var t = e && e.target;
+    if (t && t.tagName === 'IMG') applyFallback(t);
+  }, true);
+
+  function sweepBrokenImages() {
+    document.querySelectorAll('img[data-img-fallback],img[data-img-fallback-src],img[data-img-fallback-id],img[data-img-fallback-retry-src]').forEach(function(img) {
+      try {
+        if (img.complete && img.naturalWidth === 0) applyFallback(img);
+      } catch (e) {}
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sweepBrokenImages);
+  } else {
+    sweepBrokenImages();
+  }
+})();
+</script>
+			  
+<script>
+(function() {
+  function markFontsLoaded() {
+    document.documentElement.classList.add('fonts-loaded');
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(markFontsLoaded);
+  } else {
+    setTimeout(markFontsLoaded, 100);
+  }
+
+  function parseTwemojiOnce() {
+    if (window.__gcTwemojiParsed) return;
+    if (typeof twemoji === 'undefined') return;
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    window.__gcTwemojiParsed = '1';
+  }
+
+  parseTwemojiOnce();
+  window.addEventListener('load', parseTwemojiOnce);
+})();
+</script>
+			  <script>
     // 최근 본 게임 저장
     (function() {
       const RECENT_KEY = 'gamerscrawl_recent_searches';
@@ -560,17 +725,17 @@
 
       const legendRow = section.querySelector('.realtime-legend-row');
 
-      function updateContent() {
-        section.querySelectorAll('.realtime-content').forEach(c => {
-          const isCat = c.dataset.realtimeCat === activeCat;
-          const isView = c.dataset.realtimeView === activeView;
-          c.classList.toggle('active', isCat && isView);
-        });
-        // 실시간 뷰일 때만 범례 표시
-        if (legendRow) {
-          legendRow.style.display = activeView === 'realtime' ? 'flex' : 'none';
-        }
-      }
+	      function updateContent() {
+	        section.querySelectorAll('.realtime-content').forEach(c => {
+	          const isCat = c.dataset.realtimeCat === activeCat;
+	          const isView = c.dataset.realtimeView === activeView;
+	          c.classList.toggle('active', isCat && isView);
+	        });
+	        // 실시간 뷰일 때만 범례 표시
+	        if (legendRow) {
+	          legendRow.classList.toggle('is-hidden', activeView !== 'realtime');
+	        }
+	      }
 
       function updateMarket() {
         section.querySelectorAll('.chart-market-svg').forEach(el => {
@@ -723,12 +888,16 @@
       updatePagination();
     })();
   </script>
-	  
-<script>
-(function() {
-  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
-  const MAX_RECENT = 8;
-  let gamesData = [];
+			  
+	<script>
+	(function() {
+	  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+	  const MAX_RECENT = 8;
+	  const SEARCH_INDEX_URL = '/games/search-index.json';
+	  const SEARCH_INDEX_CACHE_KEY = 'gamerscrawl_search_index_v1';
+	  let gamesData = [];
+	  let gamesDataLoaded = false;
+	  let gamesDataPromise = null;
 
   // 최근 검색 저장/로드
   function getRecentSearches() {
@@ -752,30 +921,52 @@
     localStorage.removeItem(RECENT_STORAGE_KEY);
   }
 
-  async function loadGamesData() {
-    try {
-      const response = await fetch('/games/search-index.json');
-      if (!response.ok) return;
-      const data = await response.json();
-      gamesData = Array.isArray(data) ? data : (data.games || []);
-    } catch (e) {
-      console.warn('검색 인덱스 로드 실패:', e);
-      gamesData = [];
-    }
-  }
+	  async function loadGamesDataOnce() {
+	    if (gamesDataLoaded) return;
+	    if (gamesDataPromise) return gamesDataPromise;
 
-  loadGamesData();
+	    gamesDataPromise = (async () => {
+	      // 1) 세션 캐시 우선
+	      try {
+	        const cached = sessionStorage.getItem(SEARCH_INDEX_CACHE_KEY);
+	        if (cached) {
+	          const parsed = JSON.parse(cached);
+	          gamesData = Array.isArray(parsed) ? parsed : (parsed.games || []);
+	          gamesDataLoaded = true;
+	          return;
+	        }
+	      } catch {}
+
+	      // 2) 네트워크 로드
+	      try {
+	        const response = await fetch(SEARCH_INDEX_URL);
+	        if (!response.ok) return;
+	        const data = await response.json();
+	        gamesData = Array.isArray(data) ? data : (data.games || []);
+	        try {
+	          sessionStorage.setItem(SEARCH_INDEX_CACHE_KEY, JSON.stringify(gamesData));
+	        } catch {}
+	      } catch (e) {
+	        console.warn('검색 인덱스 로드 실패:', e);
+	        gamesData = [];
+	      } finally {
+	        gamesDataLoaded = true;
+	      }
+	    })();
+
+	    return gamesDataPromise;
+	  }
 
   const searchInput = document.querySelector('.search-input');
   const searchDropdown = document.querySelector('.search-dropdown');
 
   if (!searchInput || !searchDropdown) return;
 
-  // 최근 검색 렌더링
-  function renderRecentSearches() {
-    const recent = getRecentSearches();
-    if (recent.length === 0) {
-      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+	  // 최근 검색 렌더링
+	  function renderRecentSearches() {
+	    const recent = getRecentSearches();
+	    if (recent.length === 0) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
     } else {
       const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
       const items = recent.map(game => {
@@ -838,14 +1029,21 @@
     searchDropdown.classList.add('active');
   }
 
-  let currentResults = [];
+	  let currentResults = [];
 
-  function performSearch(query) {
-    if (!query || query.length < 1) {
-      currentResults = [];
-      renderRecentSearches();
-      return;
-    }
+	  function performSearch(query) {
+	    if (!query || query.length < 1) {
+	      currentResults = [];
+	      renderRecentSearches();
+	      return;
+	    }
+
+	    if (!gamesDataLoaded) {
+	      searchDropdown.innerHTML = '<div class="search-no-results">검색 데이터를 불러오는 중...</div>';
+	      searchDropdown.classList.add('active');
+	      loadGamesDataOnce().then(() => performSearch(query));
+	      return;
+	    }
 
     const lowerQuery = query.toLowerCase();
     currentResults = gamesData.filter(game => {
@@ -896,19 +1094,20 @@
 
   const debouncedSearch = debounce(performSearch, 200);
 
-  // 입력 이벤트
-  searchInput.addEventListener('input', (e) => {
-    debouncedSearch(e.target.value.trim());
-  });
+	  // 입력 이벤트
+	  searchInput.addEventListener('input', (e) => {
+	    debouncedSearch(e.target.value.trim());
+	  });
 
-  // 포커스 시 드롭다운 열기
-  searchInput.addEventListener('focus', () => {
-    if (!searchInput.value.trim()) {
-      renderRecentSearches();
-    } else {
-      performSearch(searchInput.value.trim());
-    }
-  });
+	  // 포커스 시 드롭다운 열기
+	  searchInput.addEventListener('focus', () => {
+	    loadGamesDataOnce();
+	    if (!searchInput.value.trim()) {
+	      renderRecentSearches();
+	    } else {
+	      performSearch(searchInput.value.trim());
+	    }
+	  });
 
   // 외부 클릭 시 닫기
   document.addEventListener('click', (e) => {
@@ -935,17 +1134,18 @@
     }).slice(0, 10);
   }
 
-  // 검색 실행 (결과 1개면 바로 이동)
-  function executeSearch() {
-    const query = searchInput.value.trim();
-    if (!query) return;
+	  // 검색 실행 (결과 1개면 바로 이동)
+	  async function executeSearch() {
+	    const query = searchInput.value.trim();
+	    if (!query) return;
 
-    // 즉시 검색 실행
-    const results = searchImmediate(query);
+	    // 즉시 검색 실행
+	    await loadGamesDataOnce();
+	    const results = searchImmediate(query);
 
-    if (results.length === 1) {
-      const game = results[0];
-      const slug = game.slug || game.id || '';
+	    if (results.length === 1) {
+	      const game = results[0];
+	      const slug = game.slug || game.id || '';
       saveRecentSearch({ slug, name: game.name || game.title, icon: game.icon, publisher: game.publisher });
       window.location.href = '/games/' + slug + '/';
     } else {
@@ -953,16 +1153,16 @@
     }
   }
 
-  // 키보드 이벤트
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      searchInput.value = '';
-      searchDropdown.classList.remove('active');
-      searchInput.blur();
-    } else if (e.key === 'Enter') {
-      executeSearch();
-    }
-  });
+	  // 키보드 이벤트
+	  searchInput.addEventListener('keydown', (e) => {
+	    if (e.key === 'Escape') {
+	      searchInput.value = '';
+	      searchDropdown.classList.remove('active');
+	      searchInput.blur();
+	    } else if (e.key === 'Enter') {
+	      executeSearch();
+	    }
+	  });
 
   // 검색 버튼 클릭
   const searchBtn = document.querySelector('.search-btn');
@@ -971,7 +1171,7 @@
   }
 })();
 </script>
-	  
+			  
 <script>
 (function() {
   const prefetched = new Set();
@@ -1180,33 +1380,14 @@
   
 <script>
 (function() {
-  var ADS_SELECTOR = 'ins.adsbygoogle[data-gc-ad="1"]';
-  var MQ_MOBILE = '(max-width: 768px)';
-  var MQ_PC = '(min-width: 769px)';
+  var CLIENT = 'ca-pub-9477874183990825';
+  var ADS_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
 
-  function matchesBreakpoint(el) {
-    try {
-      if (!el || !el.classList) return true;
-      if (el.classList.contains('mobile-only')) return window.matchMedia(MQ_MOBILE).matches;
-      if (el.classList.contains('pc-only')) return window.matchMedia(MQ_PC).matches;
-      return true;
-    } catch (e) { return true; }
-  }
-
-  function isRenderable(el) {
-    try {
-      if (!el || !el.isConnected) return false;
-      var style = window.getComputedStyle(el);
-      return !!(style && style.display !== 'none' && style.visibility !== 'hidden');
-    } catch (e) { return false; }
-  }
-
-  function hasWidth(slot, ins) {
-    try {
-      var rect = (slot && slot.getBoundingClientRect) ? slot.getBoundingClientRect() : { width: 0 };
-      if (rect.width < 1 && ins && ins.getBoundingClientRect) rect = ins.getBoundingClientRect();
-      return rect.width >= 1;
-    } catch (e) { return false; }
+  function isVisible(el) {
+    if (!el || !el.isConnected) return false;
+    var style = window.getComputedStyle(el);
+    if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
+    return (el.offsetWidth >= 1 || el.offsetHeight >= 1);
   }
 
   function tryInit(ins) {
@@ -1214,15 +1395,13 @@
     if (ins.dataset.gcAdsInit === '1') return;
 
     var slot = ins.closest ? (ins.closest('.ad-slot') || ins) : ins;
-    if (!matchesBreakpoint(slot) || !matchesBreakpoint(ins)) return;
-    if (!isRenderable(slot) || !isRenderable(ins)) return;
-    if (!hasWidth(slot, ins)) return;
+    if (!isVisible(slot) || !isVisible(ins)) return;
 
-    ins.dataset.gcAdsInit = '1';
     try {
-      (adsbygoogle = window.adsbygoogle || []).push({});
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      ins.dataset.gcAdsInit = '1';
     } catch (e) {
-      delete ins.dataset.gcAdsInit;
+      // 실패 시 다음 프레임에서 재시도 가능하도록 마킹하지 않음
     }
   }
 
@@ -1230,84 +1409,44 @@
     document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { tryInit(ins); });
   }
 
-  function observeSizes() {
-    if (!('ResizeObserver' in window)) return;
-    if (window.__gcAdsResizeObserver) return;
-
-    window.__gcAdsResizeObserver = new ResizeObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var el = entry && entry.target;
-        if (!el || !el.isConnected) return;
-        if (el.classList && el.classList.contains('adsbygoogle')) {
-          tryInit(el);
-          return;
-        }
-        if (el.classList && el.classList.contains('ad-slot')) {
-          var ins = el.querySelector(ADS_SELECTOR);
-          if (ins) tryInit(ins);
-        }
-      });
+  function scheduleInit() {
+    if (window.__gcAdsInitRaf) return;
+    window.__gcAdsInitRaf = requestAnimationFrame(function() {
+      window.__gcAdsInitRaf = 0;
+      initAll();
     });
-
-    document.querySelectorAll('.ad-slot').forEach(function(slot) { window.__gcAdsResizeObserver.observe(slot); });
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) { window.__gcAdsResizeObserver.observe(ins); });
-  }
-
-  function bindMediaChange() {
-    try {
-      var mmMobile = window.matchMedia(MQ_MOBILE);
-      var mmPc = window.matchMedia(MQ_PC);
-      var handler = function() { initAll(); };
-      if (mmMobile && mmMobile.addEventListener) {
-        mmMobile.addEventListener('change', handler);
-        mmPc.addEventListener('change', handler);
-      } else if (mmMobile && mmMobile.addListener) {
-        mmMobile.addListener(handler);
-        mmPc.addListener(handler);
-      }
-    } catch (e) {}
-  }
-
-  function collapseUnfilled(ins) {
-    var slot = ins.closest ? ins.closest('.ad-slot') : null;
-    if (slot) slot.style.display = 'none';
-  }
-
-  function observeUnfilled() {
-    if (!('MutationObserver' in window)) return;
-    if (window.__gcAdsUnfilledObserver) return;
-
-    window.__gcAdsUnfilledObserver = new MutationObserver(function(mutations) {
-      mutations.forEach(function(m) {
-        if (m.type === 'attributes' && m.attributeName === 'data-ad-status') {
-          var ins = m.target;
-          if (ins && ins.dataset && ins.dataset.adStatus === 'unfilled') {
-            collapseUnfilled(ins);
-          }
-        }
-      });
-    });
-
-    document.querySelectorAll(ADS_SELECTOR).forEach(function(ins) {
-      window.__gcAdsUnfilledObserver.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
-    });
-  }
-
-  function start() {
-    initAll();
-    observeSizes();
-    bindMediaChange();
-    observeUnfilled();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { requestAnimationFrame(start); });
+    document.addEventListener('DOMContentLoaded', scheduleInit);
   } else {
-    requestAnimationFrame(start);
+    scheduleInit();
   }
 
-  window.addEventListener('load', function() { initAll(); });
-  window.addEventListener('resize', function() { initAll(); }, { passive: true });
+  window.addEventListener('load', scheduleInit);
+  window.addEventListener('pageshow', scheduleInit);
+  window.addEventListener('resize', scheduleInit, { passive: true });
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) scheduleInit();
+  });
+
+  try {
+    var mo = new MutationObserver(function(mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        var target = mutations[i].target;
+        if (target && target.closest && target.closest('ins.adsbygoogle[data-gc-ads-init="1"]')) continue;
+        scheduleInit();
+        break;
+      }
+    });
+
+    mo.observe(document.body, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ['class', 'style', 'hidden', 'aria-hidden']
+    });
+  } catch (e) {}
 })();
 </script>
 </body>
