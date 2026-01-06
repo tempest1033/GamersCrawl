@@ -222,8 +222,7 @@
     <section class="section active" id="game">
       
       <div class="game-container">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only"><ins class="gc-ads-placeholder" style="display:inline-block;width:320px;height:100px" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="5825162341" data-gc-ins-class="adsbygoogle"></ins></div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only"><ins class="gc-ads-placeholder" style="display:inline-block;width:970px;height:90px" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="8458886930" data-gc-ins-class="adsbygoogle"></ins></div>
+        
         <h1 class="visually-hidden">Water Match™- ASMR Water Sort 매출, 모바일 게임 순위, 뉴스</h1>
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
@@ -542,8 +541,7 @@
         
 
 	        <!-- 트렌드 리포트 상단 광고 (모바일 먼저 배치 - CLS 방지) -->
-		        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve"><ins class="gc-ads-placeholder" style="display:block" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="5039620326" data-gc-ins-class="adsbygoogle" data-gc-ad-format="auto" data-gc-full-width-responsive="true"></ins></div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only home-card-full"><ins class="gc-ads-placeholder" style="display:inline-block;width:970px;height:90px" data-gc-ad-client="ca-pub-9477874183990825" data-gc-ad-slot="8458886930" data-gc-ins-class="adsbygoogle"></ins></div>
+		        
 
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
@@ -1478,119 +1476,5 @@
 })();
 </script>
   
-<script>
-(function() {
-  var CLIENT = 'ca-pub-9477874183990825';
-  var PLACEHOLDER_SELECTOR = 'ins[data-gc-ad-client="' + CLIENT + '"][data-gc-ad-slot]';
-  var LEGACY_SELECTOR = 'ins.adsbygoogle[data-ad-client="' + CLIENT + '"][data-ad-slot]';
-
-  function isVisible(el) {
-    if (!el || !el.isConnected) return false;
-    var style = window.getComputedStyle(el);
-    if (!style || style.display === 'none' || style.visibility === 'hidden') return false;
-    return (el.offsetWidth >= 1 || el.offsetHeight >= 1);
-  }
-
-  function alreadyProcessed(ins) {
-    if (!ins) return false;
-    if (ins.dataset.gcAdsInit === '1') return true;
-    var status = ins.getAttribute('data-adsbygoogle-status');
-    if (status === 'done') return true;
-    var adStatus = ins.getAttribute('data-ad-status');
-    if (adStatus) return true;
-    return false;
-  }
-
-  function ensureActive(ins) {
-    if (!ins) return false;
-    if (ins.getAttribute('data-ad-client') && ins.getAttribute('data-ad-slot') && ins.classList && ins.classList.contains('adsbygoogle')) {
-      return true;
-    }
-
-    var slotId = ins.getAttribute('data-gc-ad-slot');
-    if (!slotId) return false;
-
-    var classValue = ins.getAttribute('data-gc-ins-class') || 'adsbygoogle';
-    var classes = String(classValue).split(/\s+/).filter(Boolean);
-    if (classes.indexOf('adsbygoogle') < 0) classes.unshift('adsbygoogle');
-    ins.setAttribute('class', classes.join(' '));
-
-    ins.setAttribute('data-ad-client', CLIENT);
-    ins.setAttribute('data-ad-slot', slotId);
-
-    var format = ins.getAttribute('data-gc-ad-format');
-    if (format) ins.setAttribute('data-ad-format', format);
-
-    if (ins.getAttribute('data-gc-full-width-responsive') === 'true') {
-      ins.setAttribute('data-full-width-responsive', 'true');
-    }
-
-    return true;
-  }
-
-  function tryInit(ins) {
-    if (!ins || !ins.isConnected) return;
-    if (alreadyProcessed(ins)) {
-      ins.dataset.gcAdsInit = '1';
-      return;
-    }
-
-    var slot = ins.closest ? (ins.closest('.ad-slot') || ins) : ins;
-    if (!isVisible(slot) || !isVisible(ins)) return;
-    if (!ensureActive(ins)) return;
-
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-      ins.dataset.gcAdsInit = '1';
-    } catch (e) {
-      // 실패 시 다음 프레임에서 재시도 가능하도록 마킹하지 않음
-    }
-  }
-
-  function initAll() {
-    document.querySelectorAll(PLACEHOLDER_SELECTOR).forEach(function(ins) { tryInit(ins); });
-    document.querySelectorAll(LEGACY_SELECTOR).forEach(function(ins) { tryInit(ins); });
-  }
-
-  function scheduleInit() {
-    if (window.__gcAdsInitRaf) return;
-    window.__gcAdsInitRaf = requestAnimationFrame(function() {
-      window.__gcAdsInitRaf = 0;
-      initAll();
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', scheduleInit);
-  } else {
-    scheduleInit();
-  }
-
-  window.addEventListener('load', scheduleInit);
-  window.addEventListener('pageshow', scheduleInit);
-  window.addEventListener('resize', scheduleInit, { passive: true });
-  document.addEventListener('visibilitychange', function() {
-    if (!document.hidden) scheduleInit();
-  });
-
-  try {
-    var mo = new MutationObserver(function(mutations) {
-      for (var i = 0; i < mutations.length; i++) {
-        var target = mutations[i].target;
-        if (target && target.closest && target.closest('ins[data-gc-ads-init="1"]')) continue;
-        scheduleInit();
-        break;
-      }
-    });
-
-    mo.observe(document.body, {
-      subtree: true,
-      childList: true,
-      attributes: true,
-      attributeFilter: ['class', 'style', 'hidden', 'aria-hidden']
-    });
-  } catch (e) {}
-})();
-</script>
 </body>
 </html>
