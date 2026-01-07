@@ -12987,5 +12987,229 @@
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
+  },
+  {
+    "name": "붕어빵 타이쿤",
+    "slug": "붕어빵-타이쿤",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/d9/62/47d962eb-7b13-8244-bfe9-0e1d2f275d40/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Arumgames",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "나사 3D 퍼즐: 핀 풀기 게임",
+    "slug": "나사-3d-퍼즐-핀-풀기-게임",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/d6/7f/83d67fb7-5c8e-61b3-3c01-f16de72282c2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Kiwi Fun HK Limited",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "헬로 타운 : 신입사원 머지 성공 스토리",
+    "slug": "헬로-타운-신입사원-머지-성공-스토리",
+    "icon": "https://play-lh.googleusercontent.com/SSNukhchpbRZqfI0ytTwNsbu_7wW3xXZ60Z-OlmN03Q9nioqgQ2VRbmyPvdzjy3mI9n9",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "Springcomes",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "StarRupture",
+    "slug": "starrupture",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1631270/e0ca331b1b634c9cb82adbd2dca2ecbb74ee5241/capsule_231x87.jpg?t=1767711030",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Creepy Jar",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Terra Invicta",
+    "slug": "terra-invicta",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1176470/f52df96924552fa013c7d71cbf698c166e400134/capsule_231x87.jpg?t=1767637627",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Pavonis Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Your Mom",
+    "slug": "your-mom",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4147820/a843b70324befebfff89ac5f34fd7687199b3d59/capsule_231x87.jpg?t=1767002300",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Mom Game",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Space Rock Breaker",
+    "slug": "space-rock-breaker",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4035270/4ffa2aca02912516f4ae8a27d8f276e2bdd76812/capsule_231x87.jpg?t=1766391048",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "WAKA WAKA",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Tropico 6",
+    "slug": "tropico-6",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/492720/capsule_231x87.jpg?t=1755702256",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Limbic Entertainment",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Conqueror's Blade",
+    "slug": "conquerors-blade",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/835570/cb11ba7f8e5c1a89bf3406bfee97274fdc409577/capsule_231x87.jpg?t=1767008199",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Booming Tech",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Soulworker : Your Destiny Awaits",
+    "slug": "soulworker-your-destiny-awaits",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1825750/capsule_231x87.jpg?t=1734322141",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "StarSavior",
+    "slug": "starsavior",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3609080/314ffd661646f7b3e5e064a33ee7e3aa292f41cf/capsule_231x87.jpg?t=1765432821",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "A Game About Feeding A Black Hole",
+    "slug": "a-game-about-feeding-a-black-hole",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3694480/1f36c4af76ec3bce175e9f2ec8941742e3a9a838/capsule_231x87.jpg?t=1767479652",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Aarimous",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Ace Attorney Investigations Collection",
+    "slug": "ace-attorney-investigations-collection",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2401970/capsule_231x87.jpg?t=1747359314",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CAPCOM Co., Ltd.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "The Planet Crafter",
+    "slug": "the-planet-crafter",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1284190/222d70290d7be33cd553e4767871371828738af9/capsule_231x87.jpg?t=1763396816",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Miju Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Restaurats",
+    "slug": "restaurats",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2870920/1c00423a407c08166d414bfde3b0b7c45c714062/capsule_231x87.jpg?t=1766960273",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "toR Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Resident Evil Requiem",
+    "slug": "resident-evil-requiem",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/64f506b9b6210df6055136e7017f2082957e5b22/capsule_231x87.jpg?t=1765935688",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "CAPCOM Co., Ltd.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Nioh 3",
+    "slug": "nioh-3",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681010/19b0758706fefb5c06a6183365fd62dafe2bf914/capsule_231x87.jpg?t=1765519294",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "KOEI TECMO GAMES CO., LTD.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
   }
 ]

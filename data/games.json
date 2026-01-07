@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "net.gameduo.gv",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4587,7 +4587,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": 6738948332
       },
       "aliases": [
@@ -12486,8 +12486,218 @@
       "platforms": [
         "steam"
       ]
+    },
+    "붕어빵 타이쿤": {
+      "appIds": {
+        "ios": "6738116700",
+        "android": "com.arumgames.bungeoppang"
+      },
+      "aliases": [],
+      "developer": "Arumgames",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/d9/62/47d962eb-7b13-8244-bfe9-0e1d2f275d40/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "붕어빵-타이쿤",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "나사 3D 퍼즐: 핀 풀기 게임": {
+      "appIds": {
+        "ios": "6749300334",
+        "android": "com.kiwifun.game.android.screw.master"
+      },
+      "aliases": [],
+      "developer": "Kiwi Fun HK Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/d6/7f/83d67fb7-5c8e-61b3-3c01-f16de72282c2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "나사-3d-퍼즐-핀-풀기-게임",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "헬로 타운 : 신입사원 머지 성공 스토리": {
+      "appIds": {
+        "android": "com.spcomes.hellotown",
+        "ios": 6737850281
+      },
+      "aliases": [],
+      "developer": "Springcomes",
+      "icon": "https://play-lh.googleusercontent.com/SSNukhchpbRZqfI0ytTwNsbu_7wW3xXZ60Z-OlmN03Q9nioqgQ2VRbmyPvdzjy3mI9n9",
+      "slug": "헬로-타운-신입사원-머지-성공-스토리",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "StarRupture": {
+      "appIds": {
+        "steam": "1631270"
+      },
+      "aliases": [],
+      "developer": "Creepy Jar",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1631270/e0ca331b1b634c9cb82adbd2dca2ecbb74ee5241/capsule_231x87.jpg?t=1767711030",
+      "slug": "starrupture",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Terra Invicta": {
+      "appIds": {
+        "steam": "1176470"
+      },
+      "aliases": [],
+      "developer": "Pavonis Interactive",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1176470/f52df96924552fa013c7d71cbf698c166e400134/capsule_231x87.jpg?t=1767637627",
+      "slug": "terra-invicta",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Your Mom": {
+      "appIds": {
+        "steam": "4147820"
+      },
+      "aliases": [],
+      "developer": "Mom Game",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4147820/a843b70324befebfff89ac5f34fd7687199b3d59/capsule_231x87.jpg?t=1767002300",
+      "slug": "your-mom",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Space Rock Breaker": {
+      "appIds": {
+        "steam": "4035270"
+      },
+      "aliases": [],
+      "developer": "WAKA WAKA",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4035270/4ffa2aca02912516f4ae8a27d8f276e2bdd76812/capsule_231x87.jpg?t=1766391048",
+      "slug": "space-rock-breaker",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Tropico 6": {
+      "appIds": {
+        "steam": "492720"
+      },
+      "aliases": [],
+      "developer": "Limbic Entertainment",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/492720/capsule_231x87.jpg?t=1755702256",
+      "slug": "tropico-6",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Conqueror's Blade": {
+      "appIds": {
+        "steam": "835570"
+      },
+      "aliases": [],
+      "developer": "Booming Tech",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/835570/cb11ba7f8e5c1a89bf3406bfee97274fdc409577/capsule_231x87.jpg?t=1767008199",
+      "slug": "conquerors-blade",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Soulworker : Your Destiny Awaits": {
+      "appIds": {
+        "steam": "1825750"
+      },
+      "aliases": [],
+      "developer": "",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1825750/capsule_231x87.jpg?t=1734322141",
+      "slug": "soulworker-your-destiny-awaits",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "StarSavior": {
+      "appIds": {
+        "steam": "3609080"
+      },
+      "aliases": [],
+      "developer": "",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3609080/314ffd661646f7b3e5e064a33ee7e3aa292f41cf/capsule_231x87.jpg?t=1765432821",
+      "slug": "starsavior",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "A Game About Feeding A Black Hole": {
+      "appIds": {
+        "steam": "3694480"
+      },
+      "aliases": [],
+      "developer": "Aarimous",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3694480/1f36c4af76ec3bce175e9f2ec8941742e3a9a838/capsule_231x87.jpg?t=1767479652",
+      "slug": "a-game-about-feeding-a-black-hole",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Ace Attorney Investigations Collection": {
+      "appIds": {
+        "steam": "2401970"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2401970/capsule_231x87.jpg?t=1747359314",
+      "slug": "ace-attorney-investigations-collection",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "The Planet Crafter": {
+      "appIds": {
+        "steam": "1284190"
+      },
+      "aliases": [],
+      "developer": "Miju Games",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1284190/222d70290d7be33cd553e4767871371828738af9/capsule_231x87.jpg?t=1763396816",
+      "slug": "the-planet-crafter",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Restaurats": {
+      "appIds": {
+        "steam": "2870920"
+      },
+      "aliases": [],
+      "developer": "toR Studio",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2870920/1c00423a407c08166d414bfde3b0b7c45c714062/capsule_231x87.jpg?t=1766960273",
+      "slug": "restaurats",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Resident Evil Requiem": {
+      "appIds": {
+        "steam": "3764200"
+      },
+      "aliases": [],
+      "developer": "CAPCOM Co., Ltd.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/64f506b9b6210df6055136e7017f2082957e5b22/capsule_231x87.jpg?t=1765935688",
+      "slug": "resident-evil-requiem",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Nioh 3": {
+      "appIds": {
+        "steam": "3681010"
+      },
+      "aliases": [],
+      "developer": "KOEI TECMO GAMES CO., LTD.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681010/19b0758706fefb5c06a6183365fd62dafe2bf914/capsule_231x87.jpg?t=1765519294",
+      "slug": "nioh-3",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2026-01-06",
-  "totalGames": 875
+  "lastUpdated": "2026-01-07",
+  "totalGames": 892
 }

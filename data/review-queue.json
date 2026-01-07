@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "net.gameduo.gv",
+        "android": "studio.gameberry.idlehunter",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -1790,6 +1790,73 @@
         }
       ],
       "addedAt": "2026-01-06T00:49:47.886Z"
+    },
+    {
+      "title": "붕어빵 타이쿤",
+      "status": "matched",
+      "appIds": {
+        "ios": "6738116700",
+        "android": "com.arumgames.bungeoppang"
+      },
+      "developer": "Arumgames",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/d9/62/47d962eb-7b13-8244-bfe9-0e1d2f275d40/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "붕어빵 타이쿤",
+          "appId": "com.arumgames.bungeoppang"
+        },
+        {
+          "title": "마레타운: 붕어빵 장사하기2",
+          "appId": "com.fatcat.burnfishtycoon2"
+        },
+        {
+          "title": "짤툰 골목식당 키우기",
+          "appId": "com.buffstudio.jjaltoon.alley.restaurant.tycoon"
+        }
+      ],
+      "addedAt": "2026-01-07T00:49:05.181Z"
+    },
+    {
+      "title": "나사 3D 퍼즐: 핀 풀기 게임",
+      "status": "matched",
+      "appIds": {
+        "ios": "6749300334",
+        "android": "com.kiwifun.game.android.screw.master"
+      },
+      "developer": "Kiwi Fun HK Limited",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/d6/7f/83d67fb7-5c8e-61b3-3c01-f16de72282c2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "나사 매치 - 나사풀기 핀 퍼즐 나사게임",
+          "appId": "screw.puzzle.match3.brain.puzz"
+        },
+        {
+          "title": "나사 3D 퍼즐: 핀 풀기 게임",
+          "appId": "com.kiwifun.game.android.screw.master"
+        },
+        {
+          "title": "3D Bolt Master: 나사 핀 잼",
+          "appId": "com.screw3d.match.nuts.bolts.pin.jam.away.puzzle"
+        }
+      ],
+      "addedAt": "2026-01-07T00:49:05.781Z"
+    },
+    {
+      "title": "헬로 타운 : 신입사원 머지 성공 스토리",
+      "status": "matched",
+      "appIds": {
+        "android": "com.spcomes.hellotown",
+        "ios": 6737850281
+      },
+      "developer": "Springcomes",
+      "icon": "https://play-lh.googleusercontent.com/SSNukhchpbRZqfI0ytTwNsbu_7wW3xXZ60Z-OlmN03Q9nioqgQ2VRbmyPvdzjy3mI9n9",
+      "searchResults": [
+        {
+          "title": "헬로 타운 : 신입사원 머지 성공 스토리",
+          "appId": 6737850281
+        }
+      ],
+      "addedAt": "2026-01-07T00:49:20.971Z"
     }
   ],
   "approved": [
