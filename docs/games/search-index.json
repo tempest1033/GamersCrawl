@@ -1138,7 +1138,7 @@
       "android"
     ],
     "developer": "SUNCYAN",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2918,7 +2918,7 @@
       "ios"
     ],
     "developer": "SPGAME",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3846,7 +3846,7 @@
       "android"
     ],
     "developer": "Wonderful Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4032,7 +4032,7 @@
       "android"
     ],
     "developer": "GOODROID,Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4193,7 +4193,7 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4237,7 +4237,7 @@
       "android"
     ],
     "developer": "ABI GLOBAL LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4284,7 +4284,7 @@
       "android"
     ],
     "developer": "Archosaur Games",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4403,7 +4403,7 @@
       "android"
     ],
     "developer": "Moca",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4782,7 +4782,7 @@
       "ios"
     ],
     "developer": "Prokids Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5177,7 +5177,7 @@
       "ios"
     ],
     "developer": "Bobodoo Game",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5250,7 +5250,7 @@
       "ios"
     ],
     "developer": "XGame HK",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5861,7 +5861,7 @@
       "ios"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7177,7 +7177,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7430,7 +7430,7 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7573,7 +7573,7 @@
       "ios"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8658,7 +8658,7 @@
       "ios"
     ],
     "developer": "MINIMAX PTE. LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8991,7 +8991,7 @@
       "ios"
     ],
     "developer": "Higgs Gaming",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9007,7 +9007,7 @@
       "ios"
     ],
     "developer": "Wonderful  Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9738,7 +9738,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9834,7 +9834,7 @@
       "android"
     ],
     "developer": "Highbrow",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -10006,7 +10006,7 @@
       "android"
     ],
     "developer": "Taihe Interactive",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11408,7 +11408,7 @@
       "android"
     ],
     "developer": "GRAVITY Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12044,7 +12044,7 @@
       "ios"
     ],
     "developer": "GT Games Korea",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12169,7 +12169,7 @@
       "android"
     ],
     "developer": "Ujoy Games Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12719,7 +12719,7 @@
       "android"
     ],
     "developer": "Ujoy Games Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
