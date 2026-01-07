@@ -252,7 +252,7 @@
       
       <div class="insight-container">
         <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
-<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
+<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
@@ -321,7 +321,7 @@
       </div>
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
+<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
@@ -446,7 +446,7 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
       </div>
     
         <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
+<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:auto" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
@@ -979,6 +979,11 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
   function getFirstAdInMain() {
     var main = document.querySelector('main');
     if (!main) return null;
+    var selector = isMobileView()
+      ? 'ins.adsbygoogle.mobile-only'
+      : 'ins.adsbygoogle.pc-only';
+    var ad = main.querySelector(selector);
+    if (ad) return ad;
     return main.querySelector('ins.adsbygoogle');
   }
 
