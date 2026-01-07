@@ -130,10 +130,10 @@ ins.adsbygoogle iframe {
     width: 100%;
   }
 
-	  /* 모바일 사각형/반응형 */
-	  .ad-slot.mobile-only.ad-slot--rectangle > ins.adsbygoogle {
-	    width: 100%;
-	  }
+  /* 모바일 사각형/반응형 */
+  .ad-slot.mobile-only.ad-slot--rectangle > ins.adsbygoogle {
+    width: 100%;
+  }
 
 	  /* 모바일 no-reserve: 채워진 광고는 실제 높이에 맞춤 */
 	  .ad-slot.mobile-only.ad-slot--rectangle.ad-slot--no-reserve > ins.adsbygoogle[data-ad-status="filled"] {
@@ -148,7 +148,7 @@ ins.adsbygoogle iframe {
 	    max-height: none !important;
 	    height: auto !important;
 	  }
-
+	
 	  /* 모바일 네이티브 인피드 */
 	  .ad-slot.mobile-only.ad-slot--native {
 	    display: block !important;
