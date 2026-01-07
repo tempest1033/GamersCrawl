@@ -223,8 +223,10 @@
     <section class="section active" id="game">
       
       <div class="game-container">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <div class="ad-card">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
         <h1 class="visually-hidden">스네이크 클래시 (Snake Clash) 매출, 모바일 게임 순위, 뉴스</h1>
       <!-- 게임 히어로 -->
       <div class="home-card game-hero">
@@ -541,10 +543,6 @@
     </div>
         </div>
         
-
-	        <!-- 트렌드 리포트 상단 광고 (단일 슬롯) -->
-		        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
@@ -1071,7 +1069,7 @@
   ].join(',');
 
   var REVEAL_DELAY_MS = 150;
-  var FALLBACK_TIMEOUT_MS = 2500;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1178,17 +1176,36 @@
     return !!(ad && (ad.dataset.adStatus === 'filled' || ad.childElementCount > 0));
   }
 
-  function waitForAdFrame(ad) {
+  function isAdReady(ad) {
     if (!ad) return false;
+    // filled 또는 unfilled면 완료
+    if (ad.dataset.adStatus) return true;
+    // iframe 로드 완료면 완료
     var frame = ad.querySelector('iframe');
-    if (!frame) return false;
-    if (frame.__gcLoaded) return true;
-    if (!frame.__gcLoadBound) {
+    if (frame && frame.__gcLoaded) return true;
+    return false;
+  }
+
+  function waitForAd(ad) {
+    if (!ad) return false;
+    if (isAdReady(ad)) return true;
+
+    // iframe load 이벤트 바인딩
+    var frame = ad.querySelector('iframe');
+    if (frame && !frame.__gcLoadBound) {
       frame.__gcLoadBound = true;
       frame.addEventListener('load', function() {
         frame.__gcLoaded = true;
         startReveal();
       }, { once: true });
+    }
+
+    // MutationObserver로 data-ad-status 감지
+    if (!ad.__gcStatusObserver) {
+      ad.__gcStatusObserver = new MutationObserver(function() {
+        if (ad.dataset.adStatus) startReveal();
+      });
+      ad.__gcStatusObserver.observe(ad, { attributes: true, attributeFilter: ['data-ad-status'] });
     }
     return false;
   }
@@ -1196,7 +1213,8 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAdFrame(priorityAd)) setTimeout(checkAds, 120);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 120);
+      else startReveal();
       return;
     }
 
@@ -1206,7 +1224,10 @@
       return;
     }
     for (var i = 0; i < ads.length; i++) {
-      if (waitForAdFrame(ads[i])) return;
+      if (waitForAd(ads[i])) {
+        startReveal();
+        return;
+      }
     }
     setTimeout(checkAds, 120);
   }
@@ -1713,42 +1734,5 @@
 })();
 </script>
   
-<script>
-(function() {
-  function adjustAd(ad) {
-    var iframe = ad.querySelector('iframe');
-    if (iframe && iframe.offsetHeight > 0) {
-      ad.style.height = iframe.offsetHeight + 'px';
-    }
-  }
-
-  function adjustAllAds() {
-    document.querySelectorAll('ins.adsbygoogle').forEach(adjustAd);
-  }
-
-  // 주기적 체크 (3초간 100ms 간격)
-  var count = 0;
-  var interval = setInterval(function() {
-    adjustAllAds();
-    count++;
-    if (count > 30) clearInterval(interval);
-  }, 100);
-
-  // iframe 로드 이벤트 감지
-  document.addEventListener('load', function(e) {
-    if (e.target.tagName === 'IFRAME') {
-      var ad = e.target.closest('ins.adsbygoogle');
-      if (ad) adjustAd(ad);
-    }
-  }, true);
-
-  // 추가 타이밍
-  window.addEventListener('load', function() {
-    setTimeout(adjustAllAds, 500);
-    setTimeout(adjustAllAds, 1500);
-    setTimeout(adjustAllAds, 3000);
-  });
-})();
-</script>
 </body>
 </html>
