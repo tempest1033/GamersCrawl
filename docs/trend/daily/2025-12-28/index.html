@@ -1502,5 +1502,29 @@ PC(스팀)와 모바일(iOS/Android) 동시 지원으로 플랫폼 검증에 초
 })();
 </script>
   
+<script>
+(function() {
+  function adjustAds() {
+    document.querySelectorAll('ins.adsbygoogle').forEach(function(ad) {
+      var iframe = ad.querySelector('iframe');
+      if (iframe && iframe.offsetHeight > 0) {
+        ad.style.height = iframe.offsetHeight + 'px';
+      }
+    });
+  }
+
+  var observer = new MutationObserver(function() {
+    setTimeout(adjustAds, 100);
+  });
+
+  document.querySelectorAll('ins.adsbygoogle').forEach(function(ad) {
+    observer.observe(ad, { childList: true, subtree: true });
+  });
+
+  window.addEventListener('load', function() {
+    setTimeout(adjustAds, 1000);
+  });
+})();
+</script>
 </body>
 </html>
