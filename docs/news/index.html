@@ -482,7 +482,7 @@
             <img src="//img.ruliweb.com/data/news/tn/26/01/07/19b972cabfa_mwhbtg.webp" alt="" loading="lazy" decoding="async" data-img-fallback="hide">
             <div class="news-thumb-fallback"><img src="/favicon.svg" alt="" width="48" height="48"></div>
           </div>
-          <div class="news-grid-card-title">AI로 진화하는 헤드셋, 모토코 & 뉴로테크</div>
+          <div class="news-grid-card-title">AI로 진화 모색하는 헤드셋, 모토코 & 뉴로테크</div>
         </a>
       
         <a class="news-grid-card" href="https://bbs.ruliweb.com/news/read/219930" target="_blank" rel="noopener" data-index="1">
@@ -1220,23 +1220,20 @@
     var frame = ad.querySelector('iframe');
     if (!frame) return false;
     if (frame.__gcLoaded) return true;
-    frame.addEventListener('load', function() {
-      frame.__gcLoaded = true;
-      startReveal();
-    }, { once: true });
+    if (!frame.__gcLoadBound) {
+      frame.__gcLoadBound = true;
+      frame.addEventListener('load', function() {
+        frame.__gcLoaded = true;
+        startReveal();
+      }, { once: true });
+    }
     return false;
   }
 
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (waitForAdFrame(priorityAd)) {
-        startReveal();
-      } else if (isAdFilled(priorityAd)) {
-        startReveal();
-      } else {
-        setTimeout(checkAds, 120);
-      }
+      if (!waitForAdFrame(priorityAd)) setTimeout(checkAds, 120);
       return;
     }
 
@@ -1246,10 +1243,7 @@
       return;
     }
     for (var i = 0; i < ads.length; i++) {
-      if (isAdFilled(ads[i])) {
-        startReveal();
-        return;
-      }
+      if (waitForAdFrame(ads[i])) return;
     }
     setTimeout(checkAds, 120);
   }

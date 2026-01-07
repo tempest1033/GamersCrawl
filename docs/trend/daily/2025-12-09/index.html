@@ -1010,23 +1010,20 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
     var frame = ad.querySelector('iframe');
     if (!frame) return false;
     if (frame.__gcLoaded) return true;
-    frame.addEventListener('load', function() {
-      frame.__gcLoaded = true;
-      startReveal();
-    }, { once: true });
+    if (!frame.__gcLoadBound) {
+      frame.__gcLoadBound = true;
+      frame.addEventListener('load', function() {
+        frame.__gcLoaded = true;
+        startReveal();
+      }, { once: true });
+    }
     return false;
   }
 
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (waitForAdFrame(priorityAd)) {
-        startReveal();
-      } else if (isAdFilled(priorityAd)) {
-        startReveal();
-      } else {
-        setTimeout(checkAds, 120);
-      }
+      if (!waitForAdFrame(priorityAd)) setTimeout(checkAds, 120);
       return;
     }
 
@@ -1036,10 +1033,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
       return;
     }
     for (var i = 0; i < ads.length; i++) {
-      if (isAdFilled(ads[i])) {
-        startReveal();
-        return;
-      }
+      if (waitForAdFrame(ads[i])) return;
     }
     setTimeout(checkAds, 120);
   }
