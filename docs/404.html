@@ -666,13 +666,6 @@
     setTimeout(finalize, REVEAL_DELAY_MS);
   }
 
-  function isMobileView() {
-    if (window.matchMedia) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    return window.innerWidth <= 768;
-  }
-
   function getTopAdIn(containerSelector) {
     var container = document.querySelector(containerSelector);
     if (!container) return null;
@@ -682,24 +675,11 @@
   function getFirstAdInMain() {
     var main = document.querySelector('main');
     if (!main) return null;
-    var selector = isMobileView()
-      ? 'ins.adsbygoogle.mobile-only'
-      : 'ins.adsbygoogle.pc-only';
-    var ad = main.querySelector(selector);
-    if (ad) return ad;
     return main.querySelector('ins.adsbygoogle');
   }
 
   function getPriorityAd() {
-    var isMobile = isMobileView();
-    var topAd = null;
-
-    if (isMobile) {
-      topAd = getTopAdIn('#home-top-ad-mobile');
-    } else {
-      topAd = getTopAdIn('#home-top-ad-pc');
-    }
-
+    var topAd = getTopAdIn('#home-top-ad');
     if (topAd) return topAd;
     return getFirstAdInMain();
   }

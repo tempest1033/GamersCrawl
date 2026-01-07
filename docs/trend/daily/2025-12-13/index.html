@@ -251,12 +251,8 @@
     <section class="section active" id="insight">
       
       <div class="insight-container">
-        <div class="ad-slot ad-slot-section ad-slot--horizontal mobile-only">
-<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:250px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5825162341"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-<ins class="adsbygoogle pc-only" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
+        <div class="ad-slot ad-slot-section ad-slot--horizontal ad-slot--responsive">
+<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">TGA 2025 신작 발표 쏟아져, AI 허위 광고 규제 논의도 주목</h1>
@@ -320,12 +316,8 @@ AI 기반 허위 및 과장 광고 사례와 대응 방안이 공유됐습니다
         </div>
       </div>
     
-        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-<ins class="adsbygoogle pc-only" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
+        <div class="ad-slot ad-slot-section ad-slot--horizontal ad-slot--responsive">
+<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
@@ -445,12 +437,8 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
         </div>
       </div>
     
-        <div class="ad-slot ad-slot-section ad-slot--rectangle mobile-only ad-slot--no-reserve">
-<ins class="adsbygoogle mobile-only" style="display:block;min-width:300px;max-width:728px;width:100%;min-height:200px;max-height:500px;height:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<div class="ad-slot ad-slot-section ad-slot--horizontal pc-only">
-<ins class="adsbygoogle pc-only" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="8458886930"></ins>
+        <div class="ad-slot ad-slot-section ad-slot--horizontal ad-slot--responsive">
+<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
@@ -963,13 +951,6 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
     setTimeout(finalize, REVEAL_DELAY_MS);
   }
 
-  function isMobileView() {
-    if (window.matchMedia) {
-      return window.matchMedia('(max-width: 768px)').matches;
-    }
-    return window.innerWidth <= 768;
-  }
-
   function getTopAdIn(containerSelector) {
     var container = document.querySelector(containerSelector);
     if (!container) return null;
@@ -979,24 +960,11 @@ ARC Raiders와 Path of Exile 2도 18~22만 명대로 올라 파급력을 보여�
   function getFirstAdInMain() {
     var main = document.querySelector('main');
     if (!main) return null;
-    var selector = isMobileView()
-      ? 'ins.adsbygoogle.mobile-only'
-      : 'ins.adsbygoogle.pc-only';
-    var ad = main.querySelector(selector);
-    if (ad) return ad;
     return main.querySelector('ins.adsbygoogle');
   }
 
   function getPriorityAd() {
-    var isMobile = isMobileView();
-    var topAd = null;
-
-    if (isMobile) {
-      topAd = getTopAdIn('#home-top-ad-mobile');
-    } else {
-      topAd = getTopAdIn('#home-top-ad-pc');
-    }
-
+    var topAd = getTopAdIn('#home-top-ad');
     if (topAd) return topAd;
     return getFirstAdInMain();
   }
