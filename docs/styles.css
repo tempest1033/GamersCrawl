@@ -796,23 +796,23 @@
 
 /* ===== 광고 크기 (래퍼 + ins) ===== */
 
-/* 래퍼 크기 (플레이스홀더) */
-.ad-card-mobile { height: 220px; }
-.ad-card-mobile-500 { height: 400px; }
-.ad-card-pc { height: 90px; }
-.ad-card-vertical { width: 300px; height: 600px; }
-.ad-card-rectangle { width: 300px; height: 250px; }
+/* 래퍼 크기 (플레이스홀더) - min-height로 AdSense가 유연하게 채움 */
+.ad-card-mobile-200 { min-height: 200px; max-height: 250px; }
+.ad-card-mobile-400 { min-height: 400px; max-height: 400px; }
+.ad-card-pc { min-height: 90px; }
+.ad-card-vertical { width: 300px; min-height: 600px; }
+.ad-card-rectangle { width: 300px; min-height: 250px; }
 
 @media (min-width: 769px) {
-  .ad-card-mobile { height: 90px; }
+  .ad-card-mobile-200 { min-height: 90px; }
 }
 
-/* ins 크기 */
-.ad-top { width: 100%; min-width: 300px; height: 100%; }
-.ad-mid { width: 100%; min-width: 300px; height: 100%; }
-.ad-pc { width: 100%; height: 100%; }
-.ad-vertical { width: 100%; height: 100%; }
-.ad-rectangle { width: 100%; height: 100%; }
+/* ins 크기 - height 제거로 실제 광고 크기 유지 */
+.ad-top { width: 100%; min-width: 300px; }
+.ad-mid { width: 100%; min-width: 300px; }
+.ad-pc { width: 100%; }
+.ad-vertical { width: 100%; }
+.ad-rectangle { width: 100%; }
 
 /* ===== 광고 카드 (래퍼) ===== */
 
@@ -822,8 +822,15 @@
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
   overflow: hidden;
+  touch-action: pan-y;
+}
+
+/* ins/iframe 스와이프 허용 */
+.ad-card ins,
+.ad-card iframe {
   touch-action: pan-y;
 }
 
