@@ -140,36 +140,6 @@
 	    })();
 	  </script>
 	  
-	  <!-- 광고 컨테이너 자동 리사이즈 -->
-	  <script>
-	    (function() {
-	      function resizeAdCards() {
-	        document.querySelectorAll('.ad-card').forEach(function(card) {
-	          var ins = card.querySelector('ins.adsbygoogle');
-	          if (!ins) return;
-
-	          var observer = new MutationObserver(function() {
-	            if (ins.dataset.adStatus === 'filled') {
-	              var iframe = ins.querySelector('iframe');
-	              if (iframe && iframe.offsetHeight > 0) {
-	                card.style.minHeight = iframe.offsetHeight + 'px';
-	                card.style.maxHeight = iframe.offsetHeight + 'px';
-	              }
-	              observer.disconnect();
-	            }
-	          });
-
-	          observer.observe(ins, { attributes: true, childList: true, subtree: true });
-	        });
-	      }
-
-	      if (document.readyState === 'loading') {
-	        document.addEventListener('DOMContentLoaded', resizeAdCards);
-	      } else {
-	        resizeAdCards();
-	      }
-	    })();
-	  </script>
 </head>
 <body class="page-game">
   
@@ -279,7 +249,7 @@
         <!-- 모바일 게임 순위 카드 -->
         <div class="home-card">
           <div class="home-card-header">
-            <h2 class="home-card-title">미친 타워가 되었다 모바일 게임 순위</h2>
+            <h2 class="home-card-title">모바일 게임 순위</h2>
           </div>
           <div class="home-card-body"><div class="rank-trend-section realtime-rank-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-left"><button class="tab-btn active" data-realtime-cat="grossing">매출</button><button class="tab-btn" data-realtime-cat="free">인기</button></div><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-realtime-view="summary">요약</button><button class="tab-btn disabled" data-realtime-view="realtime" disabled>실시간</button></div></div><div class="trend-legend-row realtime-legend-row is-hidden"><div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" data-region="kr"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" data-region="jp"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" data-region="us"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" data-region="cn"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" data-region="tw"></span>대만</span></div><div class="trend-market-toggle"><button class="market-toggle-btn active" data-market-toggle="ios">iOS</button><button class="market-toggle-btn" data-market-toggle="aos">Android</button></div></div><div class="realtime-content active" data-realtime-cat="grossing" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
           <span class="game-rank-country-flag">🇰🇷</span>
@@ -387,7 +357,7 @@
         <!-- 모바일 게임 순위 히스토리 카드 -->
         <div class="home-card">
           <div class="home-card-header">
-            <h2 class="home-card-title">미친 타워가 되었다 모바일 게임 순위 히스토리</h2>
+            <h2 class="home-card-title">순위 히스토리</h2>
           </div>
           <div class="home-card-body">
       <div class="rank-trend-section mobile-trend-section">
@@ -577,7 +547,7 @@
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
           <div class="home-card-header">
-            <h2 class="home-card-title">미친 타워가 되었다 뉴스</h2>
+            <h2 class="home-card-title">뉴스</h2>
           </div>
           <div class="home-card-body"><div class="gm-container gm-container-wide">
         <div class="gm-tab-row">

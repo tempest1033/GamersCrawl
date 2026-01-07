@@ -139,36 +139,6 @@
 	    })();
 	  </script>
 	  
-	  <!-- 광고 컨테이너 자동 리사이즈 -->
-	  <script>
-	    (function() {
-	      function resizeAdCards() {
-	        document.querySelectorAll('.ad-card').forEach(function(card) {
-	          var ins = card.querySelector('ins.adsbygoogle');
-	          if (!ins) return;
-
-	          var observer = new MutationObserver(function() {
-	            if (ins.dataset.adStatus === 'filled') {
-	              var iframe = ins.querySelector('iframe');
-	              if (iframe && iframe.offsetHeight > 0) {
-	                card.style.minHeight = iframe.offsetHeight + 'px';
-	                card.style.maxHeight = iframe.offsetHeight + 'px';
-	              }
-	              observer.disconnect();
-	            }
-	          });
-
-	          observer.observe(ins, { attributes: true, childList: true, subtree: true });
-	        });
-	      }
-
-	      if (document.readyState === 'loading') {
-	        document.addEventListener('DOMContentLoaded', resizeAdCards);
-	      } else {
-	        resizeAdCards();
-	      }
-	    })();
-	  </script>
 </head>
 <body class="page-game">
   
@@ -278,7 +248,7 @@
         <!-- 모바일 게임 순위 카드 -->
         <div class="home-card">
           <div class="home-card-header">
-            <h2 class="home-card-title">카드캡터 체리: 추억의 열쇠 모바일 게임 순위</h2>
+            <h2 class="home-card-title">모바일 게임 순위</h2>
           </div>
           <div class="home-card-body"><div class="game-empty">현재 순위 데이터가 없습니다</div></div>
         </div>
@@ -286,7 +256,7 @@
         <!-- 모바일 게임 순위 히스토리 카드 -->
         <div class="home-card">
           <div class="home-card-header">
-            <h2 class="home-card-title">카드캡터 체리: 추억의 열쇠 모바일 게임 순위 히스토리</h2>
+            <h2 class="home-card-title">순위 히스토리</h2>
           </div>
           <div class="home-card-body">
       <div class="rank-trend-section mobile-trend-section">
@@ -476,7 +446,7 @@
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
           <div class="home-card-header">
-            <h2 class="home-card-title">카드캡터 체리: 추억의 열쇠 뉴스</h2>
+            <h2 class="home-card-title">뉴스</h2>
           </div>
           <div class="home-card-body">
       <div class="gm-container gm-container-wide" data-all-count="2" data-weekly-count="2" data-monthly-count="2">

@@ -140,36 +140,6 @@
 	    })();
 	  </script>
 	  
-	  <!-- 광고 컨테이너 자동 리사이즈 -->
-	  <script>
-	    (function() {
-	      function resizeAdCards() {
-	        document.querySelectorAll('.ad-card').forEach(function(card) {
-	          var ins = card.querySelector('ins.adsbygoogle');
-	          if (!ins) return;
-
-	          var observer = new MutationObserver(function() {
-	            if (ins.dataset.adStatus === 'filled') {
-	              var iframe = ins.querySelector('iframe');
-	              if (iframe && iframe.offsetHeight > 0) {
-	                card.style.minHeight = iframe.offsetHeight + 'px';
-	                card.style.maxHeight = iframe.offsetHeight + 'px';
-	              }
-	              observer.disconnect();
-	            }
-	          });
-
-	          observer.observe(ins, { attributes: true, childList: true, subtree: true });
-	        });
-	      }
-
-	      if (document.readyState === 'loading') {
-	        document.addEventListener('DOMContentLoaded', resizeAdCards);
-	      } else {
-	        resizeAdCards();
-	      }
-	    })();
-	  </script>
 </head>
 <body class="page-game">
   
@@ -301,7 +271,7 @@
         <!-- 스팀 게임 순위 히스토리 -->
         <div class="home-card">
           <div class="home-card-header">
-            <h2 class="home-card-title">Tom Clancy's Rainbow Six® Siege X 스팀 게임 순위 히스토리</h2>
+            <h2 class="home-card-title">스팀 순위 히스토리</h2>
           </div>
           <div class="home-card-body"><div class="rank-trend-section steam-sales-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-trend-period="daily">일</button><button class="tab-btn" data-trend-period="weekly">주</button><button class="tab-btn" data-trend-period="monthly">월</button></div></div><div class="trend-charts"><div class="trend-content active" data-period="daily"><svg viewBox="0 0 400 200" class="game-chart-svg"><line x1="18" y1="6" x2="396" y2="6" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="10" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">13</text><line x1="18" y1="51.02325581395349" x2="396" y2="51.02325581395349" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="55.02325581395349" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">35</text><line x1="18" y1="96.04651162790698" x2="396" y2="96.04651162790698" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="100.04651162790698" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">57</text><line x1="18" y1="141.06976744186048" x2="396" y2="141.06976744186048" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="145.06976744186048" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">79</text><line x1="18" y1="186.09302325581396" x2="396" y2="186.09302325581396" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="190.09302325581396" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">101</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">03</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">04</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">09</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">07</text><path d="M34,26.46511627906977 L149.33333333333331,32.604651162790695 L264.66666666666663,73.53488372093024 L380,161.53488372093022" fill="none" stroke="#3B82F6" stroke-width="2"/><circle cx="34" cy="26.46511627906977" r="4" fill="#3B82F6"/><circle cx="149.33333333333331" cy="32.604651162790695" r="4" fill="#3B82F6"/><circle cx="264.66666666666663" cy="73.53488372093024" r="4" fill="#3B82F6"/><circle cx="380" cy="161.53488372093022" r="4" fill="#3B82F6"/><text x="34" y="18.46511627906977" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">23</text><text x="149.33333333333331" y="24.604651162790695" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">26</text><text x="264.66666666666663" y="65.53488372093024" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">46</text><text x="380" y="153.53488372093022" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">89</text></svg></div><div class="trend-content" data-period="weekly"><svg viewBox="0 0 400 200" class="game-chart-svg"><line x1="18" y1="6" x2="396" y2="6" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="10" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">13</text><line x1="18" y1="51.02325581395349" x2="396" y2="51.02325581395349" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="55.02325581395349" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">35</text><line x1="18" y1="96.04651162790698" x2="396" y2="96.04651162790698" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="100.04651162790698" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">57</text><line x1="18" y1="141.06976744186048" x2="396" y2="141.06976744186048" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="145.06976744186048" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">79</text><line x1="18" y1="186.09302325581396" x2="396" y2="186.09302325581396" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="190.09302325581396" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">101</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">04</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">11</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">08</text><path d="M34,26.46511627906977 L207,73.53488372093024 L380,161.53488372093022" fill="none" stroke="#3B82F6" stroke-width="2"/><circle cx="34" cy="26.46511627906977" r="4" fill="#3B82F6"/><circle cx="207" cy="73.53488372093024" r="4" fill="#3B82F6"/><circle cx="380" cy="161.53488372093022" r="4" fill="#3B82F6"/><text x="34" y="18.46511627906977" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">23</text><text x="207" y="65.53488372093024" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">46</text><text x="380" y="153.53488372093022" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">89</text></svg></div><div class="trend-content" data-period="monthly"><svg viewBox="0 0 400 200" class="game-chart-svg"><line x1="18" y1="6" x2="396" y2="6" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="10" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">13</text><line x1="18" y1="51.02325581395349" x2="396" y2="51.02325581395349" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="55.02325581395349" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">35</text><line x1="18" y1="96.04651162790698" x2="396" y2="96.04651162790698" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="100.04651162790698" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">57</text><line x1="18" y1="141.06976744186048" x2="396" y2="141.06976744186048" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="145.06976744186048" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">79</text><line x1="18" y1="186.09302325581396" x2="396" y2="186.09302325581396" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="190.09302325581396" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">101</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">31</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">31</text><path d="M34,26.46511627906977 L380,161.53488372093022" fill="none" stroke="#3B82F6" stroke-width="2"/><circle cx="34" cy="26.46511627906977" r="4" fill="#3B82F6"/><circle cx="380" cy="161.53488372093022" r="4" fill="#3B82F6"/><text x="34" y="18.46511627906977" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">23</text><text x="380" y="153.53488372093022" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">89</text></svg></div></div></div><script>(function(){var s=document.querySelector(".steam-sales-section");if(!s)return;var ap="daily";s.querySelectorAll("[data-trend-period]").forEach(function(b){b.addEventListener("click",function(){s.querySelectorAll("[data-trend-period]").forEach(function(x){x.classList.remove("active")});b.classList.add("active");ap=b.dataset.trendPeriod;s.querySelectorAll(".trend-content").forEach(function(c){c.classList.toggle("active",c.dataset.period===ap)});});});})();</script></div>
         </div>
@@ -310,7 +280,7 @@
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
           <div class="home-card-header">
-            <h2 class="home-card-title">Tom Clancy's Rainbow Six® Siege X 뉴스</h2>
+            <h2 class="home-card-title">뉴스</h2>
           </div>
           <div class="home-card-body"><div class="gm-container gm-container-wide">
         <div class="gm-tab-row">

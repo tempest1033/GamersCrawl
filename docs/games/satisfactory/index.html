@@ -140,36 +140,6 @@
 	    })();
 	  </script>
 	  
-	  <!-- 광고 컨테이너 자동 리사이즈 -->
-	  <script>
-	    (function() {
-	      function resizeAdCards() {
-	        document.querySelectorAll('.ad-card').forEach(function(card) {
-	          var ins = card.querySelector('ins.adsbygoogle');
-	          if (!ins) return;
-
-	          var observer = new MutationObserver(function() {
-	            if (ins.dataset.adStatus === 'filled') {
-	              var iframe = ins.querySelector('iframe');
-	              if (iframe && iframe.offsetHeight > 0) {
-	                card.style.minHeight = iframe.offsetHeight + 'px';
-	                card.style.maxHeight = iframe.offsetHeight + 'px';
-	              }
-	              observer.disconnect();
-	            }
-	          });
-
-	          observer.observe(ins, { attributes: true, childList: true, subtree: true });
-	        });
-	      }
-
-	      if (document.readyState === 'loading') {
-	        document.addEventListener('DOMContentLoaded', resizeAdCards);
-	      } else {
-	        resizeAdCards();
-	      }
-	    })();
-	  </script>
 </head>
 <body class="page-game">
   
@@ -301,7 +271,7 @@
         <!-- 스팀 게임 순위 히스토리 -->
         <div class="home-card">
           <div class="home-card-header">
-            <h2 class="home-card-title">Satisfactory 스팀 게임 순위 히스토리</h2>
+            <h2 class="home-card-title">스팀 순위 히스토리</h2>
           </div>
           <div class="home-card-body"><div class="rank-trend-section steam-sales-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-trend-period="daily">일</button><button class="tab-btn" data-trend-period="weekly">주</button><button class="tab-btn" data-trend-period="monthly">월</button></div></div><div class="trend-charts"><div class="trend-content active" data-period="daily"><svg viewBox="0 0 400 200" class="game-chart-svg"><line x1="18" y1="6" x2="396" y2="6" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="10" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">26</text><line x1="18" y1="50.698412698412696" x2="396" y2="50.698412698412696" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="54.698412698412696" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">42</text><line x1="18" y1="95.39682539682539" x2="396" y2="95.39682539682539" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="99.39682539682539" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">58</text><line x1="18" y1="140.09523809523807" x2="396" y2="140.09523809523807" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="144.09523809523807" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">74</text><line x1="18" y1="184.79365079365078" x2="396" y2="184.79365079365078" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="188.79365079365078" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">90</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">05</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">06</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">07</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">08</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">09</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">04</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">06</text><path d="M34,28.349206349206348 L91.66666666666666,31.142857142857142 L149.33333333333331,56.285714285714285 L207,36.73015873015873 L264.66666666666663,64.66666666666666 L322.33333333333337,123.33333333333333 L380,159.65079365079364" fill="none" stroke="#3B82F6" stroke-width="2"/><circle cx="34" cy="28.349206349206348" r="4" fill="#3B82F6"/><circle cx="91.66666666666666" cy="31.142857142857142" r="4" fill="#3B82F6"/><circle cx="149.33333333333331" cy="56.285714285714285" r="4" fill="#3B82F6"/><circle cx="207" cy="36.73015873015873" r="4" fill="#3B82F6"/><circle cx="264.66666666666663" cy="64.66666666666666" r="4" fill="#3B82F6"/><circle cx="322.33333333333337" cy="123.33333333333333" r="4" fill="#3B82F6"/><circle cx="380" cy="159.65079365079364" r="4" fill="#3B82F6"/><text x="34" y="20.349206349206348" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">34</text><text x="91.66666666666666" y="23.142857142857142" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">35</text><text x="149.33333333333331" y="48.285714285714285" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">44</text><text x="207" y="28.730158730158728" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">37</text><text x="264.66666666666663" y="56.66666666666666" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">47</text><text x="322.33333333333337" y="115.33333333333333" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">68</text><text x="380" y="151.65079365079364" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">81</text></svg></div><div class="trend-content" data-period="weekly"><svg viewBox="0 0 400 200" class="game-chart-svg"><line x1="18" y1="6" x2="396" y2="6" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="10" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">28</text><line x1="18" y1="51.91304347826087" x2="396" y2="51.91304347826087" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="55.91304347826087" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">40</text><line x1="18" y1="97.82608695652173" x2="396" y2="97.82608695652173" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="101.82608695652173" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">52</text><line x1="18" y1="143.73913043478262" x2="396" y2="143.73913043478262" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="147.73913043478262" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">64</text><line x1="18" y1="189.65217391304347" x2="396" y2="189.65217391304347" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="193.65217391304347" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">76</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">04</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">11</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">08</text><path d="M34,86.34782608695652 L207,28.956521739130434 L380,159.04347826086956" fill="none" stroke="#3B82F6" stroke-width="2"/><circle cx="34" cy="86.34782608695652" r="4" fill="#3B82F6"/><circle cx="207" cy="28.956521739130434" r="4" fill="#3B82F6"/><circle cx="380" cy="159.04347826086956" r="4" fill="#3B82F6"/><text x="34" y="78.34782608695652" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">49</text><text x="207" y="20.956521739130434" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">34</text><text x="380" y="151.04347826086956" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">68</text></svg></div><div class="trend-content" data-period="monthly"><svg viewBox="0 0 400 200" class="game-chart-svg"><line x1="18" y1="6" x2="396" y2="6" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="10" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">28</text><line x1="18" y1="51.91304347826087" x2="396" y2="51.91304347826087" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="55.91304347826087" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">40</text><line x1="18" y1="97.82608695652173" x2="396" y2="97.82608695652173" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="101.82608695652173" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">52</text><line x1="18" y1="143.73913043478262" x2="396" y2="143.73913043478262" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="147.73913043478262" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">64</text><line x1="18" y1="189.65217391304347" x2="396" y2="189.65217391304347" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2,2"/><text x="14" y="193.65217391304347" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="end">76</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">31</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">31</text><path d="M34,28.956521739130434 L380,159.04347826086956" fill="none" stroke="#3B82F6" stroke-width="2"/><circle cx="34" cy="28.956521739130434" r="4" fill="#3B82F6"/><circle cx="380" cy="159.04347826086956" r="4" fill="#3B82F6"/><text x="34" y="20.956521739130434" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">34</text><text x="380" y="151.04347826086956" fill="#3B82F6" font-size="12" text-anchor="middle" font-weight="600">68</text></svg></div></div></div><script>(function(){var s=document.querySelector(".steam-sales-section");if(!s)return;var ap="daily";s.querySelectorAll("[data-trend-period]").forEach(function(b){b.addEventListener("click",function(){s.querySelectorAll("[data-trend-period]").forEach(function(x){x.classList.remove("active")});b.classList.add("active");ap=b.dataset.trendPeriod;s.querySelectorAll(".trend-content").forEach(function(c){c.classList.toggle("active",c.dataset.period===ap)});});});})();</script></div>
         </div>
@@ -310,7 +280,7 @@
         <!-- 뉴스 (풀 너비 2그리드) -->
         <div class="home-card home-card-full">
           <div class="home-card-header">
-            <h2 class="home-card-title">Satisfactory 뉴스</h2>
+            <h2 class="home-card-title">뉴스</h2>
           </div>
           <div class="home-card-body"><div class="gm-container gm-container-wide">
         <div class="gm-tab-row">
