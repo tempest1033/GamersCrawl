@@ -1,61 +1,12 @@
-{
-  "pending": [
-    {
-      "title": "건틀렛: 방치형 액션 RPG",
-      "status": "matched",
-      "appIds": {
-        "ios": "6748525811",
-        "android": "net.gameduo.gv",
-        "android:kr": "com.metaboneent.gauntletrpg",
-        "ios:kr": "6446516059"
-      },
-      "developer": "Game Duo Co.,Ltd.",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "건틀렛: 방치형 액션 RPG",
-          "appId": "com.metaboneent.gauntletrpg"
-        },
-        {
-          "title": "다크타워:전략 배틀 RPG",
-          "appId": "6748525811"
-        }
-      ],
-      "addedAt": "2026-01-08T11:14:48.548Z"
-    },
-    {
-      "title": "스킨케어 타임: 메이크오버 ASMR",
-      "status": "matched",
-      "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
-        "ios": 6738948332
-      },
-      "developer": "FALCON GAME",
-      "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
-      "searchResults": [
-        {
-          "title": "스킨케어 타임: 메이크오버 ASMR",
-          "appId": 6738948332
-        },
-        {
-          "title": "Makeup ASMR: Makeover Story",
-          "appId": 6465175605
-        },
-        {
-          "title": "SatisCare: 깔끔한 ASMR 게임",
-          "appId": 6742741718
-        }
-      ],
-      "addedAt": "2026-01-08T11:15:12.905Z"
-    }
-  ],
+﻿{
+  "pending": [],
   "approved": [
     {
       "title": "드래곤 엠파이어 : 전략 매니지먼트",
       "status": "matched",
       "appIds": {
         "android": "com.ndreamgames.wod",
-        "ios": 6450436248
+        "ios": "6450436248"
       },
       "developer": "NDREAM Corporation",
       "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
@@ -66,10 +17,8 @@
       "title": "건틀렛: 방치형 액션 RPG",
       "status": "matched",
       "appIds": {
-        "ios": "6748525811",
-        "android": "com.webzen.muidle.google",
-        "android:kr": "com.metaboneent.gauntletrpg",
-        "ios:kr": "6446516059"
+        "ios": "6476731203",
+        "android": "com.metaboneent.gauntletrpg"
       },
       "developer": "Game Duo Co.,Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
@@ -87,14 +36,15 @@
           "appId": "com.a1gamesstudio.berserker"
         }
       ],
-      "addedAt": "2025-12-22T09:40:15.251Z"
+      "addedAt": "2025-12-22T09:40:15.251Z",
+      "approvedAt": "2026-01-08T10:46:09.199Z"
     },
     {
       "title": "에보니 - 왕의 귀환",
       "status": "matched",
       "appIds": {
         "android": "com.topgamesinc.evony",
-        "ios": 1098157959
+        "ios": "1098157959"
       },
       "developer": "TG Inc.",
       "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
@@ -119,7 +69,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.sundaytoz.kakao.wbb",
-        "ios": 1311102174
+        "ios": "1311102174"
       },
       "developer": "Wemade Play Co.,Ltd.",
       "icon": "https://play-lh.googleusercontent.com/L0j49yfNguTY_Xf5-xKRRrGdZZ15N-x8Lr5-xqb_ave67W2xUy1wIO9xClI4ivPhf6s",
@@ -144,7 +94,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.zlongame.kr.langrisser",
-        "ios": 1450127722
+        "ios": "1450127722"
       },
       "developer": "ZlongGames",
       "icon": "https://play-lh.googleusercontent.com/7MrJ1kVcJab9YnzZ5vOrFNQrhfQPBdBLLZ5qL9c9QyU5CfkS5vttITIfZcwmXwlJ00Jf2cpJLxPLvsOjceC7dw",
@@ -235,8 +185,8 @@
       "title": "스킨케어 타임: 메이크오버 ASMR",
       "status": "matched",
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
-        "ios": 6738948332
+        "android": "com.whoyaho.tanghulu",
+        "ios": "6738948332"
       },
       "developer": "FALCON GAME",
       "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
@@ -254,14 +204,15 @@
           "appId": 6742741718
         }
       ],
-      "addedAt": "2025-12-22T09:40:30.045Z"
+      "addedAt": "2025-12-22T09:40:30.045Z",
+      "approvedAt": "2026-01-08T10:46:09.200Z"
     },
     {
       "title": "뉴포리아: 서바이벌",
       "status": "matched",
       "appIds": {
         "android": "com.Eclipse.Neuphoria",
-        "ios": 6444274471
+        "ios": "6444274471"
       },
       "developer": "AIMED",
       "icon": "https://play-lh.googleusercontent.com/3b8UjwQWEKtOkO9FbxOnMmUWm2jrhlkUEL5twAuTCEp2m0QpXl6rvw4jpAC6G92cMwt_cJBn_NVLDCHnMAlFOQ",
@@ -278,7 +229,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.bravestars.savethedog.drawgame",
-        "ios": 6449223149
+        "ios": "6449223149"
       },
       "developer": "Bravestars Games",
       "icon": "https://play-lh.googleusercontent.com/tTRf-6_Zz2vtbjOH-1un0oS6O7vY7KNOqPZJx2bFKYXrswM6q7G-B4tPABIp5EZY3JI",
@@ -303,7 +254,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.kayac.DrawFight",
-        "ios": 6444147536
+        "ios": "6444147536"
       },
       "developer": "KAYAC Inc.",
       "icon": "https://play-lh.googleusercontent.com/y_NvzzYOl_sdsiRkE9hucNkO5GLTfBnnntZfPceHlqcCv6N-SzjVdAR9ROEmSxTGRPs",
@@ -503,7 +454,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.playwith.DF2.AOS",
-        "ios": 6740305005
+        "ios": "6740305005"
       },
       "developer": "PlaywithKorea Inc.",
       "icon": "https://play-lh.googleusercontent.com/CFv9DjtAttZp1PB4Uy4T-sEM7vQvwt4X2EErVXX-kg5sqIHrb5AB_gKiQ1tFvFF8XlrVjvz3xFz_CJGeIKqa",
@@ -528,7 +479,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.TwinCrab.Motorpolia",
-        "ios": 1590353335
+        "ios": "1590353335"
       },
       "developer": "CASUAL AZUR GAMES",
       "icon": "https://play-lh.googleusercontent.com/-TSJthRTGWUi3S-gSvpkAkeJTLWvFp8n4had4iON78KGU7Zo_iMVVn3qHvPlOPB6o-A",
@@ -545,7 +496,7 @@
       "status": "matched",
       "appIds": {
         "android": "games.rivvy.eternalherorpg",
-        "ios": 6503089848
+        "ios": "6503089848"
       },
       "developer": "Rivvy Games",
       "icon": "https://play-lh.googleusercontent.com/iHlDnj1VTFXvs6EJXRcujBdmfMYGfM46wy8f4Jn0i1EvqR8r-u-DE0UYip_96x1anKlvDTLoDb9Xm_R4H--ZRg",
@@ -570,7 +521,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.gamerepublickor.google.gdsm",
-        "ios": 6751273403,
+        "ios": "6751273403",
         "android:kr": "com.netmarble.kofafk"
       },
       "developer": "Netmarble",
@@ -714,7 +665,7 @@
       "status": "matched",
       "appIds": {
         "android": "kr.aos.com.aprogen.dragonrajaorigin",
-        "ios": 1564210479
+        "ios": "1564210479"
       },
       "developer": "빌리온게임즈",
       "icon": "https://play-lh.googleusercontent.com/Cbc3y5_93On25T75tjT3MgszhCSscE_-C2RX6cCMmdy4Ka7qwYpC2f3N6hdONkcXHw",
@@ -789,7 +740,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.nlabsoft.zombiecrusher.s",
-        "ios": 6747713523
+        "ios": "6747713523"
       },
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/xKFSTVLubj4qJgCO4O-kU_GzItivBAKUHcQODgW1fparc7RQ_QbIY2-alPtUWv_4aQ",
@@ -814,7 +765,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.playvalve.mahjong.triple",
-        "ios": 6744312872
+        "ios": "6744312872"
       },
       "developer": "Playvalve",
       "icon": "https://play-lh.googleusercontent.com/jSwD3gBRCY0F2rZfE4Lk3nGr5P76PIKoDPGqcxkOAfuZHMkEXt1qVSAYHcGUcUsJ1vRQ",
@@ -839,7 +790,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.easybrain.nonogram",
-        "ios": 6504728167
+        "ios": "6504728167"
       },
       "developer": "Easybrain",
       "icon": "https://play-lh.googleusercontent.com/hkT49tQvIp2WBwLlricTSrg-0Xm8Tv4Al0SwKNXt048BaatQZOmEJY4S-TNUbfZWNAdb",
@@ -931,7 +882,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.storytaco.p32client2",
-        "ios": 6480382557
+        "ios": "6480382557"
       },
       "developer": "StoryTaco.Inc",
       "icon": "https://play-lh.googleusercontent.com/FVkg-gkTidXwpQp33UCoegD1l4L0IFfAXudoUWFmax8Lq6ySBx0A0xtmDGXxRY3kRKeL39_fIep7vMWljvHEZQ",
@@ -952,7 +903,7 @@
       "status": "matched",
       "appIds": {
         "android": "net.peakgames.match",
-        "ios": 6449094229
+        "ios": "6449094229"
       },
       "developer": "Peak",
       "icon": "https://play-lh.googleusercontent.com/JdkgreDBCOxt7_0eeiVgbwtQkkdWmlWMO9cwAyj6rfVcAM5Z9l99zbg4eoUac5C0Bw",
@@ -1052,7 +1003,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.mojang.minecraftpe",
-        "ios": 479516143
+        "ios": "479516143"
       },
       "developer": "Mojang",
       "icon": "https://play-lh.googleusercontent.com/DJexP6PO8dL06XvNrjG7plb7SW_SaxuNamO80ab512JA71lBEBUnaJCaZzlqWVrrlEiG",
@@ -1062,14 +1013,15 @@
           "appId": 479516143
         }
       ],
-      "addedAt": "2025-12-27T00:46:31.426Z"
+      "addedAt": "2025-12-27T00:46:31.426Z",
+      "approvedAt": "2026-01-08T10:46:09.199Z"
     },
     {
       "title": "듀엣 나이트 어비스",
       "status": "matched",
       "appIds": {
         "android": "com.panstudio.gplay.duetnightabyss.arpg.global",
-        "ios": 6744096826
+        "ios": "6744096826"
       },
       "developer": "Hong Kong Spiral Rising Technology Co., Limited",
       "icon": "https://play-lh.googleusercontent.com/JynqYikH08XZ7XgRUzobGY2fIP8T3JwdqseP_y93B7acIy5VSFAHWaRVz-ACFTQACPjJJdmh9fVkJacYwWeNbQ",
@@ -1090,7 +1042,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.igg.android.fatewar",
-        "ios": 6737294814
+        "ios": "6737294814"
       },
       "developer": "IGG.COM",
       "icon": "https://play-lh.googleusercontent.com/LzScvHGRIUDY1RXfEdkIFWxcLSmBGpDhzWx1kaGATpxojRuk5Q0kD97xzo3wLWnA",
@@ -1115,7 +1067,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.BluePotionCompany.EosBlack",
-        "ios": 6463600523
+        "ios": "6463600523"
       },
       "developer": "BluePotion Games",
       "icon": "https://play-lh.googleusercontent.com/BlUH29X45WRImdgOAVl9O2qGezDaWn5_VKEr2R7TRgigtid3AIgcfYbLtoZAMlHHhrw",
@@ -1186,7 +1138,7 @@
       "status": "matched",
       "appIds": {
         "android": "tokyo.chickenskin.yokai",
-        "ios": 6746295219
+        "ios": "6746295219"
       },
       "developer": "CHICKEN SKIN LLC",
       "icon": "https://play-lh.googleusercontent.com/7NlTwDOtVYbamTAInaBQGUjmjXc5QWpvKdAJyocilb6b205RHIpzdD53pbZtrr2cDCwRmrJP4qHvLjDHOCZ35w",
@@ -1196,14 +1148,15 @@
           "appId": 6746295219
         }
       ],
-      "addedAt": "2025-12-27T00:46:48.869Z"
+      "addedAt": "2025-12-27T00:46:48.869Z",
+      "approvedAt": "2026-01-08T10:46:09.200Z"
     },
     {
       "title": "Battle Bag: War Zone",
       "status": "matched",
       "appIds": {
         "android": "com.brewgames.battlebagwarzone",
-        "ios": 6746075769
+        "ios": "6746075769"
       },
       "developer": "VOODOO",
       "icon": "https://play-lh.googleusercontent.com/lCAB4fA3-2A-7qK-Ja0XYq9lkzlz_0gxTN_i4dcFaLG1JdV8ZuwqSs70BEvFKSBZuJrWZg3QExsWz_DPj3FL3To",
@@ -1228,7 +1181,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.belkagames.ds",
-        "ios": 6749456493
+        "ios": "6749456493"
       },
       "developer": "BELKA GAMES",
       "icon": "https://play-lh.googleusercontent.com/9f_R10NUsL336bwz1szQ8eE_IYDkSNG-FMKFemPw2m23B5fUCVqv2Zpd8vC3-Pn7iRVjUkRcFcNRIcAlKCqwLQ",
@@ -1305,7 +1258,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.europosit.pixelcoloring",
-        "ios": 1274972321
+        "ios": "1274972321"
       },
       "developer": "Easybrain",
       "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
@@ -1339,7 +1292,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.Garawell.BridgeRace",
-        "ios": 1543845882
+        "ios": "1543845882"
       },
       "developer": "Supersonic Studios LTD",
       "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
@@ -1407,7 +1360,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.ultimatelavashgames.rollthehole",
-        "ios": 6752290993
+        "ios": "6752290993"
       },
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
@@ -1433,7 +1386,7 @@
       "status": "matched",
       "appIds": {
         "android": "water.sort.puzzle.game.color.sorting.free",
-        "ios": 1597897013
+        "ios": "1597897013"
       },
       "developer": "Guru Puzzle Game",
       "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
@@ -1501,7 +1454,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.oakever.coloraura",
-        "ios": 6451237392
+        "ios": "6451237392"
       },
       "developer": "Oakever Games",
       "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
@@ -1527,7 +1480,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.game.people.connector",
-        "ios": 6745692355
+        "ios": "6745692355"
       },
       "developer": "Rooftop Game",
       "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
@@ -1561,7 +1514,7 @@
       "status": "matched",
       "appIds": {
         "android": "com.CrazyGames.SpaceWaves",
-        "ios": 6748645552
+        "ios": "6748645552"
       },
       "developer": "CrazyGames.com",
       "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
@@ -1595,30 +1548,12 @@
       "status": "matched",
       "appIds": {
         "android": "com.finetosurvive.master",
-        "ios": 6755469510
+        "ios": "6755469510"
       },
       "developer": "SayGames Ltd",
       "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
       "searchResults": [],
       "addedAt": "2025-12-27T00:46:57.229Z"
-    },
-    {
-      "title": "건틀렛: 방치형 액션 RPG",
-      "appIds": {
-        "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
-        "android:kr": "com.metaboneent.gauntletrpg",
-        "ios:kr": "6446516059"
-      },
-      "approvedAt": "2026-01-08T10:46:09.199Z"
-    },
-    {
-      "title": "Minecraft 체험판",
-      "appIds": {
-        "android": "com.mojang.minecraftpe",
-        "ios": 479516143
-      },
-      "approvedAt": "2026-01-08T10:46:09.199Z"
     },
     {
       "title": "디펜덕: 머지 디펜스",
@@ -1632,7 +1567,8 @@
       "title": "Wizardry Variants Daphne",
       "appIds": {
         "android": "jp.co.drecom.wizardry.daphne",
-        "ios": 1663423521
+        "ios": "1663423521",
+        "steam": "2379740"
       },
       "approvedAt": "2026-01-08T10:46:09.199Z"
     },
@@ -1672,7 +1608,7 @@
       "title": "Move People",
       "appIds": {
         "android": "com.paurau.MakeHer",
-        "ios": 1581537053
+        "ios": "1581537053"
       },
       "approvedAt": "2026-01-08T10:46:09.199Z"
     },
@@ -1680,7 +1616,7 @@
       "title": "Build A Queen",
       "appIds": {
         "android": "com.Polystation.BuildABabe",
-        "ios": 1660583025
+        "ios": "1660583025"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1720,7 +1656,7 @@
       "title": "Card Queen: Duel",
       "appIds": {
         "android": "com.card.battle.queen.duel.pretty",
-        "ios": 6755225967
+        "ios": "6755225967"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1768,7 +1704,7 @@
       "title": "용구탄생의비밀",
       "appIds": {
         "android": "com.iug.yonggu",
-        "ios": 1581565882
+        "ios": "1581565882"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1776,7 +1712,7 @@
       "title": "XP Hero (XP 히어로)",
       "appIds": {
         "android": "io.supercent.weaponrpg",
-        "ios": 6740618570
+        "ios": "6740618570"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1784,7 +1720,7 @@
       "title": "Associations - Colorwood 게임",
       "appIds": {
         "android": "games.burny.associations.word.puzzle",
-        "ios": 6749696890
+        "ios": "6749696890"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1801,7 +1737,7 @@
       "appIds": {
         "steam": "2584990",
         "android": "jp.co.cygames.ShadowverseWorldsBeyond",
-        "ios": 6472019540
+        "ios": "6472019540"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1809,7 +1745,7 @@
       "title": "THE 라그나로크",
       "appIds": {
         "android": "com.gravity.tr.google",
-        "ios": 6504503612
+        "ios": "6504503612"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1833,7 +1769,7 @@
       "title": "Paper Fold : 논리 게임",
       "appIds": {
         "android": "com.game.foldpuzzle",
-        "ios": 1558177980
+        "ios": "1558177980"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1841,7 +1777,7 @@
       "title": "Mob Control",
       "appIds": {
         "android": "com.vincentb.MobControl",
-        "ios": 1562817072
+        "ios": "1562817072"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1862,18 +1798,10 @@
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
     {
-      "title": "요괴 여친:요괴는 너를 사랑해",
-      "appIds": {
-        "android": "tokyo.chickenskin.yokai",
-        "ios": "6746295219"
-      },
-      "approvedAt": "2026-01-08T10:46:09.200Z"
-    },
-    {
       "title": "배구소녀 : 고등학교 배구 스토리",
       "appIds": {
         "android": "com.daerigame.volleygirls",
-        "ios": 6737681316
+        "ios": "6737681316"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1881,7 +1809,7 @@
       "title": "DIY Phone Case Maker",
       "appIds": {
         "android": "casual.phonecase.diy.maker",
-        "ios": 6478762495
+        "ios": "6478762495"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1905,15 +1833,7 @@
       "title": "Walk King - Race on Stairs",
       "appIds": {
         "android": "com.walk.king.race.on.stairs",
-        "ios": 6738349199
-      },
-      "approvedAt": "2026-01-08T10:46:09.200Z"
-    },
-    {
-      "title": "스킨케어 타임: 메이크오버 ASMR",
-      "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
-        "ios": 6738948332
+        "ios": "6738349199"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1921,7 +1841,7 @@
       "title": "Ragdoll Blade",
       "appIds": {
         "android": "games.tatsumaki.ragdollblade",
-        "ios": 6741186588
+        "ios": "6741186588"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1937,7 +1857,7 @@
       "title": "Survival Shelter",
       "appIds": {
         "android": "com.fattoy.shelter",
-        "ios": 6742174757
+        "ios": "6742174757"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1961,7 +1881,7 @@
       "title": "헬로 타운 : 신입사원 머지 성공 스토리",
       "appIds": {
         "android": "com.spcomes.hellotown",
-        "ios": 6737850281
+        "ios": "6737850281"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1985,7 +1905,7 @@
       "title": "해피 시티즌",
       "appIds": {
         "android": "com.kiwigames.happycitizen.gp",
-        "ios": 6745251520
+        "ios": "6745251520"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
@@ -1993,197 +1913,304 @@
       "title": "Sand Loop",
       "appIds": {
         "android": "com.pc.sand.loop",
-        "ios": 6754363534
+        "ios": "6754363534"
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
     },
     {
       "title": "ONE PIECE TREASURE CRUISE",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "943690848",
+        "android": "com.namcobandaigames.spmoja010E"
+      }
     },
     {
       "title": "ONE PIECE TREASURE CRUISE-RPG",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.namcobandaigames.spmoja010E"
+      }
     },
     {
       "title": "Brain Out -Tricky riddle games",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "1477841973"
+      }
     },
     {
       "title": "Brain Out®: 넌센스 마스터, 두뇌 트레이닝",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.mind.quiz.brain.out"
+      }
     },
     {
       "title": "Braindom: Brain Games Test Out",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "1513009813"
+      }
     },
     {
       "title": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.braindom"
+      }
     },
     {
       "title": "I Am Monkey",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
-    },
-    {
-      "title": "I Am Monkey - original game",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.NewFolderGames.IAmMonkey",
+        "ios": "6752769771"
+      }
     },
     {
       "title": "Age of Origins:Tower Defense",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "1376515087"
+      }
     },
     {
       "title": "에이지 오브 제트: 타워 디펜스",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.camelgames.aoz"
+      }
     },
     {
       "title": "Save the Doge",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.miracle.savethedoge.an"
+      }
     },
     {
       "title": "Woodturning 3D",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "1492451796"
+      }
     },
     {
       "title": "Hero Wars: Alliance",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.nexters.herowars"
+      }
     },
     {
       "title": "Shuriken Cut",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.Kayac.ShurikenCut",
+        "ios": "6741509379"
+      }
     },
     {
       "title": "Idol Company",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "6744967286"
+      }
     },
     {
       "title": "BlockDown:Puzzle Games",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.puzzlegames.blockdown.relax"
+      }
     },
     {
       "title": "Escape Run: Endless Die Fun",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.higame.par.escape.prank.run.game"
+      }
     },
     {
       "title": "플레이투게더 (Play Together)",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "1402384531",
+        "steam": "3198850"
+      }
     },
     {
       "title": "GraviT",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "ios": "1380997350"
+      }
     },
     {
       "title": "Friday Night Funkin'",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "me.funkin.fnf"
+      }
     },
     {
       "title": "공허의 방문자",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.ghbmjkr.gp"
+      }
     },
     {
       "title": "레츠고 레전드!",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.gear2.letsgolegends"
+      }
     },
     {
       "title": "오목 챔피언 (O-mok Champion)",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "ai.easy.gomoku.board.free"
+      }
     },
     {
       "title": "Monkey Student: School Prank",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.u1.prank.school.monkey"
+      }
     },
     {
       "title": "Brainrod Mini Games",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.brainrott.minigame.challenge"
+      }
     },
     {
       "title": "해적GO! 보물탐험대",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.bztxd.googlelb"
+      }
     },
     {
       "title": "Brick Blast - 벽돌깨기 공튀기기",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.easybrain.brick.balls.blast"
+      }
     },
     {
       "title": "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.ncroquis.beatyako"
+      }
     },
     {
       "title": "두뇌우지끈",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.stormborn.braincrunch"
+      }
     },
     {
       "title": "머지 페코 : 페코짱 카와이~!",
-      "approvedAt": "2026-01-08T11:00:57.935Z"
-    },
-    {
-      "title": "나이트메어 퍼즐",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "라마 - 게으른 브이로거",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "앵커패닉",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "디노 유니버스",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "좀비 광산타이쿤",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "와글와글 군단",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "Kick & Break",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "크리처 리그 챔피언",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "머지 과일주스",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "Satisday ASMR: 스트레스 해소",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "사냥 전설",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
-    },
-    {
-      "title": "Solitaire Day-Fun card game",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
+      "approvedAt": "2026-01-08T11:00:57.935Z",
+      "appIds": {
+        "android": "com.spcomes.mergepeko"
+      }
     },
     {
       "title": "나이트메어 퍼즐: 미지",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.fc.p.to.creepy.annoying.puzzle.story",
+        "ios": "6739485516"
+      }
+    },
+    {
+      "title": "라마 - 게으른 브이로거",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "ios": "1595314851"
+      }
+    },
+    {
+      "title": "앵커패닉",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "ios": "6741319337"
+      }
     },
     {
       "title": "디노 유니버스 (Dinosaur Universe)",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "io.supercent.ageofdinosaurs",
+        "ios": "6448496802"
+      }
     },
     {
       "title": "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.zombie.idleminertycoon",
+        "ios": "6471983323"
+      }
     },
     {
       "title": "와글와글 군단: 방치형 라인 디펜스",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "net.ekgames.projectz",
+        "ios": "6752973592"
+      }
     },
     {
       "title": "Kick & Break The Ragdoll Games",
-      "approvedAt": "2026-01-08T11:01:29.901Z"
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.playflix.kick.breakragdoll.games"
+      }
+    },
+    {
+      "title": "크리처 리그 챔피언",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "ios": "6755809717"
+      }
+    },
+    {
+      "title": "머지 과일주스",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.stormborn.reverse.juice.suika"
+      }
+    },
+    {
+      "title": "Satisday ASMR: 스트레스 해소",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.an.satisday.antistress.organizinggame"
+      }
+    },
+    {
+      "title": "사냥 전설",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.kr.hxcsgp"
+      }
+    },
+    {
+      "title": "Solitaire Day-Fun card game",
+      "approvedAt": "2026-01-08T11:01:29.901Z",
+      "appIds": {
+        "android": "com.solitaireday.cardgame"
+      }
     }
   ],
   "rejected": []
