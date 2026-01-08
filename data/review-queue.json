@@ -127,7 +127,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "studio.gameberry.idlehunter",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -1857,6 +1857,157 @@
         }
       ],
       "addedAt": "2026-01-07T00:49:20.971Z"
+    },
+    {
+      "title": "닌자 머스트 다이",
+      "status": "matched",
+      "appIds": {
+        "ios": "1628517224",
+        "android": "com.pandadagames.ninja.global"
+      },
+      "developer": "Pandada Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/09/ca/4c09cafc-bfa3-964a-bfc5-6d9b6f883d7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "닌자 머스트 다이",
+          "appId": "com.pandadagames.ninja.global"
+        },
+        {
+          "title": "닌자대전 : 디펜스 RPG",
+          "appId": "net.gameduo.ninja"
+        },
+        {
+          "title": "Ninja Dash Run - Offline Game",
+          "appId": "com.generagames.ninjadash.samuraironin.jumprpg"
+        }
+      ],
+      "addedAt": "2026-01-08T00:17:40.119Z"
+    },
+    {
+      "title": "두근두근타운",
+      "status": "matched",
+      "appIds": {
+        "ios": "6746151928",
+        "android": "com.xd.xdtglobal.gp"
+      },
+      "developer": "XD Entertainment Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/cd/b2/dccdb254-82c8-8a85-b469-0ca1e7c5f652/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "두근두근타운",
+          "appId": "com.xd.xdtglobal.gp"
+        },
+        {
+          "title": "판타지타운",
+          "appId": "com.arumgames.fantasytown"
+        },
+        {
+          "title": "플레이투게더",
+          "appId": "com.haegin.playtogether"
+        }
+      ],
+      "addedAt": "2026-01-08T00:18:03.206Z"
+    },
+    {
+      "title": "GraviT",
+      "status": "single",
+      "appIds": {
+        "ios": "1380997350"
+      },
+      "developer": "Dennis Mengelt",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/4e/ca/324eca01-1736-f789-5f44-8df86103ffc9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "GRAVIT TV",
+          "appId": "com.gravittv.app"
+        },
+        {
+          "title": "Gravitation",
+          "appId": "com.kos.gravitation"
+        },
+        {
+          "title": "Gravitii",
+          "appId": "com.gravitii.uav_pro"
+        }
+      ],
+      "addedAt": "2026-01-08T00:18:09.360Z"
+    },
+    {
+      "title": "해피 시티즌",
+      "status": "matched",
+      "appIds": {
+        "android": "com.kiwigames.happycitizen.gp",
+        "ios": 6745251520
+      },
+      "developer": "LifeSim",
+      "icon": "https://play-lh.googleusercontent.com/Gb6PM7ytQrhsb8wWPcExHlSf0N--AxGyoJ29Xl3cRtaiIDDDWKRDlCbYebL2i1gNjck",
+      "searchResults": [
+        {
+          "title": "해피 시티즌",
+          "appId": 6745251520
+        }
+      ],
+      "addedAt": "2026-01-08T00:18:23.493Z"
+    },
+    {
+      "title": "Sand Loop",
+      "status": "matched",
+      "appIds": {
+        "android": "com.pc.sand.loop",
+        "ios": 6754363534
+      },
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/6pKiNXE-YV-E6bP0UjFU5z-eeE9yiWJyR2eLiEasCUAWjHRcKn-kwS3wW8BNb7eYGmM8Y0KuPdOztKihTBNk5A",
+      "searchResults": [
+        {
+          "title": "Sand Loop",
+          "appId": 6754363534
+        },
+        {
+          "title": "Sand Blast™ - Block Puzzle",
+          "appId": 6746120185
+        },
+        {
+          "title": "Color Sand Mania",
+          "appId": 6744182740
+        }
+      ],
+      "addedAt": "2026-01-08T00:18:25.008Z"
+    },
+    {
+      "title": "머지 페코 : 페코짱 카와이~!",
+      "status": "single",
+      "appIds": {
+        "android": "com.spcomes.mergepeko"
+      },
+      "developer": "Springcomes",
+      "icon": "https://play-lh.googleusercontent.com/CR7KxRX5VmWThfZ9-t5RRrQRivc1QMJvN-WJX_Cx8yE4sWiIb87uRkKbRsoTxvKBa-0N",
+      "searchResults": [],
+      "addedAt": "2026-01-08T00:18:25.201Z"
+    },
+    {
+      "title": "Friday Night Funkin'",
+      "status": "single",
+      "appIds": {
+        "android": "me.funkin.fnf"
+      },
+      "developer": "The Funkin' Crew Inc.",
+      "icon": "https://play-lh.googleusercontent.com/eH7CbOlUv_4ysRxicJbncfdfK3nsA_YtIpu8cvPRi2rRvXAQOLwXhoNybAwHptYIpbY",
+      "searchResults": [
+        {
+          "title": "Friday Night Funkin' Mobile",
+          "appId": 6740428530
+        },
+        {
+          "title": "Friday Night Funkin - FNF",
+          "appId": 6450929165
+        },
+        {
+          "title": "Beat Stage - Battle Duel",
+          "appId": 6743152985
+        }
+      ],
+      "addedAt": "2026-01-08T00:18:25.535Z"
     }
   ],
   "approved": [

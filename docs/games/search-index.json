@@ -11637,11 +11637,12 @@
     "aliases": [],
     "platforms": [
       "android",
-      "ios"
+      "ios",
+      "steam"
     ],
     "developer": "株式会社ドリコム",
     "hasRankings": true,
-    "hasSteam": false,
+    "hasSteam": true,
     "hasData": true
   },
   {
@@ -12257,13 +12258,16 @@
     "name": "플레이투게더 (Play Together)",
     "slug": "플레이투게더-play-together",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/cc/d7/06ccd795-e14b-3bb3-e572-fcb163748f67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "Play Together"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "steam"
     ],
     "developer": "HAEGIN Co., Ltd.",
     "hasRankings": true,
-    "hasSteam": false,
+    "hasSteam": true,
     "hasData": true
   },
   {
@@ -13208,6 +13212,244 @@
       "steam"
     ],
     "developer": "KOEI TECMO GAMES CO., LTD.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "닌자 머스트 다이",
+    "slug": "닌자-머스트-다이",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/09/ca/4c09cafc-bfa3-964a-bfc5-6d9b6f883d7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Pandada Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "두근두근타운",
+    "slug": "두근두근타운",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/cd/b2/dccdb254-82c8-8a85-b469-0ca1e7c5f652/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "XD Entertainment Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "GraviT",
+    "slug": "gravit",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/4e/ca/324eca01-1736-f789-5f44-8df86103ffc9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Dennis Mengelt",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "해피 시티즌",
+    "slug": "해피-시티즌",
+    "icon": "https://play-lh.googleusercontent.com/Gb6PM7ytQrhsb8wWPcExHlSf0N--AxGyoJ29Xl3cRtaiIDDDWKRDlCbYebL2i1gNjck",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "LifeSim",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Sand Loop",
+    "slug": "sand-loop",
+    "icon": "https://play-lh.googleusercontent.com/6pKiNXE-YV-E6bP0UjFU5z-eeE9yiWJyR2eLiEasCUAWjHRcKn-kwS3wW8BNb7eYGmM8Y0KuPdOztKihTBNk5A",
+    "aliases": [],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "developer": "VOODOO",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "머지 페코 : 페코짱 카와이~!",
+    "slug": "머지-페코-페코짱-카와이",
+    "icon": "https://play-lh.googleusercontent.com/CR7KxRX5VmWThfZ9-t5RRrQRivc1QMJvN-WJX_Cx8yE4sWiIb87uRkKbRsoTxvKBa-0N",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Springcomes",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Friday Night Funkin'",
+    "slug": "friday-night-funkin",
+    "icon": "https://play-lh.googleusercontent.com/eH7CbOlUv_4ysRxicJbncfdfK3nsA_YtIpu8cvPRi2rRvXAQOLwXhoNybAwHptYIpbY",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "The Funkin' Crew Inc.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "DEAD OR ALIVE Xtreme Venus Vacation",
+    "slug": "dead-or-alive-xtreme-venus-vacation",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/958260/capsule_231x87.jpg?t=1760415986",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "DRAGON QUEST VII Reimagined",
+    "slug": "dragon-quest-vii-reimagined",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2499860/9d1e5917fb47c7af55a5134a6f7eb302fea2fb16/capsule_231x87.jpg?t=1761100086",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Square Enix",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Back to the Dawn",
+    "slug": "back-to-the-dawn",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1735700/08ef7d09155196910632da6de461bee66d8934dd/capsule_231x87.jpg?t=1762917628",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Metal Head Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "World of Sea Battle",
+    "slug": "world-of-sea-battle",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2948190/136d2fc65f81dcc895a4b10633b0e95830c79a6c/capsule_231x87.jpg?t=1767025062",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Thera Interactive",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Bits & Bops",
+    "slug": "bits-bops",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1929290/d497adc64505ede99efb5e304cd5103ab488ae95/capsule_231x87.jpg?t=1766133661",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Tempo Lab Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Super Bunny Man",
+    "slug": "super-bunny-man",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/673750/5613e86f95b528938211d22326e29cddcabcf669/capsule_231x87.jpg?t=1764709681",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Catobyte",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "ELDEN RING Shadow of the Erdtree",
+    "slug": "elden-ring-shadow-of-the-erdtree",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2778580/capsule_231x87.jpg?t=1763403045",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "FromSoftware, Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Torchlight: Infinite",
+    "slug": "torchlight-infinite",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1974050/6c0bb3668b9e3d3da12b84b47abf16334d471b17/capsule_231x87.jpg?t=1760065642",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "XD",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "My Winter Car",
+    "slug": "my-winter-car",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4164420/eaa06f39647f66d7f3640e10c0024e090fa71c65/capsule_231x87.jpg?t=1767026322",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Amistech Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "A Dance of Fire and Ice",
+    "slug": "a-dance-of-fire-and-ice",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/977950/capsule_231x87.jpg?t=1734406213",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "7th Beat Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Stacklands",
+    "slug": "stacklands",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1948280/capsule_231x87.jpg?t=1729241259",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Sokpop Collective",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true

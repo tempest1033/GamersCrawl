@@ -934,7 +934,7 @@
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "studio.gameberry.idlehunter",
+        "android": "net.gameduo.gv",
         "android:kr": "com.metaboneent.gauntletrpg",
         "ios:kr": "6446516059"
       },
@@ -4587,7 +4587,7 @@
     },
     "스킨케어 타임: 메이크오버 ASMR": {
       "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
+        "android": "com.whoyaho.tanghulu",
         "ios": 6738948332
       },
       "aliases": [
@@ -11206,7 +11206,8 @@
     "Wizardry Variants Daphne": {
       "appIds": {
         "android": "jp.co.drecom.wizardry.daphne",
-        "ios": 1663423521
+        "ios": 1663423521,
+        "steam": "2379740"
       },
       "aliases": [],
       "developer": "株式会社ドリコム",
@@ -11214,7 +11215,8 @@
       "slug": "wizardry-variants-daphne",
       "platforms": [
         "android",
-        "ios"
+        "ios",
+        "steam"
       ]
     },
     "오목 챔피언 (O-mok Champion)": {
@@ -11803,14 +11805,18 @@
     },
     "플레이투게더 (Play Together)": {
       "appIds": {
-        "ios": "1402384531"
+        "ios": "1402384531",
+        "steam": "3198850"
       },
-      "aliases": [],
+      "aliases": [
+        "Play Together"
+      ],
       "developer": "HAEGIN Co., Ltd.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/cc/d7/06ccd795-e14b-3bb3-e572-fcb163748f67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
       "slug": "플레이투게더-play-together",
       "platforms": [
-        "ios"
+        "ios",
+        "steam"
       ]
     },
     "두뇌우지끈": {
@@ -12696,8 +12702,232 @@
       "platforms": [
         "steam"
       ]
+    },
+    "닌자 머스트 다이": {
+      "appIds": {
+        "ios": "1628517224",
+        "android": "com.pandadagames.ninja.global"
+      },
+      "aliases": [],
+      "developer": "Pandada Games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/09/ca/4c09cafc-bfa3-964a-bfc5-6d9b6f883d7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "닌자-머스트-다이",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "두근두근타운": {
+      "appIds": {
+        "ios": "6746151928",
+        "android": "com.xd.xdtglobal.gp"
+      },
+      "aliases": [],
+      "developer": "XD Entertainment Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/cd/b2/dccdb254-82c8-8a85-b469-0ca1e7c5f652/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
+      "slug": "두근두근타운",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "GraviT": {
+      "appIds": {
+        "ios": "1380997350"
+      },
+      "aliases": [],
+      "developer": "Dennis Mengelt",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/4e/ca/324eca01-1736-f789-5f44-8df86103ffc9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "gravit",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "해피 시티즌": {
+      "appIds": {
+        "android": "com.kiwigames.happycitizen.gp",
+        "ios": 6745251520
+      },
+      "aliases": [],
+      "developer": "LifeSim",
+      "icon": "https://play-lh.googleusercontent.com/Gb6PM7ytQrhsb8wWPcExHlSf0N--AxGyoJ29Xl3cRtaiIDDDWKRDlCbYebL2i1gNjck",
+      "slug": "해피-시티즌",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "Sand Loop": {
+      "appIds": {
+        "android": "com.pc.sand.loop",
+        "ios": 6754363534
+      },
+      "aliases": [],
+      "developer": "VOODOO",
+      "icon": "https://play-lh.googleusercontent.com/6pKiNXE-YV-E6bP0UjFU5z-eeE9yiWJyR2eLiEasCUAWjHRcKn-kwS3wW8BNb7eYGmM8Y0KuPdOztKihTBNk5A",
+      "slug": "sand-loop",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "머지 페코 : 페코짱 카와이~!": {
+      "appIds": {
+        "android": "com.spcomes.mergepeko"
+      },
+      "aliases": [],
+      "developer": "Springcomes",
+      "icon": "https://play-lh.googleusercontent.com/CR7KxRX5VmWThfZ9-t5RRrQRivc1QMJvN-WJX_Cx8yE4sWiIb87uRkKbRsoTxvKBa-0N",
+      "slug": "머지-페코-페코짱-카와이",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Friday Night Funkin'": {
+      "appIds": {
+        "android": "me.funkin.fnf"
+      },
+      "aliases": [],
+      "developer": "The Funkin' Crew Inc.",
+      "icon": "https://play-lh.googleusercontent.com/eH7CbOlUv_4ysRxicJbncfdfK3nsA_YtIpu8cvPRi2rRvXAQOLwXhoNybAwHptYIpbY",
+      "slug": "friday-night-funkin",
+      "platforms": [
+        "android"
+      ]
+    },
+    "DEAD OR ALIVE Xtreme Venus Vacation": {
+      "appIds": {
+        "steam": "958260"
+      },
+      "aliases": [],
+      "developer": "",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/958260/capsule_231x87.jpg?t=1760415986",
+      "slug": "dead-or-alive-xtreme-venus-vacation",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "DRAGON QUEST VII Reimagined": {
+      "appIds": {
+        "steam": "2499860"
+      },
+      "aliases": [],
+      "developer": "Square Enix",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2499860/9d1e5917fb47c7af55a5134a6f7eb302fea2fb16/capsule_231x87.jpg?t=1761100086",
+      "slug": "dragon-quest-vii-reimagined",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Back to the Dawn": {
+      "appIds": {
+        "steam": "1735700"
+      },
+      "aliases": [],
+      "developer": "Metal Head Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1735700/08ef7d09155196910632da6de461bee66d8934dd/capsule_231x87.jpg?t=1762917628",
+      "slug": "back-to-the-dawn",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "World of Sea Battle": {
+      "appIds": {
+        "steam": "2948190"
+      },
+      "aliases": [],
+      "developer": "Thera Interactive",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2948190/136d2fc65f81dcc895a4b10633b0e95830c79a6c/capsule_231x87.jpg?t=1767025062",
+      "slug": "world-of-sea-battle",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Bits & Bops": {
+      "appIds": {
+        "steam": "1929290"
+      },
+      "aliases": [],
+      "developer": "Tempo Lab Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1929290/d497adc64505ede99efb5e304cd5103ab488ae95/capsule_231x87.jpg?t=1766133661",
+      "slug": "bits-bops",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Super Bunny Man": {
+      "appIds": {
+        "steam": "673750"
+      },
+      "aliases": [],
+      "developer": "Catobyte",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/673750/5613e86f95b528938211d22326e29cddcabcf669/capsule_231x87.jpg?t=1764709681",
+      "slug": "super-bunny-man",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "ELDEN RING Shadow of the Erdtree": {
+      "appIds": {
+        "steam": "2778580"
+      },
+      "aliases": [],
+      "developer": "FromSoftware, Inc.",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2778580/capsule_231x87.jpg?t=1763403045",
+      "slug": "elden-ring-shadow-of-the-erdtree",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Torchlight: Infinite": {
+      "appIds": {
+        "steam": "1974050"
+      },
+      "aliases": [],
+      "developer": "XD",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1974050/6c0bb3668b9e3d3da12b84b47abf16334d471b17/capsule_231x87.jpg?t=1760065642",
+      "slug": "torchlight-infinite",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "My Winter Car": {
+      "appIds": {
+        "steam": "4164420"
+      },
+      "aliases": [],
+      "developer": "Amistech Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4164420/eaa06f39647f66d7f3640e10c0024e090fa71c65/capsule_231x87.jpg?t=1767026322",
+      "slug": "my-winter-car",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "A Dance of Fire and Ice": {
+      "appIds": {
+        "steam": "977950"
+      },
+      "aliases": [],
+      "developer": "7th Beat Games",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/977950/capsule_231x87.jpg?t=1734406213",
+      "slug": "a-dance-of-fire-and-ice",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Stacklands": {
+      "appIds": {
+        "steam": "1948280"
+      },
+      "aliases": [],
+      "developer": "Sokpop Collective",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1948280/capsule_231x87.jpg?t=1729241259",
+      "slug": "stacklands",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2026-01-07",
-  "totalGames": 892
+  "lastUpdated": "2026-01-08",
+  "totalGames": 910
 }
