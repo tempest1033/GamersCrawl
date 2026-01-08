@@ -1,870 +1,5 @@
 {
-  "pending": [
-    {
-      "title": "공허의 방문자",
-      "status": "single",
-      "appIds": {
-        "android": "com.ghbmjkr.gp"
-      },
-      "developer": "D Link",
-      "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
-      "searchResults": [],
-      "addedAt": "2025-12-22T09:40:29.303Z"
-    },
-    {
-      "title": "Save the Doge",
-      "status": "single",
-      "appIds": {
-        "android": "com.miracle.savethedoge.an"
-      },
-      "developer": "WONDER GROUP",
-      "icon": "https://play-lh.googleusercontent.com/7uLCb0jlSOtoXzEzvRBOneP3s0ewpYT-H0s4flnS8AqZRIQ4N_TaSQ_adMgKNtbfxfI",
-      "searchResults": [
-        {
-          "title": "Save The Doge: Rescue Dog Game",
-          "appId": "6468571577"
-        },
-        {
-          "title": "Save The Dog - Dog Escape",
-          "appId": "1635971989"
-        },
-        {
-          "title": "Save the doggy's head-plz",
-          "appId": "6444181350"
-        },
-        {
-          "title": "Save My Doggy - Dog Rescue",
-          "appId": "1638262763"
-        },
-        {
-          "title": "개를 구하라 - 구조 퍼즐",
-          "appId": "6446388118"
-        }
-      ],
-      "addedAt": "2025-12-22T09:40:34.796Z",
-      "lastSearched": "2025-12-27T03:13:42.668Z"
-    },
-    {
-      "title": "레츠고 레전드!",
-      "status": "single",
-      "appIds": {
-        "android": "com.gear2.letsgolegends"
-      },
-      "developer": "GEAR2",
-      "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
-      "searchResults": [],
-      "addedAt": "2025-12-26T00:47:36.755Z"
-    },
-    {
-      "title": "크리처 리그 챔피언",
-      "status": "single",
-      "appIds": {
-        "ios": "6755809717"
-      },
-      "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "롤 챔피언 추천 - 버스타던지(AI 인공지능)",
-          "appId": "com.harang.leagueoflegends"
-        },
-        {
-          "title": "Idle Champions",
-          "appId": "com.codenameentertainment.idlechampions"
-        },
-        {
-          "title": "Hoop League Tactics",
-          "appId": "com.koalitygame.hoopleaguetactics"
-        },
-        {
-          "title": "주식챔피언",
-          "appId": "kr.sctv"
-        },
-        {
-          "title": "League Champ",
-          "appId": "com.league.champ"
-        }
-      ],
-      "addedAt": "2025-12-26T00:47:41.678Z",
-      "lastSearched": "2025-12-27T03:13:52.952Z"
-    },
-    {
-      "title": "머지 과일주스",
-      "status": "single",
-      "appIds": {
-        "android": "com.stormborn.reverse.juice.suika"
-      },
-      "developer": "Stormborn",
-      "icon": "https://play-lh.googleusercontent.com/JCMInO0UPunayM0215EKuOM48jbbIkXIbg4_NTChm7es7qfIZd_6FqO_4RkR2A37lFB24Kjjmcp8pRaW6x56RQ",
-      "searchResults": [
-        {
-          "title": "음식 병합 모험과 이야기",
-          "appId": "6738093197"
-        }
-      ],
-      "addedAt": "2025-12-27T00:46:55.102Z",
-      "lastSearched": "2025-12-27T03:13:59.502Z"
-    },
-    {
-      "title": "BlockDown:Puzzle Games",
-      "status": "single",
-      "appIds": {
-        "android": "com.puzzlegames.blockdown.relax"
-      },
-      "developer": "ECKERT GAMING",
-      "icon": "https://play-lh.googleusercontent.com/7iw2P_AO1-GAIT3PCd40WehJNg8uTG_nxhUQUsjI_qN5rrMfymw0POp24LcowhRlDd8UzUpD8yiN_pPYyHBA4Q",
-      "searchResults": [
-        {
-          "title": "Blockdown Adventures",
-          "appId": "6477536156"
-        }
-      ],
-      "addedAt": "2025-12-27T00:46:57.554Z",
-      "lastSearched": "2025-12-27T03:14:01.284Z"
-    },
-    {
-      "title": "Age of Origins:Tower Defense",
-      "status": "single",
-      "appIds": {
-        "ios": "1376515087"
-      },
-      "developer": "Hong Kong Ke Mo software Co., Limited",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/c9/2f/50c92f72-45cd-204f-ce29-5653827b294f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "에이지 오브 제트: 타워 디펜스",
-          "appId": "com.camelgames.aoz"
-        },
-        {
-          "title": "Kingdom Rush 킹덤 러쉬 전략형 타워 디펜스",
-          "appId": "com.ironhidegames.android.kingdomrush"
-        },
-        {
-          "title": "Realm Defense: Hero Legends TD",
-          "appId": "com.babeltimeus.legendstd"
-        }
-      ],
-      "addedAt": "2025-12-27T03:50:59.662Z"
-    },
-    {
-      "title": "에이지 오브 제트: 타워 디펜스",
-      "status": "single",
-      "appIds": {
-        "android": "com.camelgames.aoz"
-      },
-      "developer": "CamelStudio",
-      "icon": "https://play-lh.googleusercontent.com/fR9nWYxflGwLPlAcW9MU0kBMyqOrKn9FF5Mjert4QeL-tO2qXf-DKO1nZ3PS9I-e6fk",
-      "searchResults": [],
-      "addedAt": "2025-12-27T03:51:14.247Z"
-    },
-    {
-      "title": "ONE PIECE TREASURE CRUISE",
-      "status": "single",
-      "appIds": {
-        "ios": "943690848"
-      },
-      "developer": "Bandai Namco Entertainment Inc.",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/71/1f/7a711f35-42f6-c6c7-1269-a8937ed75ba5/AppIcon_en-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "ONE PIECE TREASURE CRUISE-RPG",
-          "appId": "com.namcobandaigames.spmoja010E"
-        },
-        {
-          "title": "ONE PIECE トレジャークルーズ",
-          "appId": "com.namcobandaigames.spmoja010"
-        },
-        {
-          "title": "ONE PIECE Bounty Rush",
-          "appId": "com.bandainamcoent.opbrww"
-        }
-      ],
-      "addedAt": "2025-12-28T00:54:29.579Z"
-    },
-    {
-      "title": "Woodturning 3D",
-      "status": "single",
-      "appIds": {
-        "ios": "1492451796"
-      },
-      "developer": "Voodoo",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/77/16/b2771600-f9ce-b988-f90c-c58cf330bba4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "Wood Turning 3D - Carving Game",
-          "appId": "com.Eliten.Turning"
-        },
-        {
-          "title": "나무 블럭 3D",
-          "appId": "com.infinitygames.woodblocks3d"
-        },
-        {
-          "title": "나무 블럭 퍼즐 WoodBlockPuzzle",
-          "appId": "blockpuzzle.wood.legend.jewel"
-        }
-      ],
-      "addedAt": "2025-12-28T00:55:02.950Z"
-    },
-    {
-      "title": "오목 챔피언 (O-mok Champion)",
-      "status": "single",
-      "appIds": {
-        "android": "ai.easy.gomoku.board.free"
-      },
-      "developer": "COT Puzzle Game",
-      "icon": "https://play-lh.googleusercontent.com/JE5XsAwGuuLMEBUqH4PRc-chkbARMu9yYX34kJWRiKn7ciOIG2E1qRqokBGdkqkE8J_f",
-      "searchResults": [],
-      "addedAt": "2025-12-28T00:55:18.226Z"
-    },
-    {
-      "title": "Brain Out®: 넌센스 마스터, 두뇌 트레이닝",
-      "status": "single",
-      "appIds": {
-        "android": "com.mind.quiz.brain.out"
-      },
-      "developer": "Focus apps",
-      "icon": "https://play-lh.googleusercontent.com/cIZT8s6NiS_Ez_t0EbD_zoMgvdUsUIP8dgArn4iWcWynE4HYSsYdG7xJTuwkl-vZ3lE",
-      "searchResults": [
-        {
-          "title": "캣 브레인 월드 - 넌센스 퍼즐 게임",
-          "appId": 1568614454
-        },
-        {
-          "title": "캣 브레인 - 두뇌 아이큐 테스트 게임",
-          "appId": 1519389456
-        },
-        {
-          "title": "크레이지 지우개",
-          "appId": 1563114819
-        }
-      ],
-      "addedAt": "2025-12-28T00:55:18.592Z"
-    },
-    {
-      "title": "나이트메어 퍼즐: 미지",
-      "status": "single",
-      "appIds": {
-        "android": "com.fc.p.to.creepy.annoying.puzzle.story"
-      },
-      "developer": "CYLINDER GLOBAL PTE. LTD.",
-      "icon": "https://play-lh.googleusercontent.com/DoU9jXstazUP65ZU7t4pc0RCKtHn-ZR56hsD9M5fdqKv74tVM-izRYVl_fQoM5kSeg",
-      "searchResults": [
-        {
-          "title": "나이트메어 퍼즐: 미지의 세계",
-          "appId": 6739485516
-        }
-      ],
-      "addedAt": "2025-12-28T00:55:19.053Z"
-    },
-    {
-      "title": "Hero Wars: Alliance",
-      "status": "single",
-      "appIds": {
-        "android": "com.nexters.herowars"
-      },
-      "developer": "NEXTERS GLOBAL LTD",
-      "icon": "https://play-lh.googleusercontent.com/KJaZRX11izQfrRMJ-NaXZeLniayMxlFL1lxPanQi9vi38m4eV2pCqyV3iP3-MC601gM",
-      "searchResults": [
-        {
-          "title": "Hero Wars: Alliance RPG",
-          "appId": 1158967485
-        },
-        {
-          "title": "얼라이언스 : 전쟁 게임",
-          "appId": 1059604202
-        },
-        {
-          "title": "War Alliance - PvP Royale",
-          "appId": 1244206559
-        }
-      ],
-      "addedAt": "2025-12-29T00:44:01.187Z"
-    },
-    {
-      "title": "라마 - 게으른 브이로거",
-      "status": "single",
-      "appIds": {
-        "ios": "1595314851"
-      },
-      "developer": "Crazy Labs",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/48/5b/bd485bf8-5166-9957-cdd5-21d48ee4e830/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "라마 - 게으른 블로거",
-          "appId": "com.advant.streamer"
-        },
-        {
-          "title": "Van - Idle Vlogger",
-          "appId": "com.advant.van"
-        },
-        {
-          "title": "Idle Vlogger: Tuber Simulator",
-          "appId": "com.playcroc.idleblogger"
-        }
-      ],
-      "addedAt": "2025-12-29T00:44:07.525Z"
-    },
-    {
-      "title": "Brain Out -Tricky riddle games",
-      "status": "single",
-      "appIds": {
-        "ios": "1477841973"
-      },
-      "developer": "EYEWIND LIMITED",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/46/49/10/46491036-3dbe-eb97-3ef3-d05ceb9673be/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "Math Riddle Puzzle Brain Games",
-          "appId": "com.mathgame.riddles.puzzles.brain.teasers"
-        },
-        {
-          "title": "Brain Code: Mind Puzzle Games",
-          "appId": "com.kk.braincode"
-        },
-        {
-          "title": "아이큐 테스트:두뇌 게임,메모리 트레이너,브레인 테스트",
-          "appId": "com.iq.test.maths.intelligence.logic.iqtest"
-        }
-      ],
-      "addedAt": "2025-12-29T00:44:09.978Z"
-    },
-    {
-      "title": "Shuriken Cut",
-      "status": "single",
-      "appIds": {
-        "android": "com.Kayac.ShurikenCut"
-      },
-      "developer": "KAYAC Inc.",
-      "icon": "https://play-lh.googleusercontent.com/27M26Ai8VoBJ6eEoWPAAE3e26GOT6o5fjUlGT7Q6PQoNyGp8MHAVWTjx0QFBI7ywR9U",
-      "searchResults": [
-        {
-          "title": "Shuriken Cut: Split",
-          "appId": 6741509379
-        },
-        {
-          "title": "소드 플레이! 닌자 슬라이스 러너 3D",
-          "appId": 1559030764
-        },
-        {
-          "title": "Stealth Ninja Blade Cut ASMR",
-          "appId": 6747116955
-        }
-      ],
-      "addedAt": "2025-12-29T00:44:24.315Z"
-    },
-    {
-      "title": "Idol Company",
-      "status": "single",
-      "appIds": {
-        "ios": "6744967286"
-      },
-      "developer": "Larks Holding Hong Kong Limited",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/15/40/1c1540a9-f4fb-d698-2ec2-987992dba33f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "아이돌 주식회사  (오프라인 게임)",
-          "appId": "com.appplus.idolstarGooglePlay"
-        },
-        {
-          "title": "퀸즈 아이돌(Idol Queens Production)",
-          "appId": "sunbeesoft.queensidol.com"
-        },
-        {
-          "title": "월간아이돌 : 아이돌키우기",
-          "appId": "com.factory608.MI"
-        }
-      ],
-      "addedAt": "2025-12-30T00:41:50.409Z"
-    },
-    {
-      "title": "ONE PIECE TREASURE CRUISE-RPG",
-      "status": "single",
-      "appIds": {
-        "android": "com.namcobandaigames.spmoja010E"
-      },
-      "developer": "Bandai Namco Entertainment Inc.",
-      "icon": "https://play-lh.googleusercontent.com/tH9AB-VJZFUE5u1X5X7jDm_--jmrxsyG3hLpt14SPF3c1lh6-nKY7itklO8JyZliXtgV3T_NMmPJ43CdDRAxVD0",
-      "searchResults": [
-        {
-          "title": "ONE PIECE TREASURE CRUISE",
-          "appId": 943690848
-        },
-        {
-          "title": "ONE PIECE Bounty Rush",
-          "appId": 1343688545
-        }
-      ],
-      "addedAt": "2025-12-30T00:42:07.031Z"
-    },
-    {
-      "title": "Satisday ASMR: 스트레스 해소",
-      "status": "single",
-      "appIds": {
-        "android": "com.an.satisday.antistress.organizinggame"
-      },
-      "developer": "TVC Global., Ltd",
-      "icon": "https://play-lh.googleusercontent.com/rBdMOuTcOWI7BJzmSvRODsXhboHutvbAjasFgmf3A0bXW4SFesVApivuYwNAJ_MvwyQ",
-      "searchResults": [
-        {
-          "title": "완벽한 만족: 정리 게임",
-          "appId": 6736516181
-        },
-        {
-          "title": "완벽한 정리: 정리 게임",
-          "appId": 6737414215
-        }
-      ],
-      "addedAt": "2025-12-30T00:42:30.422Z"
-    },
-    {
-      "title": "Monkey Student: School Prank",
-      "status": "single",
-      "appIds": {
-        "android": "com.u1.prank.school.monkey"
-      },
-      "developer": "Unicorn Studio Official",
-      "icon": "https://play-lh.googleusercontent.com/Y4JfyKwGgNQ6m6542mz_sQPFv_Cdbza3DKqatE4ghAl3cHXQnwh744FNbkEMQ6htu1skR7_3X8gn4k7IMAbx",
-      "searchResults": [],
-      "addedAt": "2025-12-30T00:42:32.688Z"
-    },
-    {
-      "title": "Brainrod Mini Games",
-      "status": "single",
-      "appIds": {
-        "android": "com.brainrott.minigame.challenge"
-      },
-      "developer": "FunWave Studio",
-      "icon": "https://play-lh.googleusercontent.com/ZdLvKNycHWq7aAAmK6Be2jhlDbJMYEqwe3ljj-xHMwf36Dxp3Ra31BGATvNUv9ogQ4g",
-      "searchResults": [],
-      "addedAt": "2025-12-30T00:42:33.728Z"
-    },
-    {
-      "title": "해적GO! 보물탐험대",
-      "status": "single",
-      "appIds": {
-        "android": "com.bztxd.googlelb"
-      },
-      "developer": "广州互视通科技有限公司",
-      "icon": "https://play-lh.googleusercontent.com/fejWK1Ju3A-grk7ltp8Fco_b9RwLver5VBU8qt09C2wSL-Jdld4sOw27SJpdvWOp8_xY09K97mmBurBgy1mm",
-      "searchResults": [],
-      "addedAt": "2025-12-31T00:34:26.465Z"
-    },
-    {
-      "title": "앵커패닉",
-      "status": "single",
-      "appIds": {
-        "ios": "6741319337"
-      },
-      "developer": "Neptune Company",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/de/2d/3dde2d2a-b73a-2f44-2211-d51c05142ba6/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "앵커패닉 : 산타걸의 크리스마스 선물 대작전!",
-          "appId": "com.neptune.anchorpanic"
-        },
-        {
-          "title": "Anchor Panic",
-          "appId": "com.hygame.anchorpanic.gp"
-        },
-        {
-          "title": "アンカーパニック",
-          "appId": "com.anchorpanicjapan.gp"
-        }
-      ],
-      "addedAt": "2025-12-31T00:34:27.639Z"
-    },
-    {
-      "title": "Braindom: Brain Games Test Out",
-      "status": "single",
-      "appIds": {
-        "ios": "1513009813"
-      },
-      "developer": "Lahana Games",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/1b/e9/4e1be92c-c698-4dbb-d0c6-8a6aaeec2165/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
-          "appId": "com.braindom"
-        },
-        {
-          "title": "브레인 테스트 (Brain Test): 까다로운 퍼즐",
-          "appId": "com.unicostudio.braintest"
-        },
-        {
-          "title": "브레인 테스트 (Brain Test) 2:교묘한 이야기",
-          "appId": "com.unicostudio.braintest2new"
-        }
-      ],
-      "addedAt": "2025-12-31T00:34:34.171Z"
-    },
-    {
-      "title": "Brick Blast - 벽돌깨기 공튀기기",
-      "status": "single",
-      "appIds": {
-        "android": "com.easybrain.brick.balls.blast"
-      },
-      "developer": "Easybrain",
-      "icon": "https://play-lh.googleusercontent.com/WPk1QPZRP-tKLHqJwhLqgRR39XWejFN7peg4XPsD2XJQz2K3L-oAFcNEOEzxUJSpfgFojtE1lrkNKdxmUnQSwGE",
-      "searchResults": [],
-      "addedAt": "2025-12-31T00:34:47.171Z"
-    },
-    {
-      "title": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
-      "status": "single",
-      "appIds": {
-        "android": "com.braindom"
-      },
-      "developer": "Lahana Game Studio",
-      "icon": "https://play-lh.googleusercontent.com/6skyXaefYf3uMAhHL0q0jYQSvtIQiQavOMkab6m6DHuJyweNfg4TEi350baUMQ82ZHk",
-      "searchResults": [
-        {
-          "title": "Brain Who? 까다로운 수수께끼 테스트",
-          "appId": 1526842079
-        },
-        {
-          "title": "스마트 브레인: 중독성 두뇌 퍼즐 게임",
-          "appId": 1535521299
-        },
-        {
-          "title": "Riddle Test: 브레인 티저 게임",
-          "appId": 1580064408
-        }
-      ],
-      "addedAt": "2025-12-31T00:34:48.854Z"
-    },
-    {
-      "title": "사냥 전설",
-      "status": "single",
-      "appIds": {
-        "android": "com.kr.hxcsgp"
-      },
-      "developer": "tagertilt",
-      "icon": "https://play-lh.googleusercontent.com/HWobuiTZa4L5irzyQ-tAhrfwK2jWUIdZgNrtBqMdHJDoclm2y64kMnno5c1_cjToT5wBE81o4KwLg5en0VCfOg",
-      "searchResults": [
-        {
-          "title": "컴뱃 퀘스트・궁수의전설・던전 몬스타즈・에픽 로그라이크",
-          "appId": 1558423382
-        },
-        {
-          "title": "미르의 전설:승자위왕-1주년",
-          "appId": 6476600692
-        },
-        {
-          "title": "Monster Hunter Now",
-          "appId": 6445906110
-        }
-      ],
-      "addedAt": "2026-01-02T00:49:19.861Z"
-    },
-    {
-      "title": "디노 유니버스 (Dinosaur Universe)",
-      "status": "single",
-      "appIds": {
-        "android": "io.supercent.ageofdinosaurs"
-      },
-      "developer": "Supercent, Inc.",
-      "icon": "https://play-lh.googleusercontent.com/4zrjGRozq6QqGL7baBNsBH-rlWXI1tCe243ZE8QzpiNzVBnWNEzkOWmlxiEC6aCUD22QVVeC_shsx2UJRfhl",
-      "searchResults": [
-        {
-          "title": "Dinosaur Universe",
-          "appId": 6448496802
-        },
-        {
-          "title": "Dino Run: Dinosaur Games",
-          "appId": 6736385856
-        },
-        {
-          "title": "The Cursed Dinosaur Isle: Game",
-          "appId": 1611891807
-        }
-      ],
-      "addedAt": "2026-01-03T00:46:29.734Z"
-    },
-    {
-      "title": "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)",
-      "status": "single",
-      "appIds": {
-        "android": "com.ncroquis.beatyako"
-      },
-      "developer": "NCROQUIS",
-      "icon": "https://play-lh.googleusercontent.com/_sEc2--f3c_zQiyykg05tGWlkiSqQ736SAkRPeX14pXGXf46lKZ9UiQwDzJ0LGeoGm0",
-      "searchResults": [],
-      "addedAt": "2026-01-03T00:46:34.884Z"
-    },
-    {
-      "title": "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle",
-      "status": "single",
-      "appIds": {
-        "android": "com.zombie.idleminertycoon"
-      },
-      "developer": "Royal Ark",
-      "icon": "https://play-lh.googleusercontent.com/f5bdgKrSbD4OoqHqPAU1dmG8AJ9b7R_rtZz9ePDCH38nWfLiwgoO_q8z-CkGGLBc2_RW",
-      "searchResults": [
-        {
-          "title": "좀비 광산타이쿤: 금광 방치형 게임 어드벤처 Idle",
-          "appId": 6471983323
-        },
-        {
-          "title": "네코식당: 고양이 요리 타이쿤",
-          "appId": 6737997970
-        }
-      ],
-      "addedAt": "2026-01-03T00:46:35.828Z"
-    },
-    {
-      "title": "Escape Run: Endless Die Fun",
-      "status": "single",
-      "appIds": {
-        "android": "com.higame.par.escape.prank.run.game"
-      },
-      "developer": "HIGAME LTD.",
-      "icon": "https://play-lh.googleusercontent.com/7DbgVztaqq103s2itgp3tZcFeI_3PtMqJ-XolB2ccM_puhVAY3ko6VYB4DROQbWNggYW",
-      "searchResults": [
-        {
-          "title": "Temple Run 2: Endless Escape",
-          "appId": 572395608
-        },
-        {
-          "title": "Rotten Escape: Jump action",
-          "appId": 1362373679
-        },
-        {
-          "title": "Color Switch",
-          "appId": 1314725881
-        }
-      ],
-      "addedAt": "2026-01-03T00:46:36.629Z"
-    },
-    {
-      "title": "플레이투게더 (Play Together)",
-      "status": "single",
-      "appIds": {
-        "ios": "1402384531"
-      },
-      "developer": "HAEGIN Co., Ltd.",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/06/cc/d7/06ccd795-e14b-3bb3-e572-fcb163748f67/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "플레이투게더",
-          "appId": "com.haegin.playtogether"
-        },
-        {
-          "title": "Play Together VNG",
-          "appId": "com.vng.playtogether"
-        },
-        {
-          "title": "PK XD: 친구와 즐거운 게임",
-          "appId": "com.movile.playkids.pkxd"
-        }
-      ],
-      "addedAt": "2026-01-04T00:55:31.708Z"
-    },
-    {
-      "title": "두뇌우지끈",
-      "status": "single",
-      "appIds": {
-        "android": "com.stormborn.braincrunch"
-      },
-      "developer": "Stormborn",
-      "icon": "https://play-lh.googleusercontent.com/vuIDQjcEl0TZEFnkk_OdEIb5-feuG8cLi421xVE0RrTdcStX70I2gEVjI5StIlme4XMndzH_sXBz3PXfLL7PUw",
-      "searchResults": [],
-      "addedAt": "2026-01-04T00:56:11.439Z"
-    },
-    {
-      "title": "I Am Monkey",
-      "status": "single",
-      "appIds": {
-        "android": "com.NewFolderGames.IAmMonkey"
-      },
-      "developer": "Estoty",
-      "icon": "https://play-lh.googleusercontent.com/Qfc9KivAAH65ag0GAZEMSJbihSQbCcqdu2ZIWT9r-zIr3CM-nhxVOXeo9P9ZMie6BBFp7Murw_yvYxXkRPV9",
-      "searchResults": [
-        {
-          "title": "I Am Monkey - original game",
-          "appId": 6752769771
-        },
-        {
-          "title": "I Am Cat",
-          "appId": 6740168334
-        },
-        {
-          "title": "I Am Security",
-          "appId": 6740168429
-        }
-      ],
-      "addedAt": "2026-01-04T00:56:13.584Z"
-    },
-    {
-      "title": "와글와글 군단: 방치형 라인 디펜스",
-      "status": "single",
-      "appIds": {
-        "android": "net.ekgames.projectz"
-      },
-      "developer": "EKGAMES",
-      "icon": "https://play-lh.googleusercontent.com/eEQuTri0-QJ9W0PMbBZNROGK1P7sbqYpz0QeY9GFwZxF8TD1XCZI5-wkEYD4xkZFTvWHKLi3aAS0hQ2dmu7GkA",
-      "searchResults": [
-        {
-          "title": "와글와글 군단",
-          "appId": 6752973592
-        }
-      ],
-      "addedAt": "2026-01-04T00:56:13.789Z"
-    },
-    {
-      "title": "I Am Monkey - original game",
-      "status": "single",
-      "appIds": {
-        "ios": "6752769771"
-      },
-      "developer": "Estoty",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/04/f9/7904f9d0-0021-2cea-0c5e-6a9deb298c8e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "I Am Monkey",
-          "appId": "com.NewFolderGames.IAmMonkey"
-        },
-        {
-          "title": "I Am a Monkey Prank Battle",
-          "appId": "com.fun.prankster.monkey.game"
-        },
-        {
-          "title": "I Am Prankster Monkey Zoo",
-          "appId": "com.gtmmad.prankster.monkeyzoo"
-        }
-      ],
-      "addedAt": "2026-01-05T00:47:26.881Z"
-    },
-    {
-      "title": "Solitaire Day-Fun card game",
-      "status": "single",
-      "appIds": {
-        "android": "com.solitaireday.cardgame"
-      },
-      "developer": "Game Cock Team",
-      "icon": "https://play-lh.googleusercontent.com/fGSnhmbMoQsAf6Qxr-Ewc3fAbu3UhSSZwigO_4vYRgCNtQMawVKo3DejvNF7u_8vNsLTdNyl82uf4Ig8-el70A",
-      "searchResults": [
-        {
-          "title": "Solitaire Grand Harvest",
-          "appId": 1223338261
-        },
-        {
-          "title": "솔리테어",
-          "appId": 359917414
-        },
-        {
-          "title": "Solitaire Home Design",
-          "appId": 1492964317
-        }
-      ],
-      "addedAt": "2026-01-05T00:47:37.205Z"
-    },
-    {
-      "title": "Kick & Break The Ragdoll Games",
-      "status": "single",
-      "appIds": {
-        "android": "com.playflix.kick.breakragdoll.games"
-      },
-      "developer": "Game District LLC",
-      "icon": "https://play-lh.googleusercontent.com/rgGNjWhQNxqqn365nYiqZoH2qq5Txqnr2JxNSfigs6lLIKv8kHRh8UymElZ6iFjEhHI",
-      "searchResults": [
-        {
-          "title": "Ragdoll Games - Kick & Break",
-          "appId": 6476128010
-        },
-        {
-          "title": "정신나간 사무실  — 슬랩 앤 스매시 게임",
-          "appId": 1623395612
-        },
-        {
-          "title": "Kick the Buddy: 스트레스 해소 미니게임",
-          "appId": 1278869953
-        }
-      ],
-      "addedAt": "2026-01-05T00:47:41.569Z"
-    },
-    {
-      "title": "GraviT",
-      "status": "single",
-      "appIds": {
-        "ios": "1380997350"
-      },
-      "developer": "Dennis Mengelt",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/4e/ca/324eca01-1736-f789-5f44-8df86103ffc9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "GRAVIT TV",
-          "appId": "com.gravittv.app"
-        },
-        {
-          "title": "Gravitation",
-          "appId": "com.kos.gravitation"
-        },
-        {
-          "title": "Gravitii",
-          "appId": "com.gravitii.uav_pro"
-        }
-      ],
-      "addedAt": "2026-01-08T00:18:09.360Z"
-    },
-    {
-      "title": "머지 페코 : 페코짱 카와이~!",
-      "status": "single",
-      "appIds": {
-        "android": "com.spcomes.mergepeko"
-      },
-      "developer": "Springcomes",
-      "icon": "https://play-lh.googleusercontent.com/CR7KxRX5VmWThfZ9-t5RRrQRivc1QMJvN-WJX_Cx8yE4sWiIb87uRkKbRsoTxvKBa-0N",
-      "searchResults": [],
-      "addedAt": "2026-01-08T00:18:25.201Z"
-    },
-    {
-      "title": "Friday Night Funkin'",
-      "status": "single",
-      "appIds": {
-        "android": "me.funkin.fnf"
-      },
-      "developer": "The Funkin' Crew Inc.",
-      "icon": "https://play-lh.googleusercontent.com/eH7CbOlUv_4ysRxicJbncfdfK3nsA_YtIpu8cvPRi2rRvXAQOLwXhoNybAwHptYIpbY",
-      "searchResults": [
-        {
-          "title": "Friday Night Funkin' Mobile",
-          "appId": 6740428530
-        },
-        {
-          "title": "Friday Night Funkin - FNF",
-          "appId": 6450929165
-        },
-        {
-          "title": "Beat Stage - Battle Duel",
-          "appId": 6743152985
-        }
-      ],
-      "addedAt": "2026-01-08T00:18:25.535Z"
-    },
-    {
-      "title": "건틀렛: 방치형 액션 RPG",
-      "status": "matched",
-      "appIds": {
-        "ios": "6748525811",
-        "android": "net.gameduo.gv",
-        "android:kr": "com.metaboneent.gauntletrpg",
-        "ios:kr": "6446516059"
-      },
-      "developer": "Game Duo Co.,Ltd.",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "건틀렛: 방치형 액션 RPG",
-          "appId": "com.metaboneent.gauntletrpg"
-        },
-        {
-          "title": "다크타워:전략 배틀 RPG",
-          "appId": "6748525811"
-        }
-      ],
-      "addedAt": "2026-01-08T10:50:27.820Z"
-    }
-  ],
+  "pending": [],
   "approved": [
     {
       "title": "드래곤 엠파이어 : 전략 매니지먼트",
@@ -2812,6 +1947,194 @@
         "ios": 6754363534
       },
       "approvedAt": "2026-01-08T10:46:09.200Z"
+    },
+    {
+      "title": "ONE PIECE TREASURE CRUISE",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "ONE PIECE TREASURE CRUISE-RPG",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Brain Out -Tricky riddle games",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Brain Out®: 넌센스 마스터, 두뇌 트레이닝",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Braindom: Brain Games Test Out",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Braindom: 브레인 게임 테스트 - 까다로운 퍼즐",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "I Am Monkey",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "I Am Monkey - original game",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Age of Origins:Tower Defense",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "에이지 오브 제트: 타워 디펜스",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Save the Doge",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Woodturning 3D",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Hero Wars: Alliance",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Shuriken Cut",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Idol Company",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "BlockDown:Puzzle Games",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Escape Run: Endless Die Fun",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "플레이투게더 (Play Together)",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "GraviT",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Friday Night Funkin'",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "공허의 방문자",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "레츠고 레전드!",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "오목 챔피언 (O-mok Champion)",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Monkey Student: School Prank",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Brainrod Mini Games",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "해적GO! 보물탐험대",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "Brick Blast - 벽돌깨기 공튀기기",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "두뇌우지끈",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "머지 페코 : 페코짱 카와이~!",
+      "approvedAt": "2026-01-08T11:00:57.935Z"
+    },
+    {
+      "title": "나이트메어 퍼즐",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "라마 - 게으른 브이로거",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "앵커패닉",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "디노 유니버스",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "좀비 광산타이쿤",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "와글와글 군단",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "Kick & Break",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "크리처 리그 챔피언",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "머지 과일주스",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "Satisday ASMR: 스트레스 해소",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "사냥 전설",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "Solitaire Day-Fun card game",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "나이트메어 퍼즐: 미지",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "디노 유니버스 (Dinosaur Universe)",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "와글와글 군단: 방치형 라인 디펜스",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
+    },
+    {
+      "title": "Kick & Break The Ragdoll Games",
+      "approvedAt": "2026-01-08T11:01:29.901Z"
     }
   ],
   "rejected": []

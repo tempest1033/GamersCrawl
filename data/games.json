@@ -13763,5 +13763,491 @@
       "android",
       "ios"
     ]
+  },
+  "ONE PIECE TREASURE CRUISE": {
+    "appIds": {
+      "ios": "943690848",
+      "android": "com.namcobandaigames.spmoja010E"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "one-piece-treasure-cruise",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Brain Out": {
+    "appIds": {
+      "ios": "1356576329",
+      "android": "com.mind.quiz.brain.out"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "brain-out",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Braindom": {
+    "appIds": {
+      "ios": "1509653212",
+      "android": "com.matchingham.braindom"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "braindom",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "I Am Monkey": {
+    "appIds": {
+      "ios": "6738693085",
+      "android": "com.supersonic.iammonkey"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "i-am-monkey",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Age of Origins": {
+    "appIds": {
+      "ios": "1376515087",
+      "android": "com.camelgames.aoz"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "age-of-origins",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Save the Doge": {
+    "appIds": {
+      "ios": "6468571577",
+      "android": "com.miracle.savethedoge.an"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "save-the-doge",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Woodturning 3D": {
+    "appIds": {
+      "ios": "1483156590",
+      "android": "com.nexelon.woodturning3d"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "woodturning-3d",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Hero Wars": {
+    "appIds": {
+      "ios": "1476191107",
+      "android": "com.nexters.herowars"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "hero-wars",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Shuriken Cut": {
+    "appIds": {
+      "ios": "6738481299",
+      "android": "com.shuriken.cut"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "shuriken-cut",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Idol Company": {
+    "appIds": {
+      "ios": "6711333370",
+      "android": "com.taptap.idolcompany"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "idol-company",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "BlockDown": {
+    "appIds": {
+      "ios": "6477536156",
+      "android": "com.puzzlegames.blockdown.relax"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "blockdown",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Escape Run": {
+    "appIds": {
+      "ios": "6736905119",
+      "android": "com.skgames.escaperun"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "escape-run",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Play Together": {
+    "appIds": {
+      "ios": "1523158556",
+      "android": "com.haegin.playtogether"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "play-together",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "GraviT": {
+    "appIds": {
+      "ios": "6742946952",
+      "android": "com.gravit.game"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "gravit",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Friday Night Funkin": {
+    "appIds": {
+      "steam": "1089980"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "friday-night-funkin",
+    "platforms": [
+      "steam"
+    ]
+  },
+  "공허의 방문자": {
+    "appIds": {
+      "android": "com.ghbmjkr.gp"
+    },
+    "aliases": [],
+    "developer": "D Link",
+    "icon": "https://play-lh.googleusercontent.com/0MiGgFDiljEYjckich070XVcnbvVXqjeADh59yhQj4L2kJouUN75PJYXxn__hjTM8_PZLst1nSdG2FUzdbEpRQ",
+    "slug": "공허의-방문자",
+    "platforms": [
+      "android"
+    ]
+  },
+  "레츠고 레전드!": {
+    "appIds": {
+      "android": "com.gear2.letsgolegends"
+    },
+    "aliases": [],
+    "developer": "GEAR2",
+    "icon": "https://play-lh.googleusercontent.com/X1vx6vKvVj-KxOodTx-gCS5SSpUdekh2BcGhUajo0B7z7ly0VAgcOoAEbqzEs3HhlgijmMChM7pUkKZOvLHWYA",
+    "slug": "레츠고-레전드-",
+    "platforms": [
+      "android"
+    ]
+  },
+  "오목 챔피언 (O-mok Champion)": {
+    "appIds": {
+      "android": "ai.easy.gomoku.board.free"
+    },
+    "aliases": [],
+    "developer": "COT Puzzle Game",
+    "icon": "https://play-lh.googleusercontent.com/JE5XsAwGuuLMEBUqH4PRc-chkbARMu9yYX34kJWRiKn7ciOIG2E1qRqokBGdkqkE8J_f",
+    "slug": "오목-챔피언-o-mok-champion-",
+    "platforms": [
+      "android"
+    ]
+  },
+  "Monkey Student: School Prank": {
+    "appIds": {
+      "android": "com.u1.prank.school.monkey"
+    },
+    "aliases": [],
+    "developer": "Unicorn Studio Official",
+    "icon": "https://play-lh.googleusercontent.com/Y4JfyKwGgNQ6m6542mz_sQPFv_Cdbza3DKqatE4ghAl3cHXQnwh744FNbkEMQ6htu1skR7_3X8gn4k7IMAbx",
+    "slug": "monkey-student-school-prank",
+    "platforms": [
+      "android"
+    ]
+  },
+  "Brainrod Mini Games": {
+    "appIds": {
+      "android": "com.brainrott.minigame.challenge"
+    },
+    "aliases": [],
+    "developer": "FunWave Studio",
+    "icon": "https://play-lh.googleusercontent.com/ZdLvKNycHWq7aAAmK6Be2jhlDbJMYEqwe3ljj-xHMwf36Dxp3Ra31BGATvNUv9ogQ4g",
+    "slug": "brainrod-mini-games",
+    "platforms": [
+      "android"
+    ]
+  },
+  "해적GO! 보물탐험대": {
+    "appIds": {
+      "android": "com.bztxd.googlelb"
+    },
+    "aliases": [],
+    "developer": "广州互视通科技有限公司",
+    "icon": "https://play-lh.googleusercontent.com/fejWK1Ju3A-grk7ltp8Fco_b9RwLver5VBU8qt09C2wSL-Jdld4sOw27SJpdvWOp8_xY09K97mmBurBgy1mm",
+    "slug": "해적go-보물탐험대",
+    "platforms": [
+      "android"
+    ]
+  },
+  "Brick Blast - 벽돌깨기 공튀기기": {
+    "appIds": {
+      "android": "com.easybrain.brick.balls.blast"
+    },
+    "aliases": [],
+    "developer": "Easybrain",
+    "icon": "https://play-lh.googleusercontent.com/WPk1QPZRP-tKLHqJwhLqgRR39XWejFN7peg4XPsD2XJQz2K3L-oAFcNEOEzxUJSpfgFojtE1lrkNKdxmUnQSwGE",
+    "slug": "brick-blast-벽돌깨기-공튀기기",
+    "platforms": [
+      "android"
+    ]
+  },
+  "야코 런 : 리듬매니아(무한의 계단 x 고양이 스낵바)": {
+    "appIds": {
+      "android": "com.ncroquis.beatyako"
+    },
+    "aliases": [],
+    "developer": "NCROQUIS",
+    "icon": "https://play-lh.googleusercontent.com/_sEc2--f3c_zQiyykg05tGWlkiSqQ736SAkRPeX14pXGXf46lKZ9UiQwDzJ0LGeoGm0",
+    "slug": "야코-런-리듬매니아-무한의-계단-x-고양이-스낵바-",
+    "platforms": [
+      "android"
+    ]
+  },
+  "두뇌우지끈": {
+    "appIds": {
+      "android": "com.stormborn.braincrunch"
+    },
+    "aliases": [],
+    "developer": "Stormborn",
+    "icon": "https://play-lh.googleusercontent.com/vuIDQjcEl0TZEFnkk_OdEIb5-feuG8cLi421xVE0RrTdcStX70I2gEVjI5StIlme4XMndzH_sXBz3PXfLL7PUw",
+    "slug": "두뇌우지끈",
+    "platforms": [
+      "android"
+    ]
+  },
+  "머지 페코 : 페코짱 카와이~!": {
+    "appIds": {
+      "android": "com.spcomes.mergepeko"
+    },
+    "aliases": [],
+    "developer": "Springcomes",
+    "icon": "https://play-lh.googleusercontent.com/CR7KxRX5VmWThfZ9-t5RRrQRivc1QMJvN-WJX_Cx8yE4sWiIb87uRkKbRsoTxvKBa-0N",
+    "slug": "머지-페코-페코짱-카와이-",
+    "platforms": [
+      "android"
+    ]
+  },
+  "나이트메어 퍼즐": {
+    "appIds": {
+      "android": "com.gameduo.nightmare",
+      "ios": "6504125741"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "나이트메어-퍼즐",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "라마 - 게으른 브이로거": {
+    "appIds": {
+      "ios": "6502693569",
+      "android": "com.idlevlogger.lama"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "라마-게으른-브이로거",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "앵커패닉": {
+    "appIds": {
+      "ios": "6738227009",
+      "android": "com.anchorpanic.game"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "앵커패닉",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "디노 유니버스": {
+    "appIds": {
+      "android": "com.bigloop.dinoparty",
+      "ios": "6478261891"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "디노-유니버스",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "좀비 광산타이쿤": {
+    "appIds": {
+      "android": "com.block.zombie.mine.idle",
+      "ios": "6738814561"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "좀비-광산타이쿤",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "와글와글 군단": {
+    "appIds": {
+      "android": "com.supercent.linedefense",
+      "ios": "6738752011"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "와글와글-군단",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Kick & Break": {
+    "appIds": {
+      "android": "com.supersonic.kickandbreak",
+      "ios": "6738441234"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "kick-break",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "크리처 리그 챔피언": {
+    "appIds": {
+      "ios": "6755809717"
+    },
+    "aliases": [],
+    "developer": "Qianyi (guangzhou) Network Technology Co., Ltd",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png",
+    "slug": "크리처-리그-챔피언",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "머지 과일주스": {
+    "appIds": {
+      "android": "com.stormborn.reverse.juice.suika"
+    },
+    "aliases": [],
+    "developer": "Stormborn",
+    "icon": "https://play-lh.googleusercontent.com/JCMInO0UPunayM0215EKuOM48jbbIkXIbg4_NTChm7es7qfIZd_6FqO_4RkR2A37lFB24Kjjmcp8pRaW6x56RQ",
+    "slug": "머지-과일주스",
+    "platforms": [
+      "android"
+    ]
+  },
+  "Satisday ASMR: 스트레스 해소": {
+    "appIds": {
+      "android": "com.an.satisday.antistress.organizinggame"
+    },
+    "aliases": [],
+    "developer": "TVC Global., Ltd",
+    "icon": "https://play-lh.googleusercontent.com/rBdMOuTcOWI7BJzmSvRODsXhboHutvbAjasFgmf3A0bXW4SFesVApivuYwNAJ_MvwyQ",
+    "slug": "satisday-asmr-스트레스-해소",
+    "platforms": [
+      "android"
+    ]
+  },
+  "사냥 전설": {
+    "appIds": {
+      "android": "com.kr.hxcsgp"
+    },
+    "aliases": [],
+    "developer": "tagertilt",
+    "icon": "https://play-lh.googleusercontent.com/HWobuiTZa4L5irzyQ-tAhrfwK2jWUIdZgNrtBqMdHJDoclm2y64kMnno5c1_cjToT5wBE81o4KwLg5en0VCfOg",
+    "slug": "사냥-전설",
+    "platforms": [
+      "android"
+    ]
+  },
+  "Solitaire Day-Fun card game": {
+    "appIds": {
+      "android": "com.solitaireday.cardgame"
+    },
+    "aliases": [],
+    "developer": "Game Cock Team",
+    "icon": "https://play-lh.googleusercontent.com/fGSnhmbMoQsAf6Qxr-Ewc3fAbu3UhSSZwigO_4vYRgCNtQMawVKo3DejvNF7u_8vNsLTdNyl82uf4Ig8-el70A",
+    "slug": "solitaire-day-fun-card-game",
+    "platforms": [
+      "android"
+    ]
   }
 }
