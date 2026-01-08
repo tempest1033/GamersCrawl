@@ -1,5 +1,40 @@
 ﻿{
-  "pending": [],
+  "pending": [
+    {
+      "title": "건틀렛: 방치형 액션 RPG",
+      "status": "matched",
+      "appIds": {
+        "ios": "6740556884",
+        "android": "com.metaboneent.gauntletrpg"
+      },
+      "developer": "Metabone Entertainment Inc.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/55/9e/e1559ec7-6622-c795-0420-660e511173a1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "searchResults": [
+        {
+          "title": "건틀렛: 방치형 액션 RPG",
+          "appId": "com.metaboneent.gauntletrpg"
+        }
+      ],
+      "addedAt": "2026-01-08T12:53:41.679Z"
+    },
+    {
+      "title": "다크타워:전략 배틀 RPG",
+      "status": "matched",
+      "appIds": {
+        "ios": "6748525811",
+        "android": "studio.gameberry.idlehunter"
+      },
+      "developer": "Rawhand. Inc",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/a9/7f/eba97f95-5ba3-e44d-e428-00b809d93bd8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "searchResults": [
+        {
+          "title": "다크타워:전략 배틀 RPG",
+          "appId": "6748525811"
+        }
+      ],
+      "addedAt": "2026-01-08T12:53:59.826Z"
+    }
+  ],
   "approved": [
     {
       "title": "드래곤 엠파이어 : 전략 매니지먼트",

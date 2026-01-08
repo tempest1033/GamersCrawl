@@ -933,13 +933,14 @@
     },
     "건틀렛: 방치형 액션 RPG": {
       "appIds": {
-        "ios": "6476731203",
+        "ios": "6740556884",
         "android": "com.metaboneent.gauntletrpg"
       },
       "aliases": [
         "건틀렛",
         "Gauntlet RPG",
-        "Gauntlet: Idle Action RPG"
+        "Gauntlet: Idle Action RPG",
+        "잠룡 : 도트 무협 RPG"
       ],
       "developer": "Metabone Entertainment Inc.",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/55/9e/e1559ec7-6622-c795-0420-660e511173a1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
@@ -13141,11 +13142,13 @@
     "다크타워:전략 배틀 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.rawhand.darktower"
+        "android": "studio.gameberry.idlehunter"
       },
       "aliases": [
         "Dark Tower:Tactical RPG",
-        "Dark Tower"
+        "Dark Tower",
+        "잠룡 : 무협 도트 RPG",
+        "헌터 키우기 : 방치형 RPG"
       ],
       "developer": "Rawhand. Inc",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/a9/7f/eba97f95-5ba3-e44d-e428-00b809d93bd8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
