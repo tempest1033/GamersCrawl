@@ -864,8 +864,8 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1009,7 +1009,7 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1025,7 +1025,7 @@ Dota 2(722,646명)도 강했고, ARC Raiders와 Path of Exile 2가 25만 명대�
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

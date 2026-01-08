@@ -864,8 +864,8 @@ PUBG: BATTLEGROUNDS(228,343명) 등 장르 강자와 함께 상위권을 형성�
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1009,7 +1009,7 @@ PUBG: BATTLEGROUNDS(228,343명) 등 장르 강자와 함께 상위권을 형성�
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1025,7 +1025,7 @@ PUBG: BATTLEGROUNDS(228,343명) 등 장르 강자와 함께 상위권을 형성�
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

@@ -400,7 +400,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
       </div>
     
       <div class="weekly-hot-card ranking-item">
-        <h4 class="weekly-hot-title"><img class="title-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">잠룡 : 도트 무협 RPG</h4>
+        <h4 class="weekly-hot-title"><img class="title-icon" src="/favicon.svg" alt="" loading="lazy" data-img-fallback-src="/favicon.svg">잠룡 : 도트 무협 RPG</h4>
         
       <span class="weekly-ranking-badge up">
         iOS 76위 → 52위 (+24)
@@ -864,8 +864,8 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1009,7 +1009,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1025,7 +1025,7 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

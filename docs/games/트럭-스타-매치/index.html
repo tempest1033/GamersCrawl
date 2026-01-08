@@ -410,7 +410,7 @@
           <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,94 380,94" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="94" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="88" text-anchor="middle">75</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="88" text-anchor="middle">75</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">74</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">76</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,64.66666666666666 380,123.33333333333333" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="123.33333333333333" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="58.66666666666666" text-anchor="middle">101</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="117.33333333333333" text-anchor="middle">102</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">100</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">101</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">102</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">103</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,94 380,94" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="94" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="94" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="88" text-anchor="middle">101</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="88" text-anchor="middle">101</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">100</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">101</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">102</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
         </div>
       
@@ -1067,8 +1067,8 @@
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1212,7 +1212,7 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1228,7 +1228,7 @@
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

@@ -849,8 +849,8 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -994,7 +994,7 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1010,7 +1010,7 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

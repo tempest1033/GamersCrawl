@@ -864,8 +864,8 @@ PUBG: BATTLEGROUNDS(216,131명)와 Rust(165,642명)도 상위권을 지켰습니
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1009,7 +1009,7 @@ PUBG: BATTLEGROUNDS(216,131명)와 Rust(165,642명)도 상위권을 지켰습니
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1025,7 +1025,7 @@ PUBG: BATTLEGROUNDS(216,131명)와 Rust(165,642명)도 상위권을 지켰습니
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

@@ -446,7 +446,7 @@
             
         <div class="chart-market-container">
           <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.52941176470588" x2="396" y2="65.52941176470588" /><line class="chart-grid" x1="18" y1="125.05882352941177" x2="396" y2="125.05882352941177" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,47.411764705882355 380,21.529411764705884" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="47.411764705882355" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="21.529411764705884" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="166.47058823529412" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="41.411764705882355" text-anchor="middle">25</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="15.529411764705884" text-anchor="middle">15</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="160.47058823529412" text-anchor="middle">71</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">9</text><text class="chart-ylabel" x="14" y="68.52941176470588" text-anchor="end">32</text><text class="chart-ylabel" x="14" y="128.05882352941177" text-anchor="end">55</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">77</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.52941176470588" x2="396" y2="65.52941176470588" /><line class="chart-grid" x1="18" y1="125.05882352941177" x2="396" y2="125.05882352941177" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,83.6470588235294 380,21.529411764705884" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="83.6470588235294" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="21.529411764705884" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="166.47058823529412" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="77.6470588235294" text-anchor="middle">39</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="15.529411764705884" text-anchor="middle">15</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="160.47058823529412" text-anchor="middle">71</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">9</text><text class="chart-ylabel" x="14" y="68.52941176470588" text-anchor="end">32</text><text class="chart-ylabel" x="14" y="128.05882352941177" text-anchor="end">55</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">77</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
           <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
@@ -1067,8 +1067,8 @@
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1212,7 +1212,7 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1228,7 +1228,7 @@
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

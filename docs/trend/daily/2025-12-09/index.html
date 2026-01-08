@@ -864,8 +864,8 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1009,7 +1009,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1025,7 +1025,7 @@ PUBG의 시즌 패스와 콜라보 업데이트, Rust의 해상 콘텐츠 예고
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

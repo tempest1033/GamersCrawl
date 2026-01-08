@@ -232,7 +232,7 @@
           <div class="game-hero-info">
             <div class="game-hero-title">카발RED</div>
             <div class="game-hero-developer">ESTgames Corp.</div>
-            <div class="game-hero-platforms"><span class="game-platform-badge">Android</span><span class="game-platform-badge">iOS</span></div>
+            <div class="game-hero-platforms"><span class="game-platform-badge">iOS</span><span class="game-platform-badge">Android</span></div>
           </div>
           <a href="/games/" class="game-back-btn" title="게임 DB로 돌아가기">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -448,7 +448,7 @@
           <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="94" x2="396" y2="94" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="94" r="2.5" /><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="88" text-anchor="middle">8</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">7</text><text class="chart-ylabel" x="14" y="97" text-anchor="end">8</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">9</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
           <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
-          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="66" x2="396" y2="66" /><line class="chart-grid" x1="18" y1="125.99999999999999" x2="396" y2="125.99999999999999" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,12 380,166" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="12" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="166" r="2.5" /><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="26" text-anchor="middle">4</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="160" text-anchor="middle">81</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="69" text-anchor="end">31</text><text class="chart-ylabel" x="14" y="129" text-anchor="end">61</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">89</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,15.263157894736842 380,166.56140350877192" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="15.263157894736842" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="166.56140350877192" r="2.5" /><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="29.263157894736842" text-anchor="middle">4</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="160.56140350877192" text-anchor="middle">53</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">20</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">39</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">58</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
         </svg></div>
         </div>
       
@@ -1135,8 +1135,8 @@
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1280,7 +1280,7 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1296,7 +1296,7 @@
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

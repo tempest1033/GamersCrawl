@@ -1,59 +1,5 @@
-<<<<<<< Updated upstream
 ﻿{
   "pending": [],
-=======
-{
-  "pending": [
-    {
-      "title": "건틀렛: 방치형 액션 RPG",
-      "status": "matched",
-      "appIds": {
-        "ios": "6748525811",
-        "android": "com.ryonggame.soulhunteridle",
-        "android:kr": "com.metaboneent.gauntletrpg",
-        "ios:kr": "6446516059"
-      },
-      "developer": "Game Duo Co.,Ltd.",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-      "searchResults": [
-        {
-          "title": "건틀렛: 방치형 액션 RPG",
-          "appId": "com.metaboneent.gauntletrpg"
-        },
-        {
-          "title": "다크타워:전략 배틀 RPG",
-          "appId": "6748525811"
-        }
-      ],
-      "addedAt": "2026-01-08T11:14:48.548Z"
-    },
-    {
-      "title": "스킨케어 타임: 메이크오버 ASMR",
-      "status": "matched",
-      "appIds": {
-        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
-        "ios": 6738948332
-      },
-      "developer": "FALCON GAME",
-      "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
-      "searchResults": [
-        {
-          "title": "스킨케어 타임: 메이크오버 ASMR",
-          "appId": 6738948332
-        },
-        {
-          "title": "Makeup ASMR: Makeover Story",
-          "appId": 6465175605
-        },
-        {
-          "title": "SatisCare: 깔끔한 ASMR 게임",
-          "appId": 6742741718
-        }
-      ],
-      "addedAt": "2026-01-08T11:15:12.905Z"
-    }
-  ],
->>>>>>> Stashed changes
   "approved": [
     {
       "title": "드래곤 엠파이어 : 전략 매니지먼트",
@@ -239,7 +185,7 @@
       "title": "스킨케어 타임: 메이크오버 ASMR",
       "status": "matched",
       "appIds": {
-        "android": "com.whoyaho.tanghulu",
+        "android": "com.fc.p.gp.skincare.makeup.makeover.asmr.game",
         "ios": "6738948332"
       },
       "developer": "FALCON GAME",

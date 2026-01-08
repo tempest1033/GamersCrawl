@@ -929,28 +929,17 @@
   {
     "name": "건틀렛: 방치형 액션 RPG",
     "slug": "건틀렛-방치형-액션-rpg",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/55/9e/e1559ec7-6622-c795-0420-660e511173a1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
     "aliases": [
-      "캣 히어로 : 방치형 RPG",
-      "픽셀 법사 키우기 : 방치형 RPG",
-      "헌터 키우기 : 방치형 RPG",
-      "뮤: 포켓 나이츠 – 방치형RPG",
-      "소녀총사 키우기 : 도트 방치형 RPG",
-      "소녀총사 키우기",
-      "잠룡 : 무협 도트 RPG",
-      "잠룡 : 도트 무협 RPG",
-      "미친 타워가 되었다:노빠구 RPG",
-      "다크타워:전략 배틀 RPG",
-      "소울 헌터 키우기 : 방치형 RPG",
-      "버서커 키우기: 방치형 RPG",
-      "버서커 키우기: 방치형 RPG - 신규서버 오픈",
-      "삼국지 올스타 : 방치형 RPG"
+      "건틀렛",
+      "Gauntlet RPG",
+      "Gauntlet: Idle Action RPG"
     ],
     "platforms": [
       "ios",
       "android"
     ],
-    "developer": "Game Duo Co.,Ltd.",
+    "developer": "Metabone Entertainment Inc.",
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
@@ -1773,8 +1762,8 @@
       "로블 록스"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Roblox Corporation",
     "hasRankings": true,
@@ -1792,8 +1781,8 @@
       "天堂W"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NCSOFT",
     "hasRankings": true,
@@ -1811,8 +1800,8 @@
       "トリッカル"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "EPIDGames",
     "hasRankings": true,
@@ -1829,8 +1818,8 @@
       "림버스 컴퍼니"
     ],
     "platforms": [
-      "android",
       "ios",
+      "android",
       "steam"
     ],
     "developer": "Project Moon",
@@ -1851,8 +1840,8 @@
       "걸스프론트라인2"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HaoPlay Limited",
     "hasRankings": true,
@@ -1865,8 +1854,8 @@
     "icon": "https://play-lh.googleusercontent.com/0hXMGimaFRN-9l38GaAa0qRARkxm-fxYB5hzVurZ0G4_oVMxrv0cnpYaAQAAhpdCNas",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ACE GAME INTERNATIONAL LIMITED",
     "hasRankings": true,
@@ -1881,8 +1870,8 @@
       "아키르"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SPGFun",
     "hasRankings": true,
@@ -1901,8 +1890,8 @@
       "魔靈召喚"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Com2uS",
     "hasRankings": true,
@@ -1920,8 +1909,8 @@
       "한게임 맞고"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NHN Corp.",
     "hasRankings": true,
@@ -1937,8 +1926,8 @@
       "Cabal RED"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ESTgames Corp.",
     "hasRankings": true,
@@ -1955,8 +1944,8 @@
       "Night Crows"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Co., Ltd",
     "hasRankings": true,
@@ -1975,8 +1964,8 @@
       "Fate/Grand Order"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": true,
@@ -1993,8 +1982,8 @@
       "Lord Nine"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Smilegate Holdings, Inc",
     "hasRankings": true,
@@ -2012,8 +2001,8 @@
       "블레이드 앤 소울"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": true,
@@ -2030,8 +2019,8 @@
       "Love and Deepspace"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "InFold Games",
     "hasRankings": true,
@@ -2048,8 +2037,8 @@
       "Raven 2"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": true,
@@ -2070,8 +2059,8 @@
       "絕區零"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "COGNOSPHERE PTE. LTD.",
     "hasRankings": true,
@@ -2087,8 +2076,8 @@
       "State of Survival: Zombie War"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "FunPlus International AG",
     "hasRankings": true,
@@ -2105,8 +2094,8 @@
       "Puzzle of Z"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "BLANCOZONE NETWORK CO., LIMITED",
     "hasRankings": true,
@@ -2122,8 +2111,8 @@
       "Devil M"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "37 Mobile Games",
     "hasRankings": true,
@@ -2139,8 +2128,8 @@
       "MU Monarch 2"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Webzen Inc.",
     "hasRankings": true,
@@ -2156,8 +2145,8 @@
       "MU Monarch"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Webzen Inc.",
     "hasRankings": true,
@@ -2170,8 +2159,8 @@
     "icon": "https://play-lh.googleusercontent.com/rU5RMjRFWnj0UIJBLtjFe2so2WzecN4D5tcY2VYhMIO1m1JKEaiu2M-BTn6SJpu3Vw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "GEAR2",
     "hasRankings": true,
@@ -2189,8 +2178,8 @@
       "星塔旅人"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Yostar Limited.",
     "hasRankings": true,
@@ -2203,8 +2192,8 @@
     "icon": "https://play-lh.googleusercontent.com/HPBKyPE6aq5YiPxAYSetVsJQudh9nIz2W0ghrkzNN0h0Sa7VMRaBIjb9NUw37VmZM0PB6eup-9MZ2zVnIdX0Dg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Au Elements Network Technology Co., Ltd",
     "hasRankings": true,
@@ -2217,8 +2206,8 @@
     "icon": "https://play-lh.googleusercontent.com/_BjyLC_y-w36hAxYWkngsi2WWsppSLSC7SrZYnfBZSs4r-ljRrmiRY25qOo3MB6gBTw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "BillionaireGames",
     "hasRankings": true,
@@ -2235,8 +2224,8 @@
       "리니지 레볼루션"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": true,
@@ -2255,8 +2244,8 @@
       "라이즈 오브 킹덤즈"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LilithGames",
     "hasRankings": true,
@@ -2269,8 +2258,8 @@
     "icon": "https://play-lh.googleusercontent.com/xdyEUPwXkpilQinMSXh6HAZi_Dd0293tOYwwGJQaRbbl846gGxUhu_RRLyRjKZOkFhQ4Qwvi2Shy9RLECRDvT-k",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Com2uS",
     "hasRankings": true,
@@ -2290,8 +2279,8 @@
       "Master Duel"
     ],
     "platforms": [
-      "android",
       "ios",
+      "android",
       "steam"
     ],
     "developer": "KONAMI",
@@ -2310,8 +2299,8 @@
       "브라운 더스트 2"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NEOWIZ",
     "hasRankings": true,
@@ -2324,8 +2313,8 @@
     "icon": "https://play-lh.googleusercontent.com/XSTq4d6SOEUJ4l8Or00U7n2qSTz-eGU65IaA73lJWpH0gT1QGOSFJb0ig339yXAijESUa__E_6I1rIJWllru_Q",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Play Co.,Ltd.",
     "hasRankings": true,
@@ -2343,8 +2332,8 @@
       "爐石戰記"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Blizzard Entertainment, Inc.",
     "hasRankings": false,
@@ -2357,8 +2346,8 @@
     "icon": "https://play-lh.googleusercontent.com/0e8qrd3JrOIXho7eY5ZReSn9p64NOSgykTN1jd1HwLrgkKSRa8_Re7hRqcnt6mfeY65C",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Com2uS",
     "hasRankings": true,
@@ -2384,8 +2373,8 @@
     "icon": "https://play-lh.googleusercontent.com/kXUw1cpR21qk7jVb0OqQltG93jtuDN8AWZpnlxbpydTkHVJ86e9sQcstreRfoV8xEwtN",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Kakao Games Corp.",
     "hasRankings": true,
@@ -2400,8 +2389,8 @@
       "버섯커 키우기-3000뽑기 증정"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Joy Nice Games",
     "hasRankings": true,
@@ -2420,8 +2409,8 @@
       "RAID Shadow Legends"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Plarium Global Ltd",
     "hasRankings": true,
@@ -2434,8 +2423,8 @@
     "icon": "https://play-lh.googleusercontent.com/kgASDCLyBG-Q-lkKVTjAyxiEkv5v9OEysVJV264mPMR9GOKcYdQ1BuABzryKcPqUmrQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "4399 KOREA",
     "hasRankings": true,
@@ -2448,8 +2437,8 @@
     "icon": "https://play-lh.googleusercontent.com/33gewrB2NRzxYY9K4eyMKVb-KHy8KBW3YR5pZNBiOBMk6pnXpOVFMmq2SpCqGN6hX23ZCr7FZnM8rGaWo2vhxA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Star Entertainment HK",
     "hasRankings": true,
@@ -2465,8 +2454,8 @@
       "아키워"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Kakao Games Corp.",
     "hasRankings": true,
@@ -2483,6 +2472,7 @@
       "Top War"
     ],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "RiverGame",
@@ -2496,8 +2486,8 @@
     "icon": "https://play-lh.googleusercontent.com/SS2_XL_HGU4QneGJNiQSsJ2eaHlsl2eTlCq6wBiqsSGWjyf72ekz3S8kw7tqdume8iDPMTw2FYEmACkSCfbgXkE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Com2uS Holdings",
     "hasRankings": true,
@@ -2517,8 +2507,8 @@
       "Umamusume: Pretty Derby"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Kakao Games Corp.",
     "hasRankings": true,
@@ -2531,8 +2521,8 @@
     "icon": "https://play-lh.googleusercontent.com/emNDoWnEo13CRoLpnoUfhygnTXQ7zQVZ9SPpcLWZrSEOZ8Jbk6dhx0bZ2zgY0BFg4g",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Lessmore UG",
     "hasRankings": true,
@@ -2547,8 +2537,8 @@
       "Family Island™ — Farming game"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Melsoft Games Ltd",
     "hasRankings": true,
@@ -2563,8 +2553,8 @@
       "에브리타운 : 힝토 콜라보레이션!"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Connect",
     "hasRankings": false,
@@ -2577,8 +2567,8 @@
     "icon": "https://play-lh.googleusercontent.com/XlsDdeIbPDT76qJKxOCFt1SNIWx0RRlbV39oAK4Bly90DbrszSmxiUhVdoTsBDIs284",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "JOYCITY Corp.",
     "hasRankings": true,
@@ -2595,8 +2585,8 @@
       "에픽 세븐"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Smilegate Holdings, Inc",
     "hasRankings": true,
@@ -2612,8 +2602,8 @@
       "에이펙스 걸"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "A3Games",
     "hasRankings": true,
@@ -2626,8 +2616,8 @@
     "icon": "https://play-lh.googleusercontent.com/lNzrjkj1opheeUKwSpiOHV48Q5IOwYz7th-7CLB4lU8S5AYMKqF-uq57mtEd0L5Do7akjjLqrzhPybbqUEFU4Q",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Webzen Inc.",
     "hasRankings": true,
@@ -2640,8 +2630,8 @@
     "icon": "https://play-lh.googleusercontent.com/25HVuJSH-Bcmsrv18ZMtRoLxsihD-Kjfp6ABY-FfW2h2eBw5fOdb3ZeYAIf6DchThg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NEXON Company",
     "hasRankings": true,
@@ -2654,8 +2644,8 @@
     "icon": "https://play-lh.googleusercontent.com/9j4lztgP0E4VfR-pukMagZr8W7S0kTO4R4PResd-SgoRD-RqNu9c9lyJoK8qY_XZgSGYMcy_G1E98q9Z8ykp9Q",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Kakao Games Corp.",
     "hasRankings": true,
@@ -2670,8 +2660,8 @@
       "천상비 K"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "주식회사 아이톡시",
     "hasRankings": false,
@@ -2684,8 +2674,8 @@
     "icon": "https://play-lh.googleusercontent.com/TZk8KU2pzMlxTEqC4GTEgxv43T1wHwwFLCyHgZrpATgId85ipL8irAoJyOBjMiZEfWI",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SuperPlay.",
     "hasRankings": true,
@@ -2698,8 +2688,8 @@
     "icon": "https://play-lh.googleusercontent.com/WG--0wORrkPpaLadKuI9q9CN3DhrwajsrH02j1T01RROtMjKwEg-9Xc81Baye-aRzHE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Co., Ltd",
     "hasRankings": true,
@@ -2730,8 +2720,8 @@
       "Doomsday Last Survivors"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "IGG.COM",
     "hasRankings": true,
@@ -2763,8 +2753,8 @@
       "AFK: 새로운 여정 - 모든 영웅 증정"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": true,
@@ -2779,8 +2769,8 @@
       "인생 존망겜"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "37GAMES",
     "hasRankings": false,
@@ -2797,8 +2787,8 @@
       "Mobile Legends"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "MOONTON",
     "hasRankings": true,
@@ -2811,8 +2801,8 @@
     "icon": "https://play-lh.googleusercontent.com/AYp2--qY3QQLqBUhF5aR8wAxO4VuXSFPqAoCGkyRRYurMXwdmVkeh1sVy2dMiVBfeDCMQaENSIuzRZlWC2n7uQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Cedar Games Studio",
     "hasRankings": true,
@@ -2830,8 +2820,8 @@
       "궁수의전설2"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Habby",
     "hasRankings": true,
@@ -2844,8 +2834,8 @@
     "icon": "https://play-lh.googleusercontent.com/ILaso3fNhQJ-xR0PnjDInI_nfELVvnBv-8oJA0DshLoi4CsDJXtW_pLkKHrU3gv9OmQ-TpA-yDHrM-6bg0r6",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Play Co.,Ltd.",
     "hasRankings": true,
@@ -2858,8 +2848,8 @@
     "icon": "https://play-lh.googleusercontent.com/Ed5lp_CXU-aY2_T1DxWfD3tB2FrXKnJepNehJJROTJOk71Ss13uEzTnncKM_RMuMp14",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Century Games PTE. LTD.",
     "hasRankings": true,
@@ -2872,8 +2862,8 @@
     "icon": "https://play-lh.googleusercontent.com/EV_twIkwlNF7PdQRteI3cOnznj48IUloH9biyJgnu3DXhbjTAKwLCkH0lIieFtuJN5OKVAgsO2nGJyEU8y-QsQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Play Co.,Ltd.",
     "hasRankings": true,
@@ -2886,8 +2876,8 @@
     "icon": "https://play-lh.googleusercontent.com/NLBf5agPazi74SBOJy94evHARQKHUsQZNlbbPiKUQ55DIUmIRReGoCVDqAKR4N2TZTn7TYJzq5oO4DQ_uvZCYNE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
     "hasRankings": true,
@@ -2900,8 +2890,8 @@
     "icon": "https://play-lh.googleusercontent.com/RKgL0eL07_Tu7e_IMNGklfRvo3rEQQ2DI6sWDcw9UDz4ds3mtbOMIthwKFbLtNHzNlwVGv5tFRS_WY1Juq4ksw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ESTARGAMES",
     "hasRankings": false,
@@ -2914,8 +2904,8 @@
     "icon": "https://play-lh.googleusercontent.com/5nEB1tB5NaCY75fC6YmB6H7APzSo8yNkJ1V4-1z_feYF7IW3tdXLNvbOfi1URsZd_V1q_f-weOqYkEPq5dpd6H8",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SPGAME",
     "hasRankings": false,
@@ -2930,8 +2920,8 @@
       "헌팅스나이퍼"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Sparks Info",
     "hasRankings": true,
@@ -2957,8 +2947,8 @@
     "icon": "https://play-lh.googleusercontent.com/wH0c77-FI_MgIo6Rp0FeVJg1mgaH5815DX8TS30lsFgM17YPG5cZQa05uW8PyhEv4MUup6o6Cvymo_9qu1Op",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Glaciers Game",
     "hasRankings": false,
@@ -2971,8 +2961,8 @@
     "icon": "https://play-lh.googleusercontent.com/arY_aGALIe1o912XSV51ihZUfy97DvNZksV5M6jyuDm9ZP3cax8ej9Se6zbd2AQvB_g",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Sesisoft",
     "hasRankings": false,
@@ -2990,8 +2980,8 @@
       "디아블로이모탈"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Blizzard Entertainment, Inc.",
     "hasRankings": true,
@@ -3004,8 +2994,8 @@
     "icon": "https://play-lh.googleusercontent.com/Y288R6UHNNioArub4c2sz3iK3glXkTRkMTibFI3GtzRuCIeFZNlE3D7Mw-w4D0AXlEE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "BluePotion Games",
     "hasRankings": false,
@@ -3020,8 +3010,8 @@
       "R2엠"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Webzen Inc.",
     "hasRankings": false,
@@ -3037,8 +3027,8 @@
       "Empires & Puzzles: Match-3 RPG"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Small Giant Games",
     "hasRankings": true,
@@ -3051,8 +3041,8 @@
     "icon": "https://play-lh.googleusercontent.com/ft2gMMYPJUlbD_zzLSjBX1YIFVgBNZvj16RkYV6Cd0GchG2YInGs0cQMAEsC8IsgANTa5LxPEsnAkB4H0xws",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LTGAMES GLOBAL",
     "hasRankings": true,
@@ -3073,8 +3063,8 @@
       "アークナイツ"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Yostar Limited.",
     "hasRankings": true,
@@ -3087,8 +3077,8 @@
     "icon": "https://play-lh.googleusercontent.com/q49LReY4Tl3cpZ69xVQqvc4AqqGMiKf6r3F29-V7iUa3-j38W1OFOlQ-OWlELylZwHG6",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "게임랜드주식회사",
     "hasRankings": true,
@@ -3101,8 +3091,8 @@
     "icon": "https://play-lh.googleusercontent.com/rCBUe5VIt21_xSY24wFmPQL9MEwdZpU4YnCW8rp2ROlBfHVuEKc8w94867Jhz2dBgSmo0CyI0gfFmrr9Xgirig",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Glacier entertainment",
     "hasRankings": true,
@@ -3118,8 +3108,8 @@
       "V 4"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NEXON Company",
     "hasRankings": true,
@@ -3139,8 +3129,8 @@
       "アズールレーン"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "X.D. Global",
     "hasRankings": true,
@@ -3153,8 +3143,8 @@
     "icon": "https://play-lh.googleusercontent.com/PzKwygP2WjYoxNPuIUPqrPp_8VDZAYa7FDw5clIjl_VAE5xV5O-kR5Cn6h8Votukn5sQCHTT8-cxeHeIi4gD",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Com2uS",
     "hasRankings": false,
@@ -3167,8 +3157,8 @@
     "icon": "https://play-lh.googleusercontent.com/DEEgq5tChFEAv5dzO6qvzAXlCt2FHSEbzY02Pt7BOJBxxDsdkFrybfUYvcBGaNri6LLNSadqTy4Zopc1KCDWuQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "XD Entertainment Pte Ltd",
     "hasRankings": false,
@@ -3186,8 +3176,8 @@
       "Solo Leveling Arise"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": false,
@@ -3213,8 +3203,8 @@
     "icon": "https://play-lh.googleusercontent.com/RR9FIUjVF5RznQx440vfurLh0hRzZSFJjmClpMeuWAwcgFL1IbSwl561lLf2Q_mNt37ud91riqzllW4DD3WA7BE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HK ZHILI YAOAN LIMITED",
     "hasRankings": true,
@@ -3233,8 +3223,8 @@
       "世界計畫"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Nuverse",
     "hasRankings": true,
@@ -3247,8 +3237,8 @@
     "icon": "https://play-lh.googleusercontent.com/mKydHfT02NK5P-tK-eu4Ls_u8wxzGRMqR-RG9CySnbiUZ_OpfxQuFb51kSxYePDVTwETqfVYztdDpwp9_i6W-A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Kakao Games Corp.",
     "hasRankings": true,
@@ -3261,8 +3251,8 @@
     "icon": "https://play-lh.googleusercontent.com/aP4FM6yDfVJ9A-P19HA4Fezcrd3Vwd2LyJDAlAi2TEjHSIt4Dn2ZL67cGfj75ffJ-j_pBtFGhn8ZFdgzyzsMYGY",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Glaciers Game",
     "hasRankings": true,
@@ -3277,8 +3267,8 @@
       "Pocket Champs: 3D Racing Games"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Madbox",
     "hasRankings": true,
@@ -3293,8 +3283,8 @@
       "Matching Story"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VERTEX GAMES PTE. LTD.",
     "hasRankings": true,
@@ -3307,8 +3297,8 @@
     "icon": "https://play-lh.googleusercontent.com/Sh6mpGuUdEQAZrkDv-GOL6N125ej8F-4qavF5ITSu45Ng8OaHroqkJP0nuhAKeZ_zg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LING CHAI (HONG KONG) LIMITED",
     "hasRankings": true,
@@ -3323,8 +3313,8 @@
       "레이싱 마스터(Racing Master)"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Exptional Global",
     "hasRankings": true,
@@ -3337,8 +3327,8 @@
     "icon": "https://play-lh.googleusercontent.com/gzvssEySliIHu4BGOPTF4vVJ_sb9YfZ6ST-ocNsvrN1f8UQXjQHadey4SlXYKeqMzEXbsvbOvlMzmr7RzLU6Bg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ONEMT SGP",
     "hasRankings": false,
@@ -3351,8 +3341,8 @@
     "icon": "https://play-lh.googleusercontent.com/xkBUvyYOQTt5X2rTo6_3RKhExpzrcuNR2ts-2GM-h7t48aqLbbK5eYp9pJ859txt2QE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "MINIGAME ENTERTAINMENT LIMITED",
     "hasRankings": true,
@@ -3365,8 +3355,8 @@
     "icon": "https://play-lh.googleusercontent.com/xKt-vhbVPToKDV2JhUmMnx3EDmdjNt7Zx1Wgnz_DLANZIW_v3DakdqqVxOqeCiRQqg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NCSOFT",
     "hasRankings": false,
@@ -3384,8 +3374,8 @@
       "Marvel Future Fight"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Netmarble",
     "hasRankings": false,
@@ -3413,8 +3403,8 @@
       "냥냥시노비"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CookApps",
     "hasRankings": false,
@@ -3430,8 +3420,8 @@
       "에이지 오브 엠파이어"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Level Infinite",
     "hasRankings": true,
@@ -4373,8 +4363,8 @@
     "icon": "https://play-lh.googleusercontent.com/iRqoL4RxGfHEcwegxMqQoBCCH2aA5p1YEUN3WOm_D98EXEsi6aUR8gLJ5j1YAIh7aKtXuu-5o8umE0JuHxTQrA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LINE NEXT Corp.",
     "hasRankings": false,
@@ -4415,8 +4405,8 @@
       "Arrows – Puzzle Escape"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Lessmore UG",
     "hasRankings": true,
@@ -4431,8 +4421,8 @@
       "모범 놀이터"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Jiewan Game",
     "hasRankings": false,
@@ -4458,8 +4448,8 @@
     "icon": "https://play-lh.googleusercontent.com/4zxCL29BQf68ndk3k1PhXKNOrR_n8QfVMF-3JMPAYzIAYjZwfJoFeMUC5lPLeUE9uJjhIGcrZNaDvkRMS9UipA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "TAP GAMES",
     "hasRankings": true,
@@ -4485,8 +4475,8 @@
     "icon": "https://play-lh.googleusercontent.com/f_ImrzQpXw781wa_yNSxhfJz4b_t-MSQ6A1PXPoFBX3b0BkKRwVc7ik4eVbwA-x5S0jRxpZ0KvD__ULeEFwFAw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wonderful  Studio",
     "hasRankings": true,
@@ -4499,8 +4489,8 @@
     "icon": "https://play-lh.googleusercontent.com/WQGX_wBkyDBp1-gDWCe3r7h1JnLz8QP6l-xfypskJjTM2vjakRXSDzMrz5AMs0RLAgs",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Oakever Games",
     "hasRankings": true,
@@ -4518,8 +4508,8 @@
       "Pokemon Unite"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "The Pokémon Company",
     "hasRankings": false,
@@ -4532,8 +4522,8 @@
     "icon": "https://play-lh.googleusercontent.com/lYmltftQoZO6YkLUgqCsHyS6Ve57d3zH5sG3bDWeOdCq6MFxJzgZmBM70lw-6fBfqjqZ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Astrasen Play",
     "hasRankings": true,
@@ -4546,8 +4536,8 @@
     "icon": "https://play-lh.googleusercontent.com/IN1pi8lXoNFv2ioamP9jM_pvBzt4eNwWpZ_C6LHVgoq31fkkNVCiuEU-YROQEJjTug",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "GamoVation",
     "hasRankings": true,
@@ -4560,8 +4550,8 @@
     "icon": "https://play-lh.googleusercontent.com/9G5Qe9rlbCNdRD-PrK5bn5s9v0ApdtR-d-Tog_sOyWoYT4tecoPhEBjX_23Qeyzluae5_9A1YG8rCpHfLzyXig",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -4574,8 +4564,8 @@
     "icon": "https://play-lh.googleusercontent.com/ydycRAMyUyJoCyN2Xxx5Bx68efWeMav7YRMB1EzPCHaN1Zk3npAYP_pWkRIZJmSU0oToqanWCjE1cheXG3p0",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Melodya Muses",
     "hasRankings": true,
@@ -4588,8 +4578,8 @@
     "icon": "https://play-lh.googleusercontent.com/1zwNr5upS-OMzGC-uO8wsKg8l7Z2L9nI3REwN6IbgFw-uBpvHx4G1_2mTOOUUKe10-Q8",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ABI GAME",
     "hasRankings": true,
@@ -4602,8 +4592,8 @@
     "icon": "https://play-lh.googleusercontent.com/xC6Ky_Utjy9ULs1N8cKED99IXdp0o0gFy6k8aXuPat6rmxxQrNkHqe9HKFfsogK3kQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -4616,8 +4606,8 @@
     "icon": "https://play-lh.googleusercontent.com/mAGrZRPJJBWvOJziROVGpETXnjBu_4dS0o2VBgDcwwKyY4akUxRxwoVP5Q1soalxX5bIVDBkDB1KXZPBfqKZ0Q",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
     "hasRankings": true,
@@ -4632,8 +4622,8 @@
       "Life: 인생 시뮬레이션 RPG"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "OfficialCaox",
     "hasRankings": false,
@@ -4646,8 +4636,8 @@
     "icon": "https://play-lh.googleusercontent.com/Ps9ble2ja0F1s8VQmGj4n4lBW-390jFz63Uckicajh6GvKpFjWNgN-YGTRcVQj8rv53n",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supercent, Inc.",
     "hasRankings": true,
@@ -4660,8 +4650,8 @@
     "icon": "https://play-lh.googleusercontent.com/9EzfqffTXjWmqOLBwky_J_RaCjbmuwwnxl1KpmMOSY8WJRoykAiUq3UaaLjhT7-AME4",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Nebula  Studio",
     "hasRankings": true,
@@ -4673,11 +4663,12 @@
     "slug": "스킨케어-타임-메이크오버-asmr",
     "icon": "https://play-lh.googleusercontent.com/_mkiIvECi3kK6XWgQHQRD_DGPAXRYZ_VBpmtZOm80f9N5B5wy8XVSXfwAtEKY5meLRQ",
     "aliases": [
-      "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR"
+      "스킨케어타임",
+      "Skincare Time"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "FALCON GAME",
     "hasRankings": true,
@@ -4690,8 +4681,8 @@
     "icon": "https://play-lh.googleusercontent.com/97_rYmmv0WkyOB8Ni4pFgh5HPOx0uCIEUN1uROFuwrtJYFEzIXeBDfdRYmJ77lRtB2c",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "1SOFT",
     "hasRankings": true,
@@ -4707,8 +4698,8 @@
       "All in Hole: Black Hole Games"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Homa",
     "hasRankings": true,
@@ -4721,8 +4712,8 @@
     "icon": "https://play-lh.googleusercontent.com/xT4-Jd79HjNHpDHboXZQ7KzzXr3cSVq8qJ4JI5YlUiOTtN3XgPdNqNP34cqJcVnIImPO",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supercent, Inc.",
     "hasRankings": true,
@@ -4750,8 +4741,8 @@
       "페이퍼io"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -4764,8 +4755,8 @@
     "icon": "https://play-lh.googleusercontent.com/IvJgpYNeAjj6zY2aVT4WFBoohMfPlp3QZ3cfyooDId-w40lroKYcXb24vJPyATBOjzk",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "PlaySimple Games",
     "hasRankings": true,
@@ -4778,8 +4769,8 @@
     "icon": "https://play-lh.googleusercontent.com/K3ncdCrbnHb-Po_gNuiJldSG7lfczGR0ZdFs3zoV28yTqPnzWQh07l2xI3rgMiIPsA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Prokids Studio",
     "hasRankings": false,
@@ -4796,8 +4787,8 @@
       "지오메트리 대시 라이트"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "RobTop Games",
     "hasRankings": true,
@@ -4810,8 +4801,8 @@
     "icon": "https://play-lh.googleusercontent.com/s8lguasFdDuyJRF5JY2mOhwKToY0yWNARbeDcSAN8--RBlrer0R5pst9FVY5m6zg3WQz240ZYE6YpXeagflpCQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ACTIONFIT",
     "hasRankings": false,
@@ -4824,8 +4815,8 @@
     "icon": "https://play-lh.googleusercontent.com/VdwSN4bgijc28wQpTPwOd7MXn7kQuNfdrH6YpQqttMfK9_bgH_I2TQ9K0U_4wGjrQ58",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Cobby Labs",
     "hasRankings": false,
@@ -4838,8 +4829,8 @@
     "icon": "https://play-lh.googleusercontent.com/2VhOV2rpw-IjsdC4gRrLPgKbUlbyYu9knQ3aIhkUp-UFTiyv656V_pOebjnrQlBYOxvjcWCmDf7XQNdUb421_A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Lion Studios Plus",
     "hasRankings": true,
@@ -4852,8 +4843,8 @@
     "icon": "https://play-lh.googleusercontent.com/paB5-2s6q3uXd3nRE0-2QzCLeLklmemDepD0_Erald5YQUazuiOhMvJ8giFluMAX0w",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "X-FLOW",
     "hasRankings": true,
@@ -4866,8 +4857,8 @@
     "icon": "https://play-lh.googleusercontent.com/er8cfJO7d0HSeHHBjYRfrRTApVOCnItFpi5BMJ3iTmVvWC8Tt_FT58tJPoP0CxAswI-D",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -4880,8 +4871,8 @@
     "icon": "https://play-lh.googleusercontent.com/F4r_imTe0hKKnVfrOUxbS8oumI6LpU-UgFbOW0VHoYQ_FnrcXq0p3QRR96u5wNANm2A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "FALCON GAMES",
     "hasRankings": true,
@@ -4896,8 +4887,8 @@
       "Tik Tap Challenges"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "XGame Global",
     "hasRankings": true,
@@ -4915,8 +4906,8 @@
       "Angry Birds"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Rovio Entertainment Oy",
     "hasRankings": true,
@@ -4929,8 +4920,8 @@
     "icon": "https://play-lh.googleusercontent.com/PDihQY9_F9fscwUcOgv1O3NIkUsQbaqzHjMFAUddc7K8TsyczNMkvKn63mcYYNanj_uGkGM7UtxBlskNDO_4nQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supa Inc.",
     "hasRankings": false,
@@ -4945,8 +4936,8 @@
       "홀io"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -4974,8 +4965,8 @@
       "스도쿠 - 클래식 스도쿠 퍼즐"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Oakever Games",
     "hasRankings": true,
@@ -4988,8 +4979,8 @@
     "icon": "https://play-lh.googleusercontent.com/1h7m141FxhTxNeVWLjyn2yiv9B7Tcjbx28j_7pMa7z2SrBT22scVcrSujQYdo7_lfFg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -5005,8 +4996,8 @@
       "Brain Test"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Unico Studio",
     "hasRankings": true,
@@ -5019,8 +5010,8 @@
     "icon": "https://play-lh.googleusercontent.com/6dxSHa7jrOk4hVYKYhs7ZJHa9-cbjxJPb9pAxQCG8QQIAUtu06PbfRz-RGamYH4IYA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
     "hasRankings": true,
@@ -5033,8 +5024,8 @@
     "icon": "https://play-lh.googleusercontent.com/qEn-zUf2QycZTwgVa-9G23tuO-Jt6MkxRJruA4LGWTFYPiX892es6hPNfX36uRjlq0NDStX4t9_0NS0OLpAY5bE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": false,
@@ -5047,8 +5038,8 @@
     "icon": "https://play-lh.googleusercontent.com/yIAJp_TzX9mzKU5cxnH4sVlhju2fL_Hz-jc1bQhQsr3SI64fF0-Q-nxAUyQUwqF-Wj_ZkfWD6Hpmx5mA6w0EDA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Concave IT Ltd",
     "hasRankings": false,
@@ -5061,8 +5052,8 @@
     "icon": "https://play-lh.googleusercontent.com/6QUNBjD87kpequ8CCZByjmE1lg7bFxCZhbdsYPQykPLKLUb487SYDI94VDnO6A_SX0Yt74d6ix8RgJCOqSNdvl0",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Panteon",
     "hasRankings": false,
@@ -5075,8 +5066,8 @@
     "icon": "https://play-lh.googleusercontent.com/zHDUQpkVaOVBfz-DiKrU7is1QrBcA9W70PYZglaU2oGI5rkWaZ4SsAutF3DQnPrfWA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Whalo",
     "hasRankings": true,
@@ -5089,8 +5080,8 @@
     "icon": "https://play-lh.googleusercontent.com/OLuOionkDc_BiJNw3ojfuE-cczW_rIFsm5LLXBlpck3ovOF85wGk02oVcsRLnWZqd2Y",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ACTIONFIT",
     "hasRankings": false,
@@ -5103,8 +5094,8 @@
     "icon": "https://play-lh.googleusercontent.com/ATSgKoqUjlkoqosf-qyOg6exo-8iEsh0mhEtAfq16p2mbpWD1I0E5YUaU96-8EeNPzggvPeLLpgoQBEsNkIdCg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "GameeStudio",
     "hasRankings": true,
@@ -5117,8 +5108,8 @@
     "icon": "https://play-lh.googleusercontent.com/dpeIwiKjiOnFsKJhQA152k9ZV_5tqmiA1SsX8ArvptsCYbTnnjnLq7WIFOjVTsn1DYwEqsN5oa32_n1vFTrcz3A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Max Co., Ltd.",
     "hasRankings": true,
@@ -5157,8 +5148,8 @@
     "icon": "https://play-lh.googleusercontent.com/9wadwzZNpcThKBSf7J1Z5Bh4EOT-WutaY6_2h5TyfUyCJ5SUnDccHvIkPsVSRVFWenJh",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Gloryway Puzzle Hub",
     "hasRankings": true,
@@ -5173,8 +5164,8 @@
       "Water Sort - Color Sort Puzzle"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Bobodoo Game",
     "hasRankings": true,
@@ -5187,8 +5178,8 @@
     "icon": "https://play-lh.googleusercontent.com/KNX8z_99xjKxK0puDZvdNARH-lY6axzilF4xxmaldtMMuFWBtrveWjt9bJdg4oaiNlrN",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LinkDesks Daily Puzzle",
     "hasRankings": true,
@@ -5201,8 +5192,8 @@
     "icon": "https://play-lh.googleusercontent.com/KV6LJhKnHyzT_Zlr76Qac4IG8PRqK9r-2-CCf-4zs1XDLfKSWUmkNbZlnL64IZVMzg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Riot Games, Inc",
     "hasRankings": true,
@@ -5218,8 +5209,8 @@
       "Sniper 3D"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wildlife Studios",
     "hasRankings": true,
@@ -5232,8 +5223,8 @@
     "icon": "https://play-lh.googleusercontent.com/JSlwDMTrNeAOdQy1VTarXe2k_9smwE_rrMNQI33-ZEf4Q88TiWBoQADzOPt-HKal1Uj_YZVvlVG4rOYGtgWdXpI",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Yelo Hood",
     "hasRankings": true,
@@ -5246,8 +5237,8 @@
     "icon": "https://play-lh.googleusercontent.com/kBxTITZyjilQi1-n5Hms70DlSU-fUgsgnNQXd23R5cN8J7A9mxxgvsMt9aPXSbyPrMXA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "XGame HK",
     "hasRankings": false,
@@ -5262,8 +5253,8 @@
       "Snake Puzzle: Slither to Eat!"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "UniPuzz Games",
     "hasRankings": true,
@@ -5276,8 +5267,8 @@
     "icon": "https://play-lh.googleusercontent.com/Zq-wLWkJZ7OonrQhny7D_Y3dOBcFBbhRwrtQoAbOiaycK85HNNHW94tjkmQ7QkHSkyE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Tripledot Studios Limited",
     "hasRankings": true,
@@ -5292,8 +5283,8 @@
       "Woodturning 3D"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -5306,8 +5297,8 @@
     "icon": "https://play-lh.googleusercontent.com/Nogh0qCVUkrnr5j3s-f_6IqRj-bMp59inp4f5IJ9A6OC9Yevo5EDtI8e2hbS2qBDP-FJ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Game District LLC",
     "hasRankings": true,
@@ -5335,8 +5326,8 @@
       "Snake Escape - Slither Puzzle"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Solaird Studio",
     "hasRankings": false,
@@ -5351,8 +5342,8 @@
       "Roadside Empire"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Highcore Labs LLC",
     "hasRankings": false,
@@ -5380,8 +5371,8 @@
       "수박 만들기 2048"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "mobirix",
     "hasRankings": true,
@@ -5394,8 +5385,8 @@
     "icon": "https://play-lh.googleusercontent.com/yYQ4QldM1Dclw1mK0sW1gJlwT6XJ05qPf6IGu9GtXc3kKfNj92PqdmkD8OFtRId75a5fuKkJ5X38b2qCl3QYeA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Ivy",
     "hasRankings": true,
@@ -5408,8 +5399,8 @@
     "icon": "https://play-lh.googleusercontent.com/PhHx-WaS8QbMbsipZBU_C2GRKvAZYEBZYuVN0atzyqB-axqedEouITb7yDkQ7CEsZg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Seeplay Inc.",
     "hasRankings": false,
@@ -5425,8 +5416,8 @@
       "UNO"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Mattel163 Limited",
     "hasRankings": true,
@@ -5439,8 +5430,8 @@
     "icon": "https://play-lh.googleusercontent.com/MKbJTL4XqOxj7m117Gu1O-DGrwZPqCuhCZQ5Fm_QR4BL0fgdL_MW6oRh3cIsytBzaHabB39N800aHISK5VVh7Q",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "StoryTaco.Inc",
     "hasRankings": false,
@@ -5455,8 +5446,8 @@
       "전우치 키우기 : K 데몬 헌터"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CodeDragon Inc.",
     "hasRankings": false,
@@ -5469,8 +5460,8 @@
     "icon": "https://play-lh.googleusercontent.com/D5mQD1mgvy5s2o-2MRolTamUSeiY1F_fZXs4H1SdMTfVW5vm0jiuPHu3AELP7QaBSA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SUPERBOX Inc",
     "hasRankings": false,
@@ -5485,8 +5476,8 @@
       "Cube Breaker HD"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "AMOBEAR TECHNOLOGY GROUP",
     "hasRankings": true,
@@ -5499,8 +5490,8 @@
     "icon": "https://play-lh.googleusercontent.com/7DHx7niRbvECd0MyY3OvYt7mPPrkuSGZRK2GJqofzaIPTv8-Hs2GaEXM62UsBLG_b3M",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": false,
@@ -5513,8 +5504,8 @@
     "icon": "https://play-lh.googleusercontent.com/JjByKjPxSqD9oRRwwt_cDT-0VdK0MekYxwTtYp8p5SidOGyQkimiFXxBpB2C2UjETtkh",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Guru Puzzle Game",
     "hasRankings": true,
@@ -5527,8 +5518,8 @@
     "icon": "https://play-lh.googleusercontent.com/R3Uf8zQrKC-5Z9IAI_yTzAkheotKcNwY6Tpwqbp3DKjKE3iLlmEwfoIIraGS5I1TTlQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -5546,8 +5537,8 @@
       "Lords Mobile"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "IGG.COM",
     "hasRankings": true,
@@ -5562,8 +5553,8 @@
       "캔디 프렌즈 : 매치 3 퍼즐"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SUPERBOX Inc",
     "hasRankings": false,
@@ -5589,8 +5580,8 @@
     "icon": "https://play-lh.googleusercontent.com/4TTE3VCAUciSPOnMo5dWn3Y1tvuiZNns7dT1q5_msDzip_UY07RbzmnoYyKnbDFBHw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wildlife Studios",
     "hasRankings": true,
@@ -5629,8 +5620,8 @@
     "icon": "https://play-lh.googleusercontent.com/mwNtXlNabsgyvRcmuS3dUjMwEBMtXMH1UkTZC9wT__X3bvQoEzNFMSR9b7N3ByuTEQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ACTIONFIT",
     "hasRankings": true,
@@ -5643,8 +5634,8 @@
     "icon": "https://play-lh.googleusercontent.com/6mVznOihgcFfAOONs_AmANaFwDHGCkxwxk9RwQ9tUy9aR27dYZK-p_VLPwgx0WWadyY",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "XGame HK",
     "hasRankings": false,
@@ -5657,8 +5648,8 @@
     "icon": "https://play-lh.googleusercontent.com/RdZNKDuKFKe-QOf4M6_dCZWfc1owXJQ3HI5QuGpV8fsHWwtt9LBn2VwvWJdfGr-FfWc",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "JindoBlu",
     "hasRankings": true,
@@ -5673,8 +5664,8 @@
       "수학 퍼즐 게임 - 크로스매스"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Guru Puzzle Game",
     "hasRankings": true,
@@ -5689,8 +5680,8 @@
       "Minecraft: 나만의 세계를 꿈꾸고 만들어보세요"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Mojang",
     "hasRankings": true,
@@ -5703,8 +5694,8 @@
     "icon": "https://play-lh.googleusercontent.com/H-ZAJcM_Zvq2FJvNcXX5jeXJWVlASN0s_ebwwQOIsNHR7TfPxZIMPuUzhoXqZI9FGLRF",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "FTY LLC.",
     "hasRankings": true,
@@ -5717,8 +5708,8 @@
     "icon": "https://play-lh.googleusercontent.com/5rjBBdUYQHj5NN93-p1KytCKXqfOZyMTitXSg1xAGYZ-pwA0JRQs65xPEMsdzRWxQ6gmz5bDoUULjvRUkpnBlYs",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Mafgames",
     "hasRankings": false,
@@ -5731,8 +5722,8 @@
     "icon": "https://play-lh.googleusercontent.com/UoBeMWwIeHSxGAx1EhmvWrG1lkzlG78UByGwEkEhRlp40udqC0hHJeRTl266g9aG-A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "JindoBlu",
     "hasRankings": true,
@@ -5745,8 +5736,8 @@
     "icon": "https://play-lh.googleusercontent.com/wvkrIF6TBO_80dwNh3PJCDOvqw3e90pAoviSXhaU_iaCRSp9Ib3wblMMCiAU7ooArjdWiwNAl9agF5Dt9nZ10uY",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HM Games Pty Ltd",
     "hasRankings": true,
@@ -5759,8 +5750,8 @@
     "icon": "https://play-lh.googleusercontent.com/Z6KJAQTDqQzJaeisYfVVBvAGMznEFBNb0U229BpFgmm8nolXrvqZ7HQmoiUTjsY4esI",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Tripledot Studios Limited",
     "hasRankings": false,
@@ -5776,8 +5767,8 @@
       "Kick the Buddy"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Playgendary Limited",
     "hasRankings": true,
@@ -5790,8 +5781,8 @@
     "icon": "https://play-lh.googleusercontent.com/m2JlJjZW9-cRH07eHrz9rO6jFqTSeZY_8yZFEUH4Cpuf10hB9qbBTIzoSri7t091Ew",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ABI GAME",
     "hasRankings": false,
@@ -5804,8 +5795,8 @@
     "icon": "https://play-lh.googleusercontent.com/DoVN47qkzVNM3r9TeDom7F8AnF2HIHI5WgV2rlrhPieWdvXR2CDYroVwhbXs_MqWxH589Qgu7g6oNgjhYPs-EA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HungryStudio",
     "hasRankings": false,
@@ -5857,8 +5848,8 @@
     "icon": "https://play-lh.googleusercontent.com/S7KghUp5n1pbdx38PztRpL3WWfU3bV-rx-uGHlO5LBAtHOvpnv3qFx9HmH1z4OQTzGc",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Tripledot Studios Limited",
     "hasRankings": false,
@@ -5884,8 +5875,8 @@
     "icon": "https://play-lh.googleusercontent.com/r6gFqSgxmF6R5KAed8ozJDzQJ-6gkIIj6WaiwF1ap4eROry4IpxED_lz0qCs0rOzJr-T3HukOOrSD8MNAxfguqs",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": false,
@@ -5898,8 +5889,8 @@
     "icon": "https://play-lh.googleusercontent.com/PVAaDyPvgiW_t__S9bsPoh-ocJSsh--LhD7hdWweNIPEVrtZbx2ckfL5IkTHCbU1Ibc",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Mobile Gaming Studios Ltd.",
     "hasRankings": true,
@@ -5912,8 +5903,8 @@
     "icon": "https://play-lh.googleusercontent.com/sPbblGfqVRv-iKOxXhH6bwE4qqUuDhAO53N5H5n0mnCg2mvjA-u6T80dm8DGc_rVjZekUyoBU--F0AQ0LgNStw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NANOBIT",
     "hasRankings": false,
@@ -5939,8 +5930,8 @@
     "icon": "https://play-lh.googleusercontent.com/W3TnMtBP79yiez_C-5Szq5opNSuzRObIRkWyDKpS2cyuxsVI9n7-fgC_IKOaagl8E_g",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Yso Corp",
     "hasRankings": false,
@@ -5953,8 +5944,8 @@
     "icon": "https://play-lh.googleusercontent.com/TlTT0BS4ndcYvLhxDEuXUci6QDbASrL52sC9VusupxrGqXcwe89uUV6hspns3EWaEQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Fastone Games",
     "hasRankings": false,
@@ -6818,9 +6809,9 @@
       "원스 휴먼"
     ],
     "platforms": [
-      "steam",
       "ios",
-      "android"
+      "android",
+      "steam"
     ],
     "developer": "Starry Studio",
     "hasRankings": false,
@@ -7246,8 +7237,8 @@
       "I9: 인페르노 나인"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Leniu Technology Co., Limited",
     "hasRankings": true,
@@ -7260,8 +7251,8 @@
     "icon": "https://play-lh.googleusercontent.com/EVu4ax1GxxSB2Adpbj9Lhu2D2Mnhwkt1hFlCHh0drUzaK-ChepMedhKEGxkokM9V3TmJXPnEGYLGzkzKgb_n",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HaoPlay Limited",
     "hasRankings": true,
@@ -7274,8 +7265,8 @@
     "icon": "https://play-lh.googleusercontent.com/JXDLs5Sbvc6s41FAVLOuNgesF45ollWlFMY7nIzEjfEmqc6wax5o5Z1LFYy0W0V1Niw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Gameduo",
     "hasRankings": true,
@@ -7288,8 +7279,8 @@
     "icon": "https://play-lh.googleusercontent.com/NiXuHj-Y2LXYnRbwRdvSZW3xOC8mB9iC0dpg1ollH3ZmVXwrKrf0ZvnVI3nOVzGoLg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Connect",
     "hasRankings": true,
@@ -7302,8 +7293,8 @@
     "icon": "https://play-lh.googleusercontent.com/02XtRbof13UDiM3ZPRq-4R7jLqcDOM87r1_rxcO3VEo5AWJjh5PqHTnZW7MpjyuRUXg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "PEARL ABYSS",
     "hasRankings": true,
@@ -7316,8 +7307,8 @@
     "icon": "https://play-lh.googleusercontent.com/2rUa7BlTumKdfztTJhHvy0XzheDbbf3RCGMmtt118S1HPsLxFywrtory1FTJ-qaBrGM",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Devsisters Corporation",
     "hasRankings": true,
@@ -7356,8 +7347,8 @@
     "icon": "https://play-lh.googleusercontent.com/MX_RZXeeKOqW3nGvXFU9boomS67sP3yyG2N9G551SY_olfgDW4VVgFqaYy--KqLO5oMpRPup7kDOM9wKZgFV3kc",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Major9",
     "hasRankings": false,
@@ -7370,8 +7361,8 @@
     "icon": "https://play-lh.googleusercontent.com/PhWYBc79bJkDl8ZCxH7U88kLQ57TEzkn2iWq4ysOzuBDJNqAszP08zzqZr1wTqbia9WnXIC9tD0JjovLwgvxMw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Qookka Games",
     "hasRankings": true,
@@ -7384,8 +7375,8 @@
     "icon": "https://play-lh.googleusercontent.com/CF0hRlPnuWtcS_xA6uCQ8Ck4E-2O3QsNM4UMclO4FZq-InP0eqFsrxR1c63Meb2bQrOHcg0CgzDA2CDdRnbHEjk",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SPGFun",
     "hasRankings": false,
@@ -7468,8 +7459,8 @@
       "돼지키우는중입니다"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "TRSOFT",
     "hasRankings": false,
@@ -7484,8 +7475,8 @@
       "린M"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Ujoy Games",
     "hasRankings": true,
@@ -7526,8 +7517,8 @@
       "Haunted Merge: Horror Story"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "WhaleJoy Game Limited",
     "hasRankings": true,
@@ -7540,8 +7531,8 @@
     "icon": "https://play-lh.googleusercontent.com/2DZwMz-Ym7V7IIMNokyFKsG5LKivJNruU24igYCHA2nfJ5G1XLuxBvQlPcO-hj60sA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Freeplay Inc",
     "hasRankings": true,
@@ -7569,8 +7560,8 @@
       "Coloring Match"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supersonic Studios LTD",
     "hasRankings": false,
@@ -7583,8 +7574,8 @@
     "icon": "https://play-lh.googleusercontent.com/EY6-CY3HT6iycyj9FcWbkKHQzW_GeuXk04v0oEAePdVDG3YQ2O_Eh-v3K1ZE2NQY_DI",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "MondayOFF",
     "hasRankings": true,
@@ -7597,8 +7588,8 @@
     "icon": "https://play-lh.googleusercontent.com/0DbRFni8cmedxiHh-RhxOUAm6ggN7HzNuJY5CaG3oa1ULDp1Uc4m86KpUGD2CMEHyU7wA1KDIs1dJTvCVWAZlTk",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Toca Boca",
     "hasRankings": true,
@@ -7611,8 +7602,8 @@
     "icon": "https://play-lh.googleusercontent.com/stjTItfEyoYW6XankxkYMzHl29ydCcWs-iA-jMXsEmQr9or8GmJw0Cdyyh02aoY47mWv",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "HungryStudio",
     "hasRankings": false,
@@ -7627,8 +7618,8 @@
       "Sled Surfers  - 슬로프 어드벤처"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CrazyLabs LTD",
     "hasRankings": true,
@@ -7656,8 +7647,8 @@
       "Arrowscapes - Arrows Puzzle"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Beijing Youyoutang Technology Co.,ltd.",
     "hasRankings": true,
@@ -7683,8 +7674,8 @@
     "icon": "https://play-lh.googleusercontent.com/iX3n0aKVuZrWoV38GtKnlRT52pittq1LbQIP12gQITrRXg99MrxUIrYwEYIfE8conQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VisionStudio(HK)",
     "hasRankings": true,
@@ -7699,8 +7690,8 @@
       "Draw Arena"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": false,
@@ -7713,8 +7704,8 @@
     "icon": "https://play-lh.googleusercontent.com/iQkccRgYNjF0xdVFioJo0SabtPKO0nSZrP7p8zCLGYpUypROC-Boo9GN3GaHddhudkO7",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Lessmore UG",
     "hasRankings": false,
@@ -7740,8 +7731,8 @@
     "icon": "https://play-lh.googleusercontent.com/itNq9cg7y7DVh6iSf-zhdegtIClJ8t-zr_FIHGa2e1VLvH0-_-zKKTxy_FusRmNgh488W2pqCAddUMRBYjpQ5M4",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "STUDIO LICO Corp.",
     "hasRankings": false,
@@ -7756,8 +7747,8 @@
       "Supreme Duelist"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Neron's Brother",
     "hasRankings": false,
@@ -7770,8 +7761,8 @@
     "icon": "https://play-lh.googleusercontent.com/1kInqsBi-gTuGgRxKn8G1_KntTSKdgEI3GndN1d7C4jH974OMAK_Gy39_8nidKrfftMm",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "stick hunter",
     "hasRankings": false,
@@ -8359,8 +8350,8 @@
     "icon": "https://play-lh.googleusercontent.com/mCwa1MZLN9aFF_7bZx22BMZO34EKMW3ZcL4BkPuEfGp07hGkY4XwaWfwAdgRP0_EZ7gJ9M3ESGosAZOhhsxr8g8",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "GALA Sports",
     "hasRankings": false,
@@ -8427,8 +8418,8 @@
     "icon": "https://play-lh.googleusercontent.com/Xe_ftwSwoEUzR32d_7v3UWwwmL1ILz8d6EZliWwdPdo-W9hXLy5vwE4-pJ1Ppj7mLA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LogicLabs Limited",
     "hasRankings": false,
@@ -8441,8 +8432,8 @@
     "icon": "https://play-lh.googleusercontent.com/A1l-tIbphgjreQ-47-vNYLqbjaFJfmoS6aEXHR9_yI1eyKwxPXnQPRL-xF_SLyMPLg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "TapNation",
     "hasRankings": true,
@@ -8455,8 +8446,8 @@
     "icon": "https://play-lh.googleusercontent.com/u1Z-wRullWJBvInhY4gdFxg_Q8Pz6clUQd7thoQNQNHQ1ghNeUf-lsJandlp1vFKhBk",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -8471,8 +8462,8 @@
       "Melon: Sandbox"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "playducky.com",
     "hasRankings": true,
@@ -8543,8 +8534,8 @@
     "icon": "https://play-lh.googleusercontent.com/MtKGnLTsV4ruVpYZAu9B_Es6zcqPAZKpDqu_HedIC22FFFgR30V-f9akB947CH132w",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NTRANCE CORP.",
     "hasRankings": true,
@@ -8557,8 +8548,8 @@
     "icon": "https://play-lh.googleusercontent.com/hrVg2nxnZk6P8utdCU0xFnbdWsf-TJULeHFhGjoPCbZ4HrBGtd8ll2G8Ybhhg4tAG4BdN9rjtAwHe9Dn7-bj1rI",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "부산만동게임즈",
     "hasRankings": false,
@@ -8642,8 +8633,8 @@
     "icon": "https://play-lh.googleusercontent.com/pva4yRPOtkXfH-RbAGZKZIKUFicYdT40dUWjqwdZvZ8IgXGaEzaARvlAzyJDdF7A_kuom4artfX48rUtLqPCGw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NGU Studio",
     "hasRankings": false,
@@ -8658,8 +8649,8 @@
       "Buildit - Chill Brick Game"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "MINIMAX PTE. LTD.",
     "hasRankings": false,
@@ -8728,8 +8719,8 @@
     "icon": "https://play-lh.googleusercontent.com/ih8k2p3rBs4GhH1cMTSaVnICRHClPje0C7xtkizOxoMWCaOh8_CSeOowUUxYQXzED5I",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "racoonDigi",
     "hasRankings": false,
@@ -8774,8 +8765,8 @@
       "Pocket Sort: Coin Merge Puzzle"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -8950,8 +8941,8 @@
       "We Are Warriors!"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Lessmore UG",
     "hasRankings": false,
@@ -8964,8 +8955,8 @@
     "icon": "https://play-lh.googleusercontent.com/DfYkSl-nQoMNLX2bec7EwHemrvyDYmDgzIR1jcsyt0ZAcmO_SKjuu0a1o1iSwtnl8_g",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Scopely",
     "hasRankings": true,
@@ -8978,8 +8969,8 @@
     "icon": "https://play-lh.googleusercontent.com/tcFwazQqHBp9XVAmIQSez9orx0g3DbXxYqvacG8XMY7P43Qy1zItwikoYv04sK1V3wz1Zw86x9cPkiiXdHuxHg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Higgs Gaming",
     "hasRankings": true,
@@ -8994,8 +8985,8 @@
       "옥 마작 (Jade Mahjong)"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wonderful  Studio",
     "hasRankings": true,
@@ -9011,8 +9002,8 @@
       "Screwdom"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "iKame Games - Zego Studio",
     "hasRankings": true,
@@ -9025,8 +9016,8 @@
     "icon": "https://play-lh.googleusercontent.com/JrkFbn3imyogQ1Fd4fGOC9EiPQOlT9f1PIRKRtqRlOU9MrtCJG-YhSKP42FcuA1JYVSrno_G72qYMfIZA-bH",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -9179,8 +9170,8 @@
     "icon": "https://play-lh.googleusercontent.com/VqY_7ZNxG91KHaZguRP3khXdlTR1yQr45RCoiNu6MO41UhN-jlN31YWTQImWFRTw5r0",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Unept",
     "hasRankings": true,
@@ -9221,8 +9212,8 @@
       "아이들 무기 상점"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Hello Games Team",
     "hasRankings": false,
@@ -9235,8 +9226,8 @@
     "icon": "https://play-lh.googleusercontent.com/qWUtBNdGkdeQdqIeX_mRJNJD3mbn-GudRV0J1ZGPHu9glc0-TtYZaRe2KUWchfHH0KNwODTaGg7ctuQEHhxcLQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Tap Color Studio",
     "hasRankings": false,
@@ -9289,8 +9280,8 @@
     "icon": "https://play-lh.googleusercontent.com/5qH9f1jHP0W6yez4_DbqG7OUA5hw6LIe3pb56CG7xr9SX7jf8_f4WGHHHTOWSyWwT0ic",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NEXON Company",
     "hasRankings": true,
@@ -9303,8 +9294,8 @@
     "icon": "https://play-lh.googleusercontent.com/_RfXWqDkmCbpur-TDq-bkfIlu6sXt5noe9bk9lij53cfr7u8ySbwUjilvlWSsWTgIJs",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "FARLIGHT",
     "hasRankings": false,
@@ -9371,8 +9362,8 @@
     "icon": "https://play-lh.googleusercontent.com/DPnyPo_2u5wgMEYacR6qpRMdT6qjNvdqYTNnuHkN1tyvSIpOsIKgQF6t_kbBRxCgrv4EvsrF3cbqX2tWcTPiZV4",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LOST TEMPLE GAMES",
     "hasRankings": true,
@@ -9385,8 +9376,8 @@
     "icon": "https://play-lh.googleusercontent.com/3zYytd77MXlmtvwNZW_L0icufZPK2EIVBpa-asmPeVTaWdZvnL_ERldsqM_ujX6PfclG4A5jbvC9w1vZk6MDpQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Tripledot Studios Limited",
     "hasRankings": true,
@@ -9412,8 +9403,8 @@
     "icon": "https://play-lh.googleusercontent.com/s-7JfFzVIC1FJW41ip-gvdMFMv2opc8qXyvDQeURVIpoOj1dvkM6QQUFJ-LpuZwI9OAD",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "TG Inc.",
     "hasRankings": true,
@@ -9426,8 +9417,8 @@
     "icon": "https://play-lh.googleusercontent.com/L0j49yfNguTY_Xf5-xKRRrGdZZ15N-x8Lr5-xqb_ave67W2xUy1wIO9xClI4ivPhf6s",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Wemade Play Co.,Ltd.",
     "hasRankings": true,
@@ -9440,8 +9431,8 @@
     "icon": "https://play-lh.googleusercontent.com/7MrJ1kVcJab9YnzZ5vOrFNQrhfQPBdBLLZ5qL9c9QyU5CfkS5vttITIfZcwmXwlJ00Jf2cpJLxPLvsOjceC7dw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "ZlongGames",
     "hasRankings": false,
@@ -9454,8 +9445,8 @@
     "icon": "https://play-lh.googleusercontent.com/GLQ8jseBIMQxngNB1EHceB5t1vsUD0KE4tNWx3pM_ogRj9l0xN_eqmOihZHLdemtN0Q",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Smilegate Holdings, Inc",
     "hasRankings": true,
@@ -9468,8 +9459,8 @@
     "icon": "https://play-lh.googleusercontent.com/f5PNMPX4Si2Z6dR2WtShfOsZwHCj1uUVRyEPRtNxQFd-OVchJzs0fhrDp4sUjwYmXA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "NDREAM Corporation",
     "hasRankings": false,
@@ -9509,8 +9500,8 @@
     "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Easybrain",
     "hasRankings": true,
@@ -9536,8 +9527,8 @@
     "icon": "https://play-lh.googleusercontent.com/3b8UjwQWEKtOkO9FbxOnMmUWm2jrhlkUEL5twAuTCEp2m0QpXl6rvw4jpAC6G92cMwt_cJBn_NVLDCHnMAlFOQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "AIMED",
     "hasRankings": false,
@@ -9550,8 +9541,8 @@
     "icon": "https://play-lh.googleusercontent.com/tTRf-6_Zz2vtbjOH-1un0oS6O7vY7KNOqPZJx2bFKYXrswM6q7G-B4tPABIp5EZY3JI",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Bravestars Games",
     "hasRankings": true,
@@ -9564,8 +9555,8 @@
     "icon": "https://play-lh.googleusercontent.com/aTRg29zhoHXiy88KTDXL8mMEvbk0xCi0KHwu9u6kapMSAh6EihRGksQfCYc82pq5Tg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supersonic Studios LTD",
     "hasRankings": true,
@@ -9578,8 +9569,8 @@
     "icon": "https://play-lh.googleusercontent.com/y_NvzzYOl_sdsiRkE9hucNkO5GLTfBnnntZfPceHlqcCv6N-SzjVdAR9ROEmSxTGRPs",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "KAYAC Inc.",
     "hasRankings": false,
@@ -9644,7 +9635,8 @@
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/83/43/cd834383-2af5-9984-9ef2-85838157ce4b/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/100x100bb.png",
     "aliases": [],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "WONCOMZ.INC",
     "hasRankings": false,
@@ -9753,8 +9745,8 @@
     "icon": "https://play-lh.googleusercontent.com/CFv9DjtAttZp1PB4Uy4T-sEM7vQvwt4X2EErVXX-kg5sqIHrb5AB_gKiQ1tFvFF8XlrVjvz3xFz_CJGeIKqa",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "PlaywithKorea Inc.",
     "hasRankings": false,
@@ -9767,8 +9759,8 @@
     "icon": "https://play-lh.googleusercontent.com/-TSJthRTGWUi3S-gSvpkAkeJTLWvFp8n4had4iON78KGU7Zo_iMVVn3qHvPlOPB6o-A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CASUAL AZUR GAMES",
     "hasRankings": false,
@@ -9781,8 +9773,8 @@
     "icon": "https://play-lh.googleusercontent.com/iHlDnj1VTFXvs6EJXRcujBdmfMYGfM46wy8f4Jn0i1EvqR8r-u-DE0UYip_96x1anKlvDTLoDb9Xm_R4H--ZRg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Rivvy Games",
     "hasRankings": false,
@@ -9795,6 +9787,7 @@
     "icon": "https://play-lh.googleusercontent.com/xuKOvPrRGZomQOJUuca-6uvO5lZgTxQd4ZwDtZ_CnsAyT1UIPz2aPIz8fGsPBL0fQvs",
     "aliases": [],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "Club Team Caliente Mx Sports e Casino",
@@ -9879,8 +9872,8 @@
     "icon": "https://play-lh.googleusercontent.com/Cbc3y5_93On25T75tjT3MgszhCSscE_-C2RX6cCMmdy4Ka7qwYpC2f3N6hdONkcXHw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "빌리온게임즈",
     "hasRankings": true,
@@ -9923,8 +9916,8 @@
     "icon": "https://play-lh.googleusercontent.com/xKFSTVLubj4qJgCO4O-kU_GzItivBAKUHcQODgW1fparc7RQ_QbIY2-alPtUWv_4aQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": false,
@@ -9937,8 +9930,8 @@
     "icon": "https://play-lh.googleusercontent.com/oO_bLmrCSrIFOxgpKZJXIdYQGkjtO9kMvbbyWYjsZpOXqxzxcdBlscYqUkPTkh9HiiNBRPPdWYKCqNnvjtpihb8",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": true,
@@ -9951,8 +9944,8 @@
     "icon": "https://play-lh.googleusercontent.com/jSwD3gBRCY0F2rZfE4Lk3nGr5P76PIKoDPGqcxkOAfuZHMkEXt1qVSAYHcGUcUsJ1vRQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Playvalve",
     "hasRankings": false,
@@ -9965,8 +9958,8 @@
     "icon": "https://play-lh.googleusercontent.com/jCKV8Q2tfa6jyVu_l7w22OVIyCCrHD_f4u7J9LswUHqjUd0dNhdwVoeuJDEszch5dNCL",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Guru Puzzle Game",
     "hasRankings": true,
@@ -9979,8 +9972,8 @@
     "icon": "https://play-lh.googleusercontent.com/hkT49tQvIp2WBwLlricTSrg-0Xm8Tv4Al0SwKNXt048BaatQZOmEJY4S-TNUbfZWNAdb",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Easybrain",
     "hasRankings": true,
@@ -10063,8 +10056,8 @@
       "머지 파라다이스: 합성&머지(merge)"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "StoryTaco.Inc",
     "hasRankings": false,
@@ -10077,8 +10070,8 @@
     "icon": "https://play-lh.googleusercontent.com/JdkgreDBCOxt7_0eeiVgbwtQkkdWmlWMO9cwAyj6rfVcAM5Z9l99zbg4eoUac5C0Bw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Peak",
     "hasRankings": true,
@@ -10091,8 +10084,8 @@
     "icon": "https://play-lh.googleusercontent.com/AUFjTi2uHccBExbJgoWPiIePi-WSAaPeZeuezpEj2oXm7h9hv7UYvTK_dM-LnAQvu9KTiM-fYSPRpVs0Gqoi",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Oakever Games",
     "hasRankings": true,
@@ -10105,8 +10098,8 @@
     "icon": "https://play-lh.googleusercontent.com/RpDTpps4HdoJzckeAQh7_pnJoO2wrpipmS2Gzm-VWrT4jyFgPUY0xAzv4J6MCjHmjg",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Rooftop Game",
     "hasRankings": false,
@@ -10119,8 +10112,8 @@
     "icon": "https://play-lh.googleusercontent.com/MyYDQubxyt-0Dp7WXCpIID6cuOxCL_J84nfxxhED89BaUUpVaXqBTUERLR0OKRVU061nKCRjuv_KhDAJB-yjEeY",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CrazyGames.com",
     "hasRankings": true,
@@ -11409,8 +11402,8 @@
     "icon": "https://play-lh.googleusercontent.com/JynqYikH08XZ7XgRUzobGY2fIP8T3JwdqseP_y93B7acIy5VSFAHWaRVz-ACFTQACPjJJdmh9fVkJacYwWeNbQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Hong Kong Spiral Rising Technology Co., Limited",
     "hasRankings": false,
@@ -11423,8 +11416,8 @@
     "icon": "https://play-lh.googleusercontent.com/LzScvHGRIUDY1RXfEdkIFWxcLSmBGpDhzWx1kaGATpxojRuk5Q0kD97xzo3wLWnA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "IGG.COM",
     "hasRankings": true,
@@ -11437,8 +11430,8 @@
     "icon": "https://play-lh.googleusercontent.com/BlUH29X45WRImdgOAVl9O2qGezDaWn5_VKEr2R7TRgigtid3AIgcfYbLtoZAMlHHhrw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "BluePotion Games",
     "hasRankings": true,
@@ -11479,8 +11472,8 @@
     "icon": "https://play-lh.googleusercontent.com/7NlTwDOtVYbamTAInaBQGUjmjXc5QWpvKdAJyocilb6b205RHIpzdD53pbZtrr2cDCwRmrJP4qHvLjDHOCZ35w",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CHICKEN SKIN LLC",
     "hasRankings": true,
@@ -11493,8 +11486,8 @@
     "icon": "https://play-lh.googleusercontent.com/lCAB4fA3-2A-7qK-Ja0XYq9lkzlz_0gxTN_i4dcFaLG1JdV8ZuwqSs70BEvFKSBZuJrWZg3QExsWz_DPj3FL3To",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": false,
@@ -11520,8 +11513,8 @@
     "icon": "https://play-lh.googleusercontent.com/t60C0-WFi4l_yR8of-uu2o3ZjJvOMGU0_2ctyKemBRRTLFPqrkeZgZul4mt5gNzHt3Pb-3D8cxg_OR3CnHuK2g",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "SayGames Ltd",
     "hasRankings": false,
@@ -11547,8 +11540,8 @@
     "icon": "https://play-lh.googleusercontent.com/9f_R10NUsL336bwz1szQ8eE_IYDkSNG-FMKFemPw2m23B5fUCVqv2Zpd8vC3-Pn7iRVjUkRcFcNRIcAlKCqwLQ",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "BELKA GAMES",
     "hasRankings": false,
@@ -11585,12 +11578,15 @@
     "name": "ONE PIECE TREASURE CRUISE",
     "slug": "one-piece-treasure-cruise",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/71/1f/7a711f35-42f6-c6c7-1269-a8937ed75ba5/AppIcon_en-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "ONE PIECE TREASURE CRUISE-RPG"
+    ],
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11627,8 +11623,8 @@
     "icon": "https://play-lh.googleusercontent.com/PQnAqYDPuV9yAMssbBkA5WPt68jaPyA_T4cbEDRjwMidLfxP0sEoH16bSV_5hSOm0ds",
     "aliases": [],
     "platforms": [
-      "android",
       "ios",
+      "android",
       "steam"
     ],
     "developer": "株式会社ドリコム",
@@ -11666,8 +11662,12 @@
     "name": "나이트메어 퍼즐: 미지",
     "slug": "나이트메어-퍼즐-미지",
     "icon": "https://play-lh.googleusercontent.com/DoU9jXstazUP65ZU7t4pc0RCKtHn-ZR56hsD9M5fdqKv74tVM-izRYVl_fQoM5kSeg",
-    "aliases": [],
+    "aliases": [
+      "나이트메어 퍼즐",
+      "나이트메어 퍼즐: 미지의 세계"
+    ],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "CYLINDER GLOBAL PTE. LTD.",
@@ -11760,6 +11760,7 @@
     "icon": "https://play-lh.googleusercontent.com/27M26Ai8VoBJ6eEoWPAAE3e26GOT6o5fjUlGT7Q6PQoNyGp8MHAVWTjx0QFBI7ywR9U",
     "aliases": [],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "KAYAC Inc.",
@@ -11838,8 +11839,8 @@
     "icon": "https://play-lh.googleusercontent.com/9LKFZ7zWDIF68RKb8_-tSBk5gNu0mmUK8iMba5s6Rm0la-6q5Wvv4f8eukakO9x-yLE",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supersonic Studios LTD",
     "hasRankings": false,
@@ -11878,8 +11879,8 @@
     "icon": "https://play-lh.googleusercontent.com/4SYLl-Gr6B6-N9lvPkvGv_2yt6dktP14wMl1w4pLeEkLbwj15o7_vdxaVh-J3lktnac",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supersonic Studios LTD",
     "hasRankings": true,
@@ -11892,9 +11893,9 @@
     "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header_koreana.jpg?t=1765346606",
     "aliases": [],
     "platforms": [
-      "steam",
+      "ios",
       "android",
-      "ios"
+      "steam"
     ],
     "developer": "Cygames, Inc.",
     "hasRankings": true,
@@ -11973,8 +11974,8 @@
     "icon": "https://play-lh.googleusercontent.com/tgW1f51Jc_ALH05AZxox9Zo24lPeGqjSKLIP0SyrHT2NrEI9cJaqkSDyAYeSdnQQrJ6J",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "PoseidonJoy",
     "hasRankings": true,
@@ -12002,8 +12003,8 @@
       "Card Queen:Duel"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Arfa IT",
     "hasRankings": true,
@@ -12032,8 +12033,8 @@
       "용구 탄생의 비밀"
     ],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "GT Games Korea",
     "hasRankings": false,
@@ -12046,8 +12047,8 @@
     "icon": "https://play-lh.googleusercontent.com/XOPOfmlptKTGdffWIxYNC43p68aeCDkraqJADHdWZL4u3h313q_w2e0jRY3ym0X9yIqpDiJiiCXW2-cgp4ZKQA",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Supercent, Inc.",
     "hasRankings": true,
@@ -12060,8 +12061,8 @@
     "icon": "https://play-lh.googleusercontent.com/bwNj3Phx8c5VWiXvCYMMcMs3ULNFqockg6BTcirDGbnUig0gSitTidoDQlOzSbl3Zbrd6Vc9Wj2TB9LpItR3Sw",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Burny Games",
     "hasRankings": true,
@@ -12074,8 +12075,8 @@
     "icon": "https://play-lh.googleusercontent.com/XVg36jSw9Rbq9lfdyHmJgNSDo-LNiMXg93Gh7jCdbiwt7yzZBKcGiQrPP1FUG1BqiGU",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "GRAVITY Co., Ltd.",
     "hasRankings": false,
@@ -12129,8 +12130,8 @@
     "icon": "https://play-lh.googleusercontent.com/btXhKSa4JsIiEuT0z5ouy_D_ceFlTlxbf-gTc1X6XYsqqYlYBsTYex_Os28VpUfoSiF5",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "CASUAL AZUR GAMES",
     "hasRankings": true,
@@ -12143,8 +12144,8 @@
     "icon": "https://play-lh.googleusercontent.com/Iwl1n--czy618kM8m9kHzl262J8FAg02Wd4jUdR1PwBxThYFcExtLGZzPvj7ru1Q0q8",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -12183,8 +12184,12 @@
     "name": "디노 유니버스 (Dinosaur Universe)",
     "slug": "디노-유니버스-dinosaur-universe",
     "icon": "https://play-lh.googleusercontent.com/4zrjGRozq6QqGL7baBNsBH-rlWXI1tCe243ZE8QzpiNzVBnWNEzkOWmlxiEC6aCUD22QVVeC_shsx2UJRfhl",
-    "aliases": [],
+    "aliases": [
+      "디노 유니버스",
+      "Dinosaur Universe"
+    ],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "Supercent, Inc.",
@@ -12198,8 +12203,8 @@
     "icon": "https://play-lh.googleusercontent.com/3xYKZjScJsUXxeqEkit6qyE72Hm5SxBeR0e5HYp26wq1ri8UnobvNRadIj7SlVsRUM4",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "DAERI SOFT Inc",
     "hasRankings": true,
@@ -12223,8 +12228,12 @@
     "name": "좀비 광산타이쿤, 금광 방치형 어드벤처 게임 Idle",
     "slug": "좀비-광산타이쿤-금광-방치형-어드벤처-게임-idle",
     "icon": "https://play-lh.googleusercontent.com/f5bdgKrSbD4OoqHqPAU1dmG8AJ9b7R_rtZz9ePDCH38nWfLiwgoO_q8z-CkGGLBc2_RW",
-    "aliases": [],
+    "aliases": [
+      "좀비 광산타이쿤",
+      "좀비 광산타이쿤: 금광 방치형 게임 어드벤처 Idle"
+    ],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "Royal Ark",
@@ -12280,8 +12289,8 @@
     "icon": "https://play-lh.googleusercontent.com/NAJROtgQG6BsgAINRtMbOAHPEaVstT6_ysXmP1Hd9bPf5czg-3gEq8guJGvDEsULyU0",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Bravestars Games",
     "hasRankings": true,
@@ -12291,9 +12300,12 @@
   {
     "name": "I Am Monkey",
     "slug": "i-am-monkey",
-    "icon": "https://play-lh.googleusercontent.com/Qfc9KivAAH65ag0GAZEMSJbihSQbCcqdu2ZIWT9r-zIr3CM-nhxVOXeo9P9ZMie6BBFp7Murw_yvYxXkRPV9",
-    "aliases": [],
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/04/f9/7904f9d0-0021-2cea-0c5e-6a9deb298c8e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [
+      "I Am Monkey - original game"
+    ],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "Estoty",
@@ -12305,8 +12317,11 @@
     "name": "와글와글 군단: 방치형 라인 디펜스",
     "slug": "와글와글-군단-방치형-라인-디펜스",
     "icon": "https://play-lh.googleusercontent.com/eEQuTri0-QJ9W0PMbBZNROGK1P7sbqYpz0QeY9GFwZxF8TD1XCZI5-wkEYD4xkZFTvWHKLi3aAS0hQ2dmu7GkA",
-    "aliases": [],
+    "aliases": [
+      "와글와글 군단"
+    ],
     "platforms": [
+      "ios",
       "android"
     ],
     "developer": "EKGAMES",
@@ -12733,19 +12748,6 @@
     "hasData": true
   },
   {
-    "name": "I Am Monkey - original game",
-    "slug": "i-am-monkey-original-game",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/04/f9/7904f9d0-0021-2cea-0c5e-6a9deb298c8e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
-    "platforms": [
-      "ios"
-    ],
-    "developer": "Estoty",
-    "hasRankings": false,
-    "hasSteam": false,
-    "hasData": true
-  },
-  {
     "name": "Solitaire Day-Fun card game",
     "slug": "solitaire-day-fun-card-game",
     "icon": "https://play-lh.googleusercontent.com/fGSnhmbMoQsAf6Qxr-Ewc3fAbu3UhSSZwigO_4vYRgCNtQMawVKo3DejvNF7u_8vNsLTdNyl82uf4Ig8-el70A",
@@ -12764,8 +12766,8 @@
     "icon": "https://play-lh.googleusercontent.com/_azlI3FJACT4sHBfka-aO7jsogdlyUzux1HE9J5A6xG7-ncsiIhtSGgyNW-8nSQ3Ghs",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Skyloft Yazılım Bilişim ve Anonim Şirketi",
     "hasRankings": true,
@@ -12776,7 +12778,9 @@
     "name": "Kick & Break The Ragdoll Games",
     "slug": "kick-break-the-ragdoll-games",
     "icon": "https://play-lh.googleusercontent.com/rgGNjWhQNxqqn365nYiqZoH2qq5Txqnr2JxNSfigs6lLIKv8kHRh8UymElZ6iFjEhHI",
-    "aliases": [],
+    "aliases": [
+      "Kick & Break"
+    ],
     "platforms": [
       "android"
     ],
@@ -12791,8 +12795,8 @@
     "icon": "https://play-lh.googleusercontent.com/ULCwTpPEaYWxsY6MBKC9GjigZryy5C3dY0IXVbbR5rXQH2jcnFLCGV-Nk9CsuFlaWXIG",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "tatsumaki games",
     "hasRankings": true,
@@ -12897,8 +12901,8 @@
     "icon": "https://play-lh.googleusercontent.com/RwhB4QoN5kr9OLshc8_exaN9spQ_vAyKSR41y2ahPVMYukYv-7KfxOFWs07BaOgeW3z291hSF6FzDIw1is6Bww",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "FATTOY",
     "hasRankings": true,
@@ -13017,8 +13021,8 @@
     "icon": "https://play-lh.googleusercontent.com/SSNukhchpbRZqfI0ytTwNsbu_7wW3xXZ60Z-OlmN03Q9nioqgQ2VRbmyPvdzjy3mI9n9",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "Springcomes",
     "hasRankings": true,
@@ -13254,8 +13258,8 @@
     "icon": "https://play-lh.googleusercontent.com/Gb6PM7ytQrhsb8wWPcExHlSf0N--AxGyoJ29Xl3cRtaiIDDDWKRDlCbYebL2i1gNjck",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "LifeSim",
     "hasRankings": true,
@@ -13268,8 +13272,8 @@
     "icon": "https://play-lh.googleusercontent.com/6pKiNXE-YV-E6bP0UjFU5z-eeE9yiWJyR2eLiEasCUAWjHRcKn-kwS3wW8BNb7eYGmM8Y0KuPdOztKihTBNk5A",
     "aliases": [],
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "developer": "VOODOO",
     "hasRankings": true,
@@ -13443,6 +13447,88 @@
     "developer": "Sokpop Collective",
     "hasRankings": false,
     "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "캣 히어로 : 방치형 RPG",
+    "slug": "캣-히어로-방치형-rpg",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/35/07/f3350775-512e-ebb1-d5ad-27736e9b7548/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+    "aliases": [
+      "Cat Hero : Idle RPG",
+      "Cat Hero"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Game Duo Co.,Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "뮤: 포켓 나이츠 – 방치형RPG",
+    "slug": "뮤-포켓-나이츠-방치형rpg",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a0/05/4f/a0054f48-f0fb-3f6d-4be1-e34160462f99/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+    "aliases": [
+      "뮤: 포켓 나이츠",
+      "MU: Pocket Knights"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "WEBZEN INC.",
+    "hasRankings": false,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "소울 헌터 키우기 : 방치형 RPG",
+    "slug": "소울-헌터-키우기-방치형-rpg",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/e1/d4/5be1d449-b91d-dfca-9c36-bac36e0fcab9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Ryong Game Co., Ltd",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "다크타워:전략 배틀 RPG",
+    "slug": "다크타워전략-배틀-rpg",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/a9/7f/eba97f95-5ba3-e44d-e428-00b809d93bd8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+    "aliases": [
+      "Dark Tower:Tactical RPG",
+      "Dark Tower"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Rawhand. Inc",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "탕후루의 달인 - 편의점, 급식, 파르페 먹방 ASMR",
+    "slug": "탕후루의-달인-편의점-급식-파르페-먹방-asmr",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/88/a6/2c88a6f1-c788-6518-9f1b-ae372d95e313/AppIcon-0-0-1x_U007epad-0-11-0-0-85-220.png/100x100bb.jpg",
+    "aliases": [
+      "탕후루의 달인",
+      "탕후루의 달인 - 편의점, 급식, 배달 먹방 ASMR"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Whoyaho Corp.",
+    "hasRankings": true,
+    "hasSteam": false,
     "hasData": true
   }
 ]

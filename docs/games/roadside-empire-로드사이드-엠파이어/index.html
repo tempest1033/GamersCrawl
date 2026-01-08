@@ -233,7 +233,7 @@
           <div class="game-hero-info">
             <div class="game-hero-title">Roadside Empire (로드사이드 엠파이어)</div>
             <div class="game-hero-developer">Highcore Labs LLC</div>
-            <div class="game-hero-platforms"><span class="game-platform-badge">Android</span><span class="game-platform-badge">iOS</span></div>
+            <div class="game-hero-platforms"><span class="game-platform-badge">iOS</span><span class="game-platform-badge">Android</span></div>
           </div>
           <a href="/games/" class="game-back-btn" title="게임 DB로 돌아가기">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -967,8 +967,8 @@
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1112,7 +1112,7 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1128,7 +1128,7 @@
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {

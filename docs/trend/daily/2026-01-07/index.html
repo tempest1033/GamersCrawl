@@ -874,8 +874,8 @@ CEO 존 펠트하이머와 조 드레이크 의장 모두 'AAA 게임'을 강조
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 300;
-  var FALLBACK_TIMEOUT_MS = 500;
+  var REVEAL_DELAY_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 100;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -1019,7 +1019,7 @@ CEO 존 펠트하이머와 조 드레이크 의장 모두 'AAA 게임'을 강조
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
       else startReveal();
       return;
     }
@@ -1035,7 +1035,7 @@ CEO 존 펠트하이머와 조 드레이크 의장 모두 'AAA 게임'을 강조
         return;
       }
     }
-    setTimeout(checkAds, 33);
+    setTimeout(checkAds, 100);
   }
 
   function init() {
