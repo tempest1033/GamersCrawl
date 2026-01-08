@@ -57,11 +57,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
   <link rel="manifest" href="/manifest.json">
-  <!-- preconnect: AdSense 전체 + 폰트 CDN -->
+  <!-- preconnect: AdSense 메인 + 폰트 CDN (과다 preconnect는 오히려 성능 저하) -->
   <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-  <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
-  <link rel="preconnect" href="https://adservice.google.com" crossorigin>
-  <link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <!-- dns-prefetch: fallback + 이미지 CDN -->
   <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
@@ -224,8 +221,7 @@
       
       <div class="page-container">
         <div class="ad-card ad-card-mobile-200">
-  <ins class="adsbygoogle ad-top" style="display:block;width:100%;height:100%;min-width:300px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <ins class="adsbygoogle ad-top" style="width:100%;height:100%;min-width:300px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
 </div>
         <h1 class="visually-hidden">스팀 게임 순위</h1>
         <div class="steam-card home-card">
@@ -422,20 +418,6 @@
               <span class="steam-rank ">13</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Team Fortress 2</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">14</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87_alt_assets_0.jpg?t=1767868363" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -443,6 +425,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 58,900</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">14</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Team Fortress 2</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -576,20 +572,6 @@
               <span class="steam-rank ">24</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/33d4b71b2b9c8eb837b7ea5f6c5d12ca3501ea27/capsule_231x87.jpg?t=1762457261" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Apex Legends™</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">25</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/4f823e476ad290ad4f19763e7d800723df422dfa/capsule_231x87.jpg?t=1766121276" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -601,21 +583,21 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">26</span>
+              <span class="steam-rank ">25</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2344520/7086c858ce766d047bf357515805eda229d966b0/capsule_231x87.jpg?t=1766192109" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/33d4b71b2b9c8eb837b7ea5f6c5d12ca3501ea27/capsule_231x87.jpg?t=1762457261" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Diablo® IV</div>
+                <div class="steam-game-name">Apex Legends™</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 62,400</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">27</span>
+              <span class="steam-rank ">26</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3551340/89a157ed8100b4c8fa49de9fda0b3a83aece1f5e/capsule_231x87.jpg?t=1765983195" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -625,6 +607,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-discount">-10%</span><span class="steam-price">₩ 62,820</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">27</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2344520/7086c858ce766d047bf357515805eda229d966b0/capsule_231x87.jpg?t=1766192109" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Diablo® IV</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 62,400</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -660,20 +656,6 @@
               <span class="steam-rank ">30</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/f00db0558f4b4bd8965fd2e72aae3802ea46234b/capsule_231x87.jpg?t=1757994839" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">DJMAX RESPECT V</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 49,800</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">31</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_231x87.jpg?t=1754692865" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -685,21 +667,21 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">32</span>
+              <span class="steam-rank ">31</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3308670/62022f1b08a145d0fff091c6c6ec80eb50fde0e3/capsule_231x87.jpg?t=1741082524" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/f00db0558f4b4bd8965fd2e72aae3802ea46234b/capsule_231x87.jpg?t=1757994839" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">GIRLS' FRONTLINE 2: EXILIUM</div>
+                <div class="steam-game-name">DJMAX RESPECT V</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 49,800</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">33</span>
+              <span class="steam-rank ">32</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/934700/a247bbfb249b71dfed4d6e582e5bea2b1dbd4358/capsule_231x87.jpg?t=1761231459" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -713,21 +695,21 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">34</span>
+              <span class="steam-rank ">33</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1765583938" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3308670/62022f1b08a145d0fff091c6c6ec80eb50fde0e3/capsule_231x87.jpg?t=1741082524" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Battlefield™ 6</div>
+                <div class="steam-game-name">GIRLS' FRONTLINE 2: EXILIUM</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-30%</span><span class="steam-price">₩ 56,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">35</span>
+              <span class="steam-rank ">34</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827200/93d9d7a43e68c4f8e96664cec3bbff4b27ffa48a/capsule_231x87.jpg?t=1766974424" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -741,7 +723,7 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">36</span>
+              <span class="steam-rank ">35</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1766160502" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -751,6 +733,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 21,500</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">36</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1765583938" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Battlefield™ 6</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-30%</span><span class="steam-price">₩ 56,000</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -786,13 +782,13 @@
               <span class="steam-rank ">39</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230410/1fdfe5abd091ca959a6550868a39b6c4cc200852/capsule_231x87.jpg?t=1765508208" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg?t=1767883716" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Warframe</div>
+                <div class="steam-game-name">ELDEN RING</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 64,800</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -800,13 +796,13 @@
               <span class="steam-rank ">40</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_231x87.jpg?t=1748630546" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230410/1fdfe5abd091ca959a6550868a39b6c4cc200852/capsule_231x87.jpg?t=1765508208" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">ELDEN RING</div>
+                <div class="steam-game-name">Warframe</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 64,800</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -828,20 +824,6 @@
               <span class="steam-rank ">42</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2499860/9d1e5917fb47c7af55a5134a6f7eb302fea2fb16/capsule_231x87.jpg?t=1767821751" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">DRAGON QUEST VII Reimagined</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,800</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">43</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/492720/capsule_231x87.jpg?t=1755702256" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -849,6 +831,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-discount">-70%</span><span class="steam-price">₩ 14,160</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">43</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2499860/9d1e5917fb47c7af55a5134a6f7eb302fea2fb16/capsule_231x87.jpg?t=1767821751" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">DRAGON QUEST VII Reimagined</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,800</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -870,34 +866,6 @@
               <span class="steam-rank ">45</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3932890/2c6e1e35562ccc39bb34436d2ea1064710691d9d/capsule_231x87.jpg?t=1764759405" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Escape from Tarkov</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,500</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">46</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236390/dac785ed4a474c05d70850b7d63d5ca89e5f23f1/capsule_231x87.jpg?t=1766582455" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">War Thunder</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">47</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3059520/e5a63913fdbb2b641e64fddee542ab4c946b21cd/capsule_231x87.jpg?t=1767801592" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -909,21 +877,21 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">48</span>
+              <span class="steam-rank ">46</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2444750/b1a6e28c147d9632d38ac54a93f3563a1b4f175c/capsule_231x87.jpg?t=1766041884" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3932890/2c6e1e35562ccc39bb34436d2ea1064710691d9d/capsule_231x87.jpg?t=1764759405" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Shape of Dreams</div>
+                <div class="steam-game-name">Escape from Tarkov</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 27,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,500</span></div>
           </div>
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">49</span>
+              <span class="steam-rank ">47</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2246340/970508d58e4f11f6f9ff3e2921b7eec558a50af8/capsule_231x87.jpg?t=1766102696" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -937,7 +905,7 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">50</span>
+              <span class="steam-rank ">48</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1176470/f52df96924552fa013c7d71cbf698c166e400134/capsule_231x87.jpg?t=1767637627" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -951,7 +919,21 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">51</span>
+              <span class="steam-rank ">49</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236390/dac785ed4a474c05d70850b7d63d5ca89e5f23f1/capsule_231x87.jpg?t=1766582455" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">War Thunder</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">50</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/958260/capsule_231x87.jpg?t=1760415986" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -961,6 +943,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">51</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2444750/b1a6e28c147d9632d38ac54a93f3563a1b4f175c/capsule_231x87.jpg?t=1766041884" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Shape of Dreams</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 27,000</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1010,34 +1006,6 @@
               <span class="steam-rank ">55</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2074920/2eb2bf7aeba558f32722ebab41a70d97ad14e68f/capsule_231x87.jpg?t=1766373175" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">The First Descendant</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">56</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/3dfb18846a0d2db277c70d5a9e1ecb98e74668b8/capsule_231x87.jpg?t=1767634300" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">HELLDIVERS™ 2</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 44,800</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">57</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/capsule_231x87.jpg?t=1762369969" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -1049,7 +1017,21 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">58</span>
+              <span class="steam-rank ">56</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728880/capsule_231x87.jpg?t=1765814547" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Overcooked! 2</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-37%</span><span class="steam-price">₩ 25,020</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">57</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/capsule_231x87.jpg?t=1763530018" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -1063,13 +1045,13 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">59</span>
+              <span class="steam-rank ">58</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/766570/capsule_231x87.jpg?t=1752656375" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2074920/2eb2bf7aeba558f32722ebab41a70d97ad14e68f/capsule_231x87.jpg?t=1766373175" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Russian Fishing 4</div>
+                <div class="steam-game-name">The First Descendant</div>
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
@@ -1077,21 +1059,7 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">60</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1621690/5b19828e142f23d88e5213280d8e226408dabbbf/capsule_231x87.jpg?t=1764415439" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Core Keeper</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 21,500</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">61</span>
+              <span class="steam-rank ">59</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/294100/capsule_231x87.jpg?t=1762524275" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -1105,16 +1073,44 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">60</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/3dfb18846a0d2db277c70d5a9e1ecb98e74668b8/capsule_231x87.jpg?t=1767634300" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">HELLDIVERS™ 2</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 44,800</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">61</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/766570/capsule_231x87.jpg?t=1752656375" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Russian Fishing 4</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">62</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728880/capsule_231x87.jpg?t=1765814547" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1621690/5b19828e142f23d88e5213280d8e226408dabbbf/capsule_231x87.jpg?t=1764415439" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Overcooked! 2</div>
+                <div class="steam-game-name">Core Keeper</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-37%</span><span class="steam-price">₩ 25,020</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 21,500</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1150,20 +1146,6 @@
               <span class="steam-rank ">65</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/9bcf7095a132148584955c7f8d42a42e61c4edc7/capsule_231x87_alt_assets_18.jpg?t=1766101535" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Overwatch® 2</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">66</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2436940/capsule_231x87.jpg?t=1766583408" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -1171,6 +1153,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 16,500</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">66</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/9bcf7095a132148584955c7f8d42a42e61c4edc7/capsule_231x87_alt_assets_18.jpg?t=1766101535" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Overwatch® 2</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1192,6 +1188,20 @@
               <span class="steam-rank ">68</span>
             </div>
             <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3949040/05b77bc86d227612ded8e54753063e43c44698c4/capsule_231x87.jpg?t=1766020280" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">RV There Yet?</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 8,900</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">69</span>
+            </div>
+            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3198850/091393a76196ea2f97c4e3a2e11a46647018a10f/capsule_231x87.jpg?t=1766993458" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -1203,7 +1213,7 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">69</span>
+              <span class="steam-rank ">70</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1477590/capsule_231x87.jpg?t=1759394987" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -1213,20 +1223,6 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-discount">-50%</span><span class="steam-price">₩ 22,400</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">70</span>
-            </div>
-            <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3949040/05b77bc86d227612ded8e54753063e43c44698c4/capsule_231x87.jpg?t=1766020280" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">RV There Yet?</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 8,900</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1318,20 +1314,6 @@
               <span class="steam-rank ">77</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379740/586f5711a4d2f23d585f813b1ee3e7e157957f6a/capsule_231x87.jpg?t=1766650479" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Wizardry Variants Daphne</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">78</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1735700/08ef7d09155196910632da6de461bee66d8934dd/capsule_231x87.jpg?t=1762917628" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -1343,16 +1325,30 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">78</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379740/586f5711a4d2f23d585f813b1ee3e7e157957f6a/capsule_231x87.jpg?t=1766650479" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Wizardry Variants Daphne</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">79</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399830/dce348bb9faef2c1973d04aa8a87bff18e29699b/capsule_231x87.jpg?t=1766710980" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Split Fiction</div>
+                <div class="steam-game-name">ARK: Survival Ascended</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 56,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-50%</span><span class="steam-price">₩ 30,500</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1374,13 +1370,13 @@
               <span class="steam-rank ">81</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399830/dce348bb9faef2c1973d04aa8a87bff18e29699b/capsule_231x87.jpg?t=1766710980" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592160/925ffa7e3699d5c9c1369be5d4c3369f0e907e00/capsule_231x87.jpg?t=1767817184" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">ARK: Survival Ascended</div>
+                <div class="steam-game-name">Dispatch</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-50%</span><span class="steam-price">₩ 30,500</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 32,000</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1402,20 +1398,6 @@
               <span class="steam-rank ">83</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/880940/capsule_231x87.jpg?t=1725311353" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Pummel Party</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 16,500</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">84</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1677280/capsule_231x87.jpg?t=1764272700" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -1427,7 +1409,7 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
-              <span class="steam-rank ">85</span>
+              <span class="steam-rank ">84</span>
             </div>
             <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/977950/capsule_231x87.jpg?t=1734406213" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
@@ -1441,16 +1423,30 @@
         
           <div class="steam-table-row">
             <div class="steam-col-rank">
+              <span class="steam-rank ">85</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/880940/capsule_231x87.jpg?t=1725311353" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Pummel Party</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 16,500</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
               <span class="steam-rank ">86</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592160/925ffa7e3699d5c9c1369be5d4c3369f0e907e00/capsule_231x87.jpg?t=1767817184" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/394360/08a0a8f6c28071017611aa39b835c193a27f2518/capsule_231x87.jpg?t=1765368663" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Dispatch</div>
+                <div class="steam-game-name">Hearts of Iron IV</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 32,000</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 55,000</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1472,20 +1468,6 @@
               <span class="steam-rank ">88</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/394360/08a0a8f6c28071017611aa39b835c193a27f2518/capsule_231x87.jpg?t=1765368663" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
-              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
-              <div class="steam-game-info">
-                <div class="steam-game-name">Hearts of Iron IV</div>
-              </div>
-            </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 55,000</span></div>
-          </div>
-        
-          <div class="steam-table-row">
-            <div class="steam-col-rank">
-              <span class="steam-rank ">89</span>
-            </div>
-            <div class="steam-col-game">
               <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427520/capsule_231x87.jpg?t=1763986204" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
@@ -1493,6 +1475,20 @@
               </div>
             </div>
             <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 40,000</span></div>
+          </div>
+        
+          <div class="steam-table-row">
+            <div class="steam-col-rank">
+              <span class="steam-rank ">89</span>
+            </div>
+            <div class="steam-col-game">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
+              <div class="steam-game-info">
+                <div class="steam-game-name">Split Fiction</div>
+              </div>
+            </div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 56,000</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1556,13 +1552,13 @@
               <span class="steam-rank ">94</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2739990/capsule_231x87.jpg?t=1763537764" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4077430/971adb4fdd4f8a3b8ebd2866b6989be4e9f32d9e/capsule_231x87.jpg?t=1766031327" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Mahjong Soul</div>
+                <div class="steam-game-name">DJMAX RESPECT V - V LIBERTY IV PACK</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 29,800</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1570,13 +1566,13 @@
               <span class="steam-rank ">95</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/673750/5613e86f95b528938211d22326e29cddcabcf669/capsule_231x87.jpg?t=1764709681" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2739990/capsule_231x87.jpg?t=1763537764" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Super Bunny Man</div>
+                <div class="steam-game-name">Mahjong Soul</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-discount">-40%</span><span class="steam-price">₩ 9,150</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1598,13 +1594,13 @@
               <span class="steam-rank ">97</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4077430/971adb4fdd4f8a3b8ebd2866b6989be4e9f32d9e/capsule_231x87.jpg?t=1766031327" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/673750/5613e86f95b528938211d22326e29cddcabcf669/capsule_231x87.jpg?t=1764709681" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">DJMAX RESPECT V - V LIBERTY IV PACK</div>
+                <div class="steam-game-name">Super Bunny Man</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 29,800</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-discount">-40%</span><span class="steam-price">₩ 9,150</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1626,13 +1622,13 @@
               <span class="steam-rank ">99</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1778820/capsule_231x87.jpg?t=1764891442" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2778580/capsule_231x87.jpg?t=1763403045" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">TEKKEN 8</div>
+                <div class="steam-game-name">ELDEN RING Shadow of the Erdtree</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 69,800</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 49,800</span></div>
           </div>
         
           <div class="steam-table-row">
@@ -1640,13 +1636,13 @@
               <span class="steam-rank ">100</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1282270/5b3e80c04e5588c610fc9daa6c46f7513250462e/capsule_231x87.jpg?t=1766480100" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252490/21aac0b6e20e1ba12f635e7deb730e32a51afbd5/capsule_231x87.jpg?t=1761667247" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
-                <div class="steam-game-name">Strinova</div>
+                <div class="steam-game-name">Rust</div>
               </div>
             </div>
-            <div class="steam-col-players steam-price-info"><span class="steam-price">Free</span></div>
+            <div class="steam-col-players steam-price-info"><span class="steam-price">₩ 42,000</span></div>
           </div>
         
       </div>
@@ -2100,7 +2096,7 @@
   ].join(',');
 
   var REVEAL_DELAY_MS = 100;
-  var FALLBACK_TIMEOUT_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 1500;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -2185,22 +2181,9 @@
     setTimeout(finalize, REVEAL_DELAY_MS);
   }
 
-  function getTopAdIn(containerSelector) {
-    var container = document.querySelector(containerSelector);
-    if (!container) return null;
-    return container.querySelector('ins.adsbygoogle');
-  }
-
-  function getFirstAdInMain() {
-    var main = document.querySelector('main');
-    if (!main) return null;
-    return main.querySelector('ins.adsbygoogle');
-  }
-
   function getPriorityAd() {
-    var topAd = getTopAdIn('#home-top-ad');
-    if (topAd) return topAd;
-    return getFirstAdInMain();
+    // Responsive001 슬롯(5039620326)을 최우선으로 찾음
+    return document.querySelector('ins.adsbygoogle[data-ad-slot="5039620326"]');
   }
 
   function isAdFilled(ad) {
@@ -2244,7 +2227,7 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 50);
       else startReveal();
       return;
     }
@@ -2260,7 +2243,7 @@
         return;
       }
     }
-    setTimeout(checkAds, 100);
+    setTimeout(checkAds, 50);
   }
 
   function init() {
@@ -2765,5 +2748,33 @@
 })();
 </script>
   
+<script>
+(function() {
+  var ads = document.querySelectorAll('ins.adsbygoogle');
+  if (!ads.length) return;
+
+  var prioritySlot = '5039620326';
+  var priorityAd = null;
+  var otherAds = [];
+
+  for (var i = 0; i < ads.length; i++) {
+    if (ads[i].dataset.adSlot === prioritySlot) {
+      priorityAd = ads[i];
+    } else {
+      otherAds.push(ads[i]);
+    }
+  }
+
+  // Responsive001 먼저 push
+  if (priorityAd) {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  // 나머지 광고 순차 push
+  for (var j = 0; j < otherAds.length; j++) {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+})();
+</script>
 </body>
 </html>

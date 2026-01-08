@@ -86,11 +86,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
   <link rel="manifest" href="/manifest.json">
-  <!-- preconnect: AdSense 전체 + 폰트 CDN -->
+  <!-- preconnect: AdSense 메인 + 폰트 CDN (과다 preconnect는 오히려 성능 저하) -->
   <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-  <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
-  <link rel="preconnect" href="https://adservice.google.com" crossorigin>
-  <link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <!-- dns-prefetch: fallback + 이미지 CDN -->
   <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
@@ -253,8 +250,7 @@
       
       <div class="insight-container">
         <div class="ad-card ad-card-mobile-200">
-  <ins class="adsbygoogle ad-top" style="display:block;width:100%;height:100%;min-width:300px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <ins class="adsbygoogle ad-top" style="width:100%;height:100%;min-width:300px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
 </div>
         <h1 class="visually-hidden">GTA 6 해고 사태 법적 공방 본격화, LoL 2026 시즌 '데마시아를 위하여' 오늘 개막</h1>
         
@@ -322,8 +318,7 @@ AI는 PSN 과거 플레이 데이터와 유튜브·트위치 영상에서 학습
       </div>
     
         <div class="ad-card ad-card-mobile-400">
-  <ins class="adsbygoogle ad-mid" style="display:block;width:100%;min-width:300px;min-height:400px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <ins class="adsbygoogle ad-mid" style="width:100%;min-width:300px;min-height:400px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -448,8 +443,7 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
       </div>
     
         <div class="ad-card ad-card-mobile-400">
-  <ins class="adsbygoogle ad-mid" style="display:block;width:100%;min-width:300px;min-height:400px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <ins class="adsbygoogle ad-mid" style="width:100%;min-width:300px;min-height:400px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651"></ins>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -877,7 +871,7 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
   ].join(',');
 
   var REVEAL_DELAY_MS = 100;
-  var FALLBACK_TIMEOUT_MS = 100;
+  var FALLBACK_TIMEOUT_MS = 1500;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -962,22 +956,9 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
     setTimeout(finalize, REVEAL_DELAY_MS);
   }
 
-  function getTopAdIn(containerSelector) {
-    var container = document.querySelector(containerSelector);
-    if (!container) return null;
-    return container.querySelector('ins.adsbygoogle');
-  }
-
-  function getFirstAdInMain() {
-    var main = document.querySelector('main');
-    if (!main) return null;
-    return main.querySelector('ins.adsbygoogle');
-  }
-
   function getPriorityAd() {
-    var topAd = getTopAdIn('#home-top-ad');
-    if (topAd) return topAd;
-    return getFirstAdInMain();
+    // Responsive001 슬롯(5039620326)을 최우선으로 찾음
+    return document.querySelector('ins.adsbygoogle[data-ad-slot="5039620326"]');
   }
 
   function isAdFilled(ad) {
@@ -1021,7 +1002,7 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 100);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 50);
       else startReveal();
       return;
     }
@@ -1037,7 +1018,7 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
         return;
       }
     }
-    setTimeout(checkAds, 100);
+    setTimeout(checkAds, 50);
   }
 
   function init() {
@@ -1542,5 +1523,33 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
 })();
 </script>
   
+<script>
+(function() {
+  var ads = document.querySelectorAll('ins.adsbygoogle');
+  if (!ads.length) return;
+
+  var prioritySlot = '5039620326';
+  var priorityAd = null;
+  var otherAds = [];
+
+  for (var i = 0; i < ads.length; i++) {
+    if (ads[i].dataset.adSlot === prioritySlot) {
+      priorityAd = ads[i];
+    } else {
+      otherAds.push(ads[i]);
+    }
+  }
+
+  // Responsive001 먼저 push
+  if (priorityAd) {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  // 나머지 광고 순차 push
+  for (var j = 0; j < otherAds.length; j++) {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+})();
+</script>
 </body>
 </html>
