@@ -10649,6 +10649,7 @@ a.gm-item:hover {
     left: 0 !important;
     right: 0 !important;
     z-index: 200 !important;
+    transition: transform 0.25s ease, opacity 0.25s ease;
     padding: 8px 16px !important;
     margin-bottom: 0 !important;
     border-bottom: 1px solid var(--border) !important;
@@ -10663,6 +10664,7 @@ a.gm-item:hover {
     left: 0 !important;
     right: 0 !important;
     z-index: 199 !important;
+    transition: top 0.25s ease;
     padding: 4px 0 !important;
     margin-top: 0 !important;
     background: var(--glass-bg-solid) !important;
@@ -10672,6 +10674,7 @@ a.gm-item:hover {
   /* 본문 콘텐츠 - fixed 헤더 높이만큼 여백 */
   :is(.site-container, .container) {
     padding-top: 120px !important;
+    transition: padding-top 0.25s ease;
   }
 
   /* 스크롤 시 검색창 숨김 */

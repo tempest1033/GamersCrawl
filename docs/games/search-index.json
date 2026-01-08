@@ -2558,7 +2558,7 @@
       "android"
     ],
     "developer": "Wemade Connect",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3913,7 +3913,7 @@
       "android"
     ],
     "developer": "Ho San Won",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4672,7 +4672,7 @@
       "android"
     ],
     "developer": "FALCON GAME",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5085,7 +5085,7 @@
       "android"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5653,7 +5653,7 @@
       "android"
     ],
     "developer": "JindoBlu",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5800,7 +5800,7 @@
       "android"
     ],
     "developer": "HungryStudio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5839,7 +5839,7 @@
       "android"
     ],
     "developer": "Stella Joy Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5853,7 +5853,7 @@
       "android"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -6815,7 +6815,7 @@
       "steam"
     ],
     "developer": "Starry Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -7169,7 +7169,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8903,7 +8903,7 @@
       "android"
     ],
     "developer": "NEWLEAP SOFT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8990,7 +8990,7 @@
       "android"
     ],
     "developer": "Wonderful  Studio",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9505,7 +9505,7 @@
       "android"
     ],
     "developer": "Easybrain",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9722,7 +9722,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9991,7 +9991,7 @@
       "android"
     ],
     "developer": "Taihe Interactive",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11491,7 +11491,7 @@
       "android"
     ],
     "developer": "VOODOO",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -11655,7 +11655,7 @@
       "android"
     ],
     "developer": "Focus apps",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11765,7 +11765,7 @@
       "android"
     ],
     "developer": "KAYAC Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11926,7 +11926,7 @@
       "android"
     ],
     "developer": "广州互视通科技有限公司",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12221,7 +12221,7 @@
       "android"
     ],
     "developer": "NCROQUIS",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12294,7 +12294,7 @@
       "android"
     ],
     "developer": "Bravestars Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
