@@ -8509,14 +8509,18 @@
     "name": "블루 아카이브",
     "slug": "블루-아카이브",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/43/4d/bc434dac-66b7-083c-67e2-e2490ac02d15/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
-    "aliases": [],
+    "aliases": [
+      "Blue Archive",
+      "ブルーアーカイブ"
+    ],
     "platforms": [
       "ios",
-      "android"
+      "android",
+      "steam"
     ],
     "developer": "NEXON Company",
     "hasRankings": true,
-    "hasSteam": false,
+    "hasSteam": true,
     "hasData": true
   },
   {
@@ -8684,19 +8688,6 @@
       "steam"
     ],
     "developer": "Kinetic Games",
-    "hasRankings": false,
-    "hasSteam": true,
-    "hasData": true
-  },
-  {
-    "name": "Blue Archive",
-    "slug": "blue-archive",
-    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3557620/a43191451225d3122c224a7349f2fc232f46b3d0/header_koreana.jpg?t=1761020171",
-    "aliases": [],
-    "platforms": [
-      "steam"
-    ],
-    "developer": "NEXON Games",
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true

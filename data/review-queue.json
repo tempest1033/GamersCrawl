@@ -840,6 +840,29 @@
         }
       ],
       "addedAt": "2026-01-08T00:18:25.535Z"
+    },
+    {
+      "title": "건틀렛: 방치형 액션 RPG",
+      "status": "matched",
+      "appIds": {
+        "ios": "6748525811",
+        "android": "net.gameduo.gv",
+        "android:kr": "com.metaboneent.gauntletrpg",
+        "ios:kr": "6446516059"
+      },
+      "developer": "Game Duo Co.,Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/e2/2a/d6e22ab1-f226-54a8-8b8d-29785e84476b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "건틀렛: 방치형 액션 RPG",
+          "appId": "com.metaboneent.gauntletrpg"
+        },
+        {
+          "title": "다크타워:전략 배틀 RPG",
+          "appId": "6748525811"
+        }
+      ],
+      "addedAt": "2026-01-08T10:50:27.820Z"
     }
   ],
   "approved": [
