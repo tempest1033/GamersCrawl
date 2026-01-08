@@ -344,7 +344,7 @@
   
         
     <section class="games-hub-all">
-      <h2 class="games-hub-section-title">전체 게임 (910개)</h2>
+      <h2 class="games-hub-section-title">전체 게임 (909개)</h2>
       
     <nav class="games-hub-index">
       
@@ -2274,7 +2274,7 @@
 	          </div>
         
           <div class="games-hub-group" id="initial-B">
-	            <h3 class="group-title">B <span class="group-count">(35)</span></h3>
+	            <h3 class="group-title">B <span class="group-count">(34)</span></h3>
 	            <div class="group-games">
 	              
 	                <a href="/games/back-to-the-dawn/" class="game-item" data-slug="back-to-the-dawn">
@@ -2351,10 +2351,6 @@
 	              
 	                <a href="/games/bloodstrike/" class="game-item" data-slug="bloodstrike">
 	                  <span class="game-name">BLOODSTRIKE</span>
-	                </a>
-	              
-	                <a href="/games/blue-archive/" class="game-item" data-slug="blue-archive">
-	                  <span class="game-name">Blue Archive</span>
 	                </a>
 	              
 	                <a href="/games/bongo-cat/" class="game-item" data-slug="bongo-cat">
@@ -5004,8 +5000,8 @@
     '.popular-banner'
   ].join(',');
 
-  var REVEAL_DELAY_MS = 150;
-  var FALLBACK_TIMEOUT_MS = 100;
+  var REVEAL_DELAY_MS = 300;
+  var FALLBACK_TIMEOUT_MS = 300;
   var revealStarted = false;
   var fallbackTimer = null;
   var raf = window.requestAnimationFrame || function(cb) { return setTimeout(cb, 16); };
@@ -5149,7 +5145,7 @@
   function checkAds() {
     var priorityAd = getPriorityAd();
     if (priorityAd) {
-      if (!waitForAd(priorityAd)) setTimeout(checkAds, 120);
+      if (!waitForAd(priorityAd)) setTimeout(checkAds, 33);
       else startReveal();
       return;
     }
@@ -5165,7 +5161,7 @@
         return;
       }
     }
-    setTimeout(checkAds, 120);
+    setTimeout(checkAds, 33);
   }
 
   function init() {
