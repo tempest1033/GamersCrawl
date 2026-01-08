@@ -12930,7 +12930,8 @@
       "ios": "6748525811",
       "android": "com.ryonggame.soulhunteridle",
       "android:kr": "com.metaboneent.gauntletrpg",
-      "ios:kr": "6446516059"
+      "ios:kr": "6446516059",
+      "android:global": "com.webzen.muidle.google"
     },
     "aliases": [
       "건틀렛",
@@ -14248,6 +14249,835 @@
     "slug": "solitaire-day-fun-card-game",
     "platforms": [
       "android"
+    ]
+  },
+  "드래곤 엠파이어 : 전략 매니지먼트": {
+    "appIds": {
+      "android": "com.ndreamgames.wod",
+      "ios": 6450436248
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "드래곤-엠파이어-전략-매니지먼트",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "에보니 - 왕의 귀환": {
+    "appIds": {
+      "android": "com.topgamesinc.evony",
+      "ios": 1098157959
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "에보니-왕의-귀환",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "위 베어 베어스 더 퍼즐": {
+    "appIds": {
+      "android": "com.sundaytoz.kakao.wbb",
+      "ios": 1311102174
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "위-베어-베어스-더-퍼즐",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "랑그릿사": {
+    "appIds": {
+      "android": "com.zlongame.kr.langrisser",
+      "ios": 1450127722
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "랑그릿사",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "카오스 제로 나이트메어": {
+    "appIds": {
+      "android": "com.smilegate.chaoszero.stove.google",
+      "ios": "6502326151"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "카오스-제로-나이트메어",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "쿠노이치 키우기": {
+    "appIds": {
+      "ios": "6752278595",
+      "android": "com.dwgames.assassinrpg2"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "쿠노이치-키우기",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Sled Surfers - 슬로프 어드벤처": {
+    "appIds": {
+      "android": "com.sled.surfers.game",
+      "ios": "6744975195"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "sled-surfers-슬로프-어드벤처",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "뉴포리아: 서바이벌": {
+    "appIds": {
+      "android": "com.Eclipse.Neuphoria",
+      "ios": 6444274471
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "뉴포리아-서바이벌",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Save The Pets": {
+    "appIds": {
+      "android": "com.bravestars.savethedog.drawgame",
+      "ios": 6449223149
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "save-the-pets",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Draw Action: Freestyle Fight": {
+    "appIds": {
+      "android": "com.kayac.DrawFight",
+      "ios": 6444147536
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "draw-action-freestyle-fight",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "창세기전 모바일 - 서풍의 광시곡": {
+    "appIds": {
+      "ios": "6450174109",
+      "android": "com.linegames.gm"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "창세기전-모바일-서풍의-광시곡",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "로스트 소드": {
+    "appIds": {
+      "android": "com.wemadeconnect.aos.lostdgl",
+      "ios": "6482099823"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "로스트-소드",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "한게임 로얄홀덤": {
+    "appIds": {
+      "ios": "6443477650",
+      "android": "com.nhn.AApoker"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "한게임-로얄홀덤",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Wing Fighter": {
+    "appIds": {
+      "android": "com.minigame.wszj.android.gp",
+      "ios": "1562065271"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "wing-fighter",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "스텔라 소라": {
+    "appIds": {
+      "android": "com.YoStarKR.StellaSora",
+      "ios": "6738407268"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "스텔라-소라",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "피망 쇼다운 홀덤 : 텍사스 홀덤, 포커, 토너먼트": {
+    "appIds": {
+      "ios": "6476336847",
+      "android": "com.neowiz.games.pmang.holdem.poker"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "피망-쇼다운-홀덤-텍사스-홀덤-포커-토너먼트",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "설레 삼국: 미인계": {
+    "appIds": {
+      "ios": "6754162302",
+      "android": "com.korea.kingdoms.google"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "설레-삼국-미인계",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "드래곤 플라이트2": {
+    "appIds": {
+      "android": "com.playwith.DF2.AOS",
+      "ios": 6740305005
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "드래곤-플라이트2",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "스테이트 커넥트: 교통 통제": {
+    "appIds": {
+      "android": "com.TwinCrab.Motorpolia",
+      "ios": 1590353335
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "스테이트-커넥트-교통-통제",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Eternal Hero: 액션 RPG": {
+    "appIds": {
+      "android": "games.rivvy.eternalherorpg",
+      "ios": 6503089848
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "eternal-hero-액션-rpg",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "킹 오브 파이터 AFK": {
+    "appIds": {
+      "android": "com.gamerepublickor.google.gdsm",
+      "ios": 6751273403,
+      "android:kr": "com.netmarble.kofafk"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "킹-오브-파이터-afk",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "드래곤빌리지": {
+    "appIds": {
+      "ios": "999708649",
+      "android": "com.highbrow.game"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "드래곤빌리지",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Once Human": {
+    "appIds": {
+      "steam": "2139460",
+      "ios": "1573906210",
+      "android": "com.h73.jhqyna"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "once-human",
+    "platforms": [
+      "steam",
+      "ios",
+      "android"
+    ]
+  },
+  "우파루 오딧세이": {
+    "appIds": {
+      "ios": "1668036690",
+      "android": "com.nhn.wooparoo.kr"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "우파루-오딧세이",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "DRAGON BALL LEGENDS 드래곤 볼 레전즈": {
+    "appIds": {
+      "ios": "1358222641",
+      "android": "com.bandainamcoent.dblegends_ww"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "dragon-ball-legends-드래곤-볼-레전즈",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "퍼즐앤드래곤": {
+    "appIds": {
+      "ios": "588637521",
+      "android": "jp.gungho.padKO"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "퍼즐앤드래곤",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "드래곤 베인": {
+    "appIds": {
+      "android": "kr.aos.com.aprogen.dragonrajaorigin",
+      "ios": 1564210479
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "드래곤-베인",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "모에라이: 운명의 계약": {
+    "appIds": {
+      "ios": "6738948877",
+      "android": "com.ujoygp.cof"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "모에라이-운명의-계약",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Liar Game": {
+    "appIds": {
+      "ios": "1453720435",
+      "android": "com.liargame"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "liar-game",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "좀비 포트리스 (Zombie Fortress)": {
+    "appIds": {
+      "android": "com.nlabsoft.zombiecrusher.s",
+      "ios": 6747713523
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "좀비-포트리스-zombie-fortress",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Zen Tiles - Mahjong Match": {
+    "appIds": {
+      "android": "com.playvalve.mahjong.triple",
+      "ios": 6744312872
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "zen-tiles-mahjong-match",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "노노그램 - 픽처 크로스 퍼즐": {
+    "appIds": {
+      "android": "com.easybrain.nonogram",
+      "ios": 6504728167
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "노노그램-픽처-크로스-퍼즐",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Dynasty Legends 2: 무쌍전란": {
+    "appIds": {
+      "ios": "6738378793",
+      "android": "com.moossangjr.mjko"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "dynasty-legends-2-무쌍전란",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "브레인 테스트 (Brain Test): 까다로운 퍼즐": {
+    "appIds": {
+      "android": "com.unicostudio.braintest",
+      "ios": "1486214495"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "브레인-테스트-brain-test-까다로운-퍼즐",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "모두의마블": {
+    "appIds": {
+      "ios": "646315802",
+      "android": "com.cjenm.ModooMarbleKakao"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "모두의마블",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "머지 파라다이스:합성&머지(merge)": {
+    "appIds": {
+      "android": "com.storytaco.p32client2",
+      "ios": 6480382557
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "머지-파라다이스-합성-머지-merge",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "매치 팩토리(Match Factory)!": {
+    "appIds": {
+      "android": "net.peakgames.match",
+      "ios": 6449094229
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "매치-팩토리-match-factory",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "일곱 개의 대죄: GRAND CROSS": {
+    "appIds": {
+      "ios": "1449552940",
+      "android": "com.netmarble.nanakr"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "일곱-개의-대죄-grand-cross",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "소드 오브 콘발라리아": {
+    "appIds": {
+      "android": "com.xd.ssrpgkr",
+      "ios": "6449961207"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "소드-오브-콘발라리아",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "라그나로크X : Next Generation": {
+    "appIds": {
+      "ios": "1628711346",
+      "android": "com.gravity.rox.and"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "라그나로크x-next-generation",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "듀엣 나이트 어비스": {
+    "appIds": {
+      "android": "com.panstudio.gplay.duetnightabyss.arpg.global",
+      "ios": 6744096826
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "듀엣-나이트-어비스",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "페이트 워": {
+    "appIds": {
+      "android": "com.igg.android.fatewar",
+      "ios": 6737294814
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "페이트-워",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "에오스 블랙": {
+    "appIds": {
+      "android": "com.BluePotionCompany.EosBlack",
+      "ios": 6463600523
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "에오스-블랙",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "GO라니&DA람쥐 어드벤처": {
+    "appIds": {
+      "ios": "6754908850",
+      "android": "com.idiocracy.godaadventure"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "go라니-da람쥐-어드벤처",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Offroad League Online": {
+    "appIds": {
+      "ios": "6451036687",
+      "android": "com.RoosterGames.OffroadLeague"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "offroad-league-online",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Battle Bag: War Zone": {
+    "appIds": {
+      "android": "com.brewgames.battlebagwarzone",
+      "ios": 6746075769
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "battle-bag-war-zone",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Brilliant Sort: 다이아몬드 퍼즐": {
+    "appIds": {
+      "android": "com.belkagames.ds",
+      "ios": 6749456493
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "brilliant-sort-다이아몬드-퍼즐",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "갓오브하이스쿨 X 신의탑": {
+    "appIds": {
+      "ios": "1026748340",
+      "android": "com.goh.daya.ydonline"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "갓오브하이스쿨-x-신의탑",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Car Racing:Drive Simulator 3D": {
+    "appIds": {
+      "android": "com.racing.realcar.simulator3d",
+      "ios": "6745688129"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "car-racing-drive-simulator-3d",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "픽셀 아트 - 숫자 색칠게임 책": {
+    "appIds": {
+      "android": "com.europosit.pixelcoloring",
+      "ios": 1274972321
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "픽셀-아트-숫자-색칠게임-책",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "브릿지 레이스 (Bridge Race)": {
+    "appIds": {
+      "android": "com.Garawell.BridgeRace",
+      "ios": 1543845882
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "브릿지-레이스-bridge-race",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "로열 쿠킹: 요리 & 식당 게임": {
+    "appIds": {
+      "ios": "1664415775",
+      "android": "com.matryoshka.royal.cooking.kitchen.madness"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "로열-쿠킹-요리-식당-게임",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "젤리 홀 (Jelly Hole) - 블랙홀 게임": {
+    "appIds": {
+      "android": "com.ultimatelavashgames.rollthehole",
+      "ios": 6752290993
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "젤리-홀-jelly-hole-블랙홀-게임",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "물 분류 퍼즐 게임 - 재미있는 색상 분류 퍼즐 게임": {
+    "appIds": {
+      "android": "water.sort.puzzle.game.color.sorting.free",
+      "ios": 1597897013
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "물-분류-퍼즐-게임-재미있는-색상-분류-퍼즐-게임",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "마이 다마고치 포에버 My Tamagotchi": {
+    "appIds": {
+      "ios": "1267861706",
+      "android": "eu.bandainamcoent.mytamagotchiforever"
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "마이-다마고치-포에버-my-tamagotchi",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "Color Aura: Paint by number": {
+    "appIds": {
+      "android": "com.oakever.coloraura",
+      "ios": 6451237392
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "color-aura-paint-by-number",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Connect Master – 매치 퍼즐": {
+    "appIds": {
+      "android": "com.game.people.connector",
+      "ios": 6745692355
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "connect-master-매치-퍼즐",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "Space Waves": {
+    "appIds": {
+      "android": "com.CrazyGames.SpaceWaves",
+      "ios": 6748645552
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "space-waves",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "잃어버린 감옥 (Lost Prison) - 서바이벌": {
+    "appIds": {
+      "android": "com.finetosurvive.master",
+      "ios": 6755469510
+    },
+    "aliases": [],
+    "developer": "",
+    "icon": "",
+    "slug": "잃어버린-감옥-lost-prison-서바이벌",
+    "platforms": [
+      "android",
+      "ios"
     ]
   }
 }
