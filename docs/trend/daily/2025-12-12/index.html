@@ -249,9 +249,10 @@
     <section class="section active" id="insight">
       
       <div class="insight-container">
-        <div class="ad-card ad-card-mobile-200">
-  <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="horizontal"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <div class="ad-card ad-card-mobile-top ad-mobile-only">
+  <ins class="adsbygoogle" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
+</div><div class="ad-card ad-card-pc-top ad-pc-only">
+  <ins class="adsbygoogle" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1795150514" data-ad-format="horizontal"></ins>
 </div>
         <h1 class="visually-hidden">GTA 6 개발사 대량 해고, 영국 정치권까지 논쟁 확산</h1>
         
@@ -314,9 +315,8 @@
         </div>
       </div>
     
-        <div class="ad-card ad-card-mobile-400">
-  <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="horizontal"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <div class="ad-card ad-card-mobile-sub ad-mobile-only">
+  <ins class="adsbygoogle" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -435,9 +435,8 @@
         </div>
       </div>
     
-        <div class="ad-card ad-card-mobile-400">
-  <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651" data-ad-format="horizontal"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <div class="ad-card ad-card-mobile-sub ad-mobile-only">
+  <ins class="adsbygoogle" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651" data-ad-format="rectangle"></ins>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1538,5 +1537,49 @@
 })();
 </script>
   
+<script>
+(function() {
+  // 광고 초기화 함수
+  function initVisibleAds() {
+    var ads = document.querySelectorAll('ins.adsbygoogle:not([data-gc-init])');
+    ads.forEach(function(ad) {
+      // 이미 초기화됐으면 스킵
+      if (ad.dataset.gcInit === '1') return;
+
+      // 보이는지 체크 (offsetParent가 null이면 숨겨진 상태)
+      var card = ad.closest('.ad-card');
+      if (!card) return;
+
+      // display:none이면 offsetParent가 null
+      if (card.offsetParent === null) return;
+
+      // 너비가 0이면 스킵 (availableWidth=0 에러 방지)
+      if (ad.offsetWidth === 0) return;
+
+      // 초기화 마킹
+      ad.dataset.gcInit = '1';
+
+      // AdSense push
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    });
+  }
+
+  // DOM 로드 후 실행
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVisibleAds);
+  } else {
+    initVisibleAds();
+  }
+
+  // resize 시 재체크 (PC↔모바일 전환 대응)
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(initVisibleAds, 200);
+  });
+})();
+</script>
 </body>
 </html>
