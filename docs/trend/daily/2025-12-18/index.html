@@ -251,7 +251,6 @@
       <div class="insight-container">
         <div class="ad-card ad-card-mobile-200">
   <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="horizontal"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">포켓몬 Pocket 확장팩 공개, PC 동접 CS2-Dota2 강세</h1>
         
@@ -316,7 +315,6 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
     
         <div class="ad-card ad-card-mobile-400">
   <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="horizontal"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -429,7 +427,6 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
     
         <div class="ad-card ad-card-mobile-400">
   <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651" data-ad-format="horizontal"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1529,6 +1526,37 @@ Path of Exile 2도 172,703명으로 상위권을 지켰습니다.</p>
   }, { passive: true });
 })();
 </script>
-  
+  <script>
+(function() {
+  if (typeof IntersectionObserver === 'undefined') {
+    // fallback: 보이는 광고만 즉시 로드
+    document.querySelectorAll('ins.adsbygoogle').forEach(function(ad) {
+      if (ad.offsetWidth > 0 && ad.offsetHeight > 0) {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var ad = entry.target;
+        // display:none이거나 width가 0이면 push 안 함 (에러 방지)
+        if (ad.offsetWidth > 0 && ad.offsetHeight > 0) {
+          try {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          } catch (e) {}
+        }
+        observer.unobserve(ad);
+      }
+    });
+  }, { rootMargin: '200px' }); // viewport 200px 전에 미리 로드
+
+  document.querySelectorAll('ins.adsbygoogle').forEach(function(ad) {
+    observer.observe(ad);
+  });
+})();
+</script>
 </body>
 </html>
