@@ -45,7 +45,8 @@
   .insight-container .ad-top,
   .deep-dive-container .ad-top {
     width: 100% !important;
-    min-height: 90px !important;
+    min-width: 150px !important;
+    min-height: 150px !important;
     max-height: 150px !important;
   }
 }
