@@ -250,7 +250,7 @@
       
       <div class="insight-container">
         <div class="ad-card ad-card-mobile-200">
-  <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
+  <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="horizontal"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">배그 포르쉐 콜라보 35계단 급등, AGF 2025 게임사 참가 50% 증가</h1>
@@ -315,7 +315,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
         <div class="ad-card ad-card-mobile-400">
-  <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
+  <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="rectangle"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
@@ -436,7 +436,7 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
       </div>
     
         <div class="ad-card ad-card-mobile-400">
-  <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651"></ins>
+  <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651" data-ad-format="rectangle"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
@@ -1530,15 +1530,13 @@ PUBG UNITED 2025 개최로 국내에서도 배틀그라운드 관전-플레이 �
     for (var i = 0; i < ads.length; i++) {
       // 이미 처리된 슬롯은 건너뜀
       if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
-      // 숨겨진 요소 스킵 (display:none 등)
-      if (ads[i].offsetWidth === 0 && ads[i].offsetHeight === 0) continue;
       try {
         (adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {}
     }
   }
   window.addEventListener('load', function() {
-    [500, 1500, 3000].forEach(function(delay) {
+    [100, 300, 500, 1000, 2000].forEach(function(delay) {
       setTimeout(retryAds, delay);
     });
   });
