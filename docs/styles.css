@@ -179,13 +179,7 @@
       border-bottom-color: transparent;
     }
 
-    /* 이미지 성능 최적화 */
-    img {
-      content-visibility: auto;
-    }
-    img[loading="lazy"] {
-      background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    }
+    /* 이미지 성능 최적화 - content-visibility 제거 (스크롤 시 회색 방지) */
 
     /* 썸네일/아이콘 폴백 (파비콘 중앙 배치) */
     .thumb-fallback {
@@ -3714,13 +3708,6 @@ main > .ad-card:first-child,
 	      transition: all var(--transition-normal);
 	    }
 
-	    @supports (content-visibility: auto) {
-	      .rank-row {
-	        content-visibility: auto;
-	        contain-intrinsic-size: 1px 48px;
-	      }
-	    }
-
 	    .rank-row:hover {
 	      background: var(--card-hover);
 	      transform: scale(1.01);
@@ -3898,13 +3885,6 @@ main > .ad-card:first-child,
 	      border-bottom: 1px solid var(--border-subtle);
 	      align-items: center;
 	      transition: all var(--transition-normal);
-	    }
-
-	    @supports (content-visibility: auto) {
-	      .steam-table-row {
-	        content-visibility: auto;
-	        contain-intrinsic-size: 1px 72px;
-	      }
 	    }
 
 	    .steam-table-row:hover {
@@ -11194,13 +11174,6 @@ a.gm-item:hover {
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   flex-shrink: 0;
-}
-
-@supports (content-visibility: auto) {
-  .game-item {
-    content-visibility: auto;
-    contain-intrinsic-size: 1px 60px;
-  }
 }
 
 .game-item:hover {
