@@ -1045,26 +1045,26 @@
 	        </div>
       </a>
     
-	      <a class="upcoming-item" href="https://apps.apple.com/kr/app/%ED%81%AC%EB%A6%AC%EC%B2%98-%EB%A6%AC%EA%B7%B8-%EC%B1%94%ED%94%BC%EC%96%B8/id6755809717?uo=2" target="_blank" rel="noopener">
-	        <div class="upcoming-col-rank">
-	          <span class="upcoming-rank ">5</span>
-	        </div>
-	        <div class="upcoming-col-game">
-	          <img class="upcoming-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1"><div class="upcoming-icon-placeholder hidden"><svg viewBox="0 0 24 24" fill="#34a853"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#34a853" stroke-width="2" fill="none"/><circle cx="12" cy="18" r="1.5" fill="#34a853"/></svg></div>
-	          <div class="upcoming-info">
-	            <div class="upcoming-name">크리처 리그 챔피언</div>
-	          </div>
-	        </div>
-      </a>
-    
 	      <a class="upcoming-item" href="https://apps.apple.com/kr/app/rope-escape-master/id6756253780?uo=2" target="_blank" rel="noopener">
 	        <div class="upcoming-col-rank">
-	          <span class="upcoming-rank ">6</span>
+	          <span class="upcoming-rank ">5</span>
 	        </div>
 	        <div class="upcoming-col-game">
 	          <img class="upcoming-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a5/cf/ae/a5cfae64-6b5a-93bf-05ab-9af69dc7269d/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1"><div class="upcoming-icon-placeholder hidden"><svg viewBox="0 0 24 24" fill="#34a853"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#34a853" stroke-width="2" fill="none"/><circle cx="12" cy="18" r="1.5" fill="#34a853"/></svg></div>
 	          <div class="upcoming-info">
 	            <div class="upcoming-name">Rope Escape Master</div>
+	          </div>
+	        </div>
+      </a>
+    
+	      <a class="upcoming-item" href="https://apps.apple.com/kr/app/%ED%81%AC%EB%A6%AC%EC%B2%98-%EB%A6%AC%EA%B7%B8-%EC%B1%94%ED%94%BC%EC%96%B8/id6755809717?uo=2" target="_blank" rel="noopener">
+	        <div class="upcoming-col-rank">
+	          <span class="upcoming-rank ">6</span>
+	        </div>
+	        <div class="upcoming-col-game">
+	          <img class="upcoming-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/4e/6d/134e6d06-479d-4410-2462-2fc9dfff7c38/AppIcon-1x_U007epad-0-1-85-220-0.png/100x100bb.png" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1"><div class="upcoming-icon-placeholder hidden"><svg viewBox="0 0 24 24" fill="#34a853"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#34a853" stroke-width="2" fill="none"/><circle cx="12" cy="18" r="1.5" fill="#34a853"/></svg></div>
+	          <div class="upcoming-info">
+	            <div class="upcoming-name">크리처 리그 챔피언</div>
 	          </div>
 	        </div>
       </a>
@@ -2094,8 +2094,10 @@
   function retryAds() {
     var ads = document.querySelectorAll('ins.adsbygoogle');
     for (var i = 0; i < ads.length; i++) {
-      // 이미 처리된 슬롯은 건너뜀 (data-adsbygoogle-status 또는 자식 있음)
+      // 이미 처리된 슬롯은 건너뜀
       if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
+      // 숨겨진 요소 스킵 (display:none 등)
+      if (ads[i].offsetWidth === 0 && ads[i].offsetHeight === 0) continue;
       try {
         (adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {}
