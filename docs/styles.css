@@ -848,10 +848,10 @@
 
 /* PC: 홈페이지만 flex 정렬 (일반 페이지는 확장형) */
 @media (min-width: 769px) {
-  /* 홈페이지만 flex 적용 */
+  /* 홈페이지만 flex (inline display:block 덮어쓰기) */
   .home-main .ad-top,
   .home-main .ad-mid {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
   }
