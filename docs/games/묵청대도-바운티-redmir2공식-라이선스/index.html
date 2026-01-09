@@ -222,7 +222,7 @@
       
       <div class="game-container">
         <div class="ad-card ad-card-mobile-200">
-  <ins class="adsbygoogle ad-top" style="display:block;width:100%;min-width:300px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
+  <ins class="adsbygoogle ad-top" style="width:100%;min-width:300px;min-height:200px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">묵청대도: 바운티 red(MIR2공식 라이선스) 매출, 모바일 게임 순위, 뉴스</h1>
@@ -1596,18 +1596,39 @@
 (function() {
   if (window.innerWidth > 768) return;
 
+  let lastScrollY = 0;
   let ticking = false;
-  const threshold = 50;
+  let isHidden = false;
+  const showThreshold = 10;   // 위로 10px 이상 스크롤하면 표시
+  const hideThreshold = 80;   // 80px 이상에서 아래로 스크롤하면 숨김
 
   function updateSearchVisibility() {
     const currentScrollY = window.scrollY;
+    const scrollDelta = currentScrollY - lastScrollY;
 
-    if (currentScrollY < threshold) {
-      document.body.classList.remove('search-hidden');
-    } else {
-      document.body.classList.add('search-hidden');
+    // overscroll bounce 처리: 맨 위(0 이하)에서는 항상 표시
+    if (currentScrollY <= 0) {
+      if (isHidden) {
+        document.body.classList.remove('search-hidden');
+        isHidden = false;
+      }
+    }
+    // 위로 스크롤 (일정량 이상)
+    else if (scrollDelta < -showThreshold) {
+      if (isHidden) {
+        document.body.classList.remove('search-hidden');
+        isHidden = false;
+      }
+    }
+    // 아래로 스크롤 (threshold 이상 위치에서)
+    else if (scrollDelta > 0 && currentScrollY > hideThreshold) {
+      if (!isHidden) {
+        document.body.classList.add('search-hidden');
+        isHidden = true;
+      }
     }
 
+    lastScrollY = currentScrollY;
     ticking = false;
   }
 
