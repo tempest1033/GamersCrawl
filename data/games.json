@@ -13142,7 +13142,7 @@
     "다크타워:전략 배틀 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.standegg.wulin"
+        "android": "studio.gameberry.idlehunter"
       },
       "aliases": [
         "Dark Tower:Tactical RPG",
@@ -13174,8 +13174,120 @@
         "ios",
         "android"
       ]
+    },
+    "블러드 앤 소울": {
+      "appIds": {
+        "ios": "6749836215",
+        "android": "com.xone.gpkr"
+      },
+      "aliases": [],
+      "developer": "sp_games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/9e/37/349e3720-4f7c-4917-0247-f7d678e1fc7a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "slug": "블러드-앤-소울",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Dream League Soccer 2026": {
+      "appIds": {
+        "ios": "1462911602",
+        "android": "com.firsttouchgames.dls7"
+      },
+      "aliases": [],
+      "developer": "First Touch Games Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/8d/76/ae8d763e-b0a1-d9b9-4a78-376517d62012/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "slug": "dream-league-soccer-2026",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Friday Night Funkin' Mobile": {
+      "appIds": {
+        "ios": "6740428530"
+      },
+      "aliases": [],
+      "developer": "Funkin' Crew",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/04/a2/9904a2d2-1f9d-fc19-d48d-488f94d0a3f1/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/100x100bb.png",
+      "slug": "friday-night-funkin-mobile",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "악령의 살육자 - 숙명": {
+      "appIds": {
+        "ios": "6756296812"
+      },
+      "aliases": [],
+      "developer": "Nanjing Jinju Biological Technology Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/21/10/5721101d-1b61-a174-fdcb-d6813b00ba47/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "slug": "악령의-살육자-숙명",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Lover Block Escape -Slide Away": {
+      "appIds": {
+        "android": "com.loverblockescape.blockjam.puzzle.gp"
+      },
+      "aliases": [],
+      "developer": "Shantanu Developer",
+      "icon": "https://play-lh.googleusercontent.com/COB79BE0XEPYkWaPSMKQB_urOnix1lC54o5mAiLWd3cI9Hw5-bpopman_0WCSicamQ4PFoaTeNiEaIXD_yTnlAs",
+      "slug": "lover-block-escape-slide-away",
+      "platforms": [
+        "android"
+      ]
+    },
+    "GIRLS' FRONTLINE 2: EXILIUM": {
+      "appIds": {
+        "steam": "3308670"
+      },
+      "aliases": [],
+      "developer": "",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3308670/62022f1b08a145d0fff091c6c6ec80eb50fde0e3/capsule_231x87.jpg?t=1741082524",
+      "slug": "girls-frontline-2-exilium",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "CODE VEIN II": {
+      "appIds": {
+        "steam": "2362060"
+      },
+      "aliases": [],
+      "developer": "Bandai Namco Studios Inc.",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2362060/6d3b367ffaa2fb432f891978e18248466972c0b6/capsule_231x87.jpg?t=1766653580",
+      "slug": "code-vein-ii",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "CloverPit": {
+      "appIds": {
+        "steam": "3314790"
+      },
+      "aliases": [],
+      "developer": "Panik Arcade",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3314790/24c9f0cb7f4d1866b6374bbb37ad711f8610e686/capsule_231x87_alt_assets_0.jpg?t=1765994498",
+      "slug": "cloverpit",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Mahjong Soul": {
+      "appIds": {
+        "steam": "2739990"
+      },
+      "aliases": [],
+      "developer": "Catfood Studio",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2739990/capsule_231x87.jpg?t=1763537764",
+      "slug": "mahjong-soul",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2026-01-08",
-  "totalGames": 913
+  "lastUpdated": "2026-01-09",
+  "totalGames": 922
 }

@@ -22,7 +22,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.standegg.wulin"
+        "android": "studio.gameberry.idlehunter"
       },
       "developer": "Rawhand. Inc",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/a9/7f/eba97f95-5ba3-e44d-e428-00b809d93bd8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
@@ -33,6 +33,128 @@
         }
       ],
       "addedAt": "2026-01-08T12:53:59.826Z"
+    },
+    {
+      "title": "블러드 앤 소울",
+      "status": "matched",
+      "appIds": {
+        "ios": "6749836215",
+        "android": "com.xone.gpkr"
+      },
+      "developer": "sp_games",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/9e/37/349e3720-4f7c-4917-0247-f7d678e1fc7a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "블러드 앤 소울",
+          "appId": "com.xone.gpkr"
+        },
+        {
+          "title": "블레이드&소울 레볼루션",
+          "appId": "com.netmarble.bnsmkr"
+        },
+        {
+          "title": "블레이드&소울2",
+          "appId": "com.ncsoft.bns219"
+        }
+      ],
+      "addedAt": "2026-01-09T00:22:04.498Z"
+    },
+    {
+      "title": "Dream League Soccer 2026",
+      "status": "matched",
+      "appIds": {
+        "ios": "1462911602",
+        "android": "com.firsttouchgames.dls7"
+      },
+      "developer": "First Touch Games Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/8d/76/ae8d763e-b0a1-d9b9-4a78-376517d62012/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Dream League Soccer 2026",
+          "appId": "com.firsttouchgames.dls7"
+        },
+        {
+          "title": "축구 리그 2026",
+          "appId": "com.football.soccer.league"
+        },
+        {
+          "title": "EA SPORTS FC™ Mobile 축구",
+          "appId": "com.ea.gp.fifamobile"
+        }
+      ],
+      "addedAt": "2026-01-09T00:22:06.733Z"
+    },
+    {
+      "title": "Friday Night Funkin' Mobile",
+      "status": "single",
+      "appIds": {
+        "ios": "6740428530"
+      },
+      "developer": "Funkin' Crew",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/04/a2/9904a2d2-1f9d-fc19-d48d-488f94d0a3f1/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "Friday Night Funkin'",
+          "appId": "me.funkin.fnf"
+        },
+        {
+          "title": "Music Night Battle - Full Mods",
+          "appId": "com.amanotes.rock.anna"
+        },
+        {
+          "title": "듀엣 고양이: 음악 귀여운 게임",
+          "appId": "com.amanotes.gs.g06"
+        }
+      ],
+      "addedAt": "2026-01-09T00:22:30.564Z"
+    },
+    {
+      "title": "악령의 살육자 - 숙명",
+      "status": "single",
+      "appIds": {
+        "ios": "6756296812"
+      },
+      "developer": "Nanjing Jinju Biological Technology Co., Ltd.",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/21/10/5721101d-1b61-a174-fdcb-d6813b00ba47/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "총몇명 : 공포의 임상시험",
+          "appId": "com.SandboxGame.CMMHCT"
+        },
+        {
+          "title": "An Elmwood Trail - Crime Story",
+          "appId": "com.techyonic.textbasedrpg"
+        },
+        {
+          "title": "Beyond the Room",
+          "appId": "air.com.darkdome.beyond.the.room"
+        }
+      ],
+      "addedAt": "2026-01-09T00:22:31.891Z"
+    },
+    {
+      "title": "Lover Block Escape -Slide Away",
+      "status": "single",
+      "appIds": {
+        "android": "com.loverblockescape.blockjam.puzzle.gp"
+      },
+      "developer": "Shantanu Developer",
+      "icon": "https://play-lh.googleusercontent.com/COB79BE0XEPYkWaPSMKQB_urOnix1lC54o5mAiLWd3cI9Hw5-bpopman_0WCSicamQ4PFoaTeNiEaIXD_yTnlAs",
+      "searchResults": [
+        {
+          "title": "Cats Vs Dogs! Slide Puzzle",
+          "appId": 6479234664
+        },
+        {
+          "title": "JPG to PDF Converter",
+          "appId": 6746144402
+        },
+        {
+          "title": "Slide the Ball Puzzle",
+          "appId": 1609429940
+        }
+      ],
+      "addedAt": "2026-01-09T00:22:47.275Z"
     }
   ],
   "approved": [

@@ -13533,5 +13533,124 @@
     "hasRankings": true,
     "hasSteam": false,
     "hasData": true
+  },
+  {
+    "name": "블러드 앤 소울",
+    "slug": "블러드-앤-소울",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/9e/37/349e3720-4f7c-4917-0247-f7d678e1fc7a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "sp_games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Dream League Soccer 2026",
+    "slug": "dream-league-soccer-2026",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/8d/76/ae8d763e-b0a1-d9b9-4a78-376517d62012/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "First Touch Games Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Friday Night Funkin' Mobile",
+    "slug": "friday-night-funkin-mobile",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/04/a2/9904a2d2-1f9d-fc19-d48d-488f94d0a3f1/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Funkin' Crew",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "악령의 살육자 - 숙명",
+    "slug": "악령의-살육자-숙명",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/21/10/5721101d-1b61-a174-fdcb-d6813b00ba47/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "Nanjing Jinju Biological Technology Co., Ltd.",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Lover Block Escape -Slide Away",
+    "slug": "lover-block-escape-slide-away",
+    "icon": "https://play-lh.googleusercontent.com/COB79BE0XEPYkWaPSMKQB_urOnix1lC54o5mAiLWd3cI9Hw5-bpopman_0WCSicamQ4PFoaTeNiEaIXD_yTnlAs",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "Shantanu Developer",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "GIRLS' FRONTLINE 2: EXILIUM",
+    "slug": "girls-frontline-2-exilium",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3308670/62022f1b08a145d0fff091c6c6ec80eb50fde0e3/capsule_231x87.jpg?t=1741082524",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "CODE VEIN II",
+    "slug": "code-vein-ii",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2362060/6d3b367ffaa2fb432f891978e18248466972c0b6/capsule_231x87.jpg?t=1766653580",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Bandai Namco Studios Inc.",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "CloverPit",
+    "slug": "cloverpit",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3314790/24c9f0cb7f4d1866b6374bbb37ad711f8610e686/capsule_231x87_alt_assets_0.jpg?t=1765994498",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Panik Arcade",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Mahjong Soul",
+    "slug": "mahjong-soul",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2739990/capsule_231x87.jpg?t=1763537764",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Catfood Studio",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
   }
 ]
