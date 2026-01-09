@@ -2197,7 +2197,7 @@
       "android"
     ],
     "developer": "Au Elements Network Technology Co., Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2337,7 +2337,7 @@
       "android"
     ],
     "developer": "Blizzard Entertainment, Inc.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -2909,7 +2909,7 @@
       "android"
     ],
     "developer": "SPGAME",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -3113,7 +3113,7 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3913,7 +3913,7 @@
       "android"
     ],
     "developer": "Ho San Won",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4170,7 +4170,7 @@
       "ios"
     ],
     "developer": "Guangzhou Waliang Trading Co., Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4820,7 +4820,7 @@
       "android"
     ],
     "developer": "Cobby Labs",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5085,7 +5085,7 @@
       "android"
     ],
     "developer": "ACTIONFIT",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5653,7 +5653,7 @@
       "android"
     ],
     "developer": "JindoBlu",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5741,7 +5741,7 @@
       "android"
     ],
     "developer": "HM Games Pty Ltd",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5813,7 +5813,7 @@
       "android"
     ],
     "developer": "Sonata Studio: Piano Rhythm",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5853,7 +5853,7 @@
       "android"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -6081,7 +6081,7 @@
       "steam"
     ],
     "developer": "Everstone Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -7256,7 +7256,7 @@
       "android"
     ],
     "developer": "HaoPlay Limited",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7270,7 +7270,7 @@
       "android"
     ],
     "developer": "Gameduo",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7338,7 +7338,7 @@
       "android"
     ],
     "developer": "HONG KONG DUCKLING TECHNOLOGY CO.,LIMITED",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8437,7 +8437,7 @@
       "android"
     ],
     "developer": "TapNation",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8916,7 +8916,7 @@
       "ios"
     ],
     "developer": "Tensori",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -9722,7 +9722,7 @@
       "android"
     ],
     "developer": "NEOWIZ",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9877,7 +9877,7 @@
       "android"
     ],
     "developer": "빌리온게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12135,7 +12135,7 @@
       "android"
     ],
     "developer": "CASUAL AZUR GAMES",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12194,7 +12194,7 @@
       "android"
     ],
     "developer": "Supercent, Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12251,7 +12251,7 @@
       "android"
     ],
     "developer": "HIGAME LTD.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -13558,7 +13558,7 @@
       "android"
     ],
     "developer": "First Touch Games Ltd.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
