@@ -1496,7 +1496,7 @@
               <span class="steam-rank ">90</span>
             </div>
             <div class="steam-col-game">
-              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314790/24c9f0cb7f4d1866b6374bbb37ad711f8610e686/capsule_231x87_alt_assets_0.jpg?t=1765994498" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
+              <img class="steam-img" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314790/24c9f0cb7f4d1866b6374bbb37ad711f8610e686/capsule_231x87_alt_assets_0.jpg?t=1767963404" alt="" loading="lazy" decoding="async" data-img-fallback="hide-show-next" data-img-fallback-show-next="1" data-img-fallback-show-display="flex">
               <div class="steam-img-placeholder"><svg viewBox="0 0 24 24" fill="#66c0f4"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.064 0 .128.003.19.007l2.862-4.145v-.058c0-2.495 2.03-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.104.004.156 0 1.871-1.52 3.393-3.393 3.393-1.618 0-2.974-1.14-3.305-2.658l-4.6-1.903C1.463 19.63 6.27 24 11.979 24c6.627 0 12-5.373 12-12S18.606 0 11.979 0z"/></svg></div>
               <div class="steam-game-info">
                 <div class="steam-game-name">CloverPit</div>
@@ -2770,34 +2770,51 @@
 </script>
   <script>
 (function() {
-  if (typeof IntersectionObserver === 'undefined') {
-    // fallback: 보이는 광고만 즉시 로드
-    document.querySelectorAll('ins.adsbygoogle').forEach(function(ad) {
-      if (ad.offsetWidth > 0 && ad.offsetHeight > 0) {
-        (adsbygoogle = window.adsbygoogle || []).push({});
+  function initAds() {
+    var ads = document.querySelectorAll('ins.adsbygoogle');
+    if (!ads.length) return;
+
+    if (typeof IntersectionObserver === 'undefined') {
+      // fallback: 보이는 광고만 즉시 로드
+      ads.forEach(function(ad) {
+        if (ad.offsetWidth > 0 && ad.offsetHeight > 0 && !ad.dataset.adStatus) {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        var ad = entry.target;
+        // 이미 초기화된 광고는 건너뜀
+        if (ad.dataset.adStatus) {
+          observer.unobserve(ad);
+          return;
+        }
+        if (entry.isIntersecting) {
+          // display:none이거나 width가 0이면 push 안 함 (에러 방지)
+          if (ad.offsetWidth > 0 && ad.offsetHeight > 0) {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          }
+          observer.unobserve(ad);
+        }
+      });
+    }, { rootMargin: '200px' }); // viewport 200px 전에 미리 로드
+
+    ads.forEach(function(ad) {
+      if (!ad.dataset.adStatus) {
+        observer.observe(ad);
       }
     });
-    return;
   }
 
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var ad = entry.target;
-        // display:none이거나 width가 0이면 push 안 함 (에러 방지)
-        if (ad.offsetWidth > 0 && ad.offsetHeight > 0) {
-          try {
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          } catch (e) {}
-        }
-        observer.unobserve(ad);
-      }
-    });
-  }, { rootMargin: '200px' }); // viewport 200px 전에 미리 로드
-
-  document.querySelectorAll('ins.adsbygoogle').forEach(function(ad) {
-    observer.observe(ad);
-  });
+  // AdSense 스크립트 로드 후 실행
+  if (window.adsbygoogle && window.adsbygoogle.loaded) {
+    initAds();
+  } else {
+    window.addEventListener('load', initAds);
+  }
 })();
 </script>
 </body>
