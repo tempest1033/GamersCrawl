@@ -1547,5 +1547,21 @@ TGA 2025 최고의 멀티플레이어 게임과 스팀 어워드 혁신상 연�
 })();
 </script>
   
+<script>
+(function() {
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var ads = document.querySelectorAll('ins.adsbygoogle');
+      for (var i = 0; i < ads.length; i++) {
+        // 이미 처리된 슬롯은 건너뜀 (data-adsbygoogle-status 또는 자식 있음)
+        if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {}
+      }
+    }, 1000);  // 1초 후 놓친 슬롯 보완
+  });
+})();
+</script>
 </body>
 </html>

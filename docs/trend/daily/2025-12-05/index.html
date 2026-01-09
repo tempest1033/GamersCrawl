@@ -1523,5 +1523,21 @@ iOS에서는 이벤트-과금 패턴 영향으로 하루 기준 순위가 30위�
 })();
 </script>
   
+<script>
+(function() {
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var ads = document.querySelectorAll('ins.adsbygoogle');
+      for (var i = 0; i < ads.length; i++) {
+        // 이미 처리된 슬롯은 건너뜀 (data-adsbygoogle-status 또는 자식 있음)
+        if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {}
+      }
+    }, 1000);  // 1초 후 놓친 슬롯 보완
+  });
+})();
+</script>
 </body>
 </html>
