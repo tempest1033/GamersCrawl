@@ -251,6 +251,7 @@
       <div class="insight-container">
         <div class="ad-card ad-card-mobile-200">
   <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326" data-ad-format="horizontal"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">마비노기 모바일 전 서버 품앗이 성공, SOOP AI 매니저 공개</h1>
         
@@ -315,6 +316,7 @@
     
         <div class="ad-card ad-card-mobile-400">
   <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314" data-ad-format="horizontal"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -435,6 +437,7 @@ PUBG: BATTLEGROUNDS(228,343명) 등 장르 강자와 함께 상위권을 형성�
     
         <div class="ad-card ad-card-mobile-400">
   <ins class="adsbygoogle ad-mid" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651" data-ad-format="horizontal"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1534,54 +1537,6 @@ PUBG: BATTLEGROUNDS(228,343명) 등 장르 강자와 함께 상위권을 형성�
   }, { passive: true });
 })();
 </script>
-  <script>
-(function() {
-  function initAds() {
-    var ads = document.querySelectorAll('ins.adsbygoogle');
-    if (!ads.length) return;
-
-    if (typeof IntersectionObserver === 'undefined') {
-      // fallback: 보이는 광고만 즉시 로드
-      ads.forEach(function(ad) {
-        if (ad.offsetWidth > 0 && ad.offsetHeight > 0 && !ad.dataset.adStatus) {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        }
-      });
-      return;
-    }
-
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var ad = entry.target;
-        // 이미 초기화된 광고는 건너뜀
-        if (ad.dataset.adStatus) {
-          observer.unobserve(ad);
-          return;
-        }
-        if (entry.isIntersecting) {
-          // display:none이거나 width가 0이면 push 안 함 (에러 방지)
-          if (ad.offsetWidth > 0 && ad.offsetHeight > 0) {
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          }
-          observer.unobserve(ad);
-        }
-      });
-    }, { rootMargin: '200px' }); // viewport 200px 전에 미리 로드
-
-    ads.forEach(function(ad) {
-      if (!ad.dataset.adStatus) {
-        observer.observe(ad);
-      }
-    });
-  }
-
-  // AdSense 스크립트 로드 후 실행
-  if (window.adsbygoogle && window.adsbygoogle.loaded) {
-    initAds();
-  } else {
-    window.addEventListener('load', initAds);
-  }
-})();
-</script>
+  
 </body>
 </html>
