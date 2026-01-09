@@ -1538,24 +1538,5 @@ IP 인지도와 가벼운 방치형 구조가 글로벌 시장에서도 통하�
 })();
 </script>
   
-<script>
-(function() {
-  function retryAds() {
-    var ads = document.querySelectorAll('ins.adsbygoogle');
-    for (var i = 0; i < ads.length; i++) {
-      // 이미 처리된 슬롯은 건너뜀
-      if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {}
-    }
-  }
-  window.addEventListener('load', function() {
-    [100, 300, 500, 1000, 2000].forEach(function(delay) {
-      setTimeout(retryAds, delay);
-    });
-  });
-})();
-</script>
 </body>
 </html>

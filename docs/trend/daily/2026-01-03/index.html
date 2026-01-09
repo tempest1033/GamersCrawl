@@ -1537,24 +1537,5 @@ Counter-Strike 2(140만), Dota 2(72만)와 함께 글로벌 PC 게임 트렌드�
 })();
 </script>
   
-<script>
-(function() {
-  function retryAds() {
-    var ads = document.querySelectorAll('ins.adsbygoogle');
-    for (var i = 0; i < ads.length; i++) {
-      // 이미 처리된 슬롯은 건너뜀
-      if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {}
-    }
-  }
-  window.addEventListener('load', function() {
-    [100, 300, 500, 1000, 2000].forEach(function(delay) {
-      setTimeout(retryAds, delay);
-    });
-  });
-})();
-</script>
 </body>
 </html>
