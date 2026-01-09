@@ -1540,17 +1540,20 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
   
 <script>
 (function() {
+  function retryAds() {
+    var ads = document.querySelectorAll('ins.adsbygoogle');
+    for (var i = 0; i < ads.length; i++) {
+      // 이미 처리된 슬롯은 건너뜀 (data-adsbygoogle-status 또는 자식 있음)
+      if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    }
+  }
   window.addEventListener('load', function() {
-    setTimeout(function() {
-      var ads = document.querySelectorAll('ins.adsbygoogle');
-      for (var i = 0; i < ads.length; i++) {
-        // 이미 처리된 슬롯은 건너뜀 (data-adsbygoogle-status 또는 자식 있음)
-        if (ads[i].dataset.adsbygoogleStatus || ads[i].childElementCount > 0) continue;
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {}
-      }
-    }, 1000);  // 1초 후 놓친 슬롯 보완
+    [500, 1500, 3000].forEach(function(delay) {
+      setTimeout(retryAds, delay);
+    });
   });
 })();
 </script>
