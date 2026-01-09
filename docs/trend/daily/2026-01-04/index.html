@@ -249,10 +249,9 @@
     <section class="section active" id="insight">
       
       <div class="insight-container">
-        <div class="ad-card ad-card-mobile-top ad-mobile-only">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
-</div><div class="ad-card ad-card-pc-top ad-pc-only">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1795150514" data-ad-format="horizontal"></ins>
+        <div class="ad-card ad-card-mobile-top">
+  <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5039620326"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         <h1 class="visually-hidden">DN 수퍼스 2026 출정식 개최, 명일방주 엔드필드 1월 22일 출시 확정</h1>
         
@@ -315,10 +314,9 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
         </div>
       </div>
     
-        <div class="ad-card ad-card-mobile-sub ad-mobile-only">
-  <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
-</div><div class="ad-card ad-card-pc-sub ad-pc-only">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="1062515168" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <div class="ad-card ad-card-mobile-sub">
+  <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="4840966314"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-industry">
@@ -437,10 +435,9 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
         </div>
       </div>
     
-        <div class="ad-card ad-card-mobile-sub ad-mobile-only">
-  <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651"></ins>
-</div><div class="ad-card ad-card-pc-sub ad-pc-only">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9477874183990825" data-ad-slot="5214702534" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <div class="ad-card ad-card-mobile-sub">
+  <ins class="adsbygoogle ad-top" data-ad-client="ca-pub-9477874183990825" data-ad-slot="7467129651"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
         
       <div class="weekly-section weekly-section-stocks">
@@ -1541,42 +1538,5 @@ PS5 1년 독점이 확정됐고, 인기 만화 IP 기반의 심리스 오픈월�
 })();
 </script>
   
-<script>
-(function() {
-  // 광고 초기화 함수
-  function initVisibleAds() {
-    var ads = document.querySelectorAll('ins.adsbygoogle:not([data-gc-init])');
-    ads.forEach(function(ad) {
-      // 이미 초기화됐으면 스킵
-      if (ad.dataset.gcInit === '1') return;
-
-      // 보이는지 체크 (offsetParent가 null이면 숨겨진 상태)
-      var card = ad.closest('.ad-card');
-      if (!card) return;
-
-      // display:none이면 offsetParent가 null (PC/모바일 전용 광고)
-      if (card.offsetParent === null) return;
-
-      // 초기화 마킹
-      ad.dataset.gcInit = '1';
-
-      // AdSense push
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {}
-    });
-  }
-
-  // 페이지 완전 로드 후 실행 (CSS 레이아웃 완료 보장)
-  window.addEventListener('load', initVisibleAds);
-
-  // resize 시 재체크 (PC↔모바일 전환 대응)
-  var resizeTimer;
-  window.addEventListener('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(initVisibleAds, 200);
-  });
-})();
-</script>
 </body>
 </html>
