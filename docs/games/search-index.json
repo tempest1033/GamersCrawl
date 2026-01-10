@@ -2635,7 +2635,7 @@
       "android"
     ],
     "developer": "NEXON Company",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -2909,7 +2909,7 @@
       "android"
     ],
     "developer": "SPGAME",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -3302,7 +3302,7 @@
       "android"
     ],
     "developer": "LING CHAI (HONG KONG) LIMITED",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4126,7 +4126,7 @@
       "android"
     ],
     "developer": "Junyeop Kim",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4170,7 +4170,7 @@
       "ios"
     ],
     "developer": "Guangzhou Waliang Trading Co., Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -4184,7 +4184,7 @@
       "android"
     ],
     "developer": "SUD Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -4394,7 +4394,7 @@
       "android"
     ],
     "developer": "Moca",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -5214,7 +5214,7 @@
       "android"
     ],
     "developer": "Wildlife Studios",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5509,7 +5509,7 @@
       "android"
     ],
     "developer": "Guru Puzzle Game",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -5853,7 +5853,7 @@
       "android"
     ],
     "developer": "Tripledot Studios Limited",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7169,7 +7169,7 @@
       "android"
     ],
     "developer": "(주)공게임즈",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7211,7 +7211,7 @@
       "android"
     ],
     "developer": "Changgon Woo",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7270,7 +7270,7 @@
       "android"
     ],
     "developer": "Gameduo",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7366,7 +7366,7 @@
       "android"
     ],
     "developer": "Qookka Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -7380,7 +7380,7 @@
       "android"
     ],
     "developer": "SPGFun",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -7394,7 +7394,7 @@
       "android"
     ],
     "developer": "WILD CALY PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8451,7 +8451,7 @@
       "android"
     ],
     "developer": "VOODOO",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8553,7 +8553,7 @@
       "android"
     ],
     "developer": "부산만동게임즈",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8624,7 +8624,7 @@
       "android"
     ],
     "developer": "AppteenPlanet Co.,Ltd.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8654,7 +8654,7 @@
       "android"
     ],
     "developer": "MINIMAX PTE. LTD.",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -8796,7 +8796,7 @@
       "android"
     ],
     "developer": "Block Puzzle Jewel Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -8822,7 +8822,7 @@
       "android"
     ],
     "developer": "Brainteaser Puzzle Game Studio",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -9560,7 +9560,7 @@
       "android"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11435,7 +11435,7 @@
       "android"
     ],
     "developer": "BluePotion Games",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11587,7 +11587,7 @@
       "android"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11817,7 +11817,7 @@
       "android"
     ],
     "developer": "Bandai Namco Entertainment Inc.",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11857,7 +11857,7 @@
       "android"
     ],
     "developer": "Unicorn Studio Official",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -11884,7 +11884,7 @@
       "android"
     ],
     "developer": "Supersonic Studios LTD",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -12221,7 +12221,7 @@
       "android"
     ],
     "developer": "NCROQUIS",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": false,
     "hasData": true
   },
@@ -12280,7 +12280,7 @@
       "android"
     ],
     "developer": "Stormborn",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
@@ -13610,7 +13610,7 @@
       "steam"
     ],
     "developer": "",
-    "hasRankings": false,
+    "hasRankings": true,
     "hasSteam": true,
     "hasData": true
   },
@@ -13663,7 +13663,7 @@
       "android"
     ],
     "developer": "Netmarble Corporation",
-    "hasRankings": true,
+    "hasRankings": false,
     "hasSteam": false,
     "hasData": true
   },
