@@ -13652,5 +13652,136 @@
     "hasRankings": false,
     "hasSteam": true,
     "hasData": true
+  },
+  {
+    "name": "세븐나이츠 키우기",
+    "slug": "세븐나이츠-키우기",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/43/44/d4434474-90b6-2eb4-60e6-360fe2144201/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "developer": "Netmarble Corporation",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Basketball Master: Dunk Hero",
+    "slug": "basketball-master-dunk-hero",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/8a/e2/828ae22c-f966-c965-7891-3b3f08b6e787/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+    "aliases": [],
+    "platforms": [
+      "ios"
+    ],
+    "developer": "UDO GAMES OYUN YAZILIM ANONIM SIRKETI",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Happy Screw Trip 3D: ASMR",
+    "slug": "happy-screw-trip-3d-asmr",
+    "icon": "https://play-lh.googleusercontent.com/AYG6pMmSLgdiU1gWy7mZCtmm-8FiOgwMLE4p2jSvtyJp5bH2jIrc3AI8yJWhSdcOeNUM",
+    "aliases": [],
+    "platforms": [
+      "android"
+    ],
+    "developer": "AlphaPlay Games",
+    "hasRankings": true,
+    "hasSteam": false,
+    "hasData": true
+  },
+  {
+    "name": "Soundpad",
+    "slug": "soundpad",
+    "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629520/header.jpg?t=1760026851",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Leppsoft",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Deadzone: Rogue",
+    "slug": "deadzone-rogue",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3228590/f917ff08729ac5c314eca89dbd08320dd35ee035/capsule_231x87_alt_assets_2.jpg?t=1766084711",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Prophecy Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Age of Empires II: DE – The Last Chieftains",
+    "slug": "age-of-empires-ii-de-the-last-chieftains",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3219700/c11413129b4915eaa93a047c8e0381b50aca634b/capsule_231x87.jpg?t=1767899531",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Forgotten Empires",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Crimson Desert",
+    "slug": "crimson-desert",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/f4b3cbf1c0759e0f18cbc0bf13cdefa02451c95b/capsule_231x87.jpg?t=1767863504",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Pearl Abyss",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Crashlands 2",
+    "slug": "crashlands-2",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401730/660c459d13b5669e0ce981cb8450c99570f1760e/capsule_231x87_alt_assets_0.jpg?t=1767078883",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Butterscotch Shenanigans",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Against the Storm",
+    "slug": "against-the-storm",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336490/capsule_231x87.jpg?t=1767881165",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Eremite Games",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
+  },
+  {
+    "name": "Out of the Park Baseball 26",
+    "slug": "out-of-the-park-baseball-26",
+    "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3116890/fe9f36c7af42cb3ee035a2fdc9d3a3969859b20b/capsule_231x87.jpg?t=1755716302",
+    "aliases": [],
+    "platforms": [
+      "steam"
+    ],
+    "developer": "Out of the Park Developments",
+    "hasRankings": false,
+    "hasSteam": true,
+    "hasData": true
   }
 ]

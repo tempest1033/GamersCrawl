@@ -22,7 +22,7 @@
       "status": "matched",
       "appIds": {
         "ios": "6748525811",
-        "android": "com.standegg.wulin"
+        "android": "studio.gameberry.idlehunter"
       },
       "developer": "Rawhand. Inc",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/a9/7f/eba97f95-5ba3-e44d-e428-00b809d93bd8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
@@ -155,6 +155,79 @@
         }
       ],
       "addedAt": "2026-01-09T00:22:47.275Z"
+    },
+    {
+      "title": "세븐나이츠 키우기",
+      "status": "matched",
+      "appIds": {
+        "ios": "1658717149",
+        "android": "com.netmarble.skiagb"
+      },
+      "developer": "Netmarble Corporation",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/43/44/d4434474-90b6-2eb4-60e6-360fe2144201/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "세븐나이츠 키우기",
+          "appId": "com.netmarble.skiagb"
+        },
+        {
+          "title": "세븐나이츠 리버스",
+          "appId": "com.netmarble.tskgb"
+        },
+        {
+          "title": "일곱 개의 대죄 키우기",
+          "appId": "com.netmarble.nanarise"
+        }
+      ],
+      "addedAt": "2026-01-10T00:48:22.401Z"
+    },
+    {
+      "title": "Basketball Master: Dunk Hero",
+      "status": "single",
+      "appIds": {
+        "ios": "6744168445"
+      },
+      "developer": "UDO GAMES OYUN YAZILIM ANONIM SIRKETI",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/8a/e2/828ae22c-f966-c965-7891-3b3f08b6e787/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "searchResults": [
+        {
+          "title": "농구 마스터: 덩크 히어로",
+          "appId": "com.udogames.dunkmasters"
+        },
+        {
+          "title": "Dunk City Dynasty",
+          "appId": "com.netease.dcd"
+        },
+        {
+          "title": "NBA 2K Mobile - 모바일 농구 게임",
+          "appId": "com.catdaddy.nba2km"
+        }
+      ],
+      "addedAt": "2026-01-10T00:48:48.275Z"
+    },
+    {
+      "title": "Happy Screw Trip 3D: ASMR",
+      "status": "single",
+      "appIds": {
+        "android": "com.gamebp.screw3d"
+      },
+      "developer": "AlphaPlay Games",
+      "icon": "https://play-lh.googleusercontent.com/AYG6pMmSLgdiU1gWy7mZCtmm-8FiOgwMLE4p2jSvtyJp5bH2jIrc3AI8yJWhSdcOeNUM",
+      "searchResults": [
+        {
+          "title": "해피 스크류 트립 3D",
+          "appId": 6744547461
+        },
+        {
+          "title": "Screw Match: ASMR Game",
+          "appId": 6503636810
+        },
+        {
+          "title": "Match Rush 3D: ASMR Care",
+          "appId": 6475327717
+        }
+      ],
+      "addedAt": "2026-01-10T00:49:01.906Z"
     }
   ],
   "approved": [

@@ -13142,7 +13142,7 @@
     "다크타워:전략 배틀 RPG": {
       "appIds": {
         "ios": "6748525811",
-        "android": "com.standegg.wulin"
+        "android": "studio.gameberry.idlehunter"
       },
       "aliases": [
         "Dark Tower:Tactical RPG",
@@ -13286,8 +13286,130 @@
       "platforms": [
         "steam"
       ]
+    },
+    "세븐나이츠 키우기": {
+      "appIds": {
+        "ios": "1658717149",
+        "android": "com.netmarble.skiagb"
+      },
+      "aliases": [],
+      "developer": "Netmarble Corporation",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d4/43/44/d4434474-90b6-2eb4-60e6-360fe2144201/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "세븐나이츠-키우기",
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "Basketball Master: Dunk Hero": {
+      "appIds": {
+        "ios": "6744168445"
+      },
+      "aliases": [],
+      "developer": "UDO GAMES OYUN YAZILIM ANONIM SIRKETI",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/8a/e2/828ae22c-f966-c965-7891-3b3f08b6e787/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.png",
+      "slug": "basketball-master-dunk-hero",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "Happy Screw Trip 3D: ASMR": {
+      "appIds": {
+        "android": "com.gamebp.screw3d"
+      },
+      "aliases": [],
+      "developer": "AlphaPlay Games",
+      "icon": "https://play-lh.googleusercontent.com/AYG6pMmSLgdiU1gWy7mZCtmm-8FiOgwMLE4p2jSvtyJp5bH2jIrc3AI8yJWhSdcOeNUM",
+      "slug": "happy-screw-trip-3d-asmr",
+      "platforms": [
+        "android"
+      ]
+    },
+    "Soundpad": {
+      "appIds": {
+        "steam": "629520"
+      },
+      "aliases": [],
+      "developer": "Leppsoft",
+      "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629520/header.jpg?t=1760026851",
+      "slug": "soundpad",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Deadzone: Rogue": {
+      "appIds": {
+        "steam": "3228590"
+      },
+      "aliases": [],
+      "developer": "Prophecy Games",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3228590/f917ff08729ac5c314eca89dbd08320dd35ee035/capsule_231x87_alt_assets_2.jpg?t=1766084711",
+      "slug": "deadzone-rogue",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Age of Empires II: DE – The Last Chieftains": {
+      "appIds": {
+        "steam": "3219700"
+      },
+      "aliases": [],
+      "developer": "Forgotten Empires",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3219700/c11413129b4915eaa93a047c8e0381b50aca634b/capsule_231x87.jpg?t=1767899531",
+      "slug": "age-of-empires-ii-de-the-last-chieftains",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Crimson Desert": {
+      "appIds": {
+        "steam": "3321460"
+      },
+      "aliases": [],
+      "developer": "Pearl Abyss",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/f4b3cbf1c0759e0f18cbc0bf13cdefa02451c95b/capsule_231x87.jpg?t=1767863504",
+      "slug": "crimson-desert",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Crashlands 2": {
+      "appIds": {
+        "steam": "1401730"
+      },
+      "aliases": [],
+      "developer": "Butterscotch Shenanigans",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401730/660c459d13b5669e0ce981cb8450c99570f1760e/capsule_231x87_alt_assets_0.jpg?t=1767078883",
+      "slug": "crashlands-2",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Against the Storm": {
+      "appIds": {
+        "steam": "1336490"
+      },
+      "aliases": [],
+      "developer": "Eremite Games",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336490/capsule_231x87.jpg?t=1767881165",
+      "slug": "against-the-storm",
+      "platforms": [
+        "steam"
+      ]
+    },
+    "Out of the Park Baseball 26": {
+      "appIds": {
+        "steam": "3116890"
+      },
+      "aliases": [],
+      "developer": "Out of the Park Developments",
+      "icon": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3116890/fe9f36c7af42cb3ee035a2fdc9d3a3969859b20b/capsule_231x87.jpg?t=1755716302",
+      "slug": "out-of-the-park-baseball-26",
+      "platforms": [
+        "steam"
+      ]
     }
   },
-  "lastUpdated": "2026-01-09",
-  "totalGames": 922
+  "lastUpdated": "2026-01-10",
+  "totalGames": 932
 }
